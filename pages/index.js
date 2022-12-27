@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { Inter } from '@next/font/google';
-import NavbarDark from '../components/NavbarDark';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
@@ -17,6 +16,9 @@ export default function Home() {
         Check
         <Link href="/dark">
           <p className="text-purple-500">Dark version</p>
+        </Link>
+        <Link href="/light">
+          <p className="text-purple-500">Light version</p>
         </Link>
       </div>
     </>
