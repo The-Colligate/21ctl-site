@@ -1,3 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.body {
+  background: linear-gradient(90.08deg, #140834 0.06%, #252525 99.91%);
+  /* background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1672140154/waves_wxewjt.png'); */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  mix-blend-mode: color;
+  height: 100%;
+}
+
+.top-section {
+  background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1672096824/Elipse_k6pfke.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  display: flex;
+  gap: 32px;
+  padding: 6px 24px 20px;
+  margin-bottom: 0;
+  justify-content: flex-start;
+  background: #362c4a;
+  opacity: 0;
+  visibility: hidden;
+  translate: 0 24px;
+  transition: 0.3s;
+  border-radius: 10px;
+  /* box-shadow: 4px 4px 8px rgba(156, 163, 219, 0.25); */
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  translate: 0 0;
+}
+
+.box {
+  position: relative;
+  border-image-slice: 1;
+
+  border-image-source: linear-gradient(
+    to left,
+    #03a5f0,
+    #f64e1f,
+    #7fba03,
+    #feb906
+  );
+}
+
+.box:hover {
+  transition: 0.3s;
+}
+
+.hidden-text {
+  /* display: none; */
+  overflow: hidden;
+  visibility: hidden;
+  translate: 0 24px;
+  transition: 0.3s;
+}
+
+.box:hover {
+  height: auto;
+  animation: height 0.3s ease-in-out;
+}
+
+.box:hover .hidden-text {
+  visibility: visible;
+  translate: 0 0;
+}
