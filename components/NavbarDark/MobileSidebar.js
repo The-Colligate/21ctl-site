@@ -1,36 +1,90 @@
-import React, { useState } from 'react';
-import MobileSidebar from './MobileSidebar';
+import React from 'react';
 
-const MenuBar = () => {
+const CloseIcon = () => {
   return (
     <svg
-      stroke="currentColor"
-      fill="currentColor"
-      stroke-width="0"
-      viewBox="0 0 24 24"
-      height="2em"
-      width="2em"
+      width="58"
+      height="58"
+      viewBox="0 0 58 58"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+      <g filter="url(#filter0_d_764_2632)">
+        <circle cx="29" cy="29" r="20" fill="white" />
+      </g>
+      <path
+        d="M23.7578 35.2431L29.0008 30.0001M34.2438 24.7571L28.9998 30.0001M28.9998 30.0001L23.7578 24.7571M29.0008 30.0001L34.2438 35.2431"
+        stroke="black"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <defs>
+        <filter
+          id="filter0_d_764_2632"
+          x="0"
+          y="0"
+          width="58"
+          height="58"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="4.5" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_764_2632"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_764_2632"
+            result="shape"
+          />
+        </filter>
+      </defs>
     </svg>
   );
 };
 
-const NavbarDark = () => {
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => {
-    setOpen(!open);
-  };
-
+const CaretRight = () => {
   return (
-    <>
-      <nav className="sm:px-20 px-5 py-5 flex items-center justify-between text-white">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.33333 1.33342L12 8.00008L5.33333 14.6667L4.15 13.4834L9.63333 8.00008L4.15 2.51675L5.33333 1.33342Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+
+const MobileSidebar = ({ handleOpen }) => {
+  return (
+    <div className="bg-[#32293C] z-50 right-0 top-0 w-full h-screen fixed sm:hidden py-10 px-5">
+      <div className="flex justify-between items-center ">
         <div>
           <svg
-            width="76"
-            height="73"
+            width="40"
+            height="38"
             viewBox="0 0 76 73"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -63,179 +117,55 @@ const NavbarDark = () => {
             />
           </svg>
         </div>
-        <div onClick={handleOpen} className="flex sm:hidden">
-          <MenuBar />
+        <div onClick={handleOpen}>
+          <CloseIcon />
         </div>
-        <div className="sm:flex hidden space-x-16">
-          {/* dropitem 1 */}
-          <div className="dropdown">
-            <button className="flex items-center">
-              Products
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 14 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-1"
-              >
-                <path
-                  d="M13.6663 1.33333L6.99967 8L0.333008 1.33333L1.51634 0.150001L6.99967 5.63333L12.483 0.150001L13.6663 1.33333Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-            <div class="dropdown-menu">
-              <div className="whitespace-nowrap text-white">
-                <h2>Digital</h2>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </div>
+      </div>
+
+      <div className="pt-10 space-y-4">
+        <div className="flex justify-between items-center">
+          <div>
+            <p className="text-lg text-white">Product</p>
           </div>
-          {/* dropitem 1 */}
-          <div className="dropdown">
-            <button className="flex items-center">
-              Solution
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 14 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-1"
-              >
-                <path
-                  d="M13.6663 1.33333L6.99967 8L0.333008 1.33333L1.51634 0.150001L6.99967 5.63333L12.483 0.150001L13.6663 1.33333Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-            <div class="dropdown-menu">
-              <div className="whitespace-nowrap text-white">
-                <h2>Digital</h2>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </div>
-          </div>
-          {/* dropitem 1 */}
-          <div className="dropdown">
-            <button className="flex items-center">
-              Market Place
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 14 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-1"
-              >
-                <path
-                  d="M13.6663 1.33333L6.99967 8L0.333008 1.33333L1.51634 0.150001L6.99967 5.63333L12.483 0.150001L13.6663 1.33333Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-            <div class="dropdown-menu">
-              <div className="whitespace-nowrap text-white">
-                <h2>Digital</h2>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </div>
-          </div>
-          {/* dropitem 1 */}
-          <div className="dropdown">
-            <button className="flex items-center">
-              Company
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 14 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-1"
-              >
-                <path
-                  d="M13.6663 1.33333L6.99967 8L0.333008 1.33333L1.51634 0.150001L6.99967 5.63333L12.483 0.150001L13.6663 1.33333Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-            <div class="dropdown-menu">
-              <div className="whitespace-nowrap text-white">
-                <h2>Digital</h2>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </div>
-          </div>
-          {/* dropitem 1 */}
-          <div className="dropdown">
-            <button className="flex items-center">
-              Konet Mail
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 14 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-1"
-              >
-                <path
-                  d="M13.6663 1.33333L6.99967 8L0.333008 1.33333L1.51634 0.150001L6.99967 5.63333L12.483 0.150001L13.6663 1.33333Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-            <div class="dropdown-menu">
-              <div className="whitespace-nowrap text-white">
-                <h2>Digital</h2>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </div>
-          </div>
-          {/* dropitem 1 */}
-          <div className="dropdown">
-            <button className="flex items-center">
-              Explore More
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 14 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-1"
-              >
-                <path
-                  d="M13.6663 1.33333L6.99967 8L0.333008 1.33333L1.51634 0.150001L6.99967 5.63333L12.483 0.150001L13.6663 1.33333Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-            <div class="dropdown-menu">
-              <div className="whitespace-nowrap text-white">
-                <h2>Digital</h2>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </div>
+          <div>
+            <CaretRight />
           </div>
         </div>
-        {/* empty */}
-        <div className="sm:flex hidden"></div>
-      </nav>
-      {open && <MobileSidebar handleOpen={handleOpen} />}
-    </>
+        <div className="flex justify-between items-center">
+          <div>
+            <p className="text-lg text-white">Solutions</p>
+          </div>
+          <div>
+            <CaretRight />
+          </div>
+        </div>
+        <div className="flex justify-between items-center">
+          <div>
+            <p className="text-lg text-white">Market Place</p>
+          </div>
+          <div>
+            <CaretRight />
+          </div>
+        </div>
+        <div className="flex justify-between items-center">
+          <div>
+            <p className="text-lg text-white">Company</p>
+          </div>
+          <div>
+            <CaretRight />
+          </div>
+        </div>
+        <div className="flex justify-between items-center">
+          <div>
+            <p className="text-lg text-white">Konet Mail</p>
+          </div>
+          <div>
+            <CaretRight />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default NavbarDark;
+export default MobileSidebar;
