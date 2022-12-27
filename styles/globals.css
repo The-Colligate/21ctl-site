@@ -7,16 +7,16 @@
 .bg_gradient_l {
   background: linear-gradient(
     180deg,
-    #f24e23 0%,
-    #fbb709 31.81%,
-    #82b805 59.71%,
-    #0da5e4 100%
+    #f24c23cb 0%,
+    #fbb609be 31.81%,
+    #82b805c9 59.71%,
+    #0da3e4c7 100%
   );
   filter: blur(400px);
 }
 
 .bg_gradient_r {
-  background: linear-gradient(180deg, #c22222 0%, #5959cb 100%);
+  background: linear-gradient(180deg, #c22222a4 0%, #5959cb96 100%);
   filter: blur(250px);
 }
 
