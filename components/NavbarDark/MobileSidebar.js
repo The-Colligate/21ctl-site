@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const CloseIcon = () => {
   return (
@@ -29,7 +29,7 @@ const CloseIcon = () => {
           filterUnits="userSpaceOnUse"
           color-interpolation-filters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
