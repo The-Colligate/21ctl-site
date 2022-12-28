@@ -5,19 +5,18 @@
 @tailwind utilities;
 
 .bg_gradient_l {
-  background: linear-gradient(
-    180deg,
-    #f24c23cb 0%,
-    #fbb609be 31.81%,
-    #82b805c9 59.71%,
-    #0da3e4c7 100%
+  background: radial-gradient(
+    #f24c236e 0%,
+    #fbb60979 31.81%,
+    #82b80585 59.71%,
+    #0da3e47c 100%
   );
-  filter: blur(400px);
+  filter: blur(350px);
 }
 
 .bg_gradient_r {
-  background: linear-gradient(180deg, #c22222a4 0%, #5959cb96 100%);
-  filter: blur(250px);
+  background: radial-gradient(#c2222283 0%, #5959cb81 100%);
+  filter: blur(350px);
 }
 
 .rainbow-bg {
@@ -127,6 +126,24 @@
   .hexagon-container {
     width: 400px;
     --s: 120px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg_gradient_l {
+    background: linear-gradient(
+      180deg,
+      #f24c236e 0%,
+      #fbb60979 31.81%,
+      #82b80585 59.71%,
+      #0da3e47c 100%
+    );
+    filter: blur(200px);
+  }
+
+  .bg_gradient_r {
+    background: linear-gradient(180deg, #c2222283 0%, #5959cb81 100%);
+    filter: blur(200px);
   }
 }
 
