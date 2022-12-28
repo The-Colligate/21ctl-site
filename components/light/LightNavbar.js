@@ -17,35 +17,155 @@ export function LightNavbar() {
         />
 
         <ul className="flex space-x-5 largeTablet:hidden">
-          <li>
+          <li className="relative group">
             <a href="#" className="flex items-center">
               Products <CaretDown className="ml-1" />
             </a>
+            <div class="absolute z-10 opacity-0 shadow-lg min-w-max p-3 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-5">
+              <div className="flex flex-nowrap space-x-4 w-full">
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
-          <li>
+          <li className="relative group">
             <a href="#" className="flex items-center">
               Solutions <CaretDown className="ml-1" />
             </a>
+            <div class="absolute z-10 opacity-0 shadow-lg min-w-max p-3 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-5">
+              <div className="flex flex-nowrap space-x-4">
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
-          <li>
+          <li className="relative group">
             <a href="#" className="flex items-center">
               Market Place <CaretDown className="ml-1" />
             </a>
+            <div class="absolute z-10 opacity-0 shadow-lg min-w-max p-3 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-5">
+              <div className="flex flex-nowrap space-x-4">
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
-          <li>
+          <li className="relative group">
             <a href="#" className="flex items-center">
               Company <CaretDown className="ml-1" />
             </a>
+            <div class="absolute z-10 opacity-0 shadow-lg min-w-max p-3 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-5">
+              <div className="flex flex-nowrap space-x-4">
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
-          <li>
+          <li className="relative group">
             <a href="#" className="flex items-center">
               Konet Mail <CaretDown className="ml-1" />
             </a>
+            <div class="absolute z-10 opacity-0 shadow-lg min-w-max p-3 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-5">
+              <div className="flex flex-nowrap space-x-4">
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
-          <li>
+          <li className="relative group">
             <a href="#" className="flex items-center">
               Explore More <CaretDown className="ml-1" />
             </a>
+            <div class="absolute z-10 opacity-0 shadow-lg min-w-max p-3 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-5">
+              <div className="flex flex-nowrap space-x-4">
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                  <ul className="ml-4 space-y-2 list-disc font-semibold">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
 
