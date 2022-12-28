@@ -7,17 +7,17 @@
 .bg_gradient_l {
   background: linear-gradient(
     180deg,
-    #f24c234d 0%,
-    #fbb6094f 31.81%,
-    #82b80554 59.71%,
-    #0da3e441 100%
+    #f24c23cb 0%,
+    #fbb609be 31.81%,
+    #82b805c9 59.71%,
+    #0da3e4c7 100%
   );
   filter: blur(400px);
 }
 
 .bg_gradient_r {
-  background: linear-gradient(180deg, #c2222269 0%, #5959cb60 100%);
-  filter: blur(400px);
+  background: linear-gradient(180deg, #c22222a4 0%, #5959cb96 100%);
+  filter: blur(250px);
 }
 
 .rainbow-bg {
@@ -28,6 +28,113 @@
     #82b805 59.71%,
     #0da5e4 100%
   );
+}
+
+.hexagon-container {
+  font-size: 0; /*disable white space between inline block element */
+  width: 500px;
+  --s: 150px; /* size */
+  --xs: calc(var(--s) - 2);
+  --r: 0.9; /* ratio */
+  /* clip-path */
+  --h: 0.25;
+  --v: 0.5;
+  --hc: calc(clamp(0, var(--h), 0.5) * var(--s));
+  --vc: calc(clamp(0, var(--v), 0.5) * var(--s) * var(--r));
+
+  /*margin */
+  --mv: 2px; /* vertical */
+  --mh: calc(var(--mv) + 5px + (var(--s) - 2 * var(--hc)) / 2); /* horizontal */
+  /* for the float*/
+  --f: calc(2 * var(--s) * var(--r) + 4 * var(--mv) - 2 * var(--vc) - 2px);
+}
+
+.hexagon-container .hex-wrapper {
+  width: var(--s);
+  margin: calc(var(--mv)) var(--mh);
+  height: calc(var(--s) * var(--r));
+  display: inline-block;
+  font-size: initial;
+  clip-path: polygon(
+    var(--hc) 0,
+    calc(100% - var(--hc)) 0,
+    100% var(--vc),
+    100% calc(100% - var(--vc)),
+    calc(100% - var(--hc)) 100%,
+    var(--hc) 100%,
+    0 calc(100% - var(--vc)),
+    0 var(--vc)
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(246, 78, 31, 0.6) 0.01%,
+    rgba(254, 185, 6, 0.6) 31.25%,
+    rgba(3, 165, 240, 0.6) 61.98%,
+    rgba(127, 186, 3, 0.6) 100%
+  );
+  margin-bottom: calc(var(--mv) - var(--vc));
+}
+
+.hexagon-container .hex-wrapper .inner-hex {
+  width: calc(var(--s) - 2);
+  margin: 1px;
+  height: calc(calc(var(--s) - 2) * 0.9);
+  display: inline-block;
+  font-size: initial;
+  clip-path: polygon(
+    var(--hc) 0,
+    calc(100% - var(--hc)) 0,
+    100% var(--vc),
+    100% calc(100% - var(--vc)),
+    calc(100% - var(--hc)) 100%,
+    var(--hc) 100%,
+    0 calc(100% - var(--vc)),
+    0 var(--vc)
+  );
+  background: rgba(246, 78, 31, 0.2);
+  /* margin-bottom: calc(4px - 100px * 0.2885); */
+}
+
+.hex-shape {
+  width: calc(var(--s) - 2px);
+  /* margin: 1px; */
+  height: calc(var(--s) * var(--r) - 2px);
+  clip-path: polygon(
+    var(--hc) 0,
+    calc(100% - var(--hc)) 0,
+    100% var(--vc),
+    100% calc(100% - var(--vc)),
+    calc(100% - var(--hc)) 100%,
+    var(--hc) 100%,
+    0 calc(100% - var(--vc)),
+    0 var(--vc)
+  );
+}
+
+.hexagon-container::before {
+  content: "";
+  width: calc(var(--s) / 2 + var(--mh));
+  float: left;
+  height: 135%;
+  shape-outside: repeating-linear-gradient(
+    #0000 0 calc(var(--f) - 2px),
+    #000 0 var(--f)
+  );
+}
+
+@media only screen and (max-width: 1120px) {
+  .hexagon-container {
+    width: 400px;
+    --s: 120px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hexagon-container {
+    width: 330px;
+    --s: 100px;
+  }
 }
 
 .body {
@@ -41,7 +148,7 @@
 }
 
 .top-section {
-  background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1672096824/Elipse_k6pfke.svg');
+  background-image: url("https://res.cloudinary.com/dqsggbqmf/image/upload/v1672096824/Elipse_k6pfke.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -111,4 +218,3 @@
   visibility: visible;
   translate: 0 0;
 }
-
