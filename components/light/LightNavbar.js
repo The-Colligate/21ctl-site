@@ -10,7 +10,7 @@ export function LightNavbar() {
   return (
     <>
       <div className="flex justify-between items-center py-3 px-20 font-lato tablet:px-10 phone:px-5">
-        <img src="/light-logo.svg" className="dark:hidden tablet:w-14" />
+        <img src="/light-logo.png" className="dark:hidden tablet:w-14 w-14 h-14" />
         <img
           src="/light-logo_dark.svg"
           className="dark:block hidden tablet:w-14"
@@ -220,7 +220,8 @@ const MobileNavbar = ({ isOpen, theme, close }) => {
           </button>
         ) : (
           <>
-            <img src="/light-logo.svg" className="w-14 h-auto dark:hidden" />
+            {/* <img src="/light-logo.svg" className="w-14 h-auto dark:hidden" /> */}
+            <img src="/light-logo.png" className="dark:hidden w-14 h-14" />
             <img
               src="/light-logo_dark.svg"
               className="w-14 h-auto dark:block hidden"
