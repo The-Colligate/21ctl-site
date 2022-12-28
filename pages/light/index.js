@@ -166,7 +166,7 @@ function LightDesign() {
           </div>
         ))}
       </div>
-      <div className="flex flex-col fixed p-2 left-0 space-y-4 top-1/2 rounded-r bg-white dark:bg-black tablet:hidden">
+      <div className="flex flex-col fixed p-2 left-0 space-y-4 top-1/2 rounded-r bg-white tablet:hidden">
         <img className="cursor-pointer" src="/icons/whatsapp.png" />
         <img className="cursor-pointer" src="/icons/instagram.png" />
         <img className="cursor-pointer" src="/icons/phone.png" />
