@@ -1,54 +1,53 @@
-import { LightNavbar, ProductPreview } from "@components/light";
+import { LightNavbar } from "@components/layout/";
+import { ArrowRight } from "@icons/index";
 import { Popover } from "evergreen-ui";
-import { ArrowRight } from "icons";
-import { useState } from "react";
 
 function LightDesign() {
   const products = [
     {
-      icon: "/icons/cloud-computing.svg",
+      icon: "/icons/home/cloud-computing.svg",
       name: "Digital Infrastructure",
       snippet:
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
       link: "#",
     },
     {
-      icon: "/icons/power-lighting.svg",
+      icon: "/icons/home/power-lighting.svg",
       name: "Power",
       snippet:
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
       link: "#",
     },
     {
-      icon: "/icons/credit-card.svg",
+      icon: "/icons/home/credit-card.svg",
       name: "Payment",
       snippet:
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
       link: "#",
     },
     {
-      icon: "/icons/baseline-call.svg",
+      icon: "/icons/home/baseline-call.svg",
       name: "Communication",
       snippet:
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
       link: "#",
     },
     {
-      icon: "/icons/group.svg",
+      icon: "/icons/home/group.svg",
       name: "People",
       snippet:
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
       link: "#",
     },
     {
-      icon: "/icons/computer.svg",
+      icon: "/icons/home/computer.svg",
       name: "Digital Platform",
       snippet:
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
       link: "#",
     },
     {
-      icon: "/icons/globe.svg",
+      icon: "/icons/home/globe.svg",
       name: "Konet Space",
       snippet:
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
@@ -85,7 +84,7 @@ function LightDesign() {
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
                         <img
-                          src="/icons/tree-structure.svg"
+                          src="/icons/home/tree-structure.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -95,7 +94,7 @@ function LightDesign() {
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
                         <img
-                          src="/icons/setting.svg"
+                          src="/icons/home/setting.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -105,7 +104,7 @@ function LightDesign() {
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
                         <img
-                          src="/icons/group-large.svg"
+                          src="/icons/home/group-large.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -115,7 +114,7 @@ function LightDesign() {
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
                         <img
-                          src="/icons/arrow-rotate.svg"
+                          src="/icons/home/arrow-rotate.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -125,7 +124,7 @@ function LightDesign() {
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
                         <img
-                          src="/icons/baseline-call-large.svg"
+                          src="/icons/home/baseline-call-large.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -135,7 +134,7 @@ function LightDesign() {
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
                         <img
-                          src="/icons/credit-card-large.svg"
+                          src="/icons/home/credit-card-large.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -185,10 +184,10 @@ function LightDesign() {
         </div>
       </div>
       <div className="flex flex-col fixed z-[1] p-2 left-0 space-y-4 top-1/3 rounded-r bg-white tablet:hidden">
-        <img className="cursor-pointer w-6" src="/icons/whatsapp.svg" />
-        <img className="cursor-pointer w-6" src="/icons/instagram.svg" />
-        <img className="cursor-pointer w-6" src="/icons/phone.svg" />
-        <img className="cursor-pointer w-6" src="/icons/linkedin.svg" />
+        <img className="cursor-pointer w-6" src="/icons/home/whatsapp.svg" />
+        <img className="cursor-pointer w-6" src="/icons/home/instagram.svg" />
+        <img className="cursor-pointer w-6" src="/icons/home/phone.svg" />
+        <img className="cursor-pointer w-6" src="/icons/home/linkedin.svg" />
       </div>
     </div>
   );
