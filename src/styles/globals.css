@@ -122,6 +122,11 @@
   );
 }
 
+.animate__animated.animate__heartBeat {
+  --animate-duration: 3s;
+}
+
+
 @media only screen and (max-width: 1120px) {
   .hexagon-container {
     width: 400px;
