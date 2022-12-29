@@ -146,7 +146,7 @@ function LightDesign() {
           </div>
         </div>
         <div className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10">
-          {products.map((product) => {
+          {products.map((product, index) => {
             return (
               <Popover
                 key={product.name}
@@ -173,7 +173,7 @@ function LightDesign() {
                 }
               >
                 <div
-                  className="h-24 min-w-[6rem] rounded-full shadow cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                  className="animate__animated animate__heartBeat animate__infinite	infinite h-24 min-w-[6rem] rounded-full shadow cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]" 
                   role="button"
                 >
                   <img src={product.icon} className="h-12 w-auto tablet:h-8" />

@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import 'animate.css';
 import { ThemeProvider } from "next-themes";
 
 
