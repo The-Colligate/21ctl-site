@@ -10,14 +10,14 @@ export function LightNavbar() {
 
   return (
     <>
-      <div className="flex justify-between items-center py-3 px-20 font-lato tablet:px-10 smallTablet:px-5">
+      <div className="flex justify-between items-center space-x-5 py-3 px-20 font-lato tablet:px-10 smallTablet:px-5">
         <img src="/light-logo.svg" className="dark:hidden tablet:w-14" />
         <img
           src="/light-logo_dark.svg"
           className="dark:block hidden tablet:w-14"
         />
 
-        <ul className="flex space-x-5 largeTablet:hidden">
+        <ul className="flex space-x-8 largeTablet:hidden">
           {links.map((link) => (
             <Tooltip
               key={link.name}
