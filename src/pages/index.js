@@ -1,15 +1,15 @@
-import Head from 'next/head';
+import Head from "next/head";
 // import Link from 'next/link';
-import LightDesign from './light/index';
-import { Inter } from '@next/font/google';
-const inter = Inter({ subsets: ['latin'] });
+import LightDesign from "./light/index";
+// import { Inter } from "@next/font/google";
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>21ctl</title>
-        <meta name="description" content="21CTL" />
+        <title>21st Century Technologies</title>
+        <meta name="description" content="21st Century Technologies" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
