@@ -145,7 +145,7 @@ function LightDesign() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10">
+        {/* <div className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10">
           {products.map((product) => {
             return (
               <Popover
@@ -184,7 +184,39 @@ function LightDesign() {
               </Popover>
             );
           })}
-        </div>
+        </div> */}
+        <div className="flex items-center justify-center gap-5 px-20 py-5 mt-16 largeTablet:flex-wrap tablet:px-10 tablet:grid-cols-4 phone:px-5">
+        {products.map((product) => (
+          <div
+            key={product.name}
+            className="group relative min-w-[132px] tablet:min-w-[100px] !transition-all"
+          >
+            <div className="absolute min-w-[160px] -left-7 bottom-28 transition-all duration-300 scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100">
+              <div className="rounded-lg rainbow-bg p-px">
+                <div className="rounded-lg p-5 bg-white dark:bg-black">
+                  <p className="font-semibold">{product.name}</p>
+                  <p className="mt-3">{product.snippet}</p>
+                  <a className="mt-3 flex" href={product.link}>
+                    See more <ArrowRight />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex justify-center pt-5">
+              
+               <div>
+                <div
+                  className="animate__animated animate__heartBeat animate__infinite	infinite h-24 min-w-[6rem] rounded-full shadow cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                  role="button"
+                >
+                  <img src={product.icon} className="h-12 w-auto tablet:h-8" />
+                </div>
+                <p className="mt-4 flex w-13 justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p>
+                </div>
+            </div>
+          </div>
+        ))}
+      </div>
       </div>
       <div className="flex flex-col fixed z-[1] p-2 left-0 space-y-4 top-1/3 rounded-r bg-white tablet:hidden">
         <img className="cursor-pointer w-6" src="/icons/home/whatsapp.svg" />
