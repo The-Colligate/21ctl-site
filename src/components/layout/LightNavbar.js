@@ -28,9 +28,9 @@ export function LightNavbar() {
                 <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50">
                   <div className={`grid ${link.subLinks.length < 5 ? "grid-cols-1" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}>
                     {link.subLinks.map((sublinks) =>(
-                      <div>
-                      <h2 className="uppercase text-sm opacity-50"></h2>
-                      <ul className="ml-4 space-y-2 list-disc font-semibold">
+                      <div key={sublinks.name}>
+                      <h2 key={sublinks.name} className="uppercase text-sm opacity-50"></h2>
+                      <ul  className="ml-4 space-y-2 list-disc font-semibold">
                         <li>{sublinks.name}</li>
                       </ul>
                     </div>
@@ -164,7 +164,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
             {links.map((link, index) => (
               <div key={link.name}>
                
-                <ul className="space-y-5 mt-10 text-lg">
+                <ul key={link.name} className="space-y-5 mt-10 text-lg">
                 <li key={link.name} onClick={() => setShowExpanded([showExpanded[0] ===index ? -1 : index,!showExpanded[1]])}>
                  <a className="flex items-center justify-between">
                    {link.name} { showExpanded[1] && showExpanded[0] ===index ? <CaretDown className="-rotate-180" /> : <CaretDown className="-rotate-90" />}
@@ -173,7 +173,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
                </ul>
                { showExpanded[1] && showExpanded[0] ===index ?  link.subLinks.map((sublinks) =>(
                       
-                      <ul className="list-disc ml-5">
+                      <ul key={sublinks.name} className="list-disc ml-5">
                         <li>{sublinks.name}</li>
                       </ul>
                     )) : <></>}
