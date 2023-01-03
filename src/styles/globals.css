@@ -122,10 +122,34 @@
   );
 }
 
-.animate__animated.animate__heartBeat {
-  --animate-duration: 15s;
+.animate__animated.animate__bounce {
+  --animate-duration: 5s;
 }
 
+.animate__animated.animate__delay-6s{
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  /* -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay); */
+}
+
+
+.animate__animated.animate__delay-7s{
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  /* -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay); */
+}
+
+.animate__animated.animate__delay-8s{
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+.animate__animated.animate__delay-9s{
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
 
 @media only screen and (max-width: 1120px) {
   .hexagon-container {

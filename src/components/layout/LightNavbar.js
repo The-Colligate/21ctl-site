@@ -25,32 +25,19 @@ export function LightNavbar() {
               }}
               trigger="hover"
               content={
-                <div class="min-w-max p-5 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50">
-                  <div className="flex flex-nowrap space-x-5 w-full">
-                    <div>
-                      <h2 className="uppercase text-sm opacity-50">Digital</h2>
-                      <ul className="ml-4 space-y-2 list-disc font-semibold">
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
+                <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50">
+                  <div className={`grid ${link.subLinks.length < 5 ? "grid-cols-1" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}>
+                    {link.subLinks.map((sublinks) =>(
+                      <div key={sublinks.name}>
+                      <h2 key={sublinks.name} className="uppercase text-sm opacity-50"></h2>
+                      <ul  className="ml-4 space-y-2 list-disc font-semibold">
+                        <li>{sublinks.name}</li>
                       </ul>
                     </div>
-                    <div>
-                      <h2 className="uppercase text-sm opacity-50">Digital</h2>
-                      <ul className="ml-4 space-y-2 list-disc font-semibold">
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h2 className="uppercase text-sm opacity-50">Digital</h2>
-                      <ul className="ml-4 space-y-2 list-disc font-semibold">
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                      </ul>
-                    </div>
+                    ))}
+                    
+                    
+
                   </div>
                 </div>
               }
@@ -98,29 +85,58 @@ export function LightNavbar() {
 }
 
 const links = [
-  { name: "Products" },
-  { name: "Solutions" },
-  { name: "Market Place" },
-  { name: "Company" },
-  { name: "Konet Mail" },
-  { name: "Explore More" },
+  {
+    name: "Products", subLinks: [{ name: "Digital Infrastructure", link: "#" },
+    { name: "Power", link: "#" },
+    { name: "Payment", link: "#" },
+    { name: "Communication", link: "#" },
+    { name: "People", link: "#" },
+    { name: "Digital Platform", link: "#" },
+    { name: "Security", link: "#" },
+    { name: "Konet Space", link: "#" },
+    ]
+  },
+  { name: "Solutions", subLinks:  [{ name: "SMS Gateway", link: "#" },
+  { name: "CaaS", link: "#" },
+  
+  ] },
+  { name: "Market Place", subLinks:  [{ name: "Games", link: "#" },
+  { name: "e-Learning", link: "#" },
+  { name: "e-Publishing", link: "#" },
+  { name: "Music", link: "#" },
+  { name: "Mobile Commerce", link: "#" },
+  
+  { name: "Ticketing", link: "#" },
+  { name: "Mobility", link: "#" },
+  { name: "VoD", link: "#" },
+  ] },
+  { name: "Company", subLinks: [{ name: "21st Century Digital Infrastructure Limited", link: "#" },
+  { name: "21st Century Technologies Limited", link: "#" },
+  { name: "KonetPay Nigeria Limited", link: "#" },
+  { name: "21st Century Energy", link: "#" },
+
+  ] },
+  { name: "Konet", subLinks:  [{ name: "Payment", link: "#" },
+  { name: "Lottery ", link: "#" },
+  
+  ] },
+  { name: "Explore More", subLinks: [] },
 ];
 
 const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
-  const [showExpanded, setShowExpanded] = useState(false);
+  const [showExpanded, setShowExpanded] = useState([-1,false]);
 
   return (
     <div
-      className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
-        isOpen ? "translate-x-0" : ""
-      } largeTablet:block dark:bg-[#1f1d1d]`}
+      className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? "translate-x-0" : ""
+        } largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2">
-          {showExpanded ? (
+          {isOpen ? (
             <button
               className="flex items-center"
-              onClick={() => setShowExpanded(false)}
+              onClick={() => setShowExpanded([-1,false])}
             >
               <CaretDown className="mr-2 rotate-90" />
               Back
@@ -136,40 +152,36 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
           )}
           <button
             onClick={() => {
-              setShowExpanded(false);
+              setShowExpanded([-1,false]);
               close();
             }}
           >
             <Close />
           </button>
         </div>
-        {showExpanded ? (
+         
           <div>
-            {links.map((link) => (
+            {links.map((link, index) => (
               <div key={link.name}>
-                <h2 className="uppercase text-sm mt-5 opacity-50">
-                  {link.name}
-                </h2>
-                <ul className="list-disc ml-5">
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                </ul>
+               
+                <ul key={link.name} className="space-y-5 mt-10 text-lg">
+                <li key={link.name} onClick={() => setShowExpanded([showExpanded[0] ===index ? -1 : index,!showExpanded[1]])}>
+                 <a className="flex items-center justify-between">
+                   {link.name} { showExpanded[1] && showExpanded[0] ===index ? <CaretDown className="-rotate-180" /> : <CaretDown className="-rotate-90" />}
+                 </a>
+               </li>
+               </ul>
+               { showExpanded[1] && showExpanded[0] ===index ?  link.subLinks.map((sublinks) =>(
+                      
+                      <ul key={sublinks.name} className="list-disc ml-5">
+                        <li>{sublinks.name}</li>
+                      </ul>
+                    )) : <></>}
+               
               </div>
             ))}
           </div>
-        ) : (
-          <ul className="space-y-5 mt-10 text-lg">
-            {links.map((link) => (
-              <li key={link.name} onClick={() => setShowExpanded(true)}>
-                <a className="flex items-center justify-between">
-                  {link.name} <CaretDown className="-rotate-90" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
+        
         <button
           className="rounded-full fixed bottom-0 right-0 block dark:hidden"
           onClick={() => setTheme("dark")}
