@@ -240,3 +240,11 @@
   visibility: visible;
   translate: 0 0;
 }
+
+.partners{
+  background: linear-gradient(180deg, rgba(54, 49, 45, 0.03) 0%, rgba(255, 113, 0, 0.06) 100%);
+}
+
+/* .figures:nth-child(odd){
+  padding-left: 20px;
+} */
