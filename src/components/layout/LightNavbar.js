@@ -25,32 +25,19 @@ export function LightNavbar() {
               }}
               trigger="hover"
               content={
-                <div class="min-w-max p-5 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50">
-                  <div className="flex flex-nowrap space-x-5 w-full">
-                    <div>
-                      <h2 className="uppercase text-sm opacity-50">Digital</h2>
+                <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50">
+                  <div className={`grid ${ link.subLinks.length < 5 ? "grid-cols-1" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}>
+                    {link.subLinks.map((sublinks) =>(
+                      <div>
+                      <h2 className="uppercase text-sm opacity-50"></h2>
                       <ul className="ml-4 space-y-2 list-disc font-semibold">
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
+                        <li>{sublinks.name}</li>
                       </ul>
                     </div>
-                    <div>
-                      <h2 className="uppercase text-sm opacity-50">Digital</h2>
-                      <ul className="ml-4 space-y-2 list-disc font-semibold">
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h2 className="uppercase text-sm opacity-50">Digital</h2>
-                      <ul className="ml-4 space-y-2 list-disc font-semibold">
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                      </ul>
-                    </div>
+                    ))}
+                    
+                    
+
                   </div>
                 </div>
               }
@@ -98,29 +85,63 @@ export function LightNavbar() {
 }
 
 const links = [
-  { name: "Products" },
-  { name: "Solutions" },
-  { name: "Market Place" },
-  { name: "Company" },
-  { name: "Konet Mail" },
-  { name: "Explore More" },
+  {
+    name: "Products", subLinks: [{ name: "Digital Infrastructure", link: "#" },
+    { name: "Power", link: "#" },
+    { name: "Payment", link: "#" },
+    { name: "Communication", link: "#" },
+    { name: "People", link: "#" },
+    { name: "Digital Platform", link: "#" },
+    { name: "Security", link: "#" },
+    { name: "Konet Space", link: "#" },
+    ]
+  },
+  { name: "Solutions", subLinks:  [{ name: "SMS Gateway", link: "#" },
+  { name: "CaaS", link: "#" },
+  
+  // { name: "Communication", link: "#" },
+  // { name: "People", link: "#" },
+  // { name: "Digital Platform", link: "#" },
+  // { name: "Konet Space", link: "#" },
+  ] },
+  { name: "Market Place", subLinks:  [{ name: "Games", link: "#" },
+  { name: "e-Learning", link: "#" },
+  { name: "e-Publishing", link: "#" },
+  { name: "Music", link: "#" },
+  { name: "Mobile Commerce", link: "#" },
+  
+  { name: "Ticketing", link: "#" },
+  { name: "Mobility", link: "#" },
+  { name: "VoD", link: "#" },
+  ] },
+  { name: "Company", subLinks: [{ name: "21st Century Digital Infrastructure Limited", link: "#" },
+  { name: "21st Century Technologies Limited", link: "#" },
+  { name: "KonetPay Nigeria Limited", link: "#" },
+  { name: "21st Century Energy", link: "#" },
+
+  ] },
+  { name: "Konet", subLinks:  [{ name: "Payment", link: "#" },
+  { name: "Lottery ", link: "#" },
+  
+  // { name: "Konet Space", link: "#" },
+  ] },
+  { name: "Explore More", subLinks: [] },
 ];
 
 const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
-  const [showExpanded, setShowExpanded] = useState(false);
+  const [showExpanded, setShowExpanded] = useState([-1,false]);
 
   return (
     <div
-      className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
-        isOpen ? "translate-x-0" : ""
-      } largeTablet:block dark:bg-[#1f1d1d]`}
+      className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? "translate-x-0" : ""
+        } largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2">
-          {showExpanded ? (
+          {showExpanded[1] ? (
             <button
               className="flex items-center"
-              onClick={() => setShowExpanded(false)}
+              onClick={() => setShowExpanded([-1,false])}
             >
               <CaretDown className="mr-2 rotate-90" />
               Back
@@ -136,7 +157,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
           )}
           <button
             onClick={() => {
-              setShowExpanded(false);
+              setShowExpanded([-1,false]);
               close();
             }}
           >

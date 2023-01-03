@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
       },
+      boxShadow: {
+        'lg': '0 5px 20px -15px #F64E1F',
+      },
       screens: {
         largeTablet: { max: "1024px" },
         // => @media (max-width: 1024px) { ... }

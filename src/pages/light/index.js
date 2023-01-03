@@ -5,27 +5,6 @@ import { Popover } from "evergreen-ui";
 function LightDesign() {
   const products = [
     {
-      icon: "/icons/home/cloud-computing.svg",
-      name: "Digital Infrastructure",
-      snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
-      link: "#",
-    },
-    {
-      icon: "/icons/home/power-lighting.svg",
-      name: "Power",
-      snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
-      link: "#",
-    },
-    {
-      icon: "/icons/home/credit-card.svg",
-      name: "Payment",
-      snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
-      link: "#",
-    },
-    {
       icon: "/icons/home/baseline-call.svg",
       name: "Communication",
       snippet:
@@ -33,8 +12,8 @@ function LightDesign() {
       link: "#",
     },
     {
-      icon: "/icons/home/group.svg",
-      name: "People",
+      icon: "/icons/home/cloud-computing.svg",
+      name: "Digital Infrastructure",
       snippet:
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
       link: "#",
@@ -53,6 +32,38 @@ function LightDesign() {
         "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
       link: "#",
     },
+    {
+      icon: "/icons/home/credit-card.svg",
+      name: "Payment",
+      snippet:
+        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+      link: "#",
+    },
+    {
+      icon: "/icons/home/power-lighting.svg",
+      name: "Power",
+      snippet:
+        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+      link: "#",
+    },
+    
+  
+    {
+      icon: "/icons/home/group.svg",
+      name: "People",
+      snippet:
+        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+      link: "#",
+    },
+    {
+      icon: "/icons/home/security.svg",
+      name: "Security",
+      snippet:
+        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+      link: "#",
+    },
+   
+   
   ];
 
   return (
@@ -191,12 +202,12 @@ function LightDesign() {
             key={product.name}
             className="group relative min-w-[132px] tablet:min-w-[100px] !transition-all"
           >
-            <div className="absolute min-w-[160px] -left-7 bottom-28 transition-all duration-300 scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100">
+            <div className="absolute min-w-[200px] -left-7 bottom-28 transition-all duration-300 scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100">
               <div className="rounded-lg rainbow-bg p-px">
                 <div className="rounded-lg p-5 bg-white dark:bg-black">
-                  <p className="font-semibold">{product.name}</p>
-                  <p className="mt-3">{product.snippet}</p>
-                  <a className="mt-3 flex" href={product.link}>
+                  <p className="font-semibold text-sm ">{product.name}</p>
+                  <p className="mt-3 text-sm">{product.snippet}</p>
+                  <a className="mt-3 flex text-[11px]" href={product.link}>
                     See more <ArrowRight />
                   </a>
                 </div>
@@ -206,12 +217,12 @@ function LightDesign() {
               
                <div>
                 <div
-                  className="h-24 min-w-[6rem] rounded-full shadow cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                  className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
                   role="button"
                 >
                   <img src={product.icon} className="h-12 w-auto tablet:h-8" />
                 </div>
-                <p className="mt-4 flex w-13 justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p>
+                {/* <p className="mt-4 flex w-13 justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p> */}
                 </div>
             </div>
           </div>
