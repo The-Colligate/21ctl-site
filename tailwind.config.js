@@ -15,7 +15,7 @@ module.exports = {
         lato: ["Lato", "sans-serif"],
       },
       boxShadow: {
-        'lg': '0 5px 20px -15px #F64E1F',
+        'lg': '0 10px 30px -15px #F64E1F',
       },
       screens: {
         largeTablet: { max: "1024px" },

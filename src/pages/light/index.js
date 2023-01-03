@@ -213,6 +213,7 @@ function LightDesign() {
                 </div>
               </div>
             </div>
+            <div className="w-full flex justify-center">
             <div className="w-full flex justify-center pt-5">
               
                <div>
@@ -222,14 +223,16 @@ function LightDesign() {
                 >
                   <img src={product.icon} className="h-12 w-auto tablet:h-8" />
                 </div>
-                {/* <p className="mt-4 flex w-13 justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p> */}
                 </div>
             </div>
+          </div>
+          <p className="mt-4 flex w-13 justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p>
+                
           </div>
         ))}
       </div>
       </div>
-      <div className="flex flex-col fixed z-[1] p-2 left-0 space-y-4 top-1/3 rounded-r bg-white tablet:hidden">
+      <div className="flex flex-col fixed z-[1] p-2 left-0 space-y-4 top-2/3 rounded-r bg-white tablet:hidden">
         <img className="cursor-pointer w-6" src="/icons/home/whatsapp.svg" />
         <img className="cursor-pointer w-6" src="/icons/home/instagram.svg" />
         <img className="cursor-pointer w-6" src="/icons/home/phone.svg" />
