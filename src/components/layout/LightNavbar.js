@@ -99,10 +99,6 @@ const links = [
   { name: "Solutions", subLinks:  [{ name: "SMS Gateway", link: "#" },
   { name: "CaaS", link: "#" },
   
-  // { name: "Communication", link: "#" },
-  // { name: "People", link: "#" },
-  // { name: "Digital Platform", link: "#" },
-  // { name: "Konet Space", link: "#" },
   ] },
   { name: "Market Place", subLinks:  [{ name: "Games", link: "#" },
   { name: "e-Learning", link: "#" },
@@ -123,7 +119,6 @@ const links = [
   { name: "Konet", subLinks:  [{ name: "Payment", link: "#" },
   { name: "Lottery ", link: "#" },
   
-  // { name: "Konet Space", link: "#" },
   ] },
   { name: "Explore More", subLinks: [] },
 ];

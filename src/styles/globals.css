@@ -122,10 +122,24 @@
   );
 }
 
-.animate__animated.animate__heartBeat {
-  --animate-duration: 15s;
+.animate__animated.animate__bounce {
+  --animate-duration: 5s;
 }
 
+
+
+
+.animate__animated.animate__delay-7{
+  --animate-delay: 7s;
+}
+
+.animate__animated.animate__delay-8{
+  --animate-delay: 8s;
+}
+
+.animate__animated.animate__delay-9{
+  --animate-delay: 9s;
+}
 
 @media only screen and (max-width: 1120px) {
   .hexagon-container {

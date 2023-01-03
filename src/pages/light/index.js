@@ -29,7 +29,7 @@ function LightDesign() {
       icon: "/icons/home/globe.svg",
       name: "Konet Space",
       snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+        "Konect Workspace is a collection of cloud-based productivity tools and services designed to help teams and organizations work more efficiently and effectively by providing a range of tools and services that facilitate communication, collaboration, and organization.",
       link: "#",
     },
     {
@@ -197,12 +197,12 @@ function LightDesign() {
           })}
         </div> */}
         <div className="flex items-center justify-center gap-5 px-20 py-5 mt-16 largeTablet:flex-wrap tablet:px-10 tablet:grid-cols-4 phone:px-5">
-        {products.map((product) => (
+        {products.map((product, index) => (
           <div
             key={product.name}
-            className="group relative min-w-[132px] tablet:min-w-[100px] !transition-all"
+            className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinite animate__repeat-5 group relative min-w-[132px] tablet:min-w-[100px] !transition-all`}
           >
-            <div className="absolute min-w-[200px] -left-7 bottom-36 transition-all duration-300 scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100">
+            <div className="absolute min-w-[300px] -left-7 bottom-36 transition-all duration-300 scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100">
               <div className="rounded-lg rainbow-bg p-px">
                 <div className="rounded-lg p-5 bg-white dark:bg-black">
                   <p className="font-semibold text-sm ">{product.name}</p>
