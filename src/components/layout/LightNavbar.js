@@ -26,7 +26,7 @@ export function LightNavbar() {
               trigger="hover"
               content={
                 <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50">
-                  <div className={`grid ${ link.subLinks.length < 5 ? "grid-cols-1" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}>
+                  <div className={`grid ${link.subLinks.length < 5 ? "grid-cols-1" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}>
                     {link.subLinks.map((sublinks) =>(
                       <div>
                       <h2 className="uppercase text-sm opacity-50"></h2>
@@ -159,26 +159,27 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
             <Close />
           </button>
         </div>
-        {showExpanded ? (
+        {showExpanded[1] ? (
           <div>
             {links.map((link) => (
               <div key={link.name}>
                 <h2 className="uppercase text-sm mt-5 opacity-50">
                   {link.name}
                 </h2>
-                <ul className="list-disc ml-5">
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                </ul>
+                {link.subLinks.map((sublinks) =>(
+                      
+                      <ul className="list-disc ml-5">
+                        <li>{sublinks.name}</li>
+                      </ul>
+                    ))}
+               
               </div>
             ))}
           </div>
         ) : (
           <ul className="space-y-5 mt-10 text-lg">
             {links.map((link) => (
-              <li key={link.name} onClick={() => setShowExpanded(true)}>
+              <li key={link.name} onClick={() => setShowExpanded([-1,!showExpanded[1]])}>
                 <a className="flex items-center justify-between">
                   {link.name} <CaretDown className="-rotate-90" />
                 </a>

@@ -197,7 +197,7 @@ function LightDesign() {
             );
           })}
         </div> */}
-        <div className="flex items-center justify-center gap-5 px-20 py-5 mt-16 largeTablet:flex-wrap tablet:px-10 tablet:grid-cols-4 phone:px-5">
+        <div className="grid items-center grid-cols-7 justify-center gap-5 px-20 py-5 mt-16 largeTablet:flex-wrap tablet:px-10 tablet:grid-cols-2 phone:grid-cols-2 phone:px-5">
         {products.map((product, index) => (
           <div
             key={product.name}
