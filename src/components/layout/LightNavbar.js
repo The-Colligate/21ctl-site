@@ -133,7 +133,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2">
-          {showExpanded[1] ? (
+          {isOpen ? (
             <button
               className="flex items-center"
               onClick={() => setShowExpanded([-1,false])}
@@ -159,34 +159,29 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
             <Close />
           </button>
         </div>
-        {showExpanded[1] ? (
+         
           <div>
-            {links.map((link) => (
+            {links.map((link, index) => (
               <div key={link.name}>
-                <h2 className="uppercase text-sm mt-5 opacity-50">
-                  {link.name}
-                </h2>
-                {link.subLinks.map((sublinks) =>(
+               
+                <ul className="space-y-5 mt-10 text-lg">
+                <li key={link.name} onClick={() => setShowExpanded([showExpanded[0] ===index ? -1 : index,!showExpanded[1]])}>
+                 <a className="flex items-center justify-between">
+                   {link.name} { showExpanded[1] && showExpanded[0] ===index ? <CaretDown className="-rotate-180" /> : <CaretDown className="-rotate-90" />}
+                 </a>
+               </li>
+               </ul>
+               { showExpanded[1] && showExpanded[0] ===index ?  link.subLinks.map((sublinks) =>(
                       
                       <ul className="list-disc ml-5">
                         <li>{sublinks.name}</li>
                       </ul>
-                    ))}
+                    )) : <></>}
                
               </div>
             ))}
           </div>
-        ) : (
-          <ul className="space-y-5 mt-10 text-lg">
-            {links.map((link) => (
-              <li key={link.name} onClick={() => setShowExpanded([-1,!showExpanded[1]])}>
-                <a className="flex items-center justify-between">
-                  {link.name} <CaretDown className="-rotate-90" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
+        
         <button
           className="rounded-full fixed bottom-0 right-0 block dark:hidden"
           onClick={() => setTheme("dark")}
