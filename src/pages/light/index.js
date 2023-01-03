@@ -8,42 +8,43 @@ function LightDesign() {
       icon: "/icons/home/baseline-call.svg",
       name: "Communication",
       snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+        "We build, provide one to one, one to many, many to many, communication infrastructures and platforms, supporting millions of users transactions and variety of business processes",
       link: "#",
     },
     {
       icon: "/icons/home/cloud-computing.svg",
       name: "Digital Infrastructure",
       snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+        " We have connectivity, data centers & edge computing centers, Towers, Network & 5G enabled platforms for SMBs, SMEs and large Enterprises.",
       link: "#",
     },
-    {
-      icon: "/icons/home/computer.svg",
-      name: "Digital Platform",
-      snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
-      link: "#",
-    },
+    
+    // {
+    //   icon: "/icons/home/computer.svg",
+    //   name: "Digital Platform",
+    //   snippet:
+    //     "We company offers digital communication platforms and infrastructure to support various business processes and handle high volumes of transactions for millions of users.",
+    //   link: "#",
+    // },
     {
       icon: "/icons/home/globe.svg",
       name: "Konet Space",
       snippet:
-        "Konect Workspace is a collection of cloud-based productivity tools and services designed to help teams and organizations work more efficiently and effectively by providing a range of tools and services that facilitate communication, collaboration, and organization.",
+        "Konet space ecosystem allows users and businessess to use their Konet mail to access variety of apps, solutions, products and support services.",
       link: "#",
     },
     {
       icon: "/icons/home/credit-card.svg",
       name: "Payment",
       snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+        "Our secured fintech gateway that allows transfer of monetary values including payment processing, institutional procedures, e-Commerce instruments, rules, standards and technologies.",
       link: "#",
     },
     {
       icon: "/icons/home/power-lighting.svg",
       name: "Power",
       snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+        "21ctl enhouses premier renewable energy, turbine power infrastructure, power plant and electric energy storage system integrations and balancing services.",
       link: "#",
     },
     
@@ -52,14 +53,14 @@ function LightDesign() {
       icon: "/icons/home/group.svg",
       name: "People",
       snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+        "The Digital Academy is a training hub where creative thinkers and distruptors are exposed to highly equiped pre-programmed and mataversed laboratories while interacting with experts in domains such as Cloud computing, Artificial Intelligence, Cyber security, Data analytics and so much more.",
       link: "#",
     },
     {
       icon: "/icons/home/security.svg",
-      name: "Security",
+      name: "Security as Service",
       snippet:
-        "Lorem ipsum dolor sit amet consectetur. Blandit dui mi pretium sed eu amet eget sit.",
+        "21ctl manages your business security, providing cloud-based security service and in-house security management. Our SECaaS business model is available for integration into a corporate infrastructure.",
       link: "#",
     },
    
@@ -91,7 +92,7 @@ function LightDesign() {
             <div className="h-full flex justify-center -mt-10 mx-auto largeTablet:mt-14 smallTablet:mt-8 phone:mt-6 mb-20">
               <div className="flex">
                 <div className="hexagon-container">
-                  <div className="hex-wrapper relative p-[1px]">
+                  <div className="hex-wrapper relative p-[1px] hover:animate__animated hover:animate__flip">
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
                         <img
@@ -200,20 +201,20 @@ function LightDesign() {
         {products.map((product, index) => (
           <div
             key={product.name}
-            className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinite animate__repeat-5 group relative min-w-[132px] tablet:min-w-[100px] !transition-all`}
+            className={`group relative min-w-[132px] tablet:min-w-[100px] !transition-all`}
           >
             <div className="absolute min-w-[300px] -left-7 bottom-36 transition-all duration-300 scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100">
               <div className="rounded-lg rainbow-bg p-px">
                 <div className="rounded-lg p-5 bg-white dark:bg-black">
                   <p className="font-semibold text-sm ">{product.name}</p>
                   <p className="mt-3 text-sm">{product.snippet}</p>
-                  <a className="mt-3 flex text-[11px]" href={product.link}>
-                    See more <ArrowRight />
+                  <a className="mt-3 flex items-center text-[11px]" href={product.link}>
+                    Go to Site <ArrowRight />
                   </a>
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-center">
+            <div className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinite w-full flex justify-center `}>
             <div className="w-full flex justify-center pt-5">
               
                <div>
