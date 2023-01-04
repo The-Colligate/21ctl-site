@@ -221,7 +221,7 @@ const Digital = () => {
 
           <div>
             <marquee behavior="scroll" direction="left">
-              <div className="flex items-center space-x-10 space-y-0 py-16 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
+              <div className="flex items-center sm:space-x-10 space-x-5 py-16 largeTablet:text-center">
                 <Image
                   src={accesslogo}
                   className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
