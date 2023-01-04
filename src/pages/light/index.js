@@ -79,7 +79,7 @@ function LightDesign() {
                 <span className="text-primary-orange">Innovative</span>{' '}
                 Solutions for all Communication Needs
               </h1>
-              <p className="text-base mt-6 largeTablet:text-xl smallTablet:text-lg">
+              <p className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
                 21st Century Technologies Limited , an ecosystem Technology
                 company, building bold, ambitious and audacious digital
                 infrastructure projects . Integrated infrastructure that is
