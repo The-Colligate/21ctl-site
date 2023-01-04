@@ -149,7 +149,7 @@ const Digital = () => {
             <h1 className=" text-5xl font-bold tracking-wide">
               <span className="text-primary-orange">Data </span> Centers
             </h1>
-            <p className="tracking-wider font-light text-xl py-4 max-w-2xl m-auto">
+            <p className="tracking-wider font-light text-lg py-4 max-w-3xl m-auto">
               Our data center is a secure and reliable infrastructure that
               stores, processes, and manages critical data and applications. It
               enables efficient communication, collaboration, and
@@ -158,41 +158,38 @@ const Digital = () => {
           </div>
 
           <div className="flex sm:flex-row flex-col justify-center sm:space-x-10 space-x-0 mt-5 px-5">
-            <div className="shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
+            <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">
                   Ikeja Data Center
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-xl font-light leading">
-                  Lorem ipsum dolor sit amet consectetur. Ullamcorper et sed
-                  consectetur dictum.
+                <p className="py-2 pt-4 tracking-wide text-lg font-light leading">
+                Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                 </p>
               </div>
-              <Image src={ikeja} className="inline-block w-full" />
+              <Image src={ikeja} className="inline-block w-full fit" />
             </div>
-            <div className="shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
+            <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">
                   Ikoyi Data Center
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-xl font-light leading">
-                  Lorem ipsum dolor sit amet consectetur. Ullamcorper et sed
-                  consectetur dictum.
+                <p className="py-2 pt-4 tracking-wide text-lg font-light leading">
+                Our six-story data center in Africa is innovative and equipped with a 10MW Turbine system, providing ample power and space for clients to grow.
                 </p>
               </div>
-              <Image src={lekki} className="inline-block w-full" />
+              <Image src={lekki} className="inline-block w-full h-fit" />
             </div>
-            <div className="shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
+            <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">
                   Apapa Data Center
                 </h3>
                 <p className="py-2 pt-4 tracking-wide text-xl font-light leading">
-                  Lorem ipsum dolor sit amet consectetur. Ullamcorper et sed
-                  consectetur dictum.
+                Our Apapa data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                 </p>
               </div>
-              <Image src={apapa} className="inline-block w-full" />
+              <Image src={apapa} className="inline-block w-full h-fit" />
             </div>
           </div>
         </section>
