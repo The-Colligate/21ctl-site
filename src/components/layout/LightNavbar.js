@@ -138,8 +138,8 @@ const links = [
   },
   {
     name: "Konet", subLinks: [
-    //   { name: "Payment", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/" },
-    // { name: "Lottery ", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/" },
+      { name: "Payment", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/mdi_credit-card.svg" },
+    { name: "Lottery ", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/dashicons_tickets-alt.svg" },
 
     ]
   },
