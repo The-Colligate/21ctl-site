@@ -39,12 +39,12 @@ const Digital = () => {
         <LightNavbar />
 
         <section className="flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0">
-          <div>
+          <div className='max-w-3xl'>
             <h1 className="text-7xl tracking-normal font-lato font-medium whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
               <span className="text-primary-orange leading-8">Digital </span>
               Infrastructure
             </h1>
-            <p className="text-2xl font-extralight mt-6 tracking-wider largeTablet:text-md smallTablet:text-sm">
+            <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">
               We provide reliability, security, and high traffic handling for a
               seamless customer experience
             </p>
@@ -61,12 +61,12 @@ const Digital = () => {
           </div>
         </section>
 
-        <section>
-          <div className="flex sm:flex-row flex-col flex-wrap justify-evenly sm:px-0 px-8 ">
+        <section className='sm:px-36 px-8 my-10'>
+          <div className="flex sm:flex-row flex-col sm:space-x-40 space-x-0 ">
             <div className="text-2xl pb-5">
               Our statistics reveal <br /> more about us.
             </div>
-            <div className="figures flex flex-wrap  sm:space-x-8 space-x-4">
+            <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
               <div className="text-center">
                 <p className="text-primary-orange text-4xl font-semibold">
                   200+
