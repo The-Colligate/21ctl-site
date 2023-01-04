@@ -16,7 +16,7 @@ function LightDesign() {
       name: "Digital Infrastructure",
       snippet:
         " We have connectivity, data centers & edge computing centers, Towers, Network & 5G enabled platforms for SMBs, SMEs and large Enterprises.",
-      link: "#",
+      link: "/digital",
     },
     
     // {
@@ -208,7 +208,7 @@ function LightDesign() {
                 <div className="rounded-lg p-5 bg-white dark:bg-black">
                   <p className="font-semibold text-sm ">{product.name}</p>
                   <p className="mt-3 text-sm">{product.snippet}</p>
-                  <a className="mt-3 flex items-center text-[11px]" href={product.link}>
+                  <a className="mt-3 flex items-center text-[11px]" href={product.link} target="_blank" rel="noreferrer">
                     Go to Site <ArrowRight />
                   </a>
                 </div>
