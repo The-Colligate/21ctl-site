@@ -168,7 +168,7 @@ const Digital = () => {
                   consectetur dictum.
                 </p>
               </div>
-              <Image src={apapa} className="inline-block w-full" />
+              <Image src={ikeja} className="inline-block w-full" />
             </div>
             <div className="shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
@@ -180,7 +180,7 @@ const Digital = () => {
                   consectetur dictum.
                 </p>
               </div>
-              <Image src={apapa} className="inline-block w-full" />
+              <Image src={lekki} className="inline-block w-full" />
             </div>
             <div className="shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
