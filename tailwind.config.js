@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         "primary-orange": "#F64E1F",
         "primary-orange-light": "rgba(246, 78, 31, 0.2);",
+        "darkShade ":"rgba(0, 0, 0, 0.5);"
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],

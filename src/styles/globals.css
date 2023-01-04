@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  /* overflow-y: hidden; */
+}
+
 .bg_gradient_l {
   background: radial-gradient(
     #f24c236e 0%,
@@ -42,8 +46,8 @@
   --vc: calc(clamp(0, var(--v), 0.5) * var(--s) * var(--r));
 
   /*margin */
-  --mv: 2px; /* vertical */
-  --mh: calc(var(--mv) + 5px + (var(--s) - 2 * var(--hc)) / 2); /* horizontal */
+  --mv: 3px; /* vertical */
+  --mh: calc(var(--mv) + 1px + (var(--s) - 2 * var(--hc)) / 2); /* horizontal */
   /* for the float*/
   --f: calc(2 * var(--s) * var(--r) + 4 * var(--mv) - 2 * var(--vc) - 2px);
 }
@@ -129,16 +133,14 @@
 .animate__animated.animate__delay-6s{
   -webkit-animation-delay: 6s;
   animation-delay: 6s;
-  /* -webkit-animation-delay: var(--animate-delay);
-  animation-delay: var(--animate-delay); */
+
 }
 
 
 .animate__animated.animate__delay-7s{
   -webkit-animation-delay: 7s;
   animation-delay: 7s;
-  /* -webkit-animation-delay: var(--animate-delay);
-  animation-delay: var(--animate-delay); */
+
 }
 
 .animate__animated.animate__delay-8s{
@@ -150,6 +152,32 @@
   -webkit-animation-delay: 9s;
   animation-delay: 9s;
 }
+
+.flip-front, .flip-back {
+ 
+  -webkit-backface-visibility: hidden !important; /* Safari */
+  backface-visibility: hidden !important;
+  transition: transform .6s linear;
+}
+
+.flip-front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.flip-back{
+  background: #ffffff;
+  transform: perspective(600px) rotateY(180deg);
+  /* transform: perspective(600px) rotateY(0deg); */
+}
+
+.flip-front:hover {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip-back:hover {
+  
+  transform: perspective(600px) rotateY(0deg) !important;
+}
+
 
 @media only screen and (max-width: 1120px) {
   .hexagon-container {

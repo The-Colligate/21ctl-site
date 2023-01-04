@@ -2,6 +2,8 @@ import { CaretDown } from "@icons/index";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 import { Tooltip } from "evergreen-ui";
+import  Image  from "next/image";
+
 
 export function LightNavbar() {
   const { theme, setTheme } = useTheme();
@@ -25,18 +27,23 @@ export function LightNavbar() {
               }}
               trigger="hover"
               content={
-                <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white dark:bg-black dark:bg-opacity-50">
-                  <div className={`grid ${link.subLinks.length < 5 ? "grid-cols-1" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}>
-                    {link.subLinks.map((sublinks) =>(
-                      <div key={sublinks.name}>
-                      <h2 key={sublinks.name} className="uppercase text-sm opacity-50"></h2>
-                      <ul  className="ml-4 space-y-2 list-disc font-semibold">
-                        <li>{sublinks.name}</li>
-                      </ul>
-                    </div>
+
+                <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-50">
+                  <h2 className="text-darkShade">{link.name.toUpperCase()}</h2>
+                  <hr />
+                  <div className={`grid grid-cols-2  items-start flex-nowrap mr-5 w-full`}>
+                    {link.subLinks.map((sublinks) => (
+                      <div key={sublinks.name} className="mt-5">
+
+
+                        <div className="flex" > <Image height={20} width={20}
+                          src={`${sublinks.icon}`}
+                        /> <div className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</div></div>
+                        <div className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </div>
+                      </div>
                     ))}
-                    
-                    
+
+
 
                   </div>
                 </div>
@@ -86,45 +93,61 @@ export function LightNavbar() {
 
 const links = [
   {
-    name: "Products", subLinks: [{ name: "Digital Infrastructure", link: "#" },
-    { name: "Power", link: "#" },
-    { name: "Payment", link: "#" },
-    { name: "Communication", link: "#" },
-    { name: "People", link: "#" },
-    { name: "Digital Platform", link: "#" },
-    { name: "Security", link: "#" },
-    { name: "Konet Space", link: "#" },
+    name: "Products", subLinks: [
+      { name: "Power", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/game-icons_power-lightning.svg" },
+      { name: "Digital Infrastructure", link: "#", text: "Providing seamless customer experience", icon: "/icons/home/eos-icons_cloud-computing.svg" },
+      { name: "Communication", link: "#", text: "Connecting with effective communication.", icon: "/icons/home/call-icon.svg" },
+      { name: "Payment", link: "#", text: "Effortlessly processing your payments", icon: "/icons/home/mdi_credit-card.svg" },
+
+      { name: "People", link: "#", text: "Connecting with the right people.", icon: "/icons/home/people-icon.svg" },
+      // { name: "Digital Platform", link: "#", text: "Powering businesses with energy.", icon: "" },
+      { name: "Security", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/security-lock.svg" },
+      { name: "Konet Space", link: "#", text: "Experience the power of Konet Space.", icon: "/icons/home/earth-filled.svg" },
     ]
   },
-  { name: "Solutions", subLinks:  [{ name: "SMS Gateway", link: "#" },
-  { name: "CaaS", link: "#" },
-  
-  ] },
-  { name: "Market Place", subLinks:  [{ name: "Games", link: "#" },
-  { name: "e-Learning", link: "#" },
-  { name: "e-Publishing", link: "#" },
-  { name: "Music", link: "#" },
-  { name: "Mobile Commerce", link: "#" },
-  
-  { name: "Ticketing", link: "#" },
-  { name: "Mobility", link: "#" },
-  { name: "VoD", link: "#" },
-  ] },
-  { name: "Company", subLinks: [{ name: "21st Century Digital Infrastructure Limited", link: "#" },
-  { name: "21st Century Technologies Limited", link: "#" },
-  { name: "KonetPay Nigeria Limited", link: "#" },
-  { name: "21st Century Energy", link: "#" },
+  {
+    name: "Solutions", subLinks: [
+      { name: "CAAS", link: "#", text: "Streamlining operations with CAAS.", icon: "/icons/home/mdi_cloud-check-variant.svg" }, { name: "SMS Gateway", link: "#", text: "Connecting you with reliable SMS solutions.", icon: "/icons/home/fa6-solid_comment-sms.svg" },
 
-  ] },
-  { name: "Konet", subLinks:  [{ name: "Payment", link: "#" },
-  { name: "Lottery ", link: "#" },
-  
-  ] },
+    ]
+  },
+  {
+    name: "Market Place", subLinks: [{ name: "E-Learning", link: "#", text: "Empowering learners with E-learning.", icon: "/icons/home/hat-graduation-filled.svg" },
+    { name: "E-Publishing", link: "#", text: "Revolutionizing publishing with e-platform.", icon: "/icons/home/ph_book-fill.svg" },
+
+
+    { name: "Music", link: "#", text: "Unleashing the power of music.", icon: "/icons/home/ph_music-note-fill.svg" },
+
+    { name: "Mobile Commerce", link: "#", text: "Connecting you to mobile commerce.", icon: "/icons/home/shopping-bag-sharp.svg" },
+
+
+    { name: "Ticketing", link: "#", text: "Simplifying ticketing with innovation.", icon: "/icons/home/dashicons_tickets-alt.svg" },
+    { name: "Mobility", link: "#", text: "Empowering your business with mobility.", icon: "/icons/home/directions-bus-rounded.svg" },
+    { name: "Konet Space", link: "#", text: "", icon: "/icons/home/earth-filled.svg" },
+    { name: "Games", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/dashicons_tickets-alt.svg" },
+
+    ]
+  },
+  {
+    name: "Company", subLinks: [{ name: "21st Century Digital Infrastructure Limited", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
+    { name: "21st Century Technologies Limited", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
+    { name: "KonetPay Nigeria Limited", link: "#", text: "Experience the power of Konet pay.", icon: "/icons/home/KonetPay logo.svg" },
+    { name: "21st Century Energy", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
+
+    ]
+  },
+  {
+    name: "Konet", subLinks: [
+    //   { name: "Payment", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/" },
+    // { name: "Lottery ", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/" },
+
+    ]
+  },
   { name: "Explore More", subLinks: [] },
 ];
 
 const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
-  const [showExpanded, setShowExpanded] = useState([-1,false]);
+  const [showExpanded, setShowExpanded] = useState([-1, false]);
 
   return (
     <div
@@ -136,7 +159,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
           {isOpen ? (
             <button
               className="flex items-center"
-              onClick={() => setShowExpanded([-1,false])}
+              onClick={() => setShowExpanded([-1, false])}
             >
               <CaretDown className="mr-2 rotate-90" />
               Back
@@ -152,36 +175,36 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
           )}
           <button
             onClick={() => {
-              setShowExpanded([-1,false]);
+              setShowExpanded([-1, false]);
               close();
             }}
           >
             <Close />
           </button>
         </div>
-         
-          <div>
-            {links.map((link, index) => (
-              <div key={link.name}>
-               
-                <ul key={link.name} className="space-y-5 mt-10 text-lg">
-                <li key={link.name} onClick={() => setShowExpanded([showExpanded[0] ===index ? -1 : index,!showExpanded[1]])}>
-                 <a className="flex items-center justify-between">
-                   {link.name} { showExpanded[1] && showExpanded[0] ===index ? <CaretDown className="-rotate-180" /> : <CaretDown className="-rotate-90" />}
-                 </a>
-               </li>
-               </ul>
-               { showExpanded[1] && showExpanded[0] ===index ?  link.subLinks.map((sublinks) =>(
-                      
-                      <ul key={sublinks.name} className="list-disc ml-5">
-                        <li>{sublinks.name}</li>
-                      </ul>
-                    )) : <></>}
-               
-              </div>
-            ))}
-          </div>
-        
+
+        <div>
+          {links.map((link, index) => (
+            <div key={link.name}>
+
+              <ul key={link.name} className="space-y-5 mt-10 text-lg">
+                <li key={link.name} onClick={() => setShowExpanded([showExpanded[0] === index ? -1 : index, !showExpanded[1]])}>
+                  <a className="flex items-center justify-between">
+                    {link.name} {showExpanded[1] && showExpanded[0] === index ? <CaretDown className="-rotate-180" /> : <CaretDown className="-rotate-90" />}
+                  </a>
+                </li>
+              </ul>
+              {showExpanded[1] && showExpanded[0] === index ? link.subLinks.map((sublinks) => (
+
+                <ul key={sublinks.name} className="list-disc ml-5">
+                  <li>{sublinks.name}</li>
+                </ul>
+              )) : <></>}
+
+            </div>
+          ))}
+        </div>
+
         <button
           className="rounded-full fixed bottom-0 right-0 block dark:hidden"
           onClick={() => setTheme("dark")}
