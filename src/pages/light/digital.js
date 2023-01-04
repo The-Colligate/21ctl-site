@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head'
 import { LightNavbar, Footer } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
 import { Popover } from 'evergreen-ui';
@@ -8,6 +9,7 @@ import SiemensEnergy from '/public/logo/Siemens Energy.svg';
 import SchneiderElectric from '/public/logo/Schneider Electric.svg';
 import PCCWGlobal from '/public/logo/PCCW Global.svg';
 import polygon from '/public/logo/Polygon.png';
+import HeroImage from '/public/logo/hero-image.png';
 
 import connectLogo from '/public/logo/connect21ctl.png';
 
@@ -30,6 +32,11 @@ import vmware from 'public/logo/partners/VMware - png 0.png';
 
 const Digital = () => {
   return (
+    <>
+    <Head>
+      <title>Digital Infrastructure - 21 CTL</title>
+      <meta name="description" content="" />
+    </Head>
     <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative">
       <div className="absolute w-full h-full flex justify-between items-center">
         <div className="w-full min-h-[50%] bg_gradient_l"></div>
@@ -48,13 +55,13 @@ const Digital = () => {
               We provide reliability, security, and high traffic handling for a
               seamless customer experience
             </p>
-            <button className="bg-primary-orange rounded-xl text-white py-2 px-6 my-6">
+            {/* <button className="bg-primary-orange rounded-xl text-white py-2 px-6 my-6">
               Reach Us
-            </button>
+            </button> */}
           </div>
           <div>
             <Image
-              src={polygon}
+              src={HeroImage}
               width={650}
               className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
             />
@@ -190,7 +197,7 @@ const Digital = () => {
           </div>
         </section>
 
-        <section className="py-32 sm:mt-0 mt-32">
+        <section className="five-gr py-32 sm:mt-0 mt-32">
           <div className="max-w-4xl flex sm:flex-row flex-col justify-center items-center m-auto bg-white rounded-3xl sm:h-96 h-full ">
             <div className="px-5 sm:py-0 py-10 text-black dark:text-black">
               <h4 className="text-5xl font-semibold text-center">
@@ -269,6 +276,7 @@ const Digital = () => {
         <Footer />
       </div>
     </div>
+    </>
   );
 };
 
