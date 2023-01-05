@@ -1,6 +1,6 @@
 import React from 'react';
 import Communication from '../pages/light/communication';
-const Communication = () => {
+const CommunicationPage = () => {
   return (
     <div>
       <Communication />
@@ -8,4 +8,4 @@ const Communication = () => {
   );
 };
 
-export default Communication;
+export default CommunicationPage;

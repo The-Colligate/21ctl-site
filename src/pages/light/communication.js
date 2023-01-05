@@ -277,4 +277,4 @@ const Communication = () => {
   );
 };
 
-export default Digital;
+export default Communication;
