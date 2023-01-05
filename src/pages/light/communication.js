@@ -30,7 +30,7 @@ import orange from 'public/logo/partners/Orange - png 0.png';
 import usembassy from 'public/logo/partners/The U.S. Embassy - png 0.png';
 import vmware from 'public/logo/partners/VMware - png 0.png';
 
-const Digital = () => {
+const Communication = () => {
   return (
     <>
     <Head>

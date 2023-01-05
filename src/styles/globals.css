@@ -297,6 +297,15 @@
   background: linear-gradient(180deg, rgba(54, 49, 45, 0.03) 0%, rgba(255, 113, 0, 0.06) 100%);
 }
 
+.show {
+  /* position: fixed;
+  width: 100%; */
+  top: 0;
+  transition: top 1s ease-in-out;
+  z-index: 99;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 30%);
+  /* border-bottom: 1px solid #fecc29; */
+}
 /* .figures:nth-child(odd){
   padding-left: 20px;
 } */

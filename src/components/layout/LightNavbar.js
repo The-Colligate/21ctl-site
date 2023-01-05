@@ -11,9 +11,21 @@ export function LightNavbar() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
+  
+  useEffect(() => {
+    // const addclass = theme === "light" ? "show-white" : "show-black";
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        return document.querySelector('.navbar').classList.add('show');
+      }
+      return document.querySelector('.navbar').classList.remove('show');
+    });
+  });
+
   return (
     <>
-      <div className="flex justify-between items-center space-x-5 py-3 px-20 font-lato tablet:px-10 smallTablet:px-5">
+      <div className="navbar flex justify-between items-center space-x-5 py-3 px-20 font-lato tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black">
         <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
         <img
           src="/light-logo_dark.svg"
