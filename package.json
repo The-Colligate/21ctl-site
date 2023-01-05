@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bradgarropy/next-seo": "^1.2.0",
     "@next/font": "13.1.1",
     "@nextui-org/react": "^1.0.0-beta.11",
     "animate.css": "^4.1.1",

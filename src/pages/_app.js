@@ -1,3 +1,4 @@
+import SEO from '@bradgarropy/next-seo';
 import '../styles/globals.css';
 import 'animate.css';
 import { ThemeProvider } from 'next-themes';
@@ -6,7 +7,21 @@ import Head from 'next/head';
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <SEO
+        icon="/favicons/android-icon-192x192.png"
+        facebook={{
+          image: '/favicons/android-icon-192x192.png',
+          url: 'https://21ctl-site.vercel.app/',
+          type: 'website',
+        }}
+        twitter={{
+          image: '/favicons/android-icon-192x192.png',
+          site: 'https://21ctl-site.vercel.app/',
+          card: 'summary',
+        }}
+      />
       <Head>
+        <meta name="description" content="21st Century Technologies" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="apple-touch-icon"
