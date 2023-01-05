@@ -45,7 +45,7 @@ const Digital = () => {
       <div className="w-full min-h-screen overflow-y-auto flex flex-col z-[1]">
         <LightNavbar />
 
-        <section className="flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0">
+        <section className="flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
           <div className='max-w-3xl'>
             <h1 className="text-7xl tracking-normal font-lato font-medium whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
               <span className="text-primary-orange leading-8">Digital </span>
