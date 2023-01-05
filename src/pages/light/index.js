@@ -1,7 +1,9 @@
 import { LightNavbar } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
-import { Popover } from "@nextui-org/react";
+// import { Popover } from "@nextui-org/react";
 import { useState } from 'react';
+import { Popover} from 'evergreen-ui'
+
 
 function LightDesign() {
   const [displayPopup,setDisplayPopup] = useState([false, -1]);
@@ -266,11 +268,29 @@ function LightDesign() {
                 key={product.name}
                 
                 triggerType='menu'
-                isOpen={displayPopup[0] && displayPopup[1] === index}
+                isShown={displayPopup[0] && displayPopup[1] === index}
                   
-                
-              >
-<Popover.Trigger
+                content={<div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto"
+                onMouseOver={(e)=>setDisplayPopup([true, index]) } 
+                onMouseOut={(e)=>setDisplayPopup([false, index]) }
+               >
+                   <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
+                     <p>{product.name}</p>
+                     <p className="mt-3 text-xs opacity-60">
+                       {product.snippet}
+                     </p>
+                     <a
+                       className="mt-3 flex items-center text-xs group hover:text-primary-orange"
+                       href={product.link}
+                       target="_blank"
+                       rel="noreferrer"
+                     >
+                       Go to site{' '}
+                       <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
+                     </a>
+                   </div>
+                 </div>
+             }
 
 >
 
@@ -295,30 +315,7 @@ function LightDesign() {
                       {product.name}
                     </p>
                   </div>
-                </Popover.Trigger>
-                <Popover.Content>
-                <div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto"
-                 onMouseOver={(e)=>setDisplayPopup([true, index]) } 
-                 onMouseOut={(e)=>setDisplayPopup([false, index]) }
-                >
-                    <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
-                      <p>{product.name}</p>
-                      <p className="mt-3 text-xs opacity-60">
-                        {product.snippet}
-                      </p>
-                      <a
-                        className="mt-3 flex items-center text-xs group hover:text-primary-orange"
-                        href={product.link}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Go to site{' '}
-                        <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
-                      </a>
-                    </div>
-                  </div>
-                </Popover.Content>
-              </Popover>
+                        </Popover>
             );
           })}
         </div>

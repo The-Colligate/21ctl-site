@@ -47,8 +47,8 @@ export function LightNavbar() {
                           src={`${sublinks.icon}`}
                         /> 
                            
-                            <div className="ml-4 space-y-2 list-disc font-semibold dark:text-white"> {sublinks.name}</div></div>
-                          <div className="ml-9 space-y-2 list-disc text-[10px] dark:text-white">{sublinks.text} </div>
+                            <a href="#" className="ml-4 space-y-2 list-disc font-semibold dark:text-white"> {sublinks.name}</a></div>
+                          <a href="#" className="ml-9 space-y-2 list-disc text-[10px] dark:text-white">{sublinks.text} </a>
                         </div>
                       ))}
                     </div>
@@ -63,8 +63,8 @@ export function LightNavbar() {
 
                           <div className="flex" > <Image height={20} width={20}
                             src={`${sublinks.icon}`}
-                          /> <div className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</div></div>
-                          <div className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </div>
+                          /> <a href="#" className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</a></div>
+                          <a  href="#" className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </a>
                         </div>
                       ))}
                     </div>

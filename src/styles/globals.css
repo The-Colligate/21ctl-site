@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  /* overflow-y: hidden; */
-}
 
 .bg_gradient_l {
   background: radial-gradient(
