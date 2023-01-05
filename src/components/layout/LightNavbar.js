@@ -223,7 +223,9 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
           {isOpen ? (
             <button
               className="flex items-center"
-              onClick={() => setShowExpanded([-1, false])}
+              onClick={() => {setShowExpanded([-1, false]);
+                close();}
+              }
             >
               <CaretDown className="mr-2 rotate-90" />
               Back
@@ -241,6 +243,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
             onClick={() => {
               setShowExpanded([-1, false]);
               close();
+              console.log("clicked");
             }}
           >
             <Close />

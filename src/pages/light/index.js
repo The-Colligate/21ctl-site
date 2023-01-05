@@ -295,7 +295,7 @@ function LightDesign() {
 >
 
                 <div
-                  className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full flex  flex-col justify-center`}
+                  className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full z-10 flex  flex-col justify-center`}
                   role="button"
                   onMouseOver={(e)=>setDisplayPopup([true, index]) } 
                   onMouseOut={(e)=>setDisplayPopup([false, index]) }
