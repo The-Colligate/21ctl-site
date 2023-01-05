@@ -1,7 +1,8 @@
 import { CaretDown } from "@icons/index";
 import { useState } from "react";
 import { useTheme } from "next-themes";
-import { Popover, Tooltip } from "evergreen-ui";
+
+import { Tooltip } from "@nextui-org/react";
 import Image from "next/image";
 
 
@@ -20,11 +21,13 @@ export function LightNavbar() {
 
         <ul className="flex space-x-8 largeTablet:hidden">
           {links.map((link) => (
-            <Popover
+            <Tooltip
               key={link.name}
-              statelessProps={{
-                className: "!p-0 !min-w-[170px] !rounded-lg !bg-transparent",
-              }}
+              // statelessProps={{
+              //   className: "!p-0 !min-w-[170px] !rounded-lg !bg-transparent",
+              // }}
+              // position={Position.BOTTOM_LEFT}
+              placement="bottom"
               trigger="hover"
               content={
 <div className="min-w-max flex">
@@ -70,7 +73,7 @@ export function LightNavbar() {
                   {link.name} <CaretDown className="ml-1" />
                 </a>
               </li>
-            </Popover>
+            </Tooltip>
           ))}
         </ul>
 
@@ -109,7 +112,14 @@ export function LightNavbar() {
 
 const links = [
   {
-    name: "Products", subLinks: [
+    name: "Products", subLinks:  [
+      { name: "CAAS", link: "#", text: "Streamlining operations with CAAS.", icon: "/icons/home/mdi_cloud-check-variant.svg" }, { name: "SMS Gateway", link: "#", text: "Connecting you with reliable SMS solutions.", icon: "/icons/home/fa6-solid_comment-sms.svg" },
+
+    ],
+    extras: []
+  },
+  {
+    name: "Solutions", subLinks: [
       { name: "Power", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/game-icons_power-lightning.svg" },
       { name: "Digital Infrastructure", link: "#", text: "Providing seamless customer experience", icon: "/icons/home/eos-icons_cloud-computing.svg" },
       { name: "Communication", link: "#", text: "Connecting with effective communication.", icon: "/icons/home/call-icon.svg" },
@@ -119,13 +129,6 @@ const links = [
       // { name: "Digital Platform", link: "#", text: "Powering businesses with energy.", icon: "" },
       { name: "Security", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/security-lock.svg" },
       { name: "Konet Space", link: "#", text: "Experience the power of Konet Space.", icon: "/icons/home/earth-filled.svg" },
-    ],
-    extras: []
-  },
-  {
-    name: "Solutions", subLinks: [
-      { name: "CAAS", link: "#", text: "Streamlining operations with CAAS.", icon: "/icons/home/mdi_cloud-check-variant.svg" }, { name: "SMS Gateway", link: "#", text: "Connecting you with reliable SMS solutions.", icon: "/icons/home/fa6-solid_comment-sms.svg" },
-
     ],
     extras: []
   },

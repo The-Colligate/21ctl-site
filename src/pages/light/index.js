@@ -1,6 +1,6 @@
 import { LightNavbar } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
-import { Popover } from 'evergreen-ui';
+import { Popover } from "@nextui-org/react";
 
 function LightDesign() {
   const products = [
@@ -239,12 +239,32 @@ function LightDesign() {
             return (
               <Popover
                 key={product.name}
-                statelessProps={{
-                  className: "!p-0 !min-w-[270px] !rounded-lg",
-                }}
-                trigger="hover"
-                content={
-                  <div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto">
+                
+               
+                  
+                
+              >
+<Popover.Trigger>
+                <div
+                  className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full flex  flex-col justify-center`}
+                  role="button"
+                >
+                  <div className="w-full flex justify-center pt-5">
+
+                  
+                    <div
+                      className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                      role="button"
+                    >
+                      <img src={product.icon} className="h-12 w-auto tablet:h-8" />
+                    </div>
+               
+                  </div>
+                  <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p>
+                </div>
+                </Popover.Trigger>
+                <Popover.Content>
+                <div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto">
                     <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
                       <p>{product.name}</p>
                       <p className="mt-3 text-xs opacity-60">
@@ -259,25 +279,7 @@ function LightDesign() {
                       </a>
                     </div>
                   </div>
-                }
-              >
-
-                <div
-                  className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full flex  flex-col justify-center`}
-                  role="button"
-                >
-                  <div className="w-full flex justify-center pt-5">
-
-
-                    <div
-                      className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
-                      role="button"
-                    >
-                      <img src={product.icon} className="h-12 w-auto tablet:h-8" />
-                    </div>
-                  </div>
-                  <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p>
-                </div>
+                 </Popover.Content>
               </Popover>
             );
           })}
