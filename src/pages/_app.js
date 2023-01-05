@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <SEO
-      title='21st Century Technologies'
+        title="21st Century Technologies"
         icon="/favicons/android-icon-192x192.png"
         facebook={{
           image: '/favicons/android-icon-192x192.png',
@@ -21,9 +21,16 @@ export default function App({ Component, pageProps }) {
           card: 'summary',
         }}
       />
+
       <Head>
         <meta name="description" content="21st Century Technologies" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="21st Century Technologies" />
+        <meta property="og:url" content="https://21ctl-site.vercel.app/" />
+        <meta
+          property="og:image"
+          content="/favicons/android-icon-192x192.png"
+        />
         <link
           rel="apple-touch-icon"
           sizes="57x57"
