@@ -1,6 +1,6 @@
 import { LightNavbar } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
-import { Popover } from "@nextui-org/react";
+import { Popover } from '@nextui-org/react';
 
 function LightDesign() {
   const products = [
@@ -82,10 +82,9 @@ function LightDesign() {
               <p className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
                 21st Century Technologies Limited, an ecosystem Technology
                 company, building bold, ambitious and audacious digital
-                infrastructure projects. 
-                Integrated infrastructure that is
-                sustainable, resilient, secure, low latency, protected that
-                will enable our customers to adopt cutting edge technology to
+                infrastructure projects. Integrated infrastructure that is
+                sustainable, resilient, secure, low latency, protected that will
+                enable our customers to adopt cutting edge technology to
                 accelerate technology modernization, exceptional corporate
                 performance and transformation. We are well positioned and fully
                 mobilized to provide unmatched operational excellence and
@@ -102,11 +101,16 @@ function LightDesign() {
               <div className="flex">
                 <div className="hexagon-container">
                   <div className="hex-wrapper relative p-[1px]">
-                  <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
+                    <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
                       <div className=" w-full h-full flex items-center justify-center dark:bg-black bg-white !m-0   ">
                         <div className="rounded-lg p-5 bg-white dark:bg-black flex items-center justify-center flex-col   ">
-                          <p className="font-semibold text-[9px] phone:text-[7px] ">Software Development</p>
-                          <p className="mt-3 text-[9px] phone:text-[7px] text-center">We develop and deploy business solutions like HR, CRM, cTap, Call Centre Software, etc.</p>
+                          <p className="font-semibold text-[9px] phone:text-[7px] ">
+                            Software Development
+                          </p>
+                          <p className="mt-3 text-[9px] phone:text-[7px] text-center">
+                            We develop and deploy business solutions like HR,
+                            CRM, cTap, Call Centre Software, etc.
+                          </p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
                           </a> */}
@@ -121,14 +125,18 @@ function LightDesign() {
                         />
                       </div>
                     </div>
-                    
                   </div>
                   <div className="hex-wrapper relative p-[1px]">
-                  <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
+                    <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-white  !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
-                          <p className="font-semibold text-center text-[9px] phone:text-[7px] ">Technology Solutions</p>
-                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">These include Transmission, IT Infrastructure, Access Control, Cloud services, etcetera.</p>
+                          <p className="font-semibold text-center text-[9px] phone:text-[7px] ">
+                            Technology Solutions
+                          </p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">
+                            These include Transmission, IT Infrastructure,
+                            Access Control, Cloud services, etcetera.
+                          </p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
                           </a> */}
@@ -143,14 +151,18 @@ function LightDesign() {
                         />
                       </div>
                     </div>
-                    
                   </div>
                   <div className="hex-wrapper relative p-[1px]">
-                  <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
+                    <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-white dark:bg-black !m-0">
                         <div className="rounded-lg p-5 bg-white flip-back dark:bg-black">
-                          <p className="font-semibold text-center  text-[9px] phone:text-[7px]">Training & Consulting</p>
-                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">We Train and Consult in areas including Networks and Transmission.</p>
+                          <p className="font-semibold text-center  text-[9px] phone:text-[7px]">
+                            Training & Consulting
+                          </p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">
+                            We Train and Consult in areas including Networks and
+                            Transmission.
+                          </p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
                           </a> */}
@@ -165,14 +177,18 @@ function LightDesign() {
                         />
                       </div>
                     </div>
-                    
                   </div>
                   <div className="hex-wrapper relative p-[1px]">
-                  <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-back">
+                    <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center dark:bg-black justify-center bg-white !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
-                          <p className="font-semibold text-center text-[9px] phone:text-[7px]">Telecoms Solutions</p>
-                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">We provide Voice and Data Services such as (E1, VOIP, Dark Fiber, Point 2 Point, etc.)</p>
+                          <p className="font-semibold text-center text-[9px] phone:text-[7px]">
+                            Telecoms Solutions
+                          </p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">
+                            We provide Voice and Data Services such as (E1,
+                            VOIP, Dark Fiber, Point 2 Point, etc.)
+                          </p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
                           </a> */}
@@ -187,15 +203,18 @@ function LightDesign() {
                         />
                       </div>
                     </div>
-                    
                   </div>
                   <div className="hex-wrapper relative p-[1px]">
-                  <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-back">
+                    <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center justify-center dark:bg-black bg-white !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
-                          <p className="font-semibold text-[9px] text-center phone:text-[7px]">Media Solutions</p>
-                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">Specifically designed for Live and On-Demand Online Video and Audio Content Streaming.</p>
-
+                          <p className="font-semibold text-[9px] text-center phone:text-[7px]">
+                            Media Solutions
+                          </p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">
+                            Specifically designed for Live and On-Demand Online
+                            Video and Audio Content Streaming.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -207,15 +226,18 @@ function LightDesign() {
                         />
                       </div>
                     </div>
-                    
                   </div>
                   <div className="hex-wrapper relative p-[1px]">
-                  <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
+                    <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center justify-center dark:bg-black bg-white !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
-                          <p className="font-semibold text-[9px] text-center phone:text-[7px]">E-Business & Security</p>
-                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">These are solutions designed for Web and Mobile Payment, Remittances & Security.</p>
-
+                          <p className="font-semibold text-[9px] text-center phone:text-[7px]">
+                            E-Business & Security
+                          </p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">
+                            These are solutions designed for Web and Mobile
+                            Payment, Remittances & Security.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -227,44 +249,39 @@ function LightDesign() {
                         />
                       </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-         <div className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10">
+        <div className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10">
           {products.map((product, index) => {
             return (
-              <Popover
-                key={product.name}
-                
-               
-                  
-                
-              >
-<Popover.Trigger>
-                <div
-                  className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full flex  flex-col justify-center`}
-                  role="button"
-                >
-                  <div className="w-full flex justify-center pt-5">
-
-                  
-                    <div
-                      className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
-                      role="button"
-                    >
-                      <img src={product.icon} className="h-12 w-auto tablet:h-8" />
+              <Popover key={product.name}>
+                <Popover.Trigger>
+                  <div
+                    className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full flex  flex-col justify-center`}
+                    role="button"
+                  >
+                    <div className="w-full flex justify-center pt-5">
+                      <div
+                        className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                        role="button"
+                      >
+                        <img
+                          src={product.icon}
+                          className="h-12 w-auto tablet:h-8"
+                        />
+                      </div>
                     </div>
-               
+                    <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">
+                      {product.name}
+                    </p>
                   </div>
-                  <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p>
-                </div>
                 </Popover.Trigger>
                 <Popover.Content>
-                <div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto">
+                  <div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto">
                     <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
                       <p>{product.name}</p>
                       <p className="mt-3 text-xs opacity-60">
@@ -273,18 +290,20 @@ function LightDesign() {
                       <a
                         className="mt-3 flex items-center text-xs group hover:text-primary-orange"
                         href={product.link}
+                        target="_blank"
+                        rel="noreferrer"
                       >
-                        See more{" "}
+                        See more{' '}
                         <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
                       </a>
                     </div>
                   </div>
-                 </Popover.Content>
+                </Popover.Content>
               </Popover>
             );
           })}
-        </div> 
-         
+        </div>
+
         {/* <div className="flex items-center  justify-center gap-5 px-20 py-5 mt-16 flex-nowrap largeTablet:flex-wrap tablet:px-10 tablet:grid-cols-2 phone:grid-cols-2 phone:px-5">
           {products.map((product, index) => (
             <div
