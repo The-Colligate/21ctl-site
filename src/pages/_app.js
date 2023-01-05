@@ -9,14 +9,14 @@ export default function App({ Component, pageProps }) {
     <>
       <SEO
         title="21st Century Technologies"
-        icon="/favicons/android-icon-192x192.png"
+        icon={`https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.ico`}
         facebook={{
-          image: '/favicons/android-icon-192x192.png',
+          image: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.jpg',
           url: 'https://21ctl-site.vercel.app/',
           type: 'website',
         }}
         twitter={{
-          image: '/favicons/android-icon-192x192.png',
+          image: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.jpg',
           site: 'https://21ctl-site.vercel.app/',
           card: 'summary',
         }}
@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:url" content="https://21ctl-site.vercel.app/" />
         <meta
           property="og:image"
-          content="/favicons/android-icon-192x192.png"
+          content="https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.jpg"
         />
         <link
           rel="apple-touch-icon"
