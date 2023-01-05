@@ -127,8 +127,8 @@ function LightDesign() {
                   <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-white  !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
-                          <p className="font-semibold text-center text-[9px] ">Technology Solutions</p>
-                          <p className="mt-3 text-[9px] text-center">These include Transmission, IT Infrastructure, Access Control, Cloud services, etcetera.</p>
+                          <p className="font-semibold text-center text-[9px] phone:text-[7px] ">Technology Solutions</p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">These include Transmission, IT Infrastructure, Access Control, Cloud services, etcetera.</p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
                           </a> */}
@@ -149,8 +149,8 @@ function LightDesign() {
                   <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-white dark:bg-black !m-0">
                         <div className="rounded-lg p-5 bg-white flip-back dark:bg-black">
-                          <p className="font-semibold text-center  text-[9px] ">Training & Consulting</p>
-                          <p className="mt-3 text-[9px] text-center">We Train and Consult in areas including Networks and Transmission.</p>
+                          <p className="font-semibold text-center  text-[9px] phone:text-[7px]">Training & Consulting</p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">We Train and Consult in areas including Networks and Transmission.</p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
                           </a> */}
@@ -171,8 +171,8 @@ function LightDesign() {
                   <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center dark:bg-black justify-center bg-white !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
-                          <p className="font-semibold text-center text-[9px] ">Telecoms Solutions</p>
-                          <p className="mt-3 text-[9px] text-center">We provide Voice and Data Services such as (E1, VOIP, Dark Fiber, Point 2 Point, etc.)</p>
+                          <p className="font-semibold text-center text-[9px] phone:text-[7px]">Telecoms Solutions</p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">We provide Voice and Data Services such as (E1, VOIP, Dark Fiber, Point 2 Point, etc.)</p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
                           </a> */}
@@ -193,8 +193,8 @@ function LightDesign() {
                   <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center justify-center dark:bg-black bg-white !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
-                          <p className="font-semibold text-[9px] text-center">Media Solutions</p>
-                          <p className="mt-3 text-[9px] text-center">Specifically designed for Live and On-Demand Online Video and Audio Content Streaming.</p>
+                          <p className="font-semibold text-[9px] text-center phone:text-[7px]">Media Solutions</p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">Specifically designed for Live and On-Demand Online Video and Audio Content Streaming.</p>
 
                         </div>
                       </div>
@@ -213,8 +213,8 @@ function LightDesign() {
                   <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
                       <div className="hex-shape w-full h-full flex items-center justify-center dark:bg-black bg-white !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
-                          <p className="font-semibold text-[9px] text-center">E-Business & Security</p>
-                          <p className="mt-3 text-[9px] text-center">These are solutions designed for Web and Mobile Payment, Remittances & Security.</p>
+                          <p className="font-semibold text-[9px] text-center phone:text-[7px]">E-Business & Security</p>
+                          <p className="mt-3 text-[9px] text-center phone:text-[7px]">These are solutions designed for Web and Mobile Payment, Remittances & Security.</p>
 
                         </div>
                       </div>
@@ -276,7 +276,7 @@ function LightDesign() {
                       <img src={product.icon} className="h-12 w-auto tablet:h-8" />
                     </div>
                   </div>
-                  <p className="mt-4 flex justify-center items-center text-sm group font-semibold text-primary-orange">{product.name}</p>
+                  <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">{product.name}</p>
                 </div>
               </Popover>
             );
