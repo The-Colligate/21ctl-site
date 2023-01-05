@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 
 import { Tooltip } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export function LightNavbar() {
@@ -264,7 +265,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
               {showExpanded[1] && showExpanded[0] === index ? link.subLinks.map((sublinks) => (
 
                 <ul key={sublinks.name} className="list-disc ml-5">
-                  <li>{sublinks.name}</li>
+                  <li ><Link href="/" >{sublinks.name}</Link></li>
                 </ul>
               )) : <></>}
 
