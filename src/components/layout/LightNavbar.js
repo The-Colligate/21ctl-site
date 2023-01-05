@@ -1,7 +1,7 @@
 import { CaretDown } from "@icons/index";
 import { useState } from "react";
 import { useTheme } from "next-themes";
-
+import { NavClose } from "@icons/close";
 import { Tooltip } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -216,17 +216,16 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
 
   return (
     <div
-      className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? "translate-x-0" : ""
-        } largeTablet:block dark:bg-[#1f1d1d]`}
+      className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
+        isOpen ? "translate-x-0" : ""
+      } largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2">
-          {isOpen ? (
+          {showExpanded[1] ? (
             <button
               className="flex items-center"
-              onClick={() => {setShowExpanded([-1, false]);
-                close();}
-              }
+              onClick={() => setShowExpanded(false)}
             >
               <CaretDown className="mr-2 rotate-90" />
               Back
@@ -242,36 +241,52 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
           )}
           <button
             onClick={() => {
-              setShowExpanded([-1, false]);
+              setShowExpanded([-1,false]);
               close();
             }}
           >
-            <Close />
+            <NavClose />
           </button>
         </div>
-
-        <div>
-          {links.map((link, index) => (
-            <div key={link.name}>
-
-              <ul key={link.name} className="space-y-5 mt-10 text-lg">
-                <li key={link.name} onClick={() => setShowExpanded([showExpanded[0] === index ? -1 : index, !showExpanded[1]])}>
-                  <a className="flex items-center justify-between">
-                    {link.name} {showExpanded[1] && showExpanded[0] === index ? <CaretDown className="-rotate-180" /> : <CaretDown className="-rotate-90" />}
-                  </a>
-                </li>
-              </ul>
-              {showExpanded[1] && showExpanded[0] === index ? link.subLinks.map((sublinks) => (
-
-                <ul key={sublinks.name} className="list-disc ml-5">
-                  <li ><Link href="/" >{sublinks.name}</Link></li>
-                </ul>
-              )) : <></>}
-
-            </div>
-          ))}
-        </div>
-
+        {showExpanded[1] ? (
+          <div>
+            {links.map((link, index) => (
+            
+           <> {showExpanded[0] === index ?   <div key={link.name}>
+                <h2 className="uppercase text-sm mt-5 opacity-50">
+                  {link.name}
+                </h2>
+                
+                {link.subLinks.map((sublinks) => 
+                 <ul key={sublinks.name} className="list-disc ml-5">
+                   <li ><Link href="/" >{sublinks.name}</Link></li>
+                 </ul>
+               )}
+                
+              </div> : <></>}</>
+            ))}
+          </div>
+        ) : (
+          <ul className="space-y-5 mt-10 text-lg">
+            {links.map((link, index) => (
+              <li key={link.name} onClick={() => setShowExpanded([index,true])}>
+                <a className="flex items-center justify-between">
+                  {link.name} <CaretDown className="-rotate-90" />
+                </a>
+              </li>
+            ))}
+            <li>
+                <a className="flex items-center justify-between">
+                  Konet Mail
+                </a>
+              </li>
+              <li>
+                <a className="flex items-center justify-between">
+                  Explore
+                </a>
+              </li>
+          </ul>
+        )}
         <button
           className="rounded-full fixed bottom-0 right-0 block dark:hidden"
           onClick={() => setTheme("dark")}
@@ -290,6 +305,87 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
     </div>
   );
 };
+
+
+// const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
+//   const [showExpanded, setShowExpanded] = useState([-1, false]);
+
+//   return (
+//     <div
+//       className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? "translate-x-0" : ""
+//         } largeTablet:block dark:bg-[#1f1d1d]`}
+//     >
+//       <div className="relative w-full h-full overflow-auto p-5 pt-1">
+//         <div className="flex justify-between mt-2">
+//           {isOpen ? (
+//             <button
+//               className="flex items-center"
+//               onClick={() => {setShowExpanded([-1, false]);
+//                 close();}
+//               }
+//             >
+//               <CaretDown className="mr-2 rotate-90" />
+//               Back
+//             </button>
+//           ) : (
+//             <>
+//               <img src="/light-logo.svg" className="w-14 h-auto dark:hidden" />
+//               <img
+//                 src="/light-logo_dark.svg"
+//                 className="w-14 h-auto dark:block hidden"
+//               />
+//             </>
+//           )}
+//           <button
+//             onClick={() => {
+//               setShowExpanded([-1, false]);
+//               close();
+//             }}
+//           >
+//             <Close />
+//           </button>
+//         </div>
+
+//         <div>
+//           {links.map((link, index) => (
+//             <div key={link.name}>
+
+//               <ul key={link.name} className="space-y-5 mt-10 text-lg">
+//                 <li key={link.name} onClick={() => setShowExpanded([showExpanded[0] === index ? -1 : index, !showExpanded[1]])}>
+//                   <a className="flex items-center justify-between">
+//                     {link.name} {showExpanded[1] && showExpanded[0] === index ? <CaretDown className="-rotate-180" /> : <CaretDown className="-rotate-90" />}
+//                   </a>
+//                 </li>
+//               </ul>
+//               {showExpanded[1] && showExpanded[0] === index ? link.subLinks.map((sublinks) => (
+
+//                 <ul key={sublinks.name} className="list-disc ml-5">
+//                   <li ><Link href="/" >{sublinks.name}</Link></li>
+//                 </ul>
+//               )) : <></>}
+
+//             </div>
+//           ))}
+//         </div>
+
+//         <button
+//           className="rounded-full fixed bottom-0 right-0 block dark:hidden"
+//           onClick={() => setTheme("dark")}
+//           title="Switch to dark mode"
+//         >
+//           <Moon />
+//         </button>
+//         <button
+//           className="rounded-full fixed bottom-0 right-0 hidden dark:block"
+//           onClick={() => setTheme("light")}
+//           title="Switch to light mode"
+//         >
+//           <Sun />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
 
 const Menu = () => (
   <svg
