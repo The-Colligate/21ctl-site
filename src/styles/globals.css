@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  /* overflow-y: hidden; */
-}
 
 .bg_gradient_l {
   background: radial-gradient(
@@ -68,14 +65,16 @@
     0 calc(100% - var(--vc)),
     0 var(--vc)
   );
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.6) 0%,
     rgba(246, 78, 31, 0.6) 0.01%,
     rgba(254, 185, 6, 0.6) 31.25%,
     rgba(3, 165, 240, 0.6) 61.98%,
     rgba(127, 186, 3, 0.6) 100%
-  );
+  ); */
+  background: white;
+  
   margin-bottom: calc(var(--mv) - var(--vc));
 }
 
@@ -113,6 +112,7 @@
     0 calc(100% - var(--vc)),
     0 var(--vc)
   );
+  
 }
 
 .hexagon-container::before {

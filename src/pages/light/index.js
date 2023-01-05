@@ -1,8 +1,14 @@
 import { LightNavbar } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
-import { Popover } from '@nextui-org/react';
+// import { Popover } from "@nextui-org/react";
+import { useState } from 'react';
+import { Popover} from 'evergreen-ui'
+
 
 function LightDesign() {
+  const [displayPopup,setDisplayPopup] = useState([false, -1]);
+
+ 
   const products = [
     {
       icon: '/icons/home/baseline-call.svg',
@@ -258,97 +264,61 @@ function LightDesign() {
         <div className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10">
           {products.map((product, index) => {
             return (
-              <Popover key={product.name}>
-                <Popover.Trigger>
-                  <div
-                    className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full flex  flex-col justify-center`}
-                    role="button"
-                  >
-                    <div className="w-full flex justify-center pt-5">
-                      <div
-                        className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
-                        role="button"
-                      >
-                        <img
-                          src={product.icon}
-                          className="h-12 w-auto tablet:h-8"
-                        />
-                      </div>
-                    </div>
-                    <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">
-                      {product.name}
-                    </p>
-                  </div>
-                </Popover.Trigger>
-                <Popover.Content>
-                  <div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto">
-                    <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
-                      <p>{product.name}</p>
-                      <p className="mt-3 text-xs opacity-60">
-                        {product.snippet}
-                      </p>
-                      <a
-                        className="mt-3 flex items-center text-xs group hover:text-primary-orange"
-                        href={product.link}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        See more{' '}
-                        <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
-                      </a>
-                    </div>
-                  </div>
-                </Popover.Content>
-              </Popover>
-            );
-          })}
-        </div>
+              <Popover
+                key={product.name}
+                
+                triggerType='menu'
+                isShown={displayPopup[0] && displayPopup[1] === index}
+                  
+                content={<div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto"
+                onMouseOver={(e)=>setDisplayPopup([true, index]) } 
+                onMouseOut={(e)=>setDisplayPopup([false, index]) }
+               >
+                   <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
+                     <p>{product.name}</p>
+                     <p className="mt-3 text-xs opacity-60">
+                       {product.snippet}
+                     </p>
+                     <a
+                       className="mt-3 flex items-center text-xs group hover:text-primary-orange"
+                       href={product.link}
+                       target="_blank"
+                       rel="noreferrer"
+                     >
+                       Go to site{' '}
+                       <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
+                     </a>
+                   </div>
+                 </div>
+             }
 
-        {/* <div className="flex items-center  justify-center gap-5 px-20 py-5 mt-16 flex-nowrap largeTablet:flex-wrap tablet:px-10 tablet:grid-cols-2 phone:grid-cols-2 phone:px-5">
-          {products.map((product, index) => (
-            <div
-              key={product.name}
-              className={`group relative min-w-[132px] tablet:min-w-[100px] !transition-all`}
-            >
-              <div className="absolute min-w-[300px] -left-7 bottom-36 transition-all duration-300 scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100">
-                <div className="rounded-lg rainbow-bg p-px">
-                  <div className="rounded-lg p-5 bg-white dark:bg-black">
-                    <p className="font-semibold text-sm ">{product.name}</p>
-                    <p className="mt-3 text-sm">{product.snippet}</p>
-                    <a
-                      className="mt-3 flex items-center text-[11px]"
-                      href={product.link}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Go to Site <ArrowRight />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinite w-full flex justify-center `}
-              >
-                <div className="w-full flex justify-center pt-5">
-                  <div>
+>
+
+                <div
+                  className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full z-10 flex  flex-col justify-center`}
+                  role="button"
+                  onMouseOver={(e)=>setDisplayPopup([true, index]) } 
+                  onMouseOut={(e)=>setDisplayPopup([false, index]) }
+                >
+                  <div className="w-full flex justify-center pt-5">
+
+                  
                     <div
                       className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
                       role="button"
                     >
-                      <img
-                        src={product.icon}
-                        className="h-12 w-auto tablet:h-8"
-                      />
+                      <img src={product.icon} className="h-12 w-auto tablet:h-8" />
                     </div>
+                   
                   </div>
-                </div>
-              </div>
-              <p className="mt-4 flex w-13 justify-center items-center text-center text-sm group font-semibold text-primary-orange">
-                {product.name}
-              </p>
-            </div>
-          ))}
-        </div> */}
+                  <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">
+                      {product.name}
+                    </p>
+                  </div>
+                        </Popover>
+            );
+          })}
+        </div>
       </div>
       <div className="flex flex-col fixed z-[1] p-2 right-0 space-y-4 top-1/3 rounded-r bg-white tablet:hidden">
         <svg
