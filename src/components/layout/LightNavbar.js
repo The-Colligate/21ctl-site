@@ -1,5 +1,5 @@
 import { CaretDown } from "@icons/index";
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { useTheme } from "next-themes";
 import { NavClose } from "@icons/close";
 import { Tooltip } from "@nextui-org/react";
