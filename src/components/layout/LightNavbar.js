@@ -48,8 +48,8 @@ export function LightNavbar() {
                           src={`${sublinks.icon}`}
                         /> 
                            
-                            <a href="/" className="ml-4 space-y-2 list-disc font-semibold dark:text-white"> {sublinks.name}</a></div>
-                          <a href="/" className="ml-9 space-y-2 list-disc text-[10px] dark:text-white">{sublinks.text} </a>
+                            <Link href="/" className="ml-4 space-y-2 list-disc font-semibold dark:text-white"> {sublinks.name}</Link></div>
+                          <Link href="/" className="ml-9 space-y-2 list-disc text-[10px] dark:text-white">{sublinks.text} </Link>
                         </div>
                       ))}
                     </div>
@@ -64,8 +64,8 @@ export function LightNavbar() {
 
                           <div className="flex" > <Image height={20} width={20}
                             src={`${sublinks.icon}`}
-                          /> <a href="/" className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</a></div>
-                          <a  href="/" className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </a>
+                          /> <Link href="/" className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</Link></div>
+                          <Link  href="/" className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </Link>
                         </div>
                       ))}
                     </div>
@@ -244,7 +244,6 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
             onClick={() => {
               setShowExpanded([-1, false]);
               close();
-              console.log("clicked");
             }}
           >
             <Close />
