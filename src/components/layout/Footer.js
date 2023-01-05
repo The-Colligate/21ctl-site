@@ -64,11 +64,15 @@ export function Footer() {
 
           <div className="flex items-center pt-2">
             <PhoneIcon />{' '}
-            <span className="text-black dark:text-white ml-3">Phone</span>
+            <span className="text-black dark:text-white ml-3">
+              <a href="tel:+23412707777">+234 1 270 7777</a>
+            </span>
           </div>
           <div className="flex pt-2">
             <MailIcon />{' '}
-            <span className="text-black dark:text-white ml-3">Email us</span>
+            <span className="text-black dark:text-white ml-3">
+              <a href="mailto:commercial@21ctl.com">commercial@21ctl.com</a>
+            </span>
           </div>
         </div>
       </div>
