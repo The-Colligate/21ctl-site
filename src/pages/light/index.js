@@ -1,8 +1,12 @@
 import { LightNavbar } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
 import { Popover } from "@nextui-org/react";
+import { useState } from 'react';
 
 function LightDesign() {
+  const [displayPopup,setDisplayPopup] = useState([false, -1]);
+
+ 
   const products = [
     {
       icon: '/icons/home/baseline-call.svg',
@@ -240,14 +244,19 @@ function LightDesign() {
               <Popover
                 key={product.name}
                 
-               
+                triggerType='menu'
+                isOpen={displayPopup[0] && displayPopup[1] === index}
                   
                 
               >
-<Popover.Trigger>
+<Popover.Trigger
+
+>
                 <div
                   className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full flex  flex-col justify-center`}
                   role="button"
+                  onMouseOver={(e)=>setDisplayPopup([true, index]) } 
+                  onMouseOut={(e)=>setDisplayPopup([false, index]) }
                 >
                   <div className="w-full flex justify-center pt-5">
 
@@ -264,7 +273,10 @@ function LightDesign() {
                 </div>
                 </Popover.Trigger>
                 <Popover.Content>
-                <div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto">
+                <div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto"
+                 onMouseOver={(e)=>setDisplayPopup([true, index]) } 
+                 onMouseOut={(e)=>setDisplayPopup([false, index]) }
+                >
                     <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
                       <p>{product.name}</p>
                       <p className="mt-3 text-xs opacity-60">
@@ -273,6 +285,8 @@ function LightDesign() {
                       <a
                         className="mt-3 flex items-center text-xs group hover:text-primary-orange"
                         href={product.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         See more{" "}
                         <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />

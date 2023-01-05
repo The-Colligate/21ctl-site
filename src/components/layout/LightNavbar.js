@@ -27,43 +27,49 @@ export function LightNavbar() {
               //   className: "!p-0 !min-w-[170px] !rounded-lg !bg-transparent",
               // }}
               // position={Position.BOTTOM_LEFT}
+            
               placement="bottom"
               trigger="hover"
+             
               content={
-<div className="min-w-max flex">
-                <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-50">
-                  <h2 className="text-darkShade">{link.name.toUpperCase()}</h2>
-                  <hr />
-                  <div className={`grid grid-cols-2  items-start flex-nowrap mr-5 w-full`}>
-                    {link.subLinks.map((sublinks) => (
-                      <div key={sublinks.name} className="mt-5">
+
+                <div className="min-w-max flex">
+                  <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-50">
+                    <h2 className="text-darkShade">{link.name.toUpperCase()}</h2>
+                    <hr />
+                    <div className={`grid grid-cols-2  items-start flex-nowrap mr-5 w-full`}>
+                      {link.subLinks.map((sublinks) => (
+                        <div key={sublinks.name} className="mt-5 dark:text-white">
 
 
-                        <div className="flex" > <Image height={20} width={20}
+                          <div className="flex" >
+                            <Image height={20} width={20}
                           src={`${sublinks.icon}`}
-                        /> <div className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</div></div>
-                        <div className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </div>
-                      </div>
-                    ))}
+                        /> 
+                           
+                            <div className="ml-4 space-y-2 list-disc font-semibold dark:text-white"> {sublinks.name}</div></div>
+                          <div className="ml-9 space-y-2 list-disc text-[10px] dark:text-white">{sublinks.text} </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div className=" min-w-[250px] flex items-center justify-center bg-silver">
-                <h2 className="text-darkShade"></h2>
-                  
-                  <div className={`grid grid-cols-2 flex-nowrap  mx-5 w-full`}>
-                    {link.extras.map((sublinks) => (
-                      <div key={sublinks.name} className="mt-5">
+                  <div className=" min-w-[250px] flex items-center justify-center bg-silver">
+                    <h2 className="text-darkShade"></h2>
+
+                    <div className={`grid grid-cols-2 flex-nowrap  mx-5 w-full`}>
+                      {link.extras.map((sublinks) => (
+                        <div key={sublinks.name} className="mt-5">
 
 
-                        <div className="flex" > <Image height={20} width={20}
-                          src={`${sublinks.icon}`}
-                        /> <div className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</div></div>
-                        <div className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </div>
-                      </div>
-                    ))}
-</div>
+                          <div className="flex" > <Image height={20} width={20}
+                            src={`${sublinks.icon}`}
+                          /> <div className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</div></div>
+                          <div className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </div>
+                        </div>
+                      ))}
+                    </div>
 
-                </div>
+                  </div>
 
                 </div>
               }
@@ -75,6 +81,16 @@ export function LightNavbar() {
               </li>
             </Tooltip>
           ))}
+          <li className="relative hover:text-primary-orange">
+                <a href="#" className="flex items-center">
+                  Konet Mail
+                </a>
+              </li>
+              <li className="relative hover:text-primary-orange">
+                <a href="#" className="flex items-center">
+                  Explore more
+                </a>
+              </li>
         </ul>
 
         <div className="flex space-x-4">
@@ -112,7 +128,7 @@ export function LightNavbar() {
 
 const links = [
   {
-    name: "Products", subLinks:  [
+    name: "Products", subLinks: [
       { name: "CAAS", link: "#", text: "Streamlining operations with CAAS.", icon: "/icons/home/mdi_cloud-check-variant.svg" }, { name: "SMS Gateway", link: "#", text: "Connecting you with reliable SMS solutions.", icon: "/icons/home/fa6-solid_comment-sms.svg" },
 
     ],
@@ -158,32 +174,40 @@ const links = [
 
     ],
     extras: [
-      {name: "About Us",
-      link: "#",
-      icon:"/icons/home/about.svg",
-      text:"Learn More about 21ctl.",},
-      {name: "Careers",
-      link: "#",
-      icon:"/icons/home/career.svg",
-     
-      text:"Discover the best role for you.",},
-      {name: "Partners",
-      link: "#",
-      icon:"/icons/home/handshake.svg",
-    
-      text:"See our partners",},
+      {
+        name: "About Us",
+        link: "#",
+        icon: "/icons/home/about.svg",
+        text: "Learn More about 21ctl.",
+      },
+      {
+        name: "Careers",
+        link: "#",
+        icon: "/icons/home/career.svg",
+
+        text: "Discover the best role for you.",
+      },
+      {
+        name: "Partners",
+        link: "#",
+        icon: "/icons/home/handshake.svg",
+
+        text: "See our partners",
+      },
     ]
   },
-  {
-    name: "Konet", subLinks: [
-      { name: "Payment", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/mdi_credit-card.svg" },
-      { name: "Lottery ", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/dashicons_tickets-alt.svg" },
+  // {
+  //   name: "Konet Mail", subLinks: [
+  //     { name: "Payment", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/mdi_credit-card.svg" },
+  //     { name: "Lottery ", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/dashicons_tickets-alt.svg" },
 
-    ],
-    extras: []
-  },
-  { name: "Explore More", subLinks: [],
-  extras: [] },
+  //   ],
+  //   extras: []
+  // },
+  // {
+  //   name: "Explore More", subLinks: [],
+  //   extras: []
+  // },
 ];
 
 const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
