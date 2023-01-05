@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <SEO
+      title='21st Century Technologies'
         icon="/favicons/android-icon-192x192.png"
         facebook={{
           image: '/favicons/android-icon-192x192.png',
