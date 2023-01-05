@@ -1,8 +1,8 @@
 import { CaretDown } from "@icons/index";
 import { useState } from "react";
 import { useTheme } from "next-themes";
-import { Tooltip } from "evergreen-ui";
-import  Image  from "next/image";
+import { Popover, Tooltip } from "evergreen-ui";
+import Image from "next/image";
 
 
 export function LightNavbar() {
@@ -20,14 +20,14 @@ export function LightNavbar() {
 
         <ul className="flex space-x-8 largeTablet:hidden">
           {links.map((link) => (
-            <Tooltip
+            <Popover
               key={link.name}
               statelessProps={{
                 className: "!p-0 !min-w-[170px] !rounded-lg !bg-transparent",
               }}
               trigger="hover"
               content={
-
+<div className="min-w-max flex">
                 <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-50">
                   <h2 className="text-darkShade">{link.name.toUpperCase()}</h2>
                   <hr />
@@ -42,10 +42,26 @@ export function LightNavbar() {
                         <div className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </div>
                       </div>
                     ))}
-
-
-
                   </div>
+                </div>
+                <div className=" min-w-[250px] flex items-center justify-center bg-silver">
+                <h2 className="text-darkShade"></h2>
+                  
+                  <div className={`grid grid-cols-2 flex-nowrap  mx-5 w-full`}>
+                    {link.extras.map((sublinks) => (
+                      <div key={sublinks.name} className="mt-5">
+
+
+                        <div className="flex" > <Image height={20} width={20}
+                          src={`${sublinks.icon}`}
+                        /> <div className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</div></div>
+                        <div className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </div>
+                      </div>
+                    ))}
+</div>
+
+                </div>
+
                 </div>
               }
             >
@@ -54,7 +70,7 @@ export function LightNavbar() {
                   {link.name} <CaretDown className="ml-1" />
                 </a>
               </li>
-            </Tooltip>
+            </Popover>
           ))}
         </ul>
 
@@ -103,13 +119,15 @@ const links = [
       // { name: "Digital Platform", link: "#", text: "Powering businesses with energy.", icon: "" },
       { name: "Security", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/security-lock.svg" },
       { name: "Konet Space", link: "#", text: "Experience the power of Konet Space.", icon: "/icons/home/earth-filled.svg" },
-    ]
+    ],
+    extras: []
   },
   {
     name: "Solutions", subLinks: [
       { name: "CAAS", link: "#", text: "Streamlining operations with CAAS.", icon: "/icons/home/mdi_cloud-check-variant.svg" }, { name: "SMS Gateway", link: "#", text: "Connecting you with reliable SMS solutions.", icon: "/icons/home/fa6-solid_comment-sms.svg" },
 
-    ]
+    ],
+    extras: []
   },
   {
     name: "Market Place", subLinks: [{ name: "E-Learning", link: "#", text: "Empowering learners with E-learning.", icon: "/icons/home/hat-graduation-filled.svg" },
@@ -126,7 +144,8 @@ const links = [
     { name: "Konet Space", link: "#", text: "", icon: "/icons/home/earth-filled.svg" },
     { name: "Games", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/dashicons_tickets-alt.svg" },
 
-    ]
+    ],
+    extras: []
   },
   {
     name: "Company", subLinks: [{ name: "21st Century Digital Infrastructure Limited", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
@@ -134,16 +153,34 @@ const links = [
     { name: "KonetPay Nigeria Limited", link: "#", text: "Experience the power of Konet pay.", icon: "/icons/home/KonetPay logo.svg" },
     { name: "21st Century Energy", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
 
+    ],
+    extras: [
+      {name: "About Us",
+      link: "#",
+      icon:"/icons/home/about.svg",
+      text:"Learn More about 21ctl.",},
+      {name: "Careers",
+      link: "#",
+      icon:"/icons/home/career.svg",
+     
+      text:"Discover the best role for you.",},
+      {name: "Partners",
+      link: "#",
+      icon:"/icons/home/handshake.svg",
+    
+      text:"See our partners",},
     ]
   },
   {
     name: "Konet", subLinks: [
       { name: "Payment", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/mdi_credit-card.svg" },
-    { name: "Lottery ", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/dashicons_tickets-alt.svg" },
+      { name: "Lottery ", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/dashicons_tickets-alt.svg" },
 
-    ]
+    ],
+    extras: []
   },
-  { name: "Explore More", subLinks: [] },
+  { name: "Explore More", subLinks: [],
+  extras: [] },
 ];
 
 const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {

@@ -165,8 +165,8 @@
 }
 .flip-back{
   background: #ffffff;
-  transform: perspective(600px) rotateY(180deg);
-  /* transform: perspective(600px) rotateY(0deg); */
+  /* transform: perspective(600px) rotateY(180deg); */
+  transform: perspective(600px) rotateY(0deg);
 }
 
 .flip-front:hover {
@@ -175,7 +175,7 @@
 
 .flip-back:hover {
   
-  transform: perspective(600px) rotateY(0deg) !important;
+  transform: perspective(600px) rotateY(180deg) !important;
 }
 
 
