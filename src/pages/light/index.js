@@ -2,13 +2,13 @@ import { LightNavbar } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
 // import { Popover } from "@nextui-org/react";
 import { useState } from 'react';
-import { Popover} from 'evergreen-ui'
+import { Popover } from 'evergreen-ui'
 
 
 function LightDesign() {
-  const [displayPopup,setDisplayPopup] = useState([false, -1]);
+  const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
- 
+
   const products = [
     {
       icon: '/icons/home/baseline-call.svg',
@@ -266,56 +266,56 @@ function LightDesign() {
             return (
               <Popover
                 key={product.name}
-                
+
                 triggerType='menu'
                 isShown={displayPopup[0] && displayPopup[1] === index}
-                  
-                content={<div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto"
-                onMouseOver={(e)=>setDisplayPopup([true, index]) } 
-                onMouseOut={(e)=>setDisplayPopup([false, index]) }
-               >
-                   <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
-                     <p>{product.name}</p>
-                     <p className="mt-3 text-xs opacity-60">
-                       {product.snippet}
-                     </p>
-                     <a
-                       className="mt-3 flex items-center text-xs group hover:text-primary-orange"
-                       href={product.link}
-                       target="_blank"
-                       rel="noreferrer"
-                     >
-                       Go to site{' '}
-                       <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
-                     </a>
-                   </div>
-                 </div>
-             }
 
->
+                content={<div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto"
+                  onMouseOver={(e) => setDisplayPopup([true, index])}
+                  onMouseOut={(e) => setDisplayPopup([false, index])}
+                >
+                  <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
+                    <p>{product.name}</p>
+                    <p className="mt-3 text-xs opacity-60">
+                      {product.snippet}
+                    </p>
+                    <a
+                      className="mt-3 flex items-center text-xs group hover:text-primary-orange"
+                      href={product.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Go to site{' '}
+                      <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
+                    </a>
+                  </div>
+                </div>
+                }
+
+              >
 
                 <div
-                  className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full z-10 flex  flex-col justify-center`}
+                  className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full z-100 flex  flex-col justify-center`}
                   role="button"
-                  onMouseOver={(e)=>setDisplayPopup([true, index]) } 
-                  onMouseOut={(e)=>setDisplayPopup([false, index]) }
+                  onMouseOver={(e) => setDisplayPopup([true, index])}
+                  onMouseOut={(e) => setDisplayPopup([false, index])}
                 >
                   <div className="w-full flex justify-center pt-5">
 
-                  
+
                     <div
                       className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
                       role="button"
                     >
                       <img src={product.icon} className="h-12 w-auto tablet:h-8" />
                     </div>
-                   
+
                   </div>
                   <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">
-                      {product.name}
-                    </p>
-                  </div>
-                        </Popover>
+                    {product.name}
+                  </p>
+                </div>
+              </Popover>
             );
           })}
         </div>

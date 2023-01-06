@@ -2,13 +2,13 @@ import React from 'react';
 
 export function Footer() {
   return (
-    <footer className="bg-white dark:bg-[#252525] px-20 py-10 h-80">
+    <footer className="bg-[#fe622a] dark:bg-[#252525] px-20 py-10 pb-4 h-60">
       <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:space-y-0 space-y-10">
         <div className="space-y-8">
           <div>
             <img
               src="/light-logo.svg"
-              className="dark:hidden w-16 tablet:w-14"
+              className="dark:hidden w-16 tablet:w-14 "
             />
             <img
               src="/light-logo_dark.svg"
@@ -18,22 +18,22 @@ export function Footer() {
 
           <div className="flex space-x-5">
             <img
-              className="w-7 h-7"
+              className="w-7 h-7  cursor-pointer"
               src="/logo/socials/linkedin.png"
               alt="linkedin"
             />
             <img
-              className="w-7 h-7"
+              className="w-7 h-7  cursor-pointer"
               src="/logo/socials/facebook.png"
               alt="facebook"
             />
             <img
-              className="w-7 h-7"
+              className="w-7 h-7  cursor-pointer"
               src="/logo/socials/insta.png"
               alt="insta"
             />
             <img
-              className="w-7 h-7"
+              className="w-7 h-7  cursor-pointer"
               src="/logo/socials/twitter.png"
               alt="twitter"
             />

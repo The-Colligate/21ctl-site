@@ -2,14 +2,15 @@ import { CaretDown } from "@icons/index";
 import { useState ,useEffect} from "react";
 import { useTheme } from "next-themes";
 import { NavClose } from "@icons/close";
-import { Tooltip } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
+import { Popover } from 'evergreen-ui'
 
 
 export function LightNavbar() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
+  const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
   
   useEffect(() => {
@@ -25,7 +26,7 @@ export function LightNavbar() {
 
   return (
     <>
-      <div className="navbar flex justify-between items-center space-x-5 py-3 px-20 font-lato tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black">
+      <div className="navbar flex justify-between items-center space-x-5 py-1 px-20 font-lato tablet:px-10 smallTablet:px-5 fixed w-full bg-[linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)] dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 ">
         <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
         <img
           src="/light-logo_dark.svg"
@@ -33,29 +34,32 @@ export function LightNavbar() {
         />
 
         <ul className="flex space-x-8 largeTablet:hidden">
-          {links.map((link) => (
-            <Tooltip
+          {links.map((link, index) => (
+            <Popover
               key={link.name}
-              // statelessProps={{
-              //   className: "!p-0 !min-w-[170px] !rounded-lg !bg-transparent",
-              // }}
+              statelessProps={{
+                className: "!p-0 !min-w-[170px] !rounded-lg !bg-transparent",
+              }}
               // position={Position.BOTTOM_LEFT}
             
-              placement="bottom"
-              trigger="hover"
-             
+           
+              triggerType='menu'
+              isShown={displayPopup[0] && displayPopup[1] === index}
               content={
 
-                <div className="min-w-max flex">
-                  <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-50">
+                <div className="min-w-max flex"
+                onMouseOver={(e) => setDisplayPopup([true, index])}
+                onMouseOut={(e) => setDisplayPopup([true, index])}
+                >
+                  <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">{link.name.toUpperCase()}</h2>
                     <hr />
                     <div className={`grid grid-cols-2  items-start flex-nowrap mr-5 w-full`}>
                       {link.subLinks.map((sublinks) => (
-                        <div key={sublinks.name} className="mt-5 dark:text-white">
+                        <div key={sublinks.name} className="mt-5 dark:text-white hover:text-primary-orange">
 
 
-                          <div className="flex" >
+                          <div className="flex hover:text-primary-orange" >
                             <Image height={20} width={20}
                           src={`${sublinks.icon}`}
                         /> 
@@ -66,17 +70,17 @@ export function LightNavbar() {
                       ))}
                     </div>
                   </div>
-                  <div className=" min-w-[250px] flex items-center justify-center bg-silver">
+                  <div className=" min-w-[250px] flex items-center justify-center bg-silver dark:bg-[#121212]">
                     <h2 className="text-darkShade"></h2>
 
                     <div className={`grid grid-cols-2 flex-nowrap  mx-5 w-full`}>
                       {link.extras.map((sublinks) => (
-                        <div key={sublinks.name} className="mt-5">
+                        <div key={sublinks.name} className="mt-5 hover:text-primary-orange">
 
 
                           <div className="flex" > <Image height={20} width={20}
                             src={`${sublinks.icon}`}
-                          /> <Link href="/" className="ml-4 space-y-2 list-disc font-semibold"> {sublinks.name}</Link></div>
+                          /> <Link href="/" className="ml-4 space-y-2 list-disc font-semibold "> {sublinks.name}</Link></div>
                           <Link  href="/" className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </Link>
                         </div>
                       ))}
@@ -87,12 +91,18 @@ export function LightNavbar() {
                 </div>
               }
             >
-              <li className="relative hover:text-primary-orange">
-                <a href="#" className="flex items-center">
+              <div className="relative hover:text-primary-orange"
+              
+              // onMouseOver={(e) => setDisplayPopup([true, index])}
+              // onMouseOut={(e) => setDisplayPopup([true, index])}
+              onClick={() => setDisplayPopup([false, -1])}
+              // {() => {; console.log(displayPopup);}}
+              >
+                <a href="#" className="flex items-center" onClick={() => setDisplayPopup([!displayPopup[0], index])}>
                   {link.name} <CaretDown className="ml-1" />
                 </a>
-              </li>
-            </Tooltip>
+              </div>
+            </Popover>
           ))}
           <li className="relative hover:text-primary-orange">
                 <a href="#" className="flex items-center">
@@ -180,8 +190,10 @@ const links = [
     extras: []
   },
   {
-    name: "Company", subLinks: [{ name: "21st Century Digital Infrastructure Limited", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
-    { name: "21st Century Technologies Limited", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
+    name: "Company", subLinks: [
+      { name: "21st Century Technologies Limited", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
+      { name: "21st Century Digital Infrastructure Limited", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
+   
     { name: "KonetPay Nigeria Limited", link: "#", text: "Experience the power of Konet pay.", icon: "/icons/home/KonetPay logo.svg" },
     { name: "21st Century Energy", link: "#", text: "Streamlining operations with CAAS.", icon: "/LOGO.png" },
 

@@ -10,6 +10,7 @@ import SchneiderElectric from '/public/logo/Schneider Electric.svg';
 import PCCWGlobal from '/public/logo/PCCW Global.svg';
 import polygon from '/public/logo/Polygon.png';
 import HeroImage from '/public/logo/hero-image.png';
+import Satalite from '/public/logo/satalite.png';
 
 import connectLogo from '/public/logo/connect21ctl.png';
 
@@ -34,7 +35,7 @@ const Communication = () => {
   return (
     <>
     <Head>
-      <title>Digital Infrastructure - 21 CTL</title>
+      <title>Communication - 21 CTL</title>
       <meta name="description" content="" />
     </Head>
     <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative">
@@ -45,30 +46,30 @@ const Communication = () => {
       <div className="w-full min-h-screen overflow-y-auto flex flex-col z-[1]">
         <LightNavbar />
 
-        <section className="flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0">
-          <div className='max-w-3xl'>
-            <h1 className="text-7xl tracking-normal font-lato font-medium whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-              <span className="text-primary-orange leading-8">Digital </span>
-              Infrastructure
-            </h1>
-            <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">
-              We provide reliability, security, and high traffic handling for a
-              seamless customer experience
-            </p>
-            {/* <button className="bg-primary-orange rounded-xl text-white py-2 px-6 my-6">
-              Reach Us
-            </button> */}
-          </div>
-          <div>
+        <section className="flex sm:px-36 px-8 my-16 items-center h-1/3 justify-between space-x-16 tablet:flex-col tablet:space-x-0">
+          
+          <div className="flex items-center justify-center">
             <Image
-              src={HeroImage}
+              src={Satalite}
               width={650}
               className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
             />
           </div>
+          <div className='max-w-3xl'>
+            <h1 className="text-7xl tracking-normal font-lato font-medium whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
+              <span className="text-primary-orange leading-8">Communication</span>
+             
+            </h1>
+            <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">
+            We prioritize effective communication to ensure that all of our clients and employees are heard and understood.
+            </p>
+            <button className="bg-primary-orange rounded-xl text-white py-2 px-6 my-6">
+            Get Started
+            </button>
+          </div>
         </section>
 
-        <section className='sm:px-36 px-8 my-10'>
+        {/* <section className='sm:px-36 px-8 my-10'>
           <div className="flex sm:flex-row flex-col sm:space-x-40 space-x-0 ">
             <div className="text-2xl pb-5">
               Our statistics reveal <br /> more about us.
@@ -100,7 +101,7 @@ const Communication = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="flex flex-col sm:px-36 px-8">
           <h3 className="text-[#f64e1fbd] font-normal text-2xl my-6">
