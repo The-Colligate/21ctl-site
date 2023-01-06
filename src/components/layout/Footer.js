@@ -17,26 +17,50 @@ export function Footer() {
           </div>
 
           <div className="flex space-x-5">
-            <img
-              className="w-7 h-7  cursor-pointer"
-              src="/logo/socials/linkedin.png"
-              alt="linkedin"
-            />
-            <img
-              className="w-7 h-7  cursor-pointer"
-              src="/logo/socials/facebook.png"
-              alt="facebook"
-            />
-            <img
-              className="w-7 h-7  cursor-pointer"
-              src="/logo/socials/insta.png"
-              alt="insta"
-            />
-            <img
-              className="w-7 h-7  cursor-pointer"
-              src="/logo/socials/twitter.png"
-              alt="twitter"
-            />
+            <a
+              href="https://www.linkedin.com/company/21st-century-technologies_2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-7 h-7"
+                src="/logo/socials/linkedin.png"
+                alt="linkedin"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/21st-century-technologies_2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-7 h-7"
+                src="/logo/socials/facebook.png"
+                alt="facebook"
+              />
+            </a>
+            <a
+              href="https://instagram.com/21ctlcom?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-7 h-7"
+                src="/logo/socials/insta.png"
+                alt="insta"
+              />
+            </a>
+            <a
+              href="https://twitter.com/21ctlcom?s=21&t=3Lc26MhPh1mSvArXEWxEeQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-7 h-7"
+                src="/logo/socials/twitter.png"
+                alt="twitter"
+              />
+            </a>
           </div>
         </div>
 
@@ -64,19 +88,22 @@ export function Footer() {
 
           <div className="flex items-center pt-2">
             <PhoneIcon />{' '}
-            <span className="text-black dark:text-white ml-3">Phone</span>
+            <span className="text-black dark:text-white ml-3">
+              <a href="tel:+23412707777">+234 1 270 7777</a>
+            </span>
           </div>
           <div className="flex pt-2">
             <MailIcon />{' '}
-            <span className="text-black dark:text-white ml-3">Email us</span>
+            <span className="text-black dark:text-white ml-3">
+              <a href="mailto:commercial@21ctl.com">commercial@21ctl.com</a>
+            </span>
           </div>
         </div>
       </div>
 
       <div className="pt-10">
         <p className="text-center text-black dark:text-white">
-          Copyright © 2023 21st Century Technology Limited. All rights
-          reserved.
+          Copyright © 2023 21st Century Technology Limited. All rights reserved.
         </p>
       </div>
     </footer>
