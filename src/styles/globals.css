@@ -307,6 +307,35 @@
   /* border-bottom: 1px solid #fecc29; */
 }
 
+.main-page{
+  
+  background-image: url('/logo/Ellipse-bg.svg');
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size: contain;
+  height: 525px;
+}
+
+.cableCard{
+  background-image: url('/logo/communication-bg1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100vw;
+  border-radius: 10px;
+}
+
+.internet-section{
+  
+  background-image: url('/logo/waves.svg'),url('/logo/Rectangle-transfrom.svg');
+  background-repeat: repeat-x,no-repeat;
+  background-position:0 center , left;
+  background-size: cover, contain;
+  height: 525px;
+}
+
+
+
 
 /* .figures:nth-child(odd){
   padding-left: 20px;
