@@ -92,12 +92,12 @@ const AboutUs = () => {
                             <div className="w-[50%] tablet:w-full">
                                 <h2 className="text-[36px] font-semibold tablet:text-[24px]">Vision and Mission</h2>
                                 <div className="tablet:my-5">
-                                    <h3 className=" text-[26px] font-semibold opacity-40 tablet:text-[20px] ">MISSION</h3>
-                                    <p className="text-[24px] opacity-80 text-justify tablet:text-[18px]">"To use State of the Art Infrastructure to provide world-class solutions to our valued customers through highly motivated talent and strategic alliances." </p>
+                                    <h3 className="text-[26px] font-semibold opacity-40 tablet:text-[20px] ">MISSION</h3>
+                                    <p className="text-[24px] opacity-80 text-justify tablet:text-[18px]">&quot;To use State of the Art Infrastructure to provide world-class solutions to our valued customers through highly motivated talent and strategic alliances.&quot; </p>
                                 </div>
                                 <div>
                                     <h3 className=" text-[26px] font-semibold opacity-40 tablet:text-[20px]">VISION</h3>
-                                    <p className="text-[24px] opacity-80 text-justify tablet:text-[18px]">"To be the foremost integrated ICT solutions provider in Africa."</p>
+                                    <p className="text-[24px] opacity-80 text-justify tablet:text-[18px]">&quot;To be the foremost integrated ICT solutions provider in Africa.&quot;</p>
                                 </div>
                             </div>
                         
@@ -116,12 +116,12 @@ const AboutUs = () => {
                             <div className="mx-20 my-20 mt-0 tablet:mx-5 tablet:my-10">
                                 <div className="w-[640px] px-10 pr-30 py-20 bg-[#E7D2CD] rounded-2xl tablet:w-full tablet:pr-10 tablet:py-8">
                                     <h2 className="text-[36px] font-semibold mb-10 tablet:text-[26px]">The Network</h2>
-                                    <p className="text-[20px] w-3/4 text-justify dark:text-[#ffffff] tablet:w-full tablet:text-[16px]">21st Century Technologies has a world-class fibre optic network in conjunction with Siemens AG, with extensive coverage in the Lagos metropolis. The company's voice network is powered by the EWSD switching platform, which is used by 350 operators in over 150 countries. The company can offer scalable bandwidth solutions up to 622 Mbps on its metropolitan network.</p>
+                                    <p className="text-[20px] w-3/4 text-justify dark:text-[#ffffff] tablet:w-full tablet:text-[16px]">21st Century Technologies has a world-class fibre optic network in conjunction with Siemens AG, with extensive coverage in the Lagos metropolis. The company&apos;s voice network is powered by the EWSD switching platform, which is used by 350 operators in over 150 countries. The company can offer scalable bandwidth solutions up to 622 Mbps on its metropolitan network.</p>
                                 </div>
                             </div>
                             <Image
                                     src="/logo/network.png"
-                                    className="absolute left-[600px] tablet:relative tablet:left-0 tablet:mx-10 tablet:w-full tablet:left-0 "
+                                    className="absolute left-[600px] tablet:relative tablet:left-0 tablet:mx-10 tablet:w-full  "
                                     height={430}
                                     width={530}
                                 />
