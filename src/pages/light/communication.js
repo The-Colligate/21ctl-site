@@ -5,7 +5,7 @@ import { LightNavbar, Footer } from '@components/layout/';
 
 import Satalite from '/public/logo/satalite.png';
 import Orange from '/public/logo/orange.png';
-import MTN from '/public/logo/mtn.png';
+import MTN from '/public/logo/MTN.png';
 import GLO from '/public/logo/glo.png';
 import nineMobile from '/public/logo/9mobile.png';
 import Airtel from '/public/logo/airtel.png';
