@@ -334,6 +334,28 @@
   height: 525px;
 }
 
+.vision-mission-section{
+  background-image: url('/logo/waves-slant.svg');
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size: cover;
+}
+
+.about-us{
+  background-image: url('/logo/about-us-bg.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 60vh;
+}
+
+@media only screen and (max-width: 400px) {
+  .about-us{
+   
+    height: 50vh;
+  }
+}
+
 
 
 
