@@ -15,7 +15,7 @@ function LightDesign() {
       name: 'Communication',
       snippet:
         'We build, provide one to one, one to many, many to many, communication infrastructures and platforms, supporting millions of users transactions and variety of business processes',
-      link: '#',
+      link: '/communication',
     },
     {
       icon: '/icons/home/cloud-computing.svg',
