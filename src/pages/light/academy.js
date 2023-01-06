@@ -17,7 +17,6 @@ import apapa from '/public/data-centers/apapa-center.png';
 import ikeja from '/public/data-centers/ikeja-center.png';
 import lekki from '/public/data-centers/lekki-center.png';
 
-import fiveG from '/public/logo/5G.png';
 
 import accesslogo from 'public/logo/partners/Access Bank - png 0.png';
 import aws from 'public/logo/partners/Amazon Web Services - png 0.png';
@@ -208,8 +207,8 @@ const Academy = () => {
               </p>
             </div>
             <div className="w-full h-full">
-              <Image
-                src={fiveG}
+              <img
+                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
                 className="inline-block w-full h-full object-cover"
               />
             </div>
