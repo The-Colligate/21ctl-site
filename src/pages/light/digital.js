@@ -17,7 +17,7 @@ import apapa from '/public/data-centers/apapa-center.png';
 import ikeja from '/public/data-centers/ikeja-center.png';
 import lekki from '/public/data-centers/lekki-center.png';
 
-import fiveG from '/public/logo/5G.png';
+import fiveG from '/public/logo/5g main.svg';
 
 import accesslogo from 'public/logo/partners/Access Bank - png 0.png';
 import aws from 'public/logo/partners/Amazon Web Services - png 0.png';
@@ -69,7 +69,7 @@ const Digital = () => {
         </section>
 
         <section className='sm:px-36 px-8 my-10'>
-          <div className="flex sm:flex-row flex-col sm:space-x-40 space-x-0 ">
+          <div className="flex sm:flex-row flex-col justify-between sm:space-x-40 space-x-0 ">
             <div className="text-2xl pb-5">
               Our statistics reveal <br /> more about us.
             </div>
@@ -130,7 +130,7 @@ const Digital = () => {
                 className="max-w-3xl largeTablet:max-w-md smallPhone:max-w-xs"
               />
             </div>
-            <div className="max-w-xl">
+            <div className="max-w-xl pr-8">
               <h1 className="text-5xl font-semibold tracking-medium mb-8">
                 <span className="text-primary-orange">Connect</span> to all
                 hyperscale Cloud providers
@@ -195,7 +195,7 @@ const Digital = () => {
         </section>
 
         <section className="five-gr py-32 sm:mt-0 mt-32">
-          <div className="max-w-4xl flex sm:flex-row flex-col justify-center items-center m-auto bg-white rounded-3xl sm:h-96 h-full ">
+          <div className="max-w-6xl flex sm:flex-row flex-col w-full rounded-3xl items-center m-auto sm:h-full h-full bg-white ">
             <div className="px-5 sm:py-0 py-10 text-black dark:text-black">
               <h4 className="text-5xl font-semibold text-center">
                 {' '}
@@ -207,10 +207,10 @@ const Digital = () => {
                 and services.
               </p>
             </div>
-            <div className="w-full h-full">
-              <Image
-                src={fiveG}
-                className="inline-block w-full h-full object-cover"
+            <div className="w-full h-full sm:px-0 px-5">
+              <img
+                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
+                className="object-cover h-full w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
               />
             </div>
           </div>
