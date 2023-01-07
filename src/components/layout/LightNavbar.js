@@ -164,7 +164,7 @@ const links = [
       { name: "Communication", link: "/communication", text: "Connecting with effective communication.", icon: "/icons/home/call-icon.svg" },
       { name: "Payment", link: "/", text: "Effortlessly processing your payments", icon: "/icons/home/mdi_credit-card.svg" },
 
-      { name: "People", link: "/", text: "Connecting with the right people.", icon: "/icons/home/people-icon.svg" },
+      { name: "People", link: "/academy", text: "Connecting with the right people.", icon: "/icons/home/people-icon.svg" },
       // { name: "Digital Platform", link: "/", text: "Powering businesses with energy.", icon: "" },
       { name: "Security", link: "/", text: "Powering businesses with energy.", icon: "/icons/home/security-lock.svg" },
       { name: "Konet Space", link: "/", text: "Experience the power of Konet Space.", icon: "/icons/home/earth-filled.svg" },

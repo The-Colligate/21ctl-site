@@ -59,7 +59,7 @@ function LightDesign() {
       name: 'People',
       snippet:
         'The Digital Academy is a training hub where creative thinkers and distruptors are exposed to highly equiped pre-programmed and mataversed laboratories while interacting with experts in domains such as Cloud computing, Artificial Intelligence, Cyber security, Data analytics and so much more.',
-      link: '#',
+      link: '/academy',
     },
     {
       icon: '/icons/home/security.svg',
