@@ -38,6 +38,8 @@ module.exports = {
       backgroundImage: {
         connectLogoBack:
           "url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1672772735/Vector_ioe1tn.svg')",
+        academyBg:
+          "url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1673100716/Vector_57_cler5b.svg')",
       },
     },
   },
