@@ -45,7 +45,7 @@ const Academy = () => {
         <div className="w-full min-h-screen overflow-y-auto flex flex-col z-[1]">
           <LightNavbar />
 
-          <section className="bg-[#E7D7D2] sm:px-28 px-8 my-16 sm:py-0 pt-16">
+          <section className="bg-[#E7D7D2] dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
               <div className="flex-1">
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
@@ -133,9 +133,13 @@ const Academy = () => {
           </section>
 
           <section className="sm:px-28 px-8 mt-28">
-            <h1 className="text-primary-orange font-bold sm:text-5xl text-3xl">Our Courses</h1>
+            <h1 className="text-primary-orange font-bold sm:text-5xl text-3xl">
+              Our Courses
+            </h1>
             <div className="flex sm:flex-row flex-col justify-between my-3 ">
-              <p className='text-xl'>Explore our top-rated courses in various subjects.</p>
+              <p className="text-xl">
+                Explore our top-rated courses in various subjects.
+              </p>
               <p className="text-primary-orange">See more</p>
             </div>
 
@@ -159,8 +163,10 @@ const Academy = () => {
                       />
                     </div>
                     <div className="flex flex-col  justify-center">
-                      <h2 className="text-[16px] font-bold w-2/3 ">{course}</h2>
-                      <p className="text-[14px]">Duration: 12 weeks</p>
+                      <h2 className="text-base text-black font-bold w-2/3 ">
+                        {course}
+                      </h2>
+                      <p className="text-sm text-black">Duration: 12 weeks</p>
                     </div>
                   </div>
                 </div>
@@ -168,13 +174,10 @@ const Academy = () => {
             </div>
           </section>
 
-          <section className='sm:mb-0 mb-16'>
+          <section className="sm:mb-0 mb-16">
             <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
               <div className="flex-1">
-                <img
-                  src="/logo/smiling.png"
-                  className="w-full"
-                />
+                <img src="/logo/smiling.png" className="w-full" />
               </div>
               <div className="flex-1">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
@@ -190,7 +193,6 @@ const Academy = () => {
               </div>
             </div>
           </section>
-
 
           <section>
             <div className="flex items-center space-x-10 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
