@@ -42,7 +42,7 @@ const Digital = () => {
         <div className="w-full min-h-[50%] bg_gradient_l"></div>
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
       </div>
-      <div className="w-full min-h-screen overflow-y-auto flex flex-col z-[1]">
+      <div className="w-full min-h-screen flex flex-col z-[1]">
         <LightNavbar />
 
         <section className="flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28">

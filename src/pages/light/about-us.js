@@ -26,7 +26,7 @@ const AboutUs = () => {
           <div className="w-full min-h-[50%] bg_gradient_l"></div>
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
-        <div className="w-full min-h-screen overflow-y-auto flex flex-col z-[1]">
+        <div className="w-full min-h-screen flex flex-col z-[1]">
           <LightNavbar />
 
           <section className="about-us sm:px-36 px-8 my-16  bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.25) 21.4%, #E5E1DB 100%)]">
