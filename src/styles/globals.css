@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .bg_gradient_l {
   background: radial-gradient(
@@ -74,7 +73,7 @@
     rgba(127, 186, 3, 0.6) 100%
   ); */
   background: white;
-  
+
   margin-bottom: calc(var(--mv) - var(--vc));
 }
 
@@ -112,11 +111,10 @@
     0 calc(100% - var(--vc)),
     0 var(--vc)
   );
-  
 }
 
 .hexagon-container::before {
-  content: "";
+  content: '';
   width: calc(var(--s) / 2 + var(--mh));
   float: left;
   height: 135%;
@@ -130,40 +128,37 @@
   --animate-duration: 5s;
 }
 
-.animate__animated.animate__delay-6s{
+.animate__animated.animate__delay-6s {
   -webkit-animation-delay: 6s;
   animation-delay: 6s;
-
 }
 
-
-.animate__animated.animate__delay-7s{
+.animate__animated.animate__delay-7s {
   -webkit-animation-delay: 7s;
   animation-delay: 7s;
-
 }
 
-.animate__animated.animate__delay-8s{
+.animate__animated.animate__delay-8s {
   -webkit-animation-delay: 8s;
   animation-delay: 8s;
 }
 
-.animate__animated.animate__delay-9s{
+.animate__animated.animate__delay-9s {
   -webkit-animation-delay: 9s;
   animation-delay: 9s;
 }
 
-.flip-front, .flip-back {
- 
+.flip-front,
+.flip-back {
   -webkit-backface-visibility: hidden !important; /* Safari */
   backface-visibility: hidden !important;
-  transition: transform .6s linear;
+  transition: transform 0.6s linear;
 }
 
-.flip-front{
+.flip-front {
   transform: perspective(600px) rotateY(0deg);
 }
-.flip-back{
+.flip-back {
   background: #ffffff;
   /* transform: perspective(600px) rotateY(180deg); */
   transform: perspective(600px) rotateY(0deg);
@@ -174,10 +169,8 @@
 }
 
 .flip-back:hover {
-  
   transform: perspective(600px) rotateY(180deg) !important;
 }
-
 
 @media only screen and (max-width: 1120px) {
   .hexagon-container {
@@ -222,7 +215,7 @@
 }
 
 .top-section {
-  background-image: url("https://res.cloudinary.com/dqsggbqmf/image/upload/v1672096824/Elipse_k6pfke.svg");
+  background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1672096824/Elipse_k6pfke.svg');
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -293,8 +286,12 @@
   translate: 0 0;
 }
 
-.partners{
-  background: linear-gradient(180deg, rgba(54, 49, 45, 0.03) 0%, rgba(255, 113, 0, 0.06) 100%);
+.partners {
+  background: linear-gradient(
+    180deg,
+    rgba(54, 49, 45, 0.03) 0%,
+    rgba(255, 113, 0, 0.06) 100%
+  );
 }
 
 .show {
@@ -307,16 +304,15 @@
   /* border-bottom: 1px solid #fecc29; */
 }
 
-.main-page{
-  
+.main-page {
   background-image: url('/logo/Ellipse-bg.svg');
   background-repeat: no-repeat;
-  background-position:left;
+  background-position: left;
   background-size: contain;
-  height: 525px;
+  height: 672px;
 }
 
-.cableCard{
+.cableCard {
   background-image: url('/logo/communication-bg1.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -325,39 +321,44 @@
   border-radius: 10px;
 }
 
-.internet-section{
-  
-  background-image: url('/logo/waves.svg'),url('/logo/Rectangle-transfrom.svg');
-  background-repeat: repeat-x,no-repeat;
-  background-position:0 center , left;
+.internet-section {
+  background-image: url('/logo/waves.svg'), url('/logo/Rectangle-transfrom.svg');
+  background-repeat: repeat-x, no-repeat;
+  background-position: 0 center, left;
   background-size: cover, contain;
   height: 525px;
 }
 
-.vision-mission-section{
+.vision-mission-section {
   background-image: url('/logo/waves-slant.svg');
   background-repeat: no-repeat;
-  background-position:left;
+  background-position: left;
   background-size: cover;
 }
 
-.about-us{
+.about-us {
   background-image: url('/logo/about-us-bg.png');
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   background-size: cover;
   height: 60vh;
 }
 
 @media only screen and (max-width: 400px) {
-  .about-us{
-   
+  .about-us {
     height: 50vh;
   }
 }
 
-
-
+@media only screen and (max-width: 600px) {
+  .main-page {
+    background-image: url('/logo/Ellipse-bg.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 472px;
+  }
+}
 
 /* .figures:nth-child(odd){
   padding-left: 20px;
