@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .bg_gradient_l {
   background: radial-gradient(
     #f24c236e 0%,
@@ -341,7 +345,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 80vh;
+}
+
+.values_grid {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 40px 30px; 
+  grid-template-areas: 
+    ". . . .  ."; 
 }
 
 @media only screen and (max-width: 400px) {
@@ -357,6 +371,18 @@
     background-position: left;
     background-size: contain;
     height: 472px;
+  }
+
+  .values_grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 26px;
+    grid-template-areas:
+      '. .'
+      '. .'
+      '. .';
   }
 }
 
