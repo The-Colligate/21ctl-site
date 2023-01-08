@@ -1,6 +1,6 @@
 import { LightNavbar } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
-// import { Popover } from "@nextui-org/react";
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Popover } from 'evergreen-ui'
 

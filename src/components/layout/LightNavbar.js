@@ -201,7 +201,7 @@ const links = [
     extras: [
       {
         name: "About Us",
-        link: "#",
+        link: "/about-us",
         icon: "/icons/home/about.svg",
         text: "Learn More about 21ctl.",
       },
