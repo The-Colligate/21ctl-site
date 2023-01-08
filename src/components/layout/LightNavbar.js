@@ -282,9 +282,9 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
                 </h2>
                 
                 {link.subLinks.map((sublinks) => 
-                 <ul key={sublinks.name} className="list-disc ml-5">
-                   <li ><Link href="/" >{sublinks.name}</Link></li>
-                 </ul>
+                 <div className="flex my-3"key={sublinks.name} > <Image height={20} width={20}
+                 src={`${sublinks.icon}`}
+               /> <Link href={`${sublinks.link}`} className="ml-4 space-y-2 list-disc font-semibold "> {sublinks.name}</Link></div>
                )}
                 
               </div> : <></>}</>
