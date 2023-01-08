@@ -64,8 +64,8 @@ export function LightNavbar() {
                           src={`${sublinks.icon}`}
                         /> 
                            
-                            <Link href="/" className="ml-4 space-y-2 list-disc font-semibold dark:text-white"> {sublinks.name}</Link></div>
-                          <Link href="/" className="ml-9 space-y-2 list-disc text-[10px] dark:text-white">{sublinks.text} </Link>
+                            <Link href={`${sublinks.link}`} className="ml-4 space-y-2 list-disc font-semibold dark:text-white"> {sublinks.name}</Link></div>
+                          <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[10px] dark:text-white">{sublinks.text} </Link>
                         </div>
                       ))}
                     </div>
@@ -80,8 +80,8 @@ export function LightNavbar() {
 
                           <div className="flex" > <Image height={20} width={20}
                             src={`${sublinks.icon}`}
-                          /> <Link href="/" className="ml-4 space-y-2 list-disc font-semibold "> {sublinks.name}</Link></div>
-                          <Link  href="/" className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </Link>
+                          /> <Link href={`${sublinks.link}`} className="ml-4 space-y-2 list-disc font-semibold "> {sublinks.name}</Link></div>
+                          <Link  href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[10px]">{sublinks.text} </Link>
                         </div>
                       ))}
                     </div>
@@ -162,7 +162,7 @@ const links = [
       { name: "Power", link: "/", text: "Powering businesses with energy.", icon: "/icons/home/game-icons_power-lightning.svg" },
       { name: "Digital Infrastructure", link: "/digital", text: "Providing seamless customer experience", icon: "/icons/home/eos-icons_cloud-computing.svg" },
       { name: "Communication", link: "/communication", text: "Connecting with effective communication.", icon: "/icons/home/call-icon.svg" },
-      { name: "Payment", link: "/", text: "Effortlessly processing your payments", icon: "/icons/home/mdi_credit-card.svg" },
+      { name: "Payment", link: "https://konetpay.com/", text: "Effortlessly processing your payments", icon: "/icons/home/mdi_credit-card.svg" },
 
       { name: "People", link: "/academy", text: "Connecting with the right people.", icon: "/icons/home/people-icon.svg" },
       // { name: "Digital Platform", link: "/", text: "Powering businesses with energy.", icon: "" },
