@@ -143,11 +143,11 @@ const Academy = () => {
               <p className="text-primary-orange">See more</p>
             </div>
 
-            <div className="grid grid-cols-4 gap-10 tablet:grid-cols-1 mt-10">
+            <div className="grid gap-10 grid-cols-3 largeTablet:grid-cols-2 tablet:grid-cols-2 mt-10">
               {courses.map((course) => (
                 <div
                   key={course}
-                  className="bg-white sm:w-[270px] w-full px-2 py-3 h-[120px] rounded-xl "
+                  className="bg-white sm:w-[270px] w-full px-2 py-3 h-[120px] rounded-xl"
                 >
                   <div
                     key={course}
@@ -157,10 +157,11 @@ const Academy = () => {
                       <Image
                         src="/logo/courses.svg"
                         // src="/logo/courses.png"
-                        className="w-24 largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"
+                        className="w-full h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"
                         width={166}
                         height={99}
                       />
+                      {/* <div className='w-[120px] h-[99px] bg-primary-orange'></div> */}
                     </div>
                     <div className="flex flex-col  justify-center">
                       <h2 className="text-base text-black font-bold w-2/3 ">
