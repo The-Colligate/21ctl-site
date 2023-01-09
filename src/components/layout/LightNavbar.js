@@ -98,7 +98,11 @@ export function LightNavbar() {
               onClick={() => setDisplayPopup([false, -1])}
               // {() => {; console.log(displayPopup);}}
               >
-                <a href="#" className="flex items-center" onClick={() => setDisplayPopup([!displayPopup[0], index])}>
+                <a href="#" className="flex items-center" onClick={()=>{ 
+                  console.log(`${displayPopup[1]} === ${index} ? ${displayPopup[1] === index}`);
+                  setDisplayPopup([displayPopup[1] === index? !displayPopup[0] : true, index]);
+                
+                }}>
                   {link.name} <CaretDown className="ml-1" />
                 </a>
               </div>
