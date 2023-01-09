@@ -26,7 +26,7 @@ export function LightNavbar() {
 
   return (
     <>
-      <div className="navbar flex justify-between items-center space-x-5 py-1 px-20 font-lato tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 ">
+      <div className="navbar flex justify-between items-center space-x-5 py-1 px-20 font-lato tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
         <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
         <img
           src="/light-logo_dark.svg"
