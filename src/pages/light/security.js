@@ -47,7 +47,7 @@ const Security = () => {
                   <span className="text-primary-orange leading-8">Future.</span>
                 </h1>
                 <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">
-                  Optimize your data center's energy efficiency with our
+                  Optimize your data center&apos;s energy efficiency with our
                   sustainable power solutions.
                 </p>
               </div>
