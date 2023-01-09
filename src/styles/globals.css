@@ -316,14 +316,14 @@ body {
   height: 672px;
 }
 
-.cableCard {
+/* .cableCard {
   background-image: url('/logo/communication-bg1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 100vw;
   border-radius: 10px;
-}
+} */
 
 .internet-section {
   background-image: url('/logo/waves.svg'), url('/logo/Rectangle-transfrom.svg');

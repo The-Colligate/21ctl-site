@@ -82,8 +82,9 @@ const Communication = () => {
           </section>
           <section>
             <div className="m-20  flex items-center overflow-x-hidden justify-center rounded  tablet:m-5">
-              <div className="cableCard  h-[590px] rounded  flex flex-col justify-center  phone:h-[220px]">
-                <div className="pl-10 w-2/4  tablet:w-full">
+              <div className="cableCard  rounded relative flex justify-center  phone:h-[220px]">
+               
+                <div className="pl-10 w-2/4 absolute left-0 flex flex-col h-full justify-center  tablet:w-full">
                   <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8 text-white tablet:mb-2">
                     <span className="text-primary-orange">Optimized </span>
                     Options from Edge to Center
@@ -93,6 +94,12 @@ const Communication = () => {
                     and our company offers a range of fiber optic products and
                     services to meet the diverse needs of our customers.
                   </p>
+                </div>
+                <div>
+                  <img
+                    src="/logo/communication-bg1.png"
+                    className=''
+                    />
                 </div>
               </div>
             </div>
