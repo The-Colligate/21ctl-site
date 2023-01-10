@@ -35,18 +35,11 @@ export const links = () => [
                     icon: '/icons/home/eos-icons_cloud-computing.svg',
                 },
                 {
-                    name: 'Communication',
+                    name: 'Digital Platforms',
                     link: '/communication',
                     text: 'Connecting with effective communication.',
                     icon: '/icons/home/call-icon.svg',
                 },
-                {
-                    name: 'Payment',
-                    link: 'https://konetpay.com/',
-                    text: 'Effortlessly processing your payments',
-                    icon: '/icons/home/mdi_credit-card.svg',
-                },
-
                 {
                     name: 'People',
                     link: '/academy',
@@ -59,13 +52,7 @@ export const links = () => [
                     link: '/',
                     text: 'Powering businesses with energy.',
                     icon: '/icons/home/security-lock.svg',
-                },
-                {
-                    name: 'Konet Space',
-                    link: '/',
-                    text: 'Experience the power of Konet Space.',
-                    icon: '/icons/home/earth-filled.svg',
-                },
+                }
             ],
             extras: [],
         },
@@ -180,7 +167,7 @@ export const links = () => [
         },],
     },
     {
-        additionalLinks: [{ name: "Konet Mail", link: "/", }, { name: "Explore More", link: "/", },]
+        additionalLinks: [{ name: "Digital Platforms", link: "/", }, { name: "Explore More", link: "/", },]
     }
 
 ];
