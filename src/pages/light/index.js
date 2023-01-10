@@ -82,6 +82,8 @@ function LightDesign() {
           <div className="w-full h-full flex items-center">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
+                Building Africa&apos;s Largest{' '}
+                <span className="text-primary-orange">Digital</span>{' '} Infrastructure
                 <span className="text-primary-orange">Building</span>{' '}
                 Africa&apos;s largest Digital Infrastructrue
               </h1>
