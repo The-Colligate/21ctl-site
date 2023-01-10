@@ -333,6 +333,12 @@ body {
   width: 100vw;
 }
 
+.academy-curve{
+  border-bottom-left-radius:80% 50%;
+  border-bottom-right-radius:80% 50%;
+  height: 85vh;
+}
+
 .internet-section {
   background-image: url('/logo/waves.svg'), url('/logo/Rectangle-transfrom.svg');
   background-repeat: repeat-x, no-repeat;
