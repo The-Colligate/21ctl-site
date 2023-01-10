@@ -28,7 +28,7 @@ const AboutUs = () => {
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
-          <LightNavbar menuProp={links()}/>
+          <LightNavbar />
 
           <section className="about-us sm:px-36 px-8 my-16  bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.25) 21.4%, #E5E1DB 100%)]">
             <div className="flex items-center justify-center h-full">

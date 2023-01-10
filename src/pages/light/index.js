@@ -22,7 +22,7 @@ function LightDesign() {
       name: 'Digital Infrastructure',
       snippet:
         ' We have connectivity, data centers & edge computing centers, Towers, Network & 5G enabled platforms for SMBs, SMEs and large Enterprises.',
-      link: '/digital',
+      link: '/digital-infrastructure',
     },
 
     // {
@@ -37,7 +37,7 @@ function LightDesign() {
       name: 'Digial Platform',
       snippet:
         'Konet space ecosystem allows users and businessess to use their Konet mail to access variety of apps, solutions, products and support services.',
-      link: '#',
+      link: '/digital-platform',
     },
     {
       icon: '/icons/home/credit-card.svg',
@@ -59,7 +59,7 @@ function LightDesign() {
       name: 'People',
       snippet:
         'The Digital Academy is a training hub where creative thinkers and distruptors are exposed to highly equiped pre-programmed and mataversed laboratories while interacting with experts in domains such as Cloud computing, Artificial Intelligence, Cyber security, Data analytics and so much more.',
-      link: '/academy',
+      link: '/people',
     },
     {
       icon: '/icons/home/security.svg',
@@ -77,7 +77,7 @@ function LightDesign() {
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
       </div>
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
-      <LightNavbar menuProp={links()}/>
+      <LightNavbar />
         <div className="flex items-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
           <div className="w-full h-full flex items-center">
             <div className="max-w-3xl">

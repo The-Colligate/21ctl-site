@@ -5,9 +5,17 @@ import { NavClose } from '@icons/close';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Popover } from 'evergreen-ui';
+import { useRouter } from 'next/router';
+import {
+  platformNavLinks,
+  infraNavLinks,
+  mainLinks,
+  powerNavLinks,
+  peopleNavLinks,
+} from '../constants/NavbarLinks';
 
-
-export function LightNavbar({menuProp}) {
+export function LightNavbar({ menuProp }) {
+  const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
@@ -23,6 +31,21 @@ export function LightNavbar({menuProp}) {
     });
   });
 
+  const navItems =
+    router.pathname === '/digital-platform'
+      ? platformNavLinks
+      : router.pathname === '/digital-infrastructure'
+      ? infraNavLinks
+      : router.pathname === '/'
+      ? mainLinks
+      : router.pathname === '/power'
+      ? powerNavLinks
+      : router.pathname === '/people'
+      ? peopleNavLinks
+      : mainLinks;
+  console.log('navItems', navItems);
+  console.log('pathname', router.pathname);
+
   return (
     <>
       <div className="navbar flex justify-between items-center space-x-5 py-1 px-20 font-lato z-50 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
@@ -37,7 +60,7 @@ export function LightNavbar({menuProp}) {
         </Link>
 
         <ul className="flex space-x-8 largeTablet:hidden">
-          {menuProp[0].navLinks.map((link, index) => (
+          {navItems[0].navLinks.map((link, index) => (
             <Popover
               key={link.name}
               statelessProps={{
@@ -55,7 +78,8 @@ export function LightNavbar({menuProp}) {
                 >
                   <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
-                      {link.name.toUpperCase()}
+                      {router.pathname == '/digital-infrastructure' &&
+                        link.name.toUpperCase()}
                     </h2>
                     <hr />
                     <div
@@ -152,24 +176,36 @@ export function LightNavbar({menuProp}) {
                     ]);
                   }}
                 >
-                 
-                  {link.name} {displayPopup[0] && displayPopup[1] === index ? <CaretDown className="ml-1 -rotate-180" /> : <CaretDown className="ml-1" />}
+                  {link.name}{' '}
+                  {displayPopup[0] && displayPopup[1] === index ? (
+                    <CaretDown className="ml-1 -rotate-180" />
+                  ) : (
+                    <CaretDown className="ml-1" />
+                  )}
                 </a>
               </div>
             </Popover>
           ))}
-          {menuProp[1].additionalLinks.map((link, index) => (
-            <li key={`${link} ${index}`} className="relative hover:text-primary-orange">
-            <a href={`${link.link}`} className="flex items-center">
-              {link.name}
-            </a>
-          </li>
-         ) )}
-          
-          
+          {navItems[1]?.additionalLinks?.map((link, index) => (
+            <li
+              key={`${link} ${index}`}
+              className="relative hover:text-primary-orange"
+            >
+              <a href={`${link.link}`} className="flex items-center">
+                {link.name}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <div className="flex space-x-4">
+          {router.pathname === '/people' ? (
+            <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
+              Apply now
+            </button>
+          ) : (
+            ''
+          )}
           <button
             className="p-3 px-[14px] ml-8 rounded-full bg-input block dark:hidden tablet:!hidden"
             onClick={() => setTheme('dark')}
@@ -197,15 +233,13 @@ export function LightNavbar({menuProp}) {
         setTheme={setTheme}
         isOpen={isOpen}
         close={() => setIsOpen(false)}
-        menuProp={menuProp[0]}
+        navItems={navItems[0]}
       />
     </>
   );
 }
 
-
-
-const MobileNavbar = ({ isOpen, theme, setTheme, close, menuProp }) => {
+const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
   const [showExpanded, setShowExpanded] = useState([-1, false]);
 
   return (
@@ -244,7 +278,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, menuProp }) => {
         </div>
         {showExpanded[1] ? (
           <div>
-            {menuProp.navLinks.map((link, index) => (
+            {navItems.navLinks.map((link, index) => (
               <>
                 {' '}
                 {showExpanded[0] === index ? (
@@ -279,7 +313,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, menuProp }) => {
           </div>
         ) : (
           <ul className="space-y-5 mt-10 text-lg">
-            {menuProp.navLinks.map((link, index) => (
+            {navItems.navLinks.map((link, index) => (
               <li
                 key={link.name}
                 onClick={() => setShowExpanded([index, true])}

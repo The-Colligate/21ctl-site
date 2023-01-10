@@ -14,7 +14,7 @@ const Communication = () => {
   return (
     <>
       <Head>
-        <title>Communication - 21 CTL</title>
+        <title>Digital Platform - 21 CTL</title>
         <meta name="description" content="" />
       </Head>
       <div className="max-w-screen min-h-screen flex flex-col overflow-x-hidden relative">
@@ -23,7 +23,7 @@ const Communication = () => {
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
-        <LightNavbar menuProp={links()}/>
+        <LightNavbar />
 
           <section className="main-page flex sm:px-36 px-8 my-16 items-center h-1/3 justify-between space-x-16 tablet:flex-col-reverse tablet:pt-10  tablet:space-x-0">
             <div className="flex items-center justify-center">
@@ -36,7 +36,7 @@ const Communication = () => {
             <div className="max-w-3xl">
               <h1 className="text-7xl tracking-normal font-lato font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                 <span className="text-primary-orange leading-8">
-                  Communication
+                Digital Platform
                 </span>
               </h1>
               <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">

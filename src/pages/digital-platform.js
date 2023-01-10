@@ -1,5 +1,5 @@
 import React from 'react';
-import Communication from '../pages/light/communication';
+import Communication from './light/communication';
 const CommunicationPage = () => {
   return (
     <div>
