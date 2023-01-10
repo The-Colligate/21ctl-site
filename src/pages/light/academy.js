@@ -190,7 +190,7 @@ const Academy = () => {
                   <span className="text-primary-orange">Students</span>{' '}
                   interested
                 </h1>
-                <p className="leading-8 font-extralight text-xl">
+                <p className="leading-8 text-xl">
                   Our teaching resources and strategies help you make your
                   lessons unique and keep all students interested and engaged.
                 </p>
@@ -205,7 +205,7 @@ const Academy = () => {
                   Your <span className="text-primary-orange">Learning</span> has
                   no <span className="text-primary-orange">limit</span>
                 </h1>
-                <p className="leading-8 font-extralight text-xl">
+                <p className="leading-8  text-xl">
                   Our teaching resources and strategies help you make your
                   lessons unique and keep all students interested and engaged.
                 </p>

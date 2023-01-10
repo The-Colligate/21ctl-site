@@ -135,7 +135,7 @@ const Digital = () => {
                 <span className="text-primary-orange">Connect</span> to all
                 hyperscale Cloud providers
               </h1>
-              <p className="leading-8 font-extralight text-xl">
+              <p className="leading-8 text-xl">
                 We have recently installed the 1st regional network gateway in
                 Nigeria to support Direct Connectivity to major Data Centres
                 around the globe in partnership with PCCW
@@ -149,7 +149,7 @@ const Digital = () => {
             <h1 className=" text-5xl font-bold tracking-wide">
               <span className="text-primary-orange">Data </span> Centers
             </h1>
-            <p className="tracking-wider font-light text-lg py-4 max-w-3xl m-auto">
+            <p className="tracking-wider  text-lg py-4 max-w-3xl m-auto">
               Our data center is a secure and reliable infrastructure that
               stores, processes, and manages critical data and applications. It
               enables efficient communication, collaboration, and
@@ -161,9 +161,10 @@ const Digital = () => {
             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">
-                  Ikeja Data Center
+                <span className="text-primary-orange">Ikeja </span> Data Center
+                   
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-lg font-light leading">
+                <p className="py-2 pt-4 tracking-wide text-lg leading">
                 Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                 </p>
               </div>
@@ -172,9 +173,10 @@ const Digital = () => {
             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">
-                  Ikoyi Data Center
+                <span className="text-primary-orange">Ikoyi </span> Data Center
+                   
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-lg font-light leading">
+                <p className="py-2 pt-4 tracking-wide text-lg leading">
                 Our six-story data center in Africa is innovative and equipped with a 10MW Turbine system, providing ample power and space for clients to grow.
                 </p>
               </div>
@@ -183,9 +185,10 @@ const Digital = () => {
             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">
-                  Apapa Data Center
+                <span className="text-primary-orange">Apapa </span>  Data Center
+                  
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-xl font-light leading">
+                <p className="py-2 pt-4 tracking-wide text-xl leading">
                 Our Apapa data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                 </p>
               </div>
@@ -201,7 +204,7 @@ const Digital = () => {
                 {' '}
                 <span className="text-primary-orange">5G</span> Readiness
               </h4>
-              <p className="text-xl font-light text-center pt-3">
+              <p className="text-xl text-center pt-3">
                 Our infrastructure with edge computing capabilities supports 5G
                 technology and enables new user experiences, deployment models,
                 and services.

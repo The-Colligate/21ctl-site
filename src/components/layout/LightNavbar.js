@@ -151,7 +151,8 @@ export function LightNavbar({menuProp}) {
                     ]);
                   }}
                 >
-                  {link.name} <CaretDown className="ml-1" />
+                 
+                  {link.name} {displayPopup[0] && displayPopup[1] === index ? <CaretDown className="ml-1 -rotate-180" /> : <CaretDown className="ml-1" />}
                 </a>
               </div>
             </Popover>

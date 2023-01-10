@@ -89,7 +89,7 @@ const Communication = () => {
                     <span className="text-primary-orange">Optimized </span>
                     Options from Edge to Center
                   </h1>
-                  <p className="leading-8 font-extralight text-xl text-white tablet:text-xs">
+                  <p className="leading-8 text-xl text-white tablet:text-xs">
                     We provide fast, reliable, and secure transmission of data
                     and our company offers a range of fiber optic products and
                     services to meet the diverse needs of our customers.
