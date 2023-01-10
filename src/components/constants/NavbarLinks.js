@@ -588,6 +588,11 @@ export const peopleNavLinks = [
         extras: [],
       },
       {
+        name: 'Training',
+        subLinks: [],
+        extras: [],
+      },
+      {
         name: 'Oracle University',
         subLinks: [],
         extras: [],
