@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { LightNavbar, Footer } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
 import { Popover } from 'evergreen-ui';
-
+import { links } from '../../components/constants/NavbarLinks';
 import SiemensEnergy from '/public/logo/Siemens Energy.svg';
 import SchneiderElectric from '/public/logo/Schneider Electric.svg';
 import PCCWGlobal from '/public/logo/PCCW Global.svg';
@@ -43,7 +43,7 @@ const Digital = () => {
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
       </div>
       <div className="w-full min-h-screen flex flex-col z-[1]">
-        <LightNavbar />
+      <LightNavbar menuProp={links()}/>
 
         <section className="flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
           <div className='max-w-3xl'>

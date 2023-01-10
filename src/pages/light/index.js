@@ -3,7 +3,7 @@ import { ArrowRight } from '@icons/index';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Popover } from 'evergreen-ui'
-
+import { links } from '../../components/constants/NavbarLinks';
 
 function LightDesign() {
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
@@ -51,7 +51,7 @@ function LightDesign() {
       name: 'Power',
       snippet:
         '21ctl enhouses premier renewable energy, turbine power infrastructure, power plant and electric energy storage system integrations and balancing services.',
-      link: '#',
+      link: '/power',
     },
 
     {
@@ -77,7 +77,7 @@ function LightDesign() {
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
       </div>
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
-        <LightNavbar />
+      <LightNavbar menuProp={links()}/>
         <div className="flex items-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
           <div className="w-full h-full flex items-center">
             <div className="max-w-3xl">
@@ -102,7 +102,7 @@ function LightDesign() {
               </p>
             </div>
           </div>
-          <div className="w-full h-full min-w-[50%]">
+          <div className="w-full h-full z-0 min-w-[50%]">
             <div className="h-full flex justify-center mt-10 mx-auto largeTablet:mt-14 smallTablet:mt-8 phone:mt-6 mb-20">
               <div className="flex">
                 <div className="hexagon-container">

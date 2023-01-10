@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Popover } from 'evergreen-ui';
 
-export function LightNavbar() {
+export function LightNavbar({menuProp}) {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
@@ -24,7 +24,7 @@ export function LightNavbar() {
 
   return (
     <>
-      <div className="navbar flex justify-between items-center space-x-5 py-1 px-20 font-lato tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
+      <div className="navbar flex justify-between items-center space-x-5 py-1 px-20 font-lato z-50 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
         <Link href="/">
           <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
         </Link>
@@ -36,7 +36,7 @@ export function LightNavbar() {
         </Link>
 
         <ul className="flex space-x-8 largeTablet:hidden">
-          {links.map((link, index) => (
+          {menuProp[0].navLinks.map((link, index) => (
             <Popover
               key={link.name}
               statelessProps={{
@@ -156,16 +156,15 @@ export function LightNavbar() {
               </div>
             </Popover>
           ))}
-          <li className="relative hover:text-primary-orange">
-            <a href="#" className="flex items-center">
-              Konet Mail
+          {menuProp[1].additionalLinks.map((link, index) => (
+            <li key={`${link} ${index}`} className="relative hover:text-primary-orange">
+            <a href={`${link.link}`} className="flex items-center">
+              {link.name}
             </a>
           </li>
-          <li className="relative hover:text-primary-orange">
-            <a href="#" className="flex items-center">
-              Explore more
-            </a>
-          </li>
+         ) )}
+          
+          
         </ul>
 
         <div className="flex space-x-4">
@@ -196,204 +195,15 @@ export function LightNavbar() {
         setTheme={setTheme}
         isOpen={isOpen}
         close={() => setIsOpen(false)}
+        menuProp={menuProp}
       />
     </>
   );
 }
 
-const links = [
-  {
-    name: 'Products',
-    subLinks: [
-      {
-        name: 'CAAS',
-        link: '#',
-        text: 'Streamlining operations with CAAS.',
-        icon: '/icons/home/mdi_cloud-check-variant.svg',
-      },
-      {
-        name: 'SMS Gateway',
-        link: '/',
-        text: 'Connecting you with reliable SMS solutions.',
-        icon: '/icons/home/fa6-solid_comment-sms.svg',
-      },
-    ],
-    extras: [],
-  },
-  {
-    name: 'Solutions',
-    subLinks: [
-      {
-        name: 'Power',
-        link: '/',
-        text: 'Powering businesses with energy.',
-        icon: '/icons/home/game-icons_power-lightning.svg',
-      },
-      {
-        name: 'Digital Infrastructure',
-        link: '/digital',
-        text: 'Providing seamless customer experience',
-        icon: '/icons/home/eos-icons_cloud-computing.svg',
-      },
-      {
-        name: 'Communication',
-        link: '/communication',
-        text: 'Connecting with effective communication.',
-        icon: '/icons/home/call-icon.svg',
-      },
-      {
-        name: 'Payment',
-        link: 'https://konetpay.com/',
-        text: 'Effortlessly processing your payments',
-        icon: '/icons/home/mdi_credit-card.svg',
-      },
 
-      {
-        name: 'People',
-        link: '/academy',
-        text: 'Connecting with the right people.',
-        icon: '/icons/home/people-icon.svg',
-      },
-      // { name: "Digital Platform", link: "/", text: "Powering businesses with energy.", icon: "" },
-      {
-        name: 'Security',
-        link: '/',
-        text: 'Powering businesses with energy.',
-        icon: '/icons/home/security-lock.svg',
-      },
-      {
-        name: 'Konet Space',
-        link: '/',
-        text: 'Experience the power of Konet Space.',
-        icon: '/icons/home/earth-filled.svg',
-      },
-    ],
-    extras: [],
-  },
-  {
-    name: 'Market Place',
-    subLinks: [
-      {
-        name: 'E-Learning',
-        link: '/',
-        text: 'Empowering learners with E-learning.',
-        icon: '/icons/home/hat-graduation-filled.svg',
-      },
-      {
-        name: 'E-Publishing',
-        link: '/',
-        text: 'Revolutionizing publishing with e-platform.',
-        icon: '/icons/home/ph_book-fill.svg',
-      },
 
-      {
-        name: 'Music',
-        link: '/',
-        text: 'Unleashing the power of music.',
-        icon: '/icons/home/ph_music-note-fill.svg',
-      },
-
-      {
-        name: 'Mobile Commerce',
-        link: '/',
-        text: 'Connecting you to mobile commerce.',
-        icon: '/icons/home/shopping-bag-sharp.svg',
-      },
-
-      {
-        name: 'Ticketing',
-        link: '/',
-        text: 'Simplifying ticketing with innovation.',
-        icon: '/icons/home/dashicons_tickets-alt.svg',
-      },
-      {
-        name: 'Mobility',
-        link: '/',
-        text: 'Empowering your business with mobility.',
-        icon: '/icons/home/directions-bus-rounded.svg',
-      },
-      {
-        name: 'Konet Space',
-        link: '/',
-        text: '',
-        icon: '/icons/home/earth-filled.svg',
-      },
-      {
-        name: 'Games',
-        link: '/',
-        text: 'Powering businesses with energy.',
-        icon: '/icons/home/dashicons_tickets-alt.svg',
-      },
-    ],
-    extras: [],
-  },
-  {
-    name: 'Company',
-    subLinks: [
-      {
-        name: '21st Century Technologies Limited',
-        link: '#',
-        text: 'Streamlining operations with CAAS.',
-        icon: '/LOGO.png',
-      },
-      {
-        name: '21st Century Digital Infrastructure Limited',
-        link: '#',
-        text: 'Streamlining operations with CAAS.',
-        icon: '/LOGO.png',
-      },
-
-      {
-        name: 'KonetPay Nigeria Limited',
-        link: '#',
-        text: 'Experience the power of Konet pay.',
-        icon: '/icons/home/KonetPay logo.svg',
-      },
-      {
-        name: '21st Century Energy',
-        link: '#',
-        text: 'Streamlining operations with CAAS.',
-        icon: '/LOGO.png',
-      },
-    ],
-    extras: [
-      {
-        name: 'About Us',
-        link: '/about-us',
-        icon: '/icons/home/about.svg',
-        text: 'Learn More about 21ctl.',
-      },
-      {
-        name: 'Careers',
-        link: '#',
-        icon: '/icons/home/career.svg',
-
-        text: 'Discover the best role for you.',
-      },
-      {
-        name: 'Partners',
-        link: '#',
-        icon: '/icons/home/handshake.svg',
-
-        text: 'See our partners',
-      },
-    ],
-  },
-  // {
-  //   name: "Konet Mail", subLinks: [
-  //     { name: "Payment", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/mdi_credit-card.svg" },
-  //     { name: "Lottery ", link: "#", text: "Powering businesses with energy.", icon: "/icons/home/dashicons_tickets-alt.svg" },
-
-  //   ],
-  //   extras: []
-  // },
-  // {
-  //   name: "Explore More", subLinks: [],
-  //   extras: []
-  // },
-];
-
-const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
+const MobileNavbar = ({ isOpen, theme, setTheme, close, menuProp }) => {
   const [showExpanded, setShowExpanded] = useState([-1, false]);
 
   return (
@@ -432,7 +242,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
         </div>
         {showExpanded[1] ? (
           <div>
-            {links.map((link, index) => (
+            {menuProp.map((link, index) => (
               <>
                 {' '}
                 {showExpanded[0] === index ? (
@@ -467,7 +277,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
           </div>
         ) : (
           <ul className="space-y-5 mt-10 text-lg">
-            {links.map((link, index) => (
+            {menuProp.map((link, index) => (
               <li
                 key={link.name}
                 onClick={() => setShowExpanded([index, true])}

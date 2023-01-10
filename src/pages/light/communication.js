@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer } from '@components/layout/';
-
+import { links } from '../../components/constants/NavbarLinks';
 import Satalite from '/public/logo/satalite.png';
 import Orange from '/public/logo/orange.png';
 import MTN from '/public/logo/MTN.png';
@@ -23,7 +23,7 @@ const Communication = () => {
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
-          <LightNavbar />
+        <LightNavbar menuProp={links()}/>
 
           <section className="main-page flex sm:px-36 px-8 my-16 items-center h-1/3 justify-between space-x-16 tablet:flex-col-reverse tablet:pt-10  tablet:space-x-0">
             <div className="flex items-center justify-center">

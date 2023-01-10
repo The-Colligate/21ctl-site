@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer } from '@components/layout/';
-
 import SiemensEnergy from '/public/logo/Siemens Energy.svg';
 import SchneiderElectric from '/public/logo/Schneider Electric.svg';
 import PCCWGlobal from '/public/logo/PCCW Global.svg';
@@ -18,6 +17,7 @@ import niginterbank from 'public/logo/partners/Nigeria Inter-Bank Settlement Sys
 import orange from 'public/logo/partners/Orange - png 0.png';
 import usembassy from 'public/logo/partners/The U.S. Embassy - png 0.png';
 import vmware from 'public/logo/partners/VMware - png 0.png';
+import { AcademyNavbar } from '@components/layout/AcademyNavbar';
 
 const Academy = () => {
   const courses = [
@@ -43,7 +43,7 @@ const Academy = () => {
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
-          <LightNavbar />
+        <AcademyNavbar />
 
           <section className="bg-[#E7D7D2] dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
@@ -59,6 +59,9 @@ const Academy = () => {
                   Our top-rated academy offers expert-led courses to help you
                   unlock your potential and advance your career.
                 </p>
+                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
+                Apply now
+              </button>
               </div>
               <div className="flex-1">
                 <Image
@@ -143,7 +146,7 @@ const Academy = () => {
               <p className="text-primary-orange">See more</p>
             </div>
 
-            <div className="grid gap-10 grid-cols-3 largeTablet:grid-cols-2 tablet:grid-cols-2 mt-10">
+            <div className="grid gap-10 grid-cols-3 largeTablet:grid-cols-2 tablet:grid-cols-2 mt-10 phone:grid-cols-1">
               {courses.map((course) => (
                 <div
                   key={course}

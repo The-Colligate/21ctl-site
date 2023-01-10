@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer } from '@components/layout/';
-
+import { links } from '../../components/constants/NavbarLinks';
 import SiemensEnergy from '/public/logo/Siemens Energy.svg';
 import SchneiderElectric from '/public/logo/Schneider Electric.svg';
 import PCCWGlobal from '/public/logo/PCCW Global.svg';
 import HeroImage from '/public/logo/hero-image.png';
 
-import Power from '/public/logo/Power.png';
+import power from '/public/logo/Power.png';
 
 import accesslogo from 'public/logo/partners/Access Bank - png 0.png';
 import aws from 'public/logo/partners/Amazon Web Services - png 0.png';
@@ -21,11 +21,11 @@ import orange from 'public/logo/partners/Orange - png 0.png';
 import usembassy from 'public/logo/partners/The U.S. Embassy - png 0.png';
 import vmware from 'public/logo/partners/VMware - png 0.png';
 
-const Security = () => {
+const Power = () => {
   return (
     <>
       <Head>
-        <title>Security - 21 CTL</title>
+        <title>Power - 21 CTL</title>
         <meta name="description" content="" />
       </Head>
       <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative">
@@ -34,7 +34,7 @@ const Security = () => {
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
-          <LightNavbar />
+        <LightNavbar menuProp={links()} />
 
           <section className="sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
@@ -53,7 +53,7 @@ const Security = () => {
               </div>
               <div className="">
                 <Image
-                  src={Power}
+                  src={power}
                   width={800}
                   className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
                 />
@@ -87,7 +87,7 @@ const Security = () => {
             </div>
             {/* </marquee> */}
           </section>
-
+<section className='energy'>
           <section className="sm:mb-0 mb-16 py-20">
             <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
               <div className="flex-1">
@@ -133,7 +133,7 @@ const Security = () => {
               </div>
             </div>
           </section>
-
+          </section>
           <section className="sm:mb-0 mb-16 py-20">
             <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
               <div className="flex-1">
@@ -218,4 +218,4 @@ const Security = () => {
   );
 };
 
-export default Security;
+export default Power;

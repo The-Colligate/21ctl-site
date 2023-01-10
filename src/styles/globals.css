@@ -325,6 +325,14 @@ body {
   border-radius: 10px;
 } */
 
+.energy{
+  background-image: url('/logo/wave-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100vw;
+}
+
 .internet-section {
   background-image: url('/logo/waves.svg'), url('/logo/Rectangle-transfrom.svg');
   background-repeat: repeat-x, no-repeat;
