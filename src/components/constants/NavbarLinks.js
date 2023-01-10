@@ -213,7 +213,7 @@ export const trainingCourses = ()=> [
         name: "DATA",
         courses: [{ name: "Artificial Intelligence", link: "#" },
         { name: "Deep Learning", link: "#" },
-        { name: "Power BI", link: "#" },
+        { name: "Data Visualization", link: "#" },
         { name: "Data Science", link: "#" },
     ]
     },

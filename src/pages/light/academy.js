@@ -67,7 +67,7 @@ const Academy = () => {
                 <Image
                   src="/logo/student.png"
                   width={559}
-                  height={665}
+                  height={650}
                   className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
                 />
               </div>
@@ -75,28 +75,28 @@ const Academy = () => {
           </section>
 
           <section className="sm:px-28 px-8 my-10">
-            <div className="flex sm:flex-row flex-col justify-between items-center  sm:space-x-40 space-x-0 ">
+            <div className=" flex flex-col justify-center items-center w-full  sm:space-x-40 space-x-0 ">
               <div className="text-2xl pb-5 w-full">
-                Our statistics reveal <br /> more about us.
+                Our statistics reveal more about us.
               </div>
-              <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-between">
+              <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-around items-center">
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
                     50+
                   </p>
-                  <span className="font-light">Total Courses</span>
+                  <span className="">Total Courses</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
                     100+
                   </p>
-                  <span className="font-light">Expert Mentors</span>
+                  <span className="">Expert Mentors</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
                     5k+
                   </p>
-                  <span className="font-light">Students</span>
+                  <span className="">Students</span>
                 </div>
               </div>
             </div>
