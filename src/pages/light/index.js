@@ -320,7 +320,7 @@ function LightDesign() {
           })}
         </div>
       </div>
-      <div className="flex flex-col fixed z-[1] p-2 right-0 space-y-4 top-1/3 rounded-r bg-white tablet:hidden">
+      <div className="flex flex-col fixed z-[1] p-2 right-0 space-y-4 top-1/3 rounded-r bg-white tablet:top-2/4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

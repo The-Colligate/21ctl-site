@@ -215,7 +215,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, menuProp }) => {
       } largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
-        <div className="flex justify-between mt-2">
+        <div className="flex justify-between mt-2 mb-3">
           {showExpanded[1] ? (
             <button
               className="flex items-center"
