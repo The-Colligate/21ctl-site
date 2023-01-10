@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }) {
           property="og:image"
           content="https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.jpg"
         />
-        <link
+        {/* <link
           rel="apple-touch-icon"
           sizes="57x57"
           href="/favicons/apple-icon-57x57.png"
@@ -99,9 +99,12 @@ export default function App({ Component, pageProps }) {
           type="image/png"
           sizes="16x16"
           href="/favicons/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/favicons/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
+        /> */}
+
+        
+        {/* <link rel="manifest" href="/favicons/manifest.json" /> */}
+        <link rel="icon" href="/logo.ico" />
+        <meta name="msapplication-TileColor"  />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
