@@ -10,13 +10,13 @@ function LightDesign() {
 
 
   const products = [
-    {
-      icon: '/icons/home/baseline-call.svg',
-      name: 'Communication',
-      snippet:
-        'We build, provide one to one, one to many, many to many, communication infrastructures and platforms, supporting millions of users transactions and variety of business processes',
-      link: '/communication',
-    },
+    // {
+    //   icon: '/icons/home/baseline-call.svg',
+    //   name: 'Communication',
+    //   snippet:
+    //     'We build, provide one to one, one to many, many to many, communication infrastructures and platforms, supporting millions of users transactions and variety of business processes',
+    //   link: '/communication',
+    // },
     {
       icon: '/icons/home/cloud-computing.svg',
       name: 'Digital Infrastructure',
@@ -34,7 +34,7 @@ function LightDesign() {
     // },
     {
       icon: '/icons/home/globe.svg',
-      name: 'Konet Space',
+      name: 'Digial Platform',
       snippet:
         'Konet space ecosystem allows users and businessess to use their Konet mail to access variety of apps, solutions, products and support services.',
       link: '#',
