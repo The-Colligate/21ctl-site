@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Popover } from 'evergreen-ui';
 
+
 export function LightNavbar({menuProp}) {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
@@ -196,7 +197,7 @@ export function LightNavbar({menuProp}) {
         setTheme={setTheme}
         isOpen={isOpen}
         close={() => setIsOpen(false)}
-        menuProp={menuProp}
+        menuProp={menuProp[0]}
       />
     </>
   );
@@ -243,7 +244,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, menuProp }) => {
         </div>
         {showExpanded[1] ? (
           <div>
-            {menuProp.map((link, index) => (
+            {menuProp.navLinks.map((link, index) => (
               <>
                 {' '}
                 {showExpanded[0] === index ? (
@@ -278,7 +279,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, menuProp }) => {
           </div>
         ) : (
           <ul className="space-y-5 mt-10 text-lg">
-            {menuProp.map((link, index) => (
+            {menuProp.navLinks.map((link, index) => (
               <li
                 key={link.name}
                 onClick={() => setShowExpanded([index, true])}
