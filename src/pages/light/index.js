@@ -82,10 +82,8 @@ function LightDesign() {
           <div className="w-full h-full flex items-center">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
-                Building Africa&apos;s Largest{' '}
-                <span className="text-primary-orange">Digital</span>{' '} Infrastructure
-                <span className="text-primary-orange">Building</span>{' '}
-                Africa&apos;s largest Digital Infrastructrue
+                Building Africa&apos;s <span className="text-primary-orange">Largest{' '}
+                Digital</span>{' '} Infrastructure
               </h1>
               <p className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
                 21st Century Technologies Limited, an ecosystem Technology
