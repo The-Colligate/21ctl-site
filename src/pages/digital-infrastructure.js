@@ -1,5 +1,5 @@
 import React from 'react';
-import Digital from '../pages/light/digital';
+import Digital from './light/digital';
 const DigitalInfra = () => {
   return (
     <div>

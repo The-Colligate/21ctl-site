@@ -1,5 +1,5 @@
 import React from 'react';
-import Academy from '../pages/light/academy';
+import Academy from './light/academy';
 const People = () => {
   return (
     <div>

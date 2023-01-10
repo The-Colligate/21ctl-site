@@ -43,7 +43,7 @@ const Academy = () => {
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
-        <AcademyNavbar />
+        <LightNavbar />
 
           <section className="bg-[#E7D7D2] academy-curve dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
