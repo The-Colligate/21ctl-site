@@ -66,7 +66,7 @@ function LightDesign() {
       name: 'Security as Service',
       snippet:
         '21ctl manages your business security, providing cloud-based security service and in-house security management. Our SECaaS business model is available for integration into a corporate infrastructure.',
-      link: '#',
+      link: '/security',
     },
   ];
 
