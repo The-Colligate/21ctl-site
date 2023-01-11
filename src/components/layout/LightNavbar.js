@@ -227,9 +227,15 @@ export function LightNavbar({ menuProp }) {
 
         <div className="flex space-x-4">
           {router.pathname === '/people' ? (
-            <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
-              Apply now
-            </button>
+            <a
+              href="https://academy-app-21ctl-blessedmadukoma.koyeb.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
+                Apply now
+              </button>
+            </a>
           ) : (
             ''
           )}

@@ -43,7 +43,7 @@ const Academy = () => {
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
-        <LightNavbar />
+          <LightNavbar />
 
           <section className="bg-[#E7D7D2] dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
@@ -59,9 +59,15 @@ const Academy = () => {
                   Our top-rated academy offers expert-led courses to help you
                   unlock your potential and advance your career.
                 </p>
-                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
-                Apply now
-              </button>
+                <a
+                  href="https://academy-app-21ctl-blessedmadukoma.koyeb.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
+                    Apply now
+                  </button>
+                </a>
               </div>
               <div className="flex-1">
                 <Image
