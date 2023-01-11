@@ -43,8 +43,8 @@ export function LightNavbar({ menuProp }) {
       : router.pathname === '/people'
       ? peopleNavLinks
       : mainLinks;
-  console.log('navItems', navItems);
-  console.log('pathname', router.pathname);
+  // console.log('navItems', navItems);
+  // console.log('pathname', router.pathname);
 
   return (
     <>
