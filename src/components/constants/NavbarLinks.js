@@ -169,8 +169,8 @@ export const mainLinks = [
   },
   {
     additionalLinks: [
-      { name: 'Digital Platforms', link: '/' },
-      { name: 'Explore More', link: '/' },
+      { name: 'Digital Platforms', link: '/digital-platform' },
+      { name: 'Cloud Solutions', link: 'https://www.21ctl.com/cloud/' },
     ],
   },
 ];
@@ -589,18 +589,123 @@ export const peopleNavLinks = [
       },
       {
         name: 'Training',
-        subLinks: [],
-        extras: [],
+        head:'our training',
+        subLinks: [
+          {
+            name: 'WEB',
+            link: '/about-us',
+            icon: '/icons/home/about.svg',
+            text: 'Intro to Web Development',
+            text1: 'Front-end',
+            text2: 'Back-end',
+            text3: 'Full Stack ',
+            text4: 'Mobile Dev',
+          },
+          {
+            name: 'INFRASTRUCTURE',
+            link: '/',
+            icon: '/icons/home/career.svg',
+            text: 'Cloud Infrastructure',
+            text1: 'Software',
+            text2: 'Hardware',
+            text3: 'Communication ',
+          },
+          {
+            name: 'DESIGN',
+            link: '/',
+            icon: '/icons/home/career.svg',
+            text: 'UI/UX Design',
+            text1: 'Graphic Design:',
+            text2: 'Industrial Design',
+          },
+          {
+            name: 'DATA',
+            link: '/',
+            icon: '/icons/home/career.svg',
+            text: 'Artificial Intelligence',
+            text1: 'Deep Learning ',
+            text2: 'Power BI',
+            text3: 'Data Science ',
+            text4: 'Data Analystics',
+            text5: 'Machine Learning',
+          },
+          {
+            name: 'SYSTEM',
+            link: '/',
+            icon: '/icons/home/career.svg',
+            text: 'Devops',
+            text1: 'Cybersecurity',
+            text2: 'Security and Compliance',
+            text3: 'Infrastructrue as Code (IaC)',
+            text4: 'Data Center Management',
+          },
+        ],
+        extras: [
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'ML/AI Expert',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'Oracle Certification',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'Cloud Engineering',
+          },
+        ],
       },
       {
         name: 'Oracle University',
-        subLinks: [],
-        extras: [],
+        subLinks: [
+          {
+            name: 'Certification',
+            link: '/about-us',
+            icon: '/icons/home/about.svg',
+            text: 'Oracle Cloud Infrastructure',
+            text1: 'Oracle Database',
+            text2: 'Java',
+          },
+        ],
+        extras: [
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'Program Overview',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'Explore certification benefits',
+          },
+        ],
       },
       {
         name: 'Schneider University',
-        subLinks: [],
-        extras: [],
+        subLinks: [
+          {
+            name: 'Certification',
+            link: '/about-us',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+        ],
+        extras: [
+          {
+            icon: '/icons/home/career.svg',
+            link: 'https://schneider.efrontlearning.com/',
+            name: 'Program Overview',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: 'https://schneider.efrontlearning.com/',
+            name: 'Explore certification benefits',
+          },
+        ],
       },
       {
         name: 'AI and ML Centre',

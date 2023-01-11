@@ -45,7 +45,7 @@ const Academy = () => {
         <div className="w-full min-h-screen flex flex-col z-[1]">
         <LightNavbar />
 
-          <section className="bg-[#E7D7D2] academy-curve dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
+          <section className="bg-[#E7D7D2] dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
               <div className="flex-1">
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
