@@ -112,7 +112,7 @@ const Security = () => {
                      Threat Protection
                   </h1>
                   <p className="leading-8 text-xl text-white tablet:text-xs">
-                  Stay protected against cyber threats with 21st Century's integrated threat prevention, firewall, web, email, and device control defenses.
+                  Stay protected against cyber threats with 21st Century{"'"}s integrated threat prevention, firewall, web, email, and device control defenses.
                   </p>
                   <button className='p-1 mt-4 border-white border-solid border rounded-xl text-white text-center  w-32'>Reach Us</button>
                 </div>
@@ -193,7 +193,7 @@ const Security = () => {
                     
                   </h1>
                   <p className="text-[18px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
-                  SmartBackup is an automated configuration backup solution that schedules automatic backups, monitors them from a dashboard interface, performs automatic network configuration backup procedures, verifies that they've been completed correctly, and provides easy management of devices for compliance.
+                  SmartBackup is an automated configuration backup solution that schedules automatic backups, monitors them from a dashboard interface, performs automatic network configuration backup procedures, verifies that they{"'"}ve been completed correctly, and provides easy management of devices for compliance.
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
                 Read more
