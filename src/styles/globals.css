@@ -308,6 +308,7 @@ body {
   /* border-bottom: 1px solid #fecc29; */
 }
 
+
 .main-page {
   background-image: url('/logo/Ellipse-bg.svg');
   background-repeat: no-repeat;
@@ -362,6 +363,14 @@ body {
   height: 80vh;
 }
 
+.security {
+  background-image: url('/logo/security-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
 .values_grid {
   display: grid; 
   grid-auto-columns: 1fr; 
@@ -384,9 +393,10 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
-  .about-us {
+  .about-us, .security {
     height: 50vh;
   }
+  
 }
 
 @media only screen and (max-width: 600px) {

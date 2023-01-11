@@ -10,7 +10,7 @@ import GLO from '/public/logo/glo.png';
 import nineMobile from '/public/logo/9mobile.png';
 import Airtel from '/public/logo/airtel.png';
 
-const Communication = () => {
+const DigitalPlatform = () => {
   return (
     <>
       <Head>
@@ -25,11 +25,11 @@ const Communication = () => {
         <div className="w-full min-h-screen flex flex-col z-[1]">
         <LightNavbar />
 
-          <section className="main-page flex sm:px-36 px-8 my-16 items-center h-1/3 justify-between space-x-16 tablet:flex-col-reverse tablet:pt-10  tablet:space-x-0">
-            <div className="flex items-center justify-center">
+          <section className="main-page flex sm:px-36  my-16 items-center h-1/3 justify-between space-x-16 tablet:flex-col-reverse tablet:pt-10  tablet:space-x-0">
+            <div className="flex justify-start items-start">
               <Image
                 src={Satalite}
-                width={1250}
+                width={743}
                 className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
               />
             </div>
@@ -171,4 +171,4 @@ const Communication = () => {
   );
 };
 
-export default Communication;
+export default DigitalPlatform;
