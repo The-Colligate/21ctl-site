@@ -12,6 +12,7 @@ import {
   mainLinks,
   powerNavLinks,
   peopleNavLinks,
+  securityNavLinks,
 } from '../constants/NavbarLinks';
 
 export function LightNavbar({ menuProp }) {
@@ -42,6 +43,8 @@ export function LightNavbar({ menuProp }) {
       ? powerNavLinks
       : router.pathname === '/people'
       ? peopleNavLinks
+      : router.pathname === '/security'
+      ? securityNavLinks
       : mainLinks;
   // console.log('navItems', navItems);
   // console.log('pathname', router.pathname);
