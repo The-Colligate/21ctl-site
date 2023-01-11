@@ -1,11 +1,11 @@
 import React from 'react';
-import Communication from './light/communication';
-const CommunicationPage = () => {
+import DigitalPlatform from './light/digital-platform';
+const DigitalPlatformPage = () => {
   return (
     <div>
-      <Communication />
+      <DigitalPlatform />
     </div>
   );
 };
 
-export default CommunicationPage;
+export default DigitalPlatformPage;

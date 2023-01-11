@@ -10,7 +10,7 @@ import GLO from '/public/logo/glo.png';
 import nineMobile from '/public/logo/9mobile.png';
 import Airtel from '/public/logo/airtel.png';
 
-const Communication = () => {
+const DigitalPlatform = () => {
   return (
     <>
       <Head>
@@ -171,4 +171,4 @@ const Communication = () => {
   );
 };
 
-export default Communication;
+export default DigitalPlatform;

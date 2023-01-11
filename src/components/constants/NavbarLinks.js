@@ -36,7 +36,7 @@ export const mainLinks = [
           },
           {
             name: 'Digital Platforms',
-            link: '/communication',
+            link: '/digital-platform',
             text: 'Connecting with effective communication.',
             icon: '/icons/home/call-icon.svg',
           },
