@@ -16,6 +16,8 @@ import connectLogo from '/public/logo/connect21ctl.png';
 import apapa from '/public/data-centers/apapa-center.png';
 import ikeja from '/public/data-centers/ikeja-center.png';
 import lekki from '/public/data-centers/lekki-center.png';
+import sakat from '/public/data-centers/sakatinubu.jpeg';
+import alanamu from '/public/data-centers/alanamu.png';
 
 import fiveG from '/public/logo/5g main.svg';
 
@@ -157,7 +159,7 @@ const Digital = () => {
             </p>
           </div>
 
-          <div className="flex sm:flex-row flex-col justify-center sm:space-x-10 space-x-0 mt-5 px-5">
+          <div className="data_center_grid mt-5 px-28">
             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">
@@ -194,6 +196,31 @@ const Digital = () => {
               </div>
               <Image src={apapa} className="inline-block w-full h-fit" />
             </div>
+            <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
+              <div className="p-5 text-black dark:text-black">
+                <h3 className="text-3xl font-medium tracking-wide ">
+                <span className="text-primary-orange">Saka-Tinubu </span>  Data Center
+                  
+                </h3>
+                <p className="py-2 pt-4 tracking-wide text-xl leading">
+                Our Saka-Tinubu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
+                </p>
+              </div>
+              <Image src={sakat} className="inline-block w-full h-fit" />
+            </div>
+            <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
+              <div className="p-5 text-black dark:text-black">
+                <h3 className="text-3xl font-medium tracking-wide ">
+                <span className="text-primary-orange">Alanamu </span>  Data Center
+                  
+                </h3>
+                <p className="py-2 pt-4 tracking-wide text-xl leading">
+                Our Alanamu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
+                </p>
+              </div>
+              <Image src={alanamu} className="inline-block w-full h-fit rounded-br-2xl rounded-bl-2xl" />
+            </div>
+
           </div>
         </section>
 
