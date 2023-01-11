@@ -72,11 +72,11 @@ export function LightNavbar({ menuProp }) {
               isShown={displayPopup[0] && displayPopup[1] === index}
               content={
                 <div
-                  className="min-w-max flex"
+                  className="max-w-max flex"
                   onMouseOver={(e) => setDisplayPopup([true, index])}
                   onMouseOut={(e) => setDisplayPopup([true, index])}
                 >
-                  <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
+                  <div class="max-w-4xl pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
                       {router.pathname == '/digital-infrastructure' &&
                         link.name.toUpperCase()}
@@ -88,7 +88,7 @@ export function LightNavbar({ menuProp }) {
                       {link.subLinks.map((sublinks) => (
                         <div
                           key={sublinks.name}
-                          className="mt-5 dark:text-white hover:text-primary-orange"
+                          className="mt-5 dark:text-white"
                         >
                           <div className="flex hover:text-primary-orange">
                             <Image
@@ -105,12 +105,39 @@ export function LightNavbar({ menuProp }) {
                               {sublinks.name}
                             </Link>
                           </div>
-                          <Link
-                            href={`${sublinks.link}`}
-                            className="ml-9 space-y-2 list-disc text-[10px] dark:text-white"
-                          >
-                            {sublinks.text}{' '}
-                          </Link>
+
+                          <div className="flex flex-col">
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks.text}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks.text1}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks.text2}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks.text3}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks.text4}{' '}
+                            </Link>
+                          </div>
                         </div>
                       ))}
                     </div>
