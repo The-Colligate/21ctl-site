@@ -49,7 +49,7 @@ export const mainLinks = [
           // { name: "Digital Platform", link: "/", text: "Powering businesses with energy.", icon: "" },
           {
             name: 'Security',
-            link: '/',
+            link: '/security',
             text: 'Powering businesses with energy.',
             icon: '/icons/home/security-lock.svg',
           },
