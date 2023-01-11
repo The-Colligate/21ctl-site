@@ -78,8 +78,8 @@ export function LightNavbar({ menuProp }) {
                 >
                   <div class="max-w-4xl pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
-                      {router.pathname == '/digital-infrastructure' &&
-                        link.name.toUpperCase()}
+                      {link.name.toUpperCase()}
+                      {router.pathname === '/people' && link?.head}
                     </h2>
                     <hr />
                     <div
@@ -109,50 +109,45 @@ export function LightNavbar({ menuProp }) {
                           <div className="flex flex-col">
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange max-w-sm"
                             >
-                              {sublinks.text}{' '}
+                              <span className="">{sublinks?.text} </span>
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
                               className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
                             >
-                              {sublinks.text1}{' '}
+                              {sublinks?.text1}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
                               className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
                             >
-                              {sublinks.text2}{' '}
+                              {sublinks?.text2}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
                               className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
                             >
-                              {sublinks.text3}{' '}
+                              {sublinks?.text3}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
                               className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
                             >
-                              {sublinks.text4}{' '}
+                              {sublinks?.text4}{' '}
                             </Link>
                           </div>
                         </div>
                       ))}
                     </div>
                   </div>
-                  <div className=" min-w-[250px] flex items-center justify-center bg-silver dark:bg-[#121212]">
-                    <h2 className="text-darkShade"></h2>
+                  <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
+                    <h2 className="text-sm font-bold text-darkShade">Recent</h2>
 
-                    <div
-                      className={`grid grid-cols-2 flex-nowrap  mx-5 w-full`}
-                    >
+                    <div className={`flex flex-col flex-nowrap w-full`}>
                       {link.extras.map((sublinks) => (
-                        <div
-                          key={sublinks.name}
-                          className="mt-5 hover:text-primary-orange"
-                        >
+                        <div key={sublinks.name} className="mt-3">
                           <div className="flex">
                             {' '}
                             <Image
@@ -162,7 +157,7 @@ export function LightNavbar({ menuProp }) {
                             />{' '}
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-4 space-y-2 list-disc font-semibold "
+                              className="ml-2 list-disc font-semibold hover:text-primary-orange"
                             >
                               {' '}
                               {sublinks.name}
@@ -170,7 +165,7 @@ export function LightNavbar({ menuProp }) {
                           </div>
                           <Link
                             href={`${sublinks.link}`}
-                            className="ml-9 space-y-2 list-disc text-[10px]"
+                            className="ml-9 list-disc text-[10px]"
                           >
                             {sublinks.text}{' '}
                           </Link>
@@ -218,7 +213,12 @@ export function LightNavbar({ menuProp }) {
               key={`${link} ${index}`}
               className="relative hover:text-primary-orange"
             >
-              <a href={`${link.link}`} className="flex items-center">
+              <a
+                href={`${link.link}`}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center"
+              >
                 {link.name}
               </a>
             </li>

@@ -169,8 +169,8 @@ export const mainLinks = [
   },
   {
     additionalLinks: [
-      { name: 'Digital Platforms', link: '/' },
-      { name: 'Explore More', link: '/' },
+      { name: 'Digital Platforms', link: '/digital-platform' },
+      { name: 'Cloud Solutions', link: 'https://www.21ctl.com/cloud/' },
     ],
   },
 ];
@@ -589,6 +589,7 @@ export const peopleNavLinks = [
       },
       {
         name: 'Training',
+        head:'our training',
         subLinks: [
           {
             name: 'WEB',
@@ -639,17 +640,72 @@ export const peopleNavLinks = [
             text4: 'Data Center Management',
           },
         ],
-        extras: [],
+        extras: [
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'ML/AI Expert',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'Oracle Certification',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'Cloud Engineering',
+          },
+        ],
       },
       {
         name: 'Oracle University',
-        subLinks: [],
-        extras: [],
+        subLinks: [
+          {
+            name: 'Certification',
+            link: '/about-us',
+            icon: '/icons/home/about.svg',
+            text: 'Oracle Cloud Infrastructure',
+            text1: 'Oracle Database',
+            text2: 'Java',
+          },
+        ],
+        extras: [
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'Program Overview',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: '/',
+            name: 'Explore certification benefits',
+          },
+        ],
       },
       {
         name: 'Schneider University',
-        subLinks: [],
-        extras: [],
+        subLinks: [
+          {
+            name: 'Certification',
+            link: '/about-us',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+        ],
+        extras: [
+          {
+            icon: '/icons/home/career.svg',
+            link: 'https://schneider.efrontlearning.com/',
+            name: 'Program Overview',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: 'https://schneider.efrontlearning.com/',
+            name: 'Explore certification benefits',
+          },
+        ],
       },
       {
         name: 'AI and ML Centre',
