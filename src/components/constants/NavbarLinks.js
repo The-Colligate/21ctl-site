@@ -188,7 +188,7 @@ export const mainLinks = [
   {
     additionalLinks: [
       { name: 'Digital Platforms', link: '/digital-platform' },
-      { name: 'Cloud Solutions', link: 'https://www.21ctl.com/cloud/' },
+      { name: 'Explore more', link: '/' },
     ],
   },
 ];
