@@ -82,11 +82,11 @@ export function LightNavbar({ menuProp }) {
                   <div class="max-w-4xl pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
                       
-                      {router.pathname === '/people' ? link?.head : link.name.toUpperCase()}
+                      { link?.head ?? link.name.toUpperCase()}
                     </h2>
                     <hr />
                     <div
-                      className={`grid ${router.pathname === '/people' ?"grid-cols-3" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}
+                      className={`grid ${router.pathname === '/people' ?"grid-cols-4" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}
                     >
                       {link.subLinks.map((sublinks) => (
                         <div
@@ -102,7 +102,7 @@ export function LightNavbar({ menuProp }) {
 
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-4 space-y-2 list-disc font-semibold dark:text-white"
+                              className="ml-4 space-y-2 list-disc text-[12px] opacity-70 font-semibold dark:text-white"
                             >
                               {' '}
                               {sublinks.name}
@@ -157,7 +157,7 @@ export function LightNavbar({ menuProp }) {
                       ))}
                     </div>
                   </div>
-                  <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
+                  {link.extras.length !== 0?                  <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
                     <h2 className="text-sm font-bold text-darkShade">Recent</h2>
 
                     <div className={`flex flex-col flex-nowrap w-full`}>
@@ -172,7 +172,7 @@ export function LightNavbar({ menuProp }) {
                             />{' '}
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-2 list-disc font-semibold hover:text-primary-orange"
+                              className="ml-2 list-disc font-medium hover:text-primary-orange"
                             >
                               {' '}
                               {sublinks.name}
@@ -186,8 +186,8 @@ export function LightNavbar({ menuProp }) {
                           </Link>
                         </div>
                       ))}
-                    </div>
-                  </div>
+                    </div> 
+                  </div>: <></>}
                 </div>
               }
             >

@@ -674,7 +674,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'WEB',
-            link: '/about-us',
+            link: '/',
             icon: '/icons/web.svg',
             text: 'Intro to Web Development',
             text1: 'Front-end',
@@ -760,21 +760,21 @@ export const peopleNavLinks = [
           
         ],
         extras: [
-          {
-            icon: '/icons/home/career.svg',
-            link: '/',
-            name: 'ML/AI Expert',
-          },
-          {
-            icon: '/icons/home/career.svg',
-            link: '/',
-            name: 'Oracle Certification',
-          },
-          {
-            icon: '/icons/home/career.svg',
-            link: '/',
-            name: 'Cloud Engineering',
-          },
+        //   {
+        //     icon: '/icons/home/career.svg',
+        //     link: '/',
+        //     name: 'ML/AI Expert',
+        //   },
+        //   {
+        //     icon: '/icons/home/career.svg',
+        //     link: '/',
+        //     name: 'Oracle Certification',
+        //   },
+        //   {
+        //     icon: '/icons/home/career.svg',
+        //     link: '/',
+        //     name: 'Cloud Engineering',
+        //   },
         ],
       },
       {
