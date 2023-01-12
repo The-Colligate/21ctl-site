@@ -348,7 +348,7 @@ export const infraNavLinks = [
             text: 'See our partners',
           },
           {
-            name: '5G Network',
+            name: '5G Infrastructure Readiness services',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
