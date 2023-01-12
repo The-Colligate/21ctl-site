@@ -86,7 +86,7 @@ export function LightNavbar({ menuProp }) {
                     </h2>
                     <hr />
                     <div
-                      className={`grid ${router.pathname === '/people' ?"grid-cols-4" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}
+                      className={`grid ${router.pathname === '/people' ?"grid-cols-3" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}
                     >
                       {link.subLinks.map((sublinks) => (
                         <div
