@@ -647,11 +647,30 @@ export const peopleNavLinks = [
             text: 'See our partners',
           },
         ],
-        extras: [],
+        extras: [
+          {
+            name: 'Oracle University',
+            link: 'https://education.oracle.com/',
+            icon: '/icons/home/career.svg',
+            // text: 'Discover the best role for you.',
+          },
+          {
+            name: 'Stanford University',
+            link: 'https://www.stanford.edu/',
+            icon: '/icons/home/career.svg',
+            // text: 'Discover the best role for you.',
+          },
+          {
+            name: 'Schneider University',
+            link: 'https://university.se.com/',
+            icon: '/icons/home/career.svg',
+            // text: 'Discover the best role for you.',
+          },
+        ],
       },
       {
         name: 'Training',
-        head:'our training',
+        head: 'our training',
         subLinks: [
           {
             name: 'WEB',
@@ -793,7 +812,7 @@ export const securityNavLinks = [
             icon: '/icons/home/about.svg',
             text: 'Learn More about 21ctl.',
           },
-          
+
           {
             name: 'Biometric Lock',
             link: '/',
