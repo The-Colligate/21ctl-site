@@ -780,26 +780,10 @@ export const peopleNavLinks = [
       {
         name: 'Projects',
         subLinks: [
-          {
-            name: 'Certification',
-            link: '/about-us',
-            icon: '/icons/home/about.svg',
-            text: 'Oracle Cloud Infrastructure',
-            text1: 'Oracle Database',
-            text2: 'Java',
-          },
+   
         ],
         extras: [
-          {
-            icon: '/icons/home/career.svg',
-            link: '/',
-            name: 'Program Overview',
-          },
-          {
-            icon: '/icons/home/career.svg',
-            link: '/',
-            name: 'Explore certification benefits',
-          },
+          
         ],
       },
       {
