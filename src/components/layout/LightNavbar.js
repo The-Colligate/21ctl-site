@@ -12,6 +12,7 @@ import {
   mainLinks,
   powerNavLinks,
   peopleNavLinks,
+  securityNavLinks,
 } from '../constants/NavbarLinks';
 
 export function LightNavbar({ menuProp }) {
@@ -42,6 +43,8 @@ export function LightNavbar({ menuProp }) {
       ? powerNavLinks
       : router.pathname === '/people'
       ? peopleNavLinks
+      : router.pathname === '/security'
+      ? securityNavLinks
       : mainLinks;
   // console.log('navItems', navItems);
   // console.log('pathname', router.pathname);
@@ -239,9 +242,15 @@ export function LightNavbar({ menuProp }) {
 
         <div className="flex space-x-4">
           {router.pathname === '/people' ? (
-            <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
-              Apply now
-            </button>
+            <a
+              href="https://academy-app-21ctl-blessedmadukoma.koyeb.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
+                Apply now
+              </button>
+            </a>
           ) : (
             ''
           )}

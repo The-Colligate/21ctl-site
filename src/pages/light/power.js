@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import { LightNavbar, Footer } from '@components/layout/';
+import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { links } from '../../components/constants/NavbarLinks';
 import SiemensEnergy from '/public/logo/Siemens Energy.svg';
 import SchneiderElectric from '/public/logo/Schneider Electric.svg';
@@ -213,6 +213,7 @@ const Power = () => {
           </section>
           <Footer />
         </div>
+        <SocialIcons />
       </div>
     </>
   );

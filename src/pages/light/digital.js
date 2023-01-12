@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head'
-import { LightNavbar, Footer } from '@components/layout/';
+import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
 import { Popover } from 'evergreen-ui';
 import { links } from '../../components/constants/NavbarLinks';
@@ -16,6 +16,8 @@ import connectLogo from '/public/logo/connect21ctl.png';
 import apapa from '/public/data-centers/apapa-center.png';
 import ikeja from '/public/data-centers/ikeja-center.png';
 import lekki from '/public/data-centers/lekki-center.png';
+import sakat from '/public/data-centers/sakatinubu.jpeg';
+import alanamu from '/public/data-centers/alanamu.png';
 
 import fiveG from '/public/logo/5g main.svg';
 
@@ -157,7 +159,7 @@ const Digital = () => {
             </p>
           </div>
 
-          <div className="flex sm:flex-row flex-col justify-center sm:space-x-10 space-x-0 mt-5 px-5">
+          <div className="data_center_grid mt-5 px-28">
             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">
@@ -194,6 +196,31 @@ const Digital = () => {
               </div>
               <Image src={apapa} className="inline-block w-full h-fit" />
             </div>
+            <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
+              <div className="p-5 text-black dark:text-black">
+                <h3 className="text-3xl font-medium tracking-wide ">
+                <span className="text-primary-orange">Saka-Tinubu </span>  Data Center
+                  
+                </h3>
+                <p className="py-2 pt-4 tracking-wide text-xl leading">
+                Our Saka-Tinubu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
+                </p>
+              </div>
+              <Image src={sakat} className="inline-block w-full h-fit" />
+            </div>
+            <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
+              <div className="p-5 text-black dark:text-black">
+                <h3 className="text-3xl font-medium tracking-wide ">
+                <span className="text-primary-orange">Alanamu </span>  Data Center
+                  
+                </h3>
+                <p className="py-2 pt-4 tracking-wide text-xl leading">
+                Our Alanamu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
+                </p>
+              </div>
+              <Image src={alanamu} className="inline-block w-full h-fit rounded-br-2xl rounded-bl-2xl" />
+            </div>
+
           </div>
         </section>
 
@@ -275,21 +302,8 @@ const Digital = () => {
         </section>
         <Footer />
       </div>
-      <div className="flex flex-col fixed z-[1] p-2 right-0 space-y-4 top-1/3 rounded-r bg-white tablet:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="Black"
-          className="bi bi-whatsapp cursor-pointer w-6"
-          viewBox="0 0 16 16"
-        >
-          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-        </svg>
-        <img className="cursor-pointer w-6" src="/icons/home/instagram.svg" />
-        <img className="cursor-pointer w-6" src="/icons/home/phone.svg" />
-        <img className="cursor-pointer w-6" src="/icons/home/linkedin.svg" />
-      </div>
+      <SocialIcons />
+
     </div>
     </>
   );

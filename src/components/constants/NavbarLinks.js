@@ -5,15 +5,33 @@ export const mainLinks = [
         name: 'Products',
         subLinks: [
           {
-            name: 'CAAS',
+            name: 'Konet Pay',
             link: '#',
-            text: 'Streamlining operations with CAAS.',
+            text: 'Payment Solution',
             icon: '/icons/home/mdi_cloud-check-variant.svg',
           },
           {
-            name: 'SMS Gateway',
+            name: 'Konet Wallet',
+            link: '/',
+            text: 'Connecting you with reliable financial solutions.',
+            icon: '/icons/home/fa6-solid_comment-sms.svg',
+          },
+          {
+            name: 'Fusion',
             link: '/',
             text: 'Connecting you with reliable SMS solutions.',
+            icon: '/icons/home/fa6-solid_comment-sms.svg',
+          },
+          {
+            name: 'LMS',
+            link: '/',
+            text: 'Connecting you with reliable SMS solutions.',
+            icon: '/icons/home/fa6-solid_comment-sms.svg',
+          },
+          {
+            name: 'HRS',
+            link: '/',
+            text: 'Connecting you with reliable HR solutions.',
             icon: '/icons/home/fa6-solid_comment-sms.svg',
           },
         ],
@@ -341,20 +359,57 @@ export const infraNavLinks = [
       },
       {
         name: 'Data Centers',
-        subLinks: [],
+        subLinks: [
+          {
+            name: 'Lekki Data Center',
+            link: '#',
+            text: 'Data Centers',
+            icon: '/icons/home/mdi_cloud-check-variant.svg',
+          },
+          {
+            name: 'Apapa Data Center',
+            link: '#',
+            text: 'Data Centers',
+            icon: '/icons/home/mdi_cloud-check-variant.svg',
+          },
+          {
+            name: 'Ikoyi Data Center',
+            link: '#',
+            text: 'Data Centers',
+            icon: '/icons/home/mdi_cloud-check-variant.svg',
+          },
+          {
+            name: 'Ikeja Data Center',
+            link: '#',
+            text: 'Data Centers',
+            icon: '/icons/home/mdi_cloud-check-variant.svg',
+          },
+          {
+            name: 'Alanamu Data Center',
+            link: '#',
+            text: 'Data Centers',
+            icon: '/icons/home/mdi_cloud-check-variant.svg',
+          },
+          {
+            name: 'Saka-Tinubu Data Center',
+            link: '#',
+            text: 'Data Centers',
+            icon: '/icons/home/mdi_cloud-check-variant.svg',
+          },
+        ],
         extras: [],
       },
       {
         name: 'Towers',
         subLinks: [
           {
-            name: 'CAAS',
+            name: 'Communication Towers',
             link: '#',
             text: 'Streamlining operations with CAAS.',
             icon: '/icons/home/mdi_cloud-check-variant.svg',
           },
           {
-            name: 'SMS Gateway',
+            name: 'Micro Cells',
             link: '/',
             text: 'Connecting you with reliable SMS solutions.',
             icon: '/icons/home/fa6-solid_comment-sms.svg',
@@ -364,7 +419,14 @@ export const infraNavLinks = [
       },
       {
         name: '5G Network',
-        subLinks: [],
+        subLinks: [
+          {
+            name: '5G Connectivity',
+            link: '/',
+            text: 'Connecting you with 5G.',
+            icon: '/icons/home/fa6-solid_comment-sms.svg',
+          },
+        ],
         extras: [],
       },
     ],
@@ -585,7 +647,26 @@ export const peopleNavLinks = [
             text: 'See our partners',
           },
         ],
-        extras: [],
+        extras: [
+          {
+            name: 'Oracle University',
+            link: 'https://education.oracle.com/',
+            icon: '/icons/home/career.svg',
+            // text: 'Discover the best role for you.',
+          },
+          {
+            name: 'Stanford University',
+            link: 'https://www.stanford.edu/',
+            icon: '/icons/home/career.svg',
+            // text: 'Discover the best role for you.',
+          },
+          {
+            name: 'Schneider University',
+            link: 'https://university.se.com/',
+            icon: '/icons/home/career.svg',
+            // text: 'Discover the best role for you.',
+          },
+        ],
       },
       {
         name: 'Training',
@@ -804,6 +885,56 @@ export const peopleNavLinks = [
       {
         name: 'Admissions',
         subLinks: [],
+        extras: [],
+      },
+    ],
+  },
+  {
+    additionalLinks: [],
+  },
+];
+
+export const securityNavLinks = [
+  {
+    navLinks: [
+      {
+        name: 'Cybersecurity',
+        subLinks: [
+          {
+            name: 'Surveillance',
+            link: '/about-us',
+            icon: '/icons/home/about.svg',
+            text: 'Learn More about 21ctl.',
+          },
+
+          {
+            name: 'Biometric Lock',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
+
+            text: 'See our partners',
+          },
+          {
+            name: 'Threat analysis',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
+
+            text: 'See our partners',
+          },
+        ],
+        extras: [],
+      },
+      {
+        name: 'Security Cloud Infrastructure',
+        subLinks: [
+          {
+            name: 'Cloud Architecture',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
+
+            text: 'See our partners',
+          },
+        ],
         extras: [],
       },
     ],

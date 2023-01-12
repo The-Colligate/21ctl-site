@@ -1,13 +1,12 @@
-import { LightNavbar } from '@components/layout/';
+import { LightNavbar, SocialIcons } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Popover } from 'evergreen-ui'
+import { Popover } from 'evergreen-ui';
 import { links } from '../../components/constants/NavbarLinks';
 
 function LightDesign() {
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
-
 
   const products = [
     // {
@@ -77,13 +76,14 @@ function LightDesign() {
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
       </div>
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
-      <LightNavbar />
+        <LightNavbar />
         <div className="flex items-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
           <div className="w-full h-full flex items-center">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
-                Building Africa&apos;s <span className="text-primary-orange">Largest{' '}
-                Digital</span>{' '} Infrastructure
+                Building Africa&apos;s{' '}
+                <span className="text-primary-orange">Largest Digital</span>{' '}
+                Infrastructure
               </h1>
               <p className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
                 21st Century Technologies Limited, an ecosystem Technology
@@ -266,34 +266,32 @@ function LightDesign() {
             return (
               <Popover
                 key={product.name}
-
-                triggerType='menu'
+                triggerType="menu"
                 isShown={displayPopup[0] && displayPopup[1] === index}
-
-                content={<div className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto"
-                  onMouseOver={(e) => setDisplayPopup([true, index])}
-                  onMouseOut={(e) => setDisplayPopup([false, index])}
-                >
-                  <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
-                    <p>{product.name}</p>
-                    <p className="mt-3 text-xs opacity-60">
-                      {product.snippet}
-                    </p>
-                    <a
-                      className="mt-3 flex items-center text-xs group hover:text-primary-orange"
-                      href={product.link}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Go to site{' '}
-                      <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
-                    </a>
+                content={
+                  <div
+                    className="rounded-lg rainbow-bg p-px max-w-[270px] mx-auto"
+                    onMouseOver={(e) => setDisplayPopup([true, index])}
+                    onMouseOut={(e) => setDisplayPopup([false, index])}
+                  >
+                    <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
+                      <p>{product.name}</p>
+                      <p className="mt-3 text-xs opacity-60">
+                        {product.snippet}
+                      </p>
+                      <a
+                        className="mt-3 flex items-center text-xs group hover:text-primary-orange"
+                        href={product.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Go to site{' '}
+                        <ArrowRight className="transition-all duration-500 ml-1 group-hover:ml-2" />
+                      </a>
+                    </div>
                   </div>
-                </div>
                 }
-
               >
-
                 <div
                   className={`animate__animated animate__bounce animate__delay-${index}s animate__infinite	infinitew-full z-100 flex  flex-col justify-center`}
                   role="button"
@@ -301,15 +299,15 @@ function LightDesign() {
                   onMouseOut={(e) => setDisplayPopup([false, index])}
                 >
                   <div className="w-full flex justify-center pt-5">
-
-
                     <div
                       className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
                       role="button"
                     >
-                      <img src={product.icon} className="h-12 w-auto tablet:h-8" />
+                      <img
+                        src={product.icon}
+                        className="h-12 w-auto tablet:h-8"
+                      />
                     </div>
-
                   </div>
                   <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">
                     {product.name}
@@ -320,21 +318,7 @@ function LightDesign() {
           })}
         </div>
       </div>
-      <div className="flex flex-col fixed z-[1] p-2 right-0 space-y-4 top-1/3 rounded-r bg-white tablet:top-2/4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="Black"
-          className="bi bi-whatsapp cursor-pointer w-6"
-          viewBox="0 0 16 16"
-        >
-          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-        </svg>
-        <img className="cursor-pointer w-6" src="/icons/home/instagram.svg" />
-        <img className="cursor-pointer w-6" src="/icons/home/phone.svg" />
-        <img className="cursor-pointer w-6" src="/icons/home/linkedin.svg" />
-      </div>
+      <SocialIcons />
     </div>
   );
 }
