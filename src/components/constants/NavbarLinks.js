@@ -418,10 +418,10 @@ export const infraNavLinks = [
         extras: [],
       },
       {
-        name: '5G Network',
+        name: '5G Infrastructure Readiness services',
         subLinks: [
           {
-            name: '5G Connectivity',
+            name: '5G Infrastructure Readiness services',
             link: '/',
             text: 'Connecting you with 5G.',
             icon: '/icons/home/fa6-solid_comment-sms.svg',
