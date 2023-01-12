@@ -75,7 +75,7 @@ export const mainLinks = [
                extras: [],
              },*/
             {
-                name: 'Market Place',
+                name: 'Industries',
                 subLinks: [
                     {
                         name: 'E-Learning',

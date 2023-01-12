@@ -21,16 +21,16 @@ export function LightNavbar({ menuProp }) {
   const [isOpen, setIsOpen] = useState(false);
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
-  useEffect(() => {
+  // useEffect(() => {
     // const addclass = theme === "light" ? "show-white" : "show-black";
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        return document.querySelector('.navbar').classList.add('show');
-      }
-      return document.querySelector('.navbar').classList.remove('show');
-    });
-  });
+    // window.addEventListener('scroll', () => {
+    //   if (window.scrollY > 300) {
+    //     return document.querySelector('.navbar').classList.add('show');
+    //   }
+    //   return document.querySelector('.navbar').classList.remove('show');
+    // });
+  // });
 
   const navItems =
     router.pathname === '/digital-platform'
@@ -51,7 +51,7 @@ export function LightNavbar({ menuProp }) {
 
   return (
     <>
-      <div className="navbar flex justify-between items-center space-x-5 py-1 px-20 font-lato z-50 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
+      <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-50 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
         <Link href="/">
           <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
         </Link>
