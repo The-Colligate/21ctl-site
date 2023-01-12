@@ -72,7 +72,7 @@ export function LightNavbar({ menuProp }) {
               // position={Position.BOTTOM_LEFT}
 
               triggerType="menu"
-              isShown={displayPopup[0] && displayPopup[1] === index}
+              isShown={displayPopup[0] && displayPopup[1] === index && link.subLinks.length !==0}
               content={
                 <div
                   className="max-w-max flex"

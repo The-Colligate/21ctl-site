@@ -777,15 +777,15 @@ export const peopleNavLinks = [
           },
         ],
       },
-    //   {
-    //     name: 'Projects',
-    //     subLinks: [
+      {
+        name: 'Projects',
+        subLinks: [
    
-    //     ],
-    //     extras: [
+        ],
+        extras: [
           
-    //     ],
-    //   },
+        ],
+      },
       {
         name: 'Partners',
         subLinks: [
