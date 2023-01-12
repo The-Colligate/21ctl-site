@@ -78,12 +78,12 @@ export function LightNavbar({ menuProp }) {
                 >
                   <div class="max-w-4xl pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
-                      {link.name.toUpperCase()}
-                      {router.pathname === '/people' && link?.head}
+                      
+                      {router.pathname === '/people' ? link?.head : link.name.toUpperCase()}
                     </h2>
                     <hr />
                     <div
-                      className={`grid grid-cols-2  items-start flex-nowrap mr-5 w-full`}
+                      className={`grid ${router.pathname === '/people' ?"grid-cols-4" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}
                     >
                       {link.subLinks.map((sublinks) => (
                         <div
@@ -136,6 +136,18 @@ export function LightNavbar({ menuProp }) {
                               className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
                             >
                               {sublinks?.text4}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text5}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text6}{' '}
                             </Link>
                           </div>
                         </div>

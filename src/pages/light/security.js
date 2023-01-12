@@ -204,7 +204,7 @@ const Security = () => {
 
               <div className="flex items-center justify-end w-[50%] tablet:w-full">
                 <Image
-                  src="/logo/ddos-protection.png"
+                  src="/logo/smartbackup.png"
                   className=""
                   height={581}
                   width={444}

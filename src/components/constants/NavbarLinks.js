@@ -42,7 +42,7 @@ export const mainLinks = [
           },
           {
             name: 'People',
-            link: '/academy',
+            link: '/people',
             text: 'Connecting with the right people.',
             icon: '/icons/home/people-icon.svg',
           },
@@ -589,12 +589,12 @@ export const peopleNavLinks = [
       },
       {
         name: 'Training',
-        head:'our training',
+        head:'OUR TRAINING',
         subLinks: [
           {
             name: 'WEB',
             link: '/about-us',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/web.svg',
             text: 'Intro to Web Development',
             text1: 'Front-end',
             text2: 'Back-end',
@@ -604,7 +604,7 @@ export const peopleNavLinks = [
           {
             name: 'INFRASTRUCTURE',
             link: '/',
-            icon: '/icons/home/career.svg',
+            icon: '/icons/infrastructure.svg',
             text: 'Cloud Infrastructure',
             text1: 'Software',
             text2: 'Hardware',
@@ -613,7 +613,7 @@ export const peopleNavLinks = [
           {
             name: 'DESIGN',
             link: '/',
-            icon: '/icons/home/career.svg',
+            icon: '/icons/design.svg',
             text: 'UI/UX Design',
             text1: 'Graphic Design:',
             text2: 'Industrial Design',
@@ -621,7 +621,7 @@ export const peopleNavLinks = [
           {
             name: 'DATA',
             link: '/',
-            icon: '/icons/home/career.svg',
+            icon: '/icons/data.svg',
             text: 'Artificial Intelligence',
             text1: 'Deep Learning ',
             text2: 'Power BI',
@@ -632,13 +632,51 @@ export const peopleNavLinks = [
           {
             name: 'SYSTEM',
             link: '/',
-            icon: '/icons/home/career.svg',
+            icon: '/icons/system.svg',
             text: 'Devops',
             text1: 'Cybersecurity',
             text2: 'Security and Compliance',
             text3: 'Infrastructrue as Code (IaC)',
             text4: 'Data Center Management',
           },
+          {
+            name: 'MARKETING',
+            link: '/',
+            icon: '/icons/system.svg',
+            text: 'Product Marketing',
+            text1: 'Digital Marketing ',
+            text2: 'Content Marketing',
+            text3: 'Advertisting',
+            text4: 'Negotiation Skills',
+            text5: 'Cost Engineering',
+          },
+          {
+            name: 'GAME',
+            link: '/',
+            icon: '/icons/game.svg',
+            text: 'Intro to Game Development',
+            text1: '2D Game Development',
+            text2: '3D Game Development',
+          },
+          {
+            name: 'POWER',
+            link: '/',
+            icon: '/icons/power.svg',
+            text: 'Renewable Energy',
+            text1: 'Power Electronics',
+            text2: 'High Voltage Engineering',
+          },
+          {
+            name: 'LEADERSHIP',
+            link: '/',
+            icon: '/icons/leadership.svg',
+            text: 'Agile Leadership',
+            text1: 'Data - Driven Decision Making ',
+            text2: 'Project Management',
+            text3: 'Leadership Skills',
+            text4: 'Change Manangement',
+          },
+          
         ],
         extras: [
           {
@@ -659,7 +697,7 @@ export const peopleNavLinks = [
         ],
       },
       {
-        name: 'Oracle University',
+        name: 'Projects',
         subLinks: [
           {
             name: 'Certification',
@@ -684,11 +722,67 @@ export const peopleNavLinks = [
         ],
       },
       {
-        name: 'Schneider University',
+        name: 'Partners',
         subLinks: [
           {
-            name: 'Certification',
-            link: '/about-us',
+            name: 'Amazon',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+          {
+            name: 'Schneider University',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+          {
+            name: 'VMware',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+          {
+            name: 'Microsoft Azure',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+          {
+            name: 'Oracle University',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+          {
+            name: 'Stanford University',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+          {
+            name: 'MIT',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+          {
+            name: 'Checkpoint University',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Get Certification',
+            text1: 'See more',
+          },
+          {
+            name: 'Carnegie Mellon University',
+            link: '/',
             icon: '/icons/home/about.svg',
             text: 'Get Certification',
             text1: 'See more',
@@ -708,7 +802,7 @@ export const peopleNavLinks = [
         ],
       },
       {
-        name: 'AI and ML Centre',
+        name: 'Admissions',
         subLinks: [],
         extras: [],
       },
