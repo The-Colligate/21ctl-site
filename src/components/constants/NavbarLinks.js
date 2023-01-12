@@ -1,7 +1,7 @@
 export const mainLinks = [
   {
     navLinks: [
-      {
+     /* {
         name: 'Products',
         subLinks: [
           {
@@ -36,7 +36,7 @@ export const mainLinks = [
           },
         ],
         extras: [],
-      },
+      }, 
       {
         name: 'Solutions',
         subLinks: [
@@ -73,7 +73,7 @@ export const mainLinks = [
           },
         ],
         extras: [],
-      },
+      },*/
       {
         name: 'Market Place',
         subLinks: [
@@ -97,6 +97,7 @@ export const mainLinks = [
             icon: '/icons/home/ph_music-note-fill.svg',
           },
 
+     
           {
             name: 'Mobile Commerce',
             link: '/',
@@ -131,6 +132,96 @@ export const mainLinks = [
         ],
         extras: [],
       },
+      {
+        name: 'Partners',
+        subLinks: [
+          {
+            name: 'Amazon',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Advanced Networking',
+            text1: 'Data Analytics',
+            text2: 'Databases',
+            text3: 'Security',
+            text4: 'Serverless',
+          },
+          {
+            name: 'Schneider Electric University',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Data Center Physical Infrastructure',
+            text1: 'See more',
+          },
+          {
+            name: 'VMware',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Multi-Cloud',
+            text1: 'Virtual Cloud Network',
+            text2: 'Digital Workspace',
+            text3: 'App Modernization',
+            text4: 'Intrinsic Security',
+          },
+          {
+            name: 'Microsoft Azure',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Cloud Computing',
+            text1: 'Virtual Machines',
+          },
+          {
+            name: 'Oracle University',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Oracle Databases',
+            text1: 'Oracle Cloud Infrastructure (OCI)',
+            text2: 'Cloud Database Sevices',
+            text3: 'DevOps'
+          },
+        //   {
+        //     name: 'Stanford University',
+        //     link: '/',
+        //     icon: '/icons/home/about.svg',
+        //     // text: 'Get Certification',
+        //     // text1: 'See more',
+        //   },
+        //   {
+        //     name: 'MIT',
+        //     link: '/',
+        //     icon: '/icons/home/about.svg',
+        //     // text: 'Get Certification',
+        //     // text1: 'See more',
+        //   },
+          {
+            name: 'Checkpoint University',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            text: 'Malware analysis',
+            text1: 'Cloud Network Security',
+            text3: 'Security Administration',
+          },
+          {
+            name: 'Carnegie Mellon University',
+            link: '/',
+            icon: '/icons/home/about.svg',
+            // text: 'Get Certification',
+            // text1: 'See more',
+          },
+        ],
+        extras: [
+          {
+            icon: '/icons/home/career.svg',
+            link: 'https://schneider.efrontlearning.com/',
+            name: 'Program Overview',
+          },
+          {
+            icon: '/icons/home/career.svg',
+            link: 'https://schneider.efrontlearning.com/',
+            name: 'Explore certification benefits',
+          },
+        ],
+      },
+      
       {
         name: 'Company',
         subLinks: [
@@ -181,10 +272,9 @@ export const mainLinks = [
 
             text: 'See our partners',
           },
-        ],
-      },
+       
     ],
-  },
+  },],},
   {
     additionalLinks: [
       { name: 'Digital Platforms', link: '/digital-platform' },
