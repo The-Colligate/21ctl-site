@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import { LightNavbar, Footer } from '@components/layout/';
+import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import SiemensEnergy from '/public/logo/Siemens Energy.svg';
 import SchneiderElectric from '/public/logo/Schneider Electric.svg';
 import PCCWGlobal from '/public/logo/PCCW Global.svg';
@@ -281,6 +281,9 @@ const Academy = () => {
           </section>
           <Footer />
         </div>
+
+        <SocialIcons />
+
       </div>
     </>
   );
