@@ -97,6 +97,7 @@ const SupportCenters = () => {
           </div>
 
         </div>
+        <Footer/>
       </div>
     </>
   );

@@ -141,7 +141,7 @@ export function Footer() {
             </span>
           </div>
 
-          <div className='pt-2'> 
+          <div className="pt-2">
             <Link
               href="/support-centers"
               className="text-black dark:text-white hover:text-primary-orange ml-[30px]"
