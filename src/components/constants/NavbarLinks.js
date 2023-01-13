@@ -494,24 +494,31 @@ export const platformNavLinks = [
       {
         name: 'Cloud',
         subLinks: [
-          {
-            name: 'CAAS',
-            link: '#',
-            text: 'Streamlining operations with CAAS.',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
-          },
-          {
-            name: 'SMS Gateway',
-            link: '/',
-            text: 'Connecting you with reliable SMS solutions.',
-            icon: '/icons/home/fa6-solid_comment-sms.svg',
-          },
+          // {
+          //   name: 'CAAS',
+          //   link: '#',
+          //   text: 'Streamlining operations with CAAS.',
+          //   icon: '/icons/home/mdi_cloud-check-variant.svg',
+          // },
+          // {
+          //   name: 'SMS Gateway',
+          //   link: '/',
+          //   text: 'Connecting you with reliable SMS solutions.',
+          //   icon: '/icons/home/fa6-solid_comment-sms.svg',
+          // },
         ],
         extras: [],
       },
       {
         name: 'Payment',
-        subLinks: [],
+        subLinks: [
+          {
+            name:'Koney pay',
+            link:'https://www.konetpay.com',
+            text: 'Providing reliable payment service.',
+            icon: '/icons/home/fa6-solid_comment-sms.svg',
+          }
+        ],
         extras: [],
       },
       {
