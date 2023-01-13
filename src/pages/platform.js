@@ -40,7 +40,7 @@ const Platform = () => {
               </div>
               <div className="max-w-3xl">
                 <h2 className="font-bold text-2xl">Communcation Solutions</h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl">
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
                   As data becomes critical to the business agenda, IT is
                   undergoing a major shift toward data-centric architecture and
                   Hybrid IT. ServiceFabric, a global interconnectivity solution
@@ -64,11 +64,13 @@ const Platform = () => {
             </div>
           </section>
 
-          <section className="bg-[#f3f4fa] py-20 pl-28 pr-10">
+          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div className="">
-                <h2 className="font-bold text-2xl">World-Wide Connectivity</h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl">
+                <h2 className="font-bold text-2xl text-black dark:text-dark">
+                  World-Wide Connectivity
+                </h2>
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
                   Get virtual and physical connectivity to your customers,
                   partners, providers and facilities while extending your
                   network&apos;s capabilities.
@@ -115,12 +117,12 @@ const Platform = () => {
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1673643615/Cloud_V2-01_vrcluj.png"
                   alt="cloud"
-                  className='w-[600px]'
+                  className="w-[600px]"
                 />
               </div>
               <div className="max-w-3xl">
                 <h2 className="font-bold text-2xl">Cloud Solutions</h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl">
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
                   Get an optimal mix of cloud-enabled and privately-supported
                   applications to support all cloud connection needs.
                   <ul className="list-disc mt-4 pl-4">
@@ -152,13 +154,13 @@ const Platform = () => {
             </div>
           </section>
 
-          <section className="bg-[#f3f4fa] py-20 pl-28 pr-10">
-            <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
-              <div className="">
-                <h2 className="font-bold text-2xl">
+          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
+            <div className="flex sm:flex-row flex-col-reverse items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
+              <div className="sm:mt-0 mt-16">
+                <h2 className="font-bold text-2xl text-black dark:text-dark">
                   Payment Solution Provider
                 </h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl">
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl  text-black dark:text-dark">
                   We are here to provide you with the most efficient and secure
                   way to process your payments. Our platform offers a variety of
                   features to meet the needs of businesses of all sizes. Our
@@ -168,7 +170,7 @@ const Platform = () => {
                   highest level of security.
                   <ul className="list-disc mt-4 pl-4">
                     <li className="font-light">
-                     Allow International Transactions
+                      Allow International Transactions
                     </li>
                     <li className="font-light">
                       Make your data integrated, traffic localized, services
@@ -192,7 +194,7 @@ const Platform = () => {
                 </a>
               </div>
 
-              <div>
+              <div className="">
                 <img
                   src="https://d1zzg2ksf0bp3o.cloudfront.net/combined/public/misc/HP-map-just-update.png?mtime=20220208163050&focal=none"
                   alt="connectivity"
@@ -201,21 +203,39 @@ const Platform = () => {
             </div>
           </section>
 
-          <section className="py-20 pl-28 pr-10">
+          <section className="py-20 sm:px-28 px-8">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
+                  alt="connectivity"
+                  className="w-[500px]"
+                />
+              </div>
+
               <div className="">
                 <h2 className="font-bold text-2xl">Automation Process</h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl">
-                Our company specializes in providing automation solutions to businesses of all sizes. We understand the unique needs and challenges that businesses face, and we work closely with our clients to develop customized automation solutions that meet their specific requirements.
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
+                  Our company specializes in providing automation solutions to
+                  businesses of all sizes. We understand the unique needs and
+                  challenges that businesses face, and we work closely with our
+                  clients to develop customized automation solutions that meet
+                  their specific requirements.
                   <ul className="list-disc mt-4 pl-4">
                     <li className="font-light">
-                    Process Automation: We help businesses automate repetitive tasks and processes, such as data entry, document management, and customer service.
+                      Process Automation: We help businesses automate repetitive
+                      tasks and processes, such as data entry, document
+                      management, and customer service.
                     </li>
                     <li className="font-light">
-                    Workflow Automation: We help businesses streamline their internal communication and collaboration by automating workflows
+                      Workflow Automation: We help businesses streamline their
+                      internal communication and collaboration by automating
+                      workflows
                     </li>
                     <li className="font-light">
-                    Robotic Process Automation (RPA): We help businesses automate routine and manual tasks through the use of software robots.
+                      Robotic Process Automation (RPA): We help businesses
+                      automate routine and manual tasks through the use of
+                      software robots.
                     </li>
                   </ul>
                 </p>
@@ -229,19 +249,11 @@ const Platform = () => {
                   Learn more
                 </a>
               </div>
-
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
-                  alt="connectivity"
-                  className="w-[500px]"
-                />
-              </div>
             </div>
           </section>
           <Footer />
         </div>
-        <SocialIcons/>
+        <SocialIcons />
       </div>
     </>
   );
