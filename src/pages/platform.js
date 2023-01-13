@@ -241,6 +241,7 @@ const Platform = () => {
           </section>
           <Footer />
         </div>
+        <SocialIcons/>
       </div>
     </>
   );

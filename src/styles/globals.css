@@ -399,6 +399,22 @@ body {
   background-size: cover;
 }
 
+.support-centers{
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 55px 26px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
+}
+
+.support-centers > div{
+  background-color: white;
+  padding: 20px;
+}
+
 @media only screen and (max-width: 400px) {
   .about-us, .security {
     height: 50vh;
