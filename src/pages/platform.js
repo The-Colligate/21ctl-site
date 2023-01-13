@@ -113,8 +113,9 @@ const Platform = () => {
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div>
                 <img
-                  src="https://d2pi5ijasmgfet.cloudfront.net/500x210/filters:focal(343x143:345x145):quality(82)/combined%2Fpublic%2Fmisc%2Fsolutions-image_2021-12-17-133558.png"
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1673643615/Cloud_V2-01_vrcluj.png"
                   alt="cloud"
+                  className='w-[600px]'
                 />
               </div>
               <div className="max-w-3xl">
@@ -205,23 +206,16 @@ const Platform = () => {
               <div className="">
                 <h2 className="font-bold text-2xl">Automation Process</h2>
                 <p className="text-lg font-light mt-4 mb-6 max-w-2xl">
-                  Get virtual and physical connectivity to your customers,
-                  partners, providers and facilities while extending your
-                  network&apos;s capabilities.
+                Our company specializes in providing automation solutions to businesses of all sizes. We understand the unique needs and challenges that businesses face, and we work closely with our clients to develop customized automation solutions that meet their specific requirements.
                   <ul className="list-disc mt-4 pl-4">
                     <li className="font-light">
-                      Move beyond cross connects and traditional interconnection
-                      backhaul to an era of open, pervasively connected data
-                      communities colocated at centers of data.
+                    Process Automation: We help businesses automate repetitive tasks and processes, such as data entry, document management, and customer service.
                     </li>
                     <li className="font-light">
-                      Make your data integrated, traffic localized, services
-                      exchanged and policies enforced by connecting to curated
-                      data communities that matter to you.
+                    Workflow Automation: We help businesses streamline their internal communication and collaboration by automating workflows
                     </li>
                     <li className="font-light">
-                      Remove legacy barriers across the interconnection industry
-                      and tackle data gravity head on.
+                    Robotic Process Automation (RPA): We help businesses automate routine and manual tasks through the use of software robots.
                     </li>
                   </ul>
                 </p>
