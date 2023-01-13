@@ -436,11 +436,25 @@ body {
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px 26px;
+    gap: 26px 55px;
     grid-template-areas:
       '. .'
       '. .'
       '. .';
+  }
+
+  .support-centers{
+    display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 15px 26px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."
+    "."
+    "."; 
   }
 }
 
