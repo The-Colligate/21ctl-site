@@ -21,16 +21,16 @@ export function LightNavbar({ menuProp }) {
   const [isOpen, setIsOpen] = useState(false);
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
-  useEffect(() => {
+  // useEffect(() => {
     // const addclass = theme === "light" ? "show-white" : "show-black";
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        return document.querySelector('.navbar').classList.add('show');
-      }
-      return document.querySelector('.navbar').classList.remove('show');
-    });
-  });
+    // window.addEventListener('scroll', () => {
+    //   if (window.scrollY > 300) {
+    //     return document.querySelector('.navbar').classList.add('show');
+    //   }
+    //   return document.querySelector('.navbar').classList.remove('show');
+    // });
+  // });
 
   const navItems =
     router.pathname === '/digital-platform'
@@ -53,7 +53,7 @@ export function LightNavbar({ menuProp }) {
 
   return (
     <>
-      <div className="navbar flex justify-between items-center space-x-5 py-1 px-20 font-lato z-50 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
+      <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-50 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
         <Link href="/">
           <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
         </Link>
@@ -74,7 +74,7 @@ export function LightNavbar({ menuProp }) {
               // position={Position.BOTTOM_LEFT}
 
               triggerType="menu"
-              isShown={displayPopup[0] && displayPopup[1] === index}
+              isShown={displayPopup[0] && displayPopup[1] === index && link.subLinks.length !==0}
               content={
                 <div
                   className="max-w-max flex"
@@ -86,6 +86,7 @@ export function LightNavbar({ menuProp }) {
                       {router.pathname === '/people'
                         ? link?.head
                         : link.name.toUpperCase()}
+
                     </h2>
                     <hr />
                     <div
@@ -109,7 +110,7 @@ export function LightNavbar({ menuProp }) {
 
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-4 space-y-2 list-disc font-semibold dark:text-white"
+                              className="ml-4 space-y-2 list-disc text-[12px]  font-semibold dark:text-white"
                             >
                               {' '}
                               {sublinks.name}
@@ -164,7 +165,7 @@ export function LightNavbar({ menuProp }) {
                       ))}
                     </div>
                   </div>
-                  <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
+                  {link.extras.length !== 0?                  <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
                     <h2 className="text-sm font-bold text-darkShade">Recent</h2>
 
                     <div className={`flex flex-col flex-nowrap w-full`}>
@@ -179,7 +180,7 @@ export function LightNavbar({ menuProp }) {
                             />{' '}
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-2 list-disc font-semibold hover:text-primary-orange"
+                              className="ml-2 list-disc font-medium hover:text-primary-orange"
                             >
                               {' '}
                               {sublinks.name}
@@ -193,13 +194,13 @@ export function LightNavbar({ menuProp }) {
                           </Link>
                         </div>
                       ))}
-                    </div>
-                  </div>
+                    </div> 
+                  </div>: <></>}
                 </div>
               }
             >
               <div
-                className="relative hover:text-primary-orange"
+                className={`${displayPopup[0] && displayPopup[1] === index ? "text-primary-orange": "text-black"}  "relative  hover:text-primary-orange`}
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}

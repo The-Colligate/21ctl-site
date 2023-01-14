@@ -33,7 +33,7 @@ function LightDesign() {
     // },
     {
       icon: '/icons/home/globe.svg',
-      name: 'Digial Platform',
+      name: 'Digital Platform',
       snippet:
         'Konet space ecosystem allows users and businessess to use their Konet mail to access variety of apps, solutions, products and support services.',
       link: '/digital-platform',
