@@ -560,95 +560,105 @@ export const infraNavLinks = [
 ];
 
 export const platformNavLinks = [
-    {
-        navLinks: [
-            {
-                name: 'Aggregator',
-                subLinks: [
-                    {
-                        name: 'About Us',
-                        link: '/about-us',
-                        icon: '/icons/home/about.svg',
-                        text: 'Learn More about 21ctl.',
-                    },
-                    {
-                        name: 'Communication Platform',
-                        link: '/',
-                        icon: '/icons/home/career.svg',
+  {
+    navLinks: [
+      {
+        name: 'Aggregator',
+        subLinks: [
+          {
+            name: 'About Us',
+            link: '/about-us',
+            icon: '/icons/home/about.svg',
+            text: 'Learn More about 21ctl.',
+          },
+          {
+            name: 'Communication Platform',
+            link: '/',
+            icon: '/icons/home/career.svg',
 
-                        text: 'Discover the best role for you.',
-                    },
-                    {
-                        name: 'Cloud Platform',
-                        link: '/',
-                        icon: '/icons/home/handshake.svg',
+            text: 'Discover the best role for you.',
+          },
+          {
+            name: 'Cloud Platform',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
 
-                        text: 'See our partners',
-                    },
-                    {
-                        name: 'Payment Platform',
-                        link: '/',
-                        icon: '/icons/home/handshake.svg',
+            text: 'See our partners',
+          },
+          {
+            name: 'Payment Platform',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
 
-                        text: 'See our partners',
-                    },
-                    {
-                        name: 'Automation',
-                        link: '/',
-                        icon: '/icons/home/handshake.svg',
+            text: 'See our partners',
+          },
+          {
+            name: 'Automation',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
 
-                        text: 'See our partners',
-                    },
-                    {
-                        name: 'Identity',
-                        link: '/',
-                        icon: '/icons/home/handshake.svg',
+            text: 'See our partners',
+          },
+          {
+            name: 'Identity',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
 
-                        text: 'See our partners',
-                    },
-                ],
-                extras: [],
-            },
-            {
-                name: 'Communication',
-                subLinks: [],
-                extras: [],
-            },
-            {
-                name: 'Cloud',
-                subLinks: [
-                    {
-                        name: 'CAAS',
-                        link: '#',
-                        text: 'Streamlining operations with CAAS.',
-                        icon: '/icons/home/mdi_cloud-check-variant.svg',
-                    },
-                    {
-                        name: 'SMS Gateway',
-                        link: '/',
-                        text: 'Connecting you with reliable SMS solutions.',
-                        icon: '/icons/home/fa6-solid_comment-sms.svg',
-                    },
-                ],
-                extras: [],
-            },
-            {
-                name: 'Payment',
-                subLinks: [],
-                extras: [],
-            },
-            {
-                name: 'Automation',
-                subLinks: [],
-                extras: [],
-            },
-            {
-                name: 'Identity',
-                subLinks: [],
-                extras: [],
-            },
+            text: 'See our partners',
+          },
         ],
-    },
+        extras: [],
+      },
+      {
+        name: 'Communication',
+        subLinks: [],
+        extras: [],
+      },
+      {
+        name: 'Cloud',
+        subLinks: [
+          // {
+          //   name: 'CAAS',
+          //   link: '#',
+          //   text: 'Streamlining operations with CAAS.',
+          //   icon: '/icons/home/mdi_cloud-check-variant.svg',
+          // },
+          // {
+          //   name: 'SMS Gateway',
+          //   link: '/',
+          //   text: 'Connecting you with reliable SMS solutions.',
+          //   icon: '/icons/home/fa6-solid_comment-sms.svg',
+          // },
+        ],
+        extras: [],
+      },
+      {
+        name: 'Payment',
+        subLinks: [
+          {
+            name:'Koney pay',
+            link:'https://www.konetpay.com',
+            text: 'Providing reliable payment service.',
+            icon: '/icons/home/fa6-solid_comment-sms.svg',
+          }
+        ],
+        extras: [],
+      },
+      {
+        name: 'Automation',
+        subLinks: [],
+        extras: [],
+      },
+      {
+        name: 'Identity',
+        subLinks: [],
+        extras: [],
+      },
+    ],
+  },
+  {
+    additionalLinks: [],
+  },
     {
         additionalLinks: [],
     },

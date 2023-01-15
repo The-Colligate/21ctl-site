@@ -392,6 +392,29 @@ body {
     ". . ."; 
 }
 
+.platform-top-section{
+  background-image: url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.support-centers{
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 55px 26px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
+}
+
+.support-centers > div{
+  background-color: white;
+  padding: 20px;
+}
+
 @media only screen and (max-width: 400px) {
   .about-us, .security {
     height: 50vh;
@@ -413,11 +436,25 @@ body {
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px 26px;
+    gap: 26px 55px;
     grid-template-areas:
       '. .'
       '. .'
       '. .';
+  }
+
+  .support-centers{
+    display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 15px 26px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."
+    "."
+    "."; 
   }
 }
 
