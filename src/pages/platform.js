@@ -19,12 +19,12 @@ const Platform = () => {
           <LightNavbar />
 
           {/* top-section */}
-          <section className="platform-top-section h-[80vh] ">
+          <section className="platform-top-section h-[80vh] px-8 ">
             <div className="flex flex-col items-center justify-center w-full h-full leading-10">
-              <h1 className="font-extrabold text-6xl text-white">
+              <h1 className="font-extrabold sm:text-6xl text-4xl text-white text-center">
                 21st Century Digital Platforms
               </h1>
-              <p className="text-2xl mt-4 text-white">
+              <p className="sm:text-2xl text-xl mt-4 text-white text-center">
                 Data driven digital solution for enabling transformation
               </p>
             </div>
