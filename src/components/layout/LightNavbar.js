@@ -379,11 +379,13 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
                 </a>
               </li>
             ))}
-            <li>
+            {/* <li>
               <a className="flex items-center justify-between">Konet Mail</a>
-            </li>
+            </li> */}
             <li>
-              <a className="flex items-center justify-between">Explore</a>
+              <Link href="/support-centers">
+              <span className="flex items-center justify-between">Support Centers</span>
+              </Link>
             </li>
           </ul>
         )}
