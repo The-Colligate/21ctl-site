@@ -219,7 +219,7 @@ const AboutUs = () => {
               </div>
             </div>
           </section>
-          <section className="partners py-20 sm:px-20 px-8">
+         {/* <section className="partners py-20 sm:px-20 px-8">
             <div>
               <p className="text-4xl text-primary-orange font-semibold">
                 Say hello to our other partners.
@@ -272,7 +272,7 @@ const AboutUs = () => {
                 </div>
               </marquee>
             </div>
-          </section>
+  </section>*/}
           <Footer />
         </div>
         <SocialIcons />

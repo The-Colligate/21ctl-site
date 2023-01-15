@@ -392,6 +392,30 @@ body {
     ". . ."; 
 }
 
+.digital-main{
+  background-image: url('/icons/digital-platform-bg.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.locations{
+  background: url('/icons/locations.png') no-repeat;
+  /* background-position: center; */
+  background-size: contain;
+  width: 100vw;
+  height: 460px;
+}
+
+.overlay{
+  background: rgba(66, 15, 0, 0.79);
+  width: 100vw;
+  height: 450px;
+
+}
+
+
+
 @media only screen and (max-width: 400px) {
   .about-us, .security {
     height: 50vh;
