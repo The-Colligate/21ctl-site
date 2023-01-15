@@ -49,7 +49,12 @@ const SupportCenters = () => {
                 <a href="tel:+01-2701941">+01-2701941</a>
               </p>
               <p>
-                <a href="mailto:vi_networks@21ctl.com" className='hover:text-primary-orange'>vi_networks@21ctl.com</a>
+                <a
+                  href="mailto:vi_networks@21ctl.com"
+                  className="hover:text-primary-orange"
+                >
+                  vi_networks@21ctl.com
+                </a>
               </p>
             </div>
             <div className="shadow-md hover:shadow-xl">
@@ -65,6 +70,19 @@ const SupportCenters = () => {
               </p>
             </div>
             <div className="shadow-md hover:shadow-xl">
+              <h2 className="font-bold text-xl">Surulere Office</h2>
+              <p className="text-lg mt-4">
+                No 1 Akerele Street,
+                <br />
+                Off Ogunlana drive.
+                <br />
+                Surulere, Lagos.
+              </p>
+              <p>
+                <a href="tel:+01-2701200-2">01-2701200-2</a>
+              </p>
+            </div>
+            <div className="shadow-md hover:shadow-xl">
               <h2 className="font-bold text-xl">Ikeja Network</h2>
               <p className="text-lg mt-4">
                 3, Alalamu Close Off Alade Close. <br />
@@ -76,9 +94,15 @@ const SupportCenters = () => {
                 <a href="tel:+01-2702901">01-2702901</a>
               </p>
               <p>
-                <a href="mailto:ikejanetwork@21ctl.com" className='hover:text-primary-orange'>ikejanetwork@21ctl.com</a>
+                <a
+                  href="mailto:ikejanetwork@21ctl.com"
+                  className="hover:text-primary-orange"
+                >
+                  ikejanetwork@21ctl.com
+                </a>
               </p>
             </div>
+            
             <div className="shadow-md hover:shadow-xl">
               <h2 className="font-bold text-xl mb-4">Saka Tinubu</h2>
               {/* <p className="text-lg mt-4">
@@ -91,13 +115,37 @@ const SupportCenters = () => {
                 <a href="tel:+234 1-270 0888">+234 1-270 0888</a>
               </p>
               <p>
-                <a href="mailto:saka.noc1@21ctl.com" className='hover:text-primary-orange'>saka.noc1@21ctl.com</a>
+                <a
+                  href="mailto:saka.noc1@21ctl.com"
+                  className="hover:text-primary-orange"
+                >
+                  saka.noc1@21ctl.com
+                </a>
+              </p>
+            </div>
+            <div className="shadow-md hover:shadow-xl">
+              <h2 className="font-bold text-xl">Maryland Office</h2>
+              <p className="text-lg mt-4">
+                {/* 3, Alalamu Close Off Alade Close. <br />
+                Allen Bus Stop, */}
+                <br />
+                {/* Ikeja. */}
+              </p>
+              <p>
+                {/* <a href="tel:+01-2702901">01-2702901</a> */}
+              </p>
+              <p>
+                <a
+                  href="mailto:ikejanetwork@21ctl.com"
+                  className="hover:text-primary-orange"
+                >
+                  {/* ikejanetwork@21ctl.com */}
+                </a>
               </p>
             </div>
           </div>
-
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
