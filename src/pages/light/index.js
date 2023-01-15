@@ -36,7 +36,7 @@ function LightDesign() {
       name: 'Digital Platform',
       snippet:
         'Konet space ecosystem allows users and businessess to use their Konet mail to access variety of apps, solutions, products and support services.',
-      link: '/digital-platform',
+      link: '/platform',
     },
     {
       icon: '/icons/home/credit-card.svg',
