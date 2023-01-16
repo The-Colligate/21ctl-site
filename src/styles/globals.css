@@ -459,6 +459,10 @@ body {
     "."
     "."; 
   }
+
+  .landing-page{
+    height: 100%;
+  }
 }
 
 /* .figures:nth-child(odd){
