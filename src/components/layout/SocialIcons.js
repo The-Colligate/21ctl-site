@@ -2,8 +2,7 @@ import React from 'react';
 
 export function SocialIcons () {
   return (
-    <div className="flex flex-col fixed z-[1] p-2 left-0 space-y-4 top-1/3 rounded-r bg-
-    white tablet:top-2/4">
+    <div className="flex flex-col fixed z-[1] p-2 left-0 space-y-4 top-1/3 rounded-r bg-white tablet:top-2/4">
       <a
         href="https://api.whatsapp.com/"
         target="_blank"
