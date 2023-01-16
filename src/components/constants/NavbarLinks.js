@@ -257,7 +257,7 @@ export const mainLinks = [
 
                     {
                         name: 'KonetPay Nigeria Limited',
-                        link: '#',
+                        link: 'https://www.konetpay.com',
                         text: 'Experience the power of Konet pay.',
                         icon: '/icons/home/KonetPay logo.svg',
                     },
@@ -269,14 +269,14 @@ export const mainLinks = [
                     },
                     {
                         name: 'Security',
-                        link: '#',
-                        text: 'Experience the power of Konet pay.',
+                        link: '/security',
+                        text: 'Providing cloud-based security service.',
                         icon: '/LOGO.png',
                     },
                     {
                         name: 'Digital Academy',
-                        link: '#',
-                        text: 'Streamlining operations with CAAS.',
+                        link: '/people',
+                        text: 'Empowering distruptive thinkers.',
                         icon: '/LOGO.png',
                     },
                 ],
@@ -309,33 +309,34 @@ export const mainLinks = [
                 subLinks: [
                     {
                         name: 'Lekki',
-                        link: '/',
+                        link: '/support-centers?lat=6.449280799999999&long=3.4806036#map',
                         icon: '/icons/home/about.svg',
                         text:'5 Jeremiah Ugwu Street, Off Babatunde Anjous, Lekki Phase 1, Lagos.',
                     },
                     {
                         name: 'Victoria Island',
-                        link: '/',
+                        link: '/support-centers?lat=6.4294752&long=3.4355628#map',
                         icon: '/icons/home/about.svg',
                         text:'1A Samuel Adedoyin Street, Victoria Island, Lagos.',
                         
                     },
+                    
 
                     {
                         name: 'Apapa',
-                        link: '/',
+                        link: '/support-centers?lat=6.436990300000001&long=3.365156#map',
                         icon: '/icons/home/about.svg',
                         text: '48, Burma road. Apapa, Lagos.'
                     },
                     {
                         name: 'Surulere',
-                        link: '/',
+                        link: '/support-centers?lat=6.5060176&long=3.3530699#map',
                         icon: '/icons/home/about.svg',
                         text:'No 1 Akerele Street, Off Ogunlana drive. Surulere, Lagos.'
                     },
                     {
                         name: 'Ikeja',
-                        link: '/',
+                        link: '/support-centers?lat=6.6067642&long=3.3484456#map',
                         icon: '/icons/home/about.svg',
                         text: '3, Alalamu Close Off Alade Close. Allen Bus Stop, Ikeja.'
                     },

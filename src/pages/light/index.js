@@ -35,7 +35,7 @@ function LightDesign() {
       icon: '/icons/home/globe.svg',
       name: 'Digital Platform',
       snippet:
-        'Konet space ecosystem allows users and businessess to use their Konet mail to access variety of apps, solutions, products and support services.',
+        'We company offers digital communication platforms and infrastructure to support various business processes and handle high volumes of transactions for millions of users.',
       link: '/platform',
     },
     {
@@ -86,8 +86,8 @@ function LightDesign() {
                 Infrastructure
               </h1>
               <p className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
-                21st Century Technologies Limited, an ecosystem Technology
-                company, building bold, ambitious and audacious digital
+                21st Century Technologies, an ecosystem Technology group
+                companies, building bold, ambitious and audacious digital
                 infrastructure projects. Integrated infrastructure that is
                 sustainable, resilient, secure, low latency, protected that will
                 enable our customers to adopt cutting edge technology to

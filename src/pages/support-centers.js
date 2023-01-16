@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouter } from "next/router";
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
+import MapComponent from '@components/map/googlemap';
 import Head from 'next/head';
 
 const SupportCenters = () => {
+
+  
+  
+    const { query } = useRouter();
+
+   
+
+    console.log("Query Location");
+    if (typeof window !== "undefined") {
+    const location =  window.location.hash.split('=')[1];
+
+    console.log();
+    }
+
+
+
+  
   return (
     <>
       <Head>
@@ -144,6 +163,9 @@ const SupportCenters = () => {
               </p>
             </div>
           </div>
+          <div id='map'>
+          {/* <MapComponent /> */}
+</div>
         </div>
         <Footer />
       </div>
