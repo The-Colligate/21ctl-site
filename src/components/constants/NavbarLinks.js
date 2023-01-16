@@ -235,16 +235,7 @@ export const mainLinks = [
                     // 
                 ],
                 extras: [
-                    {
-                        icon: '/icons/home/career.svg',
-                        link: 'https://schneider.efrontlearning.com/',
-                        name: 'Program Overview',
-                    },
-                    {
-                        icon: '/icons/home/career.svg',
-                        link: 'https://schneider.efrontlearning.com/',
-                        name: 'Explore certification benefits',
-                    },
+                   
                 ],
             },
 
@@ -360,7 +351,7 @@ export const mainLinks = [
     },
     {
         additionalLinks: [
-            { name: 'Digital Platforms', link: '/digital-platform' },
+            { name: 'Digital Platforms', link: '/platform' },
             { name: 'Explore more', link: '/' },
         ],
     },
