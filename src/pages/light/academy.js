@@ -4,20 +4,6 @@ import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import SiemensEnergy from '/public/logo/Siemens Energy.svg';
 import SchneiderElectric from '/public/logo/Schneider Electric.svg';
-import PCCWGlobal from '/public/logo/PCCW Global.svg';
-import HeroImage from '/public/logo/hero-image.png';
-
-import accesslogo from 'public/logo/partners/Access Bank - png 0.png';
-import aws from 'public/logo/partners/Amazon Web Services - png 0.png';
-import british from 'public/logo/partners/British Airways - png 0.png';
-import chevron from 'public/logo/partners/Chevron - png 0.png';
-import fbn from 'public/logo/partners/First Bank of Nigeria - png 0.png';
-import multichoice from 'public/logo/partners/MultiChoice Group - png 0.png';
-import niginterbank from 'public/logo/partners/Nigeria Inter-Bank Settlement System - png 0.png';
-import orange from 'public/logo/partners/Orange - png 0.png';
-import usembassy from 'public/logo/partners/The U.S. Embassy - png 0.png';
-import vmware from 'public/logo/partners/VMware - png 0.png';
-import { AcademyNavbar } from '@components/layout/AcademyNavbar';
 
 const Academy = () => {
   const courses = [
@@ -107,40 +93,6 @@ const Academy = () => {
               </div>
             </div>
           </section>
-
-          <section className="flex flex-col sm:px-28 px-8">
-            <h3 className="text-[#f64e1fbd] font-normal sm:text-4xl text-2xl my-6">
-              Transcending the limits with our partners.
-            </h3>
-            <marquee behavior="scroll" direction="left">
-              <div className="flex justify-between mt-8 px-12 phone:px-0">
-                <Image
-                  src={SchneiderElectric}
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                />
-                <Image
-                  src="/logo/VMware - png 0.png"
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  width={166}
-                  height={99}
-                />
-
-                <Image
-                  src="/logo/Microsoft Azure.png"
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  width={166}
-                  height={99}
-                />
-                <Image
-                  src="/logo/Oracle.png"
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  width={166}
-                  height={99}
-                />
-              </div>
-            </marquee>
-          </section>
-
           <section className="sm:px-28 px-8 mt-28">
             <h1 className="text-primary-orange font-bold sm:text-5xl text-3xl">
               Our Courses

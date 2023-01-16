@@ -61,33 +61,7 @@ const Power = () => {
             </div>
           </section>
 
-          <section className="flex flex-col sm:px-28 px-8">
-            <h3 className="text-[#f64e1fbd] font-normal sm:text-4xl text-2xl my-6">
-              Transcending the limits with our partners.
-            </h3>
-            {/* <marquee behavior="scroll" direction="left"> */}
-            <div className="flex justify-between mt-8 px-12 phone:px-0">
-              <Image
-                src={SchneiderElectric}
-                className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-              />
-              <Image
-                src={SiemensEnergy}
-                className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                width={166}
-                height={99}
-              />
-
-              <Image
-                src="/logo/Oracle.png"
-                className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                width={166}
-                height={99}
-              />
-            </div>
-            {/* </marquee> */}
-          </section>
-<section className='energy'>
+        <section className='energy'>
           <section className="sm:mb-0 mb-16 py-20">
             <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
               <div className="flex-1">

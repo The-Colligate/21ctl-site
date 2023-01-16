@@ -2,18 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { links } from '../../components/constants/NavbarLinks';
-
-import accesslogo from 'public/logo/partners/Access Bank - png 0.png';
-import aws from 'public/logo/partners/Amazon Web Services - png 0.png';
-import british from 'public/logo/partners/British Airways - png 0.png';
-import chevron from 'public/logo/partners/Chevron - png 0.png';
-import fbn from 'public/logo/partners/First Bank of Nigeria - png 0.png';
-import multichoice from 'public/logo/partners/MultiChoice Group - png 0.png';
-import niginterbank from 'public/logo/partners/Nigeria Inter-Bank Settlement System - png 0.png';
-import orange from 'public/logo/partners/Orange - png 0.png';
-import usembassy from 'public/logo/partners/The U.S. Embassy - png 0.png';
-import vmware from 'public/logo/partners/VMware - png 0.png';
 
 const AboutUs = () => {
   return (

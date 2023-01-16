@@ -320,23 +320,35 @@ export const mainLinks = [
                         name: 'Lekki',
                         link: '/',
                         icon: '/icons/home/about.svg',
+                        text:'5 Jeremiah Ugwu Street, Off Babatunde Anjous, Lekki Phase 1, Lagos.',
                     },
                     {
-                        name: 'Ikoyi',
+                        name: 'Victoria Island',
                         link: '/',
                         icon: '/icons/home/about.svg',
+                        text:'1A Samuel Adedoyin Street, Victoria Island, Lagos.',
+                        
                     },
 
                     {
                         name: 'Apapa',
                         link: '/',
                         icon: '/icons/home/about.svg',
+                        text: '48, Burma road. Apapa, Lagos.'
                     },
                     {
-                        name: 'Abeokuta',
+                        name: 'Surulere',
                         link: '/',
                         icon: '/icons/home/about.svg',
+                        text:'No 1 Akerele Street, Off Ogunlana drive. Surulere, Lagos.'
                     },
+                    {
+                        name: 'Ikeja',
+                        link: '/',
+                        icon: '/icons/home/about.svg',
+                        text: '3, Alalamu Close Off Alade Close. Allen Bus Stop, Ikeja.'
+                    },
+                  
                 ],
                 extras: [
                   

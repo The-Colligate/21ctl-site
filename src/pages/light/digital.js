@@ -104,26 +104,7 @@ const Digital = () => {
           </div>
         </section>
 
-        <section className="flex flex-col sm:px-36 px-8">
-          <h3 className="text-[#f64e1fbd] font-normal text-2xl my-6">
-            Transcending the limits with our partners.
-          </h3>
-          <div className="flex justify-between mt-8 px-12 phone:px-0">
-            <Image
-              src={SiemensEnergy}
-              className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-            />
-            <Image
-              src={SchneiderElectric}
-              className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-            />
-            <Image
-              src={PCCWGlobal}
-              className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-            />
-          </div>
-        </section>
-
+       
         <section>
           <div className="flex items-center space-x-10 space-y-0 my-52 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
             <div className="">
