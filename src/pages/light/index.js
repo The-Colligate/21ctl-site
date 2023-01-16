@@ -35,7 +35,7 @@ function LightDesign() {
       icon: '/icons/home/globe.svg',
       name: 'Digital Platform',
       snippet:
-        'We company offers digital communication platforms and infrastructure to support various business processes and handle high volumes of transactions for millions of users.',
+        '21st century technologies limited offers digital communication platforms and infrastructure to support various business processes and handle high volumes of transactions for millions of users.',
       link: '/platform',
     },
     {
@@ -86,7 +86,7 @@ function LightDesign() {
                 Infrastructure
               </h1>
               <p className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
-                21st Century Technologies, an ecosystem Technology group
+                21st Century Technologies, an ecosystem Technology Group of
                 companies, building bold, ambitious and audacious digital
                 infrastructure projects. Integrated infrastructure that is
                 sustainable, resilient, secure, low latency, protected that will

@@ -109,7 +109,7 @@ export function LightNavbar({ menuProp }) {
 
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-4 space-y-2 list-disc text-[12px]  font-semibold dark:text-white"
+                              className="ml-4 space-y-2 list-disc text-[15px] break-words  font-semibold dark:text-white"
                             >
                               {' '}
                               {sublinks.name}

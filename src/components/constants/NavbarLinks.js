@@ -245,7 +245,7 @@ export const mainLinks = [
                     {
                         name: '21st Century Technologies Limited',
                         link: '#',
-                        text: 'Streamlining operations with CAAS.',
+                        text: 'Providig digital communication platforms and infrastructure',
                         icon: '/LOGO.png',
                     },
                     {
@@ -263,8 +263,8 @@ export const mainLinks = [
                     },
                     {
                         name: '21st Century Energy',
-                        link: '#',
-                        text: 'Streamlining operations with CAAS.',
+                        link: '/power',
+                        text: 'Providing renewable energy and electric energy storage system',
                         icon: '/LOGO.png',
                     },
                     {
@@ -305,7 +305,10 @@ export const mainLinks = [
                 ],
             },
             {
+
+
                 name: 'Locations',
+                link:'/support-centers',
                 subLinks: [
                     {
                         name: 'Lekki',
@@ -665,7 +668,7 @@ export const platformNavLinks = [
       {
         
             name: 'Cloud Platform',
-            link: '/',
+            link: 'https://www.21ctl.com/cloud/',
             subLinks: [],
 
            
@@ -714,7 +717,7 @@ export const powerNavLinks = [
                     },
                     {
                         name: 'Cloud Platform',
-                        link: '/',
+                        link: 'https://www.21ctl.com/cloud/',
                         icon: '/icons/home/handshake.svg',
 
                         text: 'See our partners',
