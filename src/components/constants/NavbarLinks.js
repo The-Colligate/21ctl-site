@@ -138,7 +138,7 @@ export const mainLinks = [
                     {
                         name: 'Amazon',
                         link: '/',
-                        icon: '/icons/home/career.svg',
+                        icon: '/logo/partners/Amazon Web Services - png 0.png',
                         text: 'Advanced Networking',
                         text1: 'Data Analytics',
                         text2: 'Databases',
@@ -148,14 +148,14 @@ export const mainLinks = [
                     {
                         name: 'Schneider Electric University',
                         link: '/',
-                        icon: '/icons/home/career.svg',
+                        icon: '/logo/partners/Schneider Electric - png 0.png',
                         text: 'Data Center Physical Infrastructure',
                         text1: 'See more',
                     },
                     {
                         name: 'VMware',
                         link: '/',
-                        icon: '/icons/home/career.svg',
+                        icon: '/logo/partners/VMware-logo-1.jpg',
                         text: 'Multi-Cloud',
                         text1: 'Virtual Cloud Network',
                         text2: 'Digital Workspace',
@@ -165,37 +165,37 @@ export const mainLinks = [
                     {
                         name: 'Microsoft Azure',
                         link: '/',
-                        icon: '/icons/home/career.svg',
+                        icon: '/logo/partners/Microsoft-Azure-Emblem.png',
                         text: 'Cloud Computing',
                         text1: 'Virtual Machines',
                     },
                     {
                         name: 'Oracle University',
                         link: '/',
-                        icon: '/icons/home/career.svg',
+                        icon: '/logo/partners/oracle.png',
                         text: 'Oracle Databases',
                         text1: 'Oracle Cloud Infrastructure (OCI)',
                         text2: 'Cloud Database Sevices',
                         text3: 'DevOps'
                     },
-                    //   {
-                    //     name: 'Stanford University',
-                    //     link: '/',
-                    //     icon: '/icons/home/career.svg',
-                    //     // text: 'Get Certification',
-                    //     // text1: 'See more',
-                    //   },
-                    //   {
-                    //     name: 'MIT',
-                    //     link: '/',
-                    //     icon: '/icons/home/career.svg',
-                    //     // text: 'Get Certification',
-                    //     // text1: 'See more',
-                    //   },
+                      {
+                        name: 'Stanford University',
+                        link: '/',
+                        icon: '/logo/partners/Stanford-University-Logo.png',
+                        // text: 'Get Certification',
+                        // text1: 'See more',
+                      },
+                      {
+                        name: 'MIT',
+                        link: '/',
+                        icon: '/logo/partners/mit.png',
+                        // text: 'Get Certification',
+                        // text1: 'See more',
+                      },
                     {
                         name: 'Checkpoint University',
                         link: '/',
-                        icon: '/icons/home/career.svg',
+                        icon: '/logo/partners/checkpoint.jpg',
                         text: 'Malware analysis',
                         text1: 'Cloud Network Security',
                         text3: 'Security Administration',
@@ -203,10 +203,54 @@ export const mainLinks = [
                     {
                         name: 'Carnegie Mellon University',
                         link: '/',
-                        icon: '/icons/home/career.svg',
+                        icon: '/logo/partners/Carnegie-Mellon.png',
                         // text: 'Get Certification',
                         // text1: 'See more',
                     },
+                    {
+                        name: 'Orange',
+                        link: '/',
+                        icon: '/logo/partners/orange.png',
+                     
+                    },
+                    {
+                        name: 'MTN',
+                        link: '/',
+                        icon: '/logo/partners/MTNza - jpeg 0.png',
+                      
+                    },
+                    {
+                        name: 'Glo',
+                        link: '/',
+                        icon: '/logo/partners/Glo.png',
+                      
+                    },
+                    {
+                        name: 'Airtel',
+                        link: '/',
+                        icon: '/logo/partners/airtel.png',
+                      
+                    },
+                    {
+                        name: '9mobile',
+                        link: '/',
+                        icon: '/logo/partners/9mobile.png',
+                      
+                    },
+                    {
+                        name: 'NIBSS',
+                        link: '/',
+                        icon: '/logo/partners/nibss.png',
+                      
+                    },
+                    {
+                        name: 'Multichoice Group',
+                        link: '/',
+                        icon: '/logo/partners/MultiChoice Group - png 0.png',
+                      
+                    },
+
+                    // 
                 ],
                 extras: [
                     {
@@ -560,95 +604,105 @@ export const infraNavLinks = [
 ];
 
 export const platformNavLinks = [
-    {
-        navLinks: [
-            {
-                name: 'Aggregator',
-                subLinks: [
-                    {
-                        name: 'About Us',
-                        link: '/about-us',
-                        icon: '/icons/home/about.svg',
-                        text: 'Learn More about 21ctl.',
-                    },
-                    {
-                        name: 'Communication Platform',
-                        link: '/',
-                        icon: '/icons/home/career.svg',
+  {
+    navLinks: [
+      {
+        name: 'Aggregator',
+        subLinks: [
+          {
+            name: 'About Us',
+            link: '/about-us',
+            icon: '/icons/home/about.svg',
+            text: 'Learn More about 21ctl.',
+          },
+          {
+            name: 'Communication Platform',
+            link: '/',
+            icon: '/icons/home/career.svg',
 
-                        text: 'Discover the best role for you.',
-                    },
-                    {
-                        name: 'Cloud Platform',
-                        link: '/',
-                        icon: '/icons/home/handshake.svg',
+            text: 'Discover the best role for you.',
+          },
+          {
+            name: 'Cloud Platform',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
 
-                        text: 'See our partners',
-                    },
-                    {
-                        name: 'Payment Platform',
-                        link: '/',
-                        icon: '/icons/home/handshake.svg',
+            text: 'See our partners',
+          },
+          {
+            name: 'Payment Platform',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
 
-                        text: 'See our partners',
-                    },
-                    {
-                        name: 'Automation',
-                        link: '/',
-                        icon: '/icons/home/handshake.svg',
+            text: 'See our partners',
+          },
+          {
+            name: 'Automation',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
 
-                        text: 'See our partners',
-                    },
-                    {
-                        name: 'Identity',
-                        link: '/',
-                        icon: '/icons/home/handshake.svg',
+            text: 'See our partners',
+          },
+          {
+            name: 'Identity',
+            link: '/',
+            icon: '/icons/home/handshake.svg',
 
-                        text: 'See our partners',
-                    },
-                ],
-                extras: [],
-            },
-            {
-                name: 'Communication',
-                subLinks: [],
-                extras: [],
-            },
-            {
-                name: 'Cloud',
-                subLinks: [
-                    {
-                        name: 'CAAS',
-                        link: '#',
-                        text: 'Streamlining operations with CAAS.',
-                        icon: '/icons/home/mdi_cloud-check-variant.svg',
-                    },
-                    {
-                        name: 'SMS Gateway',
-                        link: '/',
-                        text: 'Connecting you with reliable SMS solutions.',
-                        icon: '/icons/home/fa6-solid_comment-sms.svg',
-                    },
-                ],
-                extras: [],
-            },
-            {
-                name: 'Payment',
-                subLinks: [],
-                extras: [],
-            },
-            {
-                name: 'Automation',
-                subLinks: [],
-                extras: [],
-            },
-            {
-                name: 'Identity',
-                subLinks: [],
-                extras: [],
-            },
+            text: 'See our partners',
+          },
         ],
-    },
+        extras: [],
+      },
+      {
+        name: 'Communication',
+        subLinks: [],
+        extras: [],
+      },
+      {
+        name: 'Cloud',
+        subLinks: [
+          // {
+          //   name: 'CAAS',
+          //   link: '#',
+          //   text: 'Streamlining operations with CAAS.',
+          //   icon: '/icons/home/mdi_cloud-check-variant.svg',
+          // },
+          // {
+          //   name: 'SMS Gateway',
+          //   link: '/',
+          //   text: 'Connecting you with reliable SMS solutions.',
+          //   icon: '/icons/home/fa6-solid_comment-sms.svg',
+          // },
+        ],
+        extras: [],
+      },
+      {
+        name: 'Payment',
+        subLinks: [
+          {
+            name:'Koney pay',
+            link:'https://www.konetpay.com',
+            text: 'Providing reliable payment service.',
+            icon: '/icons/home/fa6-solid_comment-sms.svg',
+          }
+        ],
+        extras: [],
+      },
+      {
+        name: 'Automation',
+        subLinks: [],
+        extras: [],
+      },
+      {
+        name: 'Identity',
+        subLinks: [],
+        extras: [],
+      },
+    ],
+  },
+  {
+    additionalLinks: [],
+  },
     {
         additionalLinks: [],
     },

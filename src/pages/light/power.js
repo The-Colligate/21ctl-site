@@ -157,60 +157,6 @@ const Power = () => {
             </div>
           </section>
 
-          <section className="partners py-20 sm:px-20 px-8">
-            <div>
-              <p className="text-4xl text-primary-orange font-semibold">
-                Say hello to our other partners.
-              </p>
-            </div>
-
-            <div>
-              <marquee behavior="scroll" direction="left">
-                <div className="flex items-center sm:space-x-10 space-x-5 py-16 largeTablet:text-center">
-                  <Image
-                    src={accesslogo}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={aws}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={british}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={chevron}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={fbn}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={multichoice}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={niginterbank}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={orange}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={usembassy}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={vmware}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                </div>
-              </marquee>
-            </div>
-          </section>
           <Footer />
         </div>
         <SocialIcons />

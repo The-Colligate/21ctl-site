@@ -19,6 +19,9 @@ module.exports = {
       boxShadow: {
         'lg': '0 10px 30px -15px #F64E1F',
       },
+      zIndex: {
+        '99': '99',
+      },
       screens: {
         largeTablet: { max: '1024px' },
         // => @media (max-width: 1024px) { ... }

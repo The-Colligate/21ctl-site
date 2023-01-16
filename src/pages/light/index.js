@@ -36,7 +36,7 @@ function LightDesign() {
       name: 'Digital Platform',
       snippet:
         'Konet space ecosystem allows users and businessess to use their Konet mail to access variety of apps, solutions, products and support services.',
-      link: '/digital-platform',
+      link: '/platform',
     },
     {
       icon: '/icons/home/credit-card.svg',
@@ -77,7 +77,7 @@ function LightDesign() {
       </div>
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
         <LightNavbar />
-        <div className="flex items-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
+        <div className="landing-page flex items-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
           <div className="w-full h-full flex items-center">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">

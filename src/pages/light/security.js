@@ -87,7 +87,7 @@ const Security = () => {
               <div className="flex-1">
                 <img
                   src="/logo/public-key.png"
-                  className="w-full"
+                  className="rounded-2xl h-1/3"
                 />
               </div>
               <div className="flex-1">
@@ -103,32 +103,33 @@ const Security = () => {
             </div>
           </section>
           <section>
-            <div className="  flex items-center overflow-x-hidden justify-center rounded  tablet:m-5">
-              <div className="cableCard  rounded relative flex justify-center  phone:h-[220px]">
+            <div className="  flex items-center overflow-x-hidden justify-around rounded  tablet:m-5">
+              {/* <div className="cableCard  rounded relative flex justify-center  phone:h-[220px]"> */}
                
-                <div className="pl-10 w-2/4 absolute left-0 flex flex-col h-full justify-center  tablet:w-full">
-                  <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8 text-white tablet:mb-2">
+                <div className="pl-10 w-2/5  flex flex-col h-full justify-center  tablet:w-full">
+                  <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
                     <span className="text-primary-orange">Endpoint </span>
                      Threat Protection
                   </h1>
-                  <p className="leading-8 text-xl text-white tablet:text-xs">
+                  <p className="leading-8 text-xl  tablet:text-xs">
                   Stay protected against cyber threats with 21st Century{"'"}s integrated threat prevention, firewall, web, email, and device control defenses.
                   </p>
-                  <button className='p-1 mt-4 border-white border-solid border rounded-xl text-white text-center  w-32'>Reach Us</button>
-                </div>
+                  <button className="bg-primary-orange w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
+                Reach Us
+              </button>    </div>
                 <div>
                   <img
                     src="/logo/threat-protection.png"
-                    className='h-[440px] '
+                    className='rounded-2xl'
                     />
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </section>
 
           <section className="mx-20 mt-20 vision-mission-section">
-            <div className=" mr-0 flex justify-between items-center  tablet:m-10 tablet:flex-col">
-              <div className="w-[50%] tablet:w-full">
+            <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col">
+              <div className="w-2/5 tablet:w-full">
               
                 <div className="tablet:my-5 mb-4">
                 <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
@@ -214,60 +215,6 @@ const Security = () => {
           </section>
 
 
-          <section className="partners py-20 sm:px-20 px-8">
-            <div>
-              <p className="text-4xl text-primary-orange font-semibold">
-                Say hello to our other partners.
-              </p>
-            </div>
-
-            <div>
-              <marquee behavior="scroll" direction="left">
-                <div className="flex items-center sm:space-x-10 space-x-5 py-16 largeTablet:text-center">
-                  <Image
-                    src={accesslogo}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={aws}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={british}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={chevron}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={fbn}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={multichoice}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={niginterbank}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={orange}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={usembassy}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                  <Image
-                    src={vmware}
-                    className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16"
-                  />
-                </div>
-              </marquee>
-            </div>
-          </section>
           <Footer />
         </div>
         <SocialIcons />

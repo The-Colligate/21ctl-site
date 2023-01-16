@@ -45,13 +45,15 @@ export function LightNavbar({ menuProp }) {
       ? peopleNavLinks
       : router.pathname === '/security'
       ? securityNavLinks
+      : router.pathname === '/platform'
+      ? platformNavLinks
       : mainLinks;
   // console.log('navItems', navItems);
   // console.log('pathname', router.pathname);
 
   return (
     <>
-      <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-50 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
+      <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
         <Link href="/">
           <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
         </Link>
@@ -81,12 +83,18 @@ export function LightNavbar({ menuProp }) {
                 >
                   <div class="max-w-4xl pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
-                      
-                      { link?.head ?? link.name.toUpperCase()}
+                      {router.pathname === '/people'
+                        ? link?.head
+                        : link.name.toUpperCase()}
+
                     </h2>
                     <hr />
                     <div
-                      className={`grid ${router.pathname === '/people' ?"grid-cols-4" : "grid-cols-2"}  items-start flex-nowrap mr-5 w-full`}
+                      className={`grid ${
+                        link.subLinks.length > 7
+                          ? 'grid-cols-4'
+                          : 'grid-cols-2'
+                      }  items-start flex-nowrap mr-5 w-full`}
                     >
                       {link.subLinks.map((sublinks) => (
                         <div
@@ -292,7 +300,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
 
   return (
     <div
-      className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
+      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
         isOpen ? 'translate-x-0' : ''
       } largeTablet:block dark:bg-[#1f1d1d]`}
     >
@@ -371,11 +379,13 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
                 </a>
               </li>
             ))}
-            <li>
+            {/* <li>
               <a className="flex items-center justify-between">Konet Mail</a>
-            </li>
+            </li> */}
             <li>
-              <a className="flex items-center justify-between">Explore</a>
+              <Link href="/support-centers">
+              <span className="flex items-center justify-between">Support Centers</span>
+              </Link>
             </li>
           </ul>
         )}
