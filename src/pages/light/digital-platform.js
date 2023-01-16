@@ -49,37 +49,6 @@ const DigitalPlatform = () => {
             </div>
           </section>
 
-          <section className="flex flex-col sm:px-36 px-8">
-            <h3 className="text-[#f64e1fbd] font-normal text-2xl my-6">
-              Transcending the limits with our partners.
-            </h3>
-            <marquee behavior="scroll" direction="left">
-              <div className="flex justify-between mt-8 px-12 phone:px-0">
-                <Image
-                  src={Orange}
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16 tablet:mr-5"
-                  width={140}
-                />
-                <Image
-                  src={MTN}
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16  tablet:mr-5"
-                  width={140}
-                />
-                <Image
-                  src={GLO}
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16  tablet:mr-5"
-                />
-                <Image
-                  src={Airtel}
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16  tablet:mr-5"
-                />
-                <Image
-                  src={nineMobile}
-                  className="w-54 largeTablet:w-44 tablet:w-20 phone:w-24 smallPhone:w-16  tablet:mr-5"
-                />
-              </div>
-            </marquee>
-          </section>
           <section>
             <div className="m-20  flex items-center overflow-x-hidden justify-center rounded  tablet:m-5">
               <div className="cableCard  rounded relative flex justify-center  phone:h-[220px]">

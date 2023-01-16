@@ -139,73 +139,55 @@ export const mainLinks = [
                         name: 'Amazon',
                         link: '/',
                         icon: '/logo/partners/Amazon Web Services - png 0.png',
-                        text: 'Advanced Networking',
-                        text1: 'Data Analytics',
-                        text2: 'Databases',
-                        text3: 'Security',
-                        text4: 'Serverless',
+                        
                     },
                     {
                         name: 'Schneider Electric University',
                         link: '/',
                         icon: '/logo/partners/Schneider Electric - png 0.png',
-                        text: 'Data Center Physical Infrastructure',
-                        text1: 'See more',
+                       
                     },
                     {
                         name: 'VMware',
                         link: '/',
                         icon: '/logo/partners/VMware-logo-1.jpg',
-                        text: 'Multi-Cloud',
-                        text1: 'Virtual Cloud Network',
-                        text2: 'Digital Workspace',
-                        text3: 'App Modernization',
-                        text4: 'Intrinsic Security',
+                       
                     },
                     {
                         name: 'Microsoft Azure',
                         link: '/',
                         icon: '/logo/partners/Microsoft-Azure-Emblem.png',
-                        text: 'Cloud Computing',
-                        text1: 'Virtual Machines',
+                       
                     },
                     {
                         name: 'Oracle University',
                         link: '/',
                         icon: '/logo/partners/oracle.png',
-                        text: 'Oracle Databases',
-                        text1: 'Oracle Cloud Infrastructure (OCI)',
-                        text2: 'Cloud Database Sevices',
-                        text3: 'DevOps'
+                      
                     },
                       {
                         name: 'Stanford University',
                         link: '/',
                         icon: '/logo/partners/Stanford-University-Logo.png',
-                        // text: 'Get Certification',
-                        // text1: 'See more',
+                        
                       },
                       {
                         name: 'MIT',
                         link: '/',
                         icon: '/logo/partners/mit.png',
-                        // text: 'Get Certification',
-                        // text1: 'See more',
+                        
                       },
                     {
                         name: 'Checkpoint University',
                         link: '/',
                         icon: '/logo/partners/checkpoint.jpg',
-                        text: 'Malware analysis',
-                        text1: 'Cloud Network Security',
-                        text3: 'Security Administration',
+                       
                     },
                     {
                         name: 'Carnegie Mellon University',
                         link: '/',
                         icon: '/logo/partners/Carnegie-Mellon.png',
-                        // text: 'Get Certification',
-                        // text1: 'See more',
+                        
                     },
                     {
                         name: 'Orange',
@@ -290,6 +272,18 @@ export const mainLinks = [
                     },
                     {
                         name: '21st Century Energy',
+                        link: '#',
+                        text: 'Streamlining operations with CAAS.',
+                        icon: '/LOGO.png',
+                    },
+                    {
+                        name: 'Security',
+                        link: '#',
+                        text: 'Experience the power of Konet pay.',
+                        icon: '/LOGO.png',
+                    },
+                    {
+                        name: 'Digital Academy',
                         link: '#',
                         text: 'Streamlining operations with CAAS.',
                         icon: '/LOGO.png',
@@ -622,13 +616,7 @@ export const platformNavLinks = [
 
             text: 'Discover the best role for you.',
           },
-          {
-            name: 'Cloud Platform',
-            link: '/',
-            icon: '/icons/home/handshake.svg',
-
-            text: 'See our partners',
-          },
+         
           {
             name: 'Payment Platform',
             link: '/',
@@ -654,29 +642,6 @@ export const platformNavLinks = [
         extras: [],
       },
       {
-        name: 'Communication',
-        subLinks: [],
-        extras: [],
-      },
-      {
-        name: 'Cloud',
-        subLinks: [
-          // {
-          //   name: 'CAAS',
-          //   link: '#',
-          //   text: 'Streamlining operations with CAAS.',
-          //   icon: '/icons/home/mdi_cloud-check-variant.svg',
-          // },
-          // {
-          //   name: 'SMS Gateway',
-          //   link: '/',
-          //   text: 'Connecting you with reliable SMS solutions.',
-          //   icon: '/icons/home/fa6-solid_comment-sms.svg',
-          // },
-        ],
-        extras: [],
-      },
-      {
         name: 'Payment',
         subLinks: [
           {
@@ -688,6 +653,22 @@ export const platformNavLinks = [
         ],
         extras: [],
       },
+      {
+        name: 'Communication',
+        subLinks: [],
+        extras: [],
+      },
+      {
+        
+            name: 'Cloud Platform',
+            link: '/',
+            subLinks: [],
+
+           
+          
+        extras: [],
+      },
+     
       {
         name: 'Automation',
         subLinks: [],

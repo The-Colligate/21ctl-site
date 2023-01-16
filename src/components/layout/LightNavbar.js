@@ -22,32 +22,32 @@ export function LightNavbar({ menuProp }) {
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
   // useEffect(() => {
-    // const addclass = theme === "light" ? "show-white" : "show-black";
+  // const addclass = theme === "light" ? "show-white" : "show-black";
 
-    // window.addEventListener('scroll', () => {
-    //   if (window.scrollY > 300) {
-    //     return document.querySelector('.navbar').classList.add('show');
-    //   }
-    //   return document.querySelector('.navbar').classList.remove('show');
-    // });
+  // window.addEventListener('scroll', () => {
+  //   if (window.scrollY > 300) {
+  //     return document.querySelector('.navbar').classList.add('show');
+  //   }
+  //   return document.querySelector('.navbar').classList.remove('show');
+  // });
   // });
 
   const navItems =
     router.pathname === '/digital-platform'
       ? platformNavLinks
       : router.pathname === '/digital-infrastructure'
-      ? infraNavLinks
-      : router.pathname === '/'
-      ? mainLinks
-      : router.pathname === '/power'
-      ? powerNavLinks
-      : router.pathname === '/people'
-      ? peopleNavLinks
-      : router.pathname === '/security'
-      ? securityNavLinks
-      : router.pathname === '/platform'
-      ? platformNavLinks
-      : mainLinks;
+        ? infraNavLinks
+        : router.pathname === '/'
+          ? mainLinks
+          : router.pathname === '/power'
+            ? powerNavLinks
+            : router.pathname === '/people'
+              ? peopleNavLinks
+              : router.pathname === '/security'
+                ? securityNavLinks
+                : router.pathname === '/platform'
+                  ? platformNavLinks
+                  : mainLinks;
   // console.log('navItems', navItems);
   // console.log('pathname', router.pathname);
 
@@ -74,7 +74,7 @@ export function LightNavbar({ menuProp }) {
               // position={Position.BOTTOM_LEFT}
 
               triggerType="menu"
-              isShown={displayPopup[0] && displayPopup[1] === index && link.subLinks.length !==0}
+              isShown={displayPopup[0] && displayPopup[1] === index && link.subLinks.length !== 0}
               content={
                 <div
                   className="max-w-max flex"
@@ -90,11 +90,10 @@ export function LightNavbar({ menuProp }) {
                     </h2>
                     <hr />
                     <div
-                      className={`grid ${
-                        link.subLinks.length > 7
+                      className={`grid ${link.subLinks.length > 7
                           ? 'grid-cols-4'
                           : 'grid-cols-2'
-                      }  items-start flex-nowrap mr-5 w-full`}
+                        }  items-start flex-nowrap mr-5 w-full`}
                     >
                       {link.subLinks.map((sublinks) => (
                         <div
@@ -165,7 +164,7 @@ export function LightNavbar({ menuProp }) {
                       ))}
                     </div>
                   </div>
-                  {link.extras.length !== 0?                  <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
+                  {link.extras.length !== 0 ? <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
                     <h2 className="text-sm font-bold text-darkShade">Recent</h2>
 
                     <div className={`flex flex-col flex-nowrap w-full`}>
@@ -194,25 +193,24 @@ export function LightNavbar({ menuProp }) {
                           </Link>
                         </div>
                       ))}
-                    </div> 
-                  </div>: <></>}
+                    </div>
+                  </div> : <></>}
                 </div>
               }
             >
               <div
-                className={`${displayPopup[0] && displayPopup[1] === index ? "text-primary-orange": "text-black"}  "relative  hover:text-primary-orange`}
+                className={`${displayPopup[0] && displayPopup[1] === index ? "text-primary-orange" : "text-black"}  "relative  hover:text-primary-orange`}
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}
-                // {() => {; console.log(displayPopup);}}
+              // {() => {; console.log(displayPopup);}}
               >
                 <a
                   href="#"
                   className="flex items-center"
                   onClick={() => {
                     console.log(
-                      `${displayPopup[1]} === ${index} ? ${
-                        displayPopup[1] === index
+                      `${displayPopup[1]} === ${index} ? ${displayPopup[1] === index
                       }`
                     );
                     setDisplayPopup([
@@ -221,12 +219,12 @@ export function LightNavbar({ menuProp }) {
                     ]);
                   }}
                 >
-                  {link.name}{' '}
-                  {displayPopup[0] && displayPopup[1] === index ? (
+                  {link.name}{' '}{link.subLinks.length > 0 ?(<>                  {displayPopup[0] && displayPopup[1] === index ? (
                     <CaretDown className="ml-1 -rotate-180" />
                   ) : (
                     <CaretDown className="ml-1" />
-                  )}
+                  )}</>
+                  ): <></>}
                 </a>
               </div>
             </Popover>
@@ -300,9 +298,8 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
 
   return (
     <div
-      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
-        isOpen ? 'translate-x-0' : ''
-      } largeTablet:block dark:bg-[#1f1d1d]`}
+      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? 'translate-x-0' : ''
+        } largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2 mb-3">
@@ -384,7 +381,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
             </li> */}
             <li>
               <Link href="/support-centers">
-              <span className="flex items-center justify-between">Support Centers</span>
+                <span className="flex items-center justify-between">Support Centers</span>
               </Link>
             </li>
           </ul>
