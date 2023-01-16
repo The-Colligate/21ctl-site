@@ -199,7 +199,7 @@ export function LightNavbar({ menuProp }) {
               }
             >
               <div
-                className={`${displayPopup[0] && displayPopup[1] === index ? "text-primary-orange" : "text-black"}  "relative  hover:text-primary-orange`}
+                className={`${displayPopup[0] && displayPopup[1] === index ? "text-primary-orange" : "dark:text-white text-black"} dark:text-white text-black relative  hover:text-primary-orange`}
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}
