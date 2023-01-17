@@ -36,18 +36,24 @@ export function LightNavbar({ menuProp }) {
     router.pathname === '/digital-platform'
       ? platformNavLinks
       : router.pathname === '/digital-infrastructure'
-        ? infraNavLinks
-        : router.pathname === '/'
-          ? mainLinks
-          : router.pathname === '/power'
-            ? powerNavLinks
-            : router.pathname === '/people'
-              ? peopleNavLinks
-              : router.pathname === '/security'
-                ? securityNavLinks
-                : router.pathname === '/platform'
-                  ? platformNavLinks
-                  : mainLinks;
+      ? infraNavLinks
+      : router.pathname === '/'
+      ? mainLinks
+      : router.pathname === '/power'
+      ? powerNavLinks
+      : router.pathname === '/people'
+      ? peopleNavLinks
+      : router.pathname === '/security'
+      ? securityNavLinks
+      : router.pathname === '/platform'
+      ? platformNavLinks
+      : router.pathname === '/communication'
+      ? platformNavLinks
+      : router.pathname === '/automation'
+      ? platformNavLinks
+      : router.pathname === '/identity'
+      ? platformNavLinks
+      : mainLinks;
   // console.log('navItems', navItems);
   // console.log('pathname', router.pathname);
 
@@ -74,7 +80,11 @@ export function LightNavbar({ menuProp }) {
               // position={Position.BOTTOM_LEFT}
 
               triggerType="menu"
-              isShown={displayPopup[0] && displayPopup[1] === index && link.subLinks.length !== 0}
+              isShown={
+                displayPopup[0] &&
+                displayPopup[1] === index &&
+                link.subLinks.length !== 0
+              }
               content={
                 <div
                   className="max-w-max flex"
@@ -86,14 +96,12 @@ export function LightNavbar({ menuProp }) {
                       {router.pathname === '/people'
                         ? link?.head
                         : link.name.toUpperCase()}
-
                     </h2>
                     <hr />
                     <div
-                      className={`grid ${link.subLinks.length > 7
-                          ? 'grid-cols-4'
-                          : 'grid-cols-2'
-                        }  items-start flex-nowrap mr-5 w-full`}
+                      className={`grid ${
+                        link.subLinks.length > 7 ? 'grid-cols-4' : 'grid-cols-2'
+                      }  items-start flex-nowrap mr-5 w-full`}
                     >
                       {link.subLinks.map((sublinks) => (
                         <div
@@ -164,53 +172,66 @@ export function LightNavbar({ menuProp }) {
                       ))}
                     </div>
                   </div>
-                  {link.extras.length !== 0 ? <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
-                    <h2 className="text-sm font-bold text-darkShade">Recent</h2>
+                  {link.extras.length !== 0 ? (
+                    <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
+                      <h2 className="text-sm font-bold text-darkShade">
+                        Recent
+                      </h2>
 
-                    <div className={`flex flex-col flex-nowrap w-full`}>
-                      {link.extras.map((sublinks) => (
-                        <div key={sublinks.name} className="mt-3">
-                          <div className="flex">
-                            {' '}
-                            <Image
-                              height={20}
-                              width={20}
-                              src={`${sublinks.icon}`}
-                            />{' '}
+                      <div className={`flex flex-col flex-nowrap w-full`}>
+                        {link.extras.map((sublinks) => (
+                          <div key={sublinks.name} className="mt-3">
+                            <div className="flex">
+                              {' '}
+                              <Image
+                                height={20}
+                                width={20}
+                                src={`${sublinks.icon}`}
+                              />{' '}
+                              <Link
+                                href={`${sublinks.link}`}
+                                className="ml-2 list-disc font-medium hover:text-primary-orange"
+                              >
+                                {' '}
+                                {sublinks.name}
+                              </Link>
+                            </div>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-2 list-disc font-medium hover:text-primary-orange"
+                              className="ml-9 list-disc text-[10px]"
                             >
-                              {' '}
-                              {sublinks.name}
+                              {sublinks.text}{' '}
                             </Link>
                           </div>
-                          <Link
-                            href={`${sublinks.link}`}
-                            className="ml-9 list-disc text-[10px]"
-                          >
-                            {sublinks.text}{' '}
-                          </Link>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div> : <></>}
+                  ) : (
+                    <></>
+                  )}
                 </div>
               }
             >
               <div
-                className={`${displayPopup[0] && displayPopup[1] === index ? "text-primary-orange" : "dark:text-white text-black"} dark:text-white text-black relative  hover:text-primary-orange`}
+                className={`${
+                  displayPopup[0] && displayPopup[1] === index
+                    ? 'text-primary-orange'
+                    : 'dark:text-white text-black'
+                } dark:text-white text-black relative  hover:text-primary-orange`}
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}
-              // {() => {; console.log(displayPopup);}}
+                // {() => {; console.log(displayPopup);}}
               >
                 <a
-                  href="#"
+                  href={link?.link}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center"
                   onClick={() => {
                     console.log(
-                      `${displayPopup[1]} === ${index} ? ${displayPopup[1] === index
+                      `${displayPopup[1]} === ${index} ? ${
+                        displayPopup[1] === index
                       }`
                     );
                     setDisplayPopup([
@@ -219,12 +240,19 @@ export function LightNavbar({ menuProp }) {
                     ]);
                   }}
                 >
-                  {link.name}{' '}{link.subLinks.length > 0 ?(<>                  {displayPopup[0] && displayPopup[1] === index ? (
-                    <CaretDown className="ml-1 -rotate-180" />
+                  {link.name}{' '}
+                  {link.subLinks.length > 0 ? (
+                    <>
+                      {' '}
+                      {displayPopup[0] && displayPopup[1] === index ? (
+                        <CaretDown className="ml-1 -rotate-180" />
+                      ) : (
+                        <CaretDown className="ml-1" />
+                      )}
+                    </>
                   ) : (
-                    <CaretDown className="ml-1" />
-                  )}</>
-                  ): <></>}
+                    <></>
+                  )}
                 </a>
               </div>
             </Popover>
@@ -298,8 +326,9 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
 
   return (
     <div
-      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? 'translate-x-0' : ''
-        } largeTablet:block dark:bg-[#1f1d1d]`}
+      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
+        isOpen ? 'translate-x-0' : ''
+      } largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2 mb-3">
@@ -381,7 +410,9 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
             </li> */}
             <li>
               <Link href="/support-centers">
-                <span className="flex items-center justify-between">Support Centers</span>
+                <span className="flex items-center justify-between">
+                  Support Centers
+                </span>
               </Link>
             </li>
           </ul>
