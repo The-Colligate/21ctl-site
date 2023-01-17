@@ -240,7 +240,7 @@ export const mainLinks = [
             },
 
             {
-                name: 'Company',
+                name: 'Companies',
                 subLinks: [
                     {
                         name: '21st Century Technologies Limited',
