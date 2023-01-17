@@ -57,10 +57,10 @@ export function LightNavbar({ menuProp }) {
         <Link href="/">
           <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
         </Link>
-        <Link href="/">
+        <Link href="/" className='dark:block hidden'>
           <img
             src="/light-logo_dark.svg"
-            className="dark:block hidden w-16 tablet:w-14"
+            className=" w-16 tablet:w-14"
           />
         </Link>
 

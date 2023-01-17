@@ -30,8 +30,8 @@ const Security = () => {
         <div className="w-full min-h-screen flex flex-col z-[1]">
           <LightNavbar />
 
-          <section className="security sm:px-36 px-8 my-16  bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.25) 21.4%, #E5E1DB 100%)]">
-            <div className="flex items-center h-full">
+          <section className=" sm:px-36  my-5">
+            {/* <div className="flex items-center h-full">
               <div className="max-w-3xl">
                 <h1 className="text-7xl font-bold tracking-normal font-lato text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                 
@@ -44,6 +44,29 @@ const Security = () => {
                 Reach Us
               </button>
               </div>
+  </div> */}
+            <div className='flex px-22  my-0 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28'>
+              <div className='w-full'>
+                <h1 className="text-7xl font-bold tracking-normal font-lato text-black dark:text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
+
+                  <span className="text-primary-orange leading-8">Elevate</span> Your Business{"'"}s Cybersecurity
+                </h1>
+                <p className="text-2xl text-black dark:text-white opacity-60 mt-6 largeTablet:text-xl smallTablet:text-lg">
+                  Stay protected in the digital world with our cutting-edge cybersecurity solutions
+                </p>
+                <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
+                  Reach Us
+                </button>
+              </div>
+              <div className='w-[100%]'>
+                <Image
+                  src='/logo/security.svg'
+                  width={2000}
+                  height={2000}
+                  className=" tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
+                />
+              </div>
+
             </div>
           </section>
 
@@ -81,7 +104,7 @@ const Security = () => {
             </div>
           </section>
 
-          
+
           <section className="sm:mb-0 mb-16 py-20 px-10">
             <div className="flex items-center space-x-10 space-y-0">
               <div className="flex-1">
@@ -95,55 +118,55 @@ const Security = () => {
                   <span className="text-primary-orange">21st Century</span>{' '}
                   Public Key Infrastructure
                 </h1>
-                 
+
                 <p className="leading-8 text-xl max-w-md">
-                PKI technology is used as the foundation for access control systems in the proliferation of devices and cloud services, and we provide PKI products and services with a focus on security
+                  PKI technology is used as the foundation for access control systems in the proliferation of devices and cloud services, and we provide PKI products and services with a focus on security
                 </p>
               </div>
             </div>
           </section>
           <section>
-            <div className="  flex items-center overflow-x-hidden justify-around rounded  tablet:m-5">
+            <div className=" flex items-center overflow-x-hidden justify-around rounded  tablet:m-5">
               {/* <div className="cableCard  rounded relative flex justify-center  phone:h-[220px]"> */}
-               
-                <div className="pl-10 w-2/5  flex flex-col h-full justify-center  tablet:w-full">
-                  <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
-                    <span className="text-primary-orange">Endpoint </span>
-                     Threat Protection
-                  </h1>
-                  <p className="leading-8 text-xl  tablet:text-xs">
+
+              <div className="pl-10 w-2/5  flex flex-col h-full justify-center  tablet:w-full">
+                <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
+                  <span className="text-primary-orange">Endpoint </span>
+                  Threat Protection
+                </h1>
+                <p className="leading-8 text-xl  tablet:text-xs">
                   Stay protected against cyber threats with 21st Century{"'"}s integrated threat prevention, firewall, web, email, and device control defenses.
-                  </p>
-                  <button className="bg-primary-orange w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
-                Reach Us
-              </button>    </div>
-                <div>
-                  <img
-                    src="/logo/threat-protection.png"
-                    className='rounded-2xl'
-                    />
-                </div>
+                </p>
+                <button className="bg-primary-orange w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
+                  Reach Us
+                </button>    </div>
+              <div>
+                <img
+                  src="/logo/threat-protection.png"
+                  className='rounded-2xl'
+                />
+              </div>
               {/* </div> */}
             </div>
           </section>
 
-          <section className="mx-20 mt-20 vision-mission-section">
+          <section className="px-20 mt-20 vision-mission-section">
             <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col">
               <div className="w-2/5 tablet:w-full">
-              
+
                 <div className="tablet:my-5 mb-4">
-                <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
+                  <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
                     <span className="text-primary-orange">DDoS </span>
                     Protection
                   </h1>
                   <p className="text-[18px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
-                  Our platform provides comprehensive protection against rising frequency and strength of DDoS attacks, protecting brands, customers and earning potential, and ensuring availability through a global network that prevents downtime and protects apps.
+                    Our platform provides comprehensive protection against rising frequency and strength of DDoS attacks, protecting brands, customers and earning potential, and ensuring availability through a global network that prevents downtime and protects apps.
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                Read more
-              </button>
+                    Read more
+                  </button>
                 </div>
-                
+
               </div>
 
               <div className="flex items-center justify-end w-[50%] tablet:w-full">
@@ -156,7 +179,7 @@ const Security = () => {
               </div>
             </div>
             <div className=" mr-0 mt-20 flex justify-center items-center  tablet:m-10 tablet:flex-col">
-            <div className="flex items-center  w-[50%] tablet:w-full">
+              <div className="flex items-center  w-[50%] tablet:w-full">
                 <Image
                   src="/logo/security-towers.png"
                   className=""
@@ -165,42 +188,42 @@ const Security = () => {
                 />
               </div>
               <div className="w-[40%] tablet:w-full">
-              
+
                 <div className="tablet:my-5 mb-4">
-                <h1 className="text-4xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
+                  <h1 className="text-4xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
                     <span className="text-primary-orange">Managed Security Operations Center Services </span>
-                    
+
                   </h1>
                   <p className="text-[18px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
-                  21CTL Managed SOC Services offers real-time threat intelligence, data processing and incident response for cost-effective enterprise security
+                    21CTL Managed SOC Services offers real-time threat intelligence, data processing and incident response for cost-effective enterprise security
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                Read more
-              </button>
+                    Read more
+                  </button>
                 </div>
-                
+
               </div>
 
-              
+
             </div>
           </section>
           <section className="mx-20 my-20">
             <div className=" mr-0 flex justify-between items-center  tablet:m-10 tablet:flex-col">
               <div className="w-[50%] tablet:w-full">
-              
+
                 <div className="tablet:my-5 mb-4">
-                <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
+                  <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
                     <span className="text-primary-orange">SmartBackup </span>
-                    
+
                   </h1>
                   <p className="text-[18px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
-                  SmartBackup is an automated configuration backup solution that schedules automatic backups, monitors them from a dashboard interface, performs automatic network configuration backup procedures, verifies that they{"'"}ve been completed correctly, and provides easy management of devices for compliance.
+                    SmartBackup is an automated configuration backup solution that schedules automatic backups, monitors them from a dashboard interface, performs automatic network configuration backup procedures, verifies that they{"'"}ve been completed correctly, and provides easy management of devices for compliance.
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                Read more
-              </button>
+                    Read more
+                  </button>
                 </div>
-                
+
               </div>
 
               <div className="flex items-center justify-end w-[50%] tablet:w-full">

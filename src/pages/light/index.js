@@ -77,9 +77,9 @@ function LightDesign() {
       </div>
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
         <LightNavbar />
-        <div className=" flex items-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
-          <div className="w-full h-full flex items-center">
-            <div className="max-w-3xl">
+        <div className=" flex items-center justify-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
+          <div className="w-full h-full flex items-center justify-center">
+            <div className="max-w-3xl mt-10 flex flex-col items-center justify-center">
               <h1 className="text-5xl font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
                 Building Africa&apos;s{' '}
                 <span className="text-primary-orange">Largest Digital</span>{' '}
@@ -102,7 +102,7 @@ function LightDesign() {
               </p>
             </div>
           </div>
-          <div className="w-full h-full z-0 min-w-[50%]">
+          <div className=" h-full z-0 ">
             <div className="h-full flex justify-center mt-10 mx-auto largeTablet:mt-14 smallTablet:mt-8 phone:mt-6 mb-20">
               <div className="flex">
                 <div className="hexagon-container">
