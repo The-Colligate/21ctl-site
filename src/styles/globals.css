@@ -409,6 +409,13 @@ body {
   background-size: cover;
 }
 
+.auto-top-section{
+  background-image: url('https://images.unsplash.com/photo-1580584126903-c17d41830450?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1639&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .support-centers{
   display: grid; 
   grid-auto-columns: 1fr; 

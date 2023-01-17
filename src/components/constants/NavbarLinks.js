@@ -647,6 +647,7 @@ export const platformNavLinks = [
 
       {
         name: 'Automation',
+        link: '/automation',
         subLinks: [],
         extras: [],
       },
