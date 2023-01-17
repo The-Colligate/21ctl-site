@@ -113,7 +113,7 @@ const Digital = () => {
                 className="max-w-3xl largeTablet:max-w-md smallPhone:max-w-xs"
               />
             </div>
-            <div className="max-w-xl pr-8">
+            <div className="max-w-xl pr-8 mx-10 tablet:pr-0">
               <h1 className="text-5xl font-semibold tracking-medium mb-8">
                 <span className="text-primary-orange">Connect</span> to all
                 hyperscale Cloud providers
@@ -140,7 +140,7 @@ const Digital = () => {
             </p>
           </div>
 
-          <div className="data_center_grid mt-5 px-28">
+          <div className="data_center_grid mt-5 px-28 tablet:px-10">
             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
               <div className="p-5 text-black dark:text-black">
                 <h3 className="text-3xl font-medium tracking-wide ">

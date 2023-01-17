@@ -4,16 +4,6 @@ import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { links } from '../../components/constants/NavbarLinks'
 
-import accesslogo from 'public/logo/partners/Access Bank - png 0.png';
-import aws from 'public/logo/partners/Amazon Web Services - png 0.png';
-import british from 'public/logo/partners/British Airways - png 0.png';
-import chevron from 'public/logo/partners/Chevron - png 0.png';
-import fbn from 'public/logo/partners/First Bank of Nigeria - png 0.png';
-import multichoice from 'public/logo/partners/MultiChoice Group - png 0.png';
-import niginterbank from 'public/logo/partners/Nigeria Inter-Bank Settlement System - png 0.png';
-import orange from 'public/logo/partners/Orange - png 0.png';
-import usembassy from 'public/logo/partners/The U.S. Embassy - png 0.png';
-import vmware from 'public/logo/partners/VMware - png 0.png';
 
 const Security = () => {
   return (
@@ -45,7 +35,7 @@ const Security = () => {
               </button>
               </div>
   </div> */}
-            <div className='flex px-22  my-0 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28'>
+            <div className='flex px-22  my-0 items-center justify-between space-x-16 tablet:px-10 tablet:flex-col tablet:space-x-0 pt-28'>
               <div className='w-full'>
                 <h1 className="text-7xl font-bold tracking-normal font-lato text-black dark:text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
 
@@ -106,14 +96,14 @@ const Security = () => {
 
 
           <section className="sm:mb-0 mb-16 py-20 px-10">
-            <div className="flex items-center space-x-10 space-y-0">
+            <div className="flex items-center space-x-10 space-y-0  tablet:flex-col-reverse">
               <div className="flex-1">
                 <img
                   src="/logo/public-key.png"
-                  className="rounded-2xl h-1/3"
+                  className="rounded-2xl"
                 />
               </div>
-              <div className="flex-1">
+              <div className="flex-1 mb-5">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
                   <span className="text-primary-orange">21st Century</span>{' '}
                   Public Key Infrastructure
@@ -126,7 +116,7 @@ const Security = () => {
             </div>
           </section>
           <section>
-            <div className=" flex items-center overflow-x-hidden justify-around rounded  tablet:m-5">
+            <div className=" flex items-center overflow-x-hidden justify-around rounded tablet:flex-col  tablet:m-5">
               {/* <div className="cableCard  rounded relative flex justify-center  phone:h-[220px]"> */}
 
               <div className="pl-10 w-2/5  flex flex-col h-full justify-center  tablet:w-full">
@@ -134,7 +124,7 @@ const Security = () => {
                   <span className="text-primary-orange">Endpoint </span>
                   Threat Protection
                 </h1>
-                <p className="leading-8 text-xl  tablet:text-xs">
+                <p className="leading-8 text-xl  tablet:text-lg">
                   Stay protected against cyber threats with 21st Century{"'"}s integrated threat prevention, firewall, web, email, and device control defenses.
                 </p>
                 <button className="bg-primary-orange w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
@@ -150,7 +140,7 @@ const Security = () => {
             </div>
           </section>
 
-          <section className="px-20 mt-20 vision-mission-section">
+          <section className="px-20 mt-20 vision-mission-section tablet:px-10">
             <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col">
               <div className="w-2/5 tablet:w-full">
 
@@ -178,7 +168,7 @@ const Security = () => {
                 />
               </div>
             </div>
-            <div className=" mr-0 mt-20 flex justify-center items-center  tablet:m-10 tablet:flex-col">
+            <div className=" mr-0 mt-20 flex justify-center items-center  tablet:m-10  tablet:flex-col-reverse">
               <div className="flex items-center  w-[50%] tablet:w-full">
                 <Image
                   src="/logo/security-towers.png"
@@ -207,12 +197,12 @@ const Security = () => {
 
             </div>
           </section>
-          <section className="mx-20 my-20">
+          <section className="mx-20 my-20 tablet:mx-10 tablet:my-10">
             <div className=" mr-0 flex justify-between items-center  tablet:m-10 tablet:flex-col">
               <div className="w-[50%] tablet:w-full">
 
                 <div className="tablet:my-5 mb-4">
-                  <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
+                  <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2 ">
                     <span className="text-primary-orange">SmartBackup </span>
 
                   </h1>

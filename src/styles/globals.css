@@ -496,6 +496,20 @@ body {
   .landing-page{
     height: 100%;
   }
+
+  .data_center_grid{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 15px 26px; 
+    grid-template-areas: 
+      "."
+      "."
+      "."
+      "."
+      "."; 
+  }
 }
 
 /* .figures:nth-child(odd){

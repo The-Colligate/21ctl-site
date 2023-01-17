@@ -129,7 +129,7 @@ const DigitalInfrastructure = () => {
                     </section>
 
                     <hr />
-                    <section className='mx-20 my-10 phone:mb-0 relative'>
+                    <section className='mx-20 my-10 phone:mb-0 relative tablet:mx-5'>
                         <div className='w-2/5 mb-20 phone:w-full'>
                             <p className='text-[#319FD9] font-[14px]'>{"Regional Network Gateway Nigeria".toUpperCase()}</p>
                             <p className='font-bold text-[35px] tablet:text-[25px]'>Connect to every<br /> Hyperscale Cloud Provider</p>
@@ -166,7 +166,7 @@ const DigitalInfrastructure = () => {
                             <h2 className='text-[42px] text-primary-orange my-4 tablet:text-[28px]'>21st century is a Digital professional service Infrastructure company with 25 years experience </h2>
                             <p className='text-[20px]'>Combine our capabilities with data Center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow</p>
                         </div>
-                        <div className="grid grid-cols-3 gap-[26px] mt-5 px-28 tablet:grid-cols-1 phone:px-10">
+                        <div className="grid grid-cols-3 gap-[26px] mt-5 px-28 tablet:grid-cols-1 tablet:px-10">
                             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                                 <div className="p-5 text-black dark:text-black">
                                     <h3 className="text-3xl font-medium tracking-wide ">
