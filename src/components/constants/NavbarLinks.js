@@ -653,6 +653,7 @@ export const platformNavLinks = [
       },
       {
         name: 'Identity',
+        link: '/identity',
         subLinks: [],
         extras: [],
       },

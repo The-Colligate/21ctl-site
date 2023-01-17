@@ -49,6 +49,10 @@ export function LightNavbar({ menuProp }) {
       ? platformNavLinks
       : router.pathname === '/communication'
       ? platformNavLinks
+      : router.pathname === '/automation'
+      ? platformNavLinks
+      : router.pathname === '/identity'
+      ? platformNavLinks
       : mainLinks;
   // console.log('navItems', navItems);
   // console.log('pathname', router.pathname);
