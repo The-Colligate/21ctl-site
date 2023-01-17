@@ -1,9 +1,9 @@
 import React from 'react';
-import DigitalPlatform from './light/digital-platform';
+import Communication from './light/communication';
 const DigitalPlatformPage = () => {
   return (
     <div>
-      <DigitalPlatform />
+      <Communication />
     </div>
   );
 };

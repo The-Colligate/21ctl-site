@@ -43,6 +43,8 @@ module.exports = {
           "url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1672772735/Vector_ioe1tn.svg')",
         academyBg:
           "url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1673100716/Vector_57_cler5b.svg')",
+        commBg:
+          "url('https://images.unsplash.com/photo-1494452672938-ad7f60625bb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')",
       },
     },
   },
