@@ -2,24 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { links } from '../../components/constants/NavbarLinks';
-import SiemensEnergy from '/public/logo/Siemens Energy.svg';
-import SchneiderElectric from '/public/logo/Schneider Electric.svg';
-import PCCWGlobal from '/public/logo/PCCW Global.svg';
-import HeroImage from '/public/logo/hero-image.png';
+import { motion } from 'framer-motion';
+import { leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
 
 import power from '/public/logo/Power.png';
-
-import accesslogo from 'public/logo/partners/Access Bank - png 0.png';
-import aws from 'public/logo/partners/Amazon Web Services - png 0.png';
-import british from 'public/logo/partners/British Airways - png 0.png';
-import chevron from 'public/logo/partners/Chevron - png 0.png';
-import fbn from 'public/logo/partners/First Bank of Nigeria - png 0.png';
-import multichoice from 'public/logo/partners/MultiChoice Group - png 0.png';
-import niginterbank from 'public/logo/partners/Nigeria Inter-Bank Settlement System - png 0.png';
-import orange from 'public/logo/partners/Orange - png 0.png';
-import usembassy from 'public/logo/partners/The U.S. Embassy - png 0.png';
-import vmware from 'public/logo/partners/VMware - png 0.png';
 
 const Power = () => {
   return (
@@ -38,7 +24,11 @@ const Power = () => {
 
           <section className="sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
-              <div className="max-w-lg">
+            <motion.div
+              variants={leftTransitionVarient}
+              animate="visible"
+              initial="hidden"
+               className="max-w-lg">
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                   <span className="text-primary-orange leading-8">
                     Embrace{' '}
@@ -50,14 +40,18 @@ const Power = () => {
                   Optimize your data center&apos;s energy efficiency with our
                   sustainable power solutions.
                 </p>
-              </div>
-              <div className="">
+              </motion.div>
+              <motion.div
+              variants={rightTansitionVarient}
+              animate="visible"
+              initial="hidden"
+               className="">
                 <Image
                   src={power}
                   width={800}
                   className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
                 />
-              </div>
+              </motion.div>
             </div>
           </section>
 

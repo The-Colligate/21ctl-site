@@ -2,13 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { links } from '../../components/constants/NavbarLinks';
-import Satalite from '/public/logo/satalite.png';
-import Orange from '/public/logo/orange.png';
-import MTN from '/public/logo/MTN.png';
-import GLO from '/public/logo/glo.png';
-import nineMobile from '/public/logo/9mobile.png';
-import Airtel from '/public/logo/airtel.png';
+import { motion } from 'framer-motion';
+import { leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
+
 
 const Communication = () => {
   return (

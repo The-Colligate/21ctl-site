@@ -2,7 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { links } from '../../components/constants/NavbarLinks'
+import { motion } from 'framer-motion';
+import { leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
 
 
 const Security = () => {
@@ -36,7 +37,13 @@ const Security = () => {
               </div>
   </div> */}
             <div className='flex px-22  my-0 items-center justify-between space-x-16 tablet:px-10 tablet:flex-col tablet:space-x-0 pt-28'>
-              <div className='w-full'>
+            <motion.div
+              variants={leftTansitionVarient}
+              animate="visible"
+              initial="hidden"
+               
+              
+              className='w-full'>
                 <h1 className="text-7xl font-bold tracking-normal font-lato text-black dark:text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
 
                   <span className="text-primary-orange leading-8">Elevate</span> Your Business{"'"}s Cybersecurity
@@ -47,15 +54,18 @@ const Security = () => {
                 <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
                   Reach Us
                 </button>
-              </div>
-              <div className='w-[100%]'>
+              </motion.div>
+              <motion.div
+              variants={rightTansitionVarient}
+              animate="visible"
+              initial="hidden" className='w-[100%]'>
                 <Image
                   src='/logo/security.svg'
                   width={2000}
                   height={2000}
                   className=" tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
                 />
-              </div>
+              </motion.div>
 
             </div>
           </section>

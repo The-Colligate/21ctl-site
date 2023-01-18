@@ -6,6 +6,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Popover } from 'evergreen-ui';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+import { navBarVarient } from '@components/constants/animations';
 import {
   platformNavLinks,
   infraNavLinks,
@@ -62,7 +64,14 @@ export function DigitalNavbar({ menuProp }) {
           />
         </Link>
 
-        <ul className="flex space-x-8 largeTablet:hidden">
+<motion.div 
+ variants={navBarVarient}
+ initial="hidden"
+ animate="visible"
+>
+        <ul
+       
+        className="flex space-x-8 largeTablet:hidden">
           {navItems[0].navLinks.map((link, index) => (
             <Popover
               key={link.name}
@@ -239,6 +248,7 @@ export function DigitalNavbar({ menuProp }) {
             </li>
           ))}
         </ul>
+        </motion.div>
 
         <div className="flex space-x-4">
           {/* {router.pathname === '/people' ? ( */}

@@ -291,32 +291,32 @@ export const mainLinks = [
           {
             name: 'Lekki',
             link: '/support-centers?lat=6.449280799999999&long=3.4806036#map',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/location.svg',
             text: '5 Jeremiah Ugwu Street, Off Babatunde Anjous, Lekki Phase 1, Lagos.',
           },
           {
             name: 'Victoria Island',
             link: '/support-centers?lat=6.4294752&long=3.4355628#map',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/location.svg',
             text: '1A Samuel Adedoyin Street, Victoria Island, Lagos.',
           },
 
           {
             name: 'Apapa',
             link: '/support-centers?lat=6.436990300000001&long=3.365156#map',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/location.svg',
             text: '48, Burma road. Apapa, Lagos.',
           },
           {
             name: 'Surulere',
             link: '/support-centers?lat=6.5060176&long=3.3530699#map',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/location.svg',
             text: 'No 1 Akerele Street, Off Ogunlana drive. Surulere, Lagos.',
           },
           {
             name: 'Ikeja',
             link: '/support-centers?lat=6.6067642&long=3.3484456#map',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/location.svg',
             text: '3, Alalamu Close Off Alade Close. Allen Bus Stop, Ikeja.',
           },
         ],
@@ -1073,8 +1073,27 @@ export const securityNavLinks = [
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
+            text: 'Operations',
+            text2: 'Applications',
+            text3: 'Storage',
+            text4: 'Networking',
+            text5: 'Compute',
+            text6: 'Identity',
           },
+        ],
+        extras: [],
+      },
+      {
+        name: 'Data security (PaaS)',
+        subLinks: [
+         
+        ],
+        extras: [],
+      },
+      {
+        name: 'Security',
+        subLinks: [
+        
         ],
         extras: [],
       },

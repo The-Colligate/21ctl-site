@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import SiemensEnergy from '/public/logo/Siemens Energy.svg';
-import SchneiderElectric from '/public/logo/Schneider Electric.svg';
+import { motion } from 'framer-motion';
+import { leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
 
 const Academy = () => {
   const courses = [
@@ -33,7 +33,12 @@ const Academy = () => {
 
           <section className="bg-[#E7D7D2] dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
-              <div className="flex-1">
+              <motion.div
+              variants={leftTransitionVarient}
+              animate="visible"
+              initial="hidden"
+              
+              className="flex-1">
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                   <span className="text-primary-orange leading-8">Unlock </span>
                   Your potential with our{' '}
@@ -54,15 +59,19 @@ const Academy = () => {
                     Apply now
                   </button>
                 </a>
-              </div>
-              <div className="flex-1">
+              </motion.div>
+              <motion.div
+              variants={rightTansitionVarient}
+              animate="visible"
+              initial="hidden"
+               className="flex-1">
                 <Image
                   src="/logo/student.png"
                   width={559}
                   height={650}
                   className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
                 />
-              </div>
+              </motion.div>
             </div>
           </section>
 

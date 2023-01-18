@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
+import { motion } from 'framer-motion';
+import { buttonVarient, leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
 
 const AboutUs = () => {
   return (

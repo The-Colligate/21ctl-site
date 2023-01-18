@@ -3,7 +3,7 @@ import { ArrowRight } from '@icons/index';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Popover } from 'evergreen-ui';
-import { buttonVarient, leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
+import { buttonVarient, leftTransitionVarient, rightTansitionVarient, delayVarient1 } from '@components/constants/animations';
 function LightDesign() {
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
@@ -90,7 +90,11 @@ function LightDesign() {
                 <span className="text-primary-orange">Largest Digital</span>{' '}
                 Infrastructure
               </h1>
-              <p className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
+              <motion.p
+              initial={delayVarient1}
+
+              
+              className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
                 21st Century Technologies, an ecosystem Technology Group of
                 companies, building bold, ambitious and audacious digital
                 infrastructure projects. Integrated infrastructure that is
@@ -104,7 +108,7 @@ function LightDesign() {
                 distributed digital infrastructure and support enterprises of
                 all sizes by enabling the integration of all technology access
                 business functions.
-              </p>
+              </motion.p>
             </div>
           </motion.div>
           <motion.div
