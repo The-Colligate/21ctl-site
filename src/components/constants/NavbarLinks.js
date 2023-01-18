@@ -1024,27 +1024,44 @@ export const securityNavLinks = [
       {
         name: 'Cybersecurity',
         subLinks: [
-          {
-            name: 'Surveillance',
-            link: '/about-us',
+            {
+                name: 'Managed cybersecurity services',
+            link: '/',
             icon: '/icons/home/about.svg',
-            text: 'Learn More about 21ctl.',
-          },
-
+            text: 'Threat management',
+            text1: 'Managed detection and response',
+            text2: 'Managed cloud security',
+            text3: 'Protect and Backup Data',
+            text4: 'Identity verification (Physical and Infrastructure)',
+            },
           {
-            name: 'Biometric Lock',
+            // name: 'Surveillance',
+            name: 'Managed network security services',
             link: '/',
-            icon: '/icons/home/handshake.svg',
-
-            text: 'See our partners',
+            icon: '/icons/home/about.svg',
+            text: 'Secure Access Service Edge',
+            text1: 'Managed firewall services',
+            text2: 'Intrusion detection and prevention',
           },
-          {
-            name: 'Threat analysis',
-            link: '/',
-            icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
-          },
+       
+            // name: 'Biometric Lock',
+            // link: '/',
+            {
+              // name: 'Surveillance',
+              name: 'Security Expert Training',
+              link: '/',
+              icon: '/icons/home/about.svg',
+              text: 'Link back to 21CTL Academy',
+            },
+          
+          // {
+          //   name: 'Threat analysis',
+          //   link: '/',
+          //   icon: '/icons/home/handshake.svg',
+
+          //   text: 'See our partners',
+          // },
         ],
         extras: [],
       },

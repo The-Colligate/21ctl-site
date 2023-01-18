@@ -2,16 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head'
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { ArrowRight } from '@icons/index';
-import { Popover } from 'evergreen-ui';
-import { links } from '../../components/constants/NavbarLinks';
-import SiemensEnergy from '/public/logo/Siemens Energy.svg';
-import SchneiderElectric from '/public/logo/Schneider Electric.svg';
-import PCCWGlobal from '/public/logo/PCCW Global.svg';
-import polygon from '/public/logo/Polygon.png';
+import { motion } from 'framer-motion';
+import { buttonVarient, leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
 import HeroImage from '/public/logo/hero-image.png';
 
-import connectLogo from '/public/logo/connect21ctl.png';
 
 import apapa from '/public/data-centers/apapa-center.png';
 import ikeja from '/public/data-centers/ikeja-center.png';
@@ -19,18 +13,6 @@ import lekki from '/public/data-centers/lekki-center.png';
 import sakat from '/public/data-centers/sakatinubu.jpeg';
 import alanamu from '/public/data-centers/alanamu.png';
 
-import fiveG from '/public/logo/5g main.svg';
-
-import accesslogo from 'public/logo/partners/Access Bank - png 0.png';
-import aws from 'public/logo/partners/Amazon Web Services - png 0.png';
-import british from 'public/logo/partners/British Airways - png 0.png';
-import chevron from 'public/logo/partners/Chevron - png 0.png';
-import fbn from 'public/logo/partners/First Bank of Nigeria - png 0.png';
-import multichoice from 'public/logo/partners/MultiChoice Group - png 0.png';
-import niginterbank from 'public/logo/partners/Nigeria Inter-Bank Settlement System - png 0.png';
-import orange from 'public/logo/partners/Orange - png 0.png';
-import usembassy from 'public/logo/partners/The U.S. Embassy - png 0.png';
-import vmware from 'public/logo/partners/VMware - png 0.png';
 
 const Digital = () => {
   return (
@@ -48,7 +30,10 @@ const Digital = () => {
       <LightNavbar />
 
         <section className="flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
-          <div className='max-w-3xl'>
+        <motion.div 
+          variants={leftTransitionVarient}
+          animate="visible"
+          initial="hidden" className='max-w-3xl'>
             <h1 className="text-7xl tracking-normal font-lato font-medium whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
               <span className="text-primary-orange leading-8">Digital </span>
               Infrastructure
@@ -60,18 +45,24 @@ const Digital = () => {
             {/* <button className="bg-primary-orange rounded-xl text-white py-2 px-6 my-6">
               Reach Us
             </button> */}
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+                   variants={rightTansitionVarient}
+                   animate="visible"
+                   initial="hidden" >
             <Image
               src={HeroImage}
               width={650}
               className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
             />
-          </div>
+          </motion.div>
         </section>
 
         <section className='sm:px-36 px-8 my-10'>
-          <div className="flex sm:flex-row flex-col justify-between sm:space-x-40 space-x-0 ">
+          <motion.div
+          
+          
+          className="flex sm:flex-row flex-col justify-between sm:space-x-40 space-x-0 ">
             <div className="text-2xl pb-5">
               Our statistics reveal <br /> more about us.
             </div>
@@ -101,7 +92,7 @@ const Digital = () => {
                 <span className="font-light">Completed Projects</span>
               </div>
             </div>
-          </div>
+          </motion.div>
         </section>
 
        

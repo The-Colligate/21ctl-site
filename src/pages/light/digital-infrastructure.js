@@ -129,7 +129,7 @@ const DigitalInfrastructure = () => {
                     </section>
 
                     <hr />
-                    <section className='mx-20 my-10 phone:mb-0 relative tablet:mx-5'>
+                    <section className='mx-20 my-10 phone:mb-0 relative tablet:mx-10'>
                         <div className='w-2/5 mb-20 phone:w-full'>
                             <p className='text-[#319FD9] font-[14px]'>{"Regional Network Gateway Nigeria".toUpperCase()}</p>
                             <p className='font-bold text-[35px] tablet:text-[25px]'>Connect to every<br /> Hyperscale Cloud Provider</p>

@@ -3,8 +3,7 @@ import { ArrowRight } from '@icons/index';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Popover } from 'evergreen-ui';
-import { links } from '../../components/constants/NavbarLinks';
-
+import { buttonVarient, leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
 function LightDesign() {
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
@@ -69,6 +68,7 @@ function LightDesign() {
     },
   ];
 
+  
   return (
     <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden overflow-y-hidden relative">
       <div className="absolute w-full h-full flex justify-between items-center">
@@ -78,7 +78,12 @@ function LightDesign() {
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
         <LightNavbar />
         <div className=" flex items-center justify-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
-          <div className="w-full h-full flex items-center justify-center">
+          <motion.div 
+          variants={leftTransitionVarient}
+          animate="visible"
+          initial="hidden"
+          
+          className="w-full h-full flex items-center justify-center">
             <div className="max-w-3xl mt-10 flex flex-col items-center justify-center">
               <h1 className="text-5xl font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
                 Building Africa&apos;s{' '}
@@ -101,8 +106,12 @@ function LightDesign() {
                 business functions.
               </p>
             </div>
-          </div>
-          <div className=" h-full z-0 ">
+          </motion.div>
+          <motion.div
+                   variants={rightTansitionVarient}
+                   animate="visible"
+                   initial="hidden"
+          className=" h-full z-0 ">
             <div className="h-full flex justify-center mt-10 mx-auto largeTablet:mt-14 smallTablet:mt-8 phone:mt-6 mb-20">
               <div className="flex">
                 <div className="hexagon-container">
@@ -259,9 +268,14 @@ function LightDesign() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10">
+        <motion.div
+        variants={buttonVarient}
+        animate="visible"
+        initial="hidden"
+        
+        className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10">
           {products.map((product, index) => {
             return (
               <Popover
@@ -316,7 +330,7 @@ function LightDesign() {
               </Popover>
             );
           })}
-        </div>
+        </motion.div>
       </div>
       <SocialIcons />
     </div>
