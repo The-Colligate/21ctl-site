@@ -38,7 +38,7 @@ const Security = () => {
   </div> */}
             <div className='flex px-22  my-0 items-center justify-between space-x-16 tablet:px-10 tablet:flex-col tablet:space-x-0 pt-28'>
             <motion.div
-              variants={leftTansitionVarient}
+              variants={leftTransitionVarient}
               animate="visible"
               initial="hidden"
                

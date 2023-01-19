@@ -91,7 +91,7 @@ export function LightNavbar({ menuProp }) {
                   onMouseOver={(e) => setDisplayPopup([true, index])}
                   onMouseOut={(e) => setDisplayPopup([true, index])}
                 >
-                  <div class="max-w-4xl pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
+                  <div class="max-w-4xl pl-5 py-5 whitespace-wrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
                       {router.pathname === '/people'
                         ? link?.head
@@ -108,16 +108,17 @@ export function LightNavbar({ menuProp }) {
                           key={sublinks.name}
                           className="mt-5 dark:text-white"
                         >
-                          <div className="flex hover:text-primary-orange">
+                          <div className="flex hover:text-primary-orange ">
                             <Image
                               height={20}
-                              width={20}
+                              width={30}
                               src={`${sublinks.icon}`}
+                              className="h-[20px] w-[20px]"
                             />
 
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-4 space-y-2 list-disc text-[15px] break-words  font-semibold dark:text-white"
+                              className="ml-4 space-y-2 list-disc text-[20px] break-words  font-semibold dark:text-white"
                             >
                               {' '}
                               {sublinks.name}
@@ -127,43 +128,43 @@ export function LightNavbar({ menuProp }) {
                           <div className="flex flex-col">
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange max-w-sm"
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange max-w-sm"
                             >
                               <span className="">{sublinks?.text} </span>
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
                             >
                               {sublinks?.text1}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
                             >
                               {sublinks?.text2}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
                             >
                               {sublinks?.text3}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
                             >
                               {sublinks?.text4}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
                             >
                               {sublinks?.text5}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[10px] dark:text-white hover:text-primary-orange"
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
                             >
                               {sublinks?.text6}{' '}
                             </Link>
