@@ -119,6 +119,7 @@ function LightDesign() {
             <div className="h-full flex justify-center mt-10 mx-auto largeTablet:mt-14 smallTablet:mt-8 phone:mt-6 mb-20">
               <div className="flex">
                 <div className="hexagon-container">
+                  
                   <div className="hex-wrapper relative p-[1px]">
                     <div className="absolute hex-shape w-full h-full bg-white dark:bg-gray-900 flip-back">
                       <div className=" w-full h-full flex items-center justify-center dark:bg-black bg-white !m-0   ">

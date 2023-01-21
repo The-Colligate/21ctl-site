@@ -477,21 +477,20 @@ export const infraNavLinks = [
             link: '/',
             icon: '/icons/home/career.svg',
 
-            text: 'Discover the best role for you.',
           },
           {
             name: 'Towers',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
+            
           },
           {
             name: '5G Infrastructure Readiness services',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
+            
           },
         ],
         extras: [],
@@ -600,14 +599,14 @@ export const platformNavLinks = [
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
+           
           },
           {
             name: 'Automation',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
+           
           },
           {
             name: 'Identity',
@@ -691,28 +690,27 @@ export const powerNavLinks = [
             link: 'https://www.21ctl.com/cloud/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
+            
           },
           {
             name: 'Payment Platform',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
           },
           {
             name: 'Automation',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
+          
           },
           {
             name: 'Identity',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
+           
           },
         ],
         extras: [],
@@ -738,49 +736,43 @@ export const peopleNavLinks = [
             name: 'Trainee',
             link: '/about-us',
             icon: '/icons/home/about.svg',
-            text: 'Learn More about 21ctl.',
+            
           },
           {
             name: 'Curiculum',
             link: '/',
             icon: '/icons/home/career.svg',
 
-            text: 'Discover the best role for you.',
           },
           {
             name: 'Instructor',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
           },
           {
             name: 'Infrastructure',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
           },
           {
             name: 'Didactics',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
           },
           {
             name: 'Industry',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
           },
           {
             name: 'Quality Assurance',
             link: '/',
             icon: '/icons/home/handshake.svg',
 
-            text: 'See our partners',
           },
         ],
         extras: [
@@ -788,7 +780,6 @@ export const peopleNavLinks = [
             name: 'Oracle University',
             link: 'https://education.oracle.com/',
             icon: '/icons/home/career.svg',
-            // text: 'Discover the best role for you.',
           },
           {
             name: 'Stanford University',
@@ -800,7 +791,6 @@ export const peopleNavLinks = [
             name: 'Schneider University',
             link: 'https://university.se.com/',
             icon: '/icons/home/career.svg',
-            // text: 'Discover the best role for you.',
           },
         ],
       },
@@ -923,7 +913,7 @@ export const peopleNavLinks = [
           {
             name: 'Amazon',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/home/handshake.svg',
             text: 'Advanced Networking',
             text1: 'Data Analytics',
             text2: 'Databases',
@@ -933,14 +923,14 @@ export const peopleNavLinks = [
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/home/handshake.svg',
             text: 'Data Center Physical Infrastructure',
             text1: 'See more',
           },
           {
             name: 'VMware',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/home/handshake.svg',
             text: 'Multi-Cloud',
             text1: 'Virtual Cloud Network',
             text2: 'Digital Workspace',
@@ -950,14 +940,14 @@ export const peopleNavLinks = [
           {
             name: 'Microsoft Azure',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/home/handshake.svg',
             text: 'Cloud Computing',
             text1: 'Virtual Machines',
           },
           {
             name: 'Oracle University',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/home/handshake.svg',
             text: 'Oracle Databases',
             text1: 'Oracle Cloud Infrastructure (OCI)',
             text2: 'Cloud Database Sevices',
@@ -980,7 +970,7 @@ export const peopleNavLinks = [
           {
             name: 'Checkpoint University',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/home/handshake.svg',
             text: 'Malware analysis',
             text1: 'Cloud Network Security',
             text3: 'Security Administration',
@@ -988,7 +978,7 @@ export const peopleNavLinks = [
           {
             name: 'Carnegie Mellon University',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/home/handshake.svg',
             // text: 'Get Certification',
             // text1: 'See more',
           },
@@ -1027,7 +1017,7 @@ export const securityNavLinks = [
             {
                 name: 'Managed cybersecurity services',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/security.svg',
             text: 'Threat management',
             text1: 'Managed detection and response',
             text2: 'Managed cloud security',
@@ -1038,7 +1028,7 @@ export const securityNavLinks = [
             // name: 'Surveillance',
             name: 'Managed network security services',
             link: '/',
-            icon: '/icons/home/about.svg',
+            icon: '/icons/security.svg',
             text: 'Secure Access Service Edge',
             text1: 'Managed firewall services',
             text2: 'Intrusion detection and prevention',
@@ -1051,7 +1041,7 @@ export const securityNavLinks = [
               // name: 'Surveillance',
               name: 'Security Expert Training',
               link: '/',
-              icon: '/icons/home/about.svg',
+              icon: '/icons/security.svg',
               text: 'Security Administration',
               text1: 'DevSecOps',
               text2: 'Threat management',
@@ -1074,7 +1064,7 @@ export const securityNavLinks = [
           {
             name: 'Cloud Architecture',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: '/icons/security.svg',
 
             text: 'Operations',
             text2: 'Applications',
@@ -1094,7 +1084,7 @@ export const securityNavLinks = [
         extras: [],
       },
       {
-        name: 'Security',
+        name: 'Cloud Security',
         subLinks: [
         
         ],

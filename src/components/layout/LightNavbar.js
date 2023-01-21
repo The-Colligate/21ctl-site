@@ -60,15 +60,15 @@ export function LightNavbar({ menuProp }) {
   return (
     <>
       <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
-        <Link href="/">
+       {theme !== "dark" ? <Link href="/">
           <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
-        </Link>
+        </Link>:
         <Link href="/" className='dark:block hidden'>
           <img
             src="/light-logo_dark.svg"
             className=" w-16 tablet:w-14"
           />
-        </Link>
+        </Link>}
 
         <ul className="flex space-x-8 largeTablet:hidden">
           {navItems[0].navLinks.map((link, index) => (
@@ -87,11 +87,11 @@ export function LightNavbar({ menuProp }) {
               }
               content={
                 <div
-                  className="max-w-max flex"
+                  className="w-[100vw] pl-10 flex"
                   onMouseOver={(e) => setDisplayPopup([true, index])}
                   onMouseOut={(e) => setDisplayPopup([true, index])}
                 >
-                  <div class="max-w-4xl pl-5 py-5 whitespace-wrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
+                  <div class="w-full pl-5 py-5 whitespace-wrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
                       {router.pathname === '/people'
                         ? link?.head
@@ -100,7 +100,7 @@ export function LightNavbar({ menuProp }) {
                     <hr />
                     <div
                       className={`grid ${
-                        link.subLinks.length > 7 ? 'grid-cols-4' : 'grid-cols-2'
+                        link.subLinks.length > 7 ? 'grid-cols-4' : 'grid-cols-3'
                       }  items-start flex-nowrap mr-5 w-full`}
                     >
                       {link.subLinks.map((sublinks) => (
@@ -173,8 +173,10 @@ export function LightNavbar({ menuProp }) {
                       ))}
                     </div>
                   </div>
-                  {link.extras.length !== 0 ? (
-                    <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8">
+                   
+                    <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8 "
+                    style={{display: link.extras.length !== 0 ? "block": "none" }}
+                    >
                       <h2 className="text-sm font-bold text-darkShade">
                         Recent
                       </h2>
@@ -207,9 +209,7 @@ export function LightNavbar({ menuProp }) {
                         ))}
                       </div>
                     </div>
-                  ) : (
-                    <></>
-                  )}
+                  
                 </div>
               }
             >
