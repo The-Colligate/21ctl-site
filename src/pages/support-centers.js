@@ -142,26 +142,26 @@ const SupportCenters = () => {
                 </a>
               </p>
             </div>
-            <div className="shadow-md hover:shadow-xl">
+            {/* <div className="shadow-md hover:shadow-xl">
               <h2 className="font-bold text-xl">Maryland Office</h2>
               <p className="text-lg mt-4">
-                {/* 3, Alalamu Close Off Alade Close. <br />
-                Allen Bus Stop, */}
+                3, Alalamu Close Off Alade Close. <br />
+                Allen Bus Stop,
                 <br />
-                {/* Ikeja. */}
+                Ikeja.
               </p>
               <p>
-                {/* <a href="tel:+01-2702901">01-2702901</a> */}
+                <a href="tel:+01-2702901">01-2702901</a>
               </p>
               <p>
                 <a
                   href="mailto:ikejanetwork@21ctl.com"
                   className="hover:text-primary-orange"
                 >
-                  {/* ikejanetwork@21ctl.com */}
+                  ikejanetwork@21ctl.com
                 </a>
               </p>
-            </div>
+            </div> */}
           </div>
           <div id='map'>
           {/* <MapComponent /> */}

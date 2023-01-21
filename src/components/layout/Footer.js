@@ -4,8 +4,8 @@ import Link from 'next/link';
 export function Footer() {
   return (
     <footer className="bg-[#f0c5b9] dark:bg-[#252525] px-20 py-10 pb-4 h-full">
-      <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:space-y-0 space-y-10">
-        <div className="space-y-8">
+      <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:items-center sm:space-y-0 space-y-10">
+        <div className="space-y-8 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center">
           <div>
             <img
               src="/light-logo.svg"
@@ -86,8 +86,8 @@ export function Footer() {
         </div>
 
         {/* address */}
-        <div>
-          <p className="font-bold text-lg text-black dark:text-white">
+        <div className='tablet:flex tablet:flex-col tablet:justify-center tablet:items-center'>
+          <p className="font-bold text-lg text-black dark:text-white ">
             Our Address
           </p>
 
@@ -103,7 +103,7 @@ export function Footer() {
 
         {/* contact */}
         <div>
-          <p className="font-bold text-lg text-black dark:text-white">
+          <p className="font-bold text-lg text-black dark:text-white tablet:flex tablet:justify-center tablet:items-center">
             Contact
           </p>
 

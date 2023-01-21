@@ -56,8 +56,8 @@ const Power = () => {
           </section>
 
         <section className='energy'>
-          <section className="sm:mb-0 mb-16 py-20">
-            <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
+          <section className="sm:mb-0 mb-16 py-20 mx-20 tablet:mx-0">
+            <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
               <div className="flex-1">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
                   <span className="text-primary-orange">
@@ -80,12 +80,12 @@ const Power = () => {
           </section>
 
 
-          <section className="sm:mb-0 mb-16 py-20 px-10">
-            <div className="flex items-center space-x-10 space-y-0">
-              <div className="flex-1">
+          <section className="sm:mb-0 mb-16 py-20   mx-20 tablet:mx-0">
+            <div className="flex items-center space-x-10 space-y-0 tablet:flex-col-reverse">
+              <div className="flex-1 tablet:mt-10 tablet:px-10">
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1673291336/Group_1_g9wnmq.webp"
-                  className="w-full"
+                  className="w-full "
                 />
               </div>
               <div className="flex-1">
@@ -102,8 +102,8 @@ const Power = () => {
             </div>
           </section>
           </section>
-          <section className="sm:mb-0 mb-16 py-20">
-            <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
+          <section className="sm:mb-0 mb-16 py-20  mx-20 tablet:mx-10">
+            <div className="flex items-center space-x-10 space-y-0 my-10  mb-0 tablet:flex-col largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
               <div className="flex-1">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
                   <span className="text-primary-orange">Brighten</span> the

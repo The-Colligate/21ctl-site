@@ -29,7 +29,7 @@ const Digital = () => {
       <div className="w-full min-h-screen flex flex-col z-[1]">
       <LightNavbar />
 
-        <section className="flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
+        <section className="flex sm:px-36 px-8 my-6 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
         <motion.div 
           variants={leftTransitionVarient}
           animate="visible"
@@ -58,46 +58,43 @@ const Digital = () => {
           </motion.div>
         </section>
 
-        <section className='sm:px-36 px-8 my-10'>
-          <motion.div
-          
-          
-          className="flex sm:flex-row flex-col justify-between sm:space-x-40 space-x-0 ">
-            <div className="text-2xl pb-5">
-              Our statistics reveal <br /> more about us.
-            </div>
-            <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
-              <div className="text-center">
-                <p className="text-primary-orange text-4xl font-semibold">
-                  200+
-                </p>
-                <span className="font-light">Business Supported</span>
-              </div>
-              <div className="text-center">
-                <p className="text-primary-orange text-4xl font-semibold">
-                  25+
-                </p>
-                <span className="font-light">Years Experience</span>
-              </div>
-              <div className="text-center">
-                <p className="text-primary-orange text-4xl font-semibold">
-                  14M+
-                </p>
-                <span className="font-light">Satisfied Customers</span>
-              </div>
-              <div className="text-center">
-                <p className="text-primary-orange text-4xl font-semibold">
-                  100+
-                </p>
-                <span className="font-light">Completed Projects</span>
-              </div>
-            </div>
-          </motion.div>
-        </section>
+        <section className='sm:px-36 px-8 my-5'>
+                        <div className="flex flex-col items-center">
+                            <div className="text-lg font-semibold pb-5">
+                                Our statistics reveal more about us.
+                            </div>
+                            <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
+                                <div className="text-center">
+                                    <p className="text-primary-orange text-4xl font-semibold">
+                                        200+
+                                    </p>
+                                    <span className="font-light">Business Supported</span>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-primary-orange text-4xl font-semibold">
+                                        25+
+                                    </p>
+                                    <span className="font-light">Years Experience</span>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-primary-orange text-4xl font-semibold">
+                                        14M+
+                                    </p>
+                                    <span className="font-light">Satisfied Customers</span>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-primary-orange text-4xl font-semibold">
+                                        100+
+                                    </p>
+                                    <span className="font-light">Completed Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
        
         <section>
-          <div className="flex items-center space-x-10 space-y-0 my-52 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
+          <div className="flex items-center space-x-10 space-y-0 my-32 tablet:mx-5  largeTablet:flex-col-reverse largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
             <div className="">
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1672774272/Group_339_ezalse.svg"
@@ -105,7 +102,7 @@ const Digital = () => {
               />
             </div>
             <div className="max-w-xl pr-8 mx-10 tablet:pr-0">
-              <h1 className="text-5xl font-semibold tracking-medium mb-8">
+              <h1 className="text-5xl font-semibold tracking-medium mb-8 tablet:text-4xl">
                 <span className="text-primary-orange">Connect</span> to all
                 hyperscale Cloud providers
               </h1>
@@ -119,8 +116,8 @@ const Digital = () => {
         </section>
 
         <section>
-          <div className="text-center">
-            <h1 className=" text-5xl font-bold tracking-wide">
+          <div className="text-center mx-10">
+            <h1 className=" text-5xl font-bold tracking-wide tablet:text-4xl">
               <span className="text-primary-orange">Data </span> Centers
             </h1>
             <p className="tracking-wider  text-lg py-4 max-w-3xl m-auto">
@@ -138,7 +135,7 @@ const Digital = () => {
                 <span className="text-primary-orange">Ikeja </span> Data Center
                    
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-lg leading">
+                <p className="py-2 pt-4 tracking-wide text-lg leading text-justify">
                 Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                 </p>
               </div>
@@ -150,7 +147,7 @@ const Digital = () => {
                 <span className="text-primary-orange">Ikoyi </span> Data Center
                    
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-lg leading">
+                <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify">
                 Our six-story data center in Africa is innovative and equipped with a 10MW Turbine system, providing ample power and space for clients to grow.
                 </p>
               </div>
@@ -162,7 +159,7 @@ const Digital = () => {
                 <span className="text-primary-orange">Apapa </span>  Data Center
                   
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-xl leading">
+                <p className="py-2 pt-4 tracking-wide text-xl leading  text-justify">
                 Our Apapa data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                 </p>
               </div>
@@ -174,7 +171,7 @@ const Digital = () => {
                 <span className="text-primary-orange">Saka-Tinubu </span>  Data Center
                   
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-xl leading">
+                <p className="py-2 pt-4 tracking-wide text-xl leading  text-justify">
                 Our Saka-Tinubu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                 </p>
               </div>
@@ -186,7 +183,7 @@ const Digital = () => {
                 <span className="text-primary-orange">Alanamu </span>  Data Center
                   
                 </h3>
-                <p className="py-2 pt-4 tracking-wide text-xl leading">
+                <p className="py-2 pt-4 tracking-wide text-xl leading  text-justify">
                 Our Alanamu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                 </p>
               </div>
@@ -198,8 +195,8 @@ const Digital = () => {
 
         <section className="five-gr py-32 sm:mt-0 mt-32">
           <div className="max-w-6xl flex sm:flex-row flex-col w-full rounded-3xl items-center m-auto sm:h-full h-full bg-white ">
-            <div className="px-5 sm:py-0 py-10 text-black dark:text-black">
-              <h4 className="text-5xl font-semibold text-center">
+            <div className="px-5 sm:py-0 py-10 mx-10 text-black dark:text-black">
+              <h4 className="text-5xl font-semibold text-center tablet:text-4xl">
                 {' '}
                 <span className="text-primary-orange">5G</span> Readiness
               </h4>

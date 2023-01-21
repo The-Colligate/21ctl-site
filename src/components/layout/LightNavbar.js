@@ -61,11 +61,11 @@ export function LightNavbar({ menuProp }) {
     <>
       <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
        {theme !== "dark" ? <Link href="/">
-          <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" />
+          <img src={router.pathname ==='/' ? "/light-logo.svg" : "/light-logo-limited.svg"} className="dark:hidden w-16 tablet:w-14" />
         </Link>:
         <Link href="/" className='dark:block hidden'>
           <img
-            src="/light-logo_dark.svg"
+            src={router.pathname ==='/' ? "/light-logo_dark.svg" : "/light-logo_dark_limited.svg" }
             className=" w-16 tablet:w-14"
           />
         </Link>}

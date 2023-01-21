@@ -37,13 +37,13 @@ const Security = () => {
               </div>
   </div> */}
             <div className='flex px-22  my-0 items-center justify-between space-x-16 tablet:px-10 tablet:flex-col tablet:space-x-0 pt-28'>
-            <motion.div
-              variants={leftTransitionVarient}
-              animate="visible"
-              initial="hidden"
-               
-              
-              className='w-full'>
+              <motion.div
+                variants={leftTransitionVarient}
+                animate="visible"
+                initial="hidden"
+
+
+                className='w-full'>
                 <h1 className="text-7xl font-bold tracking-normal font-lato text-black dark:text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
 
                   <span className="text-primary-orange leading-8">Elevate</span> Your Business{"'"}s Cybersecurity
@@ -56,9 +56,9 @@ const Security = () => {
                 </button>
               </motion.div>
               <motion.div
-              variants={rightTansitionVarient}
-              animate="visible"
-              initial="hidden" className='w-[100%]'>
+                variants={rightTansitionVarient}
+                animate="visible"
+                initial="hidden" className='w-[100%]'>
                 <Image
                   src='/logo/security.svg'
                   width={2000}
@@ -70,10 +70,10 @@ const Security = () => {
             </div>
           </section>
 
-          <section className="sm:px-36 px-8 my-10">
-            <div className="flex sm:flex-row flex-col justify-between sm:space-x-40 space-x-0 ">
-              <div className="text-2xl pb-5">
-                Our statistics reveal <br /> more about us.
+          <section className='sm:px-36 px-8 my-10'>
+            <div className="flex flex-col items-center">
+              <div className="text-lg font-semibold pb-5">
+                Our statistics reveal more about us.
               </div>
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
                 <div className="text-center">
@@ -105,12 +105,12 @@ const Security = () => {
           </section>
 
 
-          <section className="sm:mb-0 mb-16 py-20 px-10">
+          <section className="sm:mb-0 mb-16 py-20 mx-20 tablet:mx-0">
             <div className="flex items-center space-x-10 space-y-0  tablet:flex-col-reverse">
-              <div className="flex-1">
+              <div className="flex-1  tablet:mt-10 mx-20 tablet:mx-10">
                 <img
                   src="/logo/public-key.png"
-                  className="rounded-2xl"
+                  className="rounded-2xl h-96 w-[100%] tablet:h-80"
                 />
               </div>
               <div className="flex-1 mb-5">
@@ -119,7 +119,7 @@ const Security = () => {
                   Public Key Infrastructure
                 </h1>
 
-                <p className="leading-8 text-xl max-w-md">
+                <p className=" text-xl ">
                   PKI technology is used as the foundation for access control systems in the proliferation of devices and cloud services, and we provide PKI products and services with a focus on security
                 </p>
               </div>
@@ -129,7 +129,7 @@ const Security = () => {
             <div className=" flex items-center overflow-x-hidden justify-around rounded tablet:flex-col  tablet:m-5">
               {/* <div className="cableCard  rounded relative flex justify-center  phone:h-[220px]"> */}
 
-              <div className="pl-10 w-2/5  flex flex-col h-full justify-center  tablet:w-full">
+              <div className="pl-10 w-2/5  flex flex-col h-full justify-center tablet:pl-5 tablet:w-full">
                 <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
                   <span className="text-primary-orange">Endpoint </span>
                   Threat Protection
@@ -150,7 +150,7 @@ const Security = () => {
             </div>
           </section>
 
-          <section className="px-20 mt-20 vision-mission-section tablet:px-10">
+          <section className="px-20 mt-20 vision-mission-section tablet:px-0">
             <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col">
               <div className="w-2/5 tablet:w-full">
 
@@ -207,7 +207,7 @@ const Security = () => {
 
             </div>
           </section>
-          <section className="mx-20 my-20 tablet:mx-10 tablet:my-10">
+          <section className="mx-20 my-20 tablet:mx-0 tablet:my-10">
             <div className=" mr-0 flex justify-between items-center  tablet:m-10 tablet:flex-col">
               <div className="w-[50%] tablet:w-full">
 
