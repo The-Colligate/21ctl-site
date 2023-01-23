@@ -286,7 +286,7 @@ export const mainLinks = [
       },
       {
         name: 'Locations',
-        link: '/support-centers',
+        link: '#',
         subLinks: [
           {
             name: 'Lekki',
@@ -739,7 +739,7 @@ export const peopleNavLinks = [
             
           },
           {
-            name: 'Curiculum',
+            name: 'Curriculum',
             link: '/',
             icon: '/icons/home/career.svg',
 

@@ -278,7 +278,7 @@ export function LightNavbar({ menuProp }) {
         <div className="flex space-x-4">
           {router.pathname === '/people' ? (
             <a
-              href="https://academy-app-21ctl-blessedmadukoma.koyeb.app/"
+              href="https://21ctl-biodata.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >

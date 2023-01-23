@@ -1,12 +1,27 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { motion } from 'framer-motion';
-import { leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
+import { motion,useAnimation } from 'framer-motion';
+import { leftTransitionVarient, rightTansitionVarient, scrollVariant } from '@components/constants/animations';
 import CountUp from 'react-countup';
+import { useInView } from "react-intersection-observer";
 
 const Security = () => {
+  const control = useAnimation()
+const [ref, inView] = useInView()
+
+console.log(inView)
+useEffect(() => {
+  console.log(inView)
+  if (inView) {
+    console.log("visible")
+    control.start("visible");
+  } else {
+    control.start("hidden");
+    console.log("hidden")
+  }
+}, [control, inView]);
   return (
     <>
       <Head>
@@ -76,7 +91,7 @@ const Security = () => {
                 Our statistics reveal more about us.
               </div>
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
-              <div className="text-center">
+                <div className="text-center">
                   <p className="text-primary-orange text-4xl font-semibold">
                     <CountUp
                       start={0}
@@ -136,21 +151,40 @@ const Security = () => {
           <section className="sm:mb-0 mb-16 py-20 mx-20 tablet:mx-0">
             <div className="flex items-center space-x-10 space-y-0  tablet:flex-col-reverse">
               <div className="flex-1  tablet:mt-10 mx-20 tablet:mx-10">
-                <img
+                <motion.img variants={leftTransitionVarient}
+                ref={ref}
+                // animate="visible"
+                animate={control}
+                initial="hidden"
+
                   src="/logo/public-key.png"
                   className="rounded-2xl h-96 w-[100%] tablet:h-80"
                 />
               </div>
-              <div className="flex-1 mb-5">
-                <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
+              <motion.div
+              ref={ref}
+                variants={rightTansitionVarient}
+                // animate="visible"
+                initial="hidden"
+                animate={control}
+                className="flex-1 mb-5">
+                <h1
+
+
+                  className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
                   <span className="text-primary-orange">21st Century</span>{' '}
                   Public Key Infrastructure
                 </h1>
 
-                <p className=" text-xl ">
+                <motion.p
+                  variants={scrollVariant}
+                  animate="visible"
+                  initial="hidden"
+
+                  className=" text-xl ">
                   PKI technology is used as the foundation for access control systems in the proliferation of devices and cloud services, and we provide PKI products and services with a focus on security
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
             </div>
           </section>
           <section>

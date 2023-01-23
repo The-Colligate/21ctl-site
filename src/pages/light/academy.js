@@ -53,7 +53,7 @@ const Academy = () => {
                   unlock your potential and advance your career.
                 </p>
                 <a
-                  href="https://academy-app-21ctl-blessedmadukoma.koyeb.app/"
+                  href="https://21ctl-biodata.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

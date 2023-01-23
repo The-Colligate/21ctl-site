@@ -40,7 +40,14 @@ export const rightTansitionVarient = {
     hidden:{
       x: "100vw",
       
-    }
+    },
+    whileInView:{ opacity: 1, transition:{
+      delay:0.7,
+      type: "tween",
+      duration:1,
+     
+    } },
+    viewport:{ once: true }
   }
 
   export  const leftTransitionVarient = {
@@ -58,7 +65,14 @@ export const rightTansitionVarient = {
     hidden:{
       x: "-100vw",
       
-    }
+    },
+    // whileInView:{ opacity: 1, transition:{
+    //   delay:0.7,
+    //   type: "tween",
+    //   duration:1,
+     
+    // } },
+    // viewport:{ once: true }
   }
 
   export  const buttonVarient = {
