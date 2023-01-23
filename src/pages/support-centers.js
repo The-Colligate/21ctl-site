@@ -122,14 +122,14 @@ const SupportCenters = () => {
               </p>
             </div>
             
-            <div className="shadow-md hover:shadow-xl">
+            {/* <div className="shadow-md hover:shadow-xl">
               <h2 className="font-bold text-xl mb-4">Saka Tinubu</h2>
-              {/* <p className="text-lg mt-4">
+              <p className="text-lg mt-4">
                 3, Alalamu Close Off Alade Close. <br />
                 Allen Bus Stop,
                 <br />
                 Ikeja.
-              </p> */}
+              </p>
               <p>
                 <a href="tel:+234 1-270 0888">+234 1-270 0888</a>
               </p>
@@ -141,7 +141,7 @@ const SupportCenters = () => {
                   saka.noc1@21ctl.com
                 </a>
               </p>
-            </div>
+            </div> */}
             {/* <div className="shadow-md hover:shadow-xl">
               <h2 className="font-bold text-xl">Maryland Office</h2>
               <p className="text-lg mt-4">

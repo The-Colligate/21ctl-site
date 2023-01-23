@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { motion } from 'framer-motion';
 import { leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
+import CountUp from 'react-countup';
 
 const Academy = () => {
   const courses = [
@@ -15,6 +16,7 @@ const Academy = () => {
     'Business Data Analysis',
     'Data Science',
     'Digital Marketing',
+    'Database',
   ];
 
   return (
@@ -83,19 +85,40 @@ const Academy = () => {
                             <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-around items-center">
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
-                    50+
+                    {/* 50+ */}
+                    <CountUp
+                      start={0}
+                      end={50}
+                      duration={2.75}
+                      prefix=""
+                      suffix="+"
+                    />
                   </p>
                   <span className="">Total Courses</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
-                    100+
+                    {/* 100+ */}
+                    <CountUp
+                      start={0}
+                      end={100}
+                      duration={2.75}
+                      prefix=""
+                      suffix="+"
+                    />
                   </p>
                   <span className="">Expert Mentors</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
-                    5k+
+                    {/* 5k+ */}
+                    <CountUp
+                      start={0}
+                      end={5}
+                      duration={2.75}
+                      prefix=""
+                      suffix="k+"
+                    />
                   </p>
                   <span className="">Students</span>
                 </div>

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { motion } from 'framer-motion';
 import { buttonVarient, leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
-
+import CountUp from 'react-countup';
 const AboutUs = () => {
   return (
     <>
@@ -35,33 +35,61 @@ const AboutUs = () => {
             </div>
           </section>
 
-          <section className="sm:px-36 px-8 my-10">
-            <div className="flex sm:flex-row flex-col justify-between sm:space-x-40 space-x-0 ">
-              <div className="text-2xl pb-5">
-                Our statistics reveal <br /> more about us.
+          <section className='sm:px-36 px-8 my-10'>
+            <div className="flex flex-col items-center">
+              <div className="text-lg font-semibold pb-5">
+                Our statistics reveal more about us.
               </div>
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
-                <div className="text-center">
+              <div className="text-center">
                   <p className="text-primary-orange text-4xl font-semibold">
-                    200+
+                    <CountUp
+                      start={0}
+                      end={200}
+                      duration={2.75}
+                      prefix=""
+                      suffix="+"
+                    />
+                    {/* 200+ */}
                   </p>
                   <span className="font-light">Business Supported</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-4xl font-semibold">
-                    25+
+                    {/* 25+ */}
+                    <CountUp
+                      start={0}
+                      end={25}
+                      duration={2.75}
+                      prefix=""
+                      suffix="+"
+                    />
                   </p>
                   <span className="font-light">Years Experience</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-4xl font-semibold">
-                    14M+
+                    {/* 14M+ */}
+                    <CountUp
+                      start={0}
+                      end={14}
+                      duration={2.75}
+                      prefix=""
+                      suffix="M+"
+                    />
                   </p>
                   <span className="font-light">Satisfied Customers</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-4xl font-semibold">
-                    100+
+                    {/* 100+ */}
+                    <CountUp
+                      start={0}
+                      end={100}
+                      duration={2.75}
+                      prefix=""
+                      suffix="+"
+                    />
                   </p>
                   <span className="font-light">Completed Projects</span>
                 </div>
