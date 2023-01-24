@@ -151,11 +151,10 @@ function LightDesign() {
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-white  !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
                           <p className="font-semibold text-center text-[9px] phone:text-[7px] ">
-                            Technology Solutions
+                            Cloud
                           </p>
                           <p className="mt-3 text-[9px] text-center phone:text-[7px]">
-                            These include Transmission, IT Infrastructure,
-                            Access Control, Cloud services, etcetera.
+                           
                           </p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
@@ -166,7 +165,7 @@ function LightDesign() {
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-front">
                       <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
                         <img
-                          src="/icons/home/setting.svg"
+                          src='/icons/home/cloud-computing.svg'
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -206,8 +205,10 @@ function LightDesign() {
                             Telecoms Solutions
                           </p>
                           <p className="mt-3 text-[9px] text-center phone:text-[7px]">
-                            We provide Voice and Data Services such as (E1,
+                            We provide Transmission, IT Infrastructure,
+                            Access Control, Voice and Data Services such as (E1,
                             VOIP, Dark Fiber, Point 2 Point, etc.)
+                        
                           </p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
@@ -229,7 +230,7 @@ function LightDesign() {
                       <div className="hex-shape w-full h-full flex items-center justify-center dark:bg-black bg-white !m-0">
                         <div className="rounded-lg p-5 bg-white dark:bg-black">
                           <p className="font-semibold text-[9px] text-center phone:text-[7px]">
-                            Media Solutions
+                            Communication
                           </p>
                           <p className="mt-3 text-[9px] text-center phone:text-[7px]">
                             Specifically designed for Live and On-Demand Online

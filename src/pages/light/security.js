@@ -153,8 +153,8 @@ useEffect(() => {
               <div className="flex-1  tablet:mt-10 mx-20 tablet:mx-10">
                 <motion.img variants={leftTransitionVarient}
                 ref={ref}
-                // animate="visible"
-                animate={control}
+                animate="visible"
+                // animate={control}
                 initial="hidden"
 
                   src="/logo/public-key.png"
@@ -164,9 +164,9 @@ useEffect(() => {
               <motion.div
               ref={ref}
                 variants={rightTansitionVarient}
-                // animate="visible"
+                animate="visible"
                 initial="hidden"
-                animate={control}
+                // animate={control}
                 className="flex-1 mb-5">
                 <h1
 
