@@ -154,7 +154,7 @@ function LightDesign() {
                             Cloud
                           </p>
                           <p className="mt-3 text-[9px] text-center phone:text-[7px]">
-                           
+                          We have connectivity, data centers & edge computing centers, Towers, Network & 5G enabled platforms
                           </p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
                             Go to Site <ArrowRight />
