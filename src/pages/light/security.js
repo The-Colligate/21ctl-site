@@ -181,7 +181,7 @@ useEffect(() => {
                   animate="visible"
                   initial="hidden"
 
-                  className=" text-xl ">
+                  className="text-xl ">
                   PKI technology is used as the foundation for access control systems in the proliferation of devices and cloud services, and we provide PKI products and services with a focus on security
                 </motion.p>
               </motion.div>
@@ -260,7 +260,7 @@ useEffect(() => {
 
               </div>
 
-              <div className="flex items-center  w-[50%] tablet:w-full">
+              <div className="flex items-center justify-end w-[50%] tablet:w-full">
                 <Image
                   src="/logo/security operations.svg"
                   className=""
@@ -272,17 +272,10 @@ useEffect(() => {
           </section>
           <section className="mx-20 my-20 tablet:mx-0 tablet:my-10">
             <div className=" mr-0 flex justify-between items-center  tablet:m-10 tablet:flex-col">
-            <div className="flex items-center justify-start w-[50%] tablet:w-full">
-                <Image
-                  src="/logo/smartbackup.png"
-                  className=""
-                  height={581}
-                  width={444}
-                />
-              </div>
+            
               <div className="w-[50%] tablet:w-full">
 
-                <div className="tablet:my-5 mb-4">
+                <div className="tablet:my-5 mb-4 w-4/5">
                   <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2 ">
                     <span className="text-primary-orange">SmartBackup </span>
 
@@ -295,6 +288,14 @@ useEffect(() => {
                   </button>
                 </div>
 
+              </div>
+              <div className="flex items-center justify-end w-[50%] tablet:w-full">
+                <img
+                  src="/logo/security-back-up.svg"
+                  className="w-full"
+                  // height={581}
+                  // width={444}
+                />
               </div>
 
 

@@ -107,6 +107,7 @@ const Platform = () => {
                   src="https://d1zzg2ksf0bp3o.cloudfront.net/combined/public/misc/HP-map-just-update.png?mtime=20220208163050&focal=none"
                   alt="connectivity"
                 />
+                {/* <iframe src='https://res.cloudinary.com/bucpgs/video/upload/v1674640061/course_form/21ctl/Background_technology_world_loop_v144P_oiv924.mp4' ></iframe> */}
               </div>
             </div>
           </section>
@@ -154,13 +155,13 @@ const Platform = () => {
             </div>
           </section>
 
-          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
+          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5 dark:bg-black">
             <div className="flex sm:flex-row flex-col-reverse items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div className="sm:mt-0 mt-16">
-                <h2 className="font-bold text-2xl text-black dark:text-dark">
+                <h2 className="font-bold text-2xl text-black dark:text-white">
                   Payment Solution Provider
                 </h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl  text-black dark:text-dark">
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl  text-black dark:text-white">
                   We are here to provide you with the most efficient and secure
                   way to process your payments. Our platform offers a variety of
                   features to meet the needs of businesses of all sizes. Our
@@ -194,10 +195,10 @@ const Platform = () => {
                 </a>
               </div>
 
-              <div className="">
+              <div className="w-full">
                 <img
-                  src="https://d1zzg2ksf0bp3o.cloudfront.net/combined/public/misc/HP-map-just-update.png?mtime=20220208163050&focal=none"
-                  alt="connectivity"
+                src='/logo/payment-provider.svg'
+                alt="connectivity"
                 />
               </div>
             </div>
@@ -207,7 +208,8 @@ const Platform = () => {
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
+                  // src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
+                  src='/logo/automation.svg'
                   alt="connectivity"
                   className="w-[500px]"
                 />
