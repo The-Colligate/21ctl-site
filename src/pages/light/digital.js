@@ -59,9 +59,9 @@ const Digital = () => {
             </motion.div>
           </section>
 
-          <section className='sm:px-36 px-8 my-5'>
+          <section className='sm:px-36 px-8 mt-5 mb-20 phone:mb-5'>
             <div className="flex flex-col items-center">
-              <div className="text-lg font-semibold pb-5">
+              <div className="text-lg font-semibold pb-5 tablet:text-center phone:text-sm">
                 Our statistics reveal more about us.
               </div>
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
@@ -122,7 +122,7 @@ const Digital = () => {
           </section>
 
 
-          <section>
+          {/* <section>
             <div className="flex items-center space-x-10 space-y-0 my-32 tablet:mx-5  largeTablet:flex-col-reverse largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
               <div className="">
                 <img
@@ -142,19 +142,54 @@ const Digital = () => {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
+                              <section className='cloud-services mx-20 my-10 phone:mb-0 relative tablet:mx-10'>
+                        <div className='w-2/5 mb-20 phone:w-full tablet:mb-5 tablet:w-full'>
+                            <p className='text-[#319FD9] font-[14px]'>{"Regional Network Gateway Nigeria".toUpperCase()}</p>
+                            <p className='font-bold text-[35px] tablet:text-[25px] '>Connect to every<br /> Hyperscale Cloud Provider</p>
+                            <p className='text-[16px]'>We have recently installed the 1st regional network gateway in Nigeria to support direct connectivity to major Data Centres around the globe in partnership with PCCW.</p>
+                            {/* <button className="bg-[#319FD9] rounded-xl  text-white py-2 px-6 my-6">
+                                Get Started
+                            </button> */}
+                        </div>
+                        <div className='services flex mx-10 flex-col phone:text-center phone:mx-0 '>
+                            <div className='number-1  bg-white p-10  my-5 rounded-lg phone:p-5'>
+                                <h3 className='font-extrabold'>5G Readiness</h3>
+                                <p>Infrastructure with edge computing capabilities to support 5th generation technology standards</p>
+                            </div>
+                            <div className='number-1  bg-white p-10 my-5 rounded-lg  phone:p-5'>
+                                <h3 className='font-extrabold'>Data Centers</h3>
+                                <p>His defective nor convinced residence own. Connection has put impossible own apartments boisterous.</p>
+                            </div>
+                            <div className='number-1  mx-auto bg-white p-10 my-5 rounded-lg  phone:p-5'>
+                                <h3 className='font-extrabold'>Towers</h3>
+                                <p>Wide range communication infrastructure and managed service to enable wireless connectivity connecting people, devices and networks.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div className='flex justify-center items-center mx-20 my-10 phone:my-5 phone:mx-10'>
+                            <img
+                                src='/icons/potential-partners.png'
+                                height={100}
+
+                            />
+                        </div>
 
           <section>
-            <div className="text-center mx-10">
-              <h1 className=" text-5xl font-bold tracking-wide tablet:text-4xl">
+            <div className="text-center mx-10 tablet:mx-0">
+              {/* <h1 className=" text-5xl font-bold tracking-wide tablet:text-4xl">
                 <span className="text-primary-orange">Data </span> Centers
-              </h1>
-              <p className="tracking-wider  text-lg py-4 max-w-3xl m-auto">
+              </h1> */}
+              <div className='flex flex-col justify-center items-center text-center w-3/4 mx-auto tablet:mx-10 phone:w-3/3'>
+                            <h2 className='text-[42px] text-primary-orange my-4 tablet:text-[16px]'>21st century is a Digital professional service Infrastructure company with 25 years experience </h2>
+                            <p className='text-[16px] tablet:text-[12px]'>Combine our capabilities with data Center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow.</p>
+                        </div>
+              {/* <p className="tracking-wider  text-lg py-4 max-w-3xl m-auto">
                 Our data center is a secure and reliable infrastructure that
                 stores, processes, and manages critical data and applications. It
                 enables efficient communication, collaboration, and
                 decision-making for businesses
-              </p>
+              </p> */}
             </div>
 
             <div className="data_center_grid mt-5 px-28 tablet:px-10">
@@ -212,7 +247,7 @@ const Digital = () => {
                     <span className="text-primary-orange">Alanamu </span>  Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify">
+                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify ">
                     Our Alanamu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
@@ -222,14 +257,14 @@ const Digital = () => {
             </div>
           </section>
 
-          <section className="five-gr py-32 sm:mt-0 mt-32">
-            <div className="max-w-6xl flex sm:flex-row flex-col w-full rounded-3xl items-center m-auto sm:h-full h-full bg-white ">
+          <section className="five-gr pt-32 sm:mt-0 mt-32 phone:mt-0">
+            <div className=" flex sm:flex-row flex-col w-full  items-center m-auto sm:h-full h-full bg-white ">
               <div className="px-5 sm:py-0 py-10 mx-10 text-black dark:text-black">
-                <h4 className="text-5xl font-semibold text-center tablet:text-4xl">
+                <h4 className="text-5xl font-semibold text-left tablet:text-3xl">
                   {' '}
                   <span className="text-primary-orange">5G</span> Readiness
                 </h4>
-                <p className="text-xl text-center pt-3">
+                <p className="text-xl text-left pt-3 phone:text-sm">
                   Our infrastructure with edge computing capabilities supports 5G
                   technology and enables new user experiences, deployment models,
                   and services.
@@ -237,8 +272,12 @@ const Digital = () => {
               </div>
               <div className="w-full h-full sm:px-0 px-5">
                 <img
-                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
-                  className="object-cover h-full w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
+                  // src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
+                 
+                 src='/logo/5G.svg'
+                 
+         
+                  className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
                 />
               </div>
             </div>

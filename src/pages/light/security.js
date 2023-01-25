@@ -214,6 +214,14 @@ useEffect(() => {
 
           <section className="px-20 mt-20 vision-mission-section tablet:px-0">
             <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col">
+            <div className="flex items-center justify-start w-[50%] tablet:w-full">
+                <Image
+                  src="/logo/ddos-protection.png"
+                  className=""
+                  height={581}
+                  width={444}
+                />
+              </div>
               <div className="w-2/5 tablet:w-full">
 
                 <div className="tablet:my-5 mb-4">
@@ -231,24 +239,10 @@ useEffect(() => {
 
               </div>
 
-              <div className="flex items-center justify-end w-[50%] tablet:w-full">
-                <Image
-                  src="/logo/ddos-protection.png"
-                  className=""
-                  height={581}
-                  width={444}
-                />
-              </div>
+              
             </div>
-            <div className=" mr-0 mt-20 flex justify-center items-center  tablet:m-10  tablet:flex-col-reverse">
-              <div className="flex items-center  w-[50%] tablet:w-full">
-                <Image
-                  src="/logo/security-towers.png"
-                  className=""
-                  height={581}
-                  width={444}
-                />
-              </div>
+            <div className=" mr-0 mt-20 flex justify-between items-center  tablet:m-10  tablet:flex-col-reverse">
+              
               <div className="w-[40%] tablet:w-full">
 
                 <div className="tablet:my-5 mb-4">
@@ -266,11 +260,26 @@ useEffect(() => {
 
               </div>
 
-
+              <div className="flex items-center  w-[50%] tablet:w-full">
+                <Image
+                  src="/logo/security operations.svg"
+                  className=""
+                  height={581}
+                  width={444}
+                />
+              </div>
             </div>
           </section>
           <section className="mx-20 my-20 tablet:mx-0 tablet:my-10">
             <div className=" mr-0 flex justify-between items-center  tablet:m-10 tablet:flex-col">
+            <div className="flex items-center justify-start w-[50%] tablet:w-full">
+                <Image
+                  src="/logo/smartbackup.png"
+                  className=""
+                  height={581}
+                  width={444}
+                />
+              </div>
               <div className="w-[50%] tablet:w-full">
 
                 <div className="tablet:my-5 mb-4">
@@ -288,14 +297,7 @@ useEffect(() => {
 
               </div>
 
-              <div className="flex items-center justify-end w-[50%] tablet:w-full">
-                <Image
-                  src="/logo/smartbackup.png"
-                  className=""
-                  height={581}
-                  width={444}
-                />
-              </div>
+
             </div>
           </section>
 

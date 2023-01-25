@@ -327,6 +327,7 @@ export const mainLinks = [
   {
     additionalLinks: [
       { name: 'Digital Platforms', link: '/platform' },
+      { name: 'Events', link: '/' },
       { name: 'Explore more', link: '/' },
     ],
   },
@@ -1016,7 +1017,7 @@ export const securityNavLinks = [
         subLinks: [
             {
                 name: 'Managed cybersecurity services',
-            link: '/',
+            link: '#',
             icon: '/icons/security.svg',
             text: 'Threat management',
             text1: 'Managed detection and response',
@@ -1027,20 +1028,23 @@ export const securityNavLinks = [
           {
             // name: 'Surveillance',
             name: 'Managed network security services',
-            link: '/',
+            link: '#',
             icon: '/icons/security.svg',
             text: 'Secure Access Service Edge',
             text1: 'Managed firewall services',
             text2: 'Intrusion detection and prevention',
+            text3: 'Penetration Testing',
+            text4: 'Security Education and Mentoring'
+
           },
 
        
             // name: 'Biometric Lock',
-            // link: '/',
+            // link: '#',
             {
               // name: 'Surveillance',
               name: 'Security Expert Training',
-              link: '/',
+              link: '#',
               icon: '/icons/security.svg',
               text: 'Security Administration',
               text1: 'DevSecOps',
@@ -1050,7 +1054,7 @@ export const securityNavLinks = [
           
           // {
           //   name: 'Threat analysis',
-          //   link: '/',
+          //   link: '#',
           //   icon: '/icons/home/handshake.svg',
 
           //   text: 'See our partners',
@@ -1062,30 +1066,60 @@ export const securityNavLinks = [
         name: 'Security Cloud Infrastructure',
         subLinks: [
           {
-            name: 'Cloud Architecture',
-            link: '/',
+            name: 'Operations',
+            link: '#',
             icon: '/icons/security.svg',
 
-            text: 'Operations',
-            text2: 'Applications',
-            text3: 'Storage',
-            text4: 'Networking',
-            text5: 'Compute',
-            text6: 'Identity',
+       
           },
+          {
+            name: 'Applications',
+            link: '#',
+            icon: '/icons/security.svg',
+          },
+          {
+            name: 'Storage',
+            link: '#',
+            icon: '/icons/security.svg',
+          },
+          {
+            name: 'Networking',
+            link: '#',
+            icon: '/icons/security.svg',
+          },
+          {
+            name: 'Compute',
+            link: '#',
+            icon: '/icons/security.svg',
+          },
+          {
+            name: 'Identity',
+            link: '#',
+            icon: '/icons/security.svg',
+          },
+
         ],
         extras: [],
       },
-      {
-        name: 'Data security (PaaS)',
-        subLinks: [
-         
-        ],
-        extras: [],
-      },
+      
       {
         name: 'Cloud Security',
         subLinks: [
+          {
+            name: 'Data Security',
+            link: '#',
+            icon: '/icons/security.svg',
+          },
+          {
+            name: 'Governance',
+            link: '#',
+            icon: '/icons/security.svg',
+          },
+          {
+            name: 'Identity and Access Management',
+            link: '#',
+            icon: '/icons/security.svg',
+          },
         
         ],
         extras: [],

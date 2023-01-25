@@ -30,15 +30,14 @@ const Power = () => {
               initial="hidden"
                className="max-w-lg">
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-                  <span className="text-primary-orange leading-8">
-                    Embrace{' '}
-                  </span>
-                  A Better Energy{' '}
-                  <span className="text-primary-orange leading-8">Future.</span>
+                  
+                    creating <span className="text-primary-orange leading-8">energy</span>{' '}
+              
+                 for the<span className="text-primary-orange leading-8"> future</span>{' '}
+               
                 </h1>
                 <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">
-                  Optimize your data center&apos;s energy efficiency with our
-                  sustainable power solutions.
+                  We are investing in sustainable clean energy in Africa to power the future across industries and communities creating possibilities.
                 </p>
               </motion.div>
               <motion.div
