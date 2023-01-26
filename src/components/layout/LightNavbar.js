@@ -168,6 +168,42 @@ export function LightNavbar({ menuProp }) {
                             >
                               {sublinks?.text6}{' '}
                             </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text7}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text8}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text9}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text10}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text11}{' '}
+                            </Link>
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text12}{' '}
+                            </Link>
                           </div>
                         </div>
                       ))}
