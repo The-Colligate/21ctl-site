@@ -80,8 +80,8 @@ const ExploreMore = () => {
                             
                         </div>
                     </section> */}
-                    <section>
-                        <h2 className="text-[36px] mt-[12vh] font-semibold text-center mb-4">
+                    <section className=''>
+                        <h2 className="text-[36px]  mt-[12vh] font-semibold text-center mb-4">
                             Core Values
                         </h2>
                         <div className="values_grid m-auto ">
