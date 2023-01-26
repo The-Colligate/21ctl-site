@@ -257,7 +257,7 @@ export const mainLinks = [
           {
             name: 'Digital Academy',
             link: '/people',
-            text: 'Empowering distruptive thinkers.',
+            text: 'Empowering disruptive thinkers.',
             icon: '/LOGO.png',
           },
         ],
@@ -328,7 +328,7 @@ export const mainLinks = [
     additionalLinks: [
       { name: 'Digital Platforms', link: '/platform' },
       { name: 'Events', link: '/' },
-      { name: 'Explore more', link: '/' },
+      { name: 'Explore more', link: '/explore-more' },
     ],
   },
 ];

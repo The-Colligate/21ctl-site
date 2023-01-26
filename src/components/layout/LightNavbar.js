@@ -287,7 +287,7 @@ export function LightNavbar({ menuProp }) {
             </button>
           </a>
             <a
-              href="https://21ctl-biodata.vercel.app/"
+              href="https://21ctl-academy-application.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
