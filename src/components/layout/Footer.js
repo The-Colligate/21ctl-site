@@ -154,7 +154,7 @@ export function Footer() {
 
       <div className="pt-10">
         <p className="text-center text-black dark:text-white">
-          Copyright © 2023 21st Century Technology Limited. All rights reserved.
+          copyright © 2023, 21 Century Technologies. All right reserved.
         </p>
       </div>
     </footer>

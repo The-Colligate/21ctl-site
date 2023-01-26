@@ -286,7 +286,7 @@ export const mainLinks = [
       },
       {
         name: 'Locations',
-        link: '#',
+        
         subLinks: [
           {
             name: 'Lekki',

@@ -174,7 +174,7 @@ export function LightNavbar({ menuProp }) {
                     </div>
                   </div>
                    
-                    <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8 "
+                 {/*   <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8 "
                     style={{display: link.extras.length !== 0 ? "block": "none" }}
                     >
                       <h2 className="text-sm font-bold text-darkShade">
@@ -209,7 +209,7 @@ export function LightNavbar({ menuProp }) {
                         ))}
                       </div>
                     </div>
-                  
+                        */}
                 </div>
               }
             >

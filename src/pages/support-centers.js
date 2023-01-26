@@ -8,16 +8,16 @@ const SupportCenters = () => {
 
   
   
-    const { query } = useRouter();
+    // const { query } = useRouter();
 
    
 
-    console.log("Query Location");
-    if (typeof window !== "undefined") {
-    const location =  window.location.hash.split('=')[1];
+    // console.log("Query Location");
+    // if (typeof window !== "undefined") {
+    // const location =  window.location.hash.split('=')[1];
 
-    console.log();
-    }
+    // console.log();
+    // }
 
 
 
@@ -42,7 +42,7 @@ const SupportCenters = () => {
             </h1>
           </div>
 
-          <div className="support-centers sm:px-28 px-8 py-10">
+          <div className="support-centers sm:px-28 px-8 py-10 dark:text-black">
             <div className="shadow-md hover:shadow-xl">
               <h2 className="font-bold text-xl">Head Office</h2>
               <p className="text-lg mt-4">

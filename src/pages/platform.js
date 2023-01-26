@@ -36,7 +36,14 @@ const Platform = () => {
                 <img
                   // src="https://d2pi5ijasmgfet.cloudfront.net/500x328/filters:focal(249x163:251x165):quality(82)/combined%2Fpublic%2Fmisc%2FPD20-hp-img-500x328.jpg"
                   src='/logo/social media Globe2.png'
-                  className='w-3/4 h-3/4'
+                  className='w-3/4 h-3/4 dark:hidden '
+
+                  alt="communication"
+                />
+                <img
+                  // src="https://d2pi5ijasmgfet.cloudfront.net/500x328/filters:focal(249x163:251x165):quality(82)/combined%2Fpublic%2Fmisc%2FPD20-hp-img-500x328.jpg"
+                  src='/logo/social media Globe.png'
+                  className='w-3/4 h-3/4 hidden dark:block'
 
                   alt="communication"
                 />
