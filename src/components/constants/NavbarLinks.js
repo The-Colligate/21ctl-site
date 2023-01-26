@@ -74,63 +74,63 @@ export const mainLinks = [
                ],
                extras: [],
              },*/
-      {
-        name: 'Industries',
-        subLinks: [
-          {
-            name: 'E-Learning',
-            link: '/',
-            text: 'Empowering learners with E-learning.',
-            icon: '/icons/home/hat-graduation-filled.svg',
-          },
-          {
-            name: 'E-Publishing',
-            link: '/',
-            text: 'Revolutionizing publishing with e-platform.',
-            icon: '/icons/home/ph_book-fill.svg',
-          },
+      // {
+      //   name: 'Industries',
+      //   subLinks: [
+      //     {
+      //       name: 'E-Learning',
+      //       link: '/',
+      //       text: 'Empowering learners with E-learning.',
+      //       icon: '/icons/home/hat-graduation-filled.svg',
+      //     },
+      //     {
+      //       name: 'E-Publishing',
+      //       link: '/',
+      //       text: 'Revolutionizing publishing with e-platform.',
+      //       icon: '/icons/home/ph_book-fill.svg',
+      //     },
 
-          {
-            name: 'Music',
-            link: '/',
-            text: 'Unleashing the power of music.',
-            icon: '/icons/home/ph_music-note-fill.svg',
-          },
+      //     {
+      //       name: 'Music',
+      //       link: '/',
+      //       text: 'Unleashing the power of music.',
+      //       icon: '/icons/home/ph_music-note-fill.svg',
+      //     },
 
-          {
-            name: 'Mobile Commerce',
-            link: '/',
-            text: 'Connecting you to mobile commerce.',
-            icon: '/icons/home/shopping-bag-sharp.svg',
-          },
+      //     {
+      //       name: 'Mobile Commerce',
+      //       link: '/',
+      //       text: 'Connecting you to mobile commerce.',
+      //       icon: '/icons/home/shopping-bag-sharp.svg',
+      //     },
 
-          {
-            name: 'Ticketing',
-            link: '/',
-            text: 'Simplifying ticketing with innovation.',
-            icon: '/icons/home/dashicons_tickets-alt.svg',
-          },
-          {
-            name: 'Mobility',
-            link: '/',
-            text: 'Empowering your business with mobility.',
-            icon: '/icons/home/directions-bus-rounded.svg',
-          },
-          {
-            name: 'Konet Space',
-            link: '/',
-            text: '',
-            icon: '/icons/home/earth-filled.svg',
-          },
-          {
-            name: 'Games',
-            link: '/',
-            text: 'Powering businesses with energy.',
-            icon: '/icons/home/dashicons_tickets-alt.svg',
-          },
-        ],
-        extras: [],
-      },
+      //     {
+      //       name: 'Ticketing',
+      //       link: '/',
+      //       text: 'Simplifying ticketing with innovation.',
+      //       icon: '/icons/home/dashicons_tickets-alt.svg',
+      //     },
+      //     {
+      //       name: 'Mobility',
+      //       link: '/',
+      //       text: 'Empowering your business with mobility.',
+      //       icon: '/icons/home/directions-bus-rounded.svg',
+      //     },
+      //     {
+      //       name: 'Konet Space',
+      //       link: '/',
+      //       text: '',
+      //       icon: '/icons/home/earth-filled.svg',
+      //     },
+      //     {
+      //       name: 'Games',
+      //       link: '/',
+      //       text: 'Powering businesses with energy.',
+      //       icon: '/icons/home/dashicons_tickets-alt.svg',
+      //     },
+      //   ],
+      //   extras: [],
+      // },
       {
         name: 'Partners',
         subLinks: [
