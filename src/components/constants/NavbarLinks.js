@@ -845,7 +845,7 @@ export const peopleNavLinks = [
             text1: 'Cybersecurity',
             text2: 'Security and Compliance',
             text3: 'Infrastructrue as Code (IaC)',
-            text4: 'Data Center Management',
+      
           },
           {
             name: 'MARKETING',
@@ -910,6 +910,21 @@ export const peopleNavLinks = [
             text1: 'Oracle HCM Cloud Business Process',
             text2: 'Oracle Sales Cloud Business Process',
             text3: 'Oracle Procurement Cloud Business Process',
+            },
+            {
+              name: 'Data Center design and infrastructure',
+              link: '/',
+              icon: '/logo/partners/oracle.png',
+              text: 'Overview of Data Center Physical Infrastructure',
+              text1: 'Virtualization: The Engine Behind Cloud Computing',
+              text2: 'Choosing Between Room, Row and Rack Based Cooling I & II',
+              text3: 'Fundamentals of Availability',
+              text4: 'Calculating Total Power Requirements',
+              text5: 'Going Green: Energy Efficiency in the Data Center',
+              text6: 'Fundamentals of Data Centre Power',
+              text7: 'Calculating Total Cooling requirements',
+              text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
+              text9: 'Data Center Projects: Commissioning',
             },
         ],
         extras: [
