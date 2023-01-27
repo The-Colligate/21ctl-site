@@ -91,7 +91,7 @@ export function LightNavbar({ menuProp }) {
                   onMouseOver={(e) => setDisplayPopup([true, index])}
                   onMouseOut={(e) => setDisplayPopup([true, index])}
                 >
-                  <div class="w-full pl-5 py-5 whitespace-wrap rounded bg-white overflow-y h-[82vh] dark:bg-black dark:bg-opacity-90">
+                  <div class="w-full pl-5 py-5 whitespace-wrap rounded bg-white overflow-x-hidden  h-[82vh] dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
                       {router.pathname === '/people'
                         ? link?.head
@@ -101,7 +101,7 @@ export function LightNavbar({ menuProp }) {
                     <div
                       className={`grid ${
                         link.subLinks.length > 7 ? 'grid-cols-4' : 'grid-cols-3'
-                      }  items-start flex-nowrap mr-5 w-full`}
+                      }  items-start flex-nowrap mr-5 w-full tablet:grid-cols-2`}
                     >
                       {link.subLinks.map((sublinks) => (
                         <div

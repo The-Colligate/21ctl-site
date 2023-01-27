@@ -802,7 +802,7 @@ export const peopleNavLinks = [
           {
             name: 'Oracle Technology',
             link: '/',
-            icon: '/logo/partners/oracle.png',
+            icon: '/logo/oracle1.png',
             text: 'Administer Oracle Cloud Databases',
             text1: 'Database Developer on Oracle Cloud',
             text2: 'Application Development on Oracle Cloud',
@@ -820,7 +820,7 @@ export const peopleNavLinks = [
           {
             name: 'Oracle Application',
             link: '/',
-            icon: '/logo/partners/oracle.png',
+            icon: '/logo/oracle1.png',
             text: 'Oracle Financials Cloud Business Process',
             text1: 'Oracle HCM Cloud Business Process',
             text2: 'Oracle Sales Cloud Business Process',
