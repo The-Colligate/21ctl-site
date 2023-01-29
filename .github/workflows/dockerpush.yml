@@ -57,18 +57,18 @@ jobs:
 #         script: bash update.sh
   
 	update_ssh_ctl:
-		name: Telling 21CTL webserver to update its content
-		# needs: "push_to_registry"
-		runs-on: ubuntu-latest
-		steps:
-			- name: Copy via ssh
-			uses: garygrossgarten/github-action-scp@v0.8.0
-			with:
-				local: public
-				remote: /home/sam/public_html/build
-				host: ${{ secrets.HOST }}
-				username: ${{ secrets.SSH_USER }}
-				password: ${{ secrets.PASSWORD }}
+	name: Telling 21CTL webserver to update its content
+	# needs: "push_to_registry"
+	runs-on: ubuntu-latest
+	steps:
+		- name: Copy via ssh
+		uses: garygrossgarten/github-action-scp@v0.8.0
+		with:
+			local: public
+			remote: /home/sam/public_html/build
+			host: ${{ secrets.HOST }}
+			username: ${{ secrets.SSH_USER }}
+			password: ${{ secrets.PASSWORD }}
 				# host: ${{ secrets.HOST }}
 				# username: ${{ secrets.USERNAME }}
 				# password: ${{ secrets.PASSWORD }}
