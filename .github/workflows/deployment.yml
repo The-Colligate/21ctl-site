@@ -94,9 +94,9 @@
 name: GitHub Actions for updating 21CTL Website content
 run-name: ${{ github.actor }} is deploying to https://www.21ctl.com webserver
 on:
-	push:
-		branches:
-			- build
+  push:
+    branches:
+      - build
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
