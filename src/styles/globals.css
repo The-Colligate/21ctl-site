@@ -488,6 +488,8 @@ body {
   padding: 20px;
 }
 
+
+
 @media only screen and (max-width: 400px) {
   .about-us, .security {
     height: 50vh;

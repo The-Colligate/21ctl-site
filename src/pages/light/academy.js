@@ -36,11 +36,11 @@ const Academy = () => {
           <section className="bg-[#E7D7D2] dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
               <motion.div
-              variants={leftTransitionVarient}
-              animate="visible"
-              initial="hidden"
-              
-              className="flex-1">
+                variants={leftTransitionVarient}
+                animate="visible"
+                initial="hidden"
+
+                className="flex-1">
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                   <span className="text-primary-orange leading-8">Unlock </span>
                   Your potential with our{' '}
@@ -63,32 +63,73 @@ const Academy = () => {
                 </a>
               </motion.div>
               <motion.div
-              variants={rightTansitionVarient}
-              animate="visible"
-              initial="hidden"
-               className="flex-1">
+                variants={rightTansitionVarient}
+                animate="visible"
+                initial="hidden"
+                className="flex-1">
                 <Image
                   src="/logo/student.png"
-                  width={559}
-                  height={650}
-                  className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
+                  width={459}
+                  height={450}
+                  className="pt-20 tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
                 />
               </motion.div>
+            </div> 
+          </section>
+          <section>
+            <div className=' flex justify-center items-center mx-20 w-full tablet:mx-10 tablet:flex-col'>
+              <div className='w-2/3 tablet:w-full'>
+                <p className='text-5xl font-bold'>In the last <span className="text-primary-orange">25 years</span>, we have been <span className="text-primary-orange">investing</span> in compelling <span className="text-primary-orange">Digital</span> Infrastructure in five <span className="text-primary-orange">key areas</span>:</p>
+                <ul className='list-diamondStar text-[24px] '>
+
+                  <li>Technology: As we all know poverty is a bigger indicator of lack of access to Technologies than geography.</li>
+                  <li>Power: Renewable energy / Turbine power plant</li>
+                  <li>Payment.</li>
+                  <li>Security</li>
+                  <li>People.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <img src='/logo/21ctl-infographics.png' className='w-2/3' />
+              </div>
             </div>
           </section>
 
-          <section className='sm:px-36 px-8 my-5'>
-                        <div className="flex flex-col items-center">
-                            <div className="text-lg font-semibold pb-5">
-                                Our statistics reveal more about us.
-                            </div>
-                            <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-around items-center">
+          <section className='mx-20 my-20 w-full tablet:mx-10'>
+            <div className=' flex justify-between items-center  w-full tablet:flex-col'>
+              <div className='w-3/5 tablet:w-full'>
+                <p className='text-5xl font-bold text-center'> <span className="text-primary-orange">we provide world-class services to the top 1000 companies </span>in Nigeria and key residential areas.</p>
+
+              </div>
+
+
+              <div>
+                <img src='/logo/people-info.jpg' className='w-full h-1/5' />
+              </div>
+            </div>
+          </section>
+          {/* <section className='flex flex-col justify-center items-center w-full'>
+            <div className='font-bold sm:text-5xl text-3xl text-center'>
+              <h4>The <span className="text-primary-orange">7 Pillars</span> of Digital Training Center <br /> Model</h4>
+            </div>
+            <div className='w-full flex justify-center items-center ml-20'>
+              <img src='/logo/academy-importance.svg' className=' w-2/4' />
+            </div>
+          </section> */}
+
+          <section className='sm:px-36 px-8 my-20'>
+            <div className="flex flex-col items-center">
+              <div className="text-lg font-semibold pb-5">
+                Our statistics reveal more about us.
+              </div>
+              <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-around items-center">
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
                     {/* 50+ */}
                     <CountUp
                       start={0}
-                      end={50}
+                      end={450}
                       duration={2.75}
                       prefix=""
                       suffix="+"
@@ -101,13 +142,13 @@ const Academy = () => {
                     {/* 100+ */}
                     <CountUp
                       start={0}
-                      end={100}
+                      end={200}
                       duration={2.75}
                       prefix=""
                       suffix="+"
                     />
                   </p>
-                  <span className="">Expert Mentors</span>
+                  <span className="">Industry Mentors</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
@@ -123,12 +164,70 @@ const Academy = () => {
                   <span className="">Students</span>
                 </div>
               </div>
-                        </div>
-                    </section>
+            </div>
+          </section>
+
+          <section className='text-3xl mx-20  w-full flex flex-col justify-between items-center tablet:mx-10'>
+            <h4 className='font-bold'> Our <span className="text-primary-orange">Target</span></h4>
+            <div className='flex justify-between items-center tablet:flex-col  '>
+              <div className="text-primary-orange w-full flex flex-col justify-between items-center tablet:my-10">
+                <CountUp
+                  start={0}
+                  end={41}
+                  duration={2.75}
+                  prefix=""
+                  suffix="%"
+                  className='font-extrabold'
+                />
+                <hr />
+                <img src='/logo/people-41.svg' className='w-2/4' />
+                <p className='p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center'>Labour Force in Nigeria</p>
+
+              </div>
+              <div className="text-primary-orange  w-full flex flex-col justify-between items-center">
+                <CountUp
+                  start={0}
+                  end={33}
+                  duration={2.75}
+                  prefix=""
+                  suffix="%"
+                  className='font-extrabold'
+                />
+                <hr />
+                <img src='/logo/people-33.svg' className='w-2/4' />
+                <p className='p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center'>Unemployed Labour Force in Nigeria</p>
+
+              </div>
+            </div>
+            <div className=' w-full flex flex-col justify-center items-center'><p className='text-center text-[18px] w-2/3 flex justify-center items-center my-10'>This means that about one in three young people in the labor force who are actively <br/> seeking employment are unemployed</p>
+              <div >
+                <p className='p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center'>Number of People Trained by 2023 </p>
+                <p className='p-5 bg-white text-black text-[18px] w-[350px] flex justify-center items-center'>10,000,000 </p>
+              </div>
+            </div>
+          </section>
+          <section className='flex flex-col justify-center items-center w-full mt-20'>
+            <div className='font-bold sm:text-5xl text-3xl text-center tablet:text-xl'>
+              <h4>The <span className="text-primary-orange">7 Pillars</span> of Digital Training Center <br /> Model</h4>
+            </div>
+            <div className='w-full flex justify-center items-center'>
+              <img src='/logo/7-pillars.svg' className='w-3/5 tablet:w-4/5 ' />
+            </div>
+          </section>
 
 
 
-          
+          <section className='flex flex-col justify-center items-center w-full mt-20'>
+            <div className='font-bold sm:text-5xl text-3xl text-center'>
+              <h4  className="text-primary-orange">Benefits of the Academy</h4>
+            </div>
+            <div className='w-full flex justify-center items-center ml-20 tablet:flex-col '>
+              <img src='/logo/academy-importance.svg' className=' w-2/4  tablet:w-4/5 ' />
+              <img src='/logo/academy-importance1.svg' className='w-2/4 tablet:pt-10  tablet:w-4/5 ' />
+            </div>
+          </section>
+
+
           <section className="sm:px-28 px-8 mt-28">
             <h1 className="text-primary-orange font-bold sm:text-5xl text-3xl">
               Our Courses
@@ -139,7 +238,7 @@ const Academy = () => {
               </p>
               <p className="text-primary-orange">
                 {/* See more */}
-                </p>
+              </p>
             </div>
 
             <div className="grid gap-10 grid-cols-3 largeTablet:grid-cols-2 tablet:grid-cols-2 mt-10 phone:grid-cols-1">
@@ -175,9 +274,11 @@ const Academy = () => {
           </section>
 
           <section className="sm:mb-0 mb-16">
-            <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
+            <div className="flex items-center space-x-10 space-y-0 my-10 mx-40 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0
+         tablet:mx-10   bg-[linear-gradient(95.81deg, rgba(61, 246, 31, 0.01) 1.88%, rgba(246, 78, 31, 0.2) 43.42%, #EA8146 103.77%)] 
+            ">
               <div className="flex-1">
-                <img src="/logo/smiling.png" className="w-full" />
+                <img src="/logo/smiling.png" className="w-2/3 h-2/5" />
               </div>
               <div className="flex-1">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
@@ -195,8 +296,8 @@ const Academy = () => {
           </section>
 
           <section>
-            <div className="flex items-center space-x-10 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
-              <div className="flex-1 max-w-xl">
+            <div className=" w-full flex justify-between items-center ml-10 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:ml-0 tablet:mx-10">
+              <div className="w-full ">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
                   Your <span className="text-primary-orange">Learning</span> has
                   no <span className="text-primary-orange">limit</span>
@@ -206,10 +307,10 @@ const Academy = () => {
                   lessons unique and keep all students interested and engaged.
                 </p>
               </div>
-              <div className="flex-1">
+              <div className="w-full">
                 <img
-                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1673101849/Group_369_sncuca.svg"
-                  className="w-full"
+                  src="/logo/face-laughing.png"
+                  className="w-2/3"
                 />
               </div>
             </div>

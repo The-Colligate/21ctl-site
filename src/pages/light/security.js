@@ -150,14 +150,17 @@ useEffect(() => {
 
           <section className="sm:mb-0 mb-16 py-20 mx-20 tablet:mx-0">
             <div className="flex items-center space-x-10 space-y-0  tablet:flex-col-reverse">
-              <div className="flex-1  tablet:mt-10 mx-20 tablet:mx-10">
+              <div className="w-[40%]  tablet:mt-10  tablet:mx-10">
                 <motion.img variants={leftTransitionVarient}
                 ref={ref}
                 animate="visible"
                 // animate={control}
                 initial="hidden"
-
-                  src="/logo/public-key.png"
+             
+                src="/logo/security operations.svg"
+               
+                height={650}
+                width={550}
                   className="rounded-2xl h-96 w-[100%] tablet:h-80"
                 />
               </div>
@@ -167,13 +170,13 @@ useEffect(() => {
                 animate="visible"
                 initial="hidden"
                 // animate={control}
-                className="flex-1 mb-5">
+                className="flex-1 mb-5 w-[60%]">
                 <h1
 
 
                   className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
-                  <span className="text-primary-orange">21st Century</span>{' '}
-                  Public Key Infrastructure
+                  <span className="text-primary-orange">Managed </span>{' '}
+                  cybersecurity services
                 </h1>
 
                 <motion.p
@@ -181,8 +184,10 @@ useEffect(() => {
                   animate="visible"
                   initial="hidden"
 
-                  className="text-xl ">
-                  PKI technology is used as the foundation for access control systems in the proliferation of devices and cloud services, and we provide PKI products and services with a focus on security
+                  className="text-lg text-justify">
+               We specialize in providing a wide range of cybersecurity services to help organizations protect their sensitive information and infrastructure from cyber threats. Our security platform offers a comprehensive set of tools and technologies to help businesses manage cyber risks and stay compliant with regulatory requirements.
+<br/><br/>
+One of the key services offered by us is threat management, which involves identifying, analyzing and mitigating potential cyber threats before they can cause damage to the organization. We also provide managed detection and response, which allows businesses to quickly detect and respond to security incidents in real-time. Additionally, we offer managed cloud security to help protect sensitive data and applications hosted in the cloud, and provide data backup solutions to ensure that critical information can be recovered in the event of a disaster. We also provide identity verification services to help organizations secure their digital identities and prevent unauthorized access to sensitive information. All these services are backed by a global network that ensures zero downtime and maximum availability.
                 </motion.p>
               </motion.div>
             </div>
@@ -191,18 +196,20 @@ useEffect(() => {
             <div className=" flex items-center overflow-x-hidden justify-around rounded tablet:flex-col  tablet:m-5">
               {/* <div className="cableCard  rounded relative flex justify-center  phone:h-[220px]"> */}
 
-              <div className="pl-10 w-2/5  flex flex-col h-full justify-center tablet:pl-5 tablet:w-full">
+              <div className="pl-10 w-[60%] mx-10 flex flex-col h-full justify-center tablet:pl-5 tablet:w-full">
                 <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
-                  <span className="text-primary-orange">Endpoint </span>
-                  Threat Protection
+                  <span className="text-primary-orange">Managed </span>
+                   Network Security Services
                 </h1>
                 <p className="leading-8 text-xl  tablet:text-lg">
-                  Stay protected against cyber threats with 21st Century{"'"}s integrated threat prevention, firewall, web, email, and device control defenses.
+                The company specializes in providing network security services to help organizations protect their networks and infrastructure from cyber threats. They offer a range of solutions that can be tailored to meet the specific needs of different types of businesses.
+<br/><br />
+One of the key services offered by the company is Secure Access Service Edge (SASE), which combines network security functions like firewall, VPN, and zero trust network access into a single, cloud-native platform. This allows businesses to secure their networks and remote users with a unified solution. Additionally, the company offers managed firewall services, which involves managing and monitoring the organization{"'"}s firewall to ensure that it is configured correctly and is able to detect and prevent cyber threats. The managed firewall service can be provided for various firewall solutions such as Next-Generation Firewall (NGFW), Stateful Firewall, and Application Firewall. The company also provides regular updates and patches to ensure that the firewall is up-to-date with the latest security features and threat intelligence.
                 </p>
                 <button className="bg-primary-orange w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
                   Reach Us
                 </button>    </div>
-              <div>
+              <div className='w-[40%]'>
                 <img
                   src="/logo/threat-protection.png"
                   className='rounded-2xl'
@@ -222,15 +229,18 @@ useEffect(() => {
                   width={444}
                 />
               </div>
-              <div className="w-2/5 tablet:w-full">
+              <div className="w-[60%] tablet:w-full">
 
-                <div className="tablet:my-5 mb-4">
+                <div className="tablet:my-5 mb-4 ">
                   <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
-                    <span className="text-primary-orange">DDoS </span>
-                    Protection
+                  Security   <span className="text-primary-orange">Expert Training </span>
+                 
                   </h1>
                   <p className="text-[18px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
-                    Our platform provides comprehensive protection against rising frequency and strength of DDoS attacks, protecting brands, customers and earning potential, and ensuring availability through a global network that prevents downtime and protects apps.
+                  The company specializes in providing security expert training services to help organizations develop the skills and knowledge needed to protect their networks and infrastructure from cyber threats. They offer a wide range of training programs that can be tailored to meet the specific needs of different types of businesses and organizations.
+<br /> <br />
+One of the key services offered by the company is training in threat management, which involves teaching personnel how to identify, analyze and mitigate potential cyber threats before they can cause damage to the organization. The company also provides training in cloud security, which helps individuals understand how to secure and protect sensitive data and applications hosted in the cloud. Additionally, the company offers training in security administration, which covers the basics of security operations such as how to create and implement security policies, how to use security tools and technologies, and how to identify and respond to security incidents. All training is provided by certified security experts with years of experience in the field. The company also provides certifications for the trainees that can boost their career opportunities.
+
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
                     Read more
