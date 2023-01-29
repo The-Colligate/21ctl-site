@@ -98,18 +98,18 @@ on:
     branches:
       - build
 jobs:
-  Deploying-To-21CTL:
+  Deploying-To-CTL:
     runs-on: ubuntu-latest
     steps:
 	- run: echo "💡 The GitHub Action SCP from marketplace works."
-    - name: Copy via ssh
-        uses: garygrossgarten/github-action-scp@v0.8.0
-		with:
-		  local: public
-          remote: /home/sam/public_html/build
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.PASSWORD }}
+    # - name: Copy via ssh
+    #     uses: garygrossgarten/github-action-scp@v0.8.0
+	# 	with:
+	# 	  local: public
+    #       remote: /home/sam/public_html/build
+    #       host: ${{ secrets.HOST }}
+    #       username: ${{ secrets.SSH_USER }}
+    #       password: ${{ secrets.PASSWORD }}
     #   - name: List files in the repository
     #     run: |
     #       ls ${{ github.workspace }}
