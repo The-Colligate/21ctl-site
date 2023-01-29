@@ -69,7 +69,7 @@ const Digital = () => {
                   <p className="text-primary-orange text-4xl font-semibold">
                     <CountUp
                       start={0}
-                      end={200}
+                      end={1000}
                       duration={2.75}
                       prefix=""
                       suffix="+"
@@ -96,7 +96,7 @@ const Digital = () => {
                     {/* 14M+ */}
                     <CountUp
                       start={0}
-                      end={14}
+                      end={45}
                       duration={2.75}
                       prefix=""
                       suffix="M+"
@@ -115,7 +115,7 @@ const Digital = () => {
                       suffix="+"
                     />
                   </p>
-                  <span className="font-light">Completed Projects</span>
+                  <span className="font-light">Mega Projects Completed </span>
                 </div>
               </div>
             </div>

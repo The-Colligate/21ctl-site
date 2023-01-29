@@ -54,7 +54,7 @@ export function LightNavbar({ menuProp }) {
       : router.pathname === '/identity'
       ? platformNavLinks
       : mainLinks;
-  console.log(`${JSON.stringify (peopleNavLinks[0].navLinks[1].subLinks)}`);
+  // console.log(`${JSON.stringify (peopleNavLinks[0].navLinks[1].subLinks)}`);
   // console.log('pathname', router.pathname);
 
   return (

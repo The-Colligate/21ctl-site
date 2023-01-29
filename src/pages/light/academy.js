@@ -33,7 +33,7 @@ const Academy = () => {
         <div className="w-full min-h-screen flex flex-col z-[1]">
           <LightNavbar />
 
-          <section className="bg-[#E7D7D2] dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
+          <section className=" dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
               <motion.div
                 variants={leftTransitionVarient}
@@ -105,7 +105,7 @@ const Academy = () => {
 
 
               <div>
-                <img src='/logo/people-info.jpg' className='w-full h-1/5' />
+                <img src='/logo/' className='w-full h-1/5' />
               </div>
             </div>
           </section>
@@ -142,7 +142,7 @@ const Academy = () => {
                     {/* 100+ */}
                     <CountUp
                       start={0}
-                      end={200}
+                      end={250}
                       duration={2.75}
                       prefix=""
                       suffix="+"
@@ -168,7 +168,7 @@ const Academy = () => {
           </section>
 
           <section className='text-3xl mx-20  w-full flex flex-col justify-between items-center tablet:mx-10'>
-            <h4 className='font-bold'> Our <span className="text-primary-orange">Target</span></h4>
+            <h4 className='font-bold'> Skill <span className="text-primary-orange">Gap</span></h4>
             <div className='flex justify-between items-center tablet:flex-col  '>
               <div className="text-primary-orange w-full flex flex-col justify-between items-center tablet:my-10">
                 <CountUp
@@ -187,7 +187,7 @@ const Academy = () => {
               <div className="text-primary-orange  w-full flex flex-col justify-between items-center">
                 <CountUp
                   start={0}
-                  end={33}
+                  end={60}
                   duration={2.75}
                   prefix=""
                   suffix="%"
@@ -200,13 +200,14 @@ const Academy = () => {
               </div>
             </div>
             <div className=' w-full flex flex-col justify-center items-center'><p className='text-center text-[18px] w-2/3 flex justify-center items-center my-10'>This means that about one in three young people in the labor force who are actively <br/> seeking employment are unemployed</p>
+            <h4 className='font-bold'> Our <span className="text-primary-orange">Target</span></h4>
               <div >
-                <p className='p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center'>Number of People Trained by 2023 </p>
+                <p className='p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center'>Number of People Trained by 2033 </p>
                 <p className='p-5 bg-white text-black text-[18px] w-[350px] flex justify-center items-center'>10,000,000 </p>
               </div>
             </div>
           </section>
-          <section className='flex flex-col justify-center items-center w-full mt-20'>
+          <section className='flex flex-col justify-center items-center w-full mt-20 bg-[]'>
             <div className='font-bold sm:text-5xl text-3xl text-center tablet:text-xl'>
               <h4>The <span className="text-primary-orange">7 Pillars</span> of Digital Training Center <br /> Model</h4>
             </div>
@@ -219,7 +220,7 @@ const Academy = () => {
 
           <section className='flex flex-col justify-center items-center w-full mt-20'>
             <div className='font-bold sm:text-5xl text-3xl text-center'>
-              <h4  className="text-primary-orange">Benefits of the Academy</h4>
+              <h4  className="text-primary-orange">Target of the Academy</h4>
             </div>
             <div className='w-full flex justify-center items-center ml-20 tablet:flex-col '>
               <img src='/logo/academy-importance.svg' className=' w-2/4  tablet:w-4/5 ' />

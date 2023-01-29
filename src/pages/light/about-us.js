@@ -20,7 +20,7 @@ const AboutUs = () => {
         <div className="w-full min-h-screen flex flex-col z-[1]">
           <LightNavbar />
 
-          <section className="about-us sm:px-36 px-8 my-16  bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.25) 21.4%, #E5E1DB 100%)]">
+          <section className="about-us sm:px-36 px-8 my-16 ">
             <div className="flex items-center justify-center h-full">
               <div className="max-w-3xl">
                 <h1 className="text-7xl font-bold tracking-normal text-center font-lato text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
