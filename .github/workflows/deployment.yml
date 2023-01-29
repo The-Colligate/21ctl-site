@@ -101,7 +101,6 @@ jobs:
   Deploying-To-CTL:
     runs-on: ubuntu-latest
     steps:
-	# - run: echo "💡 The GitHub Action SCP from marketplace works."
     - name: Copy via ssh
         uses: garygrossgarten/github-action-scp@v0.8.0
 		with:
