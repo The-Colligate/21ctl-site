@@ -1,9 +1,10 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/about-us": "pages/about-us.html",
   "/api/hello": "pages/api/hello.js",
   "/automation": "pages/automation.html",
+  "/about-us": "pages/about-us.html",
   "/communication": "pages/communication.html",
   "/dark": "pages/dark.html",
   "/digital-infrastructure": "pages/digital-infrastructure.html",
@@ -16,8 +17,8 @@
   "/light/communication": "pages/light/communication.html",
   "/light/digital-infrastructure": "pages/light/digital-infrastructure.html",
   "/light/digital": "pages/light/digital.html",
-  "/light": "pages/light.html",
   "/light/power": "pages/light/power.html",
+  "/light": "pages/light.html",
   "/light/security": "pages/light/security.html",
   "/people": "pages/people.html",
   "/platform": "pages/platform.html",
@@ -26,6 +27,5 @@
   "/security": "pages/security.html",
   "/support-centers": "pages/support-centers.html",
   "/training-pillars": "pages/training-pillars.html",
-  "/_error": "pages/_error.js",
   "/404": "pages/404.html"
 }
