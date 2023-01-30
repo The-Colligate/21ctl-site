@@ -728,7 +728,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Trainee',
-            link: '/training-pillars',
+            link: '/admission',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             
           },
