@@ -67,7 +67,10 @@ useEffect(() => {
                   Stay protected in the digital world with our cutting-edge cybersecurity solutions
                 </p>
                 <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
+                  <a href="mailto:commercial@21ctl.com">
                   Reach Us
+                  </a>
+                
                 </button>
               </motion.div>
               <motion.div
@@ -95,7 +98,7 @@ useEffect(() => {
                   <p className="text-primary-orange text-4xl font-semibold">
                     <CountUp
                       start={0}
-                      end={200}
+                      end={1000}
                       duration={2.75}
                       prefix=""
                       suffix="+"
@@ -207,7 +210,9 @@ One of the key services offered by us is threat management, which involves ident
 One of the key services offered by the company is Secure Access Service Edge (SASE), which combines network security functions like firewall, VPN, and zero trust network access into a single, cloud-native platform. This allows businesses to secure their networks and remote users with a unified solution. Additionally, the company offers managed firewall services, which involves managing and monitoring the organization{"'"}s firewall to ensure that it is configured correctly and is able to detect and prevent cyber threats. The managed firewall service can be provided for various firewall solutions such as Next-Generation Firewall (NGFW), Stateful Firewall, and Application Firewall. The company also provides regular updates and patches to ensure that the firewall is up-to-date with the latest security features and threat intelligence.
                 </p>
                 <button className="bg-primary-orange w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
+                <a href="mailto:commercial@21ctl.com">
                   Reach Us
+                  </a>
                 </button>    </div>
               <div className='w-[40%]'>
                 <img
