@@ -31,9 +31,7 @@ COPY . /app
 
 RUN npm run build
 
-COPY ../next /app
-
-CMD ["npm", "run", "dev"]
+CMD ["ls", "-la"]
 
 # -----
 
