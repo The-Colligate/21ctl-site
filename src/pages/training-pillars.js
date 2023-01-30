@@ -6,6 +6,10 @@ import WorkingWoman from '/public/logo/working-female.png';
 import Instructor from '/public/logo/instructor.png';
 import Laptop from '/public/logo/laptop.png';
 import Pillar from '/public/logo/pillars.png';
+import Didactics from '/public/logo/didactics.png';
+import QualityAssurance from '/public/logo/quality-assurance.png';
+
+
 
 const Pillars = () => {
   return (
