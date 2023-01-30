@@ -591,6 +591,7 @@ export function LightNavbar({ menuProp }) {
                 href="https://academy-admission-21ctl.koyeb.app/"
                 target="_blank"
                 rel="noreferrer"
+                className='block dark:hidden tablet:!hidden'
               >
                 <button className=" border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6">
                   Login
@@ -600,6 +601,7 @@ export function LightNavbar({ menuProp }) {
                 href="https://21ctl-academy-application.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
+                className='block dark:hidden tablet:!hidden'
               >
                 <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
                   Apply now
