@@ -23,8 +23,6 @@ WORKDIR /app
 
 COPY package*.json /app
 
-RUN ls -la
-
 RUN npm i
 
 EXPOSE 3000
@@ -33,13 +31,9 @@ COPY . /app
 
 RUN npm run build
 
-RUN cd ..
-
 RUN ls -la
 
-COPY .next /app
-
-CMD ["ls", "-la"]
+CMD ["npm", "run", "start"]
 
 # -----
 
