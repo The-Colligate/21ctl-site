@@ -103,7 +103,7 @@ export function DigitalNavbar({ menuProp }) {
                           className="mt-5 dark:text-white"
                         >
                           <div className="flex hover:text-primary-orange">
-                            <Image
+                            <img
                               height={20}
                               width={20}
                               src={`${sublinks.icon}`}
@@ -174,7 +174,7 @@ export function DigitalNavbar({ menuProp }) {
                         <div key={sublinks.name} className="mt-3">
                           <div className="flex">
                             {' '}
-                            <Image
+                            <img
                               height={20}
                               width={20}
                               src={`${sublinks.icon}`}
@@ -349,7 +349,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
                     {link.subLinks.map((sublinks) => (
                       <div className="flex my-3" key={sublinks.name}>
                         {' '}
-                        <Image
+                        <img
                           height={20}
                           width={20}
                           src={`${sublinks.icon}`}

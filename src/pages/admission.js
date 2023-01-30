@@ -80,7 +80,7 @@ const Academy = () => {
                 initial="hidden"
                 className="flex justify-end w-full flex-1 "
               >
-                <Image
+                <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675073326/21ctl/Group_56023_d43azv.svg"
                   width={459}
                   height={450}

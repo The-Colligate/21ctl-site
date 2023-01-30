@@ -83,7 +83,7 @@ const Academy = () => {
                 initial="hidden"
                 className="flex-1"
               >
-                <Image
+                <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/logo/student_qg1xrf.png"
                   width={459}
                   height={450}
@@ -308,7 +308,7 @@ const Academy = () => {
                     className="flex items-center sm:justify-center justify-start"
                   >
                     <div key={course} className="pr-5 w-[100px] h-[99px]">
-                      <Image
+                      <img
                         src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/logo/courses_z4srsc.svg"
                         // src="/logo/courses.png"
                         className=" w-[100px] h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"

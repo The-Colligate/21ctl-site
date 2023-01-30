@@ -51,7 +51,7 @@ const Digital = () => {
               variants={rightTansitionVarient}
               animate="visible"
               initial="hidden" >
-              <Image
+              <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/hero-image_abp6dp.png"
                 width={650}
                 height={650}
@@ -206,7 +206,7 @@ const Digital = () => {
                     Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                   </p>
                 </div>
-                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/data-centers/ikeja-center_ahvecs.png" className="inline-block w-full fit"  width={100} height={100} />
+                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/data-centers/ikeja-center_ahvecs.png" className="inline-block w-full fit"  width={100} height={100} />
               </div>
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
@@ -218,7 +218,7 @@ const Digital = () => {
                     Our six-story data center in Africa is innovative and equipped with a 10MW Turbine system, providing ample power and space for clients to grow.
                   </p>
                 </div>
-                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058121/21ctl/data-centers/lekki-center_ctedxo.png" className="inline-block w-full h-fit"  width={100} height={100} />
+                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058121/21ctl/data-centers/lekki-center_ctedxo.png" className="inline-block w-full h-fit"  width={100} height={100} />
               </div>
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
@@ -230,7 +230,7 @@ const Digital = () => {
                     Our Apapa data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
-                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/data-centers/apapa-center_mmq3so.png" className="inline-block w-full h-fit"  width={100} height={100} />
+                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/data-centers/apapa-center_mmq3so.png" className="inline-block w-full h-fit"  width={100} height={100} />
               </div>
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
@@ -242,7 +242,7 @@ const Digital = () => {
                     Our Saka-Tinubu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
-                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/data-centers/sakatinubu_v5tjln.jpg" className="inline-block w-full h-fit"  width={100} height={100} />
+                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/data-centers/sakatinubu_v5tjln.jpg" className="inline-block w-full h-fit"  width={100} height={100} />
               </div>
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
@@ -254,7 +254,7 @@ const Digital = () => {
                     Our Alanamu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
-                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058118/21ctl/data-centers/alanamu_ldhtn9.png" width={100} height={100} className="inline-block w-full h-fit rounded-br-2xl rounded-bl-2xl" />
+                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058118/21ctl/data-centers/alanamu_ldhtn9.png" width={100} height={100} className="inline-block w-full h-fit rounded-br-2xl rounded-bl-2xl" />
               </div>
 
             </div>

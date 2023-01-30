@@ -74,7 +74,7 @@ useEffect(() => {
                 variants={rightTansitionVarient}
                 animate="visible"
                 initial="hidden" className='w-[100%]'>
-                <Image
+                <img
                   src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058154/21ctl/logo/security_uitcej.svg'
                   width={2000}
                   height={2000}
@@ -222,7 +222,7 @@ One of the key services offered by the company is Secure Access Service Edge (SA
           <section className="px-20 mt-20 vision-mission-section tablet:px-0">
             <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col tablet:flex-col-reverse">
             <div className="flex items-center justify-start w-[50%] tablet:w-full">
-                <Image
+                <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/ddos-protection_bsxw5k.png"
                   className=""
                   height={581}
@@ -271,7 +271,7 @@ One of the key services offered by the company is training in threat management,
               </div>
 
               <div className="flex items-center justify-end w-[50%] tablet:w-full">
-                <Image
+                <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058155/21ctl/logo/security_operations_r2jwsl.svg"
                   className=""
                   height={581}

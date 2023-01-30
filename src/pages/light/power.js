@@ -45,7 +45,7 @@ const Power = () => {
               animate="visible"
               initial="hidden"
                className="">
-                <Image
+                <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/logo/Power_m6awqs.png"
                   width={800}
                   height={800}
