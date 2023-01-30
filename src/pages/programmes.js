@@ -28,9 +28,10 @@ const Programmes = () => {
           <section>
             <div className="mt-[20vh] flex flex-col items-center">
               <h2 className="text-primary-orange text-4xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl"> Browse Courses</h2>
-              <input type="text" value={searchValue} onChange={(e) => updateSearchValue(e.target.value)} className="w-2/3 border border-black p-3" />
-              <Button>Search</Button>
-
+              <div className="flex w-4/5 justify-center">
+                <input type="text" value={searchValue} onChange={(e) => updateSearchValue(e.target.value)} className="w-2/3 border border-black p-3" />
+                <button className="p-3 bg-primary-orange text-white">Search</button>
+              </div>
               <div className="grid gap-10 grid-cols-3 largeTablet:grid-cols-2 tablet:grid-cols-2 mt-10 phone:grid-cols-1">
                 {courses
                   .filter((course) => course.toLowerCase().includes(searchValue.toLowerCase()))
