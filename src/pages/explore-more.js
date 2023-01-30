@@ -86,7 +86,7 @@ const ExploreMore = () => {
                         </h2>
                         <div className="values_grid m-auto ">
                             <div className="flex justify-center items-center tablet:my-5">
-                                <Image
+                                <img
                                     src="./icons/innovation.svg"
                                     className=" w-50 pr-2 "
                                     height={50}
@@ -95,7 +95,7 @@ const ExploreMore = () => {
                                 <p>Innovation</p>
                             </div>
                             <div className="flex justify-center items-center">
-                                <Image
+                                <img
                                     src="./icons/partnership.svg"
                                     className=" w-50 pr-2"
                                     height={50}
@@ -104,7 +104,7 @@ const ExploreMore = () => {
                                 <p>Partnership</p>
                             </div>
                             <div className="flex justify-center items-center tablet:my-5">
-                                <Image
+                                <img
                                     src="./icons/integrity.svg"
                                     className=" w-50 pr-2"
                                     height={50}
@@ -113,7 +113,7 @@ const ExploreMore = () => {
                                 <p>Integrity</p>
                             </div>
                             <div className="flex justify-center items-center">
-                                <Image
+                                <img
                                     src="./icons/inspiring.svg"
                                     className=" w-50 pr-2"
                                     height={50}
@@ -122,7 +122,7 @@ const ExploreMore = () => {
                                 <p>Inspiring</p>
                             </div>
                             <div className="flex justify-center items-center tablet:my-5 sm:ml-0 ml-5">
-                                <Image
+                                <img
                                     src="./icons/commitment.svg"
                                     className=" w-50 pr-2"
                                     height={50}
@@ -158,7 +158,7 @@ const ExploreMore = () => {
                             </div>
 
                             <div className="flex items-center justify-end w-[50%] tablet:w-full">
-                                <Image
+                                <img
                                     src="/logo/vision-mission.png"
                                     className=""
                                     height={734}

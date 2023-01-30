@@ -23,7 +23,7 @@ const Communication = () => {
 
           {/* <section className="main-page flex sm:px-36  my-16 items-center h-1/3 justify-between space-x-16 tablet:flex-col-reverse tablet:pt-10  tablet:space-x-0">
             <div className="flex justify-start items-start">
-              <Image
+              <img
                 src={Satalite}
                 width={743}
                 className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"

@@ -67,14 +67,17 @@ useEffect(() => {
                   Stay protected in the digital world with our cutting-edge cybersecurity solutions
                 </p>
                 <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
+                  <a href="mailto:commercial@21ctl.com">
                   Reach Us
+                  </a>
+                
                 </button>
               </motion.div>
               <motion.div
                 variants={rightTansitionVarient}
                 animate="visible"
                 initial="hidden" className='w-[100%]'>
-                <Image
+                <img
                   src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058154/21ctl/logo/security_uitcej.svg'
                   width={2000}
                   height={2000}
@@ -95,7 +98,7 @@ useEffect(() => {
                   <p className="text-primary-orange text-4xl font-semibold">
                     <CountUp
                       start={0}
-                      end={200}
+                      end={1000}
                       duration={2.75}
                       prefix=""
                       suffix="+"
@@ -148,9 +151,9 @@ useEffect(() => {
           </section>
 
 
-          <section className="sm:mb-0 mb-16 py-20 mx-20 tablet:mx-0">
+          <section className="sm:mb-0 mb-16 py-20 mx-20 tablet:mx-10">
             <div className="flex items-center space-x-10 space-y-0  tablet:flex-col-reverse">
-              <div className="w-[40%]  tablet:mt-10  tablet:mx-10">
+              <div className="w-[40%]  tablet:mt-10  tablet:mx-10 tablet:w-full">
                 <motion.img variants={leftTransitionVarient}
                 ref={ref}
                 animate="visible"
@@ -170,7 +173,7 @@ useEffect(() => {
                 animate="visible"
                 initial="hidden"
                 // animate={control}
-                className="flex-1 mb-5 w-[60%]">
+                className="flex-1 mb-5 w-[60%] tablet:w-full">
                 <h1
 
 
@@ -207,9 +210,11 @@ One of the key services offered by us is threat management, which involves ident
 One of the key services offered by the company is Secure Access Service Edge (SASE), which combines network security functions like firewall, VPN, and zero trust network access into a single, cloud-native platform. This allows businesses to secure their networks and remote users with a unified solution. Additionally, the company offers managed firewall services, which involves managing and monitoring the organization{"'"}s firewall to ensure that it is configured correctly and is able to detect and prevent cyber threats. The managed firewall service can be provided for various firewall solutions such as Next-Generation Firewall (NGFW), Stateful Firewall, and Application Firewall. The company also provides regular updates and patches to ensure that the firewall is up-to-date with the latest security features and threat intelligence.
                 </p>
                 <button className="bg-primary-orange w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
+                <a href="mailto:commercial@21ctl.com">
                   Reach Us
+                  </a>
                 </button>    </div>
-              <div className='w-[40%]'>
+              <div className='w-[40%] tablet:w-full tablet:px-10'>
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058153/21ctl/logo/threat-protection_usjnjk.png"
                   className='rounded-2xl'
@@ -220,9 +225,9 @@ One of the key services offered by the company is Secure Access Service Edge (SA
           </section>
 
           <section className="px-20 mt-20 vision-mission-section tablet:px-0">
-            <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col">
+            <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col tablet:flex-col-reverse">
             <div className="flex items-center justify-start w-[50%] tablet:w-full">
-                <Image
+                <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/ddos-protection_bsxw5k.png"
                   className=""
                   height={581}
@@ -251,7 +256,7 @@ One of the key services offered by the company is training in threat management,
 
               
             </div>
-            <div className=" mr-0 mt-20 flex justify-between items-center  tablet:m-10  tablet:flex-col-reverse">
+            <div className=" mr-0 mt-20 flex justify-between items-center  tablet:m-10  tablet:flex-col">
               
               <div className="w-[40%] tablet:w-full">
 
@@ -271,7 +276,7 @@ One of the key services offered by the company is training in threat management,
               </div>
 
               <div className="flex items-center justify-end w-[50%] tablet:w-full">
-                <Image
+                <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058155/21ctl/logo/security_operations_r2jwsl.svg"
                   className=""
                   height={581}
@@ -285,7 +290,7 @@ One of the key services offered by the company is training in threat management,
             
               <div className="w-[50%] tablet:w-full">
 
-                <div className="tablet:my-5 mb-4 w-4/5">
+                <div className="tablet:my-5 mb-4 w-4/5 tablet:w-full">
                   <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2 ">
                     <span className="text-primary-orange">SmartBackup </span>
 

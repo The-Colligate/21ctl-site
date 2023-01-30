@@ -17,14 +17,15 @@ const src1 =
 
 const Academy = () => {
   const courses = [
-    "Electrical design and installation",
-    "Power management and distribution",
-    "Building management systems and energy efficiency",
-    "Automation and control systems",
-    "Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs",
-    "Cybersecurity for industrial systems",
-    "Industry-specific applications, such as data centers (renewable energy, and critical power systems)",
-    "Safety and compliance",
+    'Electrical design and installation',
+    'Power management and distribution',
+    'Building management systems and energy efficiency',
+    'Automation and control systems',
+    'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
+    'Cybersecurity for industrial systems',
+    'Industry-specific applications, such as data centers (renewable energy, and critical power systems)',
+    'Safety and compliance',
+    'Data Center managment',
     // 'Database',
   ];
   const [video1, setVideo1] = useState(false);
@@ -86,7 +87,7 @@ const Academy = () => {
                 initial="hidden"
                 className="flex-1"
               >
-                <Image
+                <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/logo/student_qg1xrf.png"
                   width={459}
                   height={450}
@@ -143,16 +144,11 @@ const Academy = () => {
             </div>
            
           </section> */}
-          <div class="relative w-full flex flex-col justify-center items-center">
-            <img
-              src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg"
-              className="flex justify-center items-center"
-            />
-            <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl">
-              we provide world-class services to the top 1000 companies in
-              Nigeria and key residential areas.
-            </h1>
-          </div>
+          <div class="relative w-full flex flex-col justify-center items-center py-28">
+        <img src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg' className='flex justify-center items-center' />
+        <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl dark:text-white">
+        we provide world-class services to the top 1000 companies in Nigeria and key residential areas.</h1>
+    </div>
 
           {/* <section className='flex flex-col justify-center items-center w-full'>
             <div className='font-bold sm:text-5xl text-3xl text-center'>
@@ -228,11 +224,8 @@ const Academy = () => {
                   className="font-extrabold"
                 />
                 <hr />
-                <img
-                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/people-33_rbql12.svg"
-                  className="w-2/4"
-                />
-                <p className="p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
+                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/people-33_rbql12.svg" className="w-2/4" />
+                <p className="p-5 mt-2 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
                   Labour Force in Nigeria
                 </p>
               </div>
@@ -246,11 +239,8 @@ const Academy = () => {
                   className="font-extrabold"
                 />
                 <hr />
-                <img
-                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/people-41_s7olts.svg"
-                  className="w-2/4"
-                />
-                <p className="p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
+                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/people-41_s7olts.svg" className="w-2/4" />
+                <p className="p-5 mt-2 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
                   Unemployed Labour Force in Nigeria
                 </p>
               </div>
@@ -268,8 +258,8 @@ const Academy = () => {
                 <p className="p-5 bg-primary-orange text-white text-[18px] w-[400px] flex justify-center items-center">
                   Targeted Number of Trainees 2033{" "}
                 </p>
-                <p className="p-5 bg-white text-black text-[18px] w-[400px] flex justify-center items-center">
-                  10,000,000{" "}
+                <p className="p-5 mt-2 bg-white text-black text-[18px] w-[400px] flex justify-center items-center">
+                  10,000,000{' '}
                 </p>
               </div>
             </div>
@@ -306,12 +296,12 @@ const Academy = () => {
           </section>
 
           <section className="sm:px-28 px-8 mt-28">
-            <h1 className="text-primary-orange font-bold sm:text-5xl text-3xl">
-              Our Courses
+            <h1 className="text-primary-orange font-bold sm:text-4xl text-2xl">
+            Explore our top rate course modules
             </h1>
             <div className="flex sm:flex-row flex-col justify-between my-3 ">
               <p className="text-xl">
-                Explore our top-rated courses in various subjects.
+                Each module contains various topics
               </p>
               <p className="text-primary-orange">{/* See more */}</p>
             </div>
@@ -327,7 +317,7 @@ const Academy = () => {
                     className="flex items-center sm:justify-center justify-start"
                   >
                     <div key={course} className="pr-5 w-[100px] h-[99px]">
-                      <Image
+                      <img
                         src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/logo/courses_z4srsc.svg"
                         // src="/logo/courses.png"
                         className=" w-[100px] h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"

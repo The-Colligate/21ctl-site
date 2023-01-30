@@ -39,7 +39,7 @@ const Programmes = () => {
                     <div key={course} className="bg-white sm:w-[350px] w-full px-2 py-3 h-[150px] rounded-xl">
                       <div key={course} className="flex items-center sm:justify-center justify-start">
                         <div key={course} className="pr-5 w-[100px] h-[99px]">
-                          <Image
+                          <img
                             src="/logo/courses.svg"
                             // src="/logo/courses.png"
                             className=" w-[100px] h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"

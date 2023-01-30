@@ -1,12 +1,19 @@
-import { CaretDown } from "@icons/index";
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
-import { NavClose } from "@icons/close";
-import Image from "next/image";
-import Link from "next/link";
-import { Popover } from "evergreen-ui";
-import { useRouter } from "next/router";
-import { platformNavLinks, infraNavLinks, mainLinks, powerNavLinks, peopleNavLinks, securityNavLinks } from "../constants/NavbarLinks";
+import { CaretDown } from '@icons/index';
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import { NavClose } from '@icons/close';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Popover } from 'evergreen-ui';
+import { useRouter } from 'next/router';
+import {
+  platformNavLinks,
+  infraNavLinks,
+  mainLinks,
+  powerNavLinks,
+  peopleNavLinks,
+  securityNavLinks,
+} from '../constants/NavbarLinks';
 
 export function LightNavbar({ menuProp }) {
   const router = useRouter();
@@ -25,30 +32,39 @@ export function LightNavbar({ menuProp }) {
   // });
   // });
 
+  const excluded = [
+    '/people',
+    '/programmes',
+    '/training-pillars',
+    '/admission',
+  ];
+
   const navItems =
-    router.pathname === "/digital-platform"
+    router.pathname === '/digital-platform'
       ? platformNavLinks
-      : router.pathname === "/digital-infrastructure"
+      : router.pathname === '/digital-infrastructure'
       ? infraNavLinks
-      : router.pathname === "/"
+      : router.pathname === '/'
       ? mainLinks
-      : router.pathname === "/power"
+      : router.pathname === '/power'
       ? powerNavLinks
-      : router.pathname === "/people"
+      : router.pathname === '/people'
       ? peopleNavLinks
-      : router.pathname === "/security"
+      : router.pathname === '/security'
       ? securityNavLinks
-      : router.pathname === "/platform"
+      : router.pathname === '/platform'
       ? platformNavLinks
-      : router.pathname === "/communication"
+      : router.pathname === '/communication'
       ? platformNavLinks
-      : router.pathname === "/automation"
+      : router.pathname === '/automation'
       ? platformNavLinks
-      : router.pathname === "/identity"
+      : router.pathname === '/identity'
       ? platformNavLinks
-      : router.pathname === "/training-pillars"
+      : router.pathname === '/training-pillars'
       ? peopleNavLinks
-      : router.pathname === "/programmes"
+      : router.pathname === '/programmes'
+      ? peopleNavLinks
+      : excluded.includes(router.pathname)
       ? peopleNavLinks
       : mainLinks;
   // console.log(`${JSON.stringify (peopleNavLinks[0].navLinks[1].subLinks)}`);
@@ -57,9 +73,30 @@ export function LightNavbar({ menuProp }) {
   return (
     <>
       <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
-        {theme !== "dark" ? (
-          <Link href="/">
-            {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />}
+        {theme !== 'dark' ? (
+          <Link
+            href={
+              router.pathname === '/'
+                ? '/'
+                : excluded.includes(router.pathname)
+                ? '/people'
+                : '/'
+            }
+          >
+            {/* {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />} */}
+            {router.pathname === '/' ? (
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+            ) : excluded.includes(router.pathname) ? (
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
+                className="dark:hidden w-36 tablet:w-14"
+              />
+            ) : (
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
+                className="dark:hidden w-16 tablet:w-14"
+              />
+            )}
             {/* <img
               src={
                 router.pathname === '/'
@@ -73,7 +110,20 @@ export function LightNavbar({ menuProp }) {
           </Link>
         ) : (
           <Link href="/" className="dark:block hidden">
-            <img src={router.pathname === "/" ? "/light-logo_dark.svg" : router.pathname === "/people" ? "/digital-academy-logo-white.svg" : router.pathname === "/programmes" ? "/digital-academy-logo-white.svg" : router.pathname === "/training-pillars" ? "/digital-academy-logo-white.svg" : "/light-logo_dark_limited.svg"} className=" w-16 tablet:w-14" />
+            <img
+              src={
+                router.pathname === '/'
+                  ? '/light-logo_dark.svg'
+                  : router.pathname === '/people'
+                  ? '/digital-academy-logo-white.svg'
+                  : router.pathname === '/programmes'
+                  ? '/digital-academy-logo-white.svg'
+                  : router.pathname === '/training-pillars'
+                  ? '/digital-academy-logo-white.svg'
+                  : '/light-logo_dark_limited.svg'
+              }
+              className=" w-16 tablet:w-14"
+            />
           </Link>
         )}
 
@@ -82,74 +132,146 @@ export function LightNavbar({ menuProp }) {
             <Popover
               key={link.name}
               statelessProps={{
-                className: "!p-0 !min-w-[170px] !rounded-lg !bg-transparent",
+                className: '!p-0 !min-w-[170px] !rounded-lg !bg-transparent',
               }}
               // position={Position.BOTTOM_LEFT}
 
               triggerType="menu"
-              isShown={displayPopup[0] && displayPopup[1] === index && link.subLinks.length !== 0}
+              isShown={
+                displayPopup[0] &&
+                displayPopup[1] === index &&
+                link.subLinks.length !== 0
+              }
               content={
-                <div className="w-[100vw] pl-10 flex " onMouseOver={(e) => setDisplayPopup([true, index])} onMouseOut={(e) => setDisplayPopup([true, index])}>
+                <div
+                  className="w-[100vw] pl-10 flex "
+                  onMouseOver={(e) => setDisplayPopup([true, index])}
+                  onMouseOut={(e) => setDisplayPopup([true, index])}
+                >
                   <div class="w-full pl-5 py-5 whitespace-wrap rounded bg-white overflow-x-hidden  max-h-[82vh] dark:bg-black dark:bg-opacity-90">
-                    <h2 className="text-darkShade">{router.pathname === "/people" ? link?.head : link.name.toUpperCase()}</h2>
+                    <h2 className="text-darkShade">
+                      {router.pathname === '/people'
+                        ? link?.head
+                        : link.name.toUpperCase()}
+                    </h2>
                     <hr />
-                    <div className={`grid ${link.subLinks.length > 7 ? "grid-cols-4" : "grid-cols-3"}  items-start flex-nowrap mr-5 w-full tablet:grid-cols-2`}>
+                    <div
+                      className={`grid ${
+                        link.subLinks.length > 7 ? 'grid-cols-4' : 'grid-cols-3'
+                      }  items-start flex-nowrap mr-5 w-full tablet:grid-cols-2`}
+                    >
                       {link.subLinks.map((sublinks) => (
-                        <div key={sublinks.name} className="mt-5 dark:text-white">
+                        <div
+                          key={sublinks.name}
+                          className="mt-5 dark:text-white"
+                        >
                           <div className="flex hover:text-primary-orange ">
-                            <Image height={20} width={30} src={`${sublinks.icon}`} className="h-[20px] w-[20px]" />
+                            <Image
+                              height={20}
+                              width={30}
+                              src={`${sublinks.icon}`}
+                              className="h-[20px] w-[20px]"
+                            />
 
-                            <Link href={`${sublinks.link}`} className="ml-4 space-y-2 list-disc text-[20px] break-words  font-semibold dark:text-white">
-                              {" "}
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-4 space-y-2 list-disc text-[20px] break-words  font-semibold dark:text-white"
+                            >
+                              {' '}
                               {sublinks.name}
                             </Link>
                           </div>
 
                           <div className="flex flex-col">
-                            <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange max-w-sm">
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange max-w-sm"
+                            >
                               <span className="">{sublinks?.text} </span>
                             </Link>
-                            <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                              {sublinks?.text1}{" "}
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text1}{' '}
                             </Link>
-                            <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                              {sublinks?.text2}{" "}
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text2}{' '}
                             </Link>
-                            <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                              {sublinks?.text3}{" "}
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text3}{' '}
                             </Link>
-                            <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                              {sublinks?.text4}{" "}
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text4}{' '}
                             </Link>
-                            <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                              {sublinks?.text5}{" "}
+                            <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text5}{' '}
                             </Link>
-                            {(sublinks?.text6 !== null && router.pathname === "/people") || router.pathname === "/programmes" || router.pathname === "/training-pillars" ? (
-                              <Link href="/programmes" className="ml-9 space-y-2 text-[15px] text-primary-orange ">
-                                See more{" "}
+                            {(sublinks?.text6 !== null &&
+                              router.pathname === '/people') ||
+                            router.pathname === '/programmes' ||
+                            router.pathname === '/training-pillars' ? (
+                              <Link
+                                href="/programmes"
+                                className="ml-9 space-y-2 text-[15px] text-primary-orange "
+                              >
+                                See more{' '}
                               </Link>
                             ) : (
                               <>
-                                <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                                  {sublinks?.text6}{" "}
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                >
+                                  {sublinks?.text6}{' '}
                                 </Link>
-                                <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                                  {sublinks?.text7}{" "}
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                >
+                                  {sublinks?.text7}{' '}
                                 </Link>
-                                <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                                  {sublinks?.text8}{" "}
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                >
+                                  {sublinks?.text8}{' '}
                                 </Link>
-                                <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                                  {sublinks?.text9}{" "}
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                >
+                                  {sublinks?.text9}{' '}
                                 </Link>
-                                <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                                  {sublinks?.text10}{" "}
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                >
+                                  {sublinks?.text10}{' '}
                                 </Link>
-                                <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                                  {sublinks?.text11}{" "}
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                >
+                                  {sublinks?.text11}{' '}
                                 </Link>
-                                <Link href={`${sublinks.link}`} className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange">
-                                  {sublinks?.text12}{" "}
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                >
+                                  {sublinks?.text12}{' '}
                                 </Link>
                               </>
                             )}
@@ -195,9 +317,14 @@ export function LightNavbar({ menuProp }) {
                   </div>
                       */}
                 </div>
-              }>
+              }
+            >
               <div
-                className={`${displayPopup[0] && displayPopup[1] === index ? "text-primary-orange" : "dark:text-white text-black"} dark:text-white text-black relative  hover:text-primary-orange`}
+                className={`${
+                  displayPopup[0] && displayPopup[1] === index
+                    ? 'text-primary-orange'
+                    : 'dark:text-white text-black'
+                } dark:text-white text-black relative  hover:text-primary-orange`}
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}
@@ -209,48 +336,107 @@ export function LightNavbar({ menuProp }) {
                   rel="noreferrer"
                   className="flex items-center"
                   onClick={() => {
-                    console.log(`${displayPopup[1]} === ${index} ? ${displayPopup[1] === index}`);
-                    setDisplayPopup([displayPopup[1] === index ? !displayPopup[0] : true, index]);
-                  }}>
-                  {link.name} {link.subLinks.length > 0 ? <> {displayPopup[0] && displayPopup[1] === index ? <CaretDown className="ml-1 -rotate-180" /> : <CaretDown className="ml-1" />}</> : <></>}
+                    console.log(
+                      `${displayPopup[1]} === ${index} ? ${
+                        displayPopup[1] === index
+                      }`
+                    );
+                    setDisplayPopup([
+                      displayPopup[1] === index ? !displayPopup[0] : true,
+                      index,
+                    ]);
+                  }}
+                >
+                  {link.name}{' '}
+                  {link.subLinks.length > 0 ? (
+                    <>
+                      {' '}
+                      {displayPopup[0] && displayPopup[1] === index ? (
+                        <CaretDown className="ml-1 -rotate-180" />
+                      ) : (
+                        <CaretDown className="ml-1" />
+                      )}
+                    </>
+                  ) : (
+                    <></>
+                  )}
                 </a>
               </div>
             </Popover>
           ))}
           {navItems[1]?.additionalLinks?.map((link, index) => (
-            <li key={`${link} ${index}`} className="relative hover:text-primary-orange">
-              <a href={`${link.link}`} target="_blank" rel="noreferrer" className="flex items-center">
+            <li
+              key={`${link} ${index}`}
+              className="relative hover:text-primary-orange"
+            >
+              <a
+                href={`${link.link}`}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center"
+              >
                 {link.name}
               </a>
             </li>
           ))}
         </ul>
 
-        <div className="flex space-x-4">
-          {router.pathname === "/people" ? (
+        <div className="flex items-center space-x-4">
+          {excluded.includes(router.pathname) ? (
             <>
-              <a href="https://digitalexpertacademy.herokuapp.com/" target="_blank" rel="noreferrer" className="block dark:hidden tablet:!hidden">
-                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">Apply now</button>
+              <a
+                href="https://digitalexpertsacademy.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="block dark:hidden tablet:!hidden"
+              >
+                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
+                  Apply now
+                </button>
               </a>
-              <a href="https://academy-admission-21ctl.koyeb.app/" target="_blank" rel="noreferrer" className="block dark:hidden tablet:!hidden">
-                <button className=" border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6">Login</button>
+              <a
+                href="https://academy-admission-21ctl.koyeb.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="block dark:hidden tablet:!hidden"
+              >
+                <button className=" border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6">
+                  Login
+                </button>
               </a>
             </>
           ) : (
-            ""
+            ''
           )}
-          <button className="p-3 px-[14px] ml-8 rounded-full bg-input block dark:hidden tablet:!hidden" onClick={() => setTheme("dark")} title="Switch to dark mode">
+          <button
+            className="p-3 px-[14px] ml-8 rounded-full bg-input block dark:hidden tablet:!hidden"
+            onClick={() => setTheme('dark')}
+            title="Switch to dark mode"
+          >
             <Moon />
           </button>
-          <button className="p-3 px-[14px] ml-8 rounded-full bg-input hidden dark:block tablet:!hidden" onClick={() => setTheme("light")} title="Switch to light mode">
+          <button
+            className="p-3 px-[14px] ml-8 rounded-full bg-input hidden dark:block tablet:!hidden"
+            onClick={() => setTheme('light')}
+            title="Switch to light mode"
+          >
             <Sun />
           </button>
-          <button className="hidden largeTablet:block" onClick={() => setIsOpen(true)}>
+          <button
+            className="hidden largeTablet:block"
+            onClick={() => setIsOpen(true)}
+          >
             <Menu />
           </button>
         </div>
       </div>
-      <MobileNavbar theme={theme} setTheme={setTheme} isOpen={isOpen} close={() => setIsOpen(false)} navItems={navItems[0]} />
+      <MobileNavbar
+        theme={theme}
+        setTheme={setTheme}
+        isOpen={isOpen}
+        close={() => setIsOpen(false)}
+        navItems={navItems[0]}
+      />
     </>
   );
 }
@@ -259,25 +445,36 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
   const [showExpanded, setShowExpanded] = useState([-1, false]);
 
   return (
-    <div className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? "translate-x-0" : ""} largeTablet:block dark:bg-[#1f1d1d]`}>
+    <div
+      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
+        isOpen ? 'translate-x-0' : ''
+      } largeTablet:block dark:bg-[#1f1d1d]`}
+    >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2 mb-3">
           {showExpanded[1] ? (
-            <button className="flex items-center" onClick={() => setShowExpanded(false)}>
+            <button
+              className="flex items-center"
+              onClick={() => setShowExpanded(false)}
+            >
               <CaretDown className="mr-2 rotate-90" />
               Back
             </button>
           ) : (
             <>
               <img src="/light-logo.svg" className="w-14 h-auto dark:hidden" />
-              <img src="/light-logo_dark.svg" className="w-14 h-auto dark:block hidden" />
+              <img
+                src="/light-logo_dark.svg"
+                className="w-14 h-auto dark:block hidden"
+              />
             </>
           )}
           <button
             onClick={() => {
               setShowExpanded([-1, false]);
               close();
-            }}>
+            }}
+          >
             <NavClose />
           </button>
         </div>
@@ -285,17 +482,26 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
           <div>
             {navItems.navLinks.map((link, index) => (
               <>
-                {" "}
+                {' '}
                 {showExpanded[0] === index ? (
                   <div key={link.name}>
-                    <h2 className="uppercase text-sm mt-5 opacity-50">{link.name}</h2>
+                    <h2 className="uppercase text-sm mt-5 opacity-50">
+                      {link.name}
+                    </h2>
 
                     {link.subLinks.map((sublinks) => (
                       <div className="flex my-3" key={sublinks.name}>
-                        {" "}
-                        <Image height={20} width={20} src={`${sublinks.icon}`} />{" "}
-                        <Link href={`${sublinks.link}`} className="ml-4 space-y-2 list-disc font-semibold ">
-                          {" "}
+                        {' '}
+                        <Image
+                          height={20}
+                          width={20}
+                          src={`${sublinks.icon}`}
+                        />{' '}
+                        <Link
+                          href={`${sublinks.link}`}
+                          className="ml-4 space-y-2 list-disc font-semibold "
+                        >
+                          {' '}
                           {sublinks.name}
                         </Link>
                       </div>
@@ -310,7 +516,10 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
         ) : (
           <ul className="space-y-5 mt-10 text-lg">
             {navItems.navLinks.map((link, index) => (
-              <li key={link.name} onClick={() => setShowExpanded([index, true])}>
+              <li
+                key={link.name}
+                onClick={() => setShowExpanded([index, true])}
+              >
                 <a className="flex items-center justify-between">
                   {link.name} <CaretDown className="-rotate-90" />
                 </a>
@@ -321,15 +530,25 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
             </li> */}
             <li>
               <Link href="/support-centers">
-                <span className="flex items-center justify-between">Support Centers</span>
+                <span className="flex items-center justify-between">
+                  Support Centers
+                </span>
               </Link>
             </li>
           </ul>
         )}
-        <button className="rounded-full fixed bottom-0 right-0 block dark:hidden" onClick={() => setTheme("dark")} title="Switch to dark mode">
+        <button
+          className="rounded-full fixed bottom-0 right-0 block dark:hidden"
+          onClick={() => setTheme('dark')}
+          title="Switch to dark mode"
+        >
           <Moon />
         </button>
-        <button className="rounded-full fixed bottom-0 right-0 hidden dark:block" onClick={() => setTheme("light")} title="Switch to light mode">
+        <button
+          className="rounded-full fixed bottom-0 right-0 hidden dark:block"
+          onClick={() => setTheme('light')}
+          title="Switch to light mode"
+        >
           <Sun />
         </button>
       </div>
@@ -418,21 +637,58 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
 // };
 
 const Menu = () => (
-  <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    width="58"
+    height="58"
+    viewBox="0 0 58 58"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g filter="url(#filter0_d_836_2806)">
       <circle cx="29" cy="29" r="20" fill="white" />
     </g>
-    <path d="M21.125 35.375H36.875M21.125 29.375H36.875M21.125 23.375H36.875" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path
+      d="M21.125 35.375H36.875M21.125 29.375H36.875M21.125 23.375H36.875"
+      stroke="black"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
     <defs>
-      <filter id="filter0_d_836_2806" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter
+        id="filter0_d_836_2806"
+        x="0"
+        y="0"
+        width="58"
+        height="58"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
         <feOffset />
         <feGaussianBlur stdDeviation="4.5" />
         <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0" />
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_836_2806" />
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_836_2806" result="shape" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_836_2806"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_836_2806"
+          result="shape"
+        />
       </filter>
     </defs>
   </svg>
@@ -440,21 +696,58 @@ const Menu = () => (
 
 export const Close = () => {
   return (
-    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="58"
+      height="58"
+      viewBox="0 0 58 58"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g filter="url(#filter0_d_764_2632)">
         <circle cx="29" cy="29" r="20" fill="white" />
       </g>
-      <path d="M23.7578 35.2431L29.0008 30.0001M34.2438 24.7571L28.9998 30.0001M28.9998 30.0001L23.7578 24.7571M29.0008 30.0001L34.2438 35.2431" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M23.7578 35.2431L29.0008 30.0001M34.2438 24.7571L28.9998 30.0001M28.9998 30.0001L23.7578 24.7571M29.0008 30.0001L34.2438 35.2431"
+        stroke="black"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
       <defs>
-        <filter id="filter0_d_764_2632" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <filter
+          id="filter0_d_764_2632"
+          x="0"
+          y="0"
+          width="58"
+          height="58"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
           <feOffset />
           <feGaussianBlur stdDeviation="4.5" />
           <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix type="matrix" values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0" />
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_764_2632" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_764_2632" result="shape" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_764_2632"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_764_2632"
+            result="shape"
+          />
         </filter>
       </defs>
     </svg>
@@ -462,7 +755,13 @@ export const Close = () => {
 };
 
 export const Moon = () => (
-  <svg width="58" height="58" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    width="58"
+    height="58"
+    viewBox="0 0 68 68"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g filter="url(#filter0_d_836_3143)">
       <circle cx="34" cy="34" r="25" fill="#3A2F2E" />
     </g>
@@ -471,22 +770,53 @@ export const Moon = () => (
       fill="white"
     />
     <defs>
-      <filter id="filter0_d_836_3143" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter
+        id="filter0_d_836_3143"
+        x="0"
+        y="0"
+        width="68"
+        height="68"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
         <feOffset />
         <feGaussianBlur stdDeviation="4.5" />
         <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0" />
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_836_3143" />
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_836_3143" result="shape" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_836_3143"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_836_3143"
+          result="shape"
+        />
       </filter>
     </defs>
   </svg>
 );
 
 export const Sun = () => (
-  <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    width="58"
+    height="58"
+    viewBox="0 0 58 58"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g filter="url(#filter0_d_836_3054)">
       <circle cx="29" cy="29" r="20" fill="white" />
     </g>
@@ -497,18 +827,48 @@ export const Sun = () => (
       />
     </g>
     <defs>
-      <filter id="filter0_d_836_3054" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter
+        id="filter0_d_836_3054"
+        x="0"
+        y="0"
+        width="58"
+        height="58"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
         <feOffset />
         <feGaussianBlur stdDeviation="4.5" />
         <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0" />
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_836_3054" />
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_836_3054" result="shape" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.964706 0 0 0 0 0.305882 0 0 0 0 0.121569 0 0 0 0.1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_836_3054"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_836_3054"
+          result="shape"
+        />
       </filter>
       <clipPath id="clip0_836_3054">
-        <rect width="24" height="24" fill="white" transform="translate(17 17)" />
+        <rect
+          width="24"
+          height="24"
+          fill="white"
+          transform="translate(17 17)"
+        />
       </clipPath>
     </defs>
   </svg>
