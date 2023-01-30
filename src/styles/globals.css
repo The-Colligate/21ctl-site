@@ -488,6 +488,20 @@ body {
   padding: 20px;
 }
 
+.customize-bg{
+  background: linear-gradient(95.81deg, rgba(61, 246, 31, 0.1) 1.88%, rgba(246, 78, 31, 0.2) 43.42%, #EA8146 110.77%);
+}
+
+.pillar-bg{
+background-color: #f1f0f3 
+}
+
+.myreact-player {
+  width: 940px !important;
+  height: 660px !important;
+  object-fit: cover !important;
+  z-index:99 !important;
+}
 
 
 @media only screen and (max-width: 400px) {
