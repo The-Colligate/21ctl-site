@@ -53,6 +53,8 @@ export function LightNavbar({ menuProp }) {
       ? platformNavLinks
       : router.pathname === '/identity'
       ? platformNavLinks
+      : router.pathname === '/training-pillars'
+      ? peopleNavLinks
       : mainLinks;
   // console.log(`${JSON.stringify (peopleNavLinks[0].navLinks[1].subLinks)}`);
   // console.log('pathname', router.pathname);
@@ -312,6 +314,11 @@ export function LightNavbar({ menuProp }) {
                 src="/digital-academy-logo-black.svg"
                 className="dark:hidden w-36 tablet:w-14"
               />
+            ) : router.pathname === '/training-pillars' ? (
+              <img
+                src="/digital-academy-logo-black.svg"
+                className="dark:hidden w-36 tablet:w-14"
+              />
             ) : (
               <img
                 src="/light-logo-limited.svg"
@@ -336,6 +343,8 @@ export function LightNavbar({ menuProp }) {
                 router.pathname === '/'
                   ? '/light-logo_dark.svg'
                   : router.pathname === '/people'
+                  ? '/digital-academy-logo-white.svg'
+                  : router.pathname === '/training-pillars'
                   ? '/digital-academy-logo-white.svg'
                   : '/light-logo_dark_limited.svg'
               }
@@ -591,7 +600,7 @@ export function LightNavbar({ menuProp }) {
                 href="https://academy-admission-21ctl.koyeb.app/"
                 target="_blank"
                 rel="noreferrer"
-                className='block dark:hidden tablet:!hidden'
+                className="block dark:hidden tablet:!hidden"
               >
                 <button className=" border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6">
                   Login
@@ -601,7 +610,7 @@ export function LightNavbar({ menuProp }) {
                 href="https://21ctl-academy-application.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
-                className='block dark:hidden tablet:!hidden'
+                className="block dark:hidden tablet:!hidden"
               >
                 <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
                   Apply now
