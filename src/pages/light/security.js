@@ -75,7 +75,7 @@ useEffect(() => {
                 animate="visible"
                 initial="hidden" className='w-[100%]'>
                 <Image
-                  src='/logo/security.svg'
+                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058154/21ctl/logo/security_uitcej.svg'
                   width={2000}
                   height={2000}
                   className=" tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
@@ -157,7 +157,7 @@ useEffect(() => {
                 // animate={control}
                 initial="hidden"
              
-                src="/logo/security operations.svg"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058155/21ctl/logo/security_operations_r2jwsl.svg"
                
                 height={650}
                 width={550}
@@ -211,7 +211,7 @@ One of the key services offered by the company is Secure Access Service Edge (SA
                 </button>    </div>
               <div className='w-[40%]'>
                 <img
-                  src="/logo/threat-protection.png"
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058153/21ctl/logo/threat-protection_usjnjk.png"
                   className='rounded-2xl'
                 />
               </div>
@@ -223,7 +223,7 @@ One of the key services offered by the company is Secure Access Service Edge (SA
             <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col">
             <div className="flex items-center justify-start w-[50%] tablet:w-full">
                 <Image
-                  src="/logo/ddos-protection.png"
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/ddos-protection_bsxw5k.png"
                   className=""
                   height={581}
                   width={444}
@@ -272,7 +272,7 @@ One of the key services offered by the company is training in threat management,
 
               <div className="flex items-center justify-end w-[50%] tablet:w-full">
                 <Image
-                  src="/logo/security operations.svg"
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058155/21ctl/logo/security_operations_r2jwsl.svg"
                   className=""
                   height={581}
                   width={444}
@@ -301,7 +301,7 @@ One of the key services offered by the company is training in threat management,
               </div>
               <div className="flex items-center justify-end w-[50%] tablet:w-full">
                 <img
-                  src="/logo/security-back-up.svg"
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058156/21ctl/logo/security-back-up_iyukbr.svg"
                   className="w-full"
                   // height={581}
                   // width={444}
