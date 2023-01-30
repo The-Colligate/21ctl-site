@@ -1,6 +1,11 @@
 import React from 'react'
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import Head from 'next/head';
+import WorkingMan from '/public/logo/Working-Man.png';
+import WorkingWoman from '/public/logo/working-female.png';
+import Instructor from '/public/logo/instructor.png';
+import Laptop from '/public/logo/laptop.png';
+
 
 const Pillars = () => {
   return (
