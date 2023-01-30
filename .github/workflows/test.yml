@@ -24,8 +24,8 @@ jobs:
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
         with:
-          local: ./
-          remote: /home/sam/public_html/build
+          local: ./.next/server/pages
+          remote: /home/sam/public_html/
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}

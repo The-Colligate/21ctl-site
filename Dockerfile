@@ -23,7 +23,7 @@ WORKDIR /app
 
 COPY package*.json /app
 
-RUN npm i
+# RUN npm i
 
 EXPOSE 3000
 
