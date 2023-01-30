@@ -908,7 +908,7 @@ export const peopleNavLinks = [
           // {
           //   name: 'LEADERSHIP',
           //   link: '/',
-          //   icon: '/icons/leadership.svg',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058136/21ctl/icons/leadership_dn6vrd.svg',
           //   text: 'Agile Leadership',
           //   text1: 'Data - Driven Decision Making ',
           //   text2: 'Project Management',
