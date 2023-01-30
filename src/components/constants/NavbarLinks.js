@@ -450,7 +450,7 @@ export const academyNavLinks = () => [
     ],
   },
   {
-    additionalLinks: [{ name: 'Admission', link: '/' }],
+    additionalLinks: [{ name: 'Admission', link: '/admission' }],
   },
 ];
 
@@ -1019,6 +1019,7 @@ export const peopleNavLinks = [
       },
       {
         name: 'Admissions',
+        link: '/admission',
         subLinks: [],
         extras: [],
       },

@@ -25,6 +25,8 @@ export function LightNavbar({ menuProp }) {
   // });
   // });
 
+  const excluded = ['/people', '/programmes', '/training-pillars', '/admission']
+
   const navItems =
     router.pathname === "/digital-platform"
       ? platformNavLinks
@@ -49,17 +51,19 @@ export function LightNavbar({ menuProp }) {
       : router.pathname === "/training-pillars"
       ? peopleNavLinks
       : router.pathname === "/programmes"
-      ? peopleNavLinks
-      : mainLinks;
+      ? peopleNavLinks 
+      : excluded.includes(router.pathname) ? peopleNavLinks : mainLinks;
   // console.log(`${JSON.stringify (peopleNavLinks[0].navLinks[1].subLinks)}`);
   // console.log('pathname', router.pathname);
+
 
   return (
     <>
       <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
         {theme !== "dark" ? (
           <Link href="/">
-            {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />}
+            {/* {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />} */}
+            {router.pathname === "/" ? <img src="/light-logo.svg"/> : excluded.includes(router.pathname) ? <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg" className="dark:hidden w-36 tablet:w-14" /> : null }
             {/* <img
               src={
                 router.pathname === '/'
@@ -226,10 +230,10 @@ export function LightNavbar({ menuProp }) {
           ))}
         </ul>
 
-        <div className="flex space-x-4">
-          {router.pathname === "/people" ? (
+        <div className="flex items-center space-x-4">
+          {excluded.includes(router.pathname) ? (
             <>
-              <a href="https://21ctl-academy-application.vercel.app/" target="_blank" rel="noreferrer" className="block dark:hidden tablet:!hidden">
+              <a href="https://digitalexpertsacademy.herokuapp.com/" target="_blank" rel="noreferrer" className="block dark:hidden tablet:!hidden">
                 <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">Apply now</button>
               </a>
               <a href="https://academy-admission-21ctl.koyeb.app/" target="_blank" rel="noreferrer" className="block dark:hidden tablet:!hidden">
