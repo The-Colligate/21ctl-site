@@ -321,7 +321,7 @@ const Academy = () => {
                       <h2 className="text-base text-black font-bold w-full ">
                         {course}
                       </h2>
-                      <p className="text-sm text-black">Duration: 12 weeks</p>
+                      {/* <p className="text-sm text-black">Duration: 12 weeks</p> */}
                     </div>
                   </div>
                 </div>
