@@ -612,6 +612,13 @@ background-color: #f1f0f3
     "."
     "."; 
   }
+
+  .ReactModal__Content div{
+    width: 350px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    z-index:99 !important;
+  }
 }
 
 /* .figures:nth-child(odd){
