@@ -31,8 +31,6 @@ COPY . /app
 
 RUN npm run build
 
-RUN ls -la
-
 CMD ["npm", "run", "start"]
 
 # -----
