@@ -87,7 +87,7 @@ const Pillars = () => {
                   Curriculum
                 </h2>
                 <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
-                  The Academy's curriculum is designed to provide trainees with
+                  The Academy&apos;s curriculum is designed to provide trainees with
                   theoretical and practical knowledge and skills for success in
                   their field, updated regularly by instructors.
                   <ul className="list-disc mt-4 pl-4">
@@ -249,7 +249,7 @@ const Pillars = () => {
                   Quality Assurance
                 </h3>
                 <p className="text-xl mt-3">
-                  The Academy's QA Unit aims to provide high-quality training by
+                  The Academy&apos;s QA Unit aims to provide high-quality training by
                   regularly setting and assessing goals, seeking feedback,
                   updating course materials, using assessments, offering
                   instructor development, monitoring trainee outcomes, and
