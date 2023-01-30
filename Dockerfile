@@ -25,11 +25,13 @@ COPY package*.json /app
 
 RUN npm i
 
+RUN npm run build
+
 EXPOSE 3000
 
 COPY . /app
 
-RUN npm run build
+# RUN npm run build
 
 CMD ["npm", "run", "dev"]
 
