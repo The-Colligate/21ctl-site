@@ -13,7 +13,7 @@ pnpm-lock.yaml
 /coverage
 
 # next.js
-# /.next/
+.next/cache/webpack/client-development/
 /out/
 
 # production

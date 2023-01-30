@@ -112,7 +112,8 @@ const Academy = ()=>{
         "Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs",
         "Cybersecurity for industrial systems",
         "Industry-specific applications, such as data centers (renewable energy, and critical power systems)",
-        "Safety and compliance"
+        "Safety and compliance",
+        "Data Center managment"
     ];
     const [video1, setVideo1] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
@@ -191,7 +192,7 @@ const Academy = ()=>{
                                             animate: "visible",
                                             initial: "hidden",
                                             className: "flex-1",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                 src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/logo/student_qg1xrf.png",
                                                 width: 459,
                                                 height: 450,
@@ -279,14 +280,14 @@ const Academy = ()=>{
                                 })
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                class: "relative w-full flex flex-col justify-center items-center",
+                                class: "relative w-full flex flex-col justify-center items-center py-28",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg",
                                         className: "flex justify-center items-center"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                                        class: "absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl",
+                                        class: "absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl dark:text-white",
                                         children: "we provide world-class services to the top 1000 companies in Nigeria and key residential areas."
                                     })
                                 ]
@@ -399,7 +400,7 @@ const Academy = ()=>{
                                                         className: "w-2/4"
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        className: "p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center",
+                                                        className: "p-5 mt-2 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center",
                                                         children: "Labour Force in Nigeria"
                                                     })
                                                 ]
@@ -421,7 +422,7 @@ const Academy = ()=>{
                                                         className: "w-2/4"
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        className: "p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center",
+                                                        className: "p-5 mt-2 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center",
                                                         children: "Unemployed Labour Force in Nigeria"
                                                     })
                                                 ]
@@ -449,7 +450,7 @@ const Academy = ()=>{
                                                         ]
                                                     }),
                                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                        className: "p-5 bg-white text-black text-[18px] w-[400px] flex justify-center items-center",
+                                                        className: "p-5 mt-2 bg-white text-black text-[18px] w-[400px] flex justify-center items-center",
                                                         children: [
                                                             "10,000,000",
                                                             " "
@@ -517,15 +518,15 @@ const Academy = ()=>{
                                 className: "sm:px-28 px-8 mt-28",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                                        className: "text-primary-orange font-bold sm:text-5xl text-3xl",
-                                        children: "Our Courses"
+                                        className: "text-primary-orange font-bold sm:text-4xl text-2xl",
+                                        children: "Explore our top rate course modules"
                                     }),
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                         className: "flex sm:flex-row flex-col justify-between my-3 ",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                 className: "text-xl",
-                                                children: "Explore our top-rated courses in various subjects."
+                                                children: "Each module contains various topics"
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                 className: "text-primary-orange"
@@ -541,7 +542,7 @@ const Academy = ()=>{
                                                     children: [
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                             className: "pr-5 w-[100px] h-[99px]",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                                 src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/logo/courses_z4srsc.svg",
                                                                 // src="/logo/courses.png"
                                                                 className: " w-[100px] h-[99px] largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16",

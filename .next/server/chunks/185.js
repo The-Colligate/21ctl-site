@@ -538,7 +538,7 @@ const academyNavLinks = ()=>[
             additionalLinks: [
                 {
                     name: "Admission",
-                    link: "/"
+                    link: "/admission"
                 }
             ]
         }
@@ -738,40 +738,7 @@ const powerNavLinks = [
         navLinks: [
             {
                 name: "Renewable Energy",
-                subLinks: [
-                    {
-                        name: "About Us",
-                        link: "/about-us",
-                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg",
-                        text: "Learn More about 21ctl."
-                    },
-                    {
-                        name: "Communication Platform",
-                        link: "/",
-                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg",
-                        text: "Discover the best role for you."
-                    },
-                    {
-                        name: "Cloud Platform",
-                        link: "https://www.21ctl.com/cloud/",
-                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
-                    },
-                    {
-                        name: "Payment Platform",
-                        link: "/",
-                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
-                    },
-                    {
-                        name: "Automation",
-                        link: "/",
-                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
-                    },
-                    {
-                        name: "Identity",
-                        link: "/",
-                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
-                    }
-                ],
+                subLinks: [],
                 extras: []
             },
             {
@@ -793,7 +760,7 @@ const peopleNavLinks = [
                 subLinks: [
                     {
                         name: "Trainee",
-                        link: "/training-pillars",
+                        link: "/admission",
                         icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg"
                     },
                     {
@@ -1045,6 +1012,7 @@ const peopleNavLinks = [
             },
             {
                 name: "Admissions",
+                link: "/admission",
                 subLinks: [],
                 extras: []
             }
@@ -1392,7 +1360,7 @@ function DigitalNavbar({ menuProp  }) {
                                                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                                             className: "flex hover:text-primary-orange",
                                                                             children: [
-                                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
+                                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                                                     height: 20,
                                                                                     width: 20,
                                                                                     src: `${sublinks.icon}`
@@ -1492,7 +1460,7 @@ function DigitalNavbar({ menuProp  }) {
                                                                             className: "flex",
                                                                             children: [
                                                                                 " ",
-                                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
+                                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                                                     height: 20,
                                                                                     width: 20,
                                                                                     src: `${sublinks.icon}`
@@ -1650,7 +1618,7 @@ const MobileNavbar = ({ isOpen , theme , setTheme , close , navItems  })=>{
                                                 className: "flex my-3",
                                                 children: [
                                                     " ",
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                         height: 20,
                                                         width: 20,
                                                         src: `${sublinks.icon}`
@@ -2368,7 +2336,13 @@ function LightNavbar({ menuProp  }) {
     //   return document.querySelector('.navbar').classList.remove('show');
     // });
     // });
-    const navItems = router.pathname === "/digital-platform" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/digital-infrastructure" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .infraNavLinks */ .vJ : router.pathname === "/" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .mainLinks */ .$o : router.pathname === "/power" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .powerNavLinks */ .r4 : router.pathname === "/people" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .peopleNavLinks */ .XP : router.pathname === "/security" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .securityNavLinks */ .Bi : router.pathname === "/platform" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/communication" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/automation" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/identity" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/training-pillars" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .peopleNavLinks */ .XP : router.pathname === "/programmes" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .peopleNavLinks */ .XP : _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .mainLinks */ .$o;
+    const excluded = [
+        "/people",
+        "/programmes",
+        "/training-pillars",
+        "/admission"
+    ];
+    const navItems = router.pathname === "/digital-platform" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/digital-infrastructure" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .infraNavLinks */ .vJ : router.pathname === "/" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .mainLinks */ .$o : router.pathname === "/power" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .powerNavLinks */ .r4 : router.pathname === "/people" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .peopleNavLinks */ .XP : router.pathname === "/security" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .securityNavLinks */ .Bi : router.pathname === "/platform" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/communication" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/automation" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/identity" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .platformNavLinks */ .M8 : router.pathname === "/training-pillars" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .peopleNavLinks */ .XP : router.pathname === "/programmes" ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .peopleNavLinks */ .XP : excluded.includes(router.pathname) ? _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .peopleNavLinks */ .XP : _constants_NavbarLinks__WEBPACK_IMPORTED_MODULE_9__/* .mainLinks */ .$o;
     // console.log(`${JSON.stringify (peopleNavLinks[0].navLinks[1].subLinks)}`);
     // console.log('pathname', router.pathname);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
@@ -2377,21 +2351,14 @@ function LightNavbar({ menuProp  }) {
                 className: "navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ",
                 children: [
                     theme !== "dark" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_6___default()), {
-                        href: "/",
+                        href: router.pathname === "/" ? "/" : excluded.includes(router.pathname) ? "/people" : "/",
                         children: router.pathname === "/" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                            src: "/light-logo.svg",
-                            className: "dark:hidden w-16 tablet:w-14"
-                        }) : router.pathname === "/people" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                            src: "/digital-academy-logo-black.svg",
-                            className: "dark:hidden w-36 tablet:w-14"
-                        }) : router.pathname === "/programmes" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                            src: "/digital-academy-logo-black.svg",
-                            className: "dark:hidden w-36 tablet:w-14"
-                        }) : router.pathname === "/training-pillars" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                            src: "/digital-academy-logo-black.svg",
+                            src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
+                        }) : excluded.includes(router.pathname) ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                            src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg",
                             className: "dark:hidden w-36 tablet:w-14"
                         }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                            src: "/light-logo-limited.svg",
+                            src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
                             className: "dark:hidden w-16 tablet:w-14"
                         })
                     }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_6___default()), {
@@ -2633,12 +2600,12 @@ function LightNavbar({ menuProp  }) {
                         ]
                     }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "flex space-x-4",
+                        className: "flex items-center space-x-4",
                         children: [
-                            router.pathname === "/people" ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                            excluded.includes(router.pathname) ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                        href: "https://21ctl-academy-application.vercel.app/",
+                                        href: "https://digitalexpertsacademy.herokuapp.com/",
                                         target: "_blank",
                                         rel: "noreferrer",
                                         className: "block dark:hidden tablet:!hidden",
