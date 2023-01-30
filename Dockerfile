@@ -33,7 +33,7 @@ COPY . /app
 
 # RUN npm run build
 
-CMD ["npm", "run", "dev"]
+# CMD ["npm", "run", "dev"]
 
 # -----
 
