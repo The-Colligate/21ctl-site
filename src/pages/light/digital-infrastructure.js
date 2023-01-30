@@ -72,8 +72,9 @@ const DigitalInfrastructure = () => {
                                 </div>
                                 <div>
                                     <Image
-                                        src={HeroImage}
+                                        src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/hero-image_abp6dp.png"
                                         width={650}
+                                        height={650}
                                         className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
                                     />
                                 </div>
@@ -157,8 +158,9 @@ const DigitalInfrastructure = () => {
                     <section>
                         <div className='flex justify-center items-center mx-20 phone:my-5'>
                             <img
-                                src='/icons/potential-partners.png'
+                                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/icons/potential-partners_kd9w9q.png'
                                 height={100}
+                                width={100}
 
                             />
                         </div>
@@ -177,7 +179,7 @@ const DigitalInfrastructure = () => {
                                         Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                                     </p>
                                 </div>
-                                <Image src={ikeja} className="inline-block w-full fit" />
+                                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/data-centers/ikeja-center_ahvecs.png" className="inline-block w-full fit"  width={100} height={100} />
                             </div>
                             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                                 <div className="p-5 text-black dark:text-black">
@@ -189,7 +191,7 @@ const DigitalInfrastructure = () => {
                                         Our six-story data center in Africa is innovative and equipped with a 10MW Turbine system, providing ample power and space for clients to grow.
                                     </p>
                                 </div>
-                                <Image src={lekki} className="inline-block w-full h-fit" />
+                                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058121/21ctl/data-centers/lekki-center_ctedxo.png" className="inline-block w-full h-fit" width={100} height={100} />
                             </div>
                             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                                 <div className="p-5 text-black dark:text-black">
@@ -201,7 +203,7 @@ const DigitalInfrastructure = () => {
                                         Our Apapa data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                                     </p>
                                 </div>
-                                <Image src={apapa} className="inline-block w-full h-fit" />
+                                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/data-centers/apapa-center_mmq3so.png" className="inline-block w-full h-fit"  width={100} height={100} />
                             </div>
                         </div>
                     </section>

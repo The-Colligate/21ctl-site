@@ -5,7 +5,7 @@ import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { motion } from 'framer-motion';
 import { leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
 
-import power from '/public/logo/Power.png';
+// import power from '/public/logo/Power.png';
 
 const Power = () => {
   return (
@@ -46,8 +46,9 @@ const Power = () => {
               initial="hidden"
                className="">
                 <Image
-                  src={power}
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/logo/Power_m6awqs.png"
                   width={800}
+                  height={800}
                   className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
                 />
               </motion.div>
@@ -84,7 +85,7 @@ const Power = () => {
               <div className="flex-1 tablet:mt-10 tablet:px-10">
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1673291336/Group_1_g9wnmq.webp"
-                  className="w-full "
+                  className="w-full"
                 />
               </div>
               <div className="flex-1">

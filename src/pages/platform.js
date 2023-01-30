@@ -35,7 +35,7 @@ const Platform = () => {
               <div>
                 <img
                   // src="https://d2pi5ijasmgfet.cloudfront.net/500x328/filters:focal(249x163:251x165):quality(82)/combined%2Fpublic%2Fmisc%2FPD20-hp-img-500x328.jpg"
-                  src='/logo/social media Globe2.png'
+                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058163/21ctl/logo/Social_Media_Globe_fbmzmt.png'
                   className='w-3/4 h-3/4 dark:hidden '
 
                   alt="communication"
@@ -207,7 +207,7 @@ const Platform = () => {
 
               <div className="w-full">
                 <img
-                src='/logo/payment-provider.svg'
+                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/payment-provider_ctqupk.svg'
                 alt="connectivity"
                 />
               </div>
@@ -219,7 +219,7 @@ const Platform = () => {
               <div>
                 <img
                   // src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
-                  src='/logo/automation.svg'
+                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/automation_e6jwab.svg'
                   alt="connectivity"
                   className="w-[500px]"
                 />
