@@ -29,6 +29,8 @@ const Academy = () => {
   ];
   const [video1, setVideo1] = useState(false);
 
+  
+
   return (
     <>
       <Head>
