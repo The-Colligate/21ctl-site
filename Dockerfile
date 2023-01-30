@@ -37,6 +37,8 @@ RUN cd ..
 
 RUN ls -la
 
+COPY .next /app
+
 CMD ["ls", "-la"]
 
 # -----
