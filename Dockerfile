@@ -10,5 +10,4 @@ RUN npm install --only=production
 # RUN npm ci --only=production
 # Bundle app source
 COPY . .
-EXPOSE 8085
 CMD [ "npm", "run", "build" ]

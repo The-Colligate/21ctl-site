@@ -12,10 +12,16 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag ctl-website:$(date +%s)
+      - name: setup demo
+        run: |
+          ls -la
+          mkdir test
+          touch test/oof.txt
+          touch test/.dot.txt
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
         with:
-          local: /usr/src/app
+          local: usr/src/app
           remote: /home/sam/public_html/build
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
