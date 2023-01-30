@@ -37,7 +37,7 @@ const Video = ({ video_src, closeModal, modalIsOpen }) => {
       //   onAfterOpen={afterOpenModal}
       onRequestClose={closeModal}
       style={customStyles}
-      contentLabel="Testimonial Video"
+      contentLabel="Take a tour"
     >
       <ReactPlayer url={video_src} playing={true} controls={true} />
 
