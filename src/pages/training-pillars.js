@@ -2,7 +2,6 @@ import React from 'react';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import Head from 'next/head';
 
-
 const Pillars = () => {
   return (
     <>
@@ -79,9 +78,9 @@ const Pillars = () => {
                   Curriculum
                 </h2>
                 <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
-                  The Academy&apos;s curriculum is designed to provide trainees with
-                  theoretical and practical knowledge and skills for success in
-                  their field, updated regularly by instructors.
+                  The Academy&apos;s curriculum is designed to provide trainees
+                  with theoretical and practical knowledge and skills for
+                  success in their field, updated regularly by instructors.
                   <ul className="list-disc mt-4 pl-4">
                     <li className="">
                       <span className="font-bold">Traditional based</span>
@@ -206,6 +205,41 @@ const Pillars = () => {
             </div>
           </section>
 
+          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
+            <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
+              <div className="">
+                <h2 className="font-bold sm:text-5xl text-2xl text-primary-orange dark:text-dark">
+                  Didactics
+                </h2>
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
+                  We are responsible for overseeing trainee eligibility,
+                  reviewing and approving applications, supporting program
+                  facilitators, and serving as a liaison between facilitators
+                  and trainees.
+                </p>
+              </div>
+
+              <div>
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675087972/21ctl/image_10_b651vp.svg"
+                  alt="connectivity"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section className="">
+            <h3 className="text-primary-orange text-center font-bold text-5xl my-10">
+              Industry Partners.
+            </h3>
+            <div className="flex">
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675088840/21ctl/Group_56021_jl38q5.svg"
+                className="w-full"
+              />
+            </div>
+          </section>
+
           <section className="py-20 sm:px-28 px-8">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div>
@@ -222,11 +256,11 @@ const Pillars = () => {
                   Quality Assurance
                 </h3>
                 <p className="text-xl mt-3">
-                  The Academy&apos;s QA Unit aims to provide high-quality training by
-                  regularly setting and assessing goals, seeking feedback,
-                  updating course materials, using assessments, offering
-                  instructor development, monitoring trainee outcomes, and
-                  tracking metrics.
+                  The Academy&apos;s QA Unit aims to provide high-quality
+                  training by regularly setting and assessing goals, seeking
+                  feedback, updating course materials, using assessments,
+                  offering instructor development, monitoring trainee outcomes,
+                  and tracking metrics.
                 </p>
               </div>
             </div>
