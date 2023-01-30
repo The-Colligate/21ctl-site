@@ -357,6 +357,16 @@ export function LightNavbar({ menuProp }) {
         <div className="flex space-x-4">
           {router.pathname === '/people' ? (
             <>
+            <a
+                href="https://21ctl-academy-application.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="block dark:hidden tablet:!hidden"
+              >
+                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
+                  Apply now
+                </button>
+              </a>
               <a
                 href="https://academy-admission-21ctl.koyeb.app/"
                 target="_blank"
@@ -367,16 +377,7 @@ export function LightNavbar({ menuProp }) {
                   Login
                 </button>
               </a>
-              <a
-                href="https://21ctl-academy-application.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="block dark:hidden tablet:!hidden"
-              >
-                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
-                  Apply now
-                </button>
-              </a>
+              
             </>
           ) : (
             ''

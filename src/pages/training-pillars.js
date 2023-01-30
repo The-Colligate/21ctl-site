@@ -1,14 +1,6 @@
 import React from 'react';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import Head from 'next/head';
-import WorkingMan from '/public/logo/Working-Man.png';
-import WorkingWoman from '/public/logo/working-female.png';
-import Instructor from '/public/logo/instructor.png';
-import Laptop from '/public/logo/laptop.png';
-import Pillar from '/public/logo/pillars.png';
-import Didactics from '/public/logo/didactics.png';
-import QualityAssurance from '/public/logo/quality-assurance.png';
-
 
 
 const Pillars = () => {
@@ -29,7 +21,7 @@ const Pillars = () => {
           {/* top-section */}
           <section className="pillar-top-section h-[80vh] px-8 ">
             <div className="flex flex-col items-center justify-center w-full h-full leading-10">
-              <h1 className="font-extrabold sm:text-6xl text-4xl text-white text-center sm:leading-8 leading-10 max-w-6xl">
+              <h1 className="font-extrabold sm:text-6xl text-4xl text-white text-center leading-8 max-w-6xl">
                 The <span className="text-primary-orange">Pillars</span> of
                 Digital Training Center Model
               </h1>
@@ -87,7 +79,7 @@ const Pillars = () => {
                   Curriculum
                 </h2>
                 <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
-                  The Academy&apos;s curriculum is designed to provide trainees with
+                  The Academy's curriculum is designed to provide trainees with
                   theoretical and practical knowledge and skills for success in
                   their field, updated regularly by instructors.
                   <ul className="list-disc mt-4 pl-4">
@@ -214,25 +206,6 @@ const Pillars = () => {
             </div>
           </section>
 
-          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
-            <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
-              <div className="">
-                <h2 className="font-bold sm:text-5xl text-2xl text-primary-orange dark:text-dark">
-                Didactics
-                </h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
-                We are responsible for overseeing trainee eligibility, reviewing and approving applications, supporting program facilitators, and serving as a liaison between facilitators and trainees.
-                 
-                </p>
-              </div>
-
-              <div>
-                <img src="/logo/didactics.png" alt="connectivity" />
-                {/* <iframe src='https://res.cloudinary.com/bucpgs/video/upload/v1674640061/course_form/21ctl/Background_technology_world_loop_v144P_oiv924.mp4' ></iframe> */}
-              </div>
-            </div>
-          </section>
-
           <section className="py-20 sm:px-28 px-8">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div>
@@ -249,7 +222,7 @@ const Pillars = () => {
                   Quality Assurance
                 </h3>
                 <p className="text-xl mt-3">
-                  The Academy&apos;s QA Unit aims to provide high-quality training by
+                  The Academy's QA Unit aims to provide high-quality training by
                   regularly setting and assessing goals, seeking feedback,
                   updating course materials, using assessments, offering
                   instructor development, monitoring trainee outcomes, and
@@ -258,6 +231,7 @@ const Pillars = () => {
               </div>
             </div>
           </section>
+          <Footer />
         </div>
       </div>
     </>

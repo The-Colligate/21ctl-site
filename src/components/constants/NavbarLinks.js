@@ -728,43 +728,43 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Trainee',
-            link: '/about-us',
+            link: '/training-pillars',
             icon: '/icons/home/about.svg',
             
           },
           {
             name: 'Curriculum',
-            link: '/',
+            link: '/training-pillars',
             icon: '/icons/home/career.svg',
 
           },
           {
             name: 'Instructor',
-            link: '/',
+            link: '/training-pillars',
             icon: '/icons/home/handshake.svg',
 
           },
           {
             name: 'Infrastructure',
-            link: '/',
+            link: '/training-pillars',
             icon: '/icons/home/handshake.svg',
 
           },
           {
             name: 'Didactics',
-            link: '/',
+            link: '/training-pillars',
             icon: '/icons/home/handshake.svg',
 
           },
           {
             name: 'Industry',
-            link: '/',
+            link: '/training-pillars',
             icon: '/icons/home/handshake.svg',
 
           },
           {
             name: 'Quality Assurance',
-            link: '/',
+            link: '/training-pillars',
             icon: '/icons/home/handshake.svg',
 
           },
