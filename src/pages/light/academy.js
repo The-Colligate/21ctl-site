@@ -101,9 +101,9 @@ const Academy = () => {
             )}
           </div>
           <section>
-            <div className=" flex justify-center items-center mx-20 w-full tablet:mx-10 tablet:flex-col">
+            <div className=" flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col">
               <div className="w-2/3 tablet:w-full">
-                <p className="text-5xl font-bold">
+                <p className="sm:text-5xl text-xl font-bold">
                   In the last{' '}
                   <span className="text-primary-orange">25 years</span>, we have
                   been <span className="text-primary-orange">investing</span> in
@@ -112,7 +112,7 @@ const Academy = () => {
                   Infrastructure in five{' '}
                   <span className="text-primary-orange">key areas</span>:
                 </p>
-                <ul className="list-disc ml-5 mt-4 text-[24px] ">
+                <ul className="list-disc ml-5 mt-4 sm:text-[24px] text-base ">
                   <li>
                     Technology: As we all know poverty is a bigger indicator of
                     lack of access to Technologies than geography.
@@ -328,18 +328,18 @@ const Academy = () => {
           </section>
 
           <section className="sm:mb-0 mb-16">
-            <div className="flex items-center space-x-10 space-y-0 my-20 py-16 px-10 rounded-xl mx-40 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:mx-10 customize-bg">
+            <div className="flex items-center space-x-10 space-y-0 my-20 py-16 px-10 rounded-xl mx-40 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:mx-5 customize-bg">
               <div className="flex-1">
-                <img src="/logo/smiling.png" className="w-2/3 h-2/5" />
+                <img src="/logo/smiling.png" className="w-2/3 h-2/5 sm:block hidden" />
               </div>
               <div className="flex-1">
-                <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
+                <h1 className="sm:text-5xl text-3xl text-left sm:text-center font-semibold tracking-medium mb-8">
                   <span className="text-primary-orange">Customize</span> your
                   teaching and keep all{' '}
                   <span className="text-primary-orange">Students</span>{' '}
                   interested
                 </h1>
-                <p className="leading-8 text-xl">
+                <p className="leading-8 text-xl text-left sm:text-center">
                   Our teaching resources and strategies help you make your
                   lessons unique and keep all students interested and engaged.
                 </p>
@@ -360,7 +360,7 @@ const Academy = () => {
                 </p>
               </div>
               <div className="w-full">
-                <img src="/logo/face-laughing.png" className="w-2/3" />
+                <img src="/logo/face-laughing.png" className="sm:w-2/3 w-full" />
               </div>
             </div>
           </section>
