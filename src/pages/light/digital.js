@@ -4,15 +4,15 @@ import Head from 'next/head'
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { motion } from 'framer-motion';
 import { buttonVarient, leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
-import HeroImage from '/public/logo/hero-image.png';
+// import HeroImage from '/public/logo/hero-image.png';
 import CountUp from 'react-countup';
 
 
-import apapa from '/public/data-centers/apapa-center.png';
-import ikeja from '/public/data-centers/ikeja-center.png';
-import lekki from '/public/data-centers/lekki-center.png';
-import sakat from '/public/data-centers/sakatinubu.jpeg';
-import alanamu from '/public/data-centers/alanamu.png';
+// import apapa from '/public/data-centers/apapa-center.png';
+// import ikeja from '/public/data-centers/ikeja-center.png';
+// import lekki from '/public/data-centers/lekki-center.png';
+// import sakat from '/public/data-centers/sakatinubu.jpeg';
+// import alanamu from '/public/data-centers/alanamu.png';
 
 
 const Digital = () => {
@@ -52,8 +52,9 @@ const Digital = () => {
               animate="visible"
               initial="hidden" >
               <Image
-                src={HeroImage}
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/hero-image_abp6dp.png"
                 width={650}
+                height={650}
                 className="tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
               />
             </motion.div>
@@ -169,8 +170,9 @@ const Digital = () => {
                     </section>
                     <div className='flex justify-center items-center mx-20 my-10 phone:my-5 phone:mx-10'>
                             <img
-                                src='/icons/potential-partners.png'
+                                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/icons/potential-partners_kd9w9q.png'
                                 height={100}
+                                width={100}
 
                             />
                         </div>
@@ -203,7 +205,7 @@ const Digital = () => {
                     Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                   </p>
                 </div>
-                <Image src={ikeja} className="inline-block w-full fit" />
+                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/data-centers/ikeja-center_ahvecs.png" className="inline-block w-full fit"  width={100} height={100} />
               </div>
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
@@ -215,7 +217,7 @@ const Digital = () => {
                     Our six-story data center in Africa is innovative and equipped with a 10MW Turbine system, providing ample power and space for clients to grow.
                   </p>
                 </div>
-                <Image src={lekki} className="inline-block w-full h-fit" />
+                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058121/21ctl/data-centers/lekki-center_ctedxo.png" className="inline-block w-full h-fit"  width={100} height={100} />
               </div>
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
@@ -227,7 +229,7 @@ const Digital = () => {
                     Our Apapa data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
-                <Image src={apapa} className="inline-block w-full h-fit" />
+                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/data-centers/apapa-center_mmq3so.png" className="inline-block w-full h-fit"  width={100} height={100} />
               </div>
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
@@ -239,7 +241,7 @@ const Digital = () => {
                     Our Saka-Tinubu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
-                <Image src={sakat} className="inline-block w-full h-fit" />
+                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/data-centers/sakatinubu_v5tjln.jpg" className="inline-block w-full h-fit"  width={100} height={100} />
               </div>
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
@@ -251,7 +253,7 @@ const Digital = () => {
                     Our Alanamu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
-                <Image src={alanamu} className="inline-block w-full h-fit rounded-br-2xl rounded-bl-2xl" />
+                <Image src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058118/21ctl/data-centers/alanamu_ldhtn9.png" width={100} height={100} className="inline-block w-full h-fit rounded-br-2xl rounded-bl-2xl" />
               </div>
 
             </div>
@@ -274,7 +276,7 @@ const Digital = () => {
                 <img
                   // src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
                  
-                 src='/logo/5G.svg'
+                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058177/21ctl/logo/5g_main_qvaz7q.svg'
                  
          
                   className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
