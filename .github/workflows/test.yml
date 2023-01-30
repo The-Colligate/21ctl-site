@@ -14,9 +14,10 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ steps.meta.outputs.tags }} and your repository is ${{ steps.meta.outputs.labels }}."
       - uses: actions/checkout@v2
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --rm=false --tag ctl-website:$(date +%s)
+        run: docker build . --file Dockerfile --rm=false
       - name: setup demo
         run: |
+          docker build . --file Dockerfile --rm=false
           mkdir test
           touch test/oof.txt
           touch test/.dot.txt
