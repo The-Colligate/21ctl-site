@@ -233,7 +233,7 @@ export function LightNavbar({ menuProp }) {
         <div className="flex items-center space-x-4">
           {excluded.includes(router.pathname) ? (
             <>
-              <a href="https://digitalexpertacademy.herokuapp.com/" target="_blank" rel="noreferrer" className="block dark:hidden tablet:!hidden">
+              <a href="https://digitalexpertsacademy.herokuapp.com/" target="_blank" rel="noreferrer" className="block dark:hidden tablet:!hidden">
                 <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">Apply now</button>
               </a>
               <a href="https://academy-admission-21ctl.koyeb.app/" target="_blank" rel="noreferrer" className="block dark:hidden tablet:!hidden">
