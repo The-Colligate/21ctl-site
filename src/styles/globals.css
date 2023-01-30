@@ -510,6 +510,13 @@ background-color: #f1f0f3
   z-index:99 !important;
 }
 
+.ReactModal__Content div{
+  width: 940px !important;
+  height: 660px !important;
+  object-fit: cover !important;
+  z-index:99 !important;
+}
+
 .resrc-pillar{
   display: grid; 
   grid-auto-columns: 1fr; 

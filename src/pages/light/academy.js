@@ -40,7 +40,7 @@ const Academy = () => {
           <div className="w-full min-h-[50%] bg_gradient_l"></div>
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
-        <div className="w-full min-h-screen flex flex-col z-[1] ">
+        <div className="w-full min-h-screen flex flex-col z-[0]">
           <LightNavbar />
 
           <section className=" dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
@@ -100,7 +100,7 @@ const Academy = () => {
               />
             )}
           </div>
-          <section>
+          <section className="z-10">
             <div className=" flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col">
               <div className="w-2/3 tablet:w-full">
                 <p className="sm:text-5xl text-xl font-bold">
