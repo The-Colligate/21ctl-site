@@ -666,46 +666,46 @@ export const powerNavLinks = [
       {
         name: 'Renewable Energy',
         subLinks: [
-          {
-            name: 'About Us',
-            link: '/about-us',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
-            text: 'Learn More about 21ctl.',
-          },
-          {
-            name: 'Communication Platform',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
+          // {
+          //   name: 'About Us',
+          //   link: '/about-us',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
+          //   text: 'Learn More about 21ctl.',
+          // },
+          // {
+          //   name: 'Communication Platform',
+          //   link: '/',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
-            text: 'Discover the best role for you.',
-          },
-          {
-            name: 'Cloud Platform',
-            link: 'https://www.21ctl.com/cloud/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          //   text: 'Discover the best role for you.',
+          // },
+          // {
+          //   name: 'Cloud Platform',
+          //   link: 'https://www.21ctl.com/cloud/',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
-          },
-          {
-            name: 'Payment Platform',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Payment Platform',
+          //   link: '/',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Automation',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Automation',
+          //   link: '/',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           
-          },
-          {
-            name: 'Identity',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Identity',
+          //   link: '/',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
-          },
+          // },
         ],
         extras: [],
       },
@@ -728,7 +728,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Trainee',
-            link: '/training-pillars',
+            link: '/admission',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             
           },
