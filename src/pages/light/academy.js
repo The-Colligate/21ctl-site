@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
@@ -15,17 +15,17 @@ import Video from '../../components/Video'
 const src1 =
   'https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4';
 
-  const Academy = () => {
+const Academy = () => {
   const courses = [
-    'Graphic Design',
-    'Deep Learning',
-    'Devops',
-    'Cyber Security',
-    'Power BI',
-    'Business Data Analysis',
-    'Data Science',
-    'Digital Marketing',
-    'Database',
+    'Electrical design and installation',
+    'Power management and distribution',
+    'Building management systems and energy efficiency',
+    'Automation and control systems',
+    'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
+    'Cybersecurity for industrial systems',
+    'Industry-specific applications, such as data centers (renewable energy, and critical power systems)',
+    'Safety and compliance',
+    // 'Database',
   ];
   const [video1, setVideo1] = useState(false);
 
@@ -92,13 +92,13 @@ const src1 =
           </section>
           <div className="z-50">
 
-          {video1 && (
-          <Video
-            modalIsOpen={video1}
-            closeModal={() => setVideo1(false)}
-            video_src={src1}
-          />
-        )}
+            {video1 && (
+              <Video
+                modalIsOpen={video1}
+                closeModal={() => setVideo1(false)}
+                video_src={src1}
+              />
+            )}
           </div>
           <section>
             <div className=" flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col">
@@ -129,23 +129,19 @@ const src1 =
             </div>
           </section>
 
-          <section className="px-10 my-20 w-full tablet:px-10">
-            <div className=" flex justify-between items-center  w-full tablet:flex-col">
-              <div className="w-3/5 tablet:w-full">
-                <p className="sm:text-5xl text-xl font-bold text-center">
-                  {' '}
-                  <span className="text-primary-orange">
-                    we provide world-class services to the top 1000 companies{' '}
-                  </span>
-                  in Nigeria and key residential areas.
-                </p>
-              </div>
-
-              <div>
-                <img src="/logo/" className="w-full h-1/5" />
-              </div>
+          {/* <section className='mx-20 my-20  w-full tablet:mx-10'>
+          <img src='/logo/people-info.svg' className='relative ' />
+            <div className='absolute flex justify-center items-center w-full h-full'>
+              <p className=' '> </p>
             </div>
-          </section>
+           
+          </section> */}
+          <div class="relative w-full flex flex-col justify-center items-center">
+        <img src='/logo/people-info.svg' className='flex justify-center items-center' />
+        <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl">
+        we provide world-class services to the top 1000 companies in Nigeria and key residential areas.</h1>
+    </div>
+
           {/* <section className='flex flex-col justify-center items-center w-full'>
             <div className='font-bold sm:text-5xl text-3xl text-center'>
               <h4>The <span className="text-primary-orange">7 Pillars</span> of Digital Training Center <br /> Model</h4>
@@ -246,15 +242,15 @@ const src1 =
                 This means that about one in three young people in the labor
                 force who are actively <br /> seeking employment are unemployed
               </p>
-              <h4 className="font-bold">
+              {/* <h4 className="font-bold">
                 {' '}
-                Our <span className="text-primary-orange">Target</span>
-              </h4>
+                 <span className="text-primary-orange">Targeted Number </span>
+              </h4> */}
               <div>
-                <p className="p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
-                  Number of People Trained by 2033{' '}
+                <p className="p-5 bg-primary-orange text-white text-[18px] w-[400px] flex justify-center items-center">
+                  Targeted Number of Trainees 2033{' '}
                 </p>
-                <p className="p-5 bg-white text-black text-[18px] w-[350px] flex justify-center items-center">
+                <p className="p-5 bg-white text-black text-[18px] w-[400px] flex justify-center items-center">
                   10,000,000{' '}
                 </p>
               </div>
@@ -303,24 +299,24 @@ const src1 =
               {courses.map((course) => (
                 <div
                   key={course}
-                  className="bg-white sm:w-[270px] w-full px-2 py-3 h-[120px] rounded-xl"
+                  className="bg-white sm:w-[350px] w-full px-2 py-3 h-[150px] rounded-xl"
                 >
                   <div
                     key={course}
                     className="flex items-center sm:justify-center justify-start"
                   >
-                    <div key={course} className="pr-5 h-full">
+                    <div key={course} className="pr-5 w-[100px] h-[99px]">
                       <Image
                         src="/logo/courses.svg"
                         // src="/logo/courses.png"
-                        className="w-full h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"
+                        className=" w-[100px] h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"
                         width={166}
                         height={99}
                       />
                       {/* <div className='w-[120px] h-[99px] bg-primary-orange'></div> */}
                     </div>
                     <div className="flex flex-col  justify-center">
-                      <h2 className="text-base text-black font-bold w-2/3 ">
+                      <h2 className="text-base text-black font-bold w-full ">
                         {course}
                       </h2>
                       <p className="text-sm text-black">Duration: 12 weeks</p>

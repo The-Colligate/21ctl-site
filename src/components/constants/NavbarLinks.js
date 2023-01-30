@@ -167,11 +167,7 @@
 //             text: [],
 //           },
 //           {
-//             name: 'Stanford University',
-//             link: '/',
-//             icon: '/logo/partners/Stanford-University-Logo.png',
-//             text: [],
-//           },
+
 //           {
 //             name: 'MIT',
 //             link: '/',
@@ -184,12 +180,7 @@
 //             icon: '/logo/partners/checkpoint.jpg',
 //             text: [],
 //           },
-//           {
-//             name: 'Carnegie Mellon University',
-//             link: '/',
-//             icon: '/logo/partners/Carnegie-Mellon.png',
-//             text: [],
-//           },
+
 //           {
 //             name: 'Orange',
 //             link: '/',
@@ -815,12 +806,7 @@
 //             link: 'https://education.oracle.com/',
 //             icon: '/icons/home/career.svg',
 //           },
-//           {
-//             name: 'Stanford University',
-//             link: 'https://www.stanford.edu/',
-//             icon: '/icons/home/career.svg',
-//             // text: 'Discover the best role for you.',
-//           },
+
 //           {
 //             name: 'Schneider University',
 //             link: 'https://university.se.com/',
@@ -1024,13 +1010,7 @@
 //             text: ['Oracle Databases', 'Oracle Cloud Infrastructure (OCI)', 'Cloud Database Sevices', 'DevOps',]
 
 //           },
-//           //   {
-//           //     name: 'Stanford University',
-//           //     link: '/',
-//           //     icon: '/icons/home/about.svg',
-//           //     // text: ['Get Certification','See more',]
-//           //   
-//           //   },
+
 //           //   {
 //           //     name: 'MIT',
 //           //     link: '/',
@@ -1045,13 +1025,7 @@
 //               'Cloud Network Security',
 //               'Security Administration',]
 //           },
-//           {
-//             name: 'Carnegie Mellon University',
-//             link: '/',
-//             icon: '/icons/home/handshake.svg',
-//             // text: ['Get Certification',
-//             // 'See more'],
-//           },
+
 //         ],
 //         extras: [
 //           {
@@ -1372,11 +1346,7 @@ export const mainLinks = [
             link: '/',
             icon: '/logo/partners/oracle.png',
           },
-          {
-            name: 'Stanford University',
-            link: '/',
-            icon: '/logo/partners/Stanford-University-Logo.png',
-          },
+        
           {
             name: 'MIT',
             link: '/',
@@ -1387,11 +1357,7 @@ export const mainLinks = [
             link: '/',
             icon: '/logo/partners/checkpoint.jpg',
           },
-          {
-            name: 'Carnegie Mellon University',
-            link: '/',
-            icon: '/logo/partners/Carnegie-Mellon.png',
-          },
+       
           {
             name: 'Orange',
             link: '/',
@@ -1995,12 +1961,7 @@ export const peopleNavLinks = [
             link: 'https://education.oracle.com/',
             icon: '/icons/home/career.svg',
           },
-          {
-            name: 'Stanford University',
-            link: 'https://www.stanford.edu/',
-            icon: '/icons/home/career.svg',
-            // text: 'Discover the best role for you.',
-          },
+       
           {
             name: 'Schneider University',
             link: 'https://university.se.com/',
@@ -2211,13 +2172,7 @@ export const peopleNavLinks = [
             text2: 'Cloud Database Sevices',
             text3: 'DevOps',
           },
-          //   {
-          //     name: 'Stanford University',
-          //     link: '/',
-          //     icon: '/icons/home/about.svg',
-          //     // text: 'Get Certification',
-          //     // text1: 'See more',
-          //   },
+      
           //   {
           //     name: 'MIT',
           //     link: '/',
@@ -2233,13 +2188,7 @@ export const peopleNavLinks = [
             text1: 'Cloud Network Security',
             text3: 'Security Administration',
           },
-          {
-            name: 'Carnegie Mellon University',
-            link: '/',
-            icon: '/icons/home/handshake.svg',
-            // text: 'Get Certification',
-            // text1: 'See more',
-          },
+        
         ],
         extras: [
           {
