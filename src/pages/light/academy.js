@@ -1,35 +1,33 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Head from 'next/head';
-import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import Image from "next/image";
+import Head from "next/head";
+import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
+import { motion } from "framer-motion";
 import {
   leftTransitionVarient,
   rightTansitionVarient,
-} from '@components/constants/animations';
-import CountUp from 'react-countup';
-import dynamic from 'next/dynamic';
-import Video from '../../components/Video'
+} from "@components/constants/animations";
+import CountUp from "react-countup";
+import dynamic from "next/dynamic";
+import Video from "../../components/Video";
 // const Video = dynamic(() => import('../../components/Video'));
 
 const src1 =
-  'https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4';
+  "https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4";
 
 const Academy = () => {
   const courses = [
-    'Electrical design and installation',
-    'Power management and distribution',
-    'Building management systems and energy efficiency',
-    'Automation and control systems',
-    'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
-    'Cybersecurity for industrial systems',
-    'Industry-specific applications, such as data centers (renewable energy, and critical power systems)',
-    'Safety and compliance',
+    "Electrical design and installation",
+    "Power management and distribution",
+    "Building management systems and energy efficiency",
+    "Automation and control systems",
+    "Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs",
+    "Cybersecurity for industrial systems",
+    "Industry-specific applications, such as data centers (renewable energy, and critical power systems)",
+    "Safety and compliance",
     // 'Database',
   ];
   const [video1, setVideo1] = useState(false);
-
-  
 
   return (
     <>
@@ -55,7 +53,7 @@ const Academy = () => {
               >
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                   <span className="text-primary-orange leading-8">Unlock </span>
-                  Your potential with our{' '}
+                  Your potential with our{" "}
                   <span className="text-primary-orange leading-8">
                     Academy.
                   </span>
@@ -73,8 +71,13 @@ const Academy = () => {
                     Apply now
                   </button>
                 </a> */}
-                <button onClick={() => setVideo1(true)} className="border border-primary-orange rounded text-primary-orange py-3 px-6 my-6 hover:bg-primary-orange hover:text-white">
-                  <span className="capitalize">see our training facilities</span>
+                <button
+                  onClick={() => setVideo1(true)}
+                  className="border border-primary-orange rounded text-primary-orange py-3 px-6 my-6 hover:bg-primary-orange hover:text-white"
+                >
+                  <span className="capitalize">
+                    see our training facilities
+                  </span>
                 </button>
               </motion.div>
               <motion.div
@@ -93,7 +96,6 @@ const Academy = () => {
             </div>
           </section>
           <div className="z-50">
-
             {video1 && (
               <Video
                 modalIsOpen={video1}
@@ -106,12 +108,12 @@ const Academy = () => {
             <div className=" flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col">
               <div className="w-2/3 tablet:w-full">
                 <p className="sm:text-5xl text-xl font-bold">
-                  In the last{' '}
+                  In the last{" "}
                   <span className="text-primary-orange">25 years</span>, we have
                   been <span className="text-primary-orange">investing</span> in
-                  compelling{' '}
-                  <span className="text-primary-orange">Digital</span>{' '}
-                  Infrastructure in five{' '}
+                  compelling{" "}
+                  <span className="text-primary-orange">Digital</span>{" "}
+                  Infrastructure in five{" "}
                   <span className="text-primary-orange">key areas</span>:
                 </p>
                 <ul className="list-disc ml-5 mt-4 sm:text-[24px] text-base ">
@@ -126,7 +128,10 @@ const Academy = () => {
                 </ul>
               </div>
               <div>
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058158/21ctl/logo/21ctl-infographics_jiaas4.png" className="w-2/3" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058158/21ctl/logo/21ctl-infographics_jiaas4.png"
+                  className="w-2/3"
+                />
               </div>
             </div>
           </section>
@@ -139,10 +144,15 @@ const Academy = () => {
            
           </section> */}
           <div class="relative w-full flex flex-col justify-center items-center">
-        <img src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg' className='flex justify-center items-center' />
-        <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl">
-        we provide world-class services to the top 1000 companies in Nigeria and key residential areas.</h1>
-    </div>
+            <img
+              src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg"
+              className="flex justify-center items-center"
+            />
+            <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl">
+              we provide world-class services to the top 1000 companies in
+              Nigeria and key residential areas.
+            </h1>
+          </div>
 
           {/* <section className='flex flex-col justify-center items-center w-full'>
             <div className='font-bold sm:text-5xl text-3xl text-center'>
@@ -204,7 +214,7 @@ const Academy = () => {
 
           <section className="text-3xl  w-full flex flex-col justify-between items-center">
             <h4 className="font-bold">
-              {' '}
+              {" "}
               Skill <span className="text-primary-orange">Gap</span>
             </h4>
             <div className="flex justify-between items-center tablet:flex-col  ">
@@ -218,7 +228,10 @@ const Academy = () => {
                   className="font-extrabold"
                 />
                 <hr />
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/people-33_rbql12.svg" className="w-2/4" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/people-33_rbql12.svg"
+                  className="w-2/4"
+                />
                 <p className="p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
                   Labour Force in Nigeria
                 </p>
@@ -233,7 +246,10 @@ const Academy = () => {
                   className="font-extrabold"
                 />
                 <hr />
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/people-41_s7olts.svg" className="w-2/4" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/people-41_s7olts.svg"
+                  className="w-2/4"
+                />
                 <p className="p-5 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
                   Unemployed Labour Force in Nigeria
                 </p>
@@ -250,10 +266,10 @@ const Academy = () => {
               </h4> */}
               <div>
                 <p className="p-5 bg-primary-orange text-white text-[18px] w-[400px] flex justify-center items-center">
-                  Targeted Number of Trainees 2033{' '}
+                  Targeted Number of Trainees 2033{" "}
                 </p>
                 <p className="p-5 bg-white text-black text-[18px] w-[400px] flex justify-center items-center">
-                  10,000,000{' '}
+                  10,000,000{" "}
                 </p>
               </div>
             </div>
@@ -266,7 +282,10 @@ const Academy = () => {
               </h4>
             </div>
             <div className="w-full flex justify-center items-center">
-              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058164/21ctl/7-pillars_cuapya.svg" className="w-3/5 tablet:w-4/5 " />
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058164/21ctl/7-pillars_cuapya.svg"
+                className="w-3/5 tablet:w-4/5 "
+              />
             </div>
           </section>
 
@@ -332,13 +351,16 @@ const Academy = () => {
           <section className="sm:mb-0 mb-16">
             <div className="flex items-center space-x-10 space-y-0 my-20 py-16 px-10 rounded-xl mx-40 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:mx-5 customize-bg">
               <div className="flex-1">
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/smiling_snvt89.png" className="w-2/3 h-2/5 sm:block hidden" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/smiling_snvt89.png"
+                  className="w-2/3 h-2/5 sm:block hidden"
+                />
               </div>
               <div className="flex-1">
                 <h1 className="sm:text-5xl text-3xl text-left sm:text-center font-semibold tracking-medium mb-8">
                   <span className="text-primary-orange">Customize</span> your
-                  teaching and keep all{' '}
-                  <span className="text-primary-orange">Students</span>{' '}
+                  teaching and keep all{" "}
+                  <span className="text-primary-orange">Students</span>{" "}
                   interested
                 </h1>
                 <p className="leading-8 text-xl text-left sm:text-center">
@@ -362,7 +384,10 @@ const Academy = () => {
                 </p>
               </div>
               <div className="w-full">
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058155/21ctl/logo/face-laughing_kbqju2.png" className="sm:w-2/3 w-full" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058155/21ctl/logo/face-laughing_kbqju2.png"
+                  className="sm:w-2/3 w-full"
+                />
               </div>
             </div>
           </section>
