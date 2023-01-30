@@ -12,16 +12,16 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - run: echo "🔎 The name of your branch is ${{ steps.meta.outputs.tags }} and your repository is ${{ steps.meta.outputs.labels }}."
-      - uses: actions/checkout@v2
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --rm=false
-      - name: setup demo
-        run: |
-          docker build . --file Dockerfile --rm=false
-          mkdir test
-          touch test/oof.txt
-          touch test/.dot.txt
-          ls -la
+      # - uses: actions/checkout@v2
+      # - name: Build the Docker image
+      #   run: docker build . --file Dockerfile --rm=false
+      # - name: setup demo
+      #   run: |
+      #     docker build . --file Dockerfile --rm=false
+      #     mkdir test
+      #     touch test/oof.txt
+      #     touch test/.dot.txt
+      #     ls -la
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
         with:
