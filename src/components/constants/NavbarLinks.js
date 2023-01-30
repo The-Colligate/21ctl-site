@@ -9,31 +9,31 @@ export const mainLinks = [
                    name: 'Konet Pay',
                    link: '#',
                    text: 'Payment Solution',
-                   icon: '/icons/home/mdi_cloud-check-variant.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
                  },
                  {
                    name: 'Konet Wallet',
                    link: '/',
                    text: 'Connecting you with reliable financial solutions.',
-                   icon: '/icons/home/fa6-solid_comment-sms.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
                  },
                  {
                    name: 'Fusion',
                    link: '/',
                    text: 'Connecting you with reliable SMS solutions.',
-                   icon: '/icons/home/fa6-solid_comment-sms.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
                  },
                  {
                    name: 'LMS',
                    link: '/',
                    text: 'Connecting you with reliable SMS solutions.',
-                   icon: '/icons/home/fa6-solid_comment-sms.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
                  },
                  {
                    name: 'HRS',
                    link: '/',
                    text: 'Connecting you with reliable HR solutions.',
-                   icon: '/icons/home/fa6-solid_comment-sms.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
                  },
                ],
                extras: [],
@@ -45,32 +45,32 @@ export const mainLinks = [
                    name: 'Power',
                    link: '/power',
                    text: 'Powering businesses with energy.',
-                   icon: '/icons/home/game-icons_power-lightning.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/home/game-icons_power-lightning_mhy5dz.svg',
                  },
                  {
                    name: 'Digital Infrastructure',
                    link: '/digital',
                    text: 'Providing seamless customer experience',
-                   icon: '/icons/home/eos-icons_cloud-computing.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058133/21ctl/icons/home/eos-icons_cloud-computing_hv9kxx.svg',
                  },
                  {
                    name: 'Digital Platforms',
                    link: '/digital-platform',
                    text: 'Connecting with effective communication.',
-                   icon: '/icons/home/call-icon.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/call-icon_clny0v.svg',
                  },
                  {
                    name: 'People',
                    link: '/people',
                    text: 'Connecting with the right people.',
-                   icon: '/icons/home/people-icon.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058130/21ctl/icons/home/people-icon_nsjcxy.svg',
                  },
                  // { name: "Digital Platform", link: "/", text: "Powering businesses with energy.", icon: "" },
                  {
                    name: 'Security',
                    link: '/security',
                    text: 'Powering businesses with energy.',
-                   icon: '/icons/home/security-lock.svg',
+                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/security-lock_zavtdp.svg',
                  },
                ],
                extras: [],
@@ -82,52 +82,52 @@ export const mainLinks = [
       //       name: 'E-Learning',
       //       link: '/',
       //       text: 'Empowering learners with E-learning.',
-      //       icon: '/icons/home/hat-graduation-filled.svg',
+      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/hat-graduation-filled_d4hmuq.svg',
       //     },
       //     {
       //       name: 'E-Publishing',
       //       link: '/',
       //       text: 'Revolutionizing publishing with e-platform.',
-      //       icon: '/icons/home/ph_book-fill.svg',
+      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058130/21ctl/icons/home/ph_book-fill_wlrwjr.svg',
       //     },
 
       //     {
       //       name: 'Music',
       //       link: '/',
       //       text: 'Unleashing the power of music.',
-      //       icon: '/icons/home/ph_music-note-fill.svg',
+      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058131/21ctl/icons/home/ph_music-note-fill_uohm2q.svg',
       //     },
 
       //     {
       //       name: 'Mobile Commerce',
       //       link: '/',
       //       text: 'Connecting you to mobile commerce.',
-      //       icon: '/icons/home/shopping-bag-sharp.svg',
+      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/icons/home/shopping-bag-sharp_tv4jzc.svg',
       //     },
 
       //     {
       //       name: 'Ticketing',
       //       link: '/',
       //       text: 'Simplifying ticketing with innovation.',
-      //       icon: '/icons/home/dashicons_tickets-alt.svg',
+      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/dashicons_tickets-alt_snbx2d.svg',
       //     },
       //     {
       //       name: 'Mobility',
       //       link: '/',
       //       text: 'Empowering your business with mobility.',
-      //       icon: '/icons/home/directions-bus-rounded.svg',
+      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/directions-bus-rounded_o2j0ai.svg',
       //     },
       //     {
       //       name: 'Konet Space',
       //       link: '/',
       //       text: '',
-      //       icon: '/icons/home/earth-filled.svg',
+      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/earth-filled_s5hngi.svg',
       //     },
       //     {
       //       name: 'Games',
       //       link: '/',
       //       text: 'Powering businesses with energy.',
-      //       icon: '/icons/home/dashicons_tickets-alt.svg',
+      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/dashicons_tickets-alt_snbx2d.svg',
       //     },
       //   ],
       //   extras: [],
@@ -138,74 +138,74 @@ export const mainLinks = [
           {
             name: 'Amazon',
             link: '/',
-            icon: '/logo/partners/Amazon Web Services - png 0.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.png',
           },
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: '/logo/partners/Schneider Electric - png 0.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058144/21ctl/logo/partners/Schneider_Electric_-_png_0_txksee.png',
           },
           {
             name: 'VMware',
             link: '/',
-            icon: '/logo/partners/VMware-logo-1.jpg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
           },
           {
             name: 'Microsoft Azure',
             link: '/',
-            icon: '/logo/partners/Microsoft-Azure-Emblem.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Microsoft-Azure-Emblem_ijjxxx.png',
           },
           {
             name: 'Oracle University',
             link: '/',
-            icon: '/logo/partners/oracle.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
           },
         
           {
             name: 'MIT',
             link: '/',
-            icon: '/logo/partners/mit.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
           },
           {
             name: 'Checkpoint University',
             link: '/',
-            icon: '/logo/partners/checkpoint.jpg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/checkpoint_xnej3a.jpg',
           },
        
           {
             name: 'Orange',
             link: '/',
-            icon: '/logo/partners/orange.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/orange_ymolsp.png',
           },
           {
             name: 'MTN',
             link: '/',
-            icon: '/logo/partners/MTNza - jpeg 0.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/MTNza_-_jpeg_0_rnvk0j.png',
           },
           {
             name: 'Glo',
             link: '/',
-            icon: '/logo/partners/Glo.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Glo_lr90cw.png',
           },
           {
             name: 'Airtel',
             link: '/',
-            icon: '/logo/partners/airtel.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058136/21ctl/logo/airtel_klnfeq.png',
           },
           {
             name: '9mobile',
             link: '/',
-            icon: '/logo/partners/9mobile.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/logo/9mobile_u3qh9h.png',
           },
           {
             name: 'NIBSS',
             link: '/',
-            icon: '/logo/partners/nibss.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/nibss_qmru4b.png',
           },
           {
             name: 'Multichoice Group',
             link: '/',
-            icon: '/logo/partners/MultiChoice Group - png 0.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/MultiChoice_Group_-_png_0_dp989k.png',
           },
 
           //
@@ -220,58 +220,58 @@ export const mainLinks = [
             name: '21st Century Technologies Limited',
             link: '#',
             text: 'Providig digital communication platforms and infrastructure',
-            icon: '/LOGO.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
           },
           {
             name: '21st Century Digital Infrastructure Limited',
             link: '#',
             text: 'Streamlining operations with CAAS.',
-            icon: '/LOGO.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
           },
 
           {
             name: 'KonetPay Nigeria Limited',
             link: 'https://www.konetpay.com',
             text: 'Experience the power of Konet pay.',
-            icon: '/icons/home/KonetPay logo.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/home/KonetPay_logo_ddoifw.svg',
           },
           {
             name: '21st Century Energy',
             link: '/power',
             text: 'Providing renewable energy and electric energy storage system',
-            icon: '/LOGO.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
           },
           {
             name: 'Security',
             link: '/security',
             text: 'Providing cloud-based security service.',
-            icon: '/LOGO.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
           },
           {
             name: 'Digital Academy',
             link: '/people',
             text: 'Empowering disruptive thinkers.',
-            icon: '/LOGO.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675059544/21ctl/digitalAcademy-logo_dwz6g5.svg',
           },
         ],
         extras: [
           {
             name: 'About Us',
             link: '/about-us',
-            icon: '/icons/home/about.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             text: 'Learn More about 21ctl.',
           },
           {
             name: 'Careers',
             link: '#',
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
             text: 'Discover the best role for you.',
           },
           {
             name: 'Partners',
             link: '#',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             text: 'See our partners',
           },
@@ -284,32 +284,32 @@ export const mainLinks = [
           {
             name: 'Lekki',
             link: '/support-centers?lat=6.449280799999999&long=3.4806036#map',
-            icon: '/icons/home/location.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058126/21ctl/icons/home/location_quxqdh.svg',
             text: '5 Jeremiah Ugwu Street, Off Babatunde Anjous, Lekki Phase 1, Lagos.',
           },
           {
             name: 'Victoria Island',
             link: '/support-centers?lat=6.4294752&long=3.4355628#map',
-            icon: '/icons/home/location.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058126/21ctl/icons/home/location_quxqdh.svg',
             text: '1A Samuel Adedoyin Street, Victoria Island, Lagos.',
           },
 
           {
             name: 'Apapa',
             link: '/support-centers?lat=6.436990300000001&long=3.365156#map',
-            icon: '/icons/home/location.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058126/21ctl/icons/home/location_quxqdh.svg',
             text: '48, Burma road. Apapa, Lagos.',
           },
           {
             name: 'Surulere',
             link: '/support-centers?lat=6.5060176&long=3.3530699#map',
-            icon: '/icons/home/location.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058126/21ctl/icons/home/location_quxqdh.svg',
             text: 'No 1 Akerele Street, Off Ogunlana drive. Surulere, Lagos.',
           },
           {
             name: 'Ikeja',
             link: '/support-centers?lat=6.6067642&long=3.3484456#map',
-            icon: '/icons/home/location.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058126/21ctl/icons/home/location_quxqdh.svg',
             text: '3, Alalamu Close Off Alade Close. Allen Bus Stop, Ikeja.',
           },
         ],
@@ -399,20 +399,20 @@ export const academyNavLinks = () => [
           {
             name: 'About Us',
             link: '/about-us',
-            icon: '/icons/home/about.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             text: 'Learn More about 21ctl.',
           },
           {
             name: 'Careers',
             link: '/',
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
             text: 'Discover the best role for you.',
           },
           {
             name: 'Partners',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             text: 'See our partners',
           },
@@ -431,13 +431,13 @@ export const academyNavLinks = () => [
             name: 'CAAS',
             link: '#',
             text: 'Streamlining operations with CAAS.',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
           },
           {
             name: 'SMS Gateway',
             link: '/',
             text: 'Connecting you with reliable SMS solutions.',
-            icon: '/icons/home/fa6-solid_comment-sms.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
         ],
         extras: [],
@@ -463,26 +463,26 @@ export const infraNavLinks = [
           {
             name: 'About Us',
             link: '/about-us',
-            icon: '/icons/home/about.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             text: 'Learn More about 21ctl.',
           },
           {
             name: 'Data Centers',
             link: '/',
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
           },
           {
             name: 'Towers',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
           },
           {
             name: '5G Infrastructure Readiness services',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
           },
@@ -496,37 +496,37 @@ export const infraNavLinks = [
             name: 'Lekki Data Center',
             link: '#',
             text: 'Data Centers',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
           },
           {
             name: 'Apapa Data Center',
             link: '#',
             text: 'Data Centers',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
           },
           {
             name: 'Ikoyi Data Center',
             link: '#',
             text: 'Data Centers',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
           },
           {
             name: 'Ikeja Data Center',
             link: '#',
             text: 'Data Centers',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
           },
           {
             name: 'Alanamu Data Center',
             link: '#',
             text: 'Data Centers',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
           },
           {
             name: 'Saka-Tinubu Data Center',
             link: '#',
             text: 'Data Centers',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
           },
         ],
         extras: [],
@@ -538,13 +538,13 @@ export const infraNavLinks = [
             name: 'Communication Towers',
             link: '#',
             text: 'Streamlining operations with CAAS.',
-            icon: '/icons/home/mdi_cloud-check-variant.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
           },
           {
             name: 'Micro Cells',
             link: '/',
             text: 'Connecting you with reliable SMS solutions.',
-            icon: '/icons/home/fa6-solid_comment-sms.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
         ],
         extras: [],
@@ -556,7 +556,7 @@ export const infraNavLinks = [
             name: '5G Infrastructure Readiness services',
             link: '/',
             text: 'Connecting you with 5G.',
-            icon: '/icons/home/fa6-solid_comment-sms.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
         ],
         extras: [],
@@ -577,13 +577,13 @@ export const platformNavLinks = [
           {
             name: 'About Us',
             link: '/about-us',
-            icon: '/icons/home/about.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             text: 'Learn More about 21ctl.',
           },
           {
             name: 'Communication Platform',
             link: '/',
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
             text: 'Discover the best role for you.',
           },
@@ -591,21 +591,21 @@ export const platformNavLinks = [
           {
             name: 'Payment Platform',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
           {
             name: 'Automation',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
           {
             name: 'Identity',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             text: 'See our partners',
           },
@@ -619,7 +619,7 @@ export const platformNavLinks = [
             name: 'Koney pay',
             link: 'https://www.konetpay.com',
             text: 'Providing reliable payment service.',
-            icon: '/icons/home/fa6-solid_comment-sms.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
         ],
         extras: [],
@@ -669,40 +669,40 @@ export const powerNavLinks = [
           {
             name: 'About Us',
             link: '/about-us',
-            icon: '/icons/home/about.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             text: 'Learn More about 21ctl.',
           },
           {
             name: 'Communication Platform',
             link: '/',
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
             text: 'Discover the best role for you.',
           },
           {
             name: 'Cloud Platform',
             link: 'https://www.21ctl.com/cloud/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
           },
           {
             name: 'Payment Platform',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           },
           {
             name: 'Automation',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           
           },
           {
             name: 'Identity',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
@@ -729,43 +729,43 @@ export const peopleNavLinks = [
           {
             name: 'Trainee',
             link: '/training-pillars',
-            icon: '/icons/home/about.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             
           },
           {
             name: 'Curriculum',
             link: '/training-pillars',
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
           },
           {
             name: 'Instructor',
             link: '/training-pillars',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           },
           {
             name: 'Infrastructure',
             link: '/training-pillars',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           },
           {
             name: 'Didactics',
             link: '/training-pillars',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           },
           {
             name: 'Industry',
             link: '/training-pillars',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           },
           {
             name: 'Quality Assurance',
             link: '/training-pillars',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           },
         ],
@@ -773,13 +773,13 @@ export const peopleNavLinks = [
           {
             name: 'Oracle University',
             link: 'https://education.oracle.com/',
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
           },
        
           {
             name: 'Schneider University',
             link: 'https://university.se.com/',
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
           },
         ],
       },
@@ -790,7 +790,7 @@ export const peopleNavLinks = [
           {
             name: 'Oracle Technology',
             link: '/',
-            icon: '/logo/oracle1.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
             text: 'Administer Oracle Cloud Databases',
             text1: 'Database Developer on Oracle Cloud',
             text2: 'Application Development on Oracle Cloud',
@@ -808,7 +808,7 @@ export const peopleNavLinks = [
           {
             name: 'Oracle Application',
             link: '/',
-            icon: '/logo/oracle1.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
             text: 'Oracle Financials Cloud Business Process',
             text1: 'Oracle HCM Cloud Business Process',
             text2: 'Oracle Sales Cloud Business Process',
@@ -817,7 +817,7 @@ export const peopleNavLinks = [
             {
               name: 'Data Center design and infrastructure',
               link: '/',
-              icon: '/logo/partners/oracle.png',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
               text: 'Overview of Data Center Physical Infrastructure',
               text1: 'Virtualization: The Engine Behind Cloud Computing',
               text2: 'Choosing Between Room, Row and Rack Based Cooling I & II',
@@ -832,7 +832,7 @@ export const peopleNavLinks = [
             {
               name: 'SYSTEM',
               link: '/',
-              icon: '/icons/system.svg',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/system_rfsecw.svg',
               text: 'Devops',
               text1: 'Cybersecurity',
               text2: 'Security and Compliance',
@@ -842,7 +842,7 @@ export const peopleNavLinks = [
           // {
           //   name: 'WEB',
           //   link: '/',
-          //   icon: '/icons/web.svg',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058136/21ctl/icons/web_xedjrt.svg',
           //   text: 'Intro to Web Development',
           //   text1: 'Front-end',
           //   text2: 'Back-end',
@@ -852,7 +852,7 @@ export const peopleNavLinks = [
           {
             name: 'INFRASTRUCTURE',
             link: '/',
-            icon: '/icons/infrastructure.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/icons/infrastructure_jl0nms.svg',
             text: 'Cloud Infrastructure',
             text1: 'Software',
             text2: 'Hardware',
@@ -861,7 +861,7 @@ export const peopleNavLinks = [
           // {
           //   name: 'DESIGN',
           //   link: '/',
-          //   icon: '/icons/design.svg',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/icons/design_rtohgd.svg',
           //   text: 'UI/UX Design',
           //   text1: 'Graphic Design:',
           //   text2: 'Industrial Design',
@@ -869,7 +869,7 @@ export const peopleNavLinks = [
           // {
           //   name: 'DATA',
           //   link: '/',
-          //   icon: '/icons/data.svg',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/icons/data_hg61hk.svg',
           //   text: 'Artificial Intelligence',
           //   text1: 'Deep Learning ',
           //   text2: 'Power BI',
@@ -881,7 +881,7 @@ export const peopleNavLinks = [
           // {
           //   name: 'MARKETING',
           //   link: '/',
-          //   icon: '/icons/system.svg',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/system_rfsecw.svg',
           //   text: 'Product Marketing',
           //   text1: 'Digital Marketing ',
           //   text2: 'Content Marketing',
@@ -892,7 +892,7 @@ export const peopleNavLinks = [
           // {
           //   name: 'GAME',
           //   link: '/',
-          //   icon: '/icons/game.svg',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/game_k3bgjy.svg',
           //   text: 'Intro to Game Development',
           //   text1: '2D Game Development',
           //   text2: '3D Game Development',
@@ -900,7 +900,7 @@ export const peopleNavLinks = [
           {
             name: 'POWER',
             link: '/',
-            icon: '/icons/power.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/power_vu792n.svg',
             text: 'Renewable Energy',
             text1: 'Power Electronics',
             text2: 'High Voltage Engineering',
@@ -919,17 +919,17 @@ export const peopleNavLinks = [
         ],
         extras: [
           //   {
-          //     icon: '/icons/home/career.svg',
+          //     icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
           //     link: '/',
           //     name: 'ML/AI Expert',
           //   },
           //   {
-          //     icon: '/icons/home/career.svg',
+          //     icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
           //     link: '/',
           //     name: 'Oracle Certification',
           //   },
           //   {
-          //     icon: '/icons/home/career.svg',
+          //     icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
           //     link: '/',
           //     name: 'Cloud Engineering',
           //   },
@@ -946,7 +946,7 @@ export const peopleNavLinks = [
           {
             name: 'Amazon',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Advanced Networking',
             text1: 'Data Analytics',
             text2: 'Databases',
@@ -956,14 +956,14 @@ export const peopleNavLinks = [
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Data Center Physical Infrastructure',
             text1: 'See more',
           },
           {
             name: 'VMware',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Multi-Cloud',
             text1: 'Virtual Cloud Network',
             text2: 'Digital Workspace',
@@ -973,14 +973,14 @@ export const peopleNavLinks = [
           {
             name: 'Microsoft Azure',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Cloud Computing',
             text1: 'Virtual Machines',
           },
           {
             name: 'Oracle University',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Oracle Databases',
             text1: 'Oracle Cloud Infrastructure (OCI)',
             text2: 'Cloud Database Sevices',
@@ -990,14 +990,14 @@ export const peopleNavLinks = [
           //   {
           //     name: 'MIT',
           //     link: '/',
-          //     icon: '/icons/home/about.svg',
+          //     icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
           //     // text: 'Get Certification',
           //     // text1: 'See more',
           //   },
           {
             name: 'Checkpoint University',
             link: '/',
-            icon: '/icons/home/handshake.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Malware analysis',
             text1: 'Cloud Network Security',
             text3: 'Security Administration',
@@ -1006,12 +1006,12 @@ export const peopleNavLinks = [
         ],
         extras: [
           {
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
             link: 'https://schneider.efrontlearning.com/',
             name: 'Program Overview',
           },
           {
-            icon: '/icons/home/career.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
             link: 'https://schneider.efrontlearning.com/',
             name: 'Explore certification benefits',
           },
@@ -1038,7 +1038,7 @@ export const securityNavLinks = [
             {
                 name: 'Managed cybersecurity services',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
             text: 'Threat management',
             text1: 'Managed detection and response',
             text2: 'Managed cloud security',
@@ -1049,7 +1049,7 @@ export const securityNavLinks = [
             // name: 'Surveillance',
             name: 'Managed network security services',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
             text: 'Secure Access Service Edge',
             text1: 'Managed firewall services',
             text2: 'Intrusion detection and prevention',
@@ -1065,7 +1065,7 @@ export const securityNavLinks = [
               // name: 'Surveillance',
               name: 'Security Expert Training',
               link: '#',
-              icon: '/icons/security.svg',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
               text: 'Security Administration',
               text1: 'DevSecOps',
               text2: 'Threat management',
@@ -1075,7 +1075,7 @@ export const securityNavLinks = [
           // {
           //   name: 'Threat analysis',
           //   link: '#',
-          //   icon: '/icons/home/handshake.svg',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           //   text: 'See our partners',
           // },
@@ -1088,34 +1088,34 @@ export const securityNavLinks = [
           {
             name: 'Operations',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
 
        
           },
           {
             name: 'Applications',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
           {
             name: 'Storage',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
           {
             name: 'Networking',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
           {
             name: 'Compute',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
           {
             name: 'Identity',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
 
         ],
@@ -1128,17 +1128,17 @@ export const securityNavLinks = [
           {
             name: 'Data Security',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
           {
             name: 'Governance',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
           {
             name: 'Identity and Access Management',
             link: '#',
-            icon: '/icons/security.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
         
         ],
