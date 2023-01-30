@@ -496,6 +496,13 @@ body {
 background-color: #f1f0f3 
 }
 
+.pillar-top-section{
+  background-image: url('/logo/pillars.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .myreact-player {
   width: 940px !important;
   height: 660px !important;
@@ -503,6 +510,19 @@ background-color: #f1f0f3
   z-index:99 !important;
 }
 
+.resrc-pillar{
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 20px 0px; 
+  grid-template-areas: 
+    ". . . ."; 
+}
+
+.resrc-shadow{
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.25);
+}
 
 @media only screen and (max-width: 400px) {
   .about-us, .security {
@@ -571,6 +591,19 @@ background-color: #f1f0f3
 
   .services{
     display: block;
+  }
+
+  .resrc-pillar{
+    display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 20px 0px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."
+    "."; 
   }
 }
 
