@@ -103,7 +103,7 @@ const Power = ()=>{
                                             animate: "visible",
                                             initial: "hidden",
                                             className: "",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                 src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/logo/Power_m6awqs.png",
                                                 width: 800,
                                                 height: 800,

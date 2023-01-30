@@ -101,7 +101,7 @@ const Digital = ()=>{
                                         variants: _components_constants_animations__WEBPACK_IMPORTED_MODULE_6__/* .rightTansitionVarient */ .A4,
                                         animate: "visible",
                                         initial: "hidden",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                             src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/hero-image_abp6dp.png",
                                             width: 650,
                                             height: 650,
@@ -275,7 +275,8 @@ const Digital = ()=>{
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                     src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/icons/potential-partners_kd9w9q.png",
                                     height: 100,
-                                    width: 100
+                                    width: 100,
+                                    className: "tablet:w-full"
                                 })
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
@@ -321,7 +322,7 @@ const Digital = ()=>{
                                                             })
                                                         ]
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                         src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/data-centers/ikeja-center_ahvecs.png",
                                                         className: "inline-block w-full fit",
                                                         width: 100,
@@ -351,7 +352,7 @@ const Digital = ()=>{
                                                             })
                                                         ]
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                         src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058121/21ctl/data-centers/lekki-center_ctedxo.png",
                                                         className: "inline-block w-full h-fit",
                                                         width: 100,
@@ -381,7 +382,7 @@ const Digital = ()=>{
                                                             })
                                                         ]
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                         src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/data-centers/apapa-center_mmq3so.png",
                                                         className: "inline-block w-full h-fit",
                                                         width: 100,
@@ -411,7 +412,7 @@ const Digital = ()=>{
                                                             })
                                                         ]
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                         src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/data-centers/sakatinubu_v5tjln.jpg",
                                                         className: "inline-block w-full h-fit",
                                                         width: 100,
@@ -441,7 +442,7 @@ const Digital = ()=>{
                                                             })
                                                         ]
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                         src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058118/21ctl/data-centers/alanamu_ldhtn9.png",
                                                         width: 100,
                                                         height: 100,

@@ -113,7 +113,10 @@ const Security = ()=>{
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                     className: "bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6",
-                                                    children: "Reach Us"
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        href: "mailto:commercial@21ctl.com",
+                                                        children: "Reach Us"
+                                                    })
                                                 })
                                             ]
                                         }),
@@ -122,7 +125,7 @@ const Security = ()=>{
                                             animate: "visible",
                                             initial: "hidden",
                                             className: "w-[100%]",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                 src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058154/21ctl/logo/security_uitcej.svg",
                                                 width: 2000,
                                                 height: 2000,
@@ -151,7 +154,7 @@ const Security = ()=>{
                                                             className: "text-primary-orange text-4xl font-semibold",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_countup__WEBPACK_IMPORTED_MODULE_7___default()), {
                                                                 start: 0,
-                                                                end: 200,
+                                                                end: 1000,
                                                                 duration: 2.75,
                                                                 prefix: "",
                                                                 suffix: "+"
@@ -226,12 +229,12 @@ const Security = ()=>{
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-                                className: "sm:mb-0 mb-16 py-20 mx-20 tablet:mx-0",
+                                className: "sm:mb-0 mb-16 py-20 mx-20 tablet:mx-10",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: "flex items-center space-x-10 space-y-0 tablet:flex-col-reverse",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "w-[40%] tablet:mt-10 tablet:mx-10",
+                                            className: "w-[40%] tablet:mt-10 tablet:mx-10 tablet:w-full",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_5__.motion.img, {
                                                 variants: _components_constants_animations__WEBPACK_IMPORTED_MODULE_6__/* .leftTransitionVarient */ .oC,
                                                 ref: ref,
@@ -250,7 +253,7 @@ const Security = ()=>{
                                             animate: "visible",
                                             initial: "hidden",
                                             // animate={control}
-                                            className: "flex-1 mb-5 w-[60%]",
+                                            className: "flex-1 mb-5 w-[60%] tablet:w-full",
                                             children: [
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h1", {
                                                     className: "sm:text-5xl text-3xl font-semibold tracking-medium mb-8",
@@ -310,13 +313,16 @@ const Security = ()=>{
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                     className: "bg-primary-orange w-32 rounded-xl font-semibold text-white py-3 px-6 my-6",
-                                                    children: "Reach Us"
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        href: "mailto:commercial@21ctl.com",
+                                                        children: "Reach Us"
+                                                    })
                                                 }),
                                                 "    "
                                             ]
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "w-[40%]",
+                                            className: "w-[40%] tablet:w-full tablet:px-10",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                 src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058153/21ctl/logo/threat-protection_usjnjk.png",
                                                 className: "rounded-2xl"
@@ -329,11 +335,11 @@ const Security = ()=>{
                                 className: "px-20 mt-20 vision-mission-section tablet:px-0",
                                 children: [
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: " mr-0 flex justify-around items-center tablet:m-10 tablet:flex-col",
+                                        className: " mr-0 flex justify-around items-center tablet:m-10 tablet:flex-col tablet:flex-col-reverse",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "flex items-center justify-start w-[50%] tablet:w-full",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                     src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/ddos-protection_bsxw5k.png",
                                                     className: "",
                                                     height: 581,
@@ -375,7 +381,7 @@ const Security = ()=>{
                                         ]
                                     }),
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: " mr-0 mt-20 flex justify-between items-center tablet:m-10 tablet:flex-col-reverse",
+                                        className: " mr-0 mt-20 flex justify-between items-center tablet:m-10 tablet:flex-col",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "w-[40%] tablet:w-full",
@@ -402,7 +408,7 @@ const Security = ()=>{
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "flex items-center justify-end w-[50%] tablet:w-full",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                     src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058155/21ctl/logo/security_operations_r2jwsl.svg",
                                                     className: "",
                                                     height: 581,
@@ -421,7 +427,7 @@ const Security = ()=>{
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "w-[50%] tablet:w-full",
                                             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "tablet:my-5 mb-4 w-4/5",
+                                                className: "tablet:my-5 mb-4 w-4/5 tablet:w-full",
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
                                                         className: "text-5xl font-semibold tablet:text-2xl tracking-medium mb-8 tablet:mb-2 ",
