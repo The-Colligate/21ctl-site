@@ -173,6 +173,7 @@ const Digital = () => {
                                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/icons/potential-partners_kd9w9q.png'
                                 height={100}
                                 width={100}
+                                className="tablet:w-full"
 
                             />
                         </div>

@@ -151,9 +151,9 @@ useEffect(() => {
           </section>
 
 
-          <section className="sm:mb-0 mb-16 py-20 mx-20 tablet:mx-0">
+          <section className="sm:mb-0 mb-16 py-20 mx-20 tablet:mx-10">
             <div className="flex items-center space-x-10 space-y-0  tablet:flex-col-reverse">
-              <div className="w-[40%]  tablet:mt-10  tablet:mx-10">
+              <div className="w-[40%]  tablet:mt-10  tablet:mx-10 tablet:w-full">
                 <motion.img variants={leftTransitionVarient}
                 ref={ref}
                 animate="visible"
@@ -173,7 +173,7 @@ useEffect(() => {
                 animate="visible"
                 initial="hidden"
                 // animate={control}
-                className="flex-1 mb-5 w-[60%]">
+                className="flex-1 mb-5 w-[60%] tablet:w-full">
                 <h1
 
 
@@ -214,7 +214,7 @@ One of the key services offered by the company is Secure Access Service Edge (SA
                   Reach Us
                   </a>
                 </button>    </div>
-              <div className='w-[40%]'>
+              <div className='w-[40%] tablet:w-full tablet:px-10'>
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058153/21ctl/logo/threat-protection_usjnjk.png"
                   className='rounded-2xl'
@@ -225,7 +225,7 @@ One of the key services offered by the company is Secure Access Service Edge (SA
           </section>
 
           <section className="px-20 mt-20 vision-mission-section tablet:px-0">
-            <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col">
+            <div className=" mr-0 flex justify-around items-center  tablet:m-10 tablet:flex-col tablet:flex-col-reverse">
             <div className="flex items-center justify-start w-[50%] tablet:w-full">
                 <Image
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/ddos-protection_bsxw5k.png"
@@ -256,7 +256,7 @@ One of the key services offered by the company is training in threat management,
 
               
             </div>
-            <div className=" mr-0 mt-20 flex justify-between items-center  tablet:m-10  tablet:flex-col-reverse">
+            <div className=" mr-0 mt-20 flex justify-between items-center  tablet:m-10  tablet:flex-col">
               
               <div className="w-[40%] tablet:w-full">
 
@@ -290,7 +290,7 @@ One of the key services offered by the company is training in threat management,
             
               <div className="w-[50%] tablet:w-full">
 
-                <div className="tablet:my-5 mb-4 w-4/5">
+                <div className="tablet:my-5 mb-4 w-4/5 tablet:w-full">
                   <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2 ">
                     <span className="text-primary-orange">SmartBackup </span>
 
