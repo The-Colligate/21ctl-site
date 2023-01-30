@@ -61,14 +61,14 @@ const Platform = () => {
                   interconnect and securely host their critical infrastructure
                   and data sets.
                 </p>
-
+                
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -103,12 +103,12 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
 
@@ -154,12 +154,12 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -196,12 +196,12 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
 
@@ -253,12 +253,12 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>

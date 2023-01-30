@@ -50,12 +50,12 @@ const Automation = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -76,12 +76,12 @@ const Automation = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
 
@@ -119,12 +119,12 @@ const Automation = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -147,12 +147,12 @@ const Automation = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
 
@@ -203,12 +203,12 @@ const Automation = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
