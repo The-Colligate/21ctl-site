@@ -15,7 +15,7 @@ jobs:
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
         with:
-          local: test
+          local: /usr/src/app
           remote: /home/sam/public_html/build
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
