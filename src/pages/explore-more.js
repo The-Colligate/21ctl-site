@@ -212,7 +212,9 @@ const ExploreMore = () => {
                         </div>
                         <div className='grow mr-10 tablet:ml-10'>
                             <img
-                                src='/logo/journey.png' />
+                                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey_xsy94x.png'
+                                // '/logo/journey.png' 
+                                />
 
                             <div className='flex flex-wrap w-full'>
                                 <div className='w-1/3 p-10 tablet:w-full'>
@@ -271,7 +273,9 @@ const ExploreMore = () => {
                         </div>
                         <div className='grow mr-10 tablet:ml-10'>
                             <img
-                                src='/logo/journey2.png' />
+                                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey2_ougsfg.png'
+                                // '/logo/journey2.png'
+                                 />
 
                             <div className='flex flex-wrap w-full'>
                                 <div className='w-1/3 p-10 tablet:w-full'>
@@ -324,7 +328,11 @@ const ExploreMore = () => {
                         </div>
                         <div className='grow mr-10 tablet:ml-10'>
                             <img
-                                src='/logo/journey3.png' className='w-4/5 flex justify-center ' />
+                                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey2_ougsfg.png'
+                                // '/logo/journey3.png'
+                                
+                                
+                                className='w-4/5 flex justify-center ' />
 
                             <div className='flex flex-wrap w-full'>
                                 <div className='w-1/3 p-10 tablet:w-full'>

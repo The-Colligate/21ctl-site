@@ -96,18 +96,17 @@ const Academy = () => {
             </div>
           </section>
 
-          <section className='mx-20 my-20 w-full tablet:mx-10'>
-            <div className=' flex justify-between items-center  w-full tablet:flex-col'>
-              <div className='w-3/5 tablet:w-full'>
-                <p className='text-5xl font-bold text-center'> <span className="text-primary-orange">we provide world-class services to the top 1000 companies </span>in Nigeria and key residential areas.</p>
+          <section className='relative mx-20 my-20 h-[50vh] w-full tablet:mx-10'>
+          <div className='absolute flex justify-center items-center w-full h-full'>
+                       <p className='text-5xl font-bold text-center w-3/5 h-[50vh]'> <span className="text-primary-orange">we provide world-class services to the top 1000 companies </span>in Nigeria and key residential areas.</p>
+                       </div>
+          {/* <img src='/logo/people-info.svg' className='w-[100vw] h-[80vh]' /> */}
+           
+         
 
-              </div>
 
-
-              <div>
-                <img src='/logo/' className='w-full h-1/5' />
-              </div>
-            </div>
+       
+          
           </section>
           {/* <section className='flex flex-col justify-center items-center w-full'>
             <div className='font-bold sm:text-5xl text-3xl text-center'>
