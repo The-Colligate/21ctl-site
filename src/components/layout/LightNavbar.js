@@ -85,7 +85,7 @@ export function LightNavbar({ menuProp }) {
           >
             {/* {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />} */}
             {router.pathname === '/' ? (
-              <img src="/light-logo.svg" />
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
             ) : excluded.includes(router.pathname) ? (
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
@@ -93,7 +93,7 @@ export function LightNavbar({ menuProp }) {
               />
             ) : (
               <img
-                src="/light-logo-limited.svg"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
                 className="dark:hidden w-16 tablet:w-14"
               />
             )}
