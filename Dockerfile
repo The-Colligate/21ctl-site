@@ -19,9 +19,11 @@ FROM node:16-alpine
 
 RUN mkdir -p /app
 
-WORKDIR /app
+# WORKDIR /app
 
 COPY package*.json /app
+
+RUN ls -la
 
 RUN npm i
 
@@ -30,6 +32,10 @@ EXPOSE 3000
 COPY . /app
 
 RUN npm run build
+
+RUN cd ..
+
+RUN ls -la
 
 CMD ["ls", "-la"]
 
