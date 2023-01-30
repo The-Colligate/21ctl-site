@@ -2,6 +2,35 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/": "pages/index.js",
   "/people": "pages/people.js"
+=======
+  "/api/hello": "pages/api/hello.js",
+  "/automation": "pages/automation.html",
+  "/about-us": "pages/about-us.html",
+  "/communication": "pages/communication.html",
+  "/dark": "pages/dark.html",
+  "/digital-infrastructure": "pages/digital-infrastructure.html",
+  "/digital-page": "pages/digital-page.html",
+  "/explore-more": "pages/explore-more.html",
+  "/identity": "pages/identity.html",
+  "/": "pages/index.html",
+  "/light/about-us": "pages/light/about-us.html",
+  "/light/academy": "pages/light/academy.html",
+  "/light/communication": "pages/light/communication.html",
+  "/light/digital-infrastructure": "pages/light/digital-infrastructure.html",
+  "/light/digital": "pages/light/digital.html",
+  "/light/power": "pages/light/power.html",
+  "/light": "pages/light.html",
+  "/light/security": "pages/light/security.html",
+  "/people": "pages/people.html",
+  "/platform": "pages/platform.html",
+  "/power": "pages/power.html",
+  "/programmes": "pages/programmes.html",
+  "/security": "pages/security.html",
+  "/support-centers": "pages/support-centers.html",
+  "/training-pillars": "pages/training-pillars.html",
+  "/404": "pages/404.html"
+>>>>>>> 6779ac835d0e41d70f06a937d5a469d7b2be421e
 }

@@ -13,11 +13,115 @@ exports.id = "pages/_error";
 exports.ids = ["pages/_error"];
 exports.modules = {
 
+<<<<<<< HEAD
 /***/ "./node_modules/.pnpm/@swc+helpers@0.4.14/node_modules/@swc/helpers/lib/_extends.js":
 /*!******************************************************************************************!*\
   !*** ./node_modules/.pnpm/@swc+helpers@0.4.14/node_modules/@swc/helpers/lib/_extends.js ***!
   \******************************************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
+=======
+/***/ 7345:
+/***/ ((module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+exports["default"] = void 0;
+var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
+var _react = _interop_require_default(__webpack_require__(6689));
+var _head = _interop_require_default(__webpack_require__(3121));
+const statusCodes = {
+    400: "Bad Request",
+    404: "This page could not be found",
+    405: "Method Not Allowed",
+    500: "Internal Server Error"
+};
+function _getInitialProps({ res , err  }) {
+    const statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
+    return {
+        statusCode
+    };
+}
+const styles = {
+    error: {
+        fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
+        height: "100vh",
+        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    desc: {
+        display: "inline-block",
+        textAlign: "left",
+        lineHeight: "49px",
+        height: "49px",
+        verticalAlign: "middle"
+    },
+    h1: {
+        display: "inline-block",
+        margin: 0,
+        marginRight: "20px",
+        padding: "0 23px 0 0",
+        fontSize: "24px",
+        fontWeight: 500,
+        verticalAlign: "top",
+        lineHeight: "49px"
+    },
+    h2: {
+        fontSize: "14px",
+        fontWeight: "normal",
+        lineHeight: "49px",
+        margin: 0,
+        padding: 0
+    }
+};
+var _Component;
+class Error extends (_Component = _react.default.Component) {
+    render() {
+        const { statusCode , withDarkMode =true  } = this.props;
+        const title = this.props.title || statusCodes[statusCode] || "An unexpected error has occurred";
+        return /*#__PURE__*/ _react.default.createElement("div", {
+            style: styles.error
+        }, /*#__PURE__*/ _react.default.createElement(_head.default, null, /*#__PURE__*/ _react.default.createElement("title", null, statusCode ? `${statusCode}: ${title}` : "Application error: a client-side exception has occurred")), /*#__PURE__*/ _react.default.createElement("div", null, /*#__PURE__*/ _react.default.createElement("style", {
+            dangerouslySetInnerHTML: {
+                __html: `
+                body { margin: 0; color: #000; background: #fff; }
+                .next-error-h1 {
+                  border-right: 1px solid rgba(0, 0, 0, .3);
+                }
+
+                ${withDarkMode ? `@media (prefers-color-scheme: dark) {
+                  body { color: #fff; background: #000; }
+                  .next-error-h1 {
+                    border-right: 1px solid rgba(255, 255, 255, .3);
+                  }
+                }` : ""}`
+            }
+        }), statusCode ? /*#__PURE__*/ _react.default.createElement("h1", {
+            className: "next-error-h1",
+            style: styles.h1
+        }, statusCode) : null, /*#__PURE__*/ _react.default.createElement("div", {
+            style: styles.desc
+        }, /*#__PURE__*/ _react.default.createElement("h2", {
+            style: styles.h2
+        }, this.props.title || statusCode ? title : /*#__PURE__*/ _react.default.createElement(_react.default.Fragment, null, "Application error: a client-side exception has occurred (see the browser console for more information)"), "."))));
+    }
+}
+Error.displayName = "ErrorPage";
+Error.getInitialProps = _getInitialProps;
+Error.origGetInitialProps = _getInitialProps;
+exports["default"] = Error;
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=_error.js.map
+>>>>>>> 6779ac835d0e41d70f06a937d5a469d7b2be421e
 
 eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\nObject.defineProperty(exports, \"default\", ({\n    enumerable: true,\n    get: function() {\n        return _extends;\n    }\n}));\nfunction extends_() {\n    extends_ = Object.assign || function(target) {\n        for(var i = 1; i < arguments.length; i++){\n            var source = arguments[i];\n            for(var key in source){\n                if (Object.prototype.hasOwnProperty.call(source, key)) {\n                    target[key] = source[key];\n                }\n            }\n        }\n        return target;\n    };\n    return extends_.apply(this, arguments);\n}\nfunction _extends() {\n    return extends_.apply(this, arguments);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvLnBucG0vQHN3YytoZWxwZXJzQDAuNC4xNC9ub2RlX21vZHVsZXMvQHN3Yy9oZWxwZXJzL2xpYi9fZXh0ZW5kcy5qcy5qcyIsIm1hcHBpbmdzIjoiQUFBYTtBQUNiLDhDQUE2QztBQUM3QztBQUNBLENBQUMsRUFBQztBQUNGLDJDQUEwQztBQUMxQztBQUNBO0FBQ0E7QUFDQTtBQUNBLENBQUMsRUFBQztBQUNGO0FBQ0E7QUFDQSx1QkFBdUIsc0JBQXNCO0FBQzdDO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8yMWN0bC13ZWJzaXRlLy4vbm9kZV9tb2R1bGVzLy5wbnBtL0Bzd2MraGVscGVyc0AwLjQuMTQvbm9kZV9tb2R1bGVzL0Bzd2MvaGVscGVycy9saWIvX2V4dGVuZHMuanM/ZDdmZSJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwge1xuICAgIHZhbHVlOiB0cnVlXG59KTtcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcImRlZmF1bHRcIiwge1xuICAgIGVudW1lcmFibGU6IHRydWUsXG4gICAgZ2V0OiBmdW5jdGlvbigpIHtcbiAgICAgICAgcmV0dXJuIF9leHRlbmRzO1xuICAgIH1cbn0pO1xuZnVuY3Rpb24gZXh0ZW5kc18oKSB7XG4gICAgZXh0ZW5kc18gPSBPYmplY3QuYXNzaWduIHx8IGZ1bmN0aW9uKHRhcmdldCkge1xuICAgICAgICBmb3IodmFyIGkgPSAxOyBpIDwgYXJndW1lbnRzLmxlbmd0aDsgaSsrKXtcbiAgICAgICAgICAgIHZhciBzb3VyY2UgPSBhcmd1bWVudHNbaV07XG4gICAgICAgICAgICBmb3IodmFyIGtleSBpbiBzb3VyY2Upe1xuICAgICAgICAgICAgICAgIGlmIChPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwoc291cmNlLCBrZXkpKSB7XG4gICAgICAgICAgICAgICAgICAgIHRhcmdldFtrZXldID0gc291cmNlW2tleV07XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICAgIHJldHVybiB0YXJnZXQ7XG4gICAgfTtcbiAgICByZXR1cm4gZXh0ZW5kc18uYXBwbHkodGhpcywgYXJndW1lbnRzKTtcbn1cbmZ1bmN0aW9uIF9leHRlbmRzKCkge1xuICAgIHJldHVybiBleHRlbmRzXy5hcHBseSh0aGlzLCBhcmd1bWVudHMpO1xufVxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/.pnpm/@swc+helpers@0.4.14/node_modules/@swc/helpers/lib/_extends.js\n");
 
@@ -130,7 +234,11 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+<<<<<<< HEAD
 var __webpack_exports__ = (__webpack_exec__("./node_modules/.pnpm/next@13.1.1_biqbaboplfbrettd7655fr4n2y/node_modules/next/dist/pages/_error.js"));
+=======
+var __webpack_exports__ = __webpack_require__.X(0, [121], () => (__webpack_exec__(7345)));
+>>>>>>> 6779ac835d0e41d70f06a937d5a469d7b2be421e
 module.exports = __webpack_exports__;
 
 })();
