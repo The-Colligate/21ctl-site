@@ -29,7 +29,7 @@ const Pillars = () => {
           {/* top-section */}
           <section className="pillar-top-section h-[80vh] px-8 ">
             <div className="flex flex-col items-center justify-center w-full h-full leading-10">
-              <h1 className="font-extrabold sm:text-6xl text-4xl text-white text-center leading-8 max-w-6xl">
+              <h1 className="font-extrabold sm:text-6xl text-4xl text-white text-center sm:leading-8 leading-10 max-w-6xl">
                 The <span className="text-primary-orange">Pillars</span> of
                 Digital Training Center Model
               </h1>
@@ -214,12 +214,31 @@ const Pillars = () => {
             </div>
           </section>
 
+          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
+            <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
+              <div className="">
+                <h2 className="font-bold sm:text-5xl text-2xl text-primary-orange dark:text-dark">
+                Didactics
+                </h2>
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
+                We are responsible for overseeing trainee eligibility, reviewing and approving applications, supporting program facilitators, and serving as a liaison between facilitators and trainees.
+                 
+                </p>
+              </div>
+
+              <div>
+                <img src="/logo/didactics.png" alt="connectivity" />
+                {/* <iframe src='https://res.cloudinary.com/bucpgs/video/upload/v1674640061/course_form/21ctl/Background_technology_world_loop_v144P_oiv924.mp4' ></iframe> */}
+              </div>
+            </div>
+          </section>
+
           <section className="py-20 sm:px-28 px-8">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div>
                 <img
                   // src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
-                  src="/logo/automation.svg"
+                  src="/logo/quality-assurance.png"
                   alt="connectivity"
                   className="w-[500px]"
                 />
