@@ -27,9 +27,9 @@ RUN npm i
 
 EXPOSE 3000
 
-RUN npm run build
-
 COPY . /app
+
+RUN npm run build
 
 CMD ["npm", "run", "dev"]
 
