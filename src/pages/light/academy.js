@@ -21,9 +21,10 @@ const Academy = () => {
     'Power management and distribution',
     'Building management systems and energy efficiency',
     'Automation and control systems',
-    'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
+    'Programming and configuration of Schneider Electric products.',
+    // 'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
     'Cybersecurity for industrial systems',
-    'Industry-specific applications, such as data centers (renewable energy, and critical power systems)',
+    'Industry-specific applications, such as data centers',
     'Safety and compliance',
     'Data Center managment',
     // 'Database',
@@ -310,23 +311,21 @@ const Academy = () => {
               {courses.map((course) => (
                 <div
                   key={course}
-                  className="bg-white sm:w-[350px] w-full px-2 py-3 h-[150px] rounded-xl"
+                  className="bg-white sm:w-[350px] w-full px-2 py-3 rounded-xl"
                 >
                   <div
                     key={course}
-                    className="flex items-center sm:justify-center justify-start"
+                    className="flex items-center"
                   >
-                    <div key={course} className="pr-5 w-[100px] h-[99px]">
+                    <div key={course} className="mr-4">
                       <img
                         src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/logo/courses_z4srsc.svg"
                         // src="/logo/courses.png"
-                        className=" w-[100px] h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"
-                        width={166}
-                        height={99}
+                        className="w-24 h-full max-w-lg"
                       />
                       {/* <div className='w-[120px] h-[99px] bg-primary-orange'></div> */}
                     </div>
-                    <div className="flex flex-col  justify-center">
+                    <div className="flex flex-1 flex-col  justify-center">
                       <h2 className="text-base text-black font-bold w-full ">
                         {course}
                       </h2>

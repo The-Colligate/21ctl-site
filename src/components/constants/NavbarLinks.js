@@ -1023,6 +1023,12 @@ export const peopleNavLinks = [
         subLinks: [],
         extras: [],
       },
+      {
+        name: 'Pillars',
+        link: '/training-pillars',
+        subLinks: [],
+        extras: [],
+      },
     ],
   },
   {
