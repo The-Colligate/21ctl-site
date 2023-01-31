@@ -14,6 +14,7 @@ import Video from '../../components/Video';
 
 const src1 =
   "https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4";
+  
 
 const Academy = () => {
   const courses = [
