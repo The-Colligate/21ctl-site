@@ -259,7 +259,7 @@ const Digital = () => {
             </div>
           </section>
 
-          <section className="five-gr pt-32 sm:mt-0 mt-32 phone:mt-0">
+          <section className="five-gr pt-32 sm:mt-0 mt-32 mb-10 phone:mt-0">
             <div className=" flex sm:flex-row flex-col w-full justify-center  items-center m-auto sm:h-full h-full bg-white ">
               <div className="px-5 sm:py-0 py-10 mx-10 text-black dark:text-black">
                 <h4 className="text-5xl font-semibold text-left tablet:text-3xl">
@@ -272,14 +272,14 @@ const Digital = () => {
                   and services.
                 </p>
               </div>
-              <div className="w-full h-full sm:px-0 px-5">
+              <div className="flex sm:justify-start justify-center w-full h-full sm:px-0 px-5">
                 <img
-                  // src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
+                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
                  
-                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058177/21ctl/logo/5g_main_qvaz7q.svg'
+                //  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058177/21ctl/logo/5g_main_qvaz7q.svg'
                  
          
-                  className=" w-2/3 sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
+                  className=" w-2/3 sm:rounded-tr-3xl sm:rounded-br-3xl "
                 />
               </div>
             </div>
