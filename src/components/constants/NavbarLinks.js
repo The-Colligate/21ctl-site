@@ -138,7 +138,7 @@ export const mainLinks = [
           {
             name: 'Amazon',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.webp',
           },
           {
             name: 'Schneider Electric University',
