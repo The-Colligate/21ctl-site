@@ -260,7 +260,7 @@ const Academy = () => {
               </h4> */}
               <div>
                 <p className="p-5 bg-primary-orange text-white text-[18px] w-[400px] flex justify-center items-center">
-                  Targeted Number of Trainees 2033{' '}
+                  Targeted Number of Trainees by 2033{' '}
                 </p>
                 <p className="p-5 mt-2 bg-white text-black text-[18px] w-[400px] flex justify-center items-center">
                   10,000,000{' '}
