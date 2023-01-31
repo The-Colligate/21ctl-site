@@ -2,7 +2,6 @@ import { CaretDown } from '@icons/index';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { NavClose } from '@icons/close';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Popover } from 'evergreen-ui';
 import { useRouter } from 'next/router';

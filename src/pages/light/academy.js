@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import Head from "next/head";
-import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import Head from 'next/head';
+import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
+import { motion } from 'framer-motion';
 import {
   leftTransitionVarient,
   rightTansitionVarient,
@@ -14,7 +13,7 @@ import Video from '../../components/Video';
 
 const src1 =
   "https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4";
-  
+
 
 const Academy = () => {
   const courses = [
