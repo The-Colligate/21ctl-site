@@ -136,14 +136,24 @@ export const mainLinks = [
         name: 'Partners',
         subLinks: [
           {
-            name: 'Amazon',
+            name: 'MIT',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.webp',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp',
           },
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058144/21ctl/logo/partners/Schneider_Electric_-_png_0_txksee.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+          },
+          {
+            name: 'Checkpoint University',
+            link: '/',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/checkpoint_xnej3a.jpg',
+          },
+           {
+            name: 'Oracle University',
+            link: '/',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
           },
           {
             name: 'VMware',
@@ -156,22 +166,10 @@ export const mainLinks = [
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Microsoft-Azure-Emblem_ijjxxx.png',
           },
           {
-            name: 'Oracle University',
+            name: 'Amazon',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.webp',
           },
-        
-          {
-            name: 'MIT',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
-          },
-          {
-            name: 'Checkpoint University',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/checkpoint_xnej3a.jpg',
-          },
-       
           {
             name: 'Orange',
             link: '/',
@@ -219,7 +217,7 @@ export const mainLinks = [
           {
             name: '21st Century Technologies Limited',
             link: '#',
-            text: 'Providig digital communication platforms and infrastructure',
+            text: 'Providing digital communication platforms and infrastructure',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
           },
           {
@@ -789,7 +787,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Oracle Technology',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
             text: 'Administer Oracle Cloud Databases',
             text1: 'Database Developer on Oracle Cloud',
@@ -807,7 +805,7 @@ export const peopleNavLinks = [
           },
           {
             name: 'Oracle Application',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
             text: 'Oracle Financials Cloud Business Process',
             text1: 'Oracle HCM Cloud Business Process',
@@ -816,7 +814,7 @@ export const peopleNavLinks = [
             },
             {
               name: 'Data Center design and infrastructure',
-              link: '/',
+              link: '#',
               icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
               text: 'Overview of Data Center Physical Infrastructure',
               text1: 'Virtualization: The Engine Behind Cloud Computing',
@@ -829,6 +827,29 @@ export const peopleNavLinks = [
               text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
               text9: 'Data Center Projects: Commissioning',
             },
+            {
+              name: 'Super Micro',
+              link: '/programmes',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp',
+              text: 'OS Cerifications',
+              text1: 'Cloud services',
+              text2: 'Cloud Orchestrator',
+              text3: 'Virtualization',
+              text4: 'Kubernetes Containers',
+            },
+
+
+            {
+              name: 'Schneider University',
+              link: '/programmes',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+              text: 'Fundamentals of Power',
+              text1: 'Efficiency of AC and DC Power Distribution in Data Centers',
+              text2: 'Energy Efficiency Fundamentals',
+              text3: 'Energy Efficiency with Building Automation Systems',
+              text4: 'Optimising Data Center Environmental Monitoring',
+            },
+
             {
               name: 'SYSTEM',
               link: '/',
@@ -956,7 +977,7 @@ export const peopleNavLinks = [
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
             text: 'Data Center Physical Infrastructure',
             text1: 'See more',
           },

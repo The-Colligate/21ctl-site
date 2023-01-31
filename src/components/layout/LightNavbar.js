@@ -15,6 +15,15 @@ import {
   securityNavLinks,
 } from '../constants/NavbarLinks';
 
+
+
+const excluded = [
+  '/people',
+  '/programmes',
+  '/training-pillars',
+  '/admission',
+];
+
 export function LightNavbar({ menuProp }) {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
@@ -32,12 +41,7 @@ export function LightNavbar({ menuProp }) {
   // });
   // });
 
-  const excluded = [
-    '/people',
-    '/programmes',
-    '/training-pillars',
-    '/admission',
-  ];
+  
 
   const navItems =
     router.pathname === '/digital-platform'
@@ -91,7 +95,10 @@ export function LightNavbar({ menuProp }) {
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
                 className="dark:hidden w-36 tablet:w-14"
               />
-            ) : (
+            ) : router.pathname === '/platform' ? <img
+            src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.jpg"
+            className="dark:hidden w-16 tablet:w-14"
+          />: (
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
                 className="dark:hidden w-16 tablet:w-14"
@@ -436,12 +443,13 @@ export function LightNavbar({ menuProp }) {
         isOpen={isOpen}
         close={() => setIsOpen(false)}
         navItems={navItems[0]}
+        router={router}
       />
     </>
   );
 }
 
-const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
+const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
   const [showExpanded, setShowExpanded] = useState([-1, false]);
 
   return (
@@ -462,11 +470,49 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
             </button>
           ) : (
             <>
-              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" className="w-14 h-auto dark:hidden" />
+           {theme !== 'dark' ? (
+          <Link
+            href={
+              router.pathname === '/'
+                ? '/'
+                : excluded.includes(router.pathname)
+                ? '/people'
+                : '/'
+            }
+          >
+            {router.pathname === '/' ? (
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+            ) : excluded.includes(router.pathname) ? (
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
-                className="w-14 h-auto dark:block hidden"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
+                className="dark:hidden w-36 tablet:w-14"
               />
+            ) : (
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
+                className="dark:hidden w-16 tablet:w-14"
+              />
+            )}
+  
+          </Link>
+        ) : (
+          <Link href="/" className="dark:block hidden">
+            <img
+              src={
+                router.pathname === '/'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
+                  : router.pathname === '/people'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                  : router.pathname === '/programmes'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                  : router.pathname === '/training-pillars'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                  : 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
+              }
+              className=" w-16 tablet:w-14"
+            />
+          </Link>
+        )}
             </>
           )}
           <button
