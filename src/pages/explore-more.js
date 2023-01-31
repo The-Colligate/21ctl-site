@@ -327,7 +327,7 @@ const ExploreMore = () => {
                         </div>
                         <div className='grow mr-10 tablet:ml-10'>
                             <img
-                                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey2_ougsfg.png'
+                                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey3_y7frmq.png'
                                 // '/logo/journey3.png'
                                 
                                 
