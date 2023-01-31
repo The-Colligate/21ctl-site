@@ -94,7 +94,7 @@ function App({ Component , pageProps  }) {
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(external_next_themes_.ThemeProvider, {
-                defaultTheme: "system",
+                defaultTheme: "light",
                 attribute: "class",
                 enableSystem: true,
                 enableColorScheme: true,

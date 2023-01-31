@@ -115,7 +115,7 @@ const Security = ()=>{
                                                     className: "bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                         href: "mailto:commercial@21ctl.com",
-                                                        children: "Reach Us"
+                                                        children: "Contact Us"
                                                     })
                                                 })
                                             ]
@@ -373,7 +373,10 @@ const Security = ()=>{
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                             className: "bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6",
-                                                            children: "Read more"
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                href: "mailto:commercial@21ctl.com",
+                                                                children: "  Contact Us"
+                                                            })
                                                         })
                                                     ]
                                                 })
@@ -401,7 +404,10 @@ const Security = ()=>{
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                             className: "bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6",
-                                                            children: "Read more"
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                href: "mailto:commercial@21ctl.com",
+                                                                children: "  Contact Us"
+                                                            })
                                                         })
                                                     ]
                                                 })
@@ -446,7 +452,10 @@ const Security = ()=>{
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                         className: "bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6",
-                                                        children: "Read more"
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                            href: "mailto:commercial@21ctl.com",
+                                                            children: "  Contact Us"
+                                                        })
                                                     })
                                                 ]
                                             })

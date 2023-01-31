@@ -150,7 +150,7 @@ const mainLinks = [
                     {
                         name: "Amazon",
                         link: "/",
-                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.png"
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.webp"
                     },
                     {
                         name: "Schneider Electric University",
@@ -2071,6 +2071,8 @@ __webpack_async_result__();
 
 
 function Footer() {
+    // get year
+    const year = new Date().getFullYear();
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("footer", {
         className: "bg-[#f0c5b9] dark:bg-[#252525] px-20 py-10 pb-4 h-full",
         children: [
@@ -2083,11 +2085,11 @@ function Footer() {
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        src: "/light-logo.svg",
+                                        src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
                                         className: "dark:hidden w-16 tablet:w-14 "
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        src: "/light-logo_dark.svg",
+                                        src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
                                         className: "dark:block hidden w-16 tablet:w-14"
                                     })
                                 ]
@@ -2253,9 +2255,13 @@ function Footer() {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "pt-10",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                     className: "text-center text-black dark:text-white",
-                    children: "copyright \xa9 2023, 21 Century Technologies. All right reserved."
+                    children: [
+                        "\xa9 ",
+                        year,
+                        ", 21 Century Technologies. All right reserved."
+                    ]
                 })
             })
         ]
@@ -2688,11 +2694,11 @@ const MobileNavbar = ({ isOpen , theme , setTheme , close , navItems  })=>{
                         }) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/light-logo.svg",
+                                    src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
                                     className: "w-14 h-auto dark:hidden"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/light-logo_dark.svg",
+                                    src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
                                     className: "w-14 h-auto dark:block hidden"
                                 })
                             ]

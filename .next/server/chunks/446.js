@@ -212,7 +212,7 @@ const Academy = ()=>{
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-                                className: "z-10",
+                                className: "z-10 py-20",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: " flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col",
                                     children: [
@@ -220,54 +220,21 @@ const Academy = ()=>{
                                             className: "w-2/3 tablet:w-full",
                                             children: [
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                    className: "sm:text-5xl text-xl font-bold",
+                                                    className: "sm:text-4xl text-xl font-bold max-w-lg sm:leading-[50px] leading-normal",
                                                     children: [
-                                                        "In the last",
+                                                        "Investment in",
                                                         " ",
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             className: "text-primary-orange",
-                                                            children: "25 years"
-                                                        }),
-                                                        ", we have been ",
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                            className: "text-primary-orange",
-                                                            children: "investing"
-                                                        }),
-                                                        " in compelling",
-                                                        " ",
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                            className: "text-primary-orange",
-                                                            children: "Digital"
+                                                            children: "Digital Infrastructure"
                                                         }),
                                                         " ",
-                                                        "Infrastructure in five",
-                                                        " ",
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                            className: "text-primary-orange",
-                                                            children: "key areas"
-                                                        }),
-                                                        ":"
+                                                        "in five key areas over the past 25 years"
                                                     ]
                                                 }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                                    className: "list-disc ml-5 mt-4 sm:text-[24px] text-base ",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "Technology: As we all know poverty is a bigger indicator of lack of access to Technologies than geography."
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "Power: Renewable energy / Turbine power plant"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "Payment."
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "Security"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "People."
-                                                        })
-                                                    ]
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: "text-2xl max-w-lg mt-5",
+                                                    children: "Investment focused on enhancing five vital components: power, security, payment, people, and technology."
                                                 })
                                             ]
                                         }),
