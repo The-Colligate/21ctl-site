@@ -468,20 +468,20 @@ export const infraNavLinks = [
           },
           {
             name: 'Data Centers',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
           },
           {
             name: 'Towers',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
           },
           {
             name: '5G Infrastructure Readiness services',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
@@ -542,7 +542,7 @@ export const infraNavLinks = [
           },
           {
             name: 'Micro Cells',
-            link: '/',
+            link: '#',
             text: 'Connecting you with reliable SMS solutions.',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
@@ -554,7 +554,7 @@ export const infraNavLinks = [
         subLinks: [
           {
             name: '5G Infrastructure Readiness services',
-            link: '/',
+            link: '#',
             text: 'Connecting you with 5G.',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
@@ -582,7 +582,7 @@ export const platformNavLinks = [
           },
           {
             name: 'Communication Platform',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
             text: 'Discover the best role for you.',
@@ -590,21 +590,21 @@ export const platformNavLinks = [
 
           {
             name: 'Payment Platform',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
           {
             name: 'Automation',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
           {
             name: 'Identity',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             text: 'See our partners',
@@ -725,49 +725,50 @@ export const peopleNavLinks = [
     navLinks: [
       {
         name: 'Academy',
+        link: '/training-pillars',
         subLinks: [
-          {
-            name: 'Trainee',
-            link: '/admission',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
+          // {
+          //   name: 'Trainee',
+          //   link: '/admission',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             
-          },
-          {
-            name: 'Curriculum',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
+          // },
+          // {
+          //   name: 'Curriculum',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
-          },
-          {
-            name: 'Instructor',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Instructor',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Infrastructure',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Infrastructure',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Didactics',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Didactics',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Industry',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Industry',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Quality Assurance',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Quality Assurance',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
+          // },
         ],
         extras: [
           {
@@ -958,11 +959,11 @@ export const peopleNavLinks = [
           //   },
         ],
       },
-      {
-        name: 'Projects',
-        subLinks: [],
-        extras: [],
-      },
+      // {
+      //   name: 'Projects',
+      //   subLinks: [],
+      //   extras: [],
+      // },
       {
         name: 'Partners',
         subLinks: [

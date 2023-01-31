@@ -226,7 +226,7 @@ export function LightNavbar({ menuProp }) {
                             >
                               {sublinks?.text5}{' '}
                             </Link>
-                            {(sublinks?.text6 !== null &&
+                            {(sublinks?.text6 !== null && link.name === "Training" &&
                               router.pathname === '/people') ||
                             router.pathname === '/programmes' ||
                             router.pathname === '/training-pillars' ? (
