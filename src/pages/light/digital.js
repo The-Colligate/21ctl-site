@@ -282,7 +282,6 @@ const Digital = () => {
                  
                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675161977/21ctl/logo/5G_tower_gt0ilf.svg'
                  
-         
                   className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
                 />
               </div>

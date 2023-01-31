@@ -138,12 +138,12 @@ export const mainLinks = [
           {
             name: 'Amazon',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.webp',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp',
           },
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058144/21ctl/logo/partners/Schneider_Electric_-_png_0_txksee.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
           },
           {
             name: 'VMware',
@@ -839,6 +839,19 @@ export const peopleNavLinks = [
               text3: 'Virtualization',
               text4: 'Kubernetes Containers',
             },
+
+
+            {
+              name: 'Schneider University',
+              link: '/programmes',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+              text: 'Fundamentals of Power',
+              text1: 'Efficiency of AC and DC Power Distribution in Data Centers',
+              text2: 'Energy Efficiency Fundamentals',
+              text3: 'Energy Efficiency with Building Automation Systems',
+              text4: 'Optimising Data Center Environmental Monitoring',
+            },
+
             {
               name: 'SYSTEM',
               link: '/',
@@ -966,7 +979,7 @@ export const peopleNavLinks = [
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
             text: 'Data Center Physical Infrastructure',
             text1: 'See more',
           },
