@@ -9,6 +9,7 @@ import {
 import CountUp from 'react-countup';
 import dynamic from 'next/dynamic';
 import Video from '../../components/Video';
+import { Link } from 'evergreen-ui';
 // const Video = dynamic(() => import('../../components/Video'));
 
 const src1 =
@@ -313,6 +314,7 @@ const Academy = () => {
                   key={course}
                   className="bg-white sm:w-[350px] w-full px-2 py-3 rounded-xl"
                 >
+                  <Link  href="/programmes">
                   <div key={course} className="flex items-center">
                     <div key={course} className="mr-4">
                       <img
@@ -328,7 +330,7 @@ const Academy = () => {
                       </h2>
                       {/* <p className="text-sm text-black">Duration: 12 weeks</p> */}
                     </div>
-                  </div>
+                  </div></Link>
                 </div>
               ))}
             </div>
