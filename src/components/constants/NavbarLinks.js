@@ -136,14 +136,24 @@ export const mainLinks = [
         name: 'Partners',
         subLinks: [
           {
-            name: 'Amazon',
+            name: 'MIT',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.webp',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
           },
           {
             name: 'Schneider Electric University',
             link: '/',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058144/21ctl/logo/partners/Schneider_Electric_-_png_0_txksee.png',
+          },
+          {
+            name: 'Checkpoint University',
+            link: '/',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/checkpoint_xnej3a.jpg',
+          },
+           {
+            name: 'Oracle University',
+            link: '/',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
           },
           {
             name: 'VMware',
@@ -156,22 +166,10 @@ export const mainLinks = [
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Microsoft-Azure-Emblem_ijjxxx.png',
           },
           {
-            name: 'Oracle University',
+            name: 'Amazon',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.webp',
           },
-        
-          {
-            name: 'MIT',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
-          },
-          {
-            name: 'Checkpoint University',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/checkpoint_xnej3a.jpg',
-          },
-       
           {
             name: 'Orange',
             link: '/',
@@ -219,7 +217,7 @@ export const mainLinks = [
           {
             name: '21st Century Technologies Limited',
             link: '#',
-            text: 'Providig digital communication platforms and infrastructure',
+            text: 'Providing digital communication platforms and infrastructure',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
           },
           {
