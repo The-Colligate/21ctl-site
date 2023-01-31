@@ -787,7 +787,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Oracle Technology',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
             text: 'Administer Oracle Cloud Databases',
             text1: 'Database Developer on Oracle Cloud',
@@ -805,7 +805,7 @@ export const peopleNavLinks = [
           },
           {
             name: 'Oracle Application',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
             text: 'Oracle Financials Cloud Business Process',
             text1: 'Oracle HCM Cloud Business Process',
@@ -814,7 +814,7 @@ export const peopleNavLinks = [
             },
             {
               name: 'Data Center design and infrastructure',
-              link: '/',
+              link: '#',
               icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
               text: 'Overview of Data Center Physical Infrastructure',
               text1: 'Virtualization: The Engine Behind Cloud Computing',
@@ -826,6 +826,16 @@ export const peopleNavLinks = [
               text7: 'Calculating Total Cooling requirements',
               text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
               text9: 'Data Center Projects: Commissioning',
+            },
+            {
+              name: 'Super Micro',
+              link: '/programmes',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp',
+              text: 'OS Cerifications',
+              text1: 'Cloud services',
+              text2: 'Cloud Orchestrator',
+              text3: 'Virtualization',
+              text4: 'Kubernetes Containers',
             },
             {
               name: 'SYSTEM',
