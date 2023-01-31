@@ -56,7 +56,7 @@ function LightDesign() {
       icon: '/icons/home/group.svg',
       name: 'People',
       snippet:
-        'The Digital Academy is a training hub where creative thinkers and distruptors are exposed to highly equiped pre-programmed and mataversed laboratories while interacting with experts in domains such as Cloud computing, Artificial Intelligence, Cyber security, Data analytics and so much more.',
+        'The Digital Experts Academy is a training hub where creative thinkers and distruptors are exposed to highly equiped pre-programmed and mataversed laboratories while interacting with experts in domains such as Cloud computing, Artificial Intelligence, Cyber security, Data analytics and so much more.',
       link: '/people',
     },
     {

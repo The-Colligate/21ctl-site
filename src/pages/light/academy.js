@@ -361,7 +361,7 @@ const Academy = () => {
           </section>
 
           <section>
-            <div className=" w-full flex justify-between items-center ml-10 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:ml-0 tablet:mx-10">
+            <div className=" w-full flex justify-between items-center ml-20 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:ml-0 tablet:mx-10">
               <div className="w-full ">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
                   Your <span className="text-primary-orange">Learning</span> has
