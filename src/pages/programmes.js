@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import Head from "next/head";
 import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
 import { courses } from "../components/constants/courses";
@@ -10,6 +9,7 @@ const src1 = "https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digi
 
 const Programmes = () => {
   const [searchValue, updateSearchValue] = useState("");
+  // const [searchResults, ]
 
   return (
     <>

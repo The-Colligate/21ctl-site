@@ -2,7 +2,6 @@ import { CaretDown } from '@icons/index';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { NavClose } from '@icons/close';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Popover } from 'evergreen-ui';
 import { useRouter } from 'next/router';
@@ -173,11 +172,12 @@ export function LightNavbar({ menuProp }) {
                           className="mt-5 dark:text-white"
                         >
                           <div className="flex hover:text-primary-orange ">
-                            <Image
+                            <img
                               height={20}
                               width={30}
                               src={`${sublinks.icon}`}
                               className="h-[20px] w-[20px]"
+                              layout="raw" 
                             />
 
                             <Link
@@ -538,7 +538,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
                     {link.subLinks.map((sublinks) => (
                       <div className="flex my-3" key={sublinks.name}>
                         {' '}
-                        <Image
+                        <img
                           height={20}
                           width={20}
                           src={`${sublinks.icon}`}

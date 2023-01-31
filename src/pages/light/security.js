@@ -1,5 +1,4 @@
 import React,{ useEffect } from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { motion,useAnimation } from 'framer-motion';
