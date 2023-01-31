@@ -582,7 +582,7 @@ export const platformNavLinks = [
           },
           {
             name: 'Communication Platform',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
             text: 'Discover the best role for you.',
@@ -590,21 +590,21 @@ export const platformNavLinks = [
 
           {
             name: 'Payment Platform',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
           {
             name: 'Automation',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
           {
             name: 'Identity',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             text: 'See our partners',
