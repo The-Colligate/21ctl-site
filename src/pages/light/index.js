@@ -179,7 +179,7 @@ function LightDesign() {
                             Training & Consulting
                           </p>
                           <p className="mt-3 text-[9px] text-center phone:text-[7px]">
-                            We Train and Consult in areas including Networks and
+                            We train and consult in areas including Networks and
                             Transmission.
                           </p>
                           {/* <a className="mt-3 flex items-center text-[11px]" href="#">
