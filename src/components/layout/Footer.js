@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 export function Footer() {
+  // get year
+  const year = new Date().getFullYear();
   return (
     <footer className="bg-[#f0c5b9] dark:bg-[#252525] px-20 py-10 pb-4 h-full">
       <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:items-center sm:space-y-0 space-y-10">
@@ -154,7 +156,7 @@ export function Footer() {
 
       <div className="pt-10">
         <p className="text-center text-black dark:text-white">
-          copyright © 2023, 21 Century Technologies. All right reserved.
+          © {year}, 21 Century Technologies. All right reserved.
         </p>
       </div>
     </footer>
