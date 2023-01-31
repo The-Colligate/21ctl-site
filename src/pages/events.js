@@ -40,7 +40,7 @@ const Events = () => {
               <div className="post_list space-y-4 overflow-y-scroll  ">
                 {/* post title */}
                 {eventsArray.map((event) => (
-                  <div className="bg-[#D9D9D9] px-4 py-1 font-semibold cursor-pointer w-[250px]">
+                  <div key={event._id} className="bg-[#D9D9D9] px-4 py-1 font-semibold cursor-pointer w-[250px]">
                     {truncate(event.title, 30)}
                   </div>
                 ))}
