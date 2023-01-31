@@ -320,7 +320,7 @@ export const mainLinks = [
   {
     additionalLinks: [
       { name: 'Digital Platforms', link: '/platform' },
-      { name: 'Events', link: '/' },
+      { name: 'Events', link: '/events' },
       { name: 'Explore more', link: '/explore-more' },
     ],
   },
