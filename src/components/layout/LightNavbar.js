@@ -95,7 +95,10 @@ export function LightNavbar({ menuProp }) {
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
                 className="dark:hidden w-36 tablet:w-14"
               />
-            ) : (
+            ) : router.pathname === '/platform' ? <img
+            src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.jpg"
+            className="dark:hidden w-16 tablet:w-14"
+          />: (
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
                 className="dark:hidden w-16 tablet:w-14"
