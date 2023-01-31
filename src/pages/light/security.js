@@ -47,7 +47,7 @@ useEffect(() => {
                 Stay protected in the digital world with our cutting-edge cybersecurity solutions
                 </p>
                 <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                Reach Us
+                Contact Us
               </button>
               </div>
   </div> */}
@@ -68,7 +68,7 @@ useEffect(() => {
                 </p>
                 <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
                   <a href="mailto:commercial@21ctl.com">
-                  Reach Us
+                  Contact Us
                   </a>
                 
                 </button>
@@ -248,7 +248,7 @@ One of the key services offered by the company is training in threat management,
 
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                    Read more
+                  <a href='mailto:commercial@21ctl.com'>  Contact Us</a>
                   </button>
                 </div>
 
@@ -269,7 +269,7 @@ One of the key services offered by the company is training in threat management,
                     21CTL Managed SOC Services offers real-time threat intelligence, data processing and incident response for cost-effective enterprise security
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                    Read more
+                    <a href='mailto:commercial@21ctl.com'>  Contact Us</a>
                   </button>
                 </div>
 
@@ -299,7 +299,7 @@ One of the key services offered by the company is training in threat management,
                     SmartBackup is an automated configuration backup solution that schedules automatic backups, monitors them from a dashboard interface, performs automatic network configuration backup procedures, verifies that they{"'"}ve been completed correctly, and provides easy management of devices for compliance.
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                    Read more
+                   <a href='mailto:commercial@21ctl.com'>  Contact Us</a>
                   </button>
                 </div>
 

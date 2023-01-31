@@ -171,9 +171,8 @@ const Digital = () => {
                     <div className='flex justify-center items-center mx-20 my-10 phone:my-5 phone:mx-10'>
                             <img
                                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/icons/potential-partners_kd9w9q.png'
-                                height={100}
-                                width={100}
-                                className="tablet:w-full"
+                               
+                                className="w-2/3 tablet:w-full"
 
                             />
                         </div>
@@ -261,7 +260,7 @@ const Digital = () => {
           </section>
 
           <section className="five-gr pt-32 sm:mt-0 mt-32 phone:mt-0">
-            <div className=" flex sm:flex-row flex-col w-full  items-center m-auto sm:h-full h-full bg-white ">
+            <div className=" flex sm:flex-row flex-col w-full justify-center  items-center m-auto sm:h-full h-full bg-white ">
               <div className="px-5 sm:py-0 py-10 mx-10 text-black dark:text-black">
                 <h4 className="text-5xl font-semibold text-left tablet:text-3xl">
                   {' '}
@@ -280,7 +279,7 @@ const Digital = () => {
                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058177/21ctl/logo/5g_main_qvaz7q.svg'
                  
          
-                  className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
+                  className=" w-2/3 sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
                 />
               </div>
             </div>
