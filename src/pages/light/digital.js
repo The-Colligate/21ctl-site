@@ -277,9 +277,8 @@ const Digital = () => {
                   and services.
                 </p>
               </div>
-              <div className="w-full h-full sm:px-0 px-5">
+              <div className="flex sm:justify-start justify-center w-full h-full sm:px-0 px-5">
                 <img
-                  // src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
                  
                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675161977/21ctl/logo/5G_tower_gt0ilf.svg'
                  
