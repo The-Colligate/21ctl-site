@@ -230,7 +230,7 @@ export function AcademyNavbar() {
                             className="mt-5 dark:text-white hover:text-primary-orange"
                           >
                             <div className="flex hover:text-primary-orange">
-                              <Image
+                              <img
                                 height={20}
                                 width={20}
                                 src={`${sublinks.icon}`}
@@ -384,7 +384,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
                   {aboutUsLink.subLinks.map((sublinks) => (
                     <div className="flex my-3" key={sublinks.name}>
                       {' '}
-                      <Image
+                      <img
                         height={20}
                         width={20}
                         src={`${sublinks.icon}`}
@@ -455,7 +455,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
                       {link.subLinks.map((sublinks) => (
                         <div className="flex my-3" key={sublinks.name}>
                           {' '}
-                          <Image
+                          <img
                             height={20}
                             width={20}
                             src={`${sublinks.icon}`}
