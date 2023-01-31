@@ -564,10 +564,12 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
             {navItems.navLinks.map((link, index) => (
               <li
                 key={link.name}
-                onClick={() => setShowExpanded([index, true])}
+                onClick={() => link.subLinks.length > 0 ?  console.log(link.link): 
+                  router.push(link.link !== null ? link.link : "#" )}
+                 
               >
                 <a className="flex items-center justify-between">
-                  {link.name} <CaretDown className="-rotate-90" />
+                  {link.name} {link.subLinks.length > 0 ? <CaretDown className="-rotate-90" /> : <></>}
                 </a>
               </li>
             ))}
