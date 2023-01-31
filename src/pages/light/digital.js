@@ -259,14 +259,19 @@ const Digital = () => {
             </div>
           </section>
 
-          <section className="five-gr pt-32 sm:mt-0 mt-32 phone:mt-0">
-            <div className=" flex sm:flex-row flex-col w-full justify-center  items-center m-auto sm:h-full h-full bg-white ">
-              <div className="px-5 sm:py-0 py-10 mx-10 text-black dark:text-black">
-                <h4 className="text-5xl font-semibold text-left tablet:text-3xl">
+          <section 
+           >
+            <div className='flex justify-between items-center ml-20 tablet:ml-10 tablet:flex-col tablet:justify-center tablet:py-10'
+            >
+              <div 
+          
+               >
+                <h4 
+                className="text-5xl font-semibold text-left tablet:text-3xl">
                   {' '}
                   <span className="text-primary-orange">5G</span> Readiness
                 </h4>
-                <p className="text-xl text-left pt-3 phone:text-sm">
+                <p className="text-2xl text-left pt-3 phone:text-sm w-2/3 tablet:w-full ">
                   Our infrastructure with edge computing capabilities supports 5G
                   technology and enables new user experiences, deployment models,
                   and services.
@@ -276,10 +281,10 @@ const Digital = () => {
                 <img
                   // src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
                  
-                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058177/21ctl/logo/5g_main_qvaz7q.svg'
+                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675161977/21ctl/logo/5G_tower_gt0ilf.svg'
                  
          
-                  className=" w-2/3 sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
+                  className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
                 />
               </div>
             </div>
