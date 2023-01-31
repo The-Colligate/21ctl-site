@@ -85,7 +85,7 @@ export function LightNavbar({ menuProp }) {
           >
             {/* {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />} */}
             {router.pathname === '/' ? (
-              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
             ) : excluded.includes(router.pathname) ? (
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
@@ -93,7 +93,7 @@ export function LightNavbar({ menuProp }) {
               />
             ) : (
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
                 className="dark:hidden w-16 tablet:w-14"
               />
             )}
@@ -113,14 +113,14 @@ export function LightNavbar({ menuProp }) {
             <img
               src={
                 router.pathname === '/'
-                  ? '/light-logo_dark.svg'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
                   : router.pathname === '/people'
-                  ? '/digital-academy-logo-white.svg'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
                   : router.pathname === '/programmes'
-                  ? '/digital-academy-logo-white.svg'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
                   : router.pathname === '/training-pillars'
-                  ? '/digital-academy-logo-white.svg'
-                  : '/light-logo_dark_limited.svg'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                  : 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
               }
               className=" w-16 tablet:w-14"
             />
