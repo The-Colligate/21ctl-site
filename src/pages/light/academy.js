@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import {
   leftTransitionVarient,
   rightTansitionVarient,
-} from "@components/constants/animations";
-import CountUp from "react-countup";
-import dynamic from "next/dynamic";
-import Video from "../../components/Video";
+} from '@components/constants/animations';
+import CountUp from 'react-countup';
+import dynamic from 'next/dynamic';
+import Video from '../../components/Video';
 // const Video = dynamic(() => import('../../components/Video'));
 
 const src1 =
@@ -106,28 +106,20 @@ const Academy = () => {
               />
             )}
           </div>
-          <section className="z-10">
+          <section className="z-10 py-20">
             <div className=" flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col">
               <div className="w-2/3 tablet:w-full">
-                <p className="sm:text-5xl text-xl font-bold">
-                  In the last{" "}
-                  <span className="text-primary-orange">25 years</span>, we have
-                  been <span className="text-primary-orange">investing</span> in
-                  compelling{" "}
-                  <span className="text-primary-orange">Digital</span>{" "}
-                  Infrastructure in five{" "}
-                  <span className="text-primary-orange">key areas</span>:
+                <p className="sm:text-4xl text-xl font-bold max-w-lg sm:leading-[50px] leading-normal">
+                  Investment in{' '}
+                  <span className="text-primary-orange">
+                    Digital Infrastructure
+                  </span>{' '}
+                  in five key areas over the past 25 years
                 </p>
-                <ul className="list-disc ml-5 mt-4 sm:text-[24px] text-base ">
-                  <li>
-                    Technology: As we all know poverty is a bigger indicator of
-                    lack of access to Technologies than geography.
-                  </li>
-                  <li>Power: Renewable energy / Turbine power plant</li>
-                  <li>Payment.</li>
-                  <li>Security</li>
-                  <li>People.</li>
-                </ul>
+                <p className="text-2xl max-w-lg mt-5">
+                  Investment focused on enhancing five vital components: power,
+                  security, payment, people, and technology.
+                </p>
               </div>
               <div>
                 <img
@@ -146,10 +138,15 @@ const Academy = () => {
            
           </section> */}
           <div class="relative w-full flex flex-col justify-center items-center py-28">
-        <img src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg' className='flex justify-center items-center' />
-        <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl dark:text-white">
-        we provide world-class services to the top 1000 companies in Nigeria and key residential areas.</h1>
-    </div>
+            <img
+              src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg"
+              className="flex justify-center items-center"
+            />
+            <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl dark:text-white">
+              we provide world-class services to the top 1000 companies in
+              Nigeria and key residential areas.
+            </h1>
+          </div>
 
           {/* <section className='flex flex-col justify-center items-center w-full'>
             <div className='font-bold sm:text-5xl text-3xl text-center'>
@@ -225,7 +222,10 @@ const Academy = () => {
                   className="font-extrabold"
                 />
                 <hr />
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/people-33_rbql12.svg" className="w-2/4" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/people-33_rbql12.svg"
+                  className="w-2/4"
+                />
                 <p className="p-5 mt-2 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
                   Labour Force in Nigeria
                 </p>
@@ -240,7 +240,10 @@ const Academy = () => {
                   className="font-extrabold"
                 />
                 <hr />
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/people-41_s7olts.svg" className="w-2/4" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/people-41_s7olts.svg"
+                  className="w-2/4"
+                />
                 <p className="p-5 mt-2 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
                   Unemployed Labour Force in Nigeria
                 </p>
@@ -298,12 +301,10 @@ const Academy = () => {
 
           <section className="sm:px-28 px-8 mt-28">
             <h1 className="text-primary-orange font-bold sm:text-4xl text-2xl">
-            Explore our top rate course modules
+              Explore our top rate course modules
             </h1>
             <div className="flex sm:flex-row flex-col justify-between my-3 ">
-              <p className="text-xl">
-                Each module contains various topics
-              </p>
+              <p className="text-xl">Each module contains various topics</p>
               <p className="text-primary-orange">{/* See more */}</p>
             </div>
 
@@ -313,10 +314,7 @@ const Academy = () => {
                   key={course}
                   className="bg-white sm:w-[350px] w-full px-2 py-3 rounded-xl"
                 >
-                  <div
-                    key={course}
-                    className="flex items-center"
-                  >
+                  <div key={course} className="flex items-center">
                     <div key={course} className="mr-4">
                       <img
                         src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/logo/courses_z4srsc.svg"

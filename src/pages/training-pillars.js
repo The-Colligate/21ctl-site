@@ -178,7 +178,7 @@ const Pillars = () => {
                   Learning management system
                 </h4>
                 <p className="mt-6 text-center text-base text-black">
-                  The LMS will deliver course materials, manage assignments and
+                  The LMS delivers and manages course materials, manage assignments and
                   assessments, and facilitate communication between trainees and
                   instructors.
                 </p>

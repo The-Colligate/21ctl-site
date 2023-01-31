@@ -47,14 +47,14 @@ const Automation = () => {
                   processes throughout the corporation—with the goal of lowering
                   costs, reducing cycle times, or increasing quality.
                 </p>
-
+                
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -72,14 +72,14 @@ const Automation = () => {
                   can include things like automating data entry, inventory
                   management, and HR processes.
                 </p>
-
+                
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
 
@@ -115,14 +115,14 @@ const Automation = () => {
                   this type of transformation is that offers the greatest
                   opportunities to create new value.
                 </p>
-
+               
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -143,14 +143,14 @@ const Automation = () => {
                   reliance on business ecosystems. And they take active steps to
                   bring change to their organizations.
                 </p>
-
+                
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
 
@@ -199,14 +199,14 @@ const Automation = () => {
                     </li>
                   </ul>
                 </p>
-
+                
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
