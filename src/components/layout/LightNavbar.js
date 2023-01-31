@@ -15,6 +15,15 @@ import {
   securityNavLinks,
 } from '../constants/NavbarLinks';
 
+
+
+const excluded = [
+  '/people',
+  '/programmes',
+  '/training-pillars',
+  '/admission',
+];
+
 export function LightNavbar({ menuProp }) {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
@@ -32,12 +41,7 @@ export function LightNavbar({ menuProp }) {
   // });
   // });
 
-  const excluded = [
-    '/people',
-    '/programmes',
-    '/training-pillars',
-    '/admission',
-  ];
+  
 
   const navItems =
     router.pathname === '/digital-platform'
