@@ -462,9 +462,9 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
             </button>
           ) : (
             <>
-              <img src="/light-logo.svg" className="w-14 h-auto dark:hidden" />
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" className="w-14 h-auto dark:hidden" />
               <img
-                src="/light-logo_dark.svg"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
                 className="w-14 h-auto dark:block hidden"
               />
             </>
