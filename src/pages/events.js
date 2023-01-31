@@ -91,9 +91,9 @@ const Events = () => {
               </div>
               {/* write-up */}
               <div className='flex flex-col justify-start max-w-4xl m-auto w-full mt-5 space-y-3'>
-                <h2 className='text-4xl font-bold text-primary-orange'>Unveiling the digital training center</h2>
+                <h2 className='text-4xl font-bold text-primary-orange'>Unveiling the Digital Experts Academy (DEA)</h2>
                 <p>23 January 2023</p>
-                <p>On Monday January 23, 2023, 21st Century Technologies hosted the U.S. Consul General, Will Stevens, the CEO of Stanbic IBTC bank, Wole Adeniyi and top executives of Oracle and Digital Encode. The event was the unveiling of the new digital center.</p>
+                <p>On Monday January 23, 2023, 21st Century Technologies, led by the visionairy chairman Mr. Wale Ajisebutu, unveiled the Digital Experts Academy, which was declared open by Mr. Will Stevens, the United States Consul General, in the presence of Mr. Wole Adeniyi, the Chief Executive Officer (CEO) of Stanbic IBTC Bank, Dr. Dare Obadare, the MD/Chairman of Digital Encode and notable top executives from Oracle, Microsoft, VMWare.</p>
               </div>
             </div>
           </div>
