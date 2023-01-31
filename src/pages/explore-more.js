@@ -266,7 +266,7 @@ const ExploreMore = () => {
             <div className="flex-none rotate-90 text-5xl font-extrabold w-[20vw] mx-0 px-0 tablet:hidden">2017 - Date</div>
             <div className="grow mr-10 tablet:ml-10">
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey2_ougsfg.png"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675185232/21ctl/logo/partners/Journey3_ibikea.png"
                 // '/logo/journey3.png'
 
                 className="w-4/5 flex justify-center "

@@ -219,7 +219,7 @@ export const mainLinks = [
           {
             name: '21st Century Technologies Limited',
             link: '#',
-            text: 'Providig digital communication platforms and infrastructure',
+            text: 'Providing digital communication platforms and infrastructure',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
           },
           {
