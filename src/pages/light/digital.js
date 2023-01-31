@@ -154,15 +154,15 @@ const Digital = () => {
                             </button> */}
                         </div>
                         <div className='services flex mx-10 flex-col phone:text-center phone:mx-0 '>
-                            <div className='number-1  bg-white p-10  my-5 rounded-lg phone:p-5'>
+                            <div className='number-1  bg-white dark:bg-black p-10  my-5 rounded-lg phone:p-5'>
                                 <h3 className='font-extrabold'>5G Readiness</h3>
                                 <p>Infrastructure with edge computing capabilities to support 5th generation technology standards</p>
                             </div>
-                            <div className='number-1  bg-white p-10 my-5 rounded-lg  phone:p-5'>
+                            <div className='number-1  bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5'>
                                 <h3 className='font-extrabold'>Data Centers</h3>
                                 <p>His defective nor convinced residence own. Connection has put impossible own apartments boisterous.</p>
                             </div>
-                            <div className='number-1  mx-auto bg-white p-10 my-5 rounded-lg  phone:p-5'>
+                            <div className='number-1  mx-auto bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5'>
                                 <h3 className='font-extrabold'>Towers</h3>
                                 <p>Wide range communication infrastructure and managed service to enable wireless connectivity connecting people, devices and networks.</p>
                             </div>
