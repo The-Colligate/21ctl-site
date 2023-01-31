@@ -10,11 +10,11 @@ export function Footer() {
         <div className="space-y-8 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center">
           <div>
             <img
-              src="/light-logo.svg"
+              src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
               className="dark:hidden w-16 tablet:w-14 "
             />
             <img
-              src="/light-logo_dark.svg"
+              src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
               className="dark:block hidden w-16 tablet:w-14"
             />
           </div>
