@@ -109,7 +109,7 @@ export default function App({ Component, pageProps }) {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       <ThemeProvider
-        defaultTheme="light"
+        defaultTheme='light'
         attribute="class"
         enableSystem
         enableColorScheme
