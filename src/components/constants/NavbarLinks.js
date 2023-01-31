@@ -468,20 +468,20 @@ export const infraNavLinks = [
           },
           {
             name: 'Data Centers',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
           },
           {
             name: 'Towers',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
           },
           {
             name: '5G Infrastructure Readiness services',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
@@ -542,7 +542,7 @@ export const infraNavLinks = [
           },
           {
             name: 'Micro Cells',
-            link: '/',
+            link: '#',
             text: 'Connecting you with reliable SMS solutions.',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
@@ -554,7 +554,7 @@ export const infraNavLinks = [
         subLinks: [
           {
             name: '5G Infrastructure Readiness services',
-            link: '/',
+            link: '#',
             text: 'Connecting you with 5G.',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
