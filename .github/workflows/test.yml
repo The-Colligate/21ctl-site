@@ -30,6 +30,7 @@ jobs:
           port: 22
           script: |
             cd /home/sam/public_html
+            rm -rf *.json
             ls -la
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
@@ -54,4 +55,8 @@ jobs:
           port: 22
           script: |
             cd /home/sam/public_html
+            rm -rf *.json
+            rm -rf *.js
+            rm -rf *.html
+            cp -rf . /build/.next/server/pages/*
             ls -la
