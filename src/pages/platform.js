@@ -60,7 +60,7 @@ const Platform = () => {
                   href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary-orange text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
@@ -100,7 +100,7 @@ const Platform = () => {
                   href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary-orange text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
@@ -151,7 +151,7 @@ const Platform = () => {
                   href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary-orange text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
@@ -190,7 +190,7 @@ const Platform = () => {
                   href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary-orange text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
@@ -247,7 +247,7 @@ const Platform = () => {
                   href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary-orange text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>

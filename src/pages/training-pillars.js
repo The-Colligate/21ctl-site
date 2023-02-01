@@ -19,8 +19,8 @@ const Pillars = () => {
 
           {/* top-section */}
           <section className="pillar-top-section h-[80vh] px-8 ">
-            <div className="flex flex-col items-center justify-center w-full h-full leading-10">
-              <h1 className="font-extrabold sm:text-6xl text-4xl text-white text-center leading-8 max-w-6xl">
+            <div className="flex flex-col items-center justify-center w-full h-full">
+              <h1 className="font-extrabold sm:text-6xl text-3xl text-white text-center sm:leading-normal leading-10 max-w-6xl">
                 The <span className="text-primary-orange">Pillars</span> of
                 Digital Training Center Model
               </h1>
@@ -229,7 +229,7 @@ const Pillars = () => {
           </section>
 
           <section className="">
-            <h3 className="text-primary-orange text-center font-bold text-5xl my-10">
+            <h3 className="text-primary-orange text-center font-bold sm:text-5xl text-2xl my-10 px-5">
               Industry Partners.
             </h3>
             <div className="flex">
@@ -255,7 +255,7 @@ const Pillars = () => {
                 <h3 className="font-bold sm:text-5xl text-2xl text-primary-orange leading-8">
                   Quality Assurance
                 </h3>
-                <p className="text-xl mt-3">
+                <p className="text-lg font-light mt-3">
                   The Academy&apos;s QA Unit aims to provide high-quality
                   training by regularly setting and assessing goals, seeking
                   feedback, updating course materials, using assessments,

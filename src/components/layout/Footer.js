@@ -1,7 +1,29 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export function Footer() {
+  const router = useRouter();
+
+  const academy = ['/people', '/programmes', '/training-pillars', '/admission'];
+
+  const index = ['/', '/support-centers', '/events', '/explore-more'];
+  const power = ['/power'];
+  const security = ['/security', '/identity'];
+  const tech = ['/digital-infrastructure', '/platform', '/communication', '/automation'];
+
+  const footerEmail = academy.includes(router.pathname)
+    ? 'support@academy.21ctl.com'
+    : index.includes(router.pathname)
+    ? 'inquiry@21ctl.com'
+    : power.includes(router.pathname)
+    ? 'support@power.21ctl.com'
+    : security.includes(router.pathname)
+    ? 'support@security.21ctl.com'
+    : tech.includes(router.pathname)
+    ? 'support@technology.21ctl.com'
+    : null;
+
   // get year
   const year = new Date().getFullYear();
   return (
@@ -88,7 +110,7 @@ export function Footer() {
         </div>
 
         {/* address */}
-        <div className='tablet:flex tablet:flex-col tablet:justify-center tablet:items-center'>
+        <div className="tablet:flex tablet:flex-col tablet:justify-center tablet:items-center">
           <p className="font-bold text-lg text-black dark:text-white ">
             Our Address
           </p>
@@ -139,7 +161,7 @@ export function Footer() {
               <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
             </svg>{' '}
             <span className="text-black dark:text-white hover:text-primary-orange ml-3">
-              <a href="mailto:commercial@21ctl.com">commercial@21ctl.com</a>
+              <a href={`mailto:${footerEmail}`}>{footerEmail}</a>
             </span>
           </div>
 

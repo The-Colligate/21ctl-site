@@ -16,7 +16,8 @@ function LightDesign() {
     //   link: '/communication',
     // },
     {
-      icon: '/icons/home/cloud-computing.svg',
+      icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243025/21ctl/main%20page%20icons/eos-icons_cloud-computing_dq79nl.svg',
+      // '/icons/home/cloud-computing.svg',
       name: 'Digital Infrastructure',
       snippet:
         ' We have connectivity, data centers & edge computing centers, Towers, Network & 5G enabled platforms for SMBs, SMEs and large Enterprises.',
@@ -31,21 +32,24 @@ function LightDesign() {
     //   link: "#",
     // },
     {
-      icon: '/icons/home/globe.svg',
+      icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243025/21ctl/main%20page%20icons/carbon_earth-europe-africa-filled_tyrxe0.svg',
+      // '/icons/home/globe.svg',
       name: 'Digital Platform',
       snippet:
         '21st century technologies limited offers digital communication platforms and infrastructure to support various business processes and handle high volumes of transactions for millions of users.',
       link: '/platform',
     },
     {
-      icon: '/icons/home/credit-card.svg',
+      icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243025/21ctl/main%20page%20icons/credit-card_hi92co.svg',
+      // '/icons/home/credit-card.svg',
       name: 'Payment',
       snippet:
         'Our secured fintech gateway that allows transfer of monetary values including payment processing, institutional procedures, e-Commerce instruments, rules, standards and technologies.',
       link: 'https://konetpay.com/',
     },
     {
-      icon: '/icons/home/power-lighting.svg',
+      icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243025/21ctl/main%20page%20icons/power-lightning_jtncpw.svg',
+      // '/icons/home/power-lighting.svg',
       name: 'Power',
       snippet:
         '21ctl enhouses premier renewable energy, turbine power infrastructure, power plant and electric energy storage system integrations and balancing services.',
@@ -53,14 +57,16 @@ function LightDesign() {
     },
 
     {
-      icon: '/icons/home/group.svg',
+      icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243573/21ctl/main%20page%20icons/Group_szvu4q.svg',
+      // '/icons/home/group.svg',
       name: 'People',
       snippet:
         'The Digital Experts Academy is a training hub where creative thinkers and distruptors are exposed to highly equiped pre-programmed and mataversed laboratories while interacting with experts in domains such as Cloud computing, Artificial Intelligence, Cyber security, Data analytics and so much more.',
       link: '/people',
     },
     {
-      icon: '/icons/home/security.svg',
+      icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243026/21ctl/main%20page%20icons/security-lock_swrsbk.svg',
+      // '/icons/home/security.svg',
       name: 'Security as Service',
       snippet:
         '21ctl manages your business security, providing cloud-based security service and in-house security management. Our SECaaS business model is available for integration into a corporate infrastructure.',
@@ -70,11 +76,11 @@ function LightDesign() {
 
   
   return (
-    <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden overflow-y-hidden relative">
-      <div className="absolute w-full h-full flex justify-between items-center">
+    <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden overflow-y-hidden relative background-color">
+      {/* <div className="absolute w-full h-full flex justify-between items-center">
         <div className="w-full min-h-[50%] bg_gradient_l"></div>
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
-      </div>
+      </div> */}
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
         <LightNavbar />
         <div className=" flex items-center justify-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
@@ -85,10 +91,10 @@ function LightDesign() {
           
           className="w-full h-full flex items-center justify-between">
             <div className="max-w-3xl mt-10 flex flex-col items-center justify-center">
-              <h1 className="text-5xl font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
+              <h1 className="text-5xl text-silver font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
                 Building Africa&apos;s{' '}
-                <span className="text-primary-orange">Largest Digital</span>{' '}
-                Infrastructure
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Largest Digital Infrastructure</span>{' '}
+                
               </h1>
               <motion.p
               initial={delayVarient1}
@@ -138,9 +144,10 @@ function LightDesign() {
                       </div>
                     </div>
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-front">
-                      <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
+                      <div className="hex-shape w-full h-full flex items-center justify-center bg-white !m-0">
                         <img
-                          src="/icons/home/tree-structure.svg"
+                          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675244528/21ctl/main%20page%20icons/ph_tree-structure-fill_tosrkx.svg"
+                          // "/icons/home/tree-structure.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -163,9 +170,10 @@ function LightDesign() {
                       </div>
                     </div>
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-front">
-                      <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
+                      <div className="hex-shape w-full h-full flex items-center justify-center  !m-0">
                         <img
-                          src='/icons/home/cloud-computing.svg'
+                          src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675244781/21ctl/main%20page%20icons/icons_cloud-computing-blue_cxqolj.svg'
+                          // '/icons/home/cloud-computing.svg'
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -189,9 +197,10 @@ function LightDesign() {
                       </div>
                     </div>
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-front">
-                      <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
+                      <div className="hex-shape w-full h-full flex items-center justify-center  !m-0">
                         <img
-                          src="/icons/home/group-large.svg"
+                          src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675244528/21ctl/main%20page%20icons/people_swmuzd.svg'
+                          // "/icons/home/group-large.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -217,9 +226,10 @@ function LightDesign() {
                       </div>
                     </div>
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-front">
-                      <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
+                      <div className="hex-shape w-full h-full flex items-center justify-center  !m-0">
                         <img
-                          src="/icons/home/arrow-rotate.svg"
+                          src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675244528/21ctl/main%20page%20icons/eos-icons_arrow-rotate_xxsezz.svg'
+                          // "/icons/home/arrow-rotate.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -240,9 +250,10 @@ function LightDesign() {
                       </div>
                     </div>
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-front">
-                      <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
+                      <div className="hex-shape w-full h-full flex items-center justify-center  !m-0">
                         <img
-                          src="/icons/home/baseline-call-large.svg"
+                          src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675244528/21ctl/main%20page%20icons/ic_baseline-call-blue_xsrxxw.svg'
+                          // "/icons/home/baseline-call-large.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -263,9 +274,10 @@ function LightDesign() {
                       </div>
                     </div>
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-front">
-                      <div className="hex-shape w-full h-full flex items-center justify-center bg-primary-orange-light !m-0">
+                      <div className="hex-shape w-full h-full flex items-center justify-center  !m-0">
                         <img
-                          src="/icons/home/credit-card-large.svg"
+                          src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675244528/21ctl/main%20page%20icons/credit-card_large_orgoad.svg'
+                          // "/icons/home/credit-card-large.svg"
                           className="w-[90px] h-[90px] largeTablet:w-[70px] largeTablet:h-[70px] tablet:w-[50px] tablet:h-[50px]"
                         />
                       </div>
@@ -300,7 +312,7 @@ function LightDesign() {
                         {product.snippet}
                       </p>
                       <a
-                        className="mt-3 flex items-center text-xs group hover:text-primary-orange"
+                        className="mt-3 flex items-center text-xs group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81]"
                         href={product.link}
                         target="_blank"
                         rel="noreferrer"
@@ -320,16 +332,16 @@ function LightDesign() {
                 >
                   <div className="w-full flex justify-center pt-5">
                     <div
-                      className="h-24 min-w-[6rem] rounded-full shadow-lg shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                      className="h-24 min-w-[6rem] rounded-full  bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver shadow-bg-silver dark:shadow-lg  cursor-pointer flex items-center justify-center border  bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
                       role="button"
                     >
                       <img
                         src={product.icon}
-                        className="h-12 w-auto tablet:h-8"
+                        className="h-12 w-10 tablet:h-8"
                       />
                     </div>
                   </div>
-                  <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold text-primary-orange">
+                  <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold ">
                     {product.name}
                   </p>
                 </div>

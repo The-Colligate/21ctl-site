@@ -86,8 +86,11 @@ export function LightNavbar({ menuProp }) {
                 : '/'
             }
           >
+            {logoLightMode(router.pathname)}
             {/* {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />} */}
-            {router.pathname === '/' ? (
+            {/* {
+            
+            router.pathname === '/' ? (
               <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
             ) : excluded.includes(router.pathname) ? (
               <img
@@ -102,7 +105,7 @@ export function LightNavbar({ menuProp }) {
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
                 className="dark:hidden w-16 tablet:w-14"
               />
-            )}
+            )} */}
             {/* <img
               src={
                 router.pathname === '/'
@@ -116,20 +119,7 @@ export function LightNavbar({ menuProp }) {
           </Link>
         ) : (
           <Link href="/" className="dark:block hidden">
-            <img
-              src={
-                router.pathname === '/'
-                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
-                  : router.pathname === '/people'
-                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
-                  : router.pathname === '/programmes'
-                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
-                  : router.pathname === '/training-pillars'
-                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
-                  : 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
-              }
-              className=" w-16 tablet:w-14"
-            />
+            {logoDarkMode(router.pathname)}
           </Link>
         )}
 
@@ -171,7 +161,7 @@ export function LightNavbar({ menuProp }) {
                           key={sublinks.name}
                           className="mt-5 dark:text-white"
                         >
-                          <div className="flex hover:text-primary-orange ">
+                          <div className="flex hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81] ">
                             <img
                               height={20}
                               width={30}
@@ -921,3 +911,92 @@ export const Sun = () => (
     </defs>
   </svg>
 );
+
+
+function logoLightMode(pathname){
+  switch(pathname){
+    case '/':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+      case '/people':
+        case '/programmes': 
+        case '/training-pillars':   
+        case '/admission':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+      case '/digital-platform':
+        return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+        case '/digital-infrastructure': 
+        return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+   
+        case  '/power':
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png" className='w-22 h-20' />
+  
+          case  '/security': 
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+   
+          case  '/platform': 
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+   
+          case  '/communication':  
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+          case  '/automation': 
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+          case  '/identity':  
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+         
+          case  '/communication': 
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  default:
+    return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+   
+  }
+
+}
+
+function logoDarkMode(pathname){
+  switch(pathname){
+    case '/':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+      case '/people':
+        case '/programmes': 
+        case '/training-pillars':   
+        case '/admission':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+      case '/digital-platform':
+        return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+        case '/digital-infrastructure': 
+        return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+   
+        case  '/power':
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png" className='w-22 h-20' />
+  
+          case  '/security': 
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+   
+          case  '/platform': 
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+   
+          case  '/communication':  
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+          case  '/automation': 
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+          case  '/identity':  
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  
+         
+          case  '/communication': 
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+  default:
+    return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+      
+  }
+  
+}

@@ -110,19 +110,19 @@ const Academy = () => {
           <section className="z-10 py-20">
             <div className=" flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col">
               <div className="w-2/3 tablet:w-full">
-                <p className="sm:text-4xl text-xl font-bold max-w-lg sm:leading-[50px] leading-normal">
+                <p className="sm:text-4xl text-2xl font-bold max-w-lg sm:leading-[50px] leading-normal">
                   Investment in{' '}
                   <span className="text-primary-orange">
                     Digital Infrastructure
                   </span>{' '}
                   in five key areas over the past 25 years
                 </p>
-                <p className="text-2xl max-w-lg mt-5">
+                <p className="sm:text-2xl text-lg max-w-lg mt-5">
                   Investment focused on enhancing five vital components: power,
                   security, payment, people, and technology.
                 </p>
               </div>
-              <div>
+              <div className="sm:mt-0 mt-5 flex justify-center sm:justify-start">
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058158/21ctl/logo/21ctl-infographics_jiaas4.png"
                   className="w-2/3"
@@ -143,7 +143,7 @@ const Academy = () => {
               src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg"
               className="flex justify-center items-center"
             />
-            <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl dark:text-white">
+            <h1 class="absolute text-5xl font-bold text-center text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-base dark:text-white">
               we provide world-class services to the top 1000 companies in
               Nigeria and key residential areas.
             </h1>
@@ -288,7 +288,7 @@ const Academy = () => {
             <div className="font-bold sm:text-5xl text-3xl text-center">
               <h4 className="text-primary-orange">Target of the Academy</h4>
             </div>
-            <div className="w-full flex justify-center items-center ml-20 tablet:flex-col ">
+            <div className="w-full flex justify-center items-center sm:ml-20 ml-0 mt-8 tablet:flex-col ">
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058162/21ctl/logo/academy-importance_fxamod.svg"
                 className=" w-2/4  tablet:w-4/5 "
@@ -360,14 +360,14 @@ const Academy = () => {
             </div>
           </section> */}
 
-          <section>
+          <section className="mt-10">
             <div className=" w-full flex justify-between items-center ml-20 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:ml-0 tablet:mx-10">
               <div className="w-full ">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
                   Your <span className="text-primary-orange">Learning</span> has
                   no <span className="text-primary-orange">limit</span>
                 </h1>
-                <p className="leading-8  text-xl">
+                <p className="leading-8  sm:text-xl text-lg">
                   Our teaching resources and strategies help you make your
                   lessons unique and keep all students interested and engaged.
                 </p>
