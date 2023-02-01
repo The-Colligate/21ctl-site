@@ -124,11 +124,12 @@ const Events = () => {
                   </div>
                 </div>
               </div>
-              {/* end */}
+              <Footer />
             </div>
+            <SocialIcons />
           </div>
-        {/* </div>
-      </div> */}
+         
+        
     </>
   );
 };

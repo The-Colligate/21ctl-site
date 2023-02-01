@@ -1,14 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { motion } from 'framer-motion';
-import {
-  buttonVarient,
-  leftTransitionVarient,
-  rightTansitionVarient,
-} from '@components/constants/animations';
-import CountUp from 'react-countup';
+
 const ExploreMore = () => {
   return (
     <>
@@ -40,7 +33,7 @@ const ExploreMore = () => {
 
           <section className="sm:px-20 px-5 py-28 flex sm:flex-row flex-col w-full justify-center">
             <div className="w-full h-full">
-              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675247065/21ctl/Group_56028_dxcfxm.svg" className="object-cover w-full h-full" />
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261998/21ctl/chairman_mrizd7.png" className="object-cover w-full h-full" />
               {/* <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675237353/21ctl/Chairman_zlqbo7.jpg" className="object-cover w-full h-full" /> */}
             </div>
             <div className="sm:ml-10 ml-0 sm:mt-0 mt-8 text-base">
