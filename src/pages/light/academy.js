@@ -336,7 +336,7 @@ const Academy = () => {
             </div>
           </section>
 
-          <section className="sm:mb-0 mb-16">
+          {/* <section className="sm:mb-0 mb-16">
             <div className="flex items-center space-x-10 space-y-0 my-20 py-16 px-10 rounded-xl mx-40 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:mx-5 customize-bg">
               <div className="flex-1">
                 <img
@@ -357,7 +357,7 @@ const Academy = () => {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section>
             <div className=" w-full flex justify-between items-center ml-20 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:ml-0 tablet:mx-10">
@@ -370,6 +370,16 @@ const Academy = () => {
                   Our teaching resources and strategies help you make your
                   lessons unique and keep all students interested and engaged.
                 </p>
+                <a
+                href="https://digitalexpertsacademy.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="block dark:hidden "
+              >
+                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6 tablet:px-2">
+                  Apply now
+                </button>
+              </a>
               </div>
               <div className="w-full">
                 <img
