@@ -83,7 +83,7 @@ function LightDesign() {
           animate="visible"
           initial="hidden"
           
-          className="w-full h-full flex items-center justify-center">
+          className="w-full h-full flex items-center justify-between">
             <div className="max-w-3xl mt-10 flex flex-col items-center justify-center">
               <h1 className="text-5xl font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
                 Building Africa&apos;s{' '}
