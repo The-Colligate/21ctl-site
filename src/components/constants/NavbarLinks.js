@@ -452,7 +452,7 @@ export const academyNavLinks = () => [
     ],
   },
   {
-    additionalLinks: [{ name: 'Admission', link: '/admission' },{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Admission', link: '/admission' },{ name: 'Main', link: '/' }],
   },
 ];
 
@@ -568,7 +568,7 @@ export const infraNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
 ];
 
@@ -659,7 +659,7 @@ export const platformNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
   
 ];
@@ -723,7 +723,7 @@ export const powerNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
 ];
 export const peopleNavLinks = [
@@ -1077,7 +1077,7 @@ export const peopleNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
 ];
 
@@ -1201,6 +1201,6 @@ export const securityNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
 ];
