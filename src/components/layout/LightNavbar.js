@@ -163,10 +163,10 @@ export function LightNavbar({ menuProp }) {
                         >
                           <div className="flex hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81] ">
                             <img
-                              height={20}
-                              width={30}
+                              height={50}
+                              width={50}
                               src={`${sublinks.icon}`}
-                              className="h-[20px] w-[20px]"
+                              className="h-[40px] w-[30px]"
                               layout="raw" 
                             />
 
@@ -325,7 +325,7 @@ export function LightNavbar({ menuProp }) {
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}
-                // {() => {; console.log(displayPopup);}}
+                // {() => { console.log(displayPopup);}}
               >
                 <a
                   href={link?.link}

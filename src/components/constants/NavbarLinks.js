@@ -222,13 +222,13 @@ export const mainLinks = [
             name: '21st Century Technologies Limited',
             link: '#',
             text: 'Providing digital communication platforms and infrastructure',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261450/21ctl/21st_century_logo_retouch_-_icon_acvkgo.png',
           },
           {
             name: '21st Century Digital Infrastructure Limited',
             link: '#',
             text: 'Streamlining operations with CAAS.',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261450/21ctl/21st_century_logo_retouch_-_icon_acvkgo.png',
           },
 
           {
@@ -238,16 +238,16 @@ export const mainLinks = [
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/home/KonetPay_logo_ddoifw.svg',
           },
           {
-            name: '21st Century Energy',
+            name: '21st Century Power',
             link: '/power',
             text: 'Providing renewable energy and electric energy storage system',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261093/21ctl/21CTL_power_1_y9bixz.png',
           },
           {
             name: 'Security',
             link: '/security',
             text: 'Providing cloud-based security service.',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261252/21ctl/21CTL_security_1_quk2tf.png',
           },
           {
             name: 'Digital Academy',
