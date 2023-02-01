@@ -21,13 +21,14 @@ RUN mkdir -p /app
 
 WORKDIR /app
 
-COPY package*.json /app
+# COPY package*.json /app
 
 # RUN npm i
 
 EXPOSE 3000
 
-COPY . /app
+COPY ./.next /app/.next
+COPY ./public /app/public
 
 # RUN npm run build
 
