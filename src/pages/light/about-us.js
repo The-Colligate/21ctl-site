@@ -51,7 +51,7 @@ const AboutUs = () => {
                     />
                     {/* 200+ */}
                   </p>
-                  <span className="font-light">Business Supported</span>
+                  <span className="font-light">Businessess Supported</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-4xl font-semibold">

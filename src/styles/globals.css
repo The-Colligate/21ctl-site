@@ -79,7 +79,7 @@ body {
     rgba(127, 186, 3, 0.6) 100%
   ); */
   background: white;
-
+  /* border: 3px solid black; */
   margin-bottom: calc(var(--mv) - var(--vc));
 }
 
@@ -117,6 +117,7 @@ body {
     0 calc(100% - var(--vc)),
     0 var(--vc)
   );
+  
 }
 
 .hexagon-container::before {
