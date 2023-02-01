@@ -539,6 +539,10 @@ const academyNavLinks = ()=>[
                 {
                     name: "Admission",
                     link: "/admission"
+                },
+                {
+                    name: "Main Portal",
+                    link: "/"
                 }
             ]
         }
@@ -648,7 +652,12 @@ const infraNavLinks = [
         ]
     },
     {
-        additionalLinks: []
+        additionalLinks: [
+            {
+                name: "Main Portal",
+                link: "/"
+            }
+        ]
     }
 ];
 const platformNavLinks = [
@@ -727,10 +736,12 @@ const platformNavLinks = [
         ]
     },
     {
-        additionalLinks: []
-    },
-    {
-        additionalLinks: []
+        additionalLinks: [
+            {
+                name: "Main Portal",
+                link: "/"
+            }
+        ]
     }
 ];
 const powerNavLinks = [
@@ -749,7 +760,12 @@ const powerNavLinks = [
         ]
     },
     {
-        additionalLinks: []
+        additionalLinks: [
+            {
+                name: "Main Portal",
+                link: "/"
+            }
+        ]
     }
 ];
 const peopleNavLinks = [
@@ -1023,7 +1039,12 @@ const peopleNavLinks = [
         ]
     },
     {
-        additionalLinks: []
+        additionalLinks: [
+            {
+                name: "Main Portal",
+                link: "/"
+            }
+        ]
     }
 ];
 const securityNavLinks = [
@@ -1128,7 +1149,12 @@ const securityNavLinks = [
         ]
     },
     {
-        additionalLinks: []
+        additionalLinks: [
+            {
+                name: "Main Portal",
+                link: "/"
+            }
+        ]
     }
 ];
 

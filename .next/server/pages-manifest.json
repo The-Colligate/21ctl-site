@@ -14,7 +14,9 @@
   "/identity": "pages/identity.html",
   "/": "pages/index.html",
   "/light/about-us": "pages/light/about-us.html",
+  "/_error": "pages/_error.js",
   "/light/communication": "pages/light/communication.html",
+  "/light/academy": "pages/light/academy.html",
   "/light/digital-infrastructure": "pages/light/digital-infrastructure.html",
   "/light": "pages/light.html",
   "/light/power": "pages/light/power.html",
@@ -23,11 +25,9 @@
   "/platform": "pages/platform.html",
   "/power": "pages/power.html",
   "/programmes": "pages/programmes.html",
-  "/_error": "pages/_error.js",
   "/security": "pages/security.html",
   "/support-centers": "pages/support-centers.html",
   "/training-pillars": "pages/training-pillars.html",
-  "/light/academy": "pages/light/academy.html",
   "/light/digital": "pages/light/digital.html",
   "/404": "pages/404.html"
 }
