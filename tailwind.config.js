@@ -12,6 +12,7 @@ module.exports = {
         "primary-blue": "#02A4EE",
         "primary-orange-light": "rgba(246, 78, 31, 0.2);",
         "primary-blue-light": "#0098DB",
+        "primary-green":"#7EBA03",
         "dark-shade ":"rgba(0, 0, 0, 0.5);",
         "silver":"#606163",
         "background-color":"#F1F1F4"
