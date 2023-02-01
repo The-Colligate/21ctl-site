@@ -24,7 +24,7 @@ const AboutUs = () => {
               <div className="max-w-3xl">
                 <h1 className="text-7xl font-bold tracking-normal text-center font-lato text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                   About{' '}
-                  <span className="text-primary-orange leading-8">Us </span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">Us </span>
                 </h1>
                 <p className="text-2xl text-white text-center mt-6 largeTablet:text-xl smallTablet:text-lg">
                   We provide reliability, security, and high traffic handling
@@ -41,7 +41,7 @@ const AboutUs = () => {
               </div>
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
               <div className="text-center">
-                  <p className="text-primary-orange text-4xl font-semibold">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     <CountUp
                       start={0}
                       end={200}
@@ -51,10 +51,10 @@ const AboutUs = () => {
                     />
                     {/* 200+ */}
                   </p>
-                  <span className="font-light">Business Supported</span>
+                  <span className="font-light">Businessess Supported</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-primary-orange text-4xl font-semibold">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 25+ */}
                     <CountUp
                       start={0}
@@ -67,7 +67,7 @@ const AboutUs = () => {
                   <span className="font-light">Years Experience</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-primary-orange text-4xl font-semibold">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 14M+ */}
                     <CountUp
                       start={0}
@@ -80,7 +80,7 @@ const AboutUs = () => {
                   <span className="font-light">Satisfied Customers</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-primary-orange text-4xl font-semibold">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 100+ */}
                     <CountUp
                       start={0}

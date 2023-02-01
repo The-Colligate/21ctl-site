@@ -1,6 +1,8 @@
 
 export const mainLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
     navLinks: [
       /* {
                name: 'Products',
@@ -220,13 +222,13 @@ export const mainLinks = [
             name: '21st Century Technologies Limited',
             link: '#',
             text: 'Providing digital communication platforms and infrastructure',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261450/21ctl/21st_century_logo_retouch_-_icon_acvkgo.png',
           },
           {
             name: '21st Century Digital Infrastructure Limited',
             link: '#',
             text: 'Streamlining operations with CAAS.',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261450/21ctl/21st_century_logo_retouch_-_icon_acvkgo.png',
           },
 
           {
@@ -236,16 +238,16 @@ export const mainLinks = [
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/home/KonetPay_logo_ddoifw.svg',
           },
           {
-            name: '21st Century Energy',
+            name: '21st Century Power',
             link: '/power',
             text: 'Providing renewable energy and electric energy storage system',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261093/21ctl/21CTL_power_1_y9bixz.png',
           },
           {
             name: 'Security',
             link: '/security',
             text: 'Providing cloud-based security service.',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261252/21ctl/21CTL_security_1_quk2tf.png',
           },
           {
             name: 'Digital Academy',
@@ -320,7 +322,7 @@ export const mainLinks = [
   {
     additionalLinks: [
       { name: 'Digital Platforms', link: '/platform' },
-      { name: 'Events', link: '/' },
+      { name: 'Events', link: '/events' },
       { name: 'Explore more', link: '/explore-more' },
     ],
   },
@@ -450,12 +452,14 @@ export const academyNavLinks = () => [
     ],
   },
   {
-    additionalLinks: [{ name: 'Admission', link: '/admission' }],
+    additionalLinks: [{ name: 'Admission', link: '/admission' },{ name: 'Main', link: '/' }],
   },
 ];
 
 export const infraNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
     navLinks: [
       {
         name: 'Connectivity',
@@ -564,12 +568,14 @@ export const infraNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
 ];
 
 export const platformNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/light-logo-limited_wdkrnr.svg",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058116/21ctl/light-logo_dark_limited_e7rs4t.svg",
     navLinks: [
       {
         name: 'Aggregator',
@@ -653,15 +659,15 @@ export const platformNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
-  {
-    additionalLinks: [],
-  },
+  
 ];
 
 export const powerNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png",
     navLinks: [
       {
         name: 'Renewable Energy',
@@ -717,57 +723,60 @@ export const powerNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
 ];
 export const peopleNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg",
     navLinks: [
       {
         name: 'Academy',
+        link: '/training-pillars',
         subLinks: [
-          {
-            name: 'Trainee',
-            link: '/admission',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
+          // {
+          //   name: 'Trainee',
+          //   link: '/admission',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             
-          },
-          {
-            name: 'Curriculum',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
+          // },
+          // {
+          //   name: 'Curriculum',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
-          },
-          {
-            name: 'Instructor',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Instructor',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Infrastructure',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Infrastructure',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Didactics',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Didactics',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Industry',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Industry',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Quality Assurance',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Quality Assurance',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
+          // },
         ],
         extras: [
           {
@@ -850,6 +859,19 @@ export const peopleNavLinks = [
               text2: 'Energy Efficiency Fundamentals',
               text3: 'Energy Efficiency with Building Automation Systems',
               text4: 'Optimising Data Center Environmental Monitoring',
+            },
+            {
+              name: 'VMware',
+              link: '/programmes',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
+              text: 'VMware vSphere: Install, Configure, Manage [V7]',
+              text1: 'VMware NSX-T Data Center: Install, Configure, Manage [V3.2]',
+              text2: 'VMware Cloud Director: Install, Configure, Manage [V10.3]',
+              text3: 'Additional recommended',
+              text4: 'VMware vSphere: Design [V7]',
+              text5: 'VMware Cloud Director: Advanced Workshop [V10.2]',
+              text6: 'VMware NSX-T Data Center: Design [V3.0]',
+              text7: 'VMware Tanzu Kubernetes Grid: Install, Configure, Manage',
             },
 
             {
@@ -958,11 +980,11 @@ export const peopleNavLinks = [
           //   },
         ],
       },
-      {
-        name: 'Projects',
-        subLinks: [],
-        extras: [],
-      },
+      // {
+      //   name: 'Projects',
+      //   subLinks: [],
+      //   extras: [],
+      // },
       {
         name: 'Partners',
         subLinks: [
@@ -1055,12 +1077,14 @@ export const peopleNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
 ];
 
 export const securityNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
     navLinks: [
       {
         name: 'Cybersecurity',
@@ -1177,6 +1201,6 @@ export const securityNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main', link: '/' }],
   },
 ];

@@ -35,7 +35,7 @@ const Digital = () => {
               animate="visible"
               initial="hidden" className='max-w-3xl'>
               <h1 className="text-7xl tracking-normal font-lato font-medium whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-                <span className="text-primary-orange leading-8">Digital </span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">Digital </span>
                 Infrastructure
               </h1>
               <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">
@@ -66,7 +66,7 @@ const Digital = () => {
               </div>
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
                 <div className="text-center">
-                  <p className="text-primary-orange text-4xl font-semibold">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     <CountUp
                       start={0}
                       end={1000}
@@ -76,10 +76,10 @@ const Digital = () => {
                     />
                     {/* 200+ */}
                   </p>
-                  <span className="font-light">Business Supported</span>
+                  <span className="font-light">Businesses Supported</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-primary-orange text-4xl font-semibold">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 25+ */}
                     <CountUp
                       start={0}
@@ -92,7 +92,7 @@ const Digital = () => {
                   <span className="font-light">Years Experience</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-primary-orange text-4xl font-semibold">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 14M+ */}
                     <CountUp
                       start={0}
@@ -105,7 +105,7 @@ const Digital = () => {
                   <span className="font-light">Satisfied Customers</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-primary-orange text-4xl font-semibold">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 100+ */}
                     <CountUp
                       start={0}
@@ -132,7 +132,7 @@ const Digital = () => {
               </div>
               <div className="max-w-xl pr-8 mx-10 tablet:pr-0">
                 <h1 className="text-5xl font-semibold tracking-medium mb-8 tablet:text-4xl">
-                  <span className="text-primary-orange">Connect</span> to all
+                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Connect</span> to all
                   hyperscale Cloud providers
                 </h1>
                 <p className="leading-8 text-xl">
@@ -159,11 +159,12 @@ const Digital = () => {
                             </div>
                             <div className='number-1  bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5'>
                                 <h3 className='font-extrabold'>Data Centers</h3>
-                                <p>His defective nor convinced residence own. Connection has put impossible own apartments boisterous.</p>
+                                <p>Expertise in datacenter built locally and supported globally, instilling best practices on a platform of the industry leading technology. </p>
                             </div>
                             <div className='number-1  mx-auto bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5'>
                                 <h3 className='font-extrabold'>Towers</h3>
-                                <p>Wide range communication infrastructure and managed service to enable wireless connectivity connecting people, devices and networks.</p>
+                                <p>Wide range communication infrastructure and managed service to enable wireless connectivity 
+connecting people, devices and networks.</p>
                             </div>
                         </div>
                     </section>
@@ -179,11 +180,11 @@ const Digital = () => {
           <section>
             <div className="text-center mx-10 tablet:mx-0">
               {/* <h1 className=" text-5xl font-bold tracking-wide tablet:text-4xl">
-                <span className="text-primary-orange">Data </span> Centers
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Data </span> Centers
               </h1> */}
               <div className='flex flex-col justify-center items-center text-center w-3/4 mx-auto tablet:mx-10 phone:w-3/3'>
-                            <h2 className='text-[42px] text-primary-orange my-4 tablet:text-[16px]'>21st century is a Digital professional service Infrastructure company with 25 years experience </h2>
-                            <p className='text-[16px] tablet:text-[12px]'>Combine our capabilities with data Center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow.</p>
+                            <h2 className='text-[42px] text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] my-4 tablet:text-[16px]'>21st century is a Digital professional service Infrastructure company with 25 years experience </h2>
+                            <p className='text-[16px] tablet:text-[12px]'>Combine our capabilities with data center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow.</p>
                         </div>
               {/* <p className="tracking-wider  text-lg py-4 max-w-3xl m-auto">
                 Our data center is a secure and reliable infrastructure that
@@ -197,11 +198,11 @@ const Digital = () => {
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
-                    <span className="text-primary-orange">Ikeja </span> Data Center
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Ikeja </span> Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading text-justify">
-                    Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
+                    Our Ikeja data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                   </p>
                 </div>
                 <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/data-centers/ikeja-center_ahvecs.png" className="inline-block w-full fit"  width={100} height={100} />
@@ -209,10 +210,10 @@ const Digital = () => {
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
-                    <span className="text-primary-orange">Ikoyi </span> Data Center
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Ikoyi </span> Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our six-story data center in Africa is innovative and equipped with a 10MW Turbine system, providing ample power and space for clients to grow.
                   </p>
                 </div>
@@ -221,10 +222,10 @@ const Digital = () => {
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
-                    <span className="text-primary-orange">Apapa </span>  Data Center
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Apapa </span>  Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our Apapa data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
@@ -233,10 +234,10 @@ const Digital = () => {
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
-                    <span className="text-primary-orange">Saka-Tinubu </span>  Data Center
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Saka-Tinubu </span>  Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our Saka-Tinubu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
@@ -245,10 +246,10 @@ const Digital = () => {
               <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
-                    <span className="text-primary-orange">Alanamu </span>  Data Center
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Alanamu </span>  Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify ">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our Alanamu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
@@ -268,19 +269,17 @@ const Digital = () => {
                 <h4 
                 className="text-5xl font-semibold text-left tablet:text-3xl">
                   {' '}
-                  <span className="text-primary-orange">5G</span> Readiness
+                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">5G</span> Readiness
                 </h4>
-                <p className="text-2xl text-left pt-3 phone:text-sm w-2/3 tablet:w-full ">
+                <p className="text-2xl text-left pt-3 phone:text-lg w-2/3 tablet:w-full ">
                   Our infrastructure with edge computing capabilities supports 5G
                   technology and enables new user experiences, deployment models,
                   and services.
                 </p>
               </div>
               <div className="flex sm:justify-start justify-center w-full h-full sm:px-0 px-5">
-                <img
-                 
+                <img 
                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675161977/21ctl/logo/5G_tower_gt0ilf.svg'
-                 
                   className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
                 />
               </div>

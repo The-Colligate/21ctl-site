@@ -39,6 +39,7 @@ const Video = ({ video_src, closeModal, modalIsOpen }) => {
       style={customStyles}
       contentLabel="Take a tour"
     >
+      <span className='hover:text-primary-orange font-semibold cursor-pointer flex justify-end pb-1' onClick={closeModal}><CloseIcon/></span>
       <ReactPlayer url={video_src} playing={true} controls={true} />
 
       {/* <div className="v_container">
@@ -88,5 +89,11 @@ const Video = ({ video_src, closeModal, modalIsOpen }) => {
     </Modal>
   );
 };
+
+const CloseIcon = () =>{
+  return (
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
+  )
+}
 
 export default Video;

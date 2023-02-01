@@ -77,21 +77,21 @@ const Academy = () => {
                 variants={rightTansitionVarient}
                 animate="visible"
                 initial="hidden"
-                className="flex justify-end w-full flex-1 "
+                className="flex sm:justify-end justify-center w-full flex-1 "
               >
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675073326/21ctl/Group_56023_d43azv.svg"
                   width={459}
                   height={450}
-                  className="pt-20 tablet:w-96 tablet:space-x-0 phone:w-64 phone:space-x-0"
+                  className="pt-20 tablet:w-96 phone:w-64"
                 />
               </motion.div>
             </div>
           </section>
 
-          <section className="sm:px-28 px-8 py-20">
-            <div className="flex sm:flex-row flex-col items-center  sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
-              <div>
+          <section className="sm:px-28 px-8 sm:py-20 py-10">
+            <div className="flex sm:flex-row flex-col-reverse items-center  sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
+              <div className='sm:block hidden'>
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675074995/21ctl/Group_56024_j0h0qz.svg"
                   className="w-3/4 h-3/4 dark:hidden "
@@ -118,7 +118,7 @@ const Academy = () => {
             </div>
           </section>
 
-          <section className="sm:px-28 px-8 py-20">
+          <section className="sm:px-28 px-8 sm:py-20 py-10">
             <div className="mt-20">
               <h3 className="font-bold sm:text-5xl text-2xl text-primary-orange text-center leading-8">
               Timeline

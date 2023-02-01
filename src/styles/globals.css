@@ -70,16 +70,16 @@ body {
     0 calc(100% - var(--vc)),
     0 var(--vc)
   );
-  /* background: linear-gradient(
+  background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.6) 0%,
     rgba(246, 78, 31, 0.6) 0.01%,
     rgba(254, 185, 6, 0.6) 31.25%,
     rgba(3, 165, 240, 0.6) 61.98%,
     rgba(127, 186, 3, 0.6) 100%
-  ); */
-  background: white;
-
+  );
+  /* background: white; */
+  /* border: 3px solid black; */
   margin-bottom: calc(var(--mv) - var(--vc));
 }
 
@@ -117,6 +117,7 @@ body {
     0 calc(100% - var(--vc)),
     0 var(--vc)
   );
+  
 }
 
 .hexagon-container::before {
@@ -529,6 +530,10 @@ background-color: #f1f0f3
 
 .resrc-shadow{
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.post_list:first-child{
+  background-color: #D9D9D9;
 }
 
 @media only screen and (max-width: 400px) {
