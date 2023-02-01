@@ -921,7 +921,7 @@ function logoLightMode(pathname){
         case '/programmes': 
         case '/training-pillars':   
         case '/admission':
-      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"  className='w-22 h-20' />
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"  className='w-[100px] h-[100px]' />
   
       case '/digital-platform':
         return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
@@ -965,7 +965,7 @@ function logoDarkMode(pathname){
         case '/programmes': 
         case '/training-pillars':   
         case '/admission':
-      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg"  className='w-16'  />
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg" className='w-[100px] h-[100px]' />
   
       case '/digital-platform':
         return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />

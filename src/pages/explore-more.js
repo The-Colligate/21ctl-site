@@ -38,6 +38,21 @@ const ExploreMore = () => {
             </div>
             <div className="sm:ml-10 ml-0 sm:mt-0 mt-8 text-base">
               <p>
+              21st Century Technologies, an ecosystem Technology Group of
+                companies, building bold, ambitious and audacious digital
+                infrastructure projects. Integrated infrastructure that is
+                sustainable, resilient, secure, low latency, protected that will
+                enable our customers to adopt cutting edge technology to
+                accelerate technology modernization, exceptional corporate
+                performance and transformation. We are well positioned and fully
+                mobilized to provide unmatched operational excellence and
+                unrivaled customer experience. Build many internationally
+                recognized technology Hubs that will meet increasing demand for
+                distributed digital infrastructure and support enterprises of
+                all sizes by enabling the integration of all technology access
+                business functions.
+              </p>
+              {/* <p>
                 In the last 25 years, we have been investing in compelling
                 Digital Infrastructure in five key areas:
               </p>
@@ -110,7 +125,7 @@ const ExploreMore = () => {
                 opportunities. We have dedicated the Digital Expert Academy
                 today to enable African youths translate these opportunities to
                 value that can boost our digital economy.
-              </p>
+              </p> */}
             </div>
           </section>
 

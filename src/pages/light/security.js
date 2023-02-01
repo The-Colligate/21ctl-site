@@ -27,6 +27,8 @@ const Security = () => {
       <Head>
         <title>Security - 21 CTL</title>
         <meta name="description" content="" />
+        <link rel="icon" href="/favicons/security_favicon.ico" />
+        
       </Head>
       <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative bg-white dark:bg-[#252525] opacity-90">
         {// <div className="absolute w-full h-full flex justify-between items-center">
