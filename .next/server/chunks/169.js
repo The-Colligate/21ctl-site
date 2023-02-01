@@ -17,6 +17,8 @@ exports.modules = {
 /* unused harmony exports trainingCourses, academyNavLinks */
 const mainLinks = [
     {
+        logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
+        logoDarkMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
         navLinks: [
             /* {
                name: 'Products',
@@ -549,6 +551,8 @@ const academyNavLinks = ()=>[
     ];
 const infraNavLinks = [
     {
+        logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
+        logoDarkMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
         navLinks: [
             {
                 name: "Connectivity",
@@ -662,6 +666,8 @@ const infraNavLinks = [
 ];
 const platformNavLinks = [
     {
+        logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/light-logo-limited_wdkrnr.svg",
+        logoDarkMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058116/21ctl/light-logo_dark_limited_e7rs4t.svg",
         navLinks: [
             {
                 name: "Aggregator",
@@ -746,6 +752,8 @@ const platformNavLinks = [
 ];
 const powerNavLinks = [
     {
+        logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png",
+        logoDarkMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png",
         navLinks: [
             {
                 name: "Renewable Energy",
@@ -770,6 +778,8 @@ const powerNavLinks = [
 ];
 const peopleNavLinks = [
     {
+        logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg",
+        logoDarkMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg",
         navLinks: [
             {
                 name: "Academy",
@@ -1049,6 +1059,8 @@ const peopleNavLinks = [
 ];
 const securityNavLinks = [
     {
+        logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
+        logoDarkMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
         navLinks: [
             {
                 name: "Cybersecurity",
@@ -2785,7 +2797,10 @@ const MobileNavbar = ({ isOpen , theme , setTheme , close , navItems , router  }
                     className: "space-y-5 mt-10 text-lg",
                     children: [
                         navItems.navLinks.map((link, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                onClick: ()=>link.subLinks.length > 0 ? console.log(link.link) : router.push(link.link !== null ? link.link : "#"),
+                                onClick: ()=>link.subLinks.length > 0 ? setShowExpanded([
+                                        index,
+                                        true
+                                    ]) : router.push(link.link !== null ? link.link : "#"),
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                                     className: "flex items-center justify-between",
                                     children: [
