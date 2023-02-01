@@ -15,16 +15,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the Docker image
         run: docker build . --file Dockerfile --rm=false
-      - name: Deleting build directory
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.PASSWORD }}
-          port: 22
-          script: |
-            rm -rf ./build/*
-            rm -rf ./build/.*
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
         with:
@@ -39,20 +29,3 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.PASSWORD }}
-          port: 22
-          script: |
-            cd /home/sam/public_html
-            rm -rf *.json
-            rm -rf *.js
-            rm -rf *.html
-            rm -rf *.mp4
-            rm -rf ./_next/static/*
-            yes | cp -rf ./build/.next/server/pages/* ./
-            yes | cp -rf ./build/.next/static ./_next
-            ls -la
