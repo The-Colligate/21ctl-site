@@ -37,9 +37,9 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v0.1.7
-          with:
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.SSH_USER }}
-            password: ${{ secrets.PASSWORD }}
-            port: 22
-            script: pwd
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: pwd
