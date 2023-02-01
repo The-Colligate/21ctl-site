@@ -104,7 +104,7 @@ useEffect(() => {
                     />
                     {/* 200+ */}
                   </p>
-                  <span className="font-light">Business Supported</span>
+                  <span className="font-light">Businesses Supported</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-4xl font-semibold">
@@ -265,7 +265,7 @@ One of the key services offered by the company is training in threat management,
 
                   </h1>
                   <p className="text-[18px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
-                    21CTL Managed SOC Services offers real-time threat intelligence, data processing and incident response for cost-effective enterprise security
+                    21CTL Managed SOC Services offer real-time threat intelligence, data processing and incident response for cost-effective enterprise security
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
                     <a href='mailto:commercial@21ctl.com'>  Contact Us</a>

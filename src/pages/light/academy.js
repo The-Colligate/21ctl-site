@@ -162,7 +162,7 @@ const Academy = () => {
               <div className="text-lg font-semibold pb-5">
                 Our statistics reveal more about us.
               </div>
-              <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-around items-center">
+              <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-around items-center tablet:flex-col">
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
                     {/* 50+ */}
