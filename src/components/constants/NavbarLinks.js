@@ -1,6 +1,8 @@
 
 export const mainLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
     navLinks: [
       /* {
                name: 'Products',
@@ -456,6 +458,8 @@ export const academyNavLinks = () => [
 
 export const infraNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
     navLinks: [
       {
         name: 'Connectivity',
@@ -570,6 +574,8 @@ export const infraNavLinks = [
 
 export const platformNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/light-logo-limited_wdkrnr.svg",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058116/21ctl/light-logo_dark_limited_e7rs4t.svg",
     navLinks: [
       {
         name: 'Aggregator',
@@ -660,6 +666,8 @@ export const platformNavLinks = [
 
 export const powerNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png",
     navLinks: [
       {
         name: 'Renewable Energy',
@@ -720,6 +728,8 @@ export const powerNavLinks = [
 ];
 export const peopleNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg",
     navLinks: [
       {
         name: 'Academy',
@@ -1073,6 +1083,8 @@ export const peopleNavLinks = [
 
 export const securityNavLinks = [
   {
+    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
+    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
     navLinks: [
       {
         name: 'Cybersecurity',
