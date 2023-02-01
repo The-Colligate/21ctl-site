@@ -182,10 +182,7 @@ const Platform = () => {
                       exchanged and policies enforced by connecting to curated
                       data communities that matter to you.
                     </li>
-                    <li className="font-light">
-                      Remove legacy barriers across the interconnection industry
-                      and tackle data gravity head on.
-                    </li>
+                  
                   </ul>
                 </p>
 

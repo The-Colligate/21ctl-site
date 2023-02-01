@@ -154,7 +154,7 @@ const Pillars = () => {
                 Infrastructure and Resources
               </h2>
               <p className="text-lg text-center font-light mt-4 max-w-3xl m-auto text-black dark:text-white">
-                The Academy infrastructures and resources is carefully designed
+                The Academy infrastructures and resources are carefully designed
                 and maintained to support the training program.
               </p>
             </div>
