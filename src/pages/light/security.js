@@ -31,11 +31,11 @@ const Security = () => {
         <title>Security - 21 CTL</title>
         <meta name="description" content="" />
       </Head>
-      <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative">
-        <div className="absolute w-full h-full flex justify-between items-center">
-          <div className="w-full min-h-[50%] bg_gradient_l"></div>
-          <div className="w-full min-h-[50%] bg_gradient_r"></div>
-        </div>
+      <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative bg-white dark:bg-[#252525] opacity-90">
+        // <div className="absolute w-full h-full flex justify-between items-center">
+        //   <div className="w-full min-h-[50%] bg_gradient_l"></div>
+        //   <div className="w-full min-h-[50%] bg_gradient_r"></div>
+        // </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
           <LightNavbar />
 
@@ -44,7 +44,7 @@ const Security = () => {
               <div className="max-w-3xl">
                 <h1 className="text-7xl font-bold tracking-normal font-lato text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                 
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">Elevate</span> Your Business{"'"}s Cybersecurity
+                  <span className="text-magenta leading-8">Elevate</span> Your Business{"'"}s Cybersecurity
                 </h1>
                 <p className="text-2xl text-white opacity-60 mt-6 largeTablet:text-xl smallTablet:text-lg">
                 Stay protected in the digital world with our cutting-edge cybersecurity solutions
@@ -62,14 +62,14 @@ const Security = () => {
                 className="w-full"
               >
                 <h1 className="text-7xl font-bold tracking-normal font-lato text-black dark:text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">Elevate</span>{' '}
+                  <span className="text-magenta leading-8">Elevate</span>{' '}
                   Your Business{"'"}s Cybersecurity
                 </h1>
                 <p className="text-2xl text-black dark:text-white opacity-60 mt-6 largeTablet:text-xl smallTablet:text-lg">
                   Stay protected in the digital world with our cutting-edge
                   cybersecurity solutions
                 </p>
-                <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded-xl font-semibold text-white py-3 px-6 my-6">
+                <button className="bg-magenta rounded-xl font-semibold text-white py-3 px-6 my-6">
                   <a href="mailto:commercial@21ctl.com">Contact Us</a>
                 </button>
               </motion.div>
@@ -96,7 +96,7 @@ const Security = () => {
               </div>
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
                 <div className="text-center">
-                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
+                  <p className="text-magenta text-4xl font-semibold">
                     <CountUp
                       start={0}
                       end={1000}
@@ -109,7 +109,7 @@ const Security = () => {
                   <span className="font-light">Businesses Supported</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
+                  <p className="text-magenta text-4xl font-semibold">
                     {/* 25+ */}
                     <CountUp
                       start={0}
@@ -122,7 +122,7 @@ const Security = () => {
                   <span className="font-light">Years Experience</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
+                  <p className="text-magenta text-4xl font-semibold">
                     {/* 14M+ */}
                     <CountUp
                       start={0}
@@ -135,7 +135,7 @@ const Security = () => {
                   <span className="font-light">Satisfied Customers</span>
                 </div>
                 <div className="text-center">
-                  <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
+                  <p className="text-magenta text-4xl font-semibold">
                     {/* 100+ */}
                     <CountUp
                       start={0}
@@ -175,7 +175,7 @@ const Security = () => {
                 className="flex-1 mb-5 w-[60%] tablet:w-full"
               >
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Managed </span>{' '}
+                  <span className="text-magenta">Managed </span>{' '}
                   cybersecurity services
                 </h1>
 
@@ -218,7 +218,7 @@ const Security = () => {
 
               <div className="pl-10 w-[60%] mx-10 flex flex-col h-full justify-center tablet:pl-5 tablet:w-full">
                 <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Managed </span>
+                  <span className="text-magenta">Managed </span>
                   Network Security Services
                 </h1>
                 <p className="leading-8 text-xl  tablet:text-lg">
@@ -245,7 +245,7 @@ const Security = () => {
                   up-to-date with the latest security features and threat
                   intelligence.
                 </p>
-                <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
+                <button className="bg-magenta w-32 rounded-xl font-semibold text-white py-3 px-6 my-6">
                   <a href="mailto:commercial@21ctl.com">Reach Us</a>
                 </button>{' '}
               </div>
@@ -273,7 +273,7 @@ const Security = () => {
                 <div className="tablet:my-5 mb-4 ">
                   <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
                     Security{' '}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
+                    <span className="text-magenta">
                       Expert Training{' '}
                     </span>
                   </h1>
@@ -303,17 +303,17 @@ const Security = () => {
                     certifications for the trainees that can boost their career
                     opportunities.
                   </p>
-                  <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded-xl font-semibold text-white py-3 px-6 my-6">
+                  <button className="bg-magenta rounded-xl font-semibold text-white py-3 px-6 my-6">
                     <a href="mailto:commercial@21ctl.com"> Contact Us</a>
                   </button>
                 </div>
               </div>
             </div>
-            <div className=" mr-0 mt-20 flex justify-between items-center  tablet:m-10  tablet:flex-col">
+            {/* <div className=" mr-0 mt-20 flex justify-between items-center  tablet:m-10  tablet:flex-col">
               <div className="w-[40%] tablet:w-full">
                 <div className="tablet:my-5 mb-4">
                   <h1 className="text-4xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
+                    <span className="text-magenta">
                       Managed Security Operations Center Services{' '}
                     </span>
                   </h1>
@@ -322,7 +322,7 @@ const Security = () => {
                     intelligence, data processing and incident response for
                     cost-effective enterprise security
                   </p>
-                  <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded-xl font-semibold text-white py-3 px-6 my-6">
+                  <button className="bg-magenta rounded-xl font-semibold text-white py-3 px-6 my-6">
                     <a href="mailto:commercial@21ctl.com"> Contact Us</a>
                   </button>
                 </div>
@@ -336,14 +336,14 @@ const Security = () => {
                   width={444}
                 />
               </div>
-            </div>
+            </div> */}
           </section>
           <section className="mx-20 my-20 tablet:mx-0 tablet:my-10">
             <div className=" mr-0 flex justify-between items-center  tablet:m-10 tablet:flex-col">
               <div className="w-[50%] tablet:w-full">
                 <div className="tablet:my-5 mb-4 w-4/5 tablet:w-full">
                   <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8  tablet:mb-2 ">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">SmartBackup </span>
+                    <span className="text-magenta">SmartBackup </span>
                   </h1>
                   <p className="text-[18px] text-[#2e2e2c] dark:text-white tablet:text-[18px] mb-4">
                     SmartBackup is an automated configuration backup solution
@@ -353,7 +353,7 @@ const Security = () => {
                     been completed correctly, and provides easy management of
                     devices for compliance.
                   </p>
-                  <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded-xl font-semibold text-white py-3 px-6 my-6">
+                  <button className="bg-magenta rounded-xl font-semibold text-white py-3 px-6 my-6">
                     <a href="mailto:commercial@21ctl.com"> Contact Us</a>
                   </button>
                 </div>

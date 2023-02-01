@@ -163,10 +163,10 @@ export function LightNavbar({ menuProp }) {
                         >
                           <div className="flex hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81] ">
                             <img
-                              height={20}
-                              width={30}
+                              height={50}
+                              width={50}
                               src={`${sublinks.icon}`}
-                              className="h-[20px] w-[20px]"
+                              className="h-[40px] w-[30px]"
                               layout="raw" 
                             />
 
@@ -325,7 +325,7 @@ export function LightNavbar({ menuProp }) {
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}
-                // {() => {; console.log(displayPopup);}}
+                // {() => { console.log(displayPopup);}}
               >
                 <a
                   href={link?.link}
@@ -916,12 +916,12 @@ export const Sun = () => (
 function logoLightMode(pathname){
   switch(pathname){
     case '/':
-      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
       case '/people':
         case '/programmes': 
         case '/training-pillars':   
         case '/admission':
-      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"  className='w-22 h-20' />
   
       case '/digital-platform':
         return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
@@ -933,7 +933,7 @@ function logoLightMode(pathname){
           return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png" className='w-22 h-20' />
   
           case  '/security': 
-          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png"  className='w-22 h-20' />
    
           case  '/platform': 
           return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
@@ -960,12 +960,12 @@ function logoLightMode(pathname){
 function logoDarkMode(pathname){
   switch(pathname){
     case '/':
-      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
       case '/people':
         case '/programmes': 
         case '/training-pillars':   
         case '/admission':
-      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg"  className='w-16'  />
   
       case '/digital-platform':
         return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
@@ -977,7 +977,7 @@ function logoDarkMode(pathname){
           return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png" className='w-22 h-20' />
   
           case  '/security': 
-          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+          return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png" className='w-22 h-20'  />
    
           case  '/platform': 
           return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />

@@ -91,7 +91,7 @@ function LightDesign() {
           
           className="w-full h-full flex items-center justify-between">
             <div className="max-w-3xl mt-10 flex flex-col items-center justify-center">
-              <h1 className="text-5xl text-silver font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
+              <h1 className="text-5xl text-silver font-lato font-black whitespace-pre-wrap dark:text-white largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl ">
                 Building Africa&apos;s{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Largest Digital Infrastructure</span>{' '}
                 
@@ -144,7 +144,7 @@ function LightDesign() {
                       </div>
                     </div>
                     <div className="absolute hex-shape w-full h-full bg-white dark:!bg-gray-900 flip-front">
-                      <div className="hex-shape w-full h-full flex items-center justify-center bg-white !m-0">
+                      <div className="hex-shape w-full h-full flex items-center justify-center  !m-0">
                         <img
                           src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675244528/21ctl/main%20page%20icons/ph_tree-structure-fill_tosrkx.svg"
                           // "/icons/home/tree-structure.svg"
@@ -332,7 +332,7 @@ function LightDesign() {
                 >
                   <div className="w-full flex justify-center pt-5">
                     <div
-                      className="h-24 min-w-[6rem] rounded-full  bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver shadow-bg-silver dark:shadow-lg  cursor-pointer flex items-center justify-center border  bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                      className="h-24 min-w-[6rem] rounded-full  bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver shadow-bg-silver   cursor-pointer flex items-center justify-center border  bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
                       role="button"
                     >
                       <img

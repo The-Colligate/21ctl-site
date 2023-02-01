@@ -15,6 +15,7 @@ module.exports = {
         "primary-green":"#7EBA03",
         "dark-shade ":"rgba(0, 0, 0, 0.5);",
         "silver":"#606163",
+        "magenta": "#EC268F",
         "background-color":"#F1F1F4"
       },
       fontFamily: {
