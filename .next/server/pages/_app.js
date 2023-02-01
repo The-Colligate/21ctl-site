@@ -4,7 +4,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 8239:
+/***/ 9540:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22,9 +22,9 @@ var jsx_runtime_ = __webpack_require__(997);
 const next_seo_namespaceObject = require("@bradgarropy/next-seo");
 var next_seo_default = /*#__PURE__*/__webpack_require__.n(next_seo_namespaceObject);
 // EXTERNAL MODULE: ./src/styles/globals.css
-var globals = __webpack_require__(108);
-// EXTERNAL MODULE: ./node_modules/animate.css/animate.css
-var animate = __webpack_require__(5544);
+var globals = __webpack_require__(3768);
+// EXTERNAL MODULE: ./node_modules/.pnpm/animate.css@4.1.1/node_modules/animate.css/animate.css
+var animate = __webpack_require__(4975);
 // EXTERNAL MODULE: external "next-themes"
 var external_next_themes_ = __webpack_require__(1162);
 // EXTERNAL MODULE: external "next/head"
@@ -94,7 +94,7 @@ function App({ Component , pageProps  }) {
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(external_next_themes_.ThemeProvider, {
-                defaultTheme: "system",
+                defaultTheme: "light",
                 attribute: "class",
                 enableSystem: true,
                 enableColorScheme: true,
@@ -109,14 +109,14 @@ function App({ Component , pageProps  }) {
 
 /***/ }),
 
-/***/ 5544:
+/***/ 4975:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 108:
+/***/ 3768:
 /***/ (() => {
 
 
@@ -154,7 +154,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(8239));
+var __webpack_exports__ = (__webpack_exec__(9540));
 module.exports = __webpack_exports__;
 
 })();

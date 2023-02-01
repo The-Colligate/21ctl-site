@@ -1,19 +1,20 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import Head from "next/head";
-import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import Head from 'next/head';
+import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
+import { motion } from 'framer-motion';
 import {
   leftTransitionVarient,
   rightTansitionVarient,
-} from "@components/constants/animations";
-import CountUp from "react-countup";
-import dynamic from "next/dynamic";
-import Video from "../../components/Video";
+} from '@components/constants/animations';
+import CountUp from 'react-countup';
+import dynamic from 'next/dynamic';
+import Video from '../../components/Video';
+import { Link } from 'evergreen-ui';
 // const Video = dynamic(() => import('../../components/Video'));
 
 const src1 =
   "https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4";
+
 
 const Academy = () => {
   const courses = [
@@ -21,9 +22,10 @@ const Academy = () => {
     'Power management and distribution',
     'Building management systems and energy efficiency',
     'Automation and control systems',
-    'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
+    'Programming and configuration of Schneider Electric products.',
+    // 'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
     'Cybersecurity for industrial systems',
-    'Industry-specific applications, such as data centers (renewable energy, and critical power systems)',
+    'Industry-specific applications, such as data centers',
     'Safety and compliance',
     'Data Center managment',
     // 'Database',
@@ -105,28 +107,20 @@ const Academy = () => {
               />
             )}
           </div>
-          <section className="z-10">
+          <section className="z-10 py-20">
             <div className=" flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col">
               <div className="w-2/3 tablet:w-full">
-                <p className="sm:text-5xl text-xl font-bold">
-                  In the last{" "}
-                  <span className="text-primary-orange">25 years</span>, we have
-                  been <span className="text-primary-orange">investing</span> in
-                  compelling{" "}
-                  <span className="text-primary-orange">Digital</span>{" "}
-                  Infrastructure in five{" "}
-                  <span className="text-primary-orange">key areas</span>:
+                <p className="sm:text-4xl text-xl font-bold max-w-lg sm:leading-[50px] leading-normal">
+                  Investment in{' '}
+                  <span className="text-primary-orange">
+                    Digital Infrastructure
+                  </span>{' '}
+                  in five key areas over the past 25 years
                 </p>
-                <ul className="list-disc ml-5 mt-4 sm:text-[24px] text-base ">
-                  <li>
-                    Technology: As we all know poverty is a bigger indicator of
-                    lack of access to Technologies than geography.
-                  </li>
-                  <li>Power: Renewable energy / Turbine power plant</li>
-                  <li>Payment.</li>
-                  <li>Security</li>
-                  <li>People.</li>
-                </ul>
+                <p className="text-2xl max-w-lg mt-5">
+                  Investment focused on enhancing five vital components: power,
+                  security, payment, people, and technology.
+                </p>
               </div>
               <div>
                 <img
@@ -145,10 +139,15 @@ const Academy = () => {
            
           </section> */}
           <div class="relative w-full flex flex-col justify-center items-center py-28">
-        <img src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg' className='flex justify-center items-center' />
-        <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl dark:text-white">
-        we provide world-class services to the top 1000 companies in Nigeria and key residential areas.</h1>
-    </div>
+            <img
+              src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg"
+              className="flex justify-center items-center"
+            />
+            <h1 class="absolute text-5xl font-bold text-center w-2/5 text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xl dark:text-white">
+              we provide world-class services to the top 1000 companies in
+              Nigeria and key residential areas.
+            </h1>
+          </div>
 
           {/* <section className='flex flex-col justify-center items-center w-full'>
             <div className='font-bold sm:text-5xl text-3xl text-center'>
@@ -164,7 +163,7 @@ const Academy = () => {
               <div className="text-lg font-semibold pb-5">
                 Our statistics reveal more about us.
               </div>
-              <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-around items-center">
+              <div className="figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0  w-full justify-around items-center tablet:flex-col">
                 <div className="text-center">
                   <p className="text-primary-orange text-[40px] font-semibold">
                     {/* 50+ */}
@@ -224,7 +223,10 @@ const Academy = () => {
                   className="font-extrabold"
                 />
                 <hr />
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/people-33_rbql12.svg" className="w-2/4" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/people-33_rbql12.svg"
+                  className="w-2/4"
+                />
                 <p className="p-5 mt-2 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
                   Labour Force in Nigeria
                 </p>
@@ -239,7 +241,10 @@ const Academy = () => {
                   className="font-extrabold"
                 />
                 <hr />
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/people-41_s7olts.svg" className="w-2/4" />
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058146/21ctl/logo/people-41_s7olts.svg"
+                  className="w-2/4"
+                />
                 <p className="p-5 mt-2 bg-primary-orange text-white text-[18px] w-[350px] flex justify-center items-center">
                   Unemployed Labour Force in Nigeria
                 </p>
@@ -256,7 +261,7 @@ const Academy = () => {
               </h4> */}
               <div>
                 <p className="p-5 bg-primary-orange text-white text-[18px] w-[400px] flex justify-center items-center">
-                  Targeted Number of Trainees 2033{" "}
+                  Targeted Number of Trainees by 2033{' '}
                 </p>
                 <p className="p-5 mt-2 bg-white text-black text-[18px] w-[400px] flex justify-center items-center">
                   10,000,000{' '}
@@ -297,12 +302,10 @@ const Academy = () => {
 
           <section className="sm:px-28 px-8 mt-28">
             <h1 className="text-primary-orange font-bold sm:text-4xl text-2xl">
-            Explore our top rate course modules
+              Explore our top rate course modules
             </h1>
             <div className="flex sm:flex-row flex-col justify-between my-3 ">
-              <p className="text-xl">
-                Each module contains various topics
-              </p>
+              <p className="text-xl">Each module contains various topics</p>
               <p className="text-primary-orange">{/* See more */}</p>
             </div>
 
@@ -310,35 +313,31 @@ const Academy = () => {
               {courses.map((course) => (
                 <div
                   key={course}
-                  className="bg-white sm:w-[350px] w-full px-2 py-3 h-[150px] rounded-xl"
+                  className="bg-white sm:w-[350px] w-full px-2 py-3 rounded-xl"
                 >
-                  <div
-                    key={course}
-                    className="flex items-center sm:justify-center justify-start"
-                  >
-                    <div key={course} className="pr-5 w-[100px] h-[99px]">
+                  <Link  href="/programmes">
+                  <div key={course} className="flex items-center">
+                    <div key={course} className="mr-4">
                       <img
                         src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/logo/courses_z4srsc.svg"
                         // src="/logo/courses.png"
-                        className=" w-[100px] h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"
-                        width={166}
-                        height={99}
+                        className="w-24 h-full max-w-lg"
                       />
                       {/* <div className='w-[120px] h-[99px] bg-primary-orange'></div> */}
                     </div>
-                    <div className="flex flex-col  justify-center">
+                    <div className="flex flex-1 flex-col  justify-center">
                       <h2 className="text-base text-black font-bold w-full ">
                         {course}
                       </h2>
                       {/* <p className="text-sm text-black">Duration: 12 weeks</p> */}
                     </div>
-                  </div>
+                  </div></Link>
                 </div>
               ))}
             </div>
           </section>
 
-          <section className="sm:mb-0 mb-16">
+          {/* <section className="sm:mb-0 mb-16">
             <div className="flex items-center space-x-10 space-y-0 my-20 py-16 px-10 rounded-xl mx-40 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:mx-5 customize-bg">
               <div className="flex-1">
                 <img
@@ -359,10 +358,10 @@ const Academy = () => {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section>
-            <div className=" w-full flex justify-between items-center ml-10 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:ml-0 tablet:mx-10">
+            <div className=" w-full flex justify-between items-center ml-20 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:ml-0 tablet:mx-10">
               <div className="w-full ">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
                   Your <span className="text-primary-orange">Learning</span> has
@@ -372,6 +371,16 @@ const Academy = () => {
                   Our teaching resources and strategies help you make your
                   lessons unique and keep all students interested and engaged.
                 </p>
+                <a
+                href="https://digitalexpertsacademy.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="block dark:hidden "
+              >
+                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6 tablet:px-2">
+                  Apply now
+                </button>
+              </a>
               </div>
               <div className="w-full">
                 <img

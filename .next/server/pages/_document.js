@@ -4,7 +4,7 @@ exports.id = 660;
 exports.ids = [660];
 exports.modules = {
 
-/***/ 7081:
+/***/ 7575:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -20,7 +20,7 @@ var _react = _interopRequireWildcard(__webpack_require__(6689));
 var _constants = __webpack_require__(6724);
 var _getPageFiles = __webpack_require__(4140);
 var _htmlescape = __webpack_require__(9716);
-var _isError = _interopRequireDefault(__webpack_require__(676));
+var _isError = _interopRequireDefault(__webpack_require__(4108));
 var _htmlContext = __webpack_require__(8743);
 class Document extends _react.default.Component {
     /**
@@ -613,7 +613,7 @@ class NextScript extends _react.default.Component {
         try {
             const data = JSON.stringify(__NEXT_DATA__);
             const bytes =  false ? 0 : Buffer.from(data).byteLength;
-            const prettyBytes = (__webpack_require__(5955)/* ["default"] */ .Z);
+            const prettyBytes = (__webpack_require__(7338)/* ["default"] */ .Z);
             if (largePageDataBytes && bytes > largePageDataBytes) {
                 console.warn(`Warning: data for page "${__NEXT_DATA__.page}"${__NEXT_DATA__.page === context.dangerousAsPath ? "" : ` (path "${context.dangerousAsPath}")`} is ${prettyBytes(bytes)} which exceeds the threshold of ${prettyBytes(largePageDataBytes)}, this amount of data can reduce performance.\nSee more info here: https://nextjs.org/docs/messages/large-page-data`);
             }
@@ -700,7 +700,7 @@ Document[_constants.NEXT_BUILTIN_DOCUMENT] = InternalFunctionDocument; //# sourc
 
 /***/ }),
 
-/***/ 8216:
+/***/ 7450:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -710,7 +710,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6859);
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4049);
 
 
 function Document() {
@@ -731,7 +731,7 @@ function Document() {
 
 /***/ }),
 
-/***/ 5955:
+/***/ 7338:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -804,10 +804,10 @@ Formats the given number using `Number#toLocaleString`.
 
 /***/ }),
 
-/***/ 6859:
+/***/ 4049:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__(7081)
+module.exports = __webpack_require__(7575)
 
 
 /***/ }),
@@ -883,7 +883,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [676], () => (__webpack_exec__(8216)));
+var __webpack_exports__ = __webpack_require__.X(0, [108], () => (__webpack_exec__(7450)));
 module.exports = __webpack_exports__;
 
 })();

@@ -1,5 +1,4 @@
 import React,{ useEffect } from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { motion,useAnimation } from 'framer-motion';
@@ -47,7 +46,7 @@ useEffect(() => {
                 Stay protected in the digital world with our cutting-edge cybersecurity solutions
                 </p>
                 <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                Reach Us
+                Contact Us
               </button>
               </div>
   </div> */}
@@ -68,7 +67,7 @@ useEffect(() => {
                 </p>
                 <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
                   <a href="mailto:commercial@21ctl.com">
-                  Reach Us
+                  Contact Us
                   </a>
                 
                 </button>
@@ -105,7 +104,7 @@ useEffect(() => {
                     />
                     {/* 200+ */}
                   </p>
-                  <span className="font-light">Business Supported</span>
+                  <span className="font-light">Businesses Supported</span>
                 </div>
                 <div className="text-center">
                   <p className="text-primary-orange text-4xl font-semibold">
@@ -248,7 +247,7 @@ One of the key services offered by the company is training in threat management,
 
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                    Read more
+                  <a href='mailto:commercial@21ctl.com'>  Contact Us</a>
                   </button>
                 </div>
 
@@ -266,10 +265,10 @@ One of the key services offered by the company is training in threat management,
 
                   </h1>
                   <p className="text-[18px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
-                    21CTL Managed SOC Services offers real-time threat intelligence, data processing and incident response for cost-effective enterprise security
+                    21CTL Managed SOC Services offer real-time threat intelligence, data processing and incident response for cost-effective enterprise security
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                    Read more
+                    <a href='mailto:commercial@21ctl.com'>  Contact Us</a>
                   </button>
                 </div>
 
@@ -299,7 +298,7 @@ One of the key services offered by the company is training in threat management,
                     SmartBackup is an automated configuration backup solution that schedules automatic backups, monitors them from a dashboard interface, performs automatic network configuration backup procedures, verifies that they{"'"}ve been completed correctly, and provides easy management of devices for compliance.
                   </p>
                   <button className="bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6">
-                    Read more
+                   <a href='mailto:commercial@21ctl.com'>  Contact Us</a>
                   </button>
                 </div>
 

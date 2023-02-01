@@ -138,12 +138,12 @@ export const mainLinks = [
           {
             name: 'Amazon',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/partners/Amazon_Web_Services_-_png_0_fg69zl.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp',
           },
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058144/21ctl/logo/partners/Schneider_Electric_-_png_0_txksee.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
           },
           {
             name: 'VMware',
@@ -219,7 +219,7 @@ export const mainLinks = [
           {
             name: '21st Century Technologies Limited',
             link: '#',
-            text: 'Providig digital communication platforms and infrastructure',
+            text: 'Providing digital communication platforms and infrastructure',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/LOGO_ut3hoh.png',
           },
           {
@@ -320,7 +320,7 @@ export const mainLinks = [
   {
     additionalLinks: [
       { name: 'Digital Platforms', link: '/platform' },
-      { name: 'Events', link: '/' },
+      { name: 'Events', link: '/events' },
       { name: 'Explore more', link: '/explore-more' },
     ],
   },
@@ -450,7 +450,7 @@ export const academyNavLinks = () => [
     ],
   },
   {
-    additionalLinks: [{ name: 'Admission', link: '/admission' }],
+    additionalLinks: [{ name: 'Admission', link: '/admission' },{ name: 'Main Portal', link: '/' }],
   },
 ];
 
@@ -468,20 +468,20 @@ export const infraNavLinks = [
           },
           {
             name: 'Data Centers',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
           },
           {
             name: 'Towers',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
           },
           {
             name: '5G Infrastructure Readiness services',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             
@@ -542,7 +542,7 @@ export const infraNavLinks = [
           },
           {
             name: 'Micro Cells',
-            link: '/',
+            link: '#',
             text: 'Connecting you with reliable SMS solutions.',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
@@ -554,7 +554,7 @@ export const infraNavLinks = [
         subLinks: [
           {
             name: '5G Infrastructure Readiness services',
-            link: '/',
+            link: '#',
             text: 'Connecting you with 5G.',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
@@ -564,7 +564,7 @@ export const infraNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
 ];
 
@@ -582,7 +582,7 @@ export const platformNavLinks = [
           },
           {
             name: 'Communication Platform',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
             text: 'Discover the best role for you.',
@@ -590,21 +590,21 @@ export const platformNavLinks = [
 
           {
             name: 'Payment Platform',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
           {
             name: 'Automation',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
           },
           {
             name: 'Identity',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             text: 'See our partners',
@@ -653,11 +653,9 @@ export const platformNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
-  {
-    additionalLinks: [],
-  },
+  
 ];
 
 export const powerNavLinks = [
@@ -717,7 +715,7 @@ export const powerNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
 ];
 export const peopleNavLinks = [
@@ -725,49 +723,50 @@ export const peopleNavLinks = [
     navLinks: [
       {
         name: 'Academy',
+        link: '/training-pillars',
         subLinks: [
-          {
-            name: 'Trainee',
-            link: '/admission',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
+          // {
+          //   name: 'Trainee',
+          //   link: '/admission',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             
-          },
-          {
-            name: 'Curriculum',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
+          // },
+          // {
+          //   name: 'Curriculum',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
-          },
-          {
-            name: 'Instructor',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Instructor',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Infrastructure',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Infrastructure',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Didactics',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Didactics',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Industry',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Industry',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
-          {
-            name: 'Quality Assurance',
-            link: '/training-pillars',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          // },
+          // {
+          //   name: 'Quality Assurance',
+          //   link: '/training-pillars',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-          },
+          // },
         ],
         extras: [
           {
@@ -789,7 +788,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Oracle Technology',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
             text: 'Administer Oracle Cloud Databases',
             text1: 'Database Developer on Oracle Cloud',
@@ -807,7 +806,7 @@ export const peopleNavLinks = [
           },
           {
             name: 'Oracle Application',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
             text: 'Oracle Financials Cloud Business Process',
             text1: 'Oracle HCM Cloud Business Process',
@@ -816,7 +815,7 @@ export const peopleNavLinks = [
             },
             {
               name: 'Data Center design and infrastructure',
-              link: '/',
+              link: '#',
               icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
               text: 'Overview of Data Center Physical Infrastructure',
               text1: 'Virtualization: The Engine Behind Cloud Computing',
@@ -829,6 +828,42 @@ export const peopleNavLinks = [
               text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
               text9: 'Data Center Projects: Commissioning',
             },
+            {
+              name: 'Super Micro',
+              link: '/programmes',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp',
+              text: 'OS Cerifications',
+              text1: 'Cloud services',
+              text2: 'Cloud Orchestrator',
+              text3: 'Virtualization',
+              text4: 'Kubernetes Containers',
+            },
+
+
+            {
+              name: 'Schneider University',
+              link: '/programmes',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+              text: 'Fundamentals of Power',
+              text1: 'Efficiency of AC and DC Power Distribution in Data Centers',
+              text2: 'Energy Efficiency Fundamentals',
+              text3: 'Energy Efficiency with Building Automation Systems',
+              text4: 'Optimising Data Center Environmental Monitoring',
+            },
+            {
+              name: 'VMware',
+              link: '/programmes',
+              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
+              text: 'VMware vSphere: Install, Configure, Manage [V7]',
+              text1: 'VMware NSX-T Data Center: Install, Configure, Manage [V3.2]',
+              text2: 'VMware Cloud Director: Install, Configure, Manage [V10.3]',
+              text3: 'Additional recommended',
+              text4: 'VMware vSphere: Design [V7]',
+              text5: 'VMware Cloud Director: Advanced Workshop [V10.2]',
+              text6: 'VMware NSX-T Data Center: Design [V3.0]',
+              text7: 'VMware Tanzu Kubernetes Grid: Install, Configure, Manage',
+            },
+
             {
               name: 'SYSTEM',
               link: '/',
@@ -935,11 +970,11 @@ export const peopleNavLinks = [
           //   },
         ],
       },
-      {
-        name: 'Projects',
-        subLinks: [],
-        extras: [],
-      },
+      // {
+      //   name: 'Projects',
+      //   subLinks: [],
+      //   extras: [],
+      // },
       {
         name: 'Partners',
         subLinks: [
@@ -956,7 +991,7 @@ export const peopleNavLinks = [
           {
             name: 'Schneider Electric University',
             link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
             text: 'Data Center Physical Infrastructure',
             text1: 'See more',
           },
@@ -1023,10 +1058,16 @@ export const peopleNavLinks = [
         subLinks: [],
         extras: [],
       },
+      {
+        name: 'Pillars',
+        link: '/training-pillars',
+        subLinks: [],
+        extras: [],
+      },
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
 ];
 
@@ -1148,6 +1189,6 @@ export const securityNavLinks = [
     ],
   },
   {
-    additionalLinks: [],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
 ];

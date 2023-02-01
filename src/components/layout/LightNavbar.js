@@ -2,7 +2,6 @@ import { CaretDown } from '@icons/index';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { NavClose } from '@icons/close';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Popover } from 'evergreen-ui';
 import { useRouter } from 'next/router';
@@ -14,6 +13,15 @@ import {
   peopleNavLinks,
   securityNavLinks,
 } from '../constants/NavbarLinks';
+
+
+
+const excluded = [
+  '/people',
+  '/programmes',
+  '/training-pillars',
+  '/admission',
+];
 
 export function LightNavbar({ menuProp }) {
   const router = useRouter();
@@ -32,12 +40,7 @@ export function LightNavbar({ menuProp }) {
   // });
   // });
 
-  const excluded = [
-    '/people',
-    '/programmes',
-    '/training-pillars',
-    '/admission',
-  ];
+  
 
   const navItems =
     router.pathname === '/digital-platform'
@@ -85,15 +88,18 @@ export function LightNavbar({ menuProp }) {
           >
             {/* {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />} */}
             {router.pathname === '/' ? (
-              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
             ) : excluded.includes(router.pathname) ? (
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
                 className="dark:hidden w-36 tablet:w-14"
               />
-            ) : (
+            ) : router.pathname === '/platform' ? <img
+            src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.jpg"
+            className="dark:hidden w-16 tablet:w-14"
+          />: (
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
                 className="dark:hidden w-16 tablet:w-14"
               />
             )}
@@ -113,14 +119,14 @@ export function LightNavbar({ menuProp }) {
             <img
               src={
                 router.pathname === '/'
-                  ? '/light-logo_dark.svg'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
                   : router.pathname === '/people'
-                  ? '/digital-academy-logo-white.svg'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
                   : router.pathname === '/programmes'
-                  ? '/digital-academy-logo-white.svg'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
                   : router.pathname === '/training-pillars'
-                  ? '/digital-academy-logo-white.svg'
-                  : '/light-logo_dark_limited.svg'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                  : 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
               }
               className=" w-16 tablet:w-14"
             />
@@ -166,11 +172,12 @@ export function LightNavbar({ menuProp }) {
                           className="mt-5 dark:text-white"
                         >
                           <div className="flex hover:text-primary-orange ">
-                            <Image
+                            <img
                               height={20}
                               width={30}
                               src={`${sublinks.icon}`}
                               className="h-[20px] w-[20px]"
+                              layout="raw" 
                             />
 
                             <Link
@@ -219,7 +226,7 @@ export function LightNavbar({ menuProp }) {
                             >
                               {sublinks?.text5}{' '}
                             </Link>
-                            {(sublinks?.text6 !== null &&
+                            {(sublinks?.text6 !== null && link.name === "Training" &&
                               router.pathname === '/people') ||
                             router.pathname === '/programmes' ||
                             router.pathname === '/training-pillars' ? (
@@ -388,9 +395,9 @@ export function LightNavbar({ menuProp }) {
                 href="https://digitalexpertsacademy.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="block dark:hidden tablet:!hidden"
+                className="block dark:hidden "
               >
-                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6">
+                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6 tablet:px-2">
                   Apply now
                 </button>
               </a>
@@ -398,9 +405,9 @@ export function LightNavbar({ menuProp }) {
                 href="https://academy-admission-21ctl.koyeb.app/"
                 target="_blank"
                 rel="noreferrer"
-                className="block dark:hidden tablet:!hidden"
+                className="block dark:hidden "
               >
-                <button className=" border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6">
+                <button className=" border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6 tablet:px-2">
                   Login
                 </button>
               </a>
@@ -436,12 +443,13 @@ export function LightNavbar({ menuProp }) {
         isOpen={isOpen}
         close={() => setIsOpen(false)}
         navItems={navItems[0]}
+        router={router}
       />
     </>
   );
 }
 
-const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
+const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
   const [showExpanded, setShowExpanded] = useState([-1, false]);
 
   return (
@@ -462,11 +470,49 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
             </button>
           ) : (
             <>
-              <img src="/light-logo.svg" className="w-14 h-auto dark:hidden" />
+           {theme !== 'dark' ? (
+          <Link
+            href={
+              router.pathname === '/'
+                ? '/'
+                : excluded.includes(router.pathname)
+                ? '/people'
+                : '/'
+            }
+          >
+            {router.pathname === '/' ? (
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
+            ) : excluded.includes(router.pathname) ? (
               <img
-                src="/light-logo_dark.svg"
-                className="w-14 h-auto dark:block hidden"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
+                className="dark:hidden w-36 tablet:w-14"
               />
+            ) : (
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
+                className="dark:hidden w-16 tablet:w-14"
+              />
+            )}
+  
+          </Link>
+        ) : (
+          <Link href="/" className="dark:block hidden">
+            <img
+              src={
+                router.pathname === '/'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
+                  : router.pathname === '/people'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                  : router.pathname === '/programmes'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                  : router.pathname === '/training-pillars'
+                  ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                  : 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
+              }
+              className=" w-16 tablet:w-14"
+            />
+          </Link>
+        )}
             </>
           )}
           <button
@@ -492,7 +538,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
                     {link.subLinks.map((sublinks) => (
                       <div className="flex my-3" key={sublinks.name}>
                         {' '}
-                        <Image
+                        <img
                           height={20}
                           width={20}
                           src={`${sublinks.icon}`}
@@ -518,10 +564,12 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems }) => {
             {navItems.navLinks.map((link, index) => (
               <li
                 key={link.name}
-                onClick={() => setShowExpanded([index, true])}
+                onClick={() => link.subLinks.length > 0 ?  console.log(link.link): 
+                  router.push(link.link !== null ? link.link : "#" )}
+                 
               >
                 <a className="flex items-center justify-between">
-                  {link.name} <CaretDown className="-rotate-90" />
+                  {link.name} {link.subLinks.length > 0 ? <CaretDown className="-rotate-90" /> : <></>}
                 </a>
               </li>
             ))}

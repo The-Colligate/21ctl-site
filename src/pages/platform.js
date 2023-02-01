@@ -36,17 +36,11 @@ const Platform = () => {
                 <img
                   // src="https://d2pi5ijasmgfet.cloudfront.net/500x328/filters:focal(249x163:251x165):quality(82)/combined%2Fpublic%2Fmisc%2FPD20-hp-img-500x328.jpg"
                   src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058163/21ctl/logo/Social_Media_Globe_fbmzmt.png'
-                  className='w-3/4 h-3/4 dark:hidden '
+                  className='w-3/4 h-3/4 '
 
                   alt="communication"
                 />
-                <img
-                  // src="https://d2pi5ijasmgfet.cloudfront.net/500x328/filters:focal(249x163:251x165):quality(82)/combined%2Fpublic%2Fmisc%2FPD20-hp-img-500x328.jpg"
-                  src='/logo/social media Globe.png'
-                  className='w-3/4 h-3/4 hidden dark:block'
-
-                  alt="communication"
-                />
+          
               </div>
               <div className="max-w-3xl">
                 <h2 className="font-bold text-2xl">Communcation Solutions</h2>
@@ -61,14 +55,14 @@ const Platform = () => {
                   interconnect and securely host their critical infrastructure
                   and data sets.
                 </p>
-
+                
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -103,12 +97,12 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
 
@@ -154,12 +148,12 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>
@@ -188,20 +182,17 @@ const Platform = () => {
                       exchanged and policies enforced by connecting to curated
                       data communities that matter to you.
                     </li>
-                    <li className="font-light">
-                      Remove legacy barriers across the interconnection industry
-                      and tackle data gravity head on.
-                    </li>
+                  
                   </ul>
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
 
@@ -253,12 +244,12 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href="http://www.21ctl.vercel.com"
+                  href='mailto:commercial@21ctl.com'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-orange text-white text-lg font-light px-5 py-2"
                 >
-                  Learn more
+                  Contact Us
                 </a>
               </div>
             </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Head from 'next/head'
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import { motion } from 'framer-motion';
@@ -154,26 +153,26 @@ const Digital = () => {
                             </button> */}
                         </div>
                         <div className='services flex mx-10 flex-col phone:text-center phone:mx-0 '>
-                            <div className='number-1  bg-white p-10  my-5 rounded-lg phone:p-5'>
+                            <div className='number-1  bg-white dark:bg-black p-10  my-5 rounded-lg phone:p-5'>
                                 <h3 className='font-extrabold'>5G Readiness</h3>
                                 <p>Infrastructure with edge computing capabilities to support 5th generation technology standards</p>
                             </div>
-                            <div className='number-1  bg-white p-10 my-5 rounded-lg  phone:p-5'>
+                            <div className='number-1  bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5'>
                                 <h3 className='font-extrabold'>Data Centers</h3>
-                                <p>His defective nor convinced residence own. Connection has put impossible own apartments boisterous.</p>
+                                <p>Expertise in datacenter built locally and supported globally, instilling best practices on a platform of the industry leading technology. </p>
                             </div>
-                            <div className='number-1  mx-auto bg-white p-10 my-5 rounded-lg  phone:p-5'>
+                            <div className='number-1  mx-auto bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5'>
                                 <h3 className='font-extrabold'>Towers</h3>
-                                <p>Wide range communication infrastructure and managed service to enable wireless connectivity connecting people, devices and networks.</p>
+                                <p>Wide range communication infrastructure and managed service to enable wireless connectivity 
+connecting people, devices and networks.</p>
                             </div>
                         </div>
                     </section>
                     <div className='flex justify-center items-center mx-20 my-10 phone:my-5 phone:mx-10'>
                             <img
                                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/icons/potential-partners_kd9w9q.png'
-                                height={100}
-                                width={100}
-                                className="tablet:w-full"
+                               
+                                className="w-2/3 tablet:w-full"
 
                             />
                         </div>
@@ -185,7 +184,7 @@ const Digital = () => {
               </h1> */}
               <div className='flex flex-col justify-center items-center text-center w-3/4 mx-auto tablet:mx-10 phone:w-3/3'>
                             <h2 className='text-[42px] text-primary-orange my-4 tablet:text-[16px]'>21st century is a Digital professional service Infrastructure company with 25 years experience </h2>
-                            <p className='text-[16px] tablet:text-[12px]'>Combine our capabilities with data Center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow.</p>
+                            <p className='text-[16px] tablet:text-[12px]'>Combine our capabilities with data center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow.</p>
                         </div>
               {/* <p className="tracking-wider  text-lg py-4 max-w-3xl m-auto">
                 Our data center is a secure and reliable infrastructure that
@@ -203,7 +202,7 @@ const Digital = () => {
 
                   </h3>
                   <p className="py-2 pt-4 tracking-wide text-lg leading text-justify">
-                    Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
+                    Our Ikeja data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                   </p>
                 </div>
                 <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058120/21ctl/data-centers/ikeja-center_ahvecs.png" className="inline-block w-full fit"  width={100} height={100} />
@@ -260,26 +259,29 @@ const Digital = () => {
             </div>
           </section>
 
-          <section className="five-gr pt-32 sm:mt-0 mt-32 phone:mt-0">
-            <div className=" flex sm:flex-row flex-col w-full  items-center m-auto sm:h-full h-full bg-white ">
-              <div className="px-5 sm:py-0 py-10 mx-10 text-black dark:text-black">
-                <h4 className="text-5xl font-semibold text-left tablet:text-3xl">
+          <section 
+           >
+            <div className='flex justify-between items-center ml-20 tablet:ml-10 tablet:flex-col tablet:justify-center tablet:py-10'
+            >
+              <div 
+          
+               >
+                <h4 
+                className="text-5xl font-semibold text-left tablet:text-3xl">
                   {' '}
                   <span className="text-primary-orange">5G</span> Readiness
                 </h4>
-                <p className="text-xl text-left pt-3 phone:text-sm">
+                <p className="text-2xl text-left pt-3 phone:text-sm w-2/3 tablet:w-full ">
                   Our infrastructure with edge computing capabilities supports 5G
                   technology and enables new user experiences, deployment models,
                   and services.
                 </p>
               </div>
-              <div className="w-full h-full sm:px-0 px-5">
+              <div className="flex sm:justify-start justify-center w-full h-full sm:px-0 px-5">
                 <img
-                  // src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1673020843/Screenshot_2023-01-06_at_16.59.58_aphsxb.png'
                  
-                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058177/21ctl/logo/5g_main_qvaz7q.svg'
+                 src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675161977/21ctl/logo/5G_tower_gt0ilf.svg'
                  
-         
                   className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
                 />
               </div>

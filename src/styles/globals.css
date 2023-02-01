@@ -531,6 +531,10 @@ background-color: #f1f0f3
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.25);
 }
 
+.post_list:first-child{
+  background-color: #D9D9D9;
+}
+
 @media only screen and (max-width: 400px) {
   .about-us, .security {
     height: 50vh;
