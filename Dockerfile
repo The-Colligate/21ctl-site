@@ -27,8 +27,7 @@ WORKDIR /app
 
 EXPOSE 3000
 
-COPY ./.next /app/.next
-COPY ./public /app/public
+COPY ./ /app
 
 # RUN npm run build
 
