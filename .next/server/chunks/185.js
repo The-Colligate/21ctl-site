@@ -159,7 +159,7 @@ const Security = ()=>{
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             className: "font-light",
-                                                            children: "Business Supported"
+                                                            children: "Businesses Supported"
                                                         })
                                                     ]
                                                 }),
@@ -397,7 +397,7 @@ const Security = ()=>{
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                             className: "text-[18px] text-[#2e2e2c] dark:text-white text-justify tablet:text-[18px] mb-4",
-                                                            children: "21CTL Managed SOC Services offers real-time threat intelligence, data processing and incident response for cost-effective enterprise security"
+                                                            children: "21CTL Managed SOC Services offer real-time threat intelligence, data processing and incident response for cost-effective enterprise security"
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                             className: "bg-primary-orange rounded-xl font-semibold text-white py-3 px-6 my-6",

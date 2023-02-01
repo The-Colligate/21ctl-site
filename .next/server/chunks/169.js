@@ -839,6 +839,19 @@ const peopleNavLinks = [
                         text4: "Optimising Data Center Environmental Monitoring"
                     },
                     {
+                        name: "VMware",
+                        link: "/programmes",
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg",
+                        text: "VMware vSphere: Install, Configure, Manage [V7]",
+                        text1: "VMware NSX-T Data Center: Install, Configure, Manage [V3.2]",
+                        text2: "VMware Cloud Director: Install, Configure, Manage [V10.3]",
+                        text3: "Additional recommended",
+                        text4: "VMware vSphere: Design [V7]",
+                        text5: "VMware Cloud Director: Advanced Workshop [V10.2]",
+                        text6: "VMware NSX-T Data Center: Design [V3.0]",
+                        text7: "VMware Tanzu Kubernetes Grid: Install, Configure, Manage"
+                    },
+                    {
                         name: "SYSTEM",
                         link: "/",
                         icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/system_rfsecw.svg",
@@ -2603,9 +2616,9 @@ function LightNavbar({ menuProp  }) {
                                         href: "https://digitalexpertsacademy.herokuapp.com/",
                                         target: "_blank",
                                         rel: "noreferrer",
-                                        className: "block dark:hidden tablet:!hidden",
+                                        className: "block dark:hidden ",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                            className: "bg-primary-orange rounded text-white py-3 px-6 my-6",
+                                            className: "bg-primary-orange rounded text-white py-3 px-6 my-6 tablet:px-2",
                                             children: "Apply now"
                                         })
                                     }),
@@ -2613,9 +2626,9 @@ function LightNavbar({ menuProp  }) {
                                         href: "https://academy-admission-21ctl.koyeb.app/",
                                         target: "_blank",
                                         rel: "noreferrer",
-                                        className: "block dark:hidden tablet:!hidden",
+                                        className: "block dark:hidden ",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                            className: " border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6",
+                                            className: " border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6 tablet:px-2",
                                             children: "Login"
                                         })
                                     })

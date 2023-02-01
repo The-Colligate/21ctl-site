@@ -247,7 +247,7 @@ const Digital = ()=>{
                                                         children: "Data Centers"
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        children: "His defective nor convinced residence own. Connection has put impossible own apartments boisterous."
+                                                        children: "Expertise in datacenter built locally and supported globally, instilling best practices on a platform of the industry leading technology. "
                                                     })
                                                 ]
                                             }),
@@ -287,7 +287,7 @@ const Digital = ()=>{
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                     className: "text-[16px] tablet:text-[12px]",
-                                                    children: "Combine our capabilities with data Center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow."
+                                                    children: "Combine our capabilities with data center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow."
                                                 })
                                             ]
                                         })
@@ -313,7 +313,7 @@ const Digital = ()=>{
                                                             }),
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                                 className: "py-2 pt-4 tracking-wide text-lg leading text-justify",
-                                                                children: "Our Ikoyi data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power."
+                                                                children: "Our Ikeja data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power."
                                                             })
                                                         ]
                                                     }),

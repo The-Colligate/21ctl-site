@@ -270,7 +270,7 @@ const Academy = ()=>{
                                             children: "Our statistics reveal more about us."
                                         }),
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: "figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0 w-full justify-around items-center",
+                                            className: "figures flex sm:flex-row flex-row sm:space-x-8 space-x-0 space-y-0 sm:space-y-0 w-full justify-around items-center tablet:flex-col",
                                             children: [
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                     className: "text-center",
@@ -533,47 +533,6 @@ const Academy = ()=>{
                                 ]
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-                                className: "sm:mb-0 mb-16",
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "flex items-center space-x-10 space-y-0 my-20 py-16 px-10 rounded-xl mx-40 mb-0 tablet:flex-col-reverse largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:mx-5 customize-bg",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "flex-1",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                src: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/smiling_snvt89.png",
-                                                className: "w-2/3 h-2/5 sm:block hidden"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: "flex-1",
-                                            children: [
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h1", {
-                                                    className: "sm:text-5xl text-3xl text-left sm:text-center font-semibold tracking-medium mb-8",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                            className: "text-primary-orange",
-                                                            children: "Customize"
-                                                        }),
-                                                        " your teaching and keep all",
-                                                        " ",
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                            className: "text-primary-orange",
-                                                            children: "Students"
-                                                        }),
-                                                        " ",
-                                                        "interested"
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                    className: "leading-8 text-xl text-left sm:text-center",
-                                                    children: "Our teaching resources and strategies help you make your lessons unique and keep all students interested and engaged."
-                                                })
-                                            ]
-                                        })
-                                    ]
-                                })
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: " w-full flex justify-between items-center ml-20 space-y-0 mx-10 mb-5 largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0 tablet:ml-0 tablet:mx-10",
                                     children: [
@@ -598,6 +557,16 @@ const Academy = ()=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                     className: "leading-8 text-xl",
                                                     children: "Our teaching resources and strategies help you make your lessons unique and keep all students interested and engaged."
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                    href: "https://digitalexpertsacademy.herokuapp.com/",
+                                                    target: "_blank",
+                                                    rel: "noreferrer",
+                                                    className: "block dark:hidden ",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                        className: "bg-primary-orange rounded text-white py-3 px-6 my-6 tablet:px-2",
+                                                        children: "Apply now"
+                                                    })
                                                 })
                                             ]
                                         }),
