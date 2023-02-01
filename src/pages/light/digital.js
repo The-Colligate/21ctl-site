@@ -201,7 +201,7 @@ connecting people, devices and networks.</p>
                     <span className="text-primary-orange">Ikeja </span> Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading text-justify">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our Ikeja data center is designed to be energy-efficient, maintainable, and secure, with redundant 8MW utility power.
                   </p>
                 </div>
@@ -213,7 +213,7 @@ connecting people, devices and networks.</p>
                     <span className="text-primary-orange">Ikoyi </span> Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our six-story data center in Africa is innovative and equipped with a 10MW Turbine system, providing ample power and space for clients to grow.
                   </p>
                 </div>
@@ -225,7 +225,7 @@ connecting people, devices and networks.</p>
                     <span className="text-primary-orange">Apapa </span>  Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our Apapa data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
@@ -237,7 +237,7 @@ connecting people, devices and networks.</p>
                     <span className="text-primary-orange">Saka-Tinubu </span>  Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our Saka-Tinubu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
@@ -249,7 +249,7 @@ connecting people, devices and networks.</p>
                     <span className="text-primary-orange">Alanamu </span>  Data Center
 
                   </h3>
-                  <p className="py-2 pt-4 tracking-wide text-lg leading  text-justify ">
+                  <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
                     Our Alanamu data center is a large, multi-tenant facility in Africa with multiple carrier and utility feeds and strong electrical and mechanical redundancy.
                   </p>
                 </div>
@@ -271,17 +271,15 @@ connecting people, devices and networks.</p>
                   {' '}
                   <span className="text-primary-orange">5G</span> Readiness
                 </h4>
-                <p className="text-2xl text-left pt-3 phone:text-sm w-2/3 tablet:w-full ">
+                <p className="text-2xl text-left pt-3 phone:text-lg w-2/3 tablet:w-full ">
                   Our infrastructure with edge computing capabilities supports 5G
                   technology and enables new user experiences, deployment models,
                   and services.
                 </p>
               </div>
               <div className="flex sm:justify-start justify-center w-full h-full sm:px-0 px-5">
-                <img
-                 
+                <img 
                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675161977/21ctl/logo/5G_tower_gt0ilf.svg'
-                 
                   className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "
                 />
               </div>
