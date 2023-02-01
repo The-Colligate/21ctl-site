@@ -19,10 +19,9 @@ const ExploreMore = () => {
         </div>
         <div className="w-full min-h-screen flex justify-center flex-col z-[1]">
           <LightNavbar />
-          {/* <section className='mt-[12vh] flex w-full justify-center'>
+          <section className='mt-[12vh] flex w-full justify-center'>
                         <div className='m-20 w-1/5'>
                     <img src='/logo/chairman.png' className='h-32 w-32' />
-                    <p className='text-center'>CEO & Founder 21st Century Technologies</p>
                     </div>
                     <div className='mr-10'>
                     <p>
@@ -57,29 +56,7 @@ const ExploreMore = () => {
               </p>
                     </div>
                     </section>
-                    <section>
-                        <h2 className='flex justify-center my-10 font-bold text-2xl'>Meet our Directors and Heads</h2>
-                        <div className='flex mx-20 '>
-                            <div className='w-2/4 flex flex-col items-center'>
-                            <img src='/logo/blank-profile-picture.svg' className='w-2/4 pb-5  rounded-full' />
-                            <p className='break-words w-3/5 text-center' >COO of KonetPay and Head of Digital Academy</p>
-                            </div>
-                             <div className='w-2/4 flex flex-col items-center'>
-                            <img src='/logo/blank-profile-picture.svg'  className='w-2/4 pb-5  rounded-full '/>
-                            <p className='break-words w-3/5 text-center'>Head of Security</p>
-                            </div>
-                             <div className='w-2/4 flex flex-col items-center'>
-                            <img src='/logo/blank-profile-picture.svg'  className='w-2/4 pb-5  rounded-full' />
-                            <p className='break-words w-3/5 text-center'>Head of 21st Century Energy</p>
-                            </div>
-                             <div className='w-2/4 flex flex-col items-center'>
-                            <img src='/logo/blank-profile-picture.svg' className='w-2/4 pb-5  rounded-full' />
-                            <p className='break-words w-3/5 text-center'>Head of 21st Century Digital Infrastructrue Limited</p>
-                            </div>
-                           
-                            
-                        </div>
-                    </section> */}
+                   
           <section className="">
             <h2 className="text-[36px]  mt-[12vh] font-semibold text-center mb-4">Core Values</h2>
             <div className="values_grid m-auto ">
@@ -304,6 +281,29 @@ const ExploreMore = () => {
               </div>
             </div>
           </section>
+          <section>
+                        <h2 className='flex justify-center my-10 font-bold text-2xl'>Meet our Directors and Heads</h2>
+                        <div className='flex mx-20 '>
+                            <div className='w-2/4 flex flex-col items-center'>
+                            <img src='/logo/blank-profile-picture.svg' className='w-2/4 pb-5  rounded-full' />
+                            <p className='break-words w-3/5 text-center' >COO of KonetPay and Head of Digital Academy</p>
+                            </div>
+                             <div className='w-2/4 flex flex-col items-center'>
+                            <img src='/logo/blank-profile-picture.svg'  className='w-2/4 pb-5  rounded-full '/>
+                            <p className='break-words w-3/5 text-center'>Head of Security</p>
+                            </div>
+                             <div className='w-2/4 flex flex-col items-center'>
+                            <img src='/logo/blank-profile-picture.svg'  className='w-2/4 pb-5  rounded-full' />
+                            <p className='break-words w-3/5 text-center'>Head of 21st Century Energy</p>
+                            </div>
+                             <div className='w-2/4 flex flex-col items-center'>
+                            <img src='/logo/blank-profile-picture.svg' className='w-2/4 pb-5  rounded-full' />
+                            <p className='break-words w-3/5 text-center'>Head of 21st Century Digital Infrastructrue Limited</p>
+                            </div>
+                           
+                            
+                        </div>
+                    </section>
 
           <Footer />
         </div>

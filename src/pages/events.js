@@ -46,13 +46,27 @@ const Events = () => {
                 ))}
               </div>
             </div>
+
+
+            {/* Content */}
+            <div>
+            <img 
+                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675235718/events_zuiomx.jpg'
+                  className='h-2/4 w-full'
+                  />
+                  <div className='flex flex-col justify-start max-w-4xl m-auto w-full mt-5 space-y-3'>
+                <h2 className='text-4xl font-bold text-primary-orange'>Unveiling the Digital Experts Academy (DEA)</h2>
+                <p>23 January 2023</p>
+                <p>On Monday January 23, 2023, 21st Century Technologies, led by the visionairy chairman Mr. Wale Ajisebutu, unveiled the Digital Experts Academy, which was declared open by Mr. Will Stevens, the United States Consul General, in the presence of Mr. Wole Adeniyi, the Chief Executive Officer (CEO) of Stanbic IBTC Bank, Dr. Dare Obadare, the MD/Chairman of Digital Encode and notable top executives from Oracle, Microsoft, VMWare.</p>
+              </div>
+            </div>
             {/* content */}
-            <div className="flex flex-col w-full sm:mt-0 mt-10">
-              <div className="flex justify-center flex-1">
+            {/* <div className="flex flex-col w-full sm:mt-0 mt-10">
+              <div className="flex justify-center flex-1"> */}
                 {/* image here */}
-                <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 max-h-max ">
+                {/* <div className="flex sm:flex-row flex-col sm:space-x-2 space-x-0 sm:space-y-0 space-y-4 max-h-max "> */}
                   {/* one */}
-                  <div className="max-w-md space-y-2">
+                  {/* <div className="max-w-md space-y-2">
                     <div className="flex space-x-2">
                       <div>
                         <img
@@ -68,34 +82,34 @@ const Events = () => {
                           alt=""
                         />
                       </div>
-                    </div>
+                    </div> */}
                     {/* sub one  */}
-                    <div>
+                    {/* <div>
                       <img
                         className="object-cover w-full h-[340px] rounded-xl"
                         src="https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
                         alt=""
                       />
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* two */}
-                  <div className="flex-1 max-w-md">
+                  {/* <div className="flex-1 max-w-md">
                     <img
                       className="w-full h-full rounded-xl"
                       src="https://images.unsplash.com/photo-1675178328976-80670d18071d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
                       alt=""
                     />
-                  </div>
-                </div>
-              </div>
+                  </div> */}
+                {/* </div>
+              </div> */}
               {/* write-up */}
-              <div className='flex flex-col justify-start max-w-4xl m-auto w-full mt-5 space-y-3'>
+              {/* <div className='flex flex-col justify-start max-w-4xl m-auto w-full mt-5 space-y-3'>
                 <h2 className='text-4xl font-bold text-primary-orange'>Unveiling the Digital Experts Academy (DEA)</h2>
                 <p>23 January 2023</p>
                 <p>On Monday January 23, 2023, 21st Century Technologies, led by the visionairy chairman Mr. Wale Ajisebutu, unveiled the Digital Experts Academy, which was declared open by Mr. Will Stevens, the United States Consul General, in the presence of Mr. Wole Adeniyi, the Chief Executive Officer (CEO) of Stanbic IBTC Bank, Dr. Dare Obadare, the MD/Chairman of Digital Encode and notable top executives from Oracle, Microsoft, VMWare.</p>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* end */}
         </div>
