@@ -21,6 +21,16 @@ jobs:
           touch test/oof.txt
           touch test/.dot.txt
           ls -la
+      - name: Delete the unnecessary files here
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            whoami
+            ls -la
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
         with:
