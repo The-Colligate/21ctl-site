@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[647],{5160:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/light/digital-infrastructure",function(){return _(5396)}])}},function(n){n.O(0,[983,465,396,774,888,179],function(){return n(n.s=5160)}),_N_E=n.O()}]);
