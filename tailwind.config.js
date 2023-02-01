@@ -13,7 +13,8 @@ module.exports = {
         "primary-orange-light": "rgba(246, 78, 31, 0.2);",
         "primary-blue-light": "#0098DB",
         "dark-shade ":"rgba(0, 0, 0, 0.5);",
-        "silver":"#606163"
+        "silver":"#606163",
+        "background-color":"#F1F1F4"
       },
       fontFamily: {
         lato: ['Lato', 'sans-serif'],

@@ -58,7 +58,7 @@ const DigitalInfrastructure = () => {
                             <div className='flex sm:px-36 px-8 my-16 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28'>
                                 <div className='max-w-xl'>
                                     <h1 className="text-7xl tracking-normal font-lato font-medium whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-                                        <span className="text-primary-orange leading-8">Digital
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">Digital
                                             Infrastructure</span>
                                     </h1>
                                     <p className="text-2xl mt-6 largeTablet:text-xl font-[20px] smallTablet:text-lg">
@@ -101,25 +101,25 @@ const DigitalInfrastructure = () => {
                             </div>
                             <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
                                 <div className="text-center">
-                                    <p className="text-primary-orange text-4xl font-semibold">
+                                    <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                                         200+
                                     </p>
                                     <span className="font-light">Businessess Supported</span>
                                 </div>
                                 <div className="text-center">
-                                    <p className="text-primary-orange text-4xl font-semibold">
+                                    <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                                         25+
                                     </p>
                                     <span className="font-light">Years Experience</span>
                                 </div>
                                 <div className="text-center">
-                                    <p className="text-primary-orange text-4xl font-semibold">
+                                    <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                                         14M+
                                     </p>
                                     <span className="font-light">Satisfied Customers</span>
                                 </div>
                                 <div className="text-center">
-                                    <p className="text-primary-orange text-4xl font-semibold">
+                                    <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                                         100+
                                     </p>
                                     <span className="font-light">Completed Projects</span>
@@ -163,14 +163,14 @@ const DigitalInfrastructure = () => {
                             />
                         </div>
                         <div className='flex flex-col justify-center items-center text-center w-3/4 mx-auto phone:w-3/3'>
-                            <h2 className='text-[42px] text-primary-orange my-4 tablet:text-[28px]'>21st century is a Digital professional service Infrastructure company with 25 years experience </h2>
+                            <h2 className='text-[42px] text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] my-4 tablet:text-[28px]'>21st century is a Digital professional service Infrastructure company with 25 years experience </h2>
                             <p className='text-[20px]'>Combine our capabilities with data Center operational knowledge, within a critical environment, connecting our customers. Our proven track record in delivering value to the customer. Providing sustainable solutions for today and tomorrow</p>
                         </div>
                         <div className="grid grid-cols-3 gap-[26px] mt-5 px-28 tablet:grid-cols-1 tablet:px-10">
                             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                                 <div className="p-5 text-black dark:text-black">
                                     <h3 className="text-3xl font-medium tracking-wide ">
-                                        <span className="text-primary-orange">Ikeja </span> Data Center
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Ikeja </span> Data Center
 
                                     </h3>
                                     <p className="py-2 pt-4 tracking-wide text-lg leading">
@@ -182,7 +182,7 @@ const DigitalInfrastructure = () => {
                             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                                 <div className="p-5 text-black dark:text-black">
                                     <h3 className="text-3xl font-medium tracking-wide ">
-                                        <span className="text-primary-orange">Ikoyi </span> Data Center
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Ikoyi </span> Data Center
 
                                     </h3>
                                     <p className="py-2 pt-4 tracking-wide text-lg leading">
@@ -194,7 +194,7 @@ const DigitalInfrastructure = () => {
                             <div className="flex flex-col justify-between shadow-lg shadow-gray-400 max-w-sm rounded-2xl my-4 flex-1 bg-white dark:shadow-gray-700">
                                 <div className="p-5 text-black dark:text-black">
                                     <h3 className="text-3xl font-medium tracking-wide ">
-                                        <span className="text-primary-orange">Apapa </span>  Data Center
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Apapa </span>  Data Center
 
                                     </h3>
                                     <p className="py-2 pt-4 tracking-wide text-xl leading">

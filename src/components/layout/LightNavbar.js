@@ -171,7 +171,7 @@ export function LightNavbar({ menuProp }) {
                           key={sublinks.name}
                           className="mt-5 dark:text-white"
                         >
-                          <div className="flex hover:text-primary-orange ">
+                          <div className="flex hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81] ">
                             <img
                               height={20}
                               width={30}

@@ -76,11 +76,11 @@ function LightDesign() {
 
   
   return (
-    <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden overflow-y-hidden relative">
-      <div className="absolute w-full h-full flex justify-between items-center">
+    <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden overflow-y-hidden relative background-color">
+      {/* <div className="absolute w-full h-full flex justify-between items-center">
         <div className="w-full min-h-[50%] bg_gradient_l"></div>
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
-      </div>
+      </div> */}
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
         <LightNavbar />
         <div className=" flex items-center justify-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
@@ -93,8 +93,8 @@ function LightDesign() {
             <div className="max-w-3xl mt-10 flex flex-col items-center justify-center">
               <h1 className="text-5xl text-silver font-lato font-black whitespace-pre-wrap largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl">
                 Building Africa&apos;s{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Largest Digital</span>{' '}
-                Infrastructure
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Largest Digital Infrastructure</span>{' '}
+                
               </h1>
               <motion.p
               initial={delayVarient1}
@@ -312,7 +312,7 @@ function LightDesign() {
                         {product.snippet}
                       </p>
                       <a
-                        className="mt-3 flex items-center text-xs group hover:text-primary-orange"
+                        className="mt-3 flex items-center text-xs group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81]"
                         href={product.link}
                         target="_blank"
                         rel="noreferrer"
@@ -332,7 +332,7 @@ function LightDesign() {
                 >
                   <div className="w-full flex justify-center pt-5">
                     <div
-                      className="h-24 min-w-[6rem] rounded-full shadow-lg bg-primary-blue shadow-text-primary-orange dark:shadow-lg  cursor-pointer flex items-center justify-center border  bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                      className="h-24 min-w-[6rem] rounded-full  bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver shadow-bg-silver dark:shadow-lg  cursor-pointer flex items-center justify-center border  bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
                       role="button"
                     >
                       <img
