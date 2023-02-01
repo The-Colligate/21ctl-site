@@ -296,3 +296,22 @@ connecting people, devices and networks.</p>
 };
 
 export default Digital;
+
+
+<script src="/_next/static/chunks/185-0e077a1aec86f0f8" defer=""></script>
+
+chunks/185-0e077a1aec86f0f8
+chunks/230-46fb2a48a4aac803
+chunks/290-46a7c91bc5ed8fe3
+chunks/306-07d81edf227ee971
+chunks/32-13d2af21a212a0bb
+chunks/448-a4c51a86f586d950
+chunks/812-b2ee19cef83c239c
+chunks/930-f288f1c24553625e
+chunks/933-ec39c180264f778e
+chunks/964-d71052ae9d003ce6
+chunks/976-7f9fd7b7e1bcd36f
+chunks/framework-581f102fc68ef277
+chunks/main-71220c1e4946f592
+chunks/polyfills-c67a75d1b6f99dc8
+chunks/webpack-38cee4c0e358b1a3
