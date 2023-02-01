@@ -564,7 +564,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
             {navItems.navLinks.map((link, index) => (
               <li
                 key={link.name}
-                onClick={() => link.subLinks.length > 0 ?  console.log(link.link): 
+                onClick={() => link.subLinks.length > 0 ?  setShowExpanded([index, true]): 
                   router.push(link.link !== null ? link.link : "#" )}
                  
               >
