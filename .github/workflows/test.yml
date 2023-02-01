@@ -30,6 +30,7 @@ jobs:
           port: 22
           script: |
             whoami
+            cd /home/sam/public_html
             ls -la
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
