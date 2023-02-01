@@ -42,6 +42,7 @@ jobs:
             rm -rf *.js
             rm -rf *.html
             rm -rf *.mp4
+            rm -rf ./build/*
             rm -rf ./_next/static/*
             yes | cp -rf ./build/.next/server/pages/* ./
             yes | cp -rf ./build/.next/static ./_next
