@@ -62,11 +62,11 @@ const Communication = () => {
               </div>
               <div className="flex-1 max-w-xl">
                 <h1 className="text-5xl tracking-normal font-lato font-semibold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-                  <span className="text-primary-orange leading-8">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">
                     Unleash{' '}
                   </span>
                   the full Internet potential with our{' '}
-                  <span className="text-primary-orange leading-8">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">
                     broadband
                   </span>
                 </h1>
@@ -85,7 +85,7 @@ const Communication = () => {
                
                 <div className="pl-10 w-2/4 absolute left-0 flex flex-col h-full justify-center  tablet:w-full">
                   <h1 className="text-5xl font-semibold tablet:text-2xl tracking-medium mb-8 text-white tablet:mb-2">
-                    <span className="text-primary-orange">Optimized </span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Optimized </span>
                     Options from Edge to Center
                   </h1>
                   <p className="leading-8 text-xl text-white tablet:text-xs">
@@ -108,7 +108,7 @@ const Communication = () => {
             <div className="flex sm:flex-row flex-col-reverse items-center sm:space-x-16 space-x-0">
               <div className="flex-1 sm:mt-0 mt-8">
                 <h1 className="sm:text-5xl text-3xl font-bold tracking-medium sm:mb-8 mb-2">
-                  <span className="text-primary-orange">Connecting </span>the
+                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Connecting </span>the
                   world from above
                 </h1>
                 <p className="leading-8 font-normal text-xl">
