@@ -34,9 +34,9 @@ const Power = () => {
               >
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                   creating{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">energy</span>{' '}
+                  <span className="text-primary-green leading-8">energy</span>{' '}
                   for the
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8"> future</span>{' '}
+                  <span className="text-primary-green leading-8"> future</span>{' '}
                 </h1>
                 <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">
                   We are investing in sustainable clean energy in Africa to
@@ -65,7 +65,7 @@ const Power = () => {
               <div className="flex items-center space-x-10 space-y-0 my-10 mx-10 mb-0 tablet:flex-col largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
                 <div className="flex-1">
                   <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
+                    <span className="text-primary-green">
                       Sustainable Solutions
                     </span>
                   </h1>
@@ -94,7 +94,7 @@ const Power = () => {
                 </div>
                 <div className="flex-1">
                   <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
+                    <span className="text-primary-green">
                       Grid Connections
                     </span>{' '}
                     & Substations
@@ -112,8 +112,8 @@ const Power = () => {
             <div className="flex items-center space-x-10 space-y-0 my-10  mb-0 tablet:flex-col largeTablet:flex-col largeTablet:text-center largeTablet:space-y-10 largeTablet:space-x-0">
               <div className="flex-1">
                 <h1 className="sm:text-5xl text-3xl font-semibold tracking-medium mb-8">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Brighten</span> the
-                  Future <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Solar</span>{' '}
+                  <span className="text-primary-green">Brighten</span> the
+                  Future <span className="text-primary-green">Solar</span>{' '}
                 </h1>
                 <p className="leading-8 sm:text-xl text-lg">
                   Our solar panels harness the power of the sun to generate
