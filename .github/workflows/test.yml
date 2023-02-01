@@ -29,13 +29,13 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            whoami
             cd /home/sam/public_html
             ls -la
       - name: Check out repository code
         uses: garygrossgarten/github-action-scp@v0.8.0
         with:
-          local: ./.next && ./public
+          local: ./.next
+          local: ./public
           remote: /home/sam/public_html/build
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
@@ -54,5 +54,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            whoami
+            cd /home/sam/public_html
             ls -la
