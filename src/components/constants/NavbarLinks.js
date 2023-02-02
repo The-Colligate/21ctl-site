@@ -147,10 +147,17 @@ export const mainLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
           },
+          
           {
-            name: 'VMware',
+            name: 'MTN',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/MTNza_-_jpeg_0_rnvk0j.png',
+          },
+
+          {
+            name: 'NIBSS',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/nibss_qmru4b.png',
           },
           {
             name: 'Microsoft Azure',
@@ -162,28 +169,31 @@ export const mainLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
           },
-        
           {
-            name: 'MIT',
+            name: '9mobile',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/logo/9mobile_u3qh9h.png',
           },
-          {
-            name: 'Checkpoint University',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/checkpoint_xnej3a.jpg',
-          },
-       
           {
             name: 'Orange',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/orange_ymolsp.png',
           },
+        
+         
           {
-            name: 'MTN',
+            name: 'VMware',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/MTNza_-_jpeg_0_rnvk0j.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
           },
+          {
+            name: 'MIT',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
+          },
+       
+         
+          
           {
             name: 'Glo',
             link: '#',
@@ -194,16 +204,8 @@ export const mainLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058136/21ctl/logo/airtel_klnfeq.png',
           },
-          {
-            name: '9mobile',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/logo/9mobile_u3qh9h.png',
-          },
-          {
-            name: 'NIBSS',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/nibss_qmru4b.png',
-          },
+          
+          
           {
             name: 'Multichoice Group',
             link: '#',
@@ -784,6 +786,44 @@ export const peopleNavLinks = [
         head: 'OUR TRAINING',
         subLinks: [
           {
+            name: 'Data Center design and infrastructure',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
+            text: 'Overview of Data Center Physical Infrastructure',
+            text1: 'Virtualization: The Engine Behind Cloud Computing',
+            text2: 'Choosing Between Room, Row and Rack Based Cooling I & II',
+            text3: 'Fundamentals of Availability',
+            text4: 'Calculating Total Power Requirements',
+            text5: 'Going Green: Energy Efficiency in the Data Center',
+            text6: 'Fundamentals of Data Centre Power',
+            text7: 'Calculating Total Cooling requirements',
+            text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
+            text9: 'Data Center Projects: Commissioning',
+          },
+          {
+            name: 'Schneider University',
+            link: '/programmes',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+            text: 'Fundamentals of Power',
+            text1: 'Efficiency of AC and DC Power Distribution in Data Centers',
+            text2: 'Energy Efficiency Fundamentals',
+            text3: 'Energy Efficiency with Building Automation Systems',
+            text4: 'Optimising Data Center Environmental Monitoring',
+          },
+          {
+            name: 'VMware',
+            link: '/programmes',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
+            text: 'VMware vSphere: Install, Configure, Manage [V7]',
+            text1: 'VMware NSX-T Data Center: Install, Configure, Manage [V3.2]',
+            text2: 'VMware Cloud Director: Install, Configure, Manage [V10.3]',
+            text3: 'Additional recommended',
+            text4: 'VMware vSphere: Design [V7]',
+            text5: 'VMware Cloud Director: Advanced Workshop [V10.2]',
+            text6: 'VMware NSX-T Data Center: Design [V3.0]',
+            text7: 'VMware Tanzu Kubernetes Grid: Install, Configure, Manage',
+          },
+          {
             name: 'Oracle Technology',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
@@ -810,21 +850,7 @@ export const peopleNavLinks = [
             text2: 'Oracle Sales Cloud Business Process',
             text3: 'Oracle Procurement Cloud Business Process',
             },
-            {
-              name: 'Data Center design and infrastructure',
-              link: '#',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
-              text: 'Overview of Data Center Physical Infrastructure',
-              text1: 'Virtualization: The Engine Behind Cloud Computing',
-              text2: 'Choosing Between Room, Row and Rack Based Cooling I & II',
-              text3: 'Fundamentals of Availability',
-              text4: 'Calculating Total Power Requirements',
-              text5: 'Going Green: Energy Efficiency in the Data Center',
-              text6: 'Fundamentals of Data Centre Power',
-              text7: 'Calculating Total Cooling requirements',
-              text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
-              text9: 'Data Center Projects: Commissioning',
-            },
+            
             {
               name: 'Super Micro',
               link: '/programmes',
@@ -837,29 +863,7 @@ export const peopleNavLinks = [
             },
 
 
-            {
-              name: 'Schneider University',
-              link: '/programmes',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
-              text: 'Fundamentals of Power',
-              text1: 'Efficiency of AC and DC Power Distribution in Data Centers',
-              text2: 'Energy Efficiency Fundamentals',
-              text3: 'Energy Efficiency with Building Automation Systems',
-              text4: 'Optimising Data Center Environmental Monitoring',
-            },
-            {
-              name: 'VMware',
-              link: '/programmes',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
-              text: 'VMware vSphere: Install, Configure, Manage [V7]',
-              text1: 'VMware NSX-T Data Center: Install, Configure, Manage [V3.2]',
-              text2: 'VMware Cloud Director: Install, Configure, Manage [V10.3]',
-              text3: 'Additional recommended',
-              text4: 'VMware vSphere: Design [V7]',
-              text5: 'VMware Cloud Director: Advanced Workshop [V10.2]',
-              text6: 'VMware NSX-T Data Center: Design [V3.0]',
-              text7: 'VMware Tanzu Kubernetes Grid: Install, Configure, Manage',
-            },
+           
 
             {
               name: 'SYSTEM',
@@ -929,14 +933,14 @@ export const peopleNavLinks = [
           //   text1: '2D Game Development',
           //   text2: '3D Game Development',
           // },
-          {
-            name: 'POWER',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/power_vu792n.svg',
-            text: 'Renewable Energy',
-            text1: 'Power Electronics',
-            text2: 'High Voltage Engineering',
-          },
+          // {
+          //   name: 'POWER',
+          //   link: '#',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/power_vu792n.svg',
+          //   text: 'Renewable Energy',
+          //   text1: 'Power Electronics',
+          //   text2: 'High Voltage Engineering',
+          // },
           // {
           //   name: 'LEADERSHIP',
           //   link: '#',

@@ -210,13 +210,8 @@ export function LightNavbar({ menuProp }) {
                             >
                               {sublinks?.text4}{' '}
                             </Link>
-                            <Link
-                              href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
-                            >
-                              {sublinks?.text5}{' '}
-                            </Link>
-                            {(sublinks?.text6 !== null && link.name === "Training" &&
+                           
+                            {(sublinks?.text4 !== null && link.name === "Training" &&
                               router.pathname === '/people') ||
                             router.pathname === '/programmes' ||
                             router.pathname === '/training-pillars' ? (
@@ -228,6 +223,12 @@ export function LightNavbar({ menuProp }) {
                               </Link>
                             ) : (
                               <>
+                               <Link
+                              href={`${sublinks.link}`}
+                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                            >
+                              {sublinks?.text5}{' '}
+                            </Link>
                                 <Link
                                   href={`${sublinks.link}`}
                                   className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
@@ -316,6 +317,7 @@ export function LightNavbar({ menuProp }) {
                 </div>
               }
             >
+              
               <div
                 className={`${
                   displayPopup[0] && displayPopup[1] === index
@@ -921,7 +923,7 @@ function logoLightMode(pathname){
         case '/programmes': 
         case '/training-pillars':   
         case '/admission':
-      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"  className='w-[100px] h-[100px]' />
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"  className='w-full h-[70px]' />
   
       case '/digital-platform':
         return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
@@ -965,7 +967,7 @@ function logoDarkMode(pathname){
         case '/programmes': 
         case '/training-pillars':   
         case '/admission':
-      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg" className='w-[100px] h-[100px]' />
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg" className='w-full  h-[70px]' />
   
       case '/digital-platform':
         return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
