@@ -322,7 +322,7 @@ export const mainLinks = [
   {
     additionalLinks: [
       { name: 'Digital Platforms', link: '/platform' },
-      { name: 'Events', link: '/events' },
+      { name: 'Events', link: '/event/events' },
       { name: 'Explore more', link: '/explore-more' },
     ],
   },
