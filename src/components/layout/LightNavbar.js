@@ -40,7 +40,12 @@ export function LightNavbar({ menuProp }) {
   // });
   // });
 
-  
+  const academy = ['/people', '/programmes', '/training-pillars', '/admission'];
+
+  const index = ['/', '/support-centers', '/events', '/explore-more'];
+  const power = ['/power'];
+  const security = ['/security', '/identity'];
+  const tech = ['/digital-infrastructure', '/platform', '/communication', '/automation'];
 
   const navItems =
     router.pathname === '/digital-platform'
@@ -72,6 +77,28 @@ export function LightNavbar({ menuProp }) {
       : mainLinks;
   // console.log(`${JSON.stringify (peopleNavLinks[0].navLinks[1].subLinks)}`);
   // console.log('pathname', router.pathname);
+  const textColor = academy.includes(router.pathname)
+  ? `text-primary-orange`
+  : index.includes(router.pathname)
+  ? `text-primary-blue`
+  : power.includes(router.pathname)
+  ? `text-primary-green`
+  : security.includes(router.pathname)
+  ? `text-magenta`
+  : tech.includes(router.pathname)
+  ? `text-primary-orange`
+  : null;
+  const color = academy.includes(router.pathname)
+  ? `primary-orange`
+  : index.includes(router.pathname)
+  ? `primary-blue`
+  : power.includes(router.pathname)
+  ? `primary-green`
+  : security.includes(router.pathname)
+  ? `magenta`
+  : tech.includes(router.pathname)
+  ? `primary-orange`
+  : null;
 
   return (
     <>
@@ -182,31 +209,31 @@ export function LightNavbar({ menuProp }) {
                           <div className="flex flex-col">
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange max-w-sm"
+                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor} max-w-sm`}
                             >
                               <span className="">{sublinks?.text} </span>
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text1}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text2}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text3}{' '}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text4}{' '}
                             </Link>
@@ -217,7 +244,7 @@ export function LightNavbar({ menuProp }) {
                             router.pathname === '/training-pillars' ? (
                               <Link
                                 href="/programmes"
-                                className="ml-9 space-y-2 text-[15px] text-primary-orange "
+                                className={`ml-9 space-y-2 text-[15px] ${textColor} `}
                               >
                                 See more{' '}
                               </Link>
@@ -225,49 +252,49 @@ export function LightNavbar({ menuProp }) {
                               <>
                                <Link
                               href={`${sublinks.link}`}
-                              className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text5}{' '}
                             </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text6}{' '}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text7}{' '}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text8}{' '}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text9}{' '}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text10}{' '}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text11}{' '}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className="ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:text-primary-orange"
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text12}{' '}
                                 </Link>
@@ -321,9 +348,9 @@ export function LightNavbar({ menuProp }) {
               <div
                 className={`${
                   displayPopup[0] && displayPopup[1] === index
-                    ? 'text-primary-orange'
+                    ? textColor
                     : 'dark:text-white text-black'
-                } relative  hover:text-primary-orange focus:text-primary-orange`}
+                } relative  hover:${textColor} focus:${textColor}`}
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}
@@ -333,7 +360,7 @@ export function LightNavbar({ menuProp }) {
                   href={link?.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center"
+                  className={`flex items-center hover:${textColor}`}
                   onClick={() => {
                     console.log(
                       `${displayPopup[1]} === ${index} ? ${
@@ -366,7 +393,7 @@ export function LightNavbar({ menuProp }) {
           {navItems[1]?.additionalLinks?.map((link, index) => (
             <li
               key={`${link} ${index}`}
-              className="relative hover:text-primary-orange"
+              className={`relative hover:${textColor}`}
             >
               <a
                 href={`${link.link}`}
@@ -389,7 +416,7 @@ export function LightNavbar({ menuProp }) {
                 rel="noreferrer"
                 className="block dark:hidden "
               >
-                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6 tablet:px-2">
+                <button className={`bg-${color} rounded text-white py-3 px-6 my-6 tablet:px-2`}>
                   Apply now
                 </button>
               </a>
@@ -399,7 +426,7 @@ export function LightNavbar({ menuProp }) {
                 rel="noreferrer"
                 className="block dark:hidden "
               >
-                <button className=" border-2 border-primary-orange rounded bg-white text-primary-orange hover:text-white hover:bg-primary-orange py-3 px-6 my-6 tablet:px-2">
+                <button className={`border-2 border-${color} rounded bg-white ${textColor} hover:text-white hover:bg-${color} py-3 px-6 my-6 tablet:px-2`}>
                   Login
                 </button>
               </a>
