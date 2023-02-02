@@ -10,6 +10,7 @@ export default function Home() {
       <Head>
         <title>21st Century Technologies</title>
         <meta name="description" content="21st Century Technologies" />
+        <link rel="icon" href="/favicons/21ctl_favicon.ico" />
       </Head>
       <LightDesign />
       {/* <div>

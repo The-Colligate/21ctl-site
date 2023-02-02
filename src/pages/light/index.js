@@ -3,6 +3,7 @@ import { ArrowRight } from '@icons/index';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Popover } from 'evergreen-ui';
+import Head from 'next/head';
 import { buttonVarient, leftTransitionVarient, rightTansitionVarient, delayVarient1 } from '@components/constants/animations';
 function LightDesign() {
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
@@ -76,6 +77,10 @@ function LightDesign() {
 
   
   return (
+    <>
+    <Head>
+    <link rel="icon" href="/logo_update.ico" />
+      </Head>
     <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden overflow-y-hidden relative background-color">
       {/* <div className="absolute w-full h-full flex justify-between items-center">
         <div className="w-full min-h-[50%] bg_gradient_l"></div>
@@ -351,7 +356,7 @@ function LightDesign() {
         </motion.div>
       </div>
       <SocialIcons />
-    </div>
+    </div></>
   );
 }
 
