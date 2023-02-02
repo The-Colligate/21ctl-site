@@ -68,7 +68,7 @@ function LightDesign() {
     {
       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243026/21ctl/main%20page%20icons/security-lock_swrsbk.svg',
       // '/icons/home/security.svg',
-      name: 'Security as Service',
+      name: 'Security as a Service',
       snippet:
         '21ctl manages your business security, providing cloud-based security service and in-house security management. Our SECaaS business model is available for integration into a corporate infrastructure.',
       link: '/security',
