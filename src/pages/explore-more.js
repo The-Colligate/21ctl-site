@@ -31,12 +31,17 @@ const ExploreMore = () => {
             </div>
           </section>
 
-          <section className="sm:px-20 px-5 py-28 flex sm:flex-row flex-col w-full justify-center">
-            <div className="w-full h-full">
-              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261998/21ctl/chairman_mrizd7.png" className="object-cover w-full h-full" />
+          <section className="px-5 py-5 flex sm:flex-row flex-col w-full justify-center items-center">
+            <div className="w-3/5 h-full flex flex-col justify-start items-center">
+              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675289253/21ctl/chairman_tdzwd2.png" className=" w-3/5 h-[500px]" />
               {/* <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675237353/21ctl/Chairman_zlqbo7.jpg" className="object-cover w-full h-full" /> */}
+                <div className="w-3/5 flex flex-col justify-center items-center">
+                <p className='font-bold text-3xl'>Wale Ajisebutu</p>
+                <p className=' text-xl'>CEO/Chairman 21st Century Technologies</p>
+                </div>
+                
             </div>
-            <div className="sm:ml-10 ml-0 sm:mt-0 mt-8 text-base">
+            <div className="ml-0 sm:mt-0 mt-8 text-xl text-justify w-xl flex-1 grow-1">
               <p>
               21st Century Technologies, an ecosystem Technology Group of
                 companies, building bold, ambitious and audacious digital
@@ -44,7 +49,7 @@ const ExploreMore = () => {
                 sustainable, resilient, secure, low latency, protected that will
                 enable our customers to adopt cutting edge technology to
                 accelerate technology modernization, exceptional corporate
-                performance and transformation. We are well positioned and fully
+                performance and transformation.<br/><br/> We are well positioned and fully
                 mobilized to provide unmatched operational excellence and
                 unrivaled customer experience. Build many internationally
                 recognized technology Hubs that will meet increasing demand for
@@ -126,6 +131,9 @@ const ExploreMore = () => {
                 today to enable African youths translate these opportunities to
                 value that can boost our digital economy.
               </p> */}
+            </div>
+            <div className='w-1/5'>
+
             </div>
           </section>
 
@@ -533,7 +541,7 @@ const ExploreMore = () => {
           </section>
           <section>
             <h2 className="flex justify-center my-10 font-bold text-2xl">
-              Meet our Directors and Heads
+              Meet our Directors and Unit Heads
             </h2>
             <div className="flex mx-20 ">
               <div className="w-2/4 flex flex-col items-center">
@@ -542,7 +550,7 @@ const ExploreMore = () => {
                   className="w-2/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  COO of KonetPay and Head of Digital Academy
+                  COO of Payment/Head of Digital Academy
                 </p>
               </div>
               <div className="w-2/4 flex flex-col items-center">
@@ -551,7 +559,7 @@ const ExploreMore = () => {
                   className="w-2/4 pb-5  rounded-full "
                 />
                 <p className="break-words w-3/5 text-center">
-                  Head of Security
+                  Director, Security as a Service
                 </p>
               </div>
               <div className="w-2/4 flex flex-col items-center">
@@ -560,7 +568,7 @@ const ExploreMore = () => {
                   className="w-2/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  Head of 21st Century Energy
+                  Director, 21st Century Power
                 </p>
               </div>
               <div className="w-2/4 flex flex-col items-center">
