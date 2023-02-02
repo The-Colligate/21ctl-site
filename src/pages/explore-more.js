@@ -20,8 +20,10 @@ const ExploreMore = () => {
             <div className="flex items-center justify-center h-full">
               <div className="max-w-3xl">
                 <h1 className="text-7xl font-bold tracking-normal text-center font-lato text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-                  Welcome to 21st {' '}
-                  <span className="text-primary-orange leading-8">Century Technologies </span>
+                  Welcome to 21st{' '}
+                  <span className="text-primary-orange leading-8">
+                    Century Technologies{' '}
+                  </span>
                 </h1>
                 {/* <p className="text-2xl text-white text-center mt-6 largeTablet:text-xl smallTablet:text-lg">
                   We provide reliability, security, and high traffic handling
@@ -31,101 +33,38 @@ const ExploreMore = () => {
             </div>
           </section>
 
-          <section className="sm:px-20 px-5 py-28 flex sm:flex-row flex-col w-full justify-center">
-            <div className="w-full h-full">
-              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261998/21ctl/chairman_mrizd7.png" className="object-cover w-full h-full" />
-              {/* <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675237353/21ctl/Chairman_zlqbo7.jpg" className="object-cover w-full h-full" /> */}
-            </div>
-            <div className="sm:ml-10 ml-0 sm:mt-0 mt-8 text-base">
-              <p>
-              21st Century Technologies, an ecosystem Technology Group of
-                companies, building bold, ambitious and audacious digital
-                infrastructure projects. Integrated infrastructure that is
-                sustainable, resilient, secure, low latency, protected that will
-                enable our customers to adopt cutting edge technology to
-                accelerate technology modernization, exceptional corporate
-                performance and transformation. We are well positioned and fully
-                mobilized to provide unmatched operational excellence and
-                unrivaled customer experience. Build many internationally
-                recognized technology Hubs that will meet increasing demand for
-                distributed digital infrastructure and support enterprises of
-                all sizes by enabling the integration of all technology access
-                business functions.
-              </p>
-              {/* <p>
-                In the last 25 years, we have been investing in compelling
-                Digital Infrastructure in five key areas:
-              </p>
-              <ul className="list-diamondStar ml-5 my-4">
-                <li>
-                  Technology: As we all know poverty is a bigger indicator of
-                  lack of access to Technologies than geography.
-                </li>
-                <li>Power: Renewable energy / Turbine power plant</li>
-                <li>Payment</li>
-                <li>Security</li>
-                <li>People</li>
-              </ul>
-              <p>
-                Because of the importance of people to our future and Africa in
-                general, we have invested in an Academy to do the following:{' '}
-              </p>
-              <li>
-                {' '}
-                Build a workforce development program that will continue to
-                build a resilient, digitally inclusive future for Africa
-              </li>
-              <li>
-                {' '}
-                Build a pipeline of Technology workers to strengthen our
-                capacity
-              </li>
-              <li>
-                {' '}
-                Empower customers and consumers to ensure everyone has the skill
-                and ability to participate in the digital world
-              </li>
-              <li> Upskill the existing workforce</li>
-              <li> Create opportunities for success for young Africans</li>
-              <li>
-                {' '}
-                Provide mentorship, professional development resources and
-                support
-              </li>
-              <li>
-                {' '}
-                To give the students the best learning environment and to better
-                our tech community
-              </li>
-              <li>
-                {' '}
-                Create subject matter experts in every area of our operations
-                and services
-              </li>
-              <li> Making the African workforce employable</li>
-              <li> Remove barriers for people seeking digital skills</li>
-              <li>
-                {' '}
-                Provide sustainable learning laboratories and workshops for
-                hands-on instrumental learning
-              </li>
-              <li>
-                {' '}
-                Working with ecosystems of partners, local and international
-                educational institutions
-              </li>
-              <li>
-                {' '}
-                Offer scholarships to cover tuition fees to our students in
-                various educational institutions and training centers
-              </li>
+          <section className="sm:px-20 px-5 py-20">
+            <div className="flex sm:flex-row flex-col w-full justify-center items-center">
+              <div className="max-w-lg w-full h-full">
+                <div>
 
-              <p className="font-bold">
-                In my candid opinion, Nigeria possesses trillion-dollar
-                opportunities. We have dedicated the Digital Expert Academy
-                today to enable African youths translate these opportunities to
-                value that can boost our digital economy.
-              </p> */}
+                <img
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261998/21ctl/chairman_mrizd7.png"
+                  className="object-cover w-full h-full"
+                />
+                </div>
+                <div className='text-center mt-5'>
+                  <h3 className='text-3xl font-bold'>Wale Ajisebutu</h3>
+                  <p className="text-xl font-medium">CEO/Chairman 21st Century Technologies</p>
+                </div>
+              </div>
+              <div className="flex-1 sm:ml-10 ml-0 sm:mt-0 mt-8 text-base">
+                <p className='max-w-2xl text-xl'>
+                  21st Century Technologies, an ecosystem Technology Group of
+                  companies, building bold, ambitious and audacious digital
+                  infrastructure projects. Integrated infrastructure that is
+                  sustainable, resilient, secure, low latency, protected that
+                  will enable our customers to adopt cutting edge technology to
+                  accelerate technology modernization, exceptional corporate
+                  performance and transformation. We are well positioned and
+                  fully mobilized to provide unmatched operational excellence
+                  and unrivaled customer experience. <br/><br/> Build many internationally
+                  recognized technology Hubs that will meet increasing demand
+                  for distributed digital infrastructure and support enterprises
+                  of all sizes by enabling the integration of all technology
+                  access business functions.
+                </p>
+              </div>
             </div>
           </section>
 
