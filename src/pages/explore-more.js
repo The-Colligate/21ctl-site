@@ -484,7 +484,7 @@ const ExploreMore = () => {
                   className="w-2/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  COO of Payment/Head of Digital Academy
+                  COO Payment Division/Head of Digital Experts Academy
                 </p>
               </div>
               <div className="w-2/4 flex flex-col items-center">
@@ -511,7 +511,16 @@ const ExploreMore = () => {
                   className="w-2/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  Head of 21st Century Digital Infrastructrue Limited
+                  Head of 21st Century Technologies Limited
+                </p>
+              </div>
+              <div className="w-2/4 flex flex-col items-center">
+                <img
+                  src="/logo/blank-profile-picture.svg"
+                  className="w-2/4 pb-5  rounded-full"
+                />
+                <p className="break-words w-3/5 text-center">
+                  Director, Digital Platform
                 </p>
               </div>
             </div>
