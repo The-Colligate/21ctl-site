@@ -638,3 +638,7 @@ background-color: #f1f0f3
 /* .figures:nth-child(odd){
   padding-left: 20px;
 } */
+
+
+.mapouter{position:relative;text-align:right;height:500px;width:600px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
