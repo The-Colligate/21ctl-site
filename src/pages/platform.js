@@ -68,13 +68,13 @@ const Platform = () => {
             </div>
           </section>
 
-          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
+          <section className="bg-[#f3f4fa] dark:bg-[#252525]  py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div className="">
-                <h2 className="font-bold text-2xl text-black dark:text-dark">
+                <h2 className="font-bold text-2xl text-black dark:text-white">
                   World-Wide Connectivity
                 </h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
                   Get virtual and physical connectivity to your customers,
                   partners, providers and facilities while extending your
                   network&apos;s capabilities.
