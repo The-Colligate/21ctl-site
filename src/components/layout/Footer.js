@@ -178,7 +178,7 @@ export function Footer() {
 
       <div className="pt-10">
         <p className="text-center text-black dark:text-white">
-          © {year}, 21 Century Technologies. All right reserved.
+          © {year}, 21st Century Technologies. All right reserved.
         </p>
       </div>
     </footer>
