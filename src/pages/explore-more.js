@@ -66,6 +66,9 @@ const ExploreMore = () => {
                 </p>
               </div>
             </div>
+            {/* <div className='w-1/5'>
+
+            </div> */}
           </section>
 
           <section className="">
@@ -472,7 +475,7 @@ const ExploreMore = () => {
           </section>
           <section>
             <h2 className="flex justify-center my-10 font-bold text-2xl">
-              Meet our Directors and Heads
+              Meet our Directors and Unit Heads
             </h2>
             <div className="flex mx-20 ">
               <div className="w-2/4 flex flex-col items-center">
@@ -481,7 +484,7 @@ const ExploreMore = () => {
                   className="w-2/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  COO of KonetPay and Head of Digital Academy
+                  COO of Payment/Head of Digital Academy
                 </p>
               </div>
               <div className="w-2/4 flex flex-col items-center">
@@ -490,7 +493,7 @@ const ExploreMore = () => {
                   className="w-2/4 pb-5  rounded-full "
                 />
                 <p className="break-words w-3/5 text-center">
-                  Head of Security
+                  Director, Security as a Service
                 </p>
               </div>
               <div className="w-2/4 flex flex-col items-center">
@@ -499,7 +502,7 @@ const ExploreMore = () => {
                   className="w-2/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  Head of 21st Century Energy
+                  Director, 21st Century Power
                 </p>
               </div>
               <div className="w-2/4 flex flex-col items-center">
