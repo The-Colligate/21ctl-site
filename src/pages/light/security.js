@@ -31,11 +31,10 @@ const Security = () => {
         
       </Head>
       <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative bg-white dark:bg-[#252525] opacity-90">
-        {// <div className="absolute w-full h-full flex justify-between items-center">
-        //   <div className="w-full min-h-[50%] bg_gradient_l"></div>
-        //   <div className="w-full min-h-[50%] bg_gradient_r"></div>
-        // </div>
-        }
+         {/* <div className="absolute w-full h-full flex justify-between items-center">
+           <div className="w-full min-h-[50%] bg_gradient_l"></div>
+           <div className="w-full min-h-[50%] bg_gradient_r"></div>
+         </div> */}
         <div className="w-full min-h-screen flex flex-col z-[1]">
         <LightNavbar />
         <section className=" sm:px-36  my-5">
