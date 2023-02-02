@@ -1,7 +1,7 @@
 import React from 'react';
 import { eventsArray } from '../../../data/eventsData';
 import { useRouter } from 'next/router';
-export function EventLayout ({ children, truncate }) {
+export function EventLayout ({ children, truncate, getEvent, post }) {
     const router = useRouter();
   return (
     <>
@@ -18,9 +18,9 @@ export function EventLayout ({ children, truncate }) {
             {/* post title */}
             {eventsArray.map((event) => (
               <div
-                key={event._id}
-                onClick={() => router.push(`/event/${event._id}`)}
-                className="bg-[#D9D9D9] px-4 py-1 font-semibold cursor-pointer w-[250px]"
+                key={event.id}
+                onClick={() => getEvent(event.id)}
+                className={`${post?.id === event.id ? `bg-[#D9D9D9]` :'' } px-4 py-1 font-semibold cursor-pointer w-[250px]`}
               >
                 {truncate(event.title, 25)}
               </div>
