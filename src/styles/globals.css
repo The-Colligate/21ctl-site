@@ -240,6 +240,15 @@ body {
   height: 70vh;
 }
 
+.cloud-services-dark {
+  background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1675335002/21ctl/cloud-providers-dark_c4ixgf.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  /* width: 100vw; */
+  background-size: 85vw 100%;
+  height: 70vh;
+}
+
 .services{
   display: none;
 }

@@ -86,7 +86,7 @@ export function LightNavbar({ menuProp }) {
   : security.includes(router.pathname)
   ? `text-magenta`
   : tech.includes(router.pathname)
-  ? `text-primary-orange`
+  ? `text-primary-blue`
   : null;
   const color = academy.includes(router.pathname)
   ? `primary-orange`
