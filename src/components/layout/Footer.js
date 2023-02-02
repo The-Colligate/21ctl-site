@@ -21,7 +21,7 @@ export function Footer() {
   : security.includes(router.pathname)
   ? `bg-magenta`
   : tech.includes(router.pathname)
-  ? `bg-primary-orange`
+  ? `bg-primary-blue`
   : null;
 
   const footerEmail = academy.includes(router.pathname)
