@@ -15,25 +15,25 @@ export const mainLinks = [
                  },
                  {
                    name: 'Konet Wallet',
-                   link: '/',
+                   link: '#',
                    text: 'Connecting you with reliable financial solutions.',
                    icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
                  },
                  {
                    name: 'Fusion',
-                   link: '/',
+                   link: '#',
                    text: 'Connecting you with reliable SMS solutions.',
                    icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
                  },
                  {
                    name: 'LMS',
-                   link: '/',
+                   link: '#',
                    text: 'Connecting you with reliable SMS solutions.',
                    icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
                  },
                  {
                    name: 'HRS',
-                   link: '/',
+                   link: '#',
                    text: 'Connecting you with reliable HR solutions.',
                    icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
                  },
@@ -82,52 +82,52 @@ export const mainLinks = [
       //   subLinks: [
       //     {
       //       name: 'E-Learning',
-      //       link: '/',
+      //       link: '#',
       //       text: 'Empowering learners with E-learning.',
       //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/hat-graduation-filled_d4hmuq.svg',
       //     },
       //     {
       //       name: 'E-Publishing',
-      //       link: '/',
+      //       link: '#',
       //       text: 'Revolutionizing publishing with e-platform.',
       //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058130/21ctl/icons/home/ph_book-fill_wlrwjr.svg',
       //     },
 
       //     {
       //       name: 'Music',
-      //       link: '/',
+      //       link: '#',
       //       text: 'Unleashing the power of music.',
       //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058131/21ctl/icons/home/ph_music-note-fill_uohm2q.svg',
       //     },
 
       //     {
       //       name: 'Mobile Commerce',
-      //       link: '/',
+      //       link: '#',
       //       text: 'Connecting you to mobile commerce.',
       //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/icons/home/shopping-bag-sharp_tv4jzc.svg',
       //     },
 
       //     {
       //       name: 'Ticketing',
-      //       link: '/',
+      //       link: '#',
       //       text: 'Simplifying ticketing with innovation.',
       //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/dashicons_tickets-alt_snbx2d.svg',
       //     },
       //     {
       //       name: 'Mobility',
-      //       link: '/',
+      //       link: '#',
       //       text: 'Empowering your business with mobility.',
       //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/directions-bus-rounded_o2j0ai.svg',
       //     },
       //     {
       //       name: 'Konet Space',
-      //       link: '/',
+      //       link: '#',
       //       text: '',
       //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/earth-filled_s5hngi.svg',
       //     },
       //     {
       //       name: 'Games',
-      //       link: '/',
+      //       link: '#',
       //       text: 'Powering businesses with energy.',
       //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/dashicons_tickets-alt_snbx2d.svg',
       //     },
@@ -139,74 +139,76 @@ export const mainLinks = [
         subLinks: [
           {
             name: 'Amazon',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp',
           },
           {
             name: 'Schneider Electric University',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
           },
+          
           {
-            name: 'VMware',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
+            name: 'MTN',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/MTNza_-_jpeg_0_rnvk0j.png',
+          },
+
+          {
+            name: 'NIBSS',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/nibss_qmru4b.png',
           },
           {
             name: 'Microsoft Azure',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Microsoft-Azure-Emblem_ijjxxx.png',
           },
           {
             name: 'Oracle University',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
           },
-        
           {
-            name: 'MIT',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
+            name: '9mobile',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/logo/9mobile_u3qh9h.png',
           },
-          {
-            name: 'Checkpoint University',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/checkpoint_xnej3a.jpg',
-          },
-       
           {
             name: 'Orange',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/orange_ymolsp.png',
           },
+        
+         
           {
-            name: 'MTN',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/MTNza_-_jpeg_0_rnvk0j.png',
+            name: 'VMware',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
           },
           {
+            name: 'MIT',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
+          },
+       
+         
+          
+          {
             name: 'Glo',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Glo_lr90cw.png',
           },
           {
             name: 'Airtel',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058136/21ctl/logo/airtel_klnfeq.png',
           },
-          {
-            name: '9mobile',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/logo/9mobile_u3qh9h.png',
-          },
-          {
-            name: 'NIBSS',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/logo/partners/nibss_qmru4b.png',
-          },
+          
+          
           {
             name: 'Multichoice Group',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/MultiChoice_Group_-_png_0_dp989k.png',
           },
 
@@ -257,26 +259,13 @@ export const mainLinks = [
           },
         ],
         extras: [
-          {
-            name: 'About Us',
-            link: '/about-us',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
-            text: 'Learn More about 21ctl.',
-          },
-          {
-            name: 'Careers',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
+          // {
+          //   name: 'Partners',
+          //   link: '#',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
-            text: 'Discover the best role for you.',
-          },
-          {
-            name: 'Partners',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-            text: 'See our partners',
-          },
+          //   text: 'See our partners',
+          // },
         ],
       },
       {
@@ -322,7 +311,7 @@ export const mainLinks = [
   {
     additionalLinks: [
       { name: 'Digital Platforms', link: '/platform' },
-      { name: 'Events', link: '/events' },
+      { name: 'Events', link: '/event/events' },
       { name: 'Explore more', link: '/explore-more' },
     ],
   },
@@ -406,14 +395,14 @@ export const academyNavLinks = () => [
           },
           {
             name: 'Careers',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
             text: 'Discover the best role for you.',
           },
           {
             name: 'Partners',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
             text: 'See our partners',
@@ -437,7 +426,7 @@ export const academyNavLinks = () => [
           },
           {
             name: 'SMS Gateway',
-            link: '/',
+            link: '#',
             text: 'Connecting you with reliable SMS solutions.',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
@@ -452,7 +441,7 @@ export const academyNavLinks = () => [
     ],
   },
   {
-    additionalLinks: [{ name: 'Admission', link: '/admission' },{ name: 'Main', link: '/' }],
+    additionalLinks: [{ name: 'Admission', link: '/admission' },{ name: 'Main Portal', link: '/' }],
   },
 ];
 
@@ -466,7 +455,7 @@ export const infraNavLinks = [
         subLinks: [
           {
             name: 'About Us',
-            link: '/about-us',
+            link: '/explore-more',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             text: 'Learn More about 21ctl.',
           },
@@ -568,7 +557,7 @@ export const infraNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main', link: '/' }],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
 ];
 
@@ -582,7 +571,7 @@ export const platformNavLinks = [
         subLinks: [
           {
             name: 'About Us',
-            link: '/about-us',
+            link: '/explore-more',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
             text: 'Learn More about 21ctl.',
           },
@@ -659,7 +648,7 @@ export const platformNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main', link: '/' }],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
   
 ];
@@ -680,7 +669,7 @@ export const powerNavLinks = [
           // },
           // {
           //   name: 'Communication Platform',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
 
           //   text: 'Discover the best role for you.',
@@ -694,20 +683,20 @@ export const powerNavLinks = [
           // },
           // {
           //   name: 'Payment Platform',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           // },
           // {
           //   name: 'Automation',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
           
           // },
           // {
           //   name: 'Identity',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
 
            
@@ -723,7 +712,7 @@ export const powerNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main', link: '/' }],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
 ];
 export const peopleNavLinks = [
@@ -797,6 +786,44 @@ export const peopleNavLinks = [
         head: 'OUR TRAINING',
         subLinks: [
           {
+            name: 'Data Center design and infrastructure',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
+            text: 'Overview of Data Center Physical Infrastructure',
+            text1: 'Virtualization: The Engine Behind Cloud Computing',
+            text2: 'Choosing Between Room, Row and Rack Based Cooling I & II',
+            text3: 'Fundamentals of Availability',
+            text4: 'Calculating Total Power Requirements',
+            text5: 'Going Green: Energy Efficiency in the Data Center',
+            text6: 'Fundamentals of Data Centre Power',
+            text7: 'Calculating Total Cooling requirements',
+            text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
+            text9: 'Data Center Projects: Commissioning',
+          },
+          {
+            name: 'Schneider University',
+            link: '/programmes',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+            text: 'Fundamentals of Power',
+            text1: 'Efficiency of AC and DC Power Distribution in Data Centers',
+            text2: 'Energy Efficiency Fundamentals',
+            text3: 'Energy Efficiency with Building Automation Systems',
+            text4: 'Optimising Data Center Environmental Monitoring',
+          },
+          {
+            name: 'VMware',
+            link: '/programmes',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
+            text: 'VMware vSphere: Install, Configure, Manage [V7]',
+            text1: 'VMware NSX-T Data Center: Install, Configure, Manage [V3.2]',
+            text2: 'VMware Cloud Director: Install, Configure, Manage [V10.3]',
+            text3: 'Additional recommended',
+            text4: 'VMware vSphere: Design [V7]',
+            text5: 'VMware Cloud Director: Advanced Workshop [V10.2]',
+            text6: 'VMware NSX-T Data Center: Design [V3.0]',
+            text7: 'VMware Tanzu Kubernetes Grid: Install, Configure, Manage',
+          },
+          {
             name: 'Oracle Technology',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058115/21ctl/logo/oracle1_zkygli.png',
@@ -823,21 +850,7 @@ export const peopleNavLinks = [
             text2: 'Oracle Sales Cloud Business Process',
             text3: 'Oracle Procurement Cloud Business Process',
             },
-            {
-              name: 'Data Center design and infrastructure',
-              link: '#',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
-              text: 'Overview of Data Center Physical Infrastructure',
-              text1: 'Virtualization: The Engine Behind Cloud Computing',
-              text2: 'Choosing Between Room, Row and Rack Based Cooling I & II',
-              text3: 'Fundamentals of Availability',
-              text4: 'Calculating Total Power Requirements',
-              text5: 'Going Green: Energy Efficiency in the Data Center',
-              text6: 'Fundamentals of Data Centre Power',
-              text7: 'Calculating Total Cooling requirements',
-              text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
-              text9: 'Data Center Projects: Commissioning',
-            },
+            
             {
               name: 'Super Micro',
               link: '/programmes',
@@ -850,33 +863,11 @@ export const peopleNavLinks = [
             },
 
 
-            {
-              name: 'Schneider University',
-              link: '/programmes',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
-              text: 'Fundamentals of Power',
-              text1: 'Efficiency of AC and DC Power Distribution in Data Centers',
-              text2: 'Energy Efficiency Fundamentals',
-              text3: 'Energy Efficiency with Building Automation Systems',
-              text4: 'Optimising Data Center Environmental Monitoring',
-            },
-            {
-              name: 'VMware',
-              link: '/programmes',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
-              text: 'VMware vSphere: Install, Configure, Manage [V7]',
-              text1: 'VMware NSX-T Data Center: Install, Configure, Manage [V3.2]',
-              text2: 'VMware Cloud Director: Install, Configure, Manage [V10.3]',
-              text3: 'Additional recommended',
-              text4: 'VMware vSphere: Design [V7]',
-              text5: 'VMware Cloud Director: Advanced Workshop [V10.2]',
-              text6: 'VMware NSX-T Data Center: Design [V3.0]',
-              text7: 'VMware Tanzu Kubernetes Grid: Install, Configure, Manage',
-            },
+           
 
             {
               name: 'SYSTEM',
-              link: '/',
+              link: '#',
               icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/system_rfsecw.svg',
               text: 'Devops',
               text1: 'Cybersecurity',
@@ -886,7 +877,7 @@ export const peopleNavLinks = [
             },
           // {
           //   name: 'WEB',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058136/21ctl/icons/web_xedjrt.svg',
           //   text: 'Intro to Web Development',
           //   text1: 'Front-end',
@@ -896,7 +887,7 @@ export const peopleNavLinks = [
           // },
           {
             name: 'INFRASTRUCTURE',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/icons/infrastructure_jl0nms.svg',
             text: 'Cloud Infrastructure',
             text1: 'Software',
@@ -905,7 +896,7 @@ export const peopleNavLinks = [
           },
           // {
           //   name: 'DESIGN',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/icons/design_rtohgd.svg',
           //   text: 'UI/UX Design',
           //   text1: 'Graphic Design:',
@@ -913,7 +904,7 @@ export const peopleNavLinks = [
           // },
           // {
           //   name: 'DATA',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058135/21ctl/icons/data_hg61hk.svg',
           //   text: 'Artificial Intelligence',
           //   text1: 'Deep Learning ',
@@ -925,7 +916,7 @@ export const peopleNavLinks = [
          
           // {
           //   name: 'MARKETING',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/system_rfsecw.svg',
           //   text: 'Product Marketing',
           //   text1: 'Digital Marketing ',
@@ -936,23 +927,23 @@ export const peopleNavLinks = [
           // },
           // {
           //   name: 'GAME',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/game_k3bgjy.svg',
           //   text: 'Intro to Game Development',
           //   text1: '2D Game Development',
           //   text2: '3D Game Development',
           // },
-          {
-            name: 'POWER',
-            link: '/',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/power_vu792n.svg',
-            text: 'Renewable Energy',
-            text1: 'Power Electronics',
-            text2: 'High Voltage Engineering',
-          },
+          // {
+          //   name: 'POWER',
+          //   link: '#',
+          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/power_vu792n.svg',
+          //   text: 'Renewable Energy',
+          //   text1: 'Power Electronics',
+          //   text2: 'High Voltage Engineering',
+          // },
           // {
           //   name: 'LEADERSHIP',
-          //   link: '/',
+          //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058136/21ctl/icons/leadership_dn6vrd.svg',
           //   text: 'Agile Leadership',
           //   text1: 'Data - Driven Decision Making ',
@@ -965,17 +956,17 @@ export const peopleNavLinks = [
         extras: [
           //   {
           //     icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
-          //     link: '/',
+          //     link: '#',
           //     name: 'ML/AI Expert',
           //   },
           //   {
           //     icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
-          //     link: '/',
+          //     link: '#',
           //     name: 'Oracle Certification',
           //   },
           //   {
           //     icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
-          //     link: '/',
+          //     link: '#',
           //     name: 'Cloud Engineering',
           //   },
         ],
@@ -990,7 +981,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Amazon',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Advanced Networking',
             text1: 'Data Analytics',
@@ -1000,14 +991,14 @@ export const peopleNavLinks = [
           },
           {
             name: 'Schneider Electric University',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
             text: 'Data Center Physical Infrastructure',
             text1: 'See more',
           },
           {
             name: 'VMware',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Multi-Cloud',
             text1: 'Virtual Cloud Network',
@@ -1017,14 +1008,14 @@ export const peopleNavLinks = [
           },
           {
             name: 'Microsoft Azure',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Cloud Computing',
             text1: 'Virtual Machines',
           },
           {
             name: 'Oracle University',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Oracle Databases',
             text1: 'Oracle Cloud Infrastructure (OCI)',
@@ -1034,14 +1025,14 @@ export const peopleNavLinks = [
       
           //   {
           //     name: 'MIT',
-          //     link: '/',
+          //     link: '#',
           //     icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
           //     // text: 'Get Certification',
           //     // text1: 'See more',
           //   },
           {
             name: 'Checkpoint University',
-            link: '/',
+            link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Malware analysis',
             text1: 'Cloud Network Security',
@@ -1077,7 +1068,7 @@ export const peopleNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main', link: '/' }],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
 ];
 
@@ -1201,6 +1192,6 @@ export const securityNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main', link: '/' }],
+    additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
 ];

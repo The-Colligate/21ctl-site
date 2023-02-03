@@ -16,7 +16,9 @@ const Programmes = () => {
       <Head>
         <title>Programmes - 21 CTL</title>
         <meta name="description" content="" />
+        <link rel="icon" href="/favicons/dea_favicon.ico" />
       </Head>
+      
       <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative">
         <div className="absolute w-full h-full flex justify-between items-center">
           <div className="w-full min-h-[50%] bg_gradient_l"></div>
@@ -34,7 +36,7 @@ const Programmes = () => {
               </div>
               <div className="grid gap-10 grid-cols-3 largeTablet:grid-cols-2 tablet:grid-cols-2 mt-10 phone:grid-cols-1">
                 {courses
-                  .filter(course => course.trim().toLowerCase().includes(searchValue.trim().toLowerCase()))
+                  .filter(course => course.toString().trim().toLowerCase().includes(searchValue.trim().toLowerCase()))
                   .map((course) => (
                     <div key={course} className="bg-white sm:w-[350px] w-full px-2 py-3 h-[150px] rounded-xl">
                       <div key={course} className="flex items-center sm:justify-center justify-start">

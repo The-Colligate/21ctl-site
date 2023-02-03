@@ -163,8 +163,8 @@ const SupportCenters = () => {
               </p>
             </div> */}
           </div>
-          <div id='map'>
-          {/* <MapComponent /> */}
+          <div id='map' className='flex justify-center w-full'>
+          <div class="mapouter w-4/5"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=No%205%20Jeremiah%20Ugwu%20Street,%20Off%20Babatunde%20Anjous,%20Lekki%20Phase%201,%20Lagos.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-i.net">the hunt 123movies</a><br/><a href="https://www.embedgooglemap.net"></a></div></div>
 </div>
         </div>
         <Footer />

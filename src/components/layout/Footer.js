@@ -12,6 +12,18 @@ export function Footer() {
   const security = ['/security', '/identity'];
   const tech = ['/digital-infrastructure', '/platform', '/communication', '/automation'];
 
+  const footerBg = academy.includes(router.pathname)
+  ? `bg-primary-orange`
+  : index.includes(router.pathname)
+  ? `bg-primary-orange`
+  : power.includes(router.pathname)
+  ? `bg-primary-green`
+  : security.includes(router.pathname)
+  ? `bg-magenta`
+  : tech.includes(router.pathname)
+  ? `bg-primary-blue`
+  : null;
+
   const footerEmail = academy.includes(router.pathname)
     ? 'support@academy.21ctl.com'
     : index.includes(router.pathname)
@@ -27,7 +39,7 @@ export function Footer() {
   // get year
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-[#f0c5b9] dark:bg-[#252525] px-20 py-10 pb-4 h-full">
+    <footer className={`${footerBg} dark:bg-[#252525] px-20 py-10 pb-4 h-full`}>
       <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:items-center sm:space-y-0 space-y-10">
         <div className="space-y-8 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center">
           <div>
@@ -178,7 +190,7 @@ export function Footer() {
 
       <div className="pt-10">
         <p className="text-center text-black dark:text-white">
-          © {year}, 21 Century Technologies. All right reserved.
+          © {year}, 21st Century Technologies. All right reserved.
         </p>
       </div>
     </footer>

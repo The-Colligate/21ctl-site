@@ -37,12 +37,13 @@ const Academy = () => {
       <Head>
         <title>Academy - 21 CTL</title>
         <meta name="description" content="" />
+        <link rel="icon" href="/favicons/dea_favicon.ico" />
       </Head>
-      <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative">
-        <div className="absolute w-full h-full flex justify-between items-center">
+      <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative bg-background-color dark:bg-[#565048]">
+        {/* <div className="absolute w-full h-full flex justify-between items-center">
           <div className="w-full min-h-[50%] bg_gradient_l"></div>
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
-        </div>
+        </div> */}
         <div className="w-full min-h-screen flex flex-col z-[0]">
           <LightNavbar />
 
@@ -158,7 +159,7 @@ const Academy = () => {
             </div>
           </section> */}
 
-          <section className="sm:px-36 px-8 my-20">
+          <section className="sm:px-36 px-8 my-20 dark:bg-[#565048]">
             <div className="flex flex-col items-center">
               <div className="text-lg font-semibold pb-5">
                 Our statistics reveal more about us.
@@ -207,7 +208,7 @@ const Academy = () => {
             </div>
           </section>
 
-          <section className="text-3xl  w-full flex flex-col justify-between items-center">
+          <section className="text-3xl  w-full flex flex-col justify-between items-center dark:bg-[#565048]">
             <h4 className="font-bold">
               {" "}
               Skill <span className="text-primary-orange">Gap</span>
@@ -269,7 +270,7 @@ const Academy = () => {
               </div>
             </div>
           </section>
-          <section className="flex flex-col justify-center items-center w-full py-20 mt-20 pillar-bg">
+          <section className="flex flex-col justify-center items-center w-full py-20 mt-20 pillar-bg dark:bg-[#565048]">
             <div className="font-bold sm:text-5xl text-3xl text-center tablet:text-xl">
               <h4>
                 The <span className="text-primary-orange">7 Pillars</span> of
@@ -278,25 +279,40 @@ const Academy = () => {
             </div>
             <div className="w-full flex justify-center items-center">
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058164/21ctl/7-pillars_cuapya.svg"
-                className="w-3/5 tablet:w-4/5 "
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675318517/21ctl/icons/7_pillars-lightmode_jqlcl7.svg"
+                className="w-3/5 tablet:w-4/5 dark:hidden"
+              />
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675318516/21ctl/icons/7_pillars-darkmode_av8u3u.svg"
+                className="w-3/5 tablet:w-4/5 dark:block hidden"
               />
             </div>
           </section>
 
-          <section className="flex flex-col justify-center items-center w-full py-20 pillar-bg ">
+          <section className="flex flex-col justify-center items-center w-full py-20 pillar-bg dark:bg-[#565048]">
             <div className="font-bold sm:text-5xl text-3xl text-center">
               <h4 className="text-primary-orange">Target of the Academy</h4>
             </div>
             <div className="w-full flex justify-center items-center sm:ml-20 ml-0 mt-8 tablet:flex-col ">
+        
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058162/21ctl/logo/academy-importance_fxamod.svg"
-                className=" w-2/4  tablet:w-4/5 "
+                className=" w-2/4  tablet:w-4/5 dark:hidden"
               />
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058158/21ctl/logo/academy-importance1_vq55hr.svg"
-                className="w-2/4 tablet:pt-10  tablet:w-4/5 "
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675318515/21ctl/icons/impact_of_academy-lightmode_qmygpd.svg"
+                className=" w-2/4  tablet:w-4/5 dark:block hidden"
               />
+        
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058158/21ctl/logo/academy-importance1_vq55hr.svg"
+                className="w-2/4 tablet:pt-10  tablet:w-4/5 dark:hidden"
+              />
+              <img
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675318516/21ctl/icons/impact_of_academy-lightmode2_wer3pb.svg"
+                className=" w-2/4  tablet:w-4/5  dark:block hidden"
+              />
+           
             </div>
           </section>
 
