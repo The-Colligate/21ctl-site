@@ -232,7 +232,7 @@ body {
 }
 
 .cloud-services {
-  background-image: url('/logo/cloud-services.svg');
+  background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1675335002/21ctl/cloud-providers_obil10.svg');
   background-repeat: no-repeat;
   background-position: left;
   /* width: 100vw; */
@@ -638,3 +638,7 @@ background-color: #f1f0f3
 /* .figures:nth-child(odd){
   padding-left: 20px;
 } */
+
+
+.mapouter{position:relative;text-align:right;height:500px;width:600px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}

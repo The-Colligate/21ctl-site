@@ -238,7 +238,7 @@ export function DigitalNavbar({ menuProp }) {
             >
               <a
                 href={`${link.link}`}
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
                 className="flex items-center"
               >

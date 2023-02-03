@@ -21,7 +21,7 @@ export function Footer() {
   : security.includes(router.pathname)
   ? `bg-magenta`
   : tech.includes(router.pathname)
-  ? `bg-primary-blue`
+  ? `bg-gradient-to-r from-[#0282BA] to-[#015A81] dark:from-[#252525] dark:to-[#252525] text-gray-100 text-lg font-light px-5 py-2`
   : null;
 
   const footerEmail = academy.includes(router.pathname)
@@ -123,11 +123,13 @@ export function Footer() {
 
         {/* address */}
         <div className="tablet:flex tablet:flex-col tablet:justify-center tablet:items-center">
-          <p className="font-bold text-lg text-black dark:text-white ">
+          {/* <p className="font-bold text-lg text-black dark:text-white "> */}
+          <p className="font-bold text-lg text-gray-100 ">
             Our Address
           </p>
 
-          <div className="text-black dark:text-white pt-2">
+          {/* <div className="text-black dark:text-white pt-2"> */}
+          <div className="text-gray-100 pt-2">
             5 Jeremiah Ugwu Street, <br />
             Off Babatunde Anjous,
             <br />
@@ -139,7 +141,8 @@ export function Footer() {
 
         {/* contact */}
         <div>
-          <p className="font-bold text-lg text-black dark:text-white tablet:flex tablet:justify-center tablet:items-center">
+          {/* <p className="font-bold text-lg text-black dark:text-white tablet:flex tablet:justify-center tablet:items-center"> */}
+          <p className="font-bold text-lg text-gray-100 tablet:flex tablet:justify-center tablet:items-center">
             Contact
           </p>
 
@@ -157,7 +160,8 @@ export function Footer() {
                 d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
               />
             </svg>{' '}
-            <span className="text-black dark:text-white ml-3">
+            {/* <span className="text-black dark:text-white ml-3"> */}
+            <span className="text-gray-100 ml-3">
               <a href="tel:+23412707777">+234 1 270 7777</a>
             </span>
           </div>
@@ -172,7 +176,8 @@ export function Footer() {
             >
               <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
             </svg>{' '}
-            <span className="text-black dark:text-white hover:text-primary-orange ml-3">
+            {/* <span className="text-black dark:text-white hover:text-primary-orange ml-3"> */}
+            <span className="text-gray-100 hover:text-primary-orange ml-3">
               <a href={`mailto:${footerEmail}`}>{footerEmail}</a>
             </span>
           </div>
@@ -180,7 +185,8 @@ export function Footer() {
           <div className="pt-2">
             <Link
               href="/support-centers"
-              className="text-black dark:text-white hover:text-primary-orange ml-[30px]"
+              // className="text-black dark:text-white hover:text-primary-orange ml-[30px]"
+              className="text-gray-100 hover:text-primary-orange ml-[30px]"
             >
               Support Centers
             </Link>
@@ -189,7 +195,8 @@ export function Footer() {
       </div>
 
       <div className="pt-10">
-        <p className="text-center text-black dark:text-white">
+        {/* <p className="text-center text-black dark:text-white"> */}
+        <p className="text-center text-gray-100">
           © {year}, 21st Century Technologies. All right reserved.
         </p>
       </div>
