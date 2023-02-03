@@ -4,136 +4,6 @@ export const mainLinks = [
     logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
     logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
     navLinks: [
-      /* {
-               name: 'Products',
-               subLinks: [
-                 {
-                   name: 'Konet Pay',
-                   link: '#',
-                   text: 'Payment Solution',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058128/21ctl/icons/home/mdi_cloud-check-variant_igmegs.svg',
-                 },
-                 {
-                   name: 'Konet Wallet',
-                   link: '#',
-                   text: 'Connecting you with reliable financial solutions.',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
-                 },
-                 {
-                   name: 'Fusion',
-                   link: '#',
-                   text: 'Connecting you with reliable SMS solutions.',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
-                 },
-                 {
-                   name: 'LMS',
-                   link: '#',
-                   text: 'Connecting you with reliable SMS solutions.',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
-                 },
-                 {
-                   name: 'HRS',
-                   link: '#',
-                   text: 'Connecting you with reliable HR solutions.',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
-                 },
-               ],
-               extras: [],
-             }, 
-             {
-               name: 'Solutions',
-               subLinks: [
-                 {
-                   name: 'Power',
-                   link: '/power',
-                   text: 'Powering businesses with energy.',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/home/game-icons_power-lightning_mhy5dz.svg',
-                 },
-                 {
-                   name: 'Digital Infrastructure',
-                   link: '/digital',
-                   text: 'Providing seamless customer experience',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058133/21ctl/icons/home/eos-icons_cloud-computing_hv9kxx.svg',
-                 },
-                 {
-                   name: 'Digital Platforms',
-                   link: '/digital-platform',
-                   text: 'Connecting with effective communication.',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/call-icon_clny0v.svg',
-                 },
-                 {
-                   name: 'People',
-                   link: '/people',
-                   text: 'Connecting with the right people.',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058130/21ctl/icons/home/people-icon_nsjcxy.svg',
-                 },
-                 // { name: "Digital Platform", link: "/", text: "Powering businesses with energy.", icon: "" },
-                 {
-                   name: 'Security',
-                   link: '/security',
-                   text: 'Powering businesses with energy.',
-                   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/security-lock_zavtdp.svg',
-                 },
-               ],
-               extras: [],
-             },*/
-      // {
-      //   name: 'Industries',
-      //   subLinks: [
-      //     {
-      //       name: 'E-Learning',
-      //       link: '#',
-      //       text: 'Empowering learners with E-learning.',
-      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/hat-graduation-filled_d4hmuq.svg',
-      //     },
-      //     {
-      //       name: 'E-Publishing',
-      //       link: '#',
-      //       text: 'Revolutionizing publishing with e-platform.',
-      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058130/21ctl/icons/home/ph_book-fill_wlrwjr.svg',
-      //     },
-
-      //     {
-      //       name: 'Music',
-      //       link: '#',
-      //       text: 'Unleashing the power of music.',
-      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058131/21ctl/icons/home/ph_music-note-fill_uohm2q.svg',
-      //     },
-
-      //     {
-      //       name: 'Mobile Commerce',
-      //       link: '#',
-      //       text: 'Connecting you to mobile commerce.',
-      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/icons/home/shopping-bag-sharp_tv4jzc.svg',
-      //     },
-
-      //     {
-      //       name: 'Ticketing',
-      //       link: '#',
-      //       text: 'Simplifying ticketing with innovation.',
-      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/dashicons_tickets-alt_snbx2d.svg',
-      //     },
-      //     {
-      //       name: 'Mobility',
-      //       link: '#',
-      //       text: 'Empowering your business with mobility.',
-      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/directions-bus-rounded_o2j0ai.svg',
-      //     },
-      //     {
-      //       name: 'Konet Space',
-      //       link: '#',
-      //       text: '',
-      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/earth-filled_s5hngi.svg',
-      //     },
-      //     {
-      //       name: 'Games',
-      //       link: '#',
-      //       text: 'Powering businesses with energy.',
-      //       icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/dashicons_tickets-alt_snbx2d.svg',
-      //     },
-      //   ],
-      //   extras: [],
-      // },
       {
         name: 'Partners',
         subLinks: [
@@ -191,9 +61,6 @@ export const mainLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/partners/mit_cz7zb9.png',
           },
-       
-         
-          
           {
             name: 'Glo',
             link: '#',
@@ -204,15 +71,11 @@ export const mainLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058136/21ctl/logo/airtel_klnfeq.png',
           },
-          
-          
           {
             name: 'Multichoice Group',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/MultiChoice_Group_-_png_0_dp989k.png',
           },
-
-          //
         ],
         extras: [],
       },

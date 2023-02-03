@@ -461,7 +461,7 @@ export function LightNavbar({ menuProp }) {
         setTheme={setTheme}
         isOpen={isOpen}
         close={() => setIsOpen(false)}
-        navItems={navItems[0]}
+        navItems={navItems}
         router={router}
       />
     </>
@@ -470,7 +470,6 @@ export function LightNavbar({ menuProp }) {
 
 const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
   const [showExpanded, setShowExpanded] = useState([-1, false]);
-
   return (
     <div
       className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
@@ -545,7 +544,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
         </div>
         {showExpanded[1] ? (
           <div>
-            {navItems.navLinks.map((link, index) => (
+            {navItems[0].navLinks.map((link, index) => (
               <>
                 {' '}
                 {showExpanded[0] === index ? (
@@ -580,7 +579,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
           </div>
         ) : (
           <ul className="space-y-5 mt-10 text-lg">
-            {navItems.navLinks.map((link, index) => (
+            {navItems[0].navLinks.map((link, index) => (
               <li
                 key={link.name}
                 onClick={() => link.subLinks.length > 0 ?  setShowExpanded([index, true]): 
@@ -592,9 +591,20 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
                 </a>
               </li>
             ))}
-            {/* <li>
-              <a className="flex items-center justify-between">Konet Mail</a>
-            </li> */}
+            {navItems[1]?.additionalLinks?.map((link, index) => (
+            <li
+              key={`${link} ${index}`}
+            >
+              <a
+                href={`${link.link}`}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
             <li>
               <Link href="/support-centers">
                 <span className="flex items-center justify-between">
@@ -622,86 +632,6 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
     </div>
   );
 };
-
-// const MobileNavbar = ({ isOpen, theme, setTheme, close }) => {
-//   const [showExpanded, setShowExpanded] = useState([-1, false]);
-
-//   return (
-//     <div
-//       className={`fixed z-50 hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? "translate-x-0" : ""
-//         } largeTablet:block dark:bg-[#1f1d1d]`}
-//     >
-//       <div className="relative w-full h-full overflow-auto p-5 pt-1">
-//         <div className="flex justify-between mt-2">
-//           {isOpen ? (
-//             <button
-//               className="flex items-center"
-//               onClick={() => {setShowExpanded([-1, false]);
-//                 close();}
-//               }
-//             >
-//               <CaretDown className="mr-2 rotate-90" />
-//               Back
-//             </button>
-//           ) : (
-//             <>
-//               <img src="/light-logo.svg" className="w-14 h-auto dark:hidden" />
-//               <img
-//                 src="/light-logo_dark.svg"
-//                 className="w-14 h-auto dark:block hidden"
-//               />
-//             </>
-//           )}
-//           <button
-//             onClick={() => {
-//               setShowExpanded([-1, false]);
-//               close();
-//             }}
-//           >
-//             <Close />
-//           </button>
-//         </div>
-
-//         <div>
-//           {links.map((link, index) => (
-//             <div key={link.name}>
-
-//               <ul key={link.name} className="space-y-5 mt-10 text-lg">
-//                 <li key={link.name} onClick={() => setShowExpanded([showExpanded[0] === index ? -1 : index, !showExpanded[1]])}>
-//                   <a className="flex items-center justify-between">
-//                     {link.name} {showExpanded[1] && showExpanded[0] === index ? <CaretDown className="-rotate-180" /> : <CaretDown className="-rotate-90" />}
-//                   </a>
-//                 </li>
-//               </ul>
-//               {showExpanded[1] && showExpanded[0] === index ? link.subLinks.map((sublinks) => (
-
-//                 <ul key={sublinks.name} className="list-disc ml-5">
-//                   <li ><Link href="/" >{sublinks.name}</Link></li>
-//                 </ul>
-//               )) : <></>}
-
-//             </div>
-//           ))}
-//         </div>
-
-//         <button
-//           className="rounded-full fixed bottom-0 right-0 block dark:hidden"
-//           onClick={() => setTheme("dark")}
-//           title="Switch to dark mode"
-//         >
-//           <Moon />
-//         </button>
-//         <button
-//           className="rounded-full fixed bottom-0 right-0 hidden dark:block"
-//           onClick={() => setTheme("light")}
-//           title="Switch to light mode"
-//         >
-//           <Sun />
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
 
 const Menu = () => (
   <svg
