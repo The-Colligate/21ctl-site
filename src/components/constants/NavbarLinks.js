@@ -577,43 +577,43 @@ export const peopleNavLinks = [
     navLinks: [
       {
         name: 'Academy',
-        link: '/people',
+        // link: '/people',
         subLinks: [
-          // {
-          //   name: 'Trainee',
-          //   link: '/admission',
-          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
-          // },
-          // {
-          //   name: 'Curriculum',
-          //   link: '/training-pillars',
-          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
-          // },
-          // {
-          //   name: 'Instructor',
-          //   link: '/training-pillars',
-          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-          // },
-          // {
-          //   name: 'Infrastructure',
-          //   link: '/training-pillars',
-          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-          // },
-          // {
-          //   name: 'Didactics',
-          //   link: '/training-pillars',
-          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-          // },
-          // {
-          //   name: 'Industry',
-          //   link: '/training-pillars',
-          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-          // },
-          // {
-          //   name: 'Quality Assurance',
-          //   link: '/training-pillars',
-          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-          // },
+          {
+            name: 'Trainee',
+            link: '/admission',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
+          },
+          {
+            name: 'Curriculum',
+            link: '/training-pillars',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
+          },
+          {
+            name: 'Instructor',
+            link: '/training-pillars',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          },
+          {
+            name: 'Infrastructure',
+            link: '/training-pillars',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          },
+          {
+            name: 'Didactics',
+            link: '/training-pillars',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          },
+          {
+            name: 'Industry',
+            link: '/training-pillars',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          },
+          {
+            name: 'Quality Assurance',
+            link: '/training-pillars',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+          },
         ],
         extras: [
           {

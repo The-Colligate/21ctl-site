@@ -71,7 +71,7 @@ const AboutUs = () => {
                     {/* 14M+ */}
                     <CountUp
                       start={0}
-                      end={14}
+                      end={45}
                       duration={2.75}
                       prefix=""
                       suffix="M+"
