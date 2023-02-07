@@ -179,7 +179,7 @@ const Security = ()=>{
                                                             className: "text-magenta text-4xl font-semibold",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_countup__WEBPACK_IMPORTED_MODULE_6___default()), {
                                                                 start: 0,
-                                                                end: 14,
+                                                                end: 45,
                                                                 duration: 2.75,
                                                                 prefix: "",
                                                                 suffix: "M+"

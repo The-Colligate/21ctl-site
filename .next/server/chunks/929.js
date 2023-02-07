@@ -146,7 +146,7 @@ const AboutUs = ()=>{
                                                             className: "text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_countup__WEBPACK_IMPORTED_MODULE_6___default()), {
                                                                 start: 0,
-                                                                end: 14,
+                                                                end: 45,
                                                                 duration: 2.75,
                                                                 prefix: "",
                                                                 suffix: "M+"

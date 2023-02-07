@@ -678,8 +678,44 @@ const peopleNavLinks = [
         navLinks: [
             {
                 name: "Academy",
-                link: "/training-pillars",
-                subLinks: [],
+                // link: '/people',
+                subLinks: [
+                    {
+                        name: "Trainee",
+                        link: "/admission",
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg"
+                    },
+                    {
+                        name: "Curriculum",
+                        link: "/training-pillars",
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg"
+                    },
+                    {
+                        name: "Instructor",
+                        link: "/training-pillars",
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
+                    },
+                    {
+                        name: "Infrastructure",
+                        link: "/training-pillars",
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
+                    },
+                    {
+                        name: "Didactics",
+                        link: "/training-pillars",
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
+                    },
+                    {
+                        name: "Industry",
+                        link: "/training-pillars",
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
+                    },
+                    {
+                        name: "Quality Assurance",
+                        link: "/training-pillars",
+                        icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg"
+                    }
+                ],
                 extras: [
                     {
                         name: "Oracle University",
@@ -2036,7 +2072,7 @@ function Footer() {
         "/automation"
     ];
     const footerBg = academy.includes(router.pathname) ? `bg-primary-orange` : index.includes(router.pathname) ? `bg-primary-orange` : power.includes(router.pathname) ? `bg-primary-green` : security.includes(router.pathname) ? `bg-magenta` : tech.includes(router.pathname) ? `bg-gradient-to-r from-[#0282BA] to-[#015A81] dark:from-[#252525] dark:to-[#252525] text-gray-100 text-lg font-light px-5 py-2` : null;
-    const footerEmail = academy.includes(router.pathname) ? "support@academy.21ctl.com" : index.includes(router.pathname) ? "inquiry@21ctl.com" : power.includes(router.pathname) ? "support@power.21ctl.com" : security.includes(router.pathname) ? "support@security.21ctl.com" : tech.includes(router.pathname) ? "support@technology.21ctl.com" : null;
+    const footerEmail = academy.includes(router.pathname) ? "DEAsupport@21ctl.com" : index.includes(router.pathname) ? "inquiry@21ctl.com" : power.includes(router.pathname) ? "supportpower@21ctl.com" : security.includes(router.pathname) ? "supportsecurity@21ctl.com" : tech.includes(router.pathname) ? "support@technology.21ctl.com" : null;
     // get year
     const year = new Date().getFullYear();
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("footer", {
