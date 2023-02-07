@@ -37,19 +37,20 @@ const ExploreMore = () => {
             <div className="flex sm:flex-row flex-col w-full justify-center items-center">
               <div className="max-w-lg w-full h-full">
                 <div>
-
-                <img
-                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261998/21ctl/chairman_mrizd7.png"
-                  className="object-cover w-full h-full"
-                />
+                  <img
+                    src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261998/21ctl/chairman_mrizd7.png"
+                    className="object-cover w-full h-full"
+                  />
                 </div>
-                <div className='text-center mt-5'>
-                  <h3 className='text-3xl font-bold'>Wale Ajisebutu</h3>
-                  <p className="text-xl font-medium">CEO/Chairman 21st Century Technologies</p>
+                <div className="text-center mt-5">
+                  <h3 className="text-3xl font-bold">Wale Ajisebutu</h3>
+                  <p className="text-xl font-medium">
+                    CEO/Chairman 21st Century Technologies
+                  </p>
                 </div>
               </div>
               <div className="flex-1 sm:ml-10 ml-0 sm:mt-0 mt-8 text-base">
-                <p className='max-w-2xl text-xl'>
+                <p className="max-w-2xl text-xl">
                   21st Century Technologies, an ecosystem Technology Group of
                   companies, building bold, ambitious and audacious digital
                   infrastructure projects. Integrated infrastructure that is
@@ -58,11 +59,12 @@ const ExploreMore = () => {
                   accelerate technology modernization, exceptional corporate
                   performance and transformation. We are well positioned and
                   fully mobilized to provide unmatched operational excellence
-                  and unrivaled customer experience. <br/><br/> Build many internationally
-                  recognized technology Hubs that will meet increasing demand
-                  for distributed digital infrastructure and support enterprises
-                  of all sizes by enabling the integration of all technology
-                  access business functions.
+                  and unrivaled customer experience. <br />
+                  <br /> Build many internationally recognized technology Hubs
+                  that will meet increasing demand for distributed digital
+                  infrastructure and support enterprises of all sizes by
+                  enabling the integration of all technology access business
+                  functions.
                 </p>
               </div>
             </div>
@@ -477,7 +479,7 @@ const ExploreMore = () => {
             <h2 className="flex justify-center my-10 font-bold text-2xl">
               Meet our Directors and Unit Heads
             </h2>
-            <div className="flex mx-20 ">
+            <div className="flex sm:flex-row flex-col sm:px-20 px-5 justify-center items-center w-full ">
               <div className="w-2/4 flex flex-col items-center">
                 <img
                   src="/logo/blank-profile-picture.svg"

@@ -23,7 +23,7 @@ const Pillars = () => {
             <div className="flex flex-col items-center justify-center w-full h-full">
               <h1 className="font-extrabold sm:text-6xl text-3xl text-white text-center sm:leading-normal leading-10 max-w-6xl">
                 The <span className="text-primary-orange">Pillars</span> of
-                Digital Training Center Model
+                Digital Experts Academy Model
               </h1>
             </div>
           </section>
@@ -179,9 +179,9 @@ const Pillars = () => {
                   Learning management system
                 </h4>
                 <p className="mt-6 text-center text-base text-black">
-                  The LMS delivers and manages course materials, manage assignments and
-                  assessments, and facilitate communication between trainees and
-                  instructors.
+                  The LMS delivers and manages course materials, manage
+                  assignments and assessments, and facilitate communication
+                  between trainees and instructors.
                 </p>
               </div>
               <div className="bg-[#EF9876] resrc-shadow flex flex-col rounded-3xl py-8 px-4 items-center justify-center w-72 h-80 ">

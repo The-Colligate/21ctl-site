@@ -10,28 +10,33 @@ export function Footer() {
   const index = ['/', '/support-centers', '/events', '/explore-more'];
   const power = ['/power'];
   const security = ['/security', '/identity'];
-  const tech = ['/digital-infrastructure', '/platform', '/communication', '/automation'];
+  const tech = [
+    '/digital-infrastructure',
+    '/platform',
+    '/communication',
+    '/automation',
+  ];
 
   const footerBg = academy.includes(router.pathname)
-  ? `bg-primary-orange`
-  : index.includes(router.pathname)
-  ? `bg-primary-orange`
-  : power.includes(router.pathname)
-  ? `bg-primary-green`
-  : security.includes(router.pathname)
-  ? `bg-magenta`
-  : tech.includes(router.pathname)
-  ? `bg-gradient-to-r from-[#0282BA] to-[#015A81] dark:from-[#252525] dark:to-[#252525] text-gray-100 text-lg font-light px-5 py-2`
-  : null;
+    ? `bg-primary-orange`
+    : index.includes(router.pathname)
+    ? `bg-primary-orange`
+    : power.includes(router.pathname)
+    ? `bg-primary-green`
+    : security.includes(router.pathname)
+    ? `bg-magenta`
+    : tech.includes(router.pathname)
+    ? `bg-gradient-to-r from-[#0282BA] to-[#015A81] dark:from-[#252525] dark:to-[#252525] text-gray-100 text-lg font-light px-5 py-2`
+    : null;
 
   const footerEmail = academy.includes(router.pathname)
-    ? 'support@academy.21ctl.com'
+    ? 'DEAsupport@21ctl.com'
     : index.includes(router.pathname)
     ? 'inquiry@21ctl.com'
     : power.includes(router.pathname)
-    ? 'support@power.21ctl.com'
+    ? 'supportpower@21ctl.com'
     : security.includes(router.pathname)
-    ? 'support@security.21ctl.com'
+    ? 'supportsecurity@21ctl.com'
     : tech.includes(router.pathname)
     ? 'support@technology.21ctl.com'
     : null;
@@ -124,9 +129,7 @@ export function Footer() {
         {/* address */}
         <div className="tablet:flex tablet:flex-col tablet:justify-center tablet:items-center">
           {/* <p className="font-bold text-lg text-black dark:text-white "> */}
-          <p className="font-bold text-lg text-gray-100 ">
-            Our Address
-          </p>
+          <p className="font-bold text-lg text-gray-100 ">Our Address</p>
 
           {/* <div className="text-black dark:text-white pt-2"> */}
           <div className="text-gray-100 pt-2">
