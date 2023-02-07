@@ -1,8 +1,9 @@
-
 export const mainLinks = [
   {
-    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
-    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
+    logoLightMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg',
+    logoDarkMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg',
     navLinks: [
       {
         name: 'Partners',
@@ -17,7 +18,7 @@ export const mainLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
           },
-          
+
           {
             name: 'MTN',
             link: '#',
@@ -49,8 +50,7 @@ export const mainLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058140/21ctl/logo/orange_ymolsp.png',
           },
-        
-         
+
           {
             name: 'VMware',
             link: '#',
@@ -126,14 +126,13 @@ export const mainLinks = [
           //   name: 'Partners',
           //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
           //   text: 'See our partners',
           // },
         ],
       },
       {
         name: 'Locations',
-        
+
         subLinks: [
           {
             name: 'Lekki',
@@ -304,14 +303,19 @@ export const academyNavLinks = () => [
     ],
   },
   {
-    additionalLinks: [{ name: 'Admission', link: '/admission' },{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [
+      { name: 'Admission', link: '/admission' },
+      { name: 'Main Portal', link: '/' },
+    ],
   },
 ];
 
 export const infraNavLinks = [
   {
-    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg",
-    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg",
+    logoLightMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg',
+    logoDarkMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg',
     navLinks: [
       {
         name: 'Connectivity',
@@ -326,21 +330,16 @@ export const infraNavLinks = [
             name: 'Data Centers',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
-
           },
           {
             name: 'Towers',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-            
           },
           {
             name: '5G Infrastructure Readiness services',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-            
           },
         ],
         extras: [],
@@ -426,8 +425,10 @@ export const infraNavLinks = [
 
 export const platformNavLinks = [
   {
-    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/light-logo-limited_wdkrnr.svg",
-    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058116/21ctl/light-logo_dark_limited_e7rs4t.svg",
+    logoLightMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/light-logo-limited_wdkrnr.svg',
+    logoDarkMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058116/21ctl/light-logo_dark_limited_e7rs4t.svg',
     navLinks: [
       {
         name: 'Aggregator',
@@ -450,15 +451,11 @@ export const platformNavLinks = [
             name: 'Payment Platform',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-           
           },
           {
             name: 'Automation',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-           
           },
           {
             name: 'Identity',
@@ -513,13 +510,14 @@ export const platformNavLinks = [
   {
     additionalLinks: [{ name: 'Main Portal', link: '/' }],
   },
-  
 ];
 
 export const powerNavLinks = [
   {
-    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png",
-    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png",
+    logoLightMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png',
+    logoDarkMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png',
     navLinks: [
       {
         name: 'Renewable Energy',
@@ -534,35 +532,27 @@ export const powerNavLinks = [
           //   name: 'Communication Platform',
           //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
-
           //   text: 'Discover the best role for you.',
           // },
           // {
           //   name: 'Cloud Platform',
           //   link: 'https://www.21ctl.com/cloud/',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-            
           // },
           // {
           //   name: 'Payment Platform',
           //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
           // },
           // {
           //   name: 'Automation',
           //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-          
           // },
           // {
           //   name: 'Identity',
           //   link: '#',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-           
           // },
         ],
         extras: [],
@@ -580,54 +570,49 @@ export const powerNavLinks = [
 ];
 export const peopleNavLinks = [
   {
-    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg",
-    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg",
+    logoLightMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg',
+    logoDarkMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg',
     navLinks: [
       {
         name: 'Academy',
-        link: '/training-pillars',
+        link: '/people',
         subLinks: [
           // {
           //   name: 'Trainee',
           //   link: '/admission',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
-            
           // },
           // {
           //   name: 'Curriculum',
           //   link: '/training-pillars',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
-
           // },
           // {
           //   name: 'Instructor',
           //   link: '/training-pillars',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
           // },
           // {
           //   name: 'Infrastructure',
           //   link: '/training-pillars',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
           // },
           // {
           //   name: 'Didactics',
           //   link: '/training-pillars',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
           // },
           // {
           //   name: 'Industry',
           //   link: '/training-pillars',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
           // },
           // {
           //   name: 'Quality Assurance',
           //   link: '/training-pillars',
           //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
           // },
         ],
         extras: [
@@ -636,7 +621,7 @@ export const peopleNavLinks = [
             link: 'https://education.oracle.com/',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg',
           },
-       
+
           {
             name: 'Schneider University',
             link: 'https://university.se.com/',
@@ -660,7 +645,8 @@ export const peopleNavLinks = [
             text5: 'Going Green: Energy Efficiency in the Data Center',
             text6: 'Fundamentals of Data Centre Power',
             text7: 'Calculating Total Cooling requirements',
-            text8: 'Fundamentals of Data Centre Cooling Black - client and licensing',
+            text8:
+              'Fundamentals of Data Centre Cooling Black - client and licensing',
             text9: 'Data Center Projects: Commissioning',
           },
           {
@@ -678,7 +664,8 @@ export const peopleNavLinks = [
             link: '/programmes',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
             text: 'VMware vSphere: Install, Configure, Manage [V7]',
-            text1: 'VMware NSX-T Data Center: Install, Configure, Manage [V3.2]',
+            text1:
+              'VMware NSX-T Data Center: Install, Configure, Manage [V3.2]',
             text2: 'VMware Cloud Director: Install, Configure, Manage [V10.3]',
             text3: 'Additional recommended',
             text4: 'VMware vSphere: Design [V7]',
@@ -699,7 +686,8 @@ export const peopleNavLinks = [
             text6: 'Java Development on Oracle Cloud',
             text7: 'SQL on Oracle Cloud',
             text8: 'PL/SQL on Oracle Cloud',
-            text9: 'Oracle Database 19c: Administration Workshop on Oracle Cloud',
+            text9:
+              'Oracle Database 19c: Administration Workshop on Oracle Cloud',
             text10: 'Build MySQL Databases for Applications on Oracle Cloud',
             text11: 'Administer MySQL on Oracle Cloud',
             text12: 'Administer Oracle Cloud Infrastructure',
@@ -712,32 +700,28 @@ export const peopleNavLinks = [
             text1: 'Oracle HCM Cloud Business Process',
             text2: 'Oracle Sales Cloud Business Process',
             text3: 'Oracle Procurement Cloud Business Process',
-            },
-            
-            {
-              name: 'Super Micro',
-              link: '/programmes',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp',
-              text: 'OS Cerifications',
-              text1: 'Cloud services',
-              text2: 'Cloud Orchestrator',
-              text3: 'Virtualization',
-              text4: 'Kubernetes Containers',
-            },
+          },
 
+          {
+            name: 'Super Micro',
+            link: '/programmes',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp',
+            text: 'OS Cerifications',
+            text1: 'Cloud services',
+            text2: 'Cloud Orchestrator',
+            text3: 'Virtualization',
+            text4: 'Kubernetes Containers',
+          },
 
-           
-
-            {
-              name: 'SYSTEM',
-              link: '#',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/system_rfsecw.svg',
-              text: 'Devops',
-              text1: 'Cybersecurity',
-              text2: 'Security and Compliance',
-              text3: 'Infrastructrue as Code (IaC)',
-        
-            },
+          {
+            name: 'SYSTEM',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058142/21ctl/icons/system_rfsecw.svg',
+            text: 'Devops',
+            text1: 'Cybersecurity',
+            text2: 'Security and Compliance',
+            text3: 'Infrastructrue as Code (IaC)',
+          },
           // {
           //   name: 'WEB',
           //   link: '#',
@@ -776,7 +760,7 @@ export const peopleNavLinks = [
           //   text4: 'Data Analystics',
           //   text5: 'Machine Learning',
           // },
-         
+
           // {
           //   name: 'MARKETING',
           //   link: '#',
@@ -814,7 +798,6 @@ export const peopleNavLinks = [
           //   text3: 'Leadership Skills',
           //   text4: 'Change Manangement',
           // },
-          
         ],
         extras: [
           //   {
@@ -885,7 +868,7 @@ export const peopleNavLinks = [
             text2: 'Cloud Database Sevices',
             text3: 'DevOps',
           },
-      
+
           //   {
           //     name: 'MIT',
           //     link: '#',
@@ -901,7 +884,6 @@ export const peopleNavLinks = [
             text1: 'Cloud Network Security',
             text3: 'Security Administration',
           },
-        
         ],
         extras: [
           {
@@ -937,14 +919,16 @@ export const peopleNavLinks = [
 
 export const securityNavLinks = [
   {
-    logoLightMode: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
-    logoDarkMode:"https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
+    logoLightMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png',
+    logoDarkMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png',
     navLinks: [
       {
         name: 'Cybersecurity',
         subLinks: [
-            {
-                name: 'Managed cybersecurity services',
+          {
+            name: 'Managed cybersecurity services',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
             text: 'Threat management',
@@ -952,7 +936,7 @@ export const securityNavLinks = [
             text2: 'Managed cloud security',
             text3: 'Protect and Backup Data',
             text4: 'Identity verification (Physical and Infrastructure)',
-            },
+          },
           {
             // name: 'Surveillance',
             name: 'Managed network security services',
@@ -962,24 +946,22 @@ export const securityNavLinks = [
             text1: 'Managed firewall services',
             text2: 'Intrusion detection and prevention',
             text3: 'Penetration Testing',
-            text4: 'Security Education and Mentoring'
-
+            text4: 'Security Education and Mentoring',
           },
 
-       
-            // name: 'Biometric Lock',
-            // link: '#',
-            {
-              // name: 'Surveillance',
-              name: 'Security Expert Training',
-              link: '#',
-              icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
-              text: 'Security Administration',
-              text1: 'DevSecOps',
-              text2: 'Threat management',
-              text3: 'Cloud Security',
-            },
-          
+          // name: 'Biometric Lock',
+          // link: '#',
+          {
+            // name: 'Surveillance',
+            name: 'Security Expert Training',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
+            text: 'Security Administration',
+            text1: 'DevSecOps',
+            text2: 'Threat management',
+            text3: 'Cloud Security',
+          },
+
           // {
           //   name: 'Threat analysis',
           //   link: '#',
@@ -997,8 +979,6 @@ export const securityNavLinks = [
             name: 'Operations',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
-
-       
           },
           {
             name: 'Applications',
@@ -1025,11 +1005,10 @@ export const securityNavLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
-
         ],
         extras: [],
       },
-      
+
       {
         name: 'Cloud Security',
         subLinks: [
@@ -1048,7 +1027,6 @@ export const securityNavLinks = [
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/icons/home/security_g3lkbo.svg',
           },
-        
         ],
         extras: [],
       },
