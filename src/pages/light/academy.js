@@ -387,7 +387,8 @@ const Academy = () => {
                   lessons unique and keep all students interested and engaged.
                 </p>
                 <a
-                href="https://digitalexpertsacademy.herokuapp.com/"
+                // href="https://digitalexpertsacademy.herokuapp.com/"
+                href="http://application.21ctldea.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="block dark:hidden "

@@ -411,7 +411,8 @@ export function LightNavbar({ menuProp }) {
           {excluded.includes(router.pathname) ? (
             <>
               <a
-                href="https://digitalexpertsacademy.herokuapp.com/"
+                // href="https://digitalexpertsacademy.herokuapp.com/"
+                href="http://application.21ctldea.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="block dark:hidden "
