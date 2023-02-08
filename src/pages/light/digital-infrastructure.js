@@ -114,7 +114,7 @@ const DigitalInfrastructure = () => {
                 </div>
                 <div className="text-center">
                   <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
-                    14M+
+                    45M+
                   </p>
                   <span className="font-light">Satisfied Customers</span>
                 </div>

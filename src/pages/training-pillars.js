@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
 import Head from 'next/head';
+import Video from '../components/Video';
 
 const Pillars = () => {
+  const [video1, setVideo1] = useState(false);
+  
+  
+  const src1 =
+  'https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4';
   return (
     <>
       <Head>
@@ -15,7 +21,7 @@ const Pillars = () => {
           <div className="w-full min-h-[50%] bg_gradient_l"></div>
           <div className="w-full min-h-[50%] bg_gradient_r"></div>
         </div>
-        <div className="w-full min-h-screen flex flex-col z-[1] ">
+        <div className="w-full min-h-screen flex flex-col z-[0] ">
           <LightNavbar />
 
           {/* top-section */}
@@ -79,14 +85,14 @@ const Pillars = () => {
                   Curriculum
                 </h2>
                 <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
-                  The Academy&apos;s curriculum is designed to provide trainees
+                  The Academy&apos;s curriculum provides trainees
                   with theoretical and practical knowledge and skills for
                   success in their field, updated regularly by instructors.
                   <ul className="list-disc mt-4 pl-4">
                     <li className="">
                       <span className="font-bold">Traditional based</span>
                       <p>
-                        This curriculum will consist of a set of courses that
+                        This curriculum consists of a set of courses that
                         requires to be taken in a specific order, with each
                         course building on the previous one.
                       </p>
@@ -94,7 +100,7 @@ const Pillars = () => {
                     <li className="">
                       <span className="font-bold">Product based</span>
                       <p>
-                        This curriculum will focus on the completion of
+                        This curriculum focuses on the completion of
                         real-world projects and challenges, with trainees
                         learning through hands-on experience.
                       </p>
@@ -102,7 +108,7 @@ const Pillars = () => {
                     <li className="">
                       <span className="font-bold">Problem based</span>
                       <p>
-                        This curriculum will focus on the resolution of
+                        This curriculum focuses on the resolution of
                         real-world problems and challenges, with trainees
                         learning through problem-solving and critical thinking.
                       </p>
@@ -133,7 +139,7 @@ const Pillars = () => {
                 </h2>
                 <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
                   Our instructors are experienced mentors, professionals and
-                  experts in:
+                  experts from:
                   <ul className="list-disc mt-4 pl-4">
                     <li className="font-light">Technology Companies </li>
                     <li className="font-light">Professional Associations</li>
@@ -205,7 +211,25 @@ const Pillars = () => {
               </div>
             </div>
           </section>
-
+          <div className="flex justify-center items-center ">
+          <button
+                  onClick={() => setVideo1(true)}
+                  className=" bg-primary-orange rounded text-white py-3 px-6 my-6 hover:bg-primary-orange hover:text-white"
+                >
+                  <span className="capitalize">
+                    see our training facilities
+                  </span>
+                </button>
+          </div>
+          <div className="z-50">
+            {video1 && (
+              <Video
+                modalIsOpen={video1}
+                closeModal={() => setVideo1(false)}
+                video_src={src1}
+              />
+            )}
+          </div>
           <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div className="">
