@@ -86,7 +86,7 @@ function LightDesign() {
         <div className="w-full min-h-[50%] bg_gradient_l"></div>
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
       </div> */}
-      <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
+      <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[0]">
         <LightNavbar />
         <div className=" flex items-center justify-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
           <motion.div 
