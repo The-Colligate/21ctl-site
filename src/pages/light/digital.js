@@ -302,7 +302,6 @@ const Digital = () => {
                     Africa with multiple carrier and utility feeds and strong
                     electrical and mechanical redundancy.
                   </p>
-                  
                 </div>
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058119/21ctl/data-centers/apapa-center_mmq3so.png"

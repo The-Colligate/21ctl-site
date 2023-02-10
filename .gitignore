@@ -12,7 +12,8 @@ pnpm-lock.yaml
 /coverage
 
 # next.js
-/.next/
+# /.next/
+/.next
 /out/
 
 # production
