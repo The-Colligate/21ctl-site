@@ -28,7 +28,7 @@ const Power = () => {
           <LightNavbar />
 
           <section className="sm:px-28 px-8 my-16 sm:py-0 pt-16">
-            <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
+            <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center max-w-fit m-auto">
               <motion.div
                 variants={leftTransitionVarient}
                 animate="visible"

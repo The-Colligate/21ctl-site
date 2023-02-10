@@ -104,7 +104,7 @@ const Academy = () => {
                  <span className="text-primary-orange">Eligibility</span> Criteria
                 </h2>
                 <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
-                To be Considered for a Admission, you must
+                Applicants can be any of the following:
                   <ul className="list-disc mt-4 pl-4 space-y-1">
                     <li className="font-light">Recent graduates looking to start a career in the IT field </li>
                     <li className="font-light">Companies or organizations looking to train their employees in specific IT skills or technologies</li>

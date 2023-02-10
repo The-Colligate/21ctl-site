@@ -30,7 +30,7 @@ export function Footer() {
     : null;
 
   const footerEmail = academy.includes(router.pathname)
-    ? 'DEAsupport@21ctl.com'
+    ? 'deasupport@21ctl.com'
     : index.includes(router.pathname)
     ? 'inquiry@21ctl.com'
     : power.includes(router.pathname)
@@ -38,7 +38,7 @@ export function Footer() {
     : security.includes(router.pathname)
     ? 'supportsecurity@21ctl.com'
     : tech.includes(router.pathname)
-    ? 'support@technology.21ctl.com'
+    ? 'supporttechnology@21ctl.com'
     : null;
 
   // get year
@@ -180,7 +180,7 @@ export function Footer() {
               <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
             </svg>{' '}
             {/* <span className="text-black dark:text-white hover:text-primary-orange ml-3"> */}
-            <span className="text-gray-100 hover:text-primary-orange ml-3">
+            <span className="text-gray-100  ml-3">
               <a href={`mailto:${footerEmail}`}>{footerEmail}</a>
             </span>
           </div>
@@ -189,7 +189,7 @@ export function Footer() {
             <Link
               href="/support-centers"
               // className="text-black dark:text-white hover:text-primary-orange ml-[30px]"
-              className="text-gray-100 hover:text-primary-orange ml-[30px]"
+              className="text-gray-100  ml-[30px]"
             >
               Support Centers
             </Link>
