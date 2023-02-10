@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import Modal from 'react-modal';
-import ReactPlayer from 'react-player';
-
+// import ReactPlayer from 'react-player';
+// const ReactPlayer = dynamic(() => import('react-player'), {
+//   ssr: false,
+// });
 
 const customStyles = {
   content: {
@@ -40,8 +42,13 @@ const Video = ({ video_src, closeModal, modalIsOpen }) => {
       contentLabel="Take a tour"
     >
       <span className='hover:text-primary-orange font-semibold cursor-pointer flex justify-end pb-1' onClick={closeModal}><CloseIcon/></span>
-      <ReactPlayer url={video_src} playing={true} controls={true} />
-
+      {/* <ReactPlayer url={video_src} playing={true} controls={true} /> */}
+      <video width="1184" height="736" controls>
+            <source
+             src = {video_src}
+              type="video/mp4"
+            />
+          </video>
       {/* <div className="v_container">
         <div className="video-wrapper">
           <video
