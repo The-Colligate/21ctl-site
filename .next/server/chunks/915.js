@@ -54,7 +54,7 @@ const Digital = ()=>{
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_layout___WEBPACK_IMPORTED_MODULE_3__/* .LightNavbar */ .w_, {}),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                                className: "flex sm:px-36 px-8 my-6 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28",
+                                className: "flex sm:px-36 px-8 my-6 items-center max-w-fit m-auto space-x-16 tablet:flex-col tablet:space-x-0 pt-28",
                                 children: [
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
                                         variants: _components_constants_animations__WEBPACK_IMPORTED_MODULE_5__/* .leftTransitionVarient */ .oC,

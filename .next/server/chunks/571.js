@@ -108,7 +108,7 @@ function LightDesign() {
                 className: "max-w-full min-h-screen flex flex-col overflow-x-hidden overflow-y-hidden relative background-color",
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "w-full min-h-screen overflow-y-hidden flex flex-col z-[1]",
+                        className: "w-full min-h-screen overflow-y-hidden flex flex-col z-[0]",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_layout___WEBPACK_IMPORTED_MODULE_1__/* .LightNavbar */ .w_, {}),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -118,7 +118,7 @@ function LightDesign() {
                                         variants: _components_constants_animations__WEBPACK_IMPORTED_MODULE_7__/* .leftTransitionVarient */ .oC,
                                         animate: "visible",
                                         initial: "hidden",
-                                        className: "w-full h-full flex items-center justify-between",
+                                        className: "h-full flex items-center",
                                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                             className: "max-w-3xl mt-10 flex flex-col items-center justify-center",
                                             children: [

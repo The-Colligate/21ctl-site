@@ -68,7 +68,7 @@ const Power = ()=>{
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
                                 className: "sm:px-28 px-8 my-16 sm:py-0 pt-16",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center",
+                                    className: "flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center max-w-fit m-auto",
                                     children: [
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
                                             variants: _components_constants_animations__WEBPACK_IMPORTED_MODULE_5__/* .leftTransitionVarient */ .oC,

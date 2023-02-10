@@ -2072,7 +2072,7 @@ function Footer() {
         "/automation"
     ];
     const footerBg = academy.includes(router.pathname) ? `bg-primary-orange` : index.includes(router.pathname) ? `bg-primary-orange` : power.includes(router.pathname) ? `bg-primary-green` : security.includes(router.pathname) ? `bg-magenta` : tech.includes(router.pathname) ? `bg-gradient-to-r from-[#0282BA] to-[#015A81] dark:from-[#252525] dark:to-[#252525] text-gray-100 text-lg font-light px-5 py-2` : null;
-    const footerEmail = academy.includes(router.pathname) ? "DEAsupport@21ctl.com" : index.includes(router.pathname) ? "inquiry@21ctl.com" : power.includes(router.pathname) ? "supportpower@21ctl.com" : security.includes(router.pathname) ? "supportsecurity@21ctl.com" : tech.includes(router.pathname) ? "support@technology.21ctl.com" : null;
+    const footerEmail = academy.includes(router.pathname) ? "deasupport@21ctl.com" : index.includes(router.pathname) ? "inquiry@21ctl.com" : power.includes(router.pathname) ? "supportpower@21ctl.com" : security.includes(router.pathname) ? "supportsecurity@21ctl.com" : tech.includes(router.pathname) ? "supporttechnology@21ctl.com" : null;
     // get year
     const year = new Date().getFullYear();
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("footer", {
@@ -2235,7 +2235,7 @@ function Footer() {
                                     }),
                                     " ",
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                        className: "text-gray-100 hover:text-primary-orange ml-3",
+                                        className: "text-gray-100 ml-3",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: `mailto:${footerEmail}`,
                                             children: footerEmail
@@ -2248,7 +2248,7 @@ function Footer() {
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                     href: "/support-centers",
                                     // className="text-black dark:text-white hover:text-primary-orange ml-[30px]"
-                                    className: "text-gray-100 hover:text-primary-orange ml-[30px]",
+                                    className: "text-gray-100 ml-[30px]",
                                     children: "Support Centers"
                                 })
                             })
@@ -2496,7 +2496,7 @@ function LightNavbar({ menuProp  }) {
                                                                                 " "
                                                                             ]
                                                                         }),
-                                                                        sublinks?.text4 !== null && link.name === "Training" && router.pathname === "/people" || router.pathname === "/programmes" || router.pathname === "/training-pillars" ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                                                                        sublinks?.text4 !== null && link.name === "Training" && (router.pathname === "/people" || router.pathname === "/programmes" || router.pathname === "/training-pillars") ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                                                                             href: "/programmes",
                                                                             className: `ml-9 space-y-2 text-[15px] ${textColor} `,
                                                                             children: [

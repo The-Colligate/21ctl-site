@@ -235,7 +235,7 @@ const DigitalInfrastructure = ()=>{
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                         className: "text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold",
-                                                        children: "14M+"
+                                                        children: "45M+"
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         className: "font-light",
