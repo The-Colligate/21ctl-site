@@ -22,7 +22,7 @@ const PopUpModal = ({img_src, img_alt, modalIsOpen, closeModal}) => {
     contentLabel=""
   >
       <span className='hover:text-primary-blue font-semibold cursor-pointer flex justify-end pb-1' onClick={closeModal}><CloseIcon/></span>
-    <img src={img_src} alt={img_alt} className=" h-[700px] "/>
+    <img src={img_src} alt={img_alt} className=" sm:h-[700px] h-auto object-cover "/>
 
   </Modal>
   )
