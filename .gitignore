@@ -14,12 +14,10 @@ pnpm-lock.yaml
 /coverage
 
 # next.js
-/.next/cache/webpack
-/.next/cache/webpack/*
 /out/
 
 # production
-/build
+# /build
 
 # misc
 .DS_Store

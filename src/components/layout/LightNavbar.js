@@ -239,9 +239,9 @@ export function LightNavbar({ menuProp }) {
                             </Link>
                            
                             {(sublinks?.text4 !== null && link.name === "Training" &&
-                              router.pathname === '/people') ||
+                              (router.pathname === '/people' ||
                             router.pathname === '/programmes' ||
-                            router.pathname === '/training-pillars' ? (
+                            router.pathname === '/training-pillars')) ? (
                               <Link
                                 href="/programmes"
                                 className={`ml-9 space-y-2 text-[15px] ${textColor} `}

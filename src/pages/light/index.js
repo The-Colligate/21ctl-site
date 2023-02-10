@@ -86,7 +86,7 @@ function LightDesign() {
         <div className="w-full min-h-[50%] bg_gradient_l"></div>
         <div className="w-full min-h-[50%] bg_gradient_r"></div>
       </div> */}
-      <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[1]">
+      <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[0]">
         <LightNavbar />
         <div className=" flex items-center justify-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
           <motion.div 
@@ -94,7 +94,7 @@ function LightDesign() {
           animate="visible"
           initial="hidden"
           
-          className="w-full h-full flex items-center justify-between">
+          className="h-full flex items-center">
             <div className="max-w-3xl mt-10 flex flex-col items-center justify-center">
               <h1 className="text-5xl text-silver font-lato font-black whitespace-pre-wrap dark:text-white largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl ">
                 Building Africa&apos;s{' '}

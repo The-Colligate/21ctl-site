@@ -25,7 +25,7 @@ const Digital = () => {
         <div className="w-full min-h-screen flex flex-col z-[1]">
           <LightNavbar />
 
-          <section className="flex sm:px-36 px-8 my-6 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
+          <section className="flex sm:px-36 px-8 my-6 items-center max-w-fit m-auto space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
             <motion.div
               variants={leftTransitionVarient}
               animate="visible"
