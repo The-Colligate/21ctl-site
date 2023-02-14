@@ -581,7 +581,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Trainee',
-            link: '/admission',
+            link: '/training-pillars',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
           },
           {
@@ -835,14 +835,7 @@ export const peopleNavLinks = [
             text3: 'Security',
             text4: 'Serverless',
           },
-          {
-            name: 'Schneider Electric University',
-            link: '#',
-            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Data Center Physical Infrastructure',
-            // text1: 'See more',
-          },
+         
           {
             name: 'VMware',
             link: '#',
@@ -853,13 +846,7 @@ export const peopleNavLinks = [
             text3: 'App Modernization',
             text4: 'Intrinsic Security',
           },
-          {
-            name: 'Microsoft Azure',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Cloud Computing',
-            text1: 'Virtual Machines',
-          },
+        
           {
             name: 'Oracle University',
             link: '#',
@@ -869,7 +856,32 @@ export const peopleNavLinks = [
             text2: 'Cloud Database Sevices',
             text3: 'DevOps',
           },
-
+          {
+            name: 'Super Micro',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            text: 'OS Cerifications',
+            text1: 'Cloud services',
+            text2: 'Cloud Orchestrator',
+            text3: 'Virtualization',
+            text4: 'Kubernetes Containers',
+            
+          },
+          {
+            name: 'Microsoft Azure',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            text: 'Cloud Computing',
+            text1: 'Virtual Machines',
+          },
+          {
+            name: 'Schneider Electric University',
+            link: '#',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            text: 'Data Center Physical Infrastructure',
+            // text1: 'See more',
+          },
           //   {
           //     name: 'MIT',
           //     link: '#',
@@ -887,17 +899,7 @@ export const peopleNavLinks = [
             text3: '',
 
           },
-          {
-            name: 'Super Micro',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'OS Cerifications',
-            text1: 'Cloud services',
-            text2: 'Cloud Orchestrator',
-            text3: 'Virtualization',
-            text4: 'Kubernetes Containers',
-            
-          },
+        
           {
             name: 'UNDP',
             link: '#',
