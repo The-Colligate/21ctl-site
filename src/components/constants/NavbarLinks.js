@@ -825,7 +825,7 @@ export const peopleNavLinks = [
       {
         name: 'Partners',
         subLinks: [
-          {
+              {
             name: 'Amazon',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
@@ -838,9 +838,10 @@ export const peopleNavLinks = [
           {
             name: 'Schneider Electric University',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             text: 'Data Center Physical Infrastructure',
-            text1: 'See more',
+            // text1: 'See more',
           },
           {
             name: 'VMware',
@@ -877,12 +878,45 @@ export const peopleNavLinks = [
           //     // text1: 'See more',
           //   },
           {
-            name: 'Checkpoint University',
+            name: 'Oracle Academy',
+            link: '#',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676391050/21ctl/partners/oracle_academy_ycokfg.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            text: '',
+            text1: '',
+            text3: '',
+
+          },
+          {
+            name: 'Super Micro',
             link: '#',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Malware analysis',
-            text1: 'Cloud Network Security',
-            text3: 'Security Administration',
+            text: 'OS Cerifications',
+            text1: 'Cloud services',
+            text2: 'Cloud Orchestrator',
+            text3: 'Virtualization',
+            text4: 'Kubernetes Containers',
+            
+          },
+          {
+            name: 'UNDP',
+            link: '#',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676390680/21ctl/partners/undp_jvtcfj.png',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            // text: 
+            // text1: 
+            // text3: 
+            
+          },
+          {
+            name: 'Nigerian Jubilee fellowship program',
+            link: '#',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676391508/21ctl/partners/undp_ptwxxd.jpg' 
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            // text: 
+            // text1: 
+            // text3: 
+            
           },
         ],
         extras: [
