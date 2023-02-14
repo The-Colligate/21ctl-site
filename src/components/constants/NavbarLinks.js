@@ -828,60 +828,39 @@ export const peopleNavLinks = [
               {
             name: 'Amazon',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Advanced Networking',
-            text1: 'Data Analytics',
-            text2: 'Databases',
-            text3: 'Security',
-            text4: 'Serverless',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp',
+            
           },
          
           {
             name: 'VMware',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Multi-Cloud',
-            text1: 'Virtual Cloud Network',
-            text2: 'Digital Workspace',
-            text3: 'App Modernization',
-            text4: 'Intrinsic Security',
-          },
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
+             },
         
           {
             name: 'Oracle University',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Oracle Databases',
-            text1: 'Oracle Cloud Infrastructure (OCI)',
-            text2: 'Cloud Database Sevices',
-            text3: 'DevOps',
-          },
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
+             },
           {
             name: 'Super Micro',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'OS Cerifications',
-            text1: 'Cloud services',
-            text2: 'Cloud Orchestrator',
-            text3: 'Virtualization',
-            text4: 'Kubernetes Containers',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp',
             
           },
           {
             name: 'Microsoft Azure',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Cloud Computing',
-            text1: 'Virtual Machines',
-          },
+            icon:  'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Microsoft-Azure-Emblem_ijjxxx.png',
+          
+             },
           {
             name: 'Schneider Electric University',
             link: '#',
-            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Data Center Physical Infrastructure',
-            // text1: 'See more',
-          },
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+               },
           //   {
           //     name: 'MIT',
           //     link: '#',
@@ -892,32 +871,23 @@ export const peopleNavLinks = [
           {
             name: 'Oracle Academy',
             link: '#',
-            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676391050/21ctl/partners/oracle_academy_ycokfg.png',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: '',
-            text1: '',
-            text3: '',
-
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676391050/21ctl/partners/oracle_academy_ycokfg.png',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            
           },
         
           {
             name: 'UNDP',
             link: '#',
-            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676390680/21ctl/partners/undp_jvtcfj.png',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            // text: 
-            // text1: 
-            // text3: 
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676390680/21ctl/partners/undp_jvtcfj.png',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             
           },
           {
             name: 'Nigerian Jubilee fellowship program',
             link: '#',
-            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676391508/21ctl/partners/undp_ptwxxd.jpg' 
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            // text: 
-            // text1: 
-            // text3: 
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676391508/21ctl/partners/undp_ptwxxd.jpg' 
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
             
           },
         ],
