@@ -49,7 +49,7 @@ const Pillars = () => {
               <div>
                 <img
                   src="/logo/Working-Man.png"
-                  className="w-3/4 h-3/4 dark:hidden "
+                  className="w-3/4 h-3/4 "
                   alt="communication"
                 />
               </div>
