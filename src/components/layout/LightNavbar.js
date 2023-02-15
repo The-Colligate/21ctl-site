@@ -397,8 +397,8 @@ export function LightNavbar({ menuProp }) {
             >
               <a
                 href={`${link.link}`}
-                target="_blank"
-                rel="noreferrer"
+                // target="_blank"
+                // rel="noreferrer"
                 className="flex items-center"
               >
                 {link.name}
@@ -415,17 +415,17 @@ export function LightNavbar({ menuProp }) {
                 href="http://application.21ctldea.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="block dark:hidden "
+                className="block  "
               >
                 <button className={`bg-${color} rounded text-white py-3 px-6 my-6 tablet:px-2`}>
                   Apply now
                 </button>
               </a>
               <a
-                href="https://academy-admission-21ctl.koyeb.app/"
+                href="https://login.21ctldea.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="block dark:hidden "
+                className="block  "
               >
                 <button className={`border-2 border-${color} rounded bg-white ${textColor} hover:text-white hover:bg-${color} py-3 px-6 my-6 tablet:px-2`}>
                   Login

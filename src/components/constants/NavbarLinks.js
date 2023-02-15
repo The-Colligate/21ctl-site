@@ -175,6 +175,7 @@ export const mainLinks = [
       { name: 'Digital Platforms', link: '/platform' },
       { name: 'Events', link: '/event/events' },
       { name: 'Explore more', link: '/explore-more' },
+      { name: 'Booking', link: '/booking' },
     ],
   },
 ];
@@ -305,7 +306,7 @@ export const academyNavLinks = () => [
   {
     additionalLinks: [
       { name: 'Admission', link: '/admission' },
-      { name: 'Main Portal', link: '/' },
+      { name: 'Home', link: '/' },
     ],
   },
 ];
@@ -419,7 +420,7 @@ export const infraNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Home', link: '/' }],
   },
 ];
 
@@ -508,7 +509,7 @@ export const platformNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Home', link: '/' }],
   },
 ];
 
@@ -565,7 +566,7 @@ export const powerNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Home', link: '/' }],
   },
 ];
 export const peopleNavLinks = [
@@ -581,7 +582,7 @@ export const peopleNavLinks = [
         subLinks: [
           {
             name: 'Trainee',
-            link: '/admission',
+            link: '/training-pillars',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058129/21ctl/icons/home/about_scr9zn.svg',
           },
           {
@@ -825,50 +826,42 @@ export const peopleNavLinks = [
       {
         name: 'Partners',
         subLinks: [
-          {
+              {
             name: 'Amazon',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Advanced Networking',
-            text1: 'Data Analytics',
-            text2: 'Databases',
-            text3: 'Security',
-            text4: 'Serverless',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp',
+            
           },
-          {
-            name: 'Schneider Electric University',
-            link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
-            text: 'Data Center Physical Infrastructure',
-            text1: 'See more',
-          },
+         
           {
             name: 'VMware',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Multi-Cloud',
-            text1: 'Virtual Cloud Network',
-            text2: 'Digital Workspace',
-            text3: 'App Modernization',
-            text4: 'Intrinsic Security',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058147/21ctl/logo/partners/VMware-logo-1_dift5l.jpg',
+             },
+        
+          {
+            name: 'Oracle University',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png',
+             },
+          {
+            name: 'Super Micro',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp',
+            
           },
           {
             name: 'Microsoft Azure',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Cloud Computing',
-            text1: 'Virtual Machines',
-          },
+            icon:  'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Microsoft-Azure-Emblem_ijjxxx.png',
+          
+             },
           {
-            name: 'Oracle University',
+            name: 'Schneider Electric University',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Oracle Databases',
-            text1: 'Oracle Cloud Infrastructure (OCI)',
-            text2: 'Cloud Database Sevices',
-            text3: 'DevOps',
-          },
-
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+               },
           //   {
           //     name: 'MIT',
           //     link: '#',
@@ -877,12 +870,26 @@ export const peopleNavLinks = [
           //     // text1: 'See more',
           //   },
           {
-            name: 'Checkpoint University',
+            name: 'Oracle Academy',
             link: '#',
-            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-            text: 'Malware analysis',
-            text1: 'Cloud Network Security',
-            text3: 'Security Administration',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676391050/21ctl/partners/oracle_academy_ycokfg.png',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            
+          },
+        
+          {
+            name: 'UNDP',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676390680/21ctl/partners/undp_jvtcfj.png',
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            
+          },
+          {
+            name: 'Nigerian Jubilee fellowship program',
+            link: '#',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676391508/21ctl/partners/undp_ptwxxd.jpg' 
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
+            
           },
         ],
         extras: [
@@ -913,7 +920,7 @@ export const peopleNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Home', link: '/' }],
   },
 ];
 
@@ -1033,6 +1040,6 @@ export const securityNavLinks = [
     ],
   },
   {
-    additionalLinks: [{ name: 'Main Portal', link: '/' }],
+    additionalLinks: [{ name: 'Home', link: '/' }],
   },
 ];

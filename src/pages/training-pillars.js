@@ -7,6 +7,7 @@ const Pillars = () => {
   const [video1, setVideo1] = useState(false);
   
   
+  
   const src1 =
   'https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4';
   return (
@@ -48,7 +49,7 @@ const Pillars = () => {
               <div>
                 <img
                   src="/logo/Working-Man.png"
-                  className="w-3/4 h-3/4 dark:hidden "
+                  className="w-3/4 h-3/4 "
                   alt="communication"
                 />
               </div>
@@ -78,13 +79,13 @@ const Pillars = () => {
             </div>
           </section>
 
-          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
+          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5 dark:bg-transparent">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div className="">
-                <h2 className="font-bold sm:text-5xl text-2xl text-primary-orange dark:text-dark">
+                <h2 className="font-bold sm:text-5xl text-2xl text-primary-orange dark:text-white ">
                   Curriculum
                 </h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white ">
                   The Academy&apos;s curriculum provides trainees
                   with theoretical and practical knowledge and skills for
                   success in their field, updated regularly by instructors.
@@ -133,7 +134,7 @@ const Pillars = () => {
                   className="w-[600px]"
                 />
               </div>
-              <div className="max-w-3xl">
+              <div className="max-w-3xl ">
                 <h2 className="font-bold text-primary-orange sm:text-5xl text-2xl">
                   Instructors
                 </h2>
@@ -154,8 +155,9 @@ const Pillars = () => {
               </div>
             </div>
           </section>
+          
 
-          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5 dark:bg-black">
+          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5 dark:bg-transparent">
             <div>
               <h2 className="text-center sm:text-5xl text-2xl text-primary-orange font-bold">
                 Infrastructure and Resources
@@ -211,7 +213,7 @@ const Pillars = () => {
               </div>
             </div>
           </section>
-          <div className="flex justify-center items-center ">
+          <div className="flex justify-center items-center bg-[#f3f4fa] dark:bg-transparent">
           <button
                   onClick={() => setVideo1(true)}
                   className=" bg-primary-orange rounded text-white py-3 px-6 my-6 hover:bg-primary-orange hover:text-white"
@@ -230,16 +232,15 @@ const Pillars = () => {
               />
             )}
           </div>
-          <section className="bg-[#f3f4fa] py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
+          <section className="bg-[#f3f4fa] dark:bg-transparent py-20 sm:pl-28 pl-8 sm:pr-10 pr-5">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div className="">
-                <h2 className="font-bold sm:text-5xl text-2xl text-primary-orange dark:text-dark">
+                <h2 className="font-bold sm:text-5xl text-2xl text-primary-orange dark:text-white ">
                   Didactics
                 </h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-dark">
-                  We are responsible for overseeing trainee eligibility,
-                  reviewing and approving applications, supporting program
-                  facilitators, and serving as a liaison between facilitators
+                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white ">
+                 Oversee trainee eligibility, reviews and approves applications, supports program
+                  facilitators, and serves as a liaison between facilitators
                   and trainees.
                 </p>
               </div>
@@ -253,13 +254,13 @@ const Pillars = () => {
             </div>
           </section>
 
-          <section className="">
-            <h3 className="text-primary-orange text-center font-bold sm:text-5xl text-2xl my-10 px-5">
+          <section className=" training_pillars_partners light:bg-[#f3f4fa] px-20">
+            <h3 className="text-primary-orange text-center font-bold sm:text-5xl text-2xl my-10 px-5 ">
               Industry Partners.
             </h3>
             <div className="flex">
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675088840/21ctl/Group_56021_jl38q5.svg"
+                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1676387495/21ctl/partners/partners_cep2j1.png"
                 className="w-full"
               />
             </div>

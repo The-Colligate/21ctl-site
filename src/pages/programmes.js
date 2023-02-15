@@ -31,12 +31,14 @@ const Programmes = () => {
             <div className="mt-[20vh] flex flex-col items-center">
               <h2 className="text-primary-orange text-4xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl"> Browse Courses</h2>
               <div className="flex w-4/5 justify-center">
-                <input type="text" value={searchValue} onChange={(e) => updateSearchValue(e.target.value)} className="w-2/3 border border-black p-3" />
+                <input type="text" value={searchValue} onChange={(e) => {
+                  // console.log(`${typeof searchValue}`);
+                  updateSearchValue(e.target.value);}} className="w-2/3 border border-black p-3" />
                 <button className="p-3 bg-primary-orange text-white">Search</button>
               </div>
               <div className="grid gap-10 grid-cols-3 largeTablet:grid-cols-2 tablet:grid-cols-2 mt-10 phone:grid-cols-1">
                 {courses
-                  .filter(course => course.toString().trim().toLowerCase().includes(searchValue.trim().toLowerCase()))
+                  .filter((course) => course.toString().trim().toLowerCase().includes(searchValue.toString()))
                   .map((course) => (
                     <div key={course} className="bg-white sm:w-[350px] w-full px-2 py-3 h-[150px] rounded-xl">
                       <div key={course} className="flex items-center sm:justify-center justify-start">
