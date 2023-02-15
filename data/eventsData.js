@@ -33,4 +33,17 @@ export const eventsArray = [
     title: 'Digital Expert Academy: US partners Nigeria on education, tech upskilling',
     body: "Nigeria relation on Monday received a boost in Lagos,  as United States Consul General Will Stevens joined representatives from leading American tech companies, Nigerian technology and business leaders for the official opening of the Digital Expert Academy. \n With a view to creating opportunities for training and upskilling young Nigerians in artificial intelligence, digital infrastructure, machine learning, cloud services, data science, data center management among other tech fields, the academy was Founded by 21st Century Technologies. \n In his keynote remarks themed “Technology as an Enabler and Tool for Empowerment,” Consul General Will Stevens noted that the U.S. government is committed to supporting programs that provide youth with quality technological learning opportunities. \n Chairman & CEO, 21st Century Technologies Group, Wale Ajisebutu, said the Digital Expert Academy will help bridge the gap between youth and employers by better connecting young people with the changing needs of the private sector and the skills needed to succeed in the digital economy; adding that the academy will partner with leading American tech companies such as Microsoft and Oracle to provide trainees with world class learning opportunities.",
   },
+  {
+    id: 4,
+    date: new Date('2023-02-10').toDateString(),
+    imgs: [
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676473407/21ctl/1676034056251_yxta0m.jpg',
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676473434/21ctl/1676034061034_u57qk2.jpg',
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676473420/21ctl/1676034062269_hqnjc7.jpg',
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676021796/21ctl/web_Banner_igkutv.png',
+      // 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675293037/dea%20launch/GU0A3140-min_bmuolg.jpg',
+    ],
+    title: 'Nigeria First Oracle ExaData@Customer Cloud Infastructure',
+    body: "21st Century Technologies Limited Partners with Oracle to Deliver Cloud Services in Nigeria with Oracle Exadata Cloud@Customer.",
+  }
 ];
