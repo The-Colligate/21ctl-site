@@ -472,7 +472,7 @@ export const platformNavLinks = [
         name: 'Payment',
         subLinks: [
           {
-            name: 'Koney pay',
+            name: 'Konet pay',
             link: 'https://www.konetpay.com',
             text: 'Providing reliable payment service.',
             icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
