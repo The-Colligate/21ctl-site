@@ -397,8 +397,8 @@ export function LightNavbar({ menuProp }) {
             >
               <a
                 href={`${link.link}`}
-                target="_blank"
-                rel="noreferrer"
+                // target="_blank"
+                // rel="noreferrer"
                 className="flex items-center"
               >
                 {link.name}
