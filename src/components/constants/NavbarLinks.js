@@ -175,6 +175,7 @@ export const mainLinks = [
       { name: 'Digital Platforms', link: '/platform' },
       { name: 'Events', link: '/event/events' },
       { name: 'Explore more', link: '/explore-more' },
+      { name: 'Booking', link: '/booking' },
     ],
   },
 ];
