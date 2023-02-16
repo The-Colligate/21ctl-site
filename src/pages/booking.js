@@ -35,7 +35,9 @@ const Visitors = () => {
                   </p>
                 </li>
                 <li className="booking-li">
-                  <h2 className="sm:text-3xl text-xl font-bold">2. Confirmation</h2>
+                  <h2 className="sm:text-3xl text-xl font-bold">
+                    2. Confirmation
+                  </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     Once you have made a booking, you will receive a
                     confirmation email from us. Please ensure that you provide a
@@ -44,7 +46,9 @@ const Visitors = () => {
                   </p>
                 </li>
                 <li className="booking-li">
-                  <h2 className="sm:text-3xl text-xl font-bold">3. Cancellation</h2>
+                  <h2 className="sm:text-3xl text-xl font-bold">
+                    3. Cancellation
+                  </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     You may cancel your visit up to 48 hours before the
                     scheduled date and time. We will preference visitors within
@@ -53,7 +57,9 @@ const Visitors = () => {
                   </p>
                 </li>
                 <li className="booking-li">
-                  <h2 className="sm:text-3xl text-xl font-bold">4. Rescheduling</h2>
+                  <h2 className="sm:text-3xl text-xl font-bold">
+                    4. Rescheduling
+                  </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     Bookings can only be made through our web portal by
                     providing accurate and complete information. The booking
@@ -79,7 +85,9 @@ const Visitors = () => {
                   </p>
                 </li>
                 <li className="booking-li">
-                  <h2 className="sm:text-3xl text-xl font-bold">7. Liability</h2>
+                  <h2 className="sm:text-3xl text-xl font-bold">
+                    7. Liability
+                  </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     We take all reasonable precautions to ensure the safety and
                     security of our visitors. However, we do not accept any
@@ -110,9 +118,9 @@ const Visitors = () => {
             </div>
           </div>
         ) : (
-            <div className="max-w-2xl m-auto px-4">
-                <JotformEmbed src="https://eu.jotform.com/230443968093058" />
-            </div>
+          <div className="">
+            <JotformEmbed src="https://eu.jotform.com/230443968093058" />
+          </div>
         )}
       </section>
     </>
