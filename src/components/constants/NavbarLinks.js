@@ -173,7 +173,7 @@ export const mainLinks = [
   {
     additionalLinks: [
       { name: "Digital Platforms", link: "/platform" },
-      { name: "Events", link: "/event/events" },
+      { name: "Events", link: "https://21ctl.blog/" },
       { name: "Explore more", link: "/explore-more" },
       // { name: 'Booking', link: '/booking' },
     ],
