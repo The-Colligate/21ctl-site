@@ -100,7 +100,7 @@ const Visitors = () => {
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     We reserve the right to make changes to these terms and
                     conditions at any time without prior notice. Any changes
-                    will be posted on our website.
+                    will be communicated to you via email and SMS.
                   </p>
                 </li>
               </ul>
