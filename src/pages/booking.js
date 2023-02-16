@@ -61,9 +61,8 @@ const Visitors = () => {
                     4. Rescheduling
                   </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
-                    Bookings can only be made through our web portal by
-                    providing accurate and complete information. The booking
-                    question is responsive, so please be specific.
+                    You may reschedule your visit up to 24 hours before the
+                    scheduled date and time, subject to availability.
                   </p>
                 </li>
                 <li className="booking-li">
