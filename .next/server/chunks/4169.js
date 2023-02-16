@@ -236,15 +236,11 @@ const mainLinks = [
             },
             {
                 name: "Events",
-                link: "/event/events"
+                link: "https://21ctl.blog/"
             },
             {
                 name: "Explore more",
                 link: "/explore-more"
-            },
-            {
-                name: "Booking",
-                link: "/booking"
             }
         ]
     }
@@ -2630,8 +2626,8 @@ function LightNavbar({ menuProp  }) {
                                     className: `relative hover:${textColor}`,
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                         href: `${link.link}`,
-                                        // target="_blank"
-                                        // rel="noreferrer"
+                                        target: "_blank",
+                                        rel: "noreferrer",
                                         className: "flex items-center",
                                         children: link.name
                                     })
