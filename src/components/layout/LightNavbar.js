@@ -459,25 +459,25 @@ export function LightNavbar({ menuProp }) {
           </button>
         </div>
       </div>
-      <MobileNavbar
+      {isOpen && <MobileNavbar
         theme={theme}
         setTheme={setTheme}
         isOpen={isOpen}
         close={() => setIsOpen(false)}
         navItems={navItems}
         router={router}
-      />
+      />}
     </>
   );
 }
 
 const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
   const [showExpanded, setShowExpanded] = useState([-1, false]);
+  console.log('isOpen: ', isOpen);
+  // console.log('close: ', close);
   return (
     <div
-      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
-        isOpen ? "translate-x-0" : ""
-      } largeTablet:block dark:bg-[#1f1d1d]`}
+      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2 mb-3">
