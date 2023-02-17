@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[262],{10669:function(n,_,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/light",function(){return u(91448)}])}},function(n){n.O(0,[914,378,448,774,888,179],function(){return n(n.s=10669)}),_N_E=n.O()}]);
