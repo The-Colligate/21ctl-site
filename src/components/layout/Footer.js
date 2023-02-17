@@ -10,6 +10,7 @@ export function Footer() {
   const index = ['/', '/support-centers', '/events', '/explore-more'];
   const power = ['/power'];
   const security = ['/security', '/identity'];
+  const konet = ['/konet-wallet'];
   const tech = [
     '/digital-infrastructure',
     '/platform',
@@ -25,6 +26,9 @@ export function Footer() {
     ? `bg-primary-green`
     : security.includes(router.pathname)
     ? `bg-magenta`
+    : konet.includes(router.pathname)
+    ? `bg-[#60A297] `
+    
     : tech.includes(router.pathname)
     ? `bg-gradient-to-r from-[#0282BA] to-[#015A81] dark:from-[#252525] dark:to-[#252525] text-gray-100 text-lg font-light px-5 py-2`
     : null;
