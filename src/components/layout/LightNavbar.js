@@ -459,14 +459,14 @@ export function LightNavbar({ menuProp }) {
           </button>
         </div>
       </div>
-      <MobileNavbar
+      {isOpen && <MobileNavbar
         theme={theme}
         setTheme={setTheme}
         isOpen={isOpen}
         close={() => setIsOpen(false)}
         navItems={navItems}
         router={router}
-      />
+      />}
     </>
   );
 }
