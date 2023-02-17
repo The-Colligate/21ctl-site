@@ -478,7 +478,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
   return (
     <div
       className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
-        isOpen ? "translate-x-0" : ""
+        isOpen ? "" : ""
       } largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
