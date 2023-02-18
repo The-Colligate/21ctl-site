@@ -175,7 +175,7 @@ export const mainLinks = [
       { name: "Digital Platforms", link: "/platform" },
       { name: "Events", link: "https://21ctl.blog/" },
       { name: "Explore more", link: "/explore-more" },
-      // { name: 'Booking', link: '/booking' },
+      { name: 'Booking', link: '/booking' },
     ],
   },
 ];
