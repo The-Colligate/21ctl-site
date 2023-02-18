@@ -5,16 +5,16 @@ import Modal from "../components/Modal";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  // const image_src = 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676021796/21ctl/web_Banner_igkutv.png'
-  // const [popVid, setPopVid] = useState()
+  const image_src = 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1676021796/21ctl/web_Banner_igkutv.png'
+  const [popVid, setPopVid] = useState()
 
-  // const openVid = () => {
-  //   setPopVid(true)
-  // }
+  const openVid = () => {
+    setPopVid(true)
+  }
 
-  // useEffect(() => {
-  //   openVid()
-  // },[])
+  useEffect(() => {
+    openVid()
+  },[])
 
   return (
     <>
@@ -24,7 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicons/21ctl_favicon.ico" />
       </Head>
       <LightDesign />
-      {/* <div className="z-50">
+      <div className="z-50">
             {popVid && (
               <Modal
                 modalIsOpen={popVid}
@@ -33,7 +33,7 @@ export default function Home() {
                 img_alt="21stCTL and Oracle"
               />
             )}
-          </div> */}
+          </div>
     </>
   );
 }
