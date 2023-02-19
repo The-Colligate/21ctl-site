@@ -2,7 +2,7 @@ import { LightNavbar, SocialIcons } from '@components/layout/';
 import { ArrowRight } from '@icons/index';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Popover } from 'evergreen-ui';
+import { Link, Popover } from 'evergreen-ui';
 import Head from 'next/head';
 import { buttonVarient, leftTransitionVarient, rightTansitionVarient, delayVarient1 } from '@components/constants/animations';
 function LightDesign() {
@@ -88,14 +88,14 @@ function LightDesign() {
       </div> */}
       <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[0]">
         <LightNavbar />
-        <div className=" flex items-center justify-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
+        <div className=" flex items-start justify-center w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
           <motion.div 
           variants={leftTransitionVarient}
           animate="visible"
           initial="hidden"
           
-          className="h-full flex items-center">
-            <div className="max-w-3xl mt-10 flex flex-col items-center justify-center">
+          className="h-full flex items-start">
+            <div className="max-w-3xl mt-10 flex flex-col items-start justify-center">
               <h1 className="text-5xl text-silver font-lato font-black whitespace-pre-wrap dark:text-white largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl ">
                 Building Africa&apos;s{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">Largest Digital Infrastructure</span>{' '}
@@ -108,18 +108,13 @@ function LightDesign() {
               className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg">
                 21st Century Technologies, an ecosystem Technology Group of
                 companies, building bold, ambitious and audacious digital
-                infrastructure projects. Integrated infrastructure that is
-                sustainable, resilient, secure, low latency, protected that will
-                enable our customers to adopt cutting edge technology to
-                accelerate technology modernization, exceptional corporate
-                performance and transformation. We are well positioned and fully
-                mobilized to provide unmatched operational excellence and
-                unrivaled customer experience. Build many internationally
-                recognized technology Hubs that will meet increasing demand for
-                distributed digital infrastructure and support enterprises of
-                all sizes by enabling the integration of all technology access
-                business functions.
+                infrastructure infrastructure. We use state of the art infrastructure to offer world class services to our customers and solve critical problems for the industries through motivated talents and skilled workforce in partnership with pioneering global best in class subject matter experts with sustainability at the heart of everything we do.
               </motion.p>
+              <Link href='/explore-more'>
+              <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver  rounded-xl  text-white py-2 px-6 my-6">
+                  Read More
+                  </button>
+                  </Link>
             </div>
           </motion.div>
           <motion.div
