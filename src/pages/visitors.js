@@ -14,7 +14,7 @@ const Visitors = () => {
 
         <LightNavbar />
             
-        <JotformEmbed src="https://eu.jotform.com/230402356070544" />
+        <JotformEmbed src="https://eu.jotform.com/230402356070544" oncontextmenu="return false"/>
         
     </>
   )

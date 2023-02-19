@@ -118,7 +118,7 @@ const Visitors = () => {
           </div>
         ) : (
           <div className="">
-            <JotformEmbed src="https://eu.jotform.com/230443968093058" />
+            <JotformEmbed src="https://eu.jotform.com/230443968093058" oncontextmenu="return false"/>
           </div>
         )}
       </section>
