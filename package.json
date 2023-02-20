@@ -24,13 +24,13 @@
     "photoswipe": "^5.3.5",
     "query-string": "^8.1.0",
     "react": "18.2.0",
+    "react-cookie-consent": "^8.0.1",
     "react-countup": "^6.4.0",
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.4.1",
     "react-jotform-embed": "^1.1.2",
     "react-modal": "^3.16.1",
     "react-player": "^2.11.1"
-   
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
@@ -45,5 +45,5 @@
     "@babel/helper-create-class-features-plugin": "7.19.0",
     "@babel/helper-module-transforms": "7.19.6",
     "babel-loader": "8.2.5"
-}
+  }
 }
