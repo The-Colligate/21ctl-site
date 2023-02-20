@@ -27,7 +27,13 @@ const Visitors = () => {
             <div className="pb-10">
               <ul className="space-y-10">
                 <li className="booking-li">
-                  <h2 className="sm:text-3xl text-xl font-bold">1. Bookings</h2>
+                  <h2 className="sm:text-3xl text-xl font-bold">1. Privacy</h2>
+                  <p className="sm:text-lg text-base leading-7 mt-2">
+                  We understand that privacy online is important to users of our Site, especially when conducting business. This statement governs our privacy policies with respect to those users of the Site (“Visitors”) who visit without transacting business and Visitors who register to transact business on the Site and make use of the various services offered by 21st Century Technologies (collectively, “Services”) (“Authorized Customers”).
+                  </p>
+                </li>
+                <li className="booking-li">
+                  <h2 className="sm:text-3xl text-xl font-bold">2. Bookings</h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     Bookings can only be made through our web portal by
                     providing accurate and complete information. The booking
@@ -36,7 +42,7 @@ const Visitors = () => {
                 </li>
                 <li className="booking-li">
                   <h2 className="sm:text-3xl text-xl font-bold">
-                    2. Confirmation
+                    3. Confirmation
                   </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     Once you have made a booking, you will receive a
@@ -47,7 +53,7 @@ const Visitors = () => {
                 </li>
                 <li className="booking-li">
                   <h2 className="sm:text-3xl text-xl font-bold">
-                    3. Cancellation
+                    4. Cancellation
                   </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     You may cancel your visit up to 48 hours before the
@@ -58,7 +64,7 @@ const Visitors = () => {
                 </li>
                 <li className="booking-li">
                   <h2 className="sm:text-3xl text-xl font-bold">
-                    4. Rescheduling
+                    5. Rescheduling
                   </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     You may reschedule your visit up to 24 hours before the
@@ -66,7 +72,7 @@ const Visitors = () => {
                   </p>
                 </li>
                 <li className="booking-li">
-                  <h2 className="sm:text-3xl text-xl font-bold">5. Age</h2>
+                  <h2 className="sm:text-3xl text-xl font-bold">6. Age</h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     If your visitation will include Children under the working
                     age, you will need to explicitly engage us via email. Due to
@@ -75,7 +81,7 @@ const Visitors = () => {
                   </p>
                 </li>
                 <li className="booking-li">
-                  <h2 className="sm:text-3xl text-xl font-bold">6. Conduct</h2>
+                  <h2 className="sm:text-3xl text-xl font-bold">7. Conduct</h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     Visitors must behave respectfully and comply with the
                     instructions and regulations given by our staff. We reserve
@@ -85,7 +91,7 @@ const Visitors = () => {
                 </li>
                 <li className="booking-li">
                   <h2 className="sm:text-3xl text-xl font-bold">
-                    7. Liability
+                    8. Liability
                   </h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     We take all reasonable precautions to ensure the safety and
@@ -95,7 +101,7 @@ const Visitors = () => {
                   </p>
                 </li>
                 <li className="booking-li">
-                  <h2 className="sm:text-3xl text-xl font-bold">8. Changes</h2>
+                  <h2 className="sm:text-3xl text-xl font-bold">9. Changes</h2>
                   <p className="sm:text-lg text-base leading-7 mt-2">
                     We reserve the right to make changes to these terms and
                     conditions at any time without prior notice. Any changes
