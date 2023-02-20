@@ -194,6 +194,16 @@ export function Footer() {
               Support Centers
             </Link>
           </div>
+
+          <div className="pt-2">
+            <Link
+              href="/privacy"
+              // className="text-black dark:text-white hover:text-primary-orange ml-[30px]"
+              className="text-gray-100  ml-[30px]"
+            >
+              Privacy policy
+            </Link>
+          </div>
         </div>
       </div>
 
