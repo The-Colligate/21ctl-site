@@ -34,7 +34,7 @@ const ExploreMore = () => {
           </section>
 
           <section className="sm:px-20 px-5 py-20">
-            <div className="flex sm:flex-row flex-col w-full justify-center items-center">
+            <div className="flex sm:flex-row flex-col w-full justify-center items-start">
               <div className="max-w-lg w-full h-full">
                 <div>
                   <img
@@ -44,14 +44,14 @@ const ExploreMore = () => {
                 </div>
                 <div className="text-center mt-5">
                   <h3 className="text-3xl font-bold">Wale Ajisebutu</h3>
-                  <p className="text-xl font-medium">
+                  <p className="text-md font-medium">
                     CEO/Chairman 21st Century Technologies
                   </p>
                 </div>
               </div>
-              <div className="flex-1 sm:ml-10 ml-0 sm:mt-0 mt-8 text-base">
-                <p className="max-w-2xl text-xl">
-                  21st Century Technologies, an ecosystem Technology Group of
+              <div className="flex-1 sm:ml-10 ml-0 sm:mt-0 mt-8 text-base text-justify">
+                <p className="max-w-3xl text-xl">
+                  {/* 21st Century Technologies, an ecosystem Technology Group of
                   companies, building bold, ambitious and audacious digital
                   infrastructure projects. Integrated infrastructure that is
                   sustainable, resilient, secure, low latency, protected that
@@ -64,8 +64,82 @@ const ExploreMore = () => {
                   that will meet increasing demand for distributed digital
                   infrastructure and support enterprises of all sizes by
                   enabling the integration of all technology access business
-                  functions.
+                  functions. */}
+                  Our vision is to use state of the art infrastructure to offer world class services to our
+                  customers and solve critical problems for the industries through motivated talents and
+                  skilled workforce in partnership with pioneering global best in class subject matter
+                  experts with sustainability at the heart of everything we do.
                 </p>
+                <br />
+                <ul className='list-decimal text-xl'>
+                  There are 5 critical elements in our vision
+                  <li>Infrastructure</li>
+                  <li>Customers</li>
+                  <li>People</li>
+                  <li>Partnerships</li>
+                  <li>Sustainability</li>
+                </ul>
+                <br />
+                 <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+    <svg aria-hidden="true" class="w-10 h-10 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
+    <p> <q className='text-xl'>The only challenges open to mankind are ourselves.</q></p>
+</blockquote>
+                <p className="max-w-3xl text-xl pl-20">
+
+                  In our business we do not discuss challenges but always identify mandatory steps and
+                  actions we have to take to fulfill our visions. We are fully focused on a trillion dollar
+                  opportunities Nigeria presents as a country.</p>
+                <br />
+                <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+    <svg aria-hidden="true" class="w-10 h-10 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
+    <p> <q className='text-xl'>We are pioneering in everything we do</q></p>
+</blockquote>
+                <p className="max-w-3xl pl-20 text-xl">
+
+                  The first company to build a fiber connectivity and Data Centre infrastructure in
+                  Nigeria and we immediately boarded the top 1000 companies   including the Mobile
+                  operators. They all remain our customers till date.</p>
+                  <br/>
+<p className='text-xl font-bold'>Current point </p>
+<p className='text-xl'>Today, we are rolling out compelling digital infrastructure</p>
+<ul className='list-decimal text-xl'>
+                 
+                  <li className='font-bold'>CONNECTIVITY</li>
+                  <li className='font-bold'>TECHNOLOGY PLATFORMS</li>
+                  <li  className='font-bold'>DATA CENTERS</li>
+                  <li  className='font-bold'>POWER</li>
+                  <li className='font-bold'>PEOPLE</li>
+                  <li className='font-bold'>PAYMENT</li>
+                  <li className='font-bold'>SECURITY</li>
+                </ul>
+                <br/>
+                <p className='font-bold text-2xl'>FUTURE</p>
+                <p className=''>EVERY COMPANY IN THE WORLD TODAY IS FACING DISRUPTION AS DIGITAL
+EMPOWERS COMPETITORS TO DO THINGS BETTER, FASTER AND CHEAPER.
+WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
+<ul className='list-decimal '>
+                 
+                  <li>SOLVING COMPLEX PROBLEMS FOR THE INDUSTRIES</li>
+                  <li>FAST TRACT DIGITAL ECONOMY</li>
+                  <li >ACCELERATE DIGITAL TRANSFORMATION </li>
+                  <li >DRIVE DIGITAL TECHNOLOGY ADOPTION </li>
+                  <li>ENABLE THE USE OF TECHNOLOGY AS A RESOURCE LIBERATING MECHANISM, AN ENABLER AND TOOL FOR DEVELOPMENT AND SKILL EMPOWERMENT.</li>
+                  
+                </ul>
+                <br/>
+<p  className='font-bold text-2xl'>KEY VALUES</p>
+                <ul className='list-decimal'>
+                 
+                  <li>BOLD AND AUDACIOUS VISION AND MASTERY OF EXECUTION</li>
+                  <li>TRACK RECORDS</li>
+                  <li >GOOD CORPORATE GOVERNANCE & STRUCTURE </li>
+                  <li >SOUND POLICIES AND PROCESSES </li>
+                  <li>SKILLED PEOPLE.</li>
+                  
+                </ul>
+                <br/>
+
+                <p  className='text-center font-bold'>WE ARE CURRENTLY WAY ABOVE THE CURVE. WINNING MORE AND MORE CRITICAL PROJECTS.   TECHNOLOGY IS OUR CORE BUSINESS.</p>
               </div>
             </div>
             {/* <div className='w-1/5'>
@@ -210,7 +284,7 @@ const ExploreMore = () => {
             <div className="grow mr-10 tablet:ml-10">
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey_xsy94x.png"
-                // '/logo/journey.png'
+              // '/logo/journey.png'
               />
 
               <div className="flex flex-wrap w-full">
@@ -311,7 +385,7 @@ const ExploreMore = () => {
             <div className="grow mr-10 tablet:ml-10">
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey2_ougsfg.png"
-                // '/logo/journey2.png'
+              // '/logo/journey2.png'
               />
 
               <div className="flex flex-wrap w-full">

@@ -106,7 +106,7 @@ const KonetWallet = () => {
                     <section className='flex justify-between items-center  mx-20 tablet:flex-col-reverse tablet:mx-10'>
 
                         <div>
-                            <img src='/logo/bills.png' className='flex justify-center'/>
+                            <img src='/logo/bills.png' className='flex justify-center' />
                         </div>
 
                         <div className='w-[650px]  tablet:w-full'>

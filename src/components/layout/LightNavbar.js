@@ -1,10 +1,10 @@
-import { CaretDown } from '@icons/index';
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import { NavClose } from '@icons/close';
-import Link from 'next/link';
-import { Popover } from 'evergreen-ui';
-import { useRouter } from 'next/router';
+import { CaretDown } from "@icons/index";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { NavClose } from "@icons/close";
+import Link from "next/link";
+import { Popover } from "evergreen-ui";
+import { useRouter } from "next/router";
 import {
   platformNavLinks,
   infraNavLinks,
@@ -15,14 +15,7 @@ import {
   konetWalletNavLinks,
 } from '../constants/NavbarLinks';
 
-
-
-const excluded = [
-  '/people',
-  '/programmes',
-  '/training-pillars',
-  '/admission',
-];
+const excluded = ["/people", "/programmes", "/training-pillars", "/admission"];
 
 export function LightNavbar({ menuProp }) {
   const router = useRouter();
@@ -41,15 +34,20 @@ export function LightNavbar({ menuProp }) {
   // });
   // });
 
-  const academy = ['/people', '/programmes', '/training-pillars', '/admission'];
+  const academy = ["/people", "/programmes", "/training-pillars", "/admission"];
 
-  const index = ['/', '/support-centers', '/events', '/explore-more'];
-  const power = ['/power'];
-  const security = ['/security', '/identity'];
-  const tech = ['/digital-infrastructure', '/platform', '/communication', '/automation'];
+  const index = ["/", "/support-centers", "/events", "/explore-more"];
+  const power = ["/power"];
+  const security = ["/security", "/identity"];
+  const tech = [
+    "/digital-infrastructure",
+    "/platform",
+    "/communication",
+    "/automation",
+  ];
 
   const navItems =
-    router.pathname === '/digital-platform'
+    router.pathname === "/digital-platform"
       ? platformNavLinks
       : router.pathname === '/digital-infrastructure'
         ? infraNavLinks
@@ -106,11 +104,11 @@ export function LightNavbar({ menuProp }) {
   return (
     <>
       <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
-        {theme !== 'dark' ? (
+        {theme !== "dark" ? (
           <Link
             href={
-              router.pathname === '/'
-                ? '/'
+              router.pathname === "/"
+                ? "/"
                 : excluded.includes(router.pathname)
                   ? '/people'
                   : '/'
@@ -158,7 +156,7 @@ export function LightNavbar({ menuProp }) {
             <Popover
               key={link.name}
               statelessProps={{
-                className: '!p-0 !min-w-[170px] !rounded-lg !bg-transparent',
+                className: "!p-0 !min-w-[170px] !rounded-lg !bg-transparent",
               }}
               // position={Position.BOTTOM_LEFT}
 
@@ -176,7 +174,7 @@ export function LightNavbar({ menuProp }) {
                 >
                   <div class="w-full pl-5 py-5 whitespace-wrap rounded bg-white overflow-x-hidden  max-h-[82vh] dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
-                      {router.pathname === '/people'
+                      {router.pathname === "/people"
                         ? link?.head
                         : link.name.toUpperCase()}
                     </h2>
@@ -203,7 +201,7 @@ export function LightNavbar({ menuProp }) {
                               href={`${sublinks.link}`}
                               className="ml-4 space-y-2 list-disc text-[20px] break-words  font-semibold dark:text-white"
                             >
-                              {' '}
+                              {" "}
                               {sublinks.name}
                             </Link>
                           </div>
@@ -219,25 +217,25 @@ export function LightNavbar({ menuProp }) {
                               href={`${sublinks.link}`}
                               className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
-                              {sublinks?.text1}{' '}
+                              {sublinks?.text1}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
                               className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
-                              {sublinks?.text2}{' '}
+                              {sublinks?.text2}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
                               className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
-                              {sublinks?.text3}{' '}
+                              {sublinks?.text3}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
                               className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                             >
-                              {sublinks?.text4}{' '}
+                              {sublinks?.text4}{" "}
                             </Link>
 
                             {(sublinks?.text4 !== null && link.name === "Training" &&
@@ -248,7 +246,7 @@ export function LightNavbar({ menuProp }) {
                                 href="/programmes"
                                 className={`ml-9 space-y-2 text-[15px] ${textColor} `}
                               >
-                                See more{' '}
+                                See more{" "}
                               </Link>
                             ) : (
                               <>
@@ -262,43 +260,49 @@ export function LightNavbar({ menuProp }) {
                                   href={`${sublinks.link}`}
                                   className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
-                                  {sublinks?.text6}{' '}
+                                  {sublinks?.text5}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
                                   className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
-                                  {sublinks?.text7}{' '}
+                                  {sublinks?.text6}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
                                   className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
-                                  {sublinks?.text8}{' '}
+                                  {sublinks?.text7}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
                                   className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
-                                  {sublinks?.text9}{' '}
+                                  {sublinks?.text8}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
                                   className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
-                                  {sublinks?.text10}{' '}
+                                  {sublinks?.text9}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
                                   className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
-                                  {sublinks?.text11}{' '}
+                                  {sublinks?.text10}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
                                   className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
                                 >
-                                  {sublinks?.text12}{' '}
+                                  {sublinks?.text11}{" "}
+                                </Link>
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                >
+                                  {sublinks?.text12}{" "}
                                 </Link>
                               </>
                             )}
@@ -346,7 +350,6 @@ export function LightNavbar({ menuProp }) {
                 </div>
               }
             >
-
               <div
                 className={`${displayPopup[0] && displayPopup[1] === index
                     ? textColor
@@ -373,10 +376,10 @@ export function LightNavbar({ menuProp }) {
                     ]);
                   }}
                 >
-                  {link.name}{' '}
+                  {link.name}{" "}
                   {link.subLinks.length > 0 ? (
                     <>
-                      {' '}
+                      {" "}
                       {displayPopup[0] && displayPopup[1] === index ? (
                         <CaretDown className="ml-1 -rotate-180" />
                       ) : (
@@ -417,7 +420,9 @@ export function LightNavbar({ menuProp }) {
                 rel="noreferrer"
                 className="block  "
               >
-                <button className={`bg-${color} rounded text-white py-3 px-6 my-6 tablet:px-2`}>
+                <button
+                  className={`bg-${color} rounded text-white py-3 px-6 my-6 tablet:px-2`}
+                >
                   Apply now
                 </button>
               </a>
@@ -427,24 +432,26 @@ export function LightNavbar({ menuProp }) {
                 rel="noreferrer"
                 className="block  "
               >
-                <button className={`border-2 border-${color} rounded bg-white ${textColor} hover:text-white hover:bg-${color} py-3 px-6 my-6 tablet:px-2`}>
+                <button
+                  className={`border-2 border-${color} rounded bg-white ${textColor} hover:text-white hover:bg-${color} py-3 px-6 my-6 tablet:px-2`}
+                >
                   Login
                 </button>
               </a>
             </>
           ) : (
-            ''
+            ""
           )}
           <button
             className="p-3 px-[14px] ml-8 rounded-full bg-input block dark:hidden tablet:!hidden"
-            onClick={() => setTheme('dark')}
+            onClick={() => setTheme("dark")}
             title="Switch to dark mode"
           >
             <Moon />
           </button>
           <button
             className="p-3 px-[14px] ml-8 rounded-full bg-input hidden dark:block tablet:!hidden"
-            onClick={() => setTheme('light')}
+            onClick={() => setTheme("light")}
             title="Switch to light mode"
           >
             <Sun />
@@ -457,20 +464,22 @@ export function LightNavbar({ menuProp }) {
           </button>
         </div>
       </div>
-      <MobileNavbar
+      {isOpen && <MobileNavbar
         theme={theme}
         setTheme={setTheme}
         isOpen={isOpen}
         close={() => setIsOpen(false)}
         navItems={navItems}
         router={router}
-      />
+      />}
     </>
   );
 }
 
 const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
   const [showExpanded, setShowExpanded] = useState([-1, false]);
+  console.log('isOpen: ', isOpen);
+  // console.log('close: ', close);
   return (
     <div
       className={`fixed z-[99]  transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? 'translate-x-0' : ''
@@ -511,7 +520,6 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
                       className="dark:hidden w-16 tablet:w-14"
                     />
                   )}
-
                 </Link>
               ) : (
                 <Link href="/" className="dark:block hidden">
@@ -546,7 +554,7 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
           <div>
             {navItems[0].navLinks.map((link, index) => (
               <>
-                {' '}
+                {" "}
                 {showExpanded[0] === index ? (
                   <div key={link.name}>
                     <h2 className="uppercase text-sm mt-5 opacity-50">
@@ -555,17 +563,17 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
 
                     {link.subLinks.map((sublinks) => (
                       <div className="flex my-3" key={sublinks.name}>
-                        {' '}
+                        {" "}
                         <img
                           height={20}
                           width={20}
                           src={`${sublinks.icon}`}
-                        />{' '}
+                        />{" "}
                         <Link
                           href={`${sublinks.link}`}
                           className="ml-4 space-y-2 list-disc font-semibold "
                         >
-                          {' '}
+                          {" "}
                           {sublinks.name}
                         </Link>
                       </div>
@@ -582,19 +590,24 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
             {navItems[0].navLinks.map((link, index) => (
               <li
                 key={link.name}
-                onClick={() => link.subLinks.length > 0 ? setShowExpanded([index, true]) :
-                  router.push(link.link !== null ? link.link : "#")}
-
+                onClick={() =>
+                  link.subLinks.length > 0
+                    ? setShowExpanded([index, true])
+                    : router.push(link.link !== null ? link.link : "#")
+                }
               >
                 <a className="flex items-center justify-between">
-                  {link.name} {link.subLinks.length > 0 ? <CaretDown className="-rotate-90" /> : <></>}
+                  {link.name}{" "}
+                  {link.subLinks.length > 0 ? (
+                    <CaretDown className="-rotate-90" />
+                  ) : (
+                    <></>
+                  )}
                 </a>
               </li>
             ))}
             {navItems[1]?.additionalLinks?.map((link, index) => (
-              <li
-                key={`${link} ${index}`}
-              >
+              <li key={`${link} ${index}`}>
                 <a
                   href={`${link.link}`}
                   target="_blank"
@@ -616,14 +629,14 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
         )}
         <button
           className="rounded-full fixed bottom-0 right-0 block dark:hidden"
-          onClick={() => setTheme('dark')}
+          onClick={() => setTheme("dark")}
           title="Switch to dark mode"
         >
           <Moon />
         </button>
         <button
           className="rounded-full fixed bottom-0 right-0 hidden dark:block"
-          onClick={() => setTheme('light')}
+          onClick={() => setTheme("light")}
           title="Switch to light mode"
         >
           <Sun />
@@ -871,7 +884,26 @@ export const Sun = () => (
   </svg>
 );
 
-
+function logoLightMode(pathname) {
+  switch (pathname) {
+    case "/":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+    case "/people":
+    case "/programmes":
+    case "/training-pillars":
+    case "/admission":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
+          className="w-full h-[70px]"
+        />
+      );
+      }}
 function logoLightMode(pathname) {
   switch (pathname) {
     case '/':
@@ -913,7 +945,6 @@ function logoLightMode(pathname) {
       return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
 
   }
-
 }
 
 function logoDarkMode(pathname) {

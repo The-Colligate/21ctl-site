@@ -232,7 +232,8 @@ body {
 }
 
 .cloud-services {
-  background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1675335002/21ctl/cloud-providers_obil10.svg');
+  background-image: url('/logo/cloud_providers-dark.svg');
+  /* url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1676832826/21ctl/Image/cloud_providers-dark_y7yett.svg'); */
   background-repeat: no-repeat;
   background-position: left;
   /* width: 100vw; */
@@ -241,7 +242,8 @@ body {
 }
 
 .cloud-services-dark {
-  background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1675335002/21ctl/cloud-providers-dark_c4ixgf.svg');
+  background-image: url('/logo/cloud_providers-white.svg');
+  /* url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1676832825/21ctl/Image/cloud_providers-white_hpo5rr.svg'); */
   background-repeat: no-repeat;
   background-position: left;
   /* width: 100vw; */
