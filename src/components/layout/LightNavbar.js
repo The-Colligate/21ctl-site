@@ -12,14 +12,15 @@ import {
   powerNavLinks,
   peopleNavLinks,
   securityNavLinks,
-} from "../constants/NavbarLinks";
+  konetWalletNavLinks,
+} from '../constants/NavbarLinks';
 
 const excluded = ["/people", "/programmes", "/training-pillars", "/admission"];
 
 export function LightNavbar({ menuProp }) {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
   // useEffect(() => {
@@ -48,55 +49,57 @@ export function LightNavbar({ menuProp }) {
   const navItems =
     router.pathname === "/digital-platform"
       ? platformNavLinks
-      : router.pathname === "/digital-infrastructure"
-      ? infraNavLinks
-      : router.pathname === "/"
-      ? mainLinks
-      : router.pathname === "/power"
-      ? powerNavLinks
-      : router.pathname === "/people"
-      ? peopleNavLinks
-      : router.pathname === "/security"
-      ? securityNavLinks
-      : router.pathname === "/platform"
-      ? platformNavLinks
-      : router.pathname === "/communication"
-      ? platformNavLinks
-      : router.pathname === "/automation"
-      ? platformNavLinks
-      : router.pathname === "/identity"
-      ? platformNavLinks
-      : router.pathname === "/training-pillars"
-      ? peopleNavLinks
-      : router.pathname === "/programmes"
-      ? peopleNavLinks
-      : excluded.includes(router.pathname)
-      ? peopleNavLinks
-      : mainLinks;
+      : router.pathname === '/digital-infrastructure'
+        ? infraNavLinks
+        : router.pathname === '/'
+          ? mainLinks
+          : router.pathname === '/power'
+            ? powerNavLinks
+            : router.pathname === '/people'
+              ? peopleNavLinks
+              : router.pathname === '/security'
+                ? securityNavLinks
+                : router.pathname === '/platform'
+                  ? platformNavLinks
+                  : router.pathname === '/communication'
+                    ? platformNavLinks
+                    : router.pathname === '/automation'
+                      ? platformNavLinks
+                      : router.pathname === '/identity'
+                        ? platformNavLinks
+                        : router.pathname === '/training-pillars'
+                          ? peopleNavLinks
+                          : router.pathname === '/programmes'
+                            ? peopleNavLinks
+                            : router.pathname === '/konet-wallet'
+                            ? konetWalletNavLinks
+                            : excluded.includes(router.pathname)
+                              ? peopleNavLinks
+                              : mainLinks;
   // console.log(`${JSON.stringify (peopleNavLinks[0].navLinks[1].subLinks)}`);
   // console.log('pathname', router.pathname);
   const textColor = academy.includes(router.pathname)
     ? `text-primary-orange`
     : index.includes(router.pathname)
-    ? `text-primary-blue`
-    : power.includes(router.pathname)
-    ? `text-primary-green`
-    : security.includes(router.pathname)
-    ? `text-magenta`
-    : tech.includes(router.pathname)
-    ? `text-primary-blue`
-    : null;
+      ? `text-primary-blue`
+      : power.includes(router.pathname)
+        ? `text-primary-green`
+        : security.includes(router.pathname)
+          ? `text-magenta`
+          : tech.includes(router.pathname)
+            ? `text-primary-blue`
+            : null;
   const color = academy.includes(router.pathname)
     ? `primary-orange`
     : index.includes(router.pathname)
-    ? `primary-blue`
-    : power.includes(router.pathname)
-    ? `primary-green`
-    : security.includes(router.pathname)
-    ? `magenta`
-    : tech.includes(router.pathname)
-    ? `primary-orange`
-    : null;
+      ? `primary-blue`
+      : power.includes(router.pathname)
+        ? `primary-green`
+        : security.includes(router.pathname)
+          ? `magenta`
+          : tech.includes(router.pathname)
+            ? `primary-orange`
+            : null;
 
   return (
     <>
@@ -107,8 +110,8 @@ export function LightNavbar({ menuProp }) {
               router.pathname === "/"
                 ? "/"
                 : excluded.includes(router.pathname)
-                ? "/people"
-                : "/"
+                  ? '/people'
+                  : '/'
             }
           >
             {logoLightMode(router.pathname)}
@@ -177,9 +180,8 @@ export function LightNavbar({ menuProp }) {
                     </h2>
                     <hr />
                     <div
-                      className={`grid ${
-                        link.subLinks.length > 7 ? "grid-cols-4" : "grid-cols-3"
-                      }  items-start flex-nowrap mr-5 w-full tablet:grid-cols-2`}
+                      className={`grid ${link.subLinks.length > 7 ? 'grid-cols-4' : 'grid-cols-3'
+                        }  items-start flex-nowrap mr-5 w-full tablet:grid-cols-2`}
                     >
                       {link.subLinks.map((sublinks) => (
                         <div
@@ -236,11 +238,10 @@ export function LightNavbar({ menuProp }) {
                               {sublinks?.text4}{" "}
                             </Link>
 
-                            {sublinks?.text4 !== null &&
-                            link.name === "Training" &&
-                            (router.pathname === "/people" ||
-                              router.pathname === "/programmes" ||
-                              router.pathname === "/training-pillars") ? (
+                            {(sublinks?.text4 !== null && link.name === "Training" &&
+                              (router.pathname === '/people' ||
+                                router.pathname === '/programmes' ||
+                                router.pathname === '/training-pillars')) ? (
                               <Link
                                 href="/programmes"
                                 className={`ml-9 space-y-2 text-[15px] ${textColor} `}
@@ -249,6 +250,12 @@ export function LightNavbar({ menuProp }) {
                               </Link>
                             ) : (
                               <>
+                                <Link
+                                  href={`${sublinks.link}`}
+                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                >
+                                  {sublinks?.text5}{' '}
+                                </Link>
                                 <Link
                                   href={`${sublinks.link}`}
                                   className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
@@ -344,15 +351,14 @@ export function LightNavbar({ menuProp }) {
               }
             >
               <div
-                className={`${
-                  displayPopup[0] && displayPopup[1] === index
+                className={`${displayPopup[0] && displayPopup[1] === index
                     ? textColor
-                    : "dark:text-white text-black"
-                } relative  hover:${textColor} focus:${textColor}`}
+                    : 'dark:text-white text-black'
+                  } relative  hover:${textColor} focus:${textColor}`}
                 // onMouseOver={(e) => setDisplayPopup([true, index])}
                 // onMouseOut={(e) => setDisplayPopup([true, index])}
                 onClick={() => setDisplayPopup([false, -1])}
-                // {() => { console.log(displayPopup);}}
+              // {() => { console.log(displayPopup);}}
               >
                 <a
                   href={link?.link}
@@ -361,8 +367,7 @@ export function LightNavbar({ menuProp }) {
                   className={`flex items-center hover:${textColor}`}
                   onClick={() => {
                     console.log(
-                      `${displayPopup[1]} === ${index} ? ${
-                        displayPopup[1] === index
+                      `${displayPopup[1]} === ${index} ? ${displayPopup[1] === index
                       }`
                     );
                     setDisplayPopup([
@@ -477,7 +482,8 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
   // console.log('close: ', close);
   return (
     <div
-      className={`fixed z-[99] hidden transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 largeTablet:block dark:bg-[#1f1d1d]`}
+      className={`fixed z-[99]  transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${isOpen ? 'translate-x-0' : ''
+        } largeTablet:block dark:bg-[#1f1d1d]`}
     >
       <div className="relative w-full h-full overflow-auto p-5 pt-1">
         <div className="flex justify-between mt-2 mb-3">
@@ -491,17 +497,17 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
             </button>
           ) : (
             <>
-              {theme !== "dark" ? (
+              {theme !== 'dark' ? (
                 <Link
                   href={
-                    router.pathname === "/"
-                      ? "/"
+                    router.pathname === '/'
+                      ? '/'
                       : excluded.includes(router.pathname)
-                      ? "/people"
-                      : "/"
+                        ? '/people'
+                        : '/'
                   }
                 >
-                  {router.pathname === "/" ? (
+                  {router.pathname === '/' ? (
                     <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
                   ) : excluded.includes(router.pathname) ? (
                     <img
@@ -519,15 +525,15 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
                 <Link href="/" className="dark:block hidden">
                   <img
                     src={
-                      router.pathname === "/"
-                        ? "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
-                        : router.pathname === "/people"
-                        ? "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg"
-                        : router.pathname === "/programmes"
-                        ? "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg"
-                        : router.pathname === "/training-pillars"
-                        ? "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg"
-                        : "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
+                      router.pathname === '/'
+                        ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
+                        : router.pathname === '/people'
+                          ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                          : router.pathname === '/programmes'
+                            ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                            : router.pathname === '/training-pillars'
+                              ? 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg'
+                              : 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg'
                     }
                     className=" w-16 tablet:w-14"
                   />
@@ -897,158 +903,90 @@ function logoLightMode(pathname) {
           className="w-full h-[70px]"
         />
       );
+      }}
+function logoLightMode(pathname) {
+  switch (pathname) {
+    case '/':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
+    case '/people':
+    case '/programmes':
+    case '/training-pillars':
+    case '/admission':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg" className='w-full h-[70px]' />
 
-    case "/digital-platform":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/digital-platform':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
 
-    case "/digital-infrastructure":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/digital-infrastructure':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
 
-    case "/power":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/power':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png" className='w-22 h-20' />
 
-    case "/security":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/security':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png" className='w-22 h-20' />
 
-    case "/platform":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/platform':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
 
-    case "/communication":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/communication':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
 
-    case "/automation":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/automation':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
 
-    case "/identity":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/identity':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
 
-    case "/communication":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
-        />
-      );
+
+    case '/konet-wallet':
+      return <img src='/logo/KonetWallet.svg' />
     default:
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
-        />
-      );
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png" className='w-22 h-20' />
+
   }
 }
 
 function logoDarkMode(pathname) {
   switch (pathname) {
-    case "/":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
-    case "/people":
-    case "/programmes":
-    case "/training-pillars":
-    case "/admission":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg"
-          className="w-full  h-[70px]"
-        />
-      );
+    case '/':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+    case '/people':
+    case '/programmes':
+    case '/training-pillars':
+    case '/admission':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg" className='w-full  h-[70px]' />
 
-    case "/digital-platform":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
+    case '/digital-platform':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
 
-    case "/digital-infrastructure":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
+    case '/digital-infrastructure':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
 
-    case "/power":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/power':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png" className='w-22 h-20' />
 
-    case "/security":
-      return (
-        <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png"
-          className="w-22 h-20"
-        />
-      );
+    case '/security':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png" className='w-22 h-20' />
 
-    case "/platform":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
+    case '/platform':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
 
-    case "/communication":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
+    case '/communication':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
 
-    case "/automation":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
+    case '/automation':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
 
-    case "/identity":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
+    case '/identity':
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
 
-    case "/communication":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
+
+      case '/konet-wallet':
+        return <img src='/logo/KonetWallet-dark-mode.svg' />
     default:
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
-      );
+      return <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+
   }
+
 }

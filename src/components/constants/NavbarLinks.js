@@ -115,10 +115,10 @@ export const mainLinks = [
             icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261252/21ctl/21CTL_security_1_quk2tf.png",
           },
           {
-            name: "Digital Academy",
-            link: "/people",
-            text: "Empowering disruptive thinkers.",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675059544/21ctl/digitalAcademy-logo_dwz6g5.svg",
+            name: 'Digital Experts Academy',
+            link: '/people',
+            text: 'Empowering disruptive thinkers.',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675059544/21ctl/digitalAcademy-logo_dwz6g5.svg',
           },
         ],
         extras: [
@@ -472,10 +472,10 @@ export const platformNavLinks = [
         name: "Payment",
         subLinks: [
           {
-            name: "Konet pay",
-            link: "https://www.konetpay.com",
-            text: "Providing reliable payment service.",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg",
+            name: 'Konet pay',
+            link: 'https://www.konetpay.com',
+            text: 'Providing reliable payment service.',
+            icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058122/21ctl/icons/home/fa6-solid_comment-sms_fa9avi.svg',
           },
         ],
         extras: [],
@@ -916,6 +916,31 @@ export const peopleNavLinks = [
   {
     additionalLinks: [{ name: "Home", link: "/" }],
   },
+];
+export const konetWalletNavLinks = [
+  {logoLightMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png',
+    logoDarkMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png',
+    navLinks: [
+      {
+        name: 'Product',
+        subLinks: [
+        ],
+      },
+      {
+        name: 'About Us',
+        subLinks: [
+        ],
+      },
+      {
+        name: 'FAQ',
+        subLinks: [
+        ],
+      }
+
+    ]
+  }
 ];
 
 export const securityNavLinks = [
