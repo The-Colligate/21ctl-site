@@ -60,7 +60,7 @@ const Konet = () => {
 
           <section className="px-5 sm:px-28 pt-20 mt-[6vh] bg-[#A1D5EB]">
             <div className="flex justify-center m-auto">
-              <div className="flex flex-col justify-center pb-10 max-w-5xl">
+              <div className="flex flex-col justify-center pb-10 md:max-w-2xl">
                 <h1 className="sm:text-7xl text-3xl sm:leading-[98px] leading-normal font-bold text-gray-900">
                   Manage your finances effortlessly
                 </h1>
@@ -72,9 +72,9 @@ const Konet = () => {
                   and utility apps.
                 </p>
               </div>
-              <div>
+              <div className="">
                 <img
-                  className="w-[750px] sm:block hidden"
+                  className="w-[750px] sm:hidden md:hidden lg:block"
                   src="../../konet-hero.png"
                 />
               </div>
@@ -111,7 +111,7 @@ const Konet = () => {
               })}
             </div>
 
-            <div className="flex sm:flex-col flex-row justify-center sm:pt-40 pt-20 pb-40 sm:px-96 px-5">
+            <div className="flex sm:flex-col flex-row justify-center sm:pt-40 pt-20 pb-40 sm:px-28 px-5">
               {id == 1 && (
                 <ProductCard
                   name="Billing Automation"
@@ -182,14 +182,12 @@ const ProductCard = ({ reverse, img, name, text }) => {
       <div
         className={`flex sm:flex-row flex-col justify-center w-full ${reverse}`}
       >
-        <div className="">
+        <div className="flex-1">
           <img src={img} className="w-[600px]" />
         </div>
-        <div className="flex flex-col justify-center sm:pl-10 pl-0">
+        <div className="flex flex-1 flex-col justify-center sm:pl-10 pl-0">
           <h3 className="text-3xl font-bold">{name}</h3>
-          <p className="text-lg text-[#333333] opacity-60 pt-6 max-w-xl">
-            {text}
-          </p>
+          <p className="text-lg text-[#333333] opacity-60 pt-6">{text}</p>
         </div>
       </div>
     </>
