@@ -942,6 +942,31 @@ export const konetWalletNavLinks = [
     ]
   }
 ];
+export const konetNavLinks = [
+  {logoLightMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1677606269/21ctl/logo/Konetpay.png_towjuu.png',
+    logoDarkMode:
+      'https://res.cloudinary.com/dqsggbqmf/image/upload/v1677606269/21ctl/logo/Konetpay.png_towjuu.png',
+    navLinks: [
+      {
+        name: 'Product',
+        subLinks: [
+        ],
+      },
+      {
+        name: 'About Us',
+        subLinks: [
+        ],
+      },
+      {
+        name: 'FAQ',
+        subLinks: [
+        ],
+      }
+
+    ]
+  }
+];
 
 export const securityNavLinks = [
   {
