@@ -51,7 +51,7 @@ function LightDesign() {
       name: "Payment",
       snippet:
         "Our secured fintech gateway that allows transfer of monetary values including payment processing, institutional procedures, e-Commerce instruments, rules, standards and technologies.",
-      link: "https://konetpay.com/",
+      link: "/konet",
     },
     {
       icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243025/21ctl/main%20page%20icons/power-lightning_jtncpw.svg",
