@@ -13,6 +13,7 @@ import {
   peopleNavLinks,
   securityNavLinks,
   konetWalletNavLinks,
+  konetNavLinks,
 } from "../constants/NavbarLinks";
 
 const excluded = ["/people", "/programmes", "/training-pillars", "/admission"];
@@ -73,6 +74,8 @@ export function LightNavbar({ menuProp }) {
       ? peopleNavLinks
       : router.pathname === "/konet-wallet"
       ? konetWalletNavLinks
+      : router.pathname === "/konet"
+      ? konetNavLinks
       : excluded.includes(router.pathname)
       ? peopleNavLinks
       : mainLinks;
@@ -980,6 +983,11 @@ function logoLightMode(pathname) {
 
     case "/konet-wallet":
       return <img src="/logo/KonetWallet.svg" />;
+
+    case "/konet":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1677606269/21ctl/logo/Konetpay.png_towjuu.png" className="w-[150px]" />
+      );
     default:
       return (
         <img
@@ -1055,6 +1063,11 @@ function logoDarkMode(pathname) {
 
     case "/konet-wallet":
       return <img src="/logo/KonetWallet-dark-mode.svg" />;
+
+    case "/konet":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1677606269/21ctl/logo/Konetpay.png_towjuu.png" className="w-[150px]" />
+      );
     default:
       return (
         <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
