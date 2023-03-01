@@ -985,9 +985,7 @@ function logoLightMode(pathname) {
       return <img src="/logo/KonetWallet.svg" />;
 
     case "/konet":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1677606269/21ctl/logo/Konetpay.png_towjuu.png" className="w-[150px]" />
-      );
+      return <img src="/konet/konect-logo.png" className="w-[150px]" />;
     default:
       return (
         <img
@@ -1065,9 +1063,7 @@ function logoDarkMode(pathname) {
       return <img src="/logo/KonetWallet-dark-mode.svg" />;
 
     case "/konet":
-      return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1677606269/21ctl/logo/Konetpay.png_towjuu.png" className="w-[150px]" />
-      );
+      return <img src="/konet/konect-logo.png" className="w-[150px]" />;
     default:
       return (
         <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />

@@ -957,6 +957,7 @@ export const konetNavLinks = [
       },
       {
         name: "Konet Wallet",
+        link: "/konet-wallet",
         subLinks: [],
       },
       {
