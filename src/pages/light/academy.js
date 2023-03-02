@@ -295,20 +295,20 @@ const Academy = () => {
             <div className="w-full flex justify-center items-center sm:ml-20 ml-0 mt-8 tablet:flex-col ">
         
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058162/21ctl/logo/academy-importance_fxamod.svg"
+                src="https://res.cloudinary.com/deairfyff/image/upload/v1677765299/21ctl/target_academy-black-text_kahqnw.svg"
                 className=" w-2/4  tablet:w-4/5 dark:hidden"
               />
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675318515/21ctl/icons/impact_of_academy-lightmode_qmygpd.svg"
+                src="https://res.cloudinary.com/deairfyff/image/upload/v1677765296/21ctl/target_academy-white-text_vhetgg.svg"
                 className=" w-2/4  tablet:w-4/5 dark:block hidden"
               />
         
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058158/21ctl/logo/academy-importance1_vq55hr.svg"
+                src="https://res.cloudinary.com/deairfyff/image/upload/v1677765298/21ctl/target_academy-black-text2_yshttt.svg"
                 className="w-2/4 tablet:pt-10  tablet:w-4/5 dark:hidden"
               />
               <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675318516/21ctl/icons/impact_of_academy-lightmode2_wer3pb.svg"
+                src="https://res.cloudinary.com/deairfyff/image/upload/v1677765296/21ctl/target_academy-white-text2_sbnjwh.svg"
                 className=" w-2/4  tablet:w-4/5  dark:block hidden"
               />
            

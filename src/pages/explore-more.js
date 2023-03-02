@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
+import Link from 'next/link';
+
 
 const ExploreMore = () => {
   return (
@@ -553,52 +555,89 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
             <h2 className="flex justify-center my-10 font-bold text-2xl">
               Meet our Directors and Unit Heads
             </h2>
-            <div className="flex sm:flex-row flex-col sm:px-20 px-5 justify-center items-center w-full ">
-              <div className="w-2/4 flex flex-col items-center">
+            
+            <div className="flex sm:flex-row flex-col pb-20 sm:px-20 px-5 justify-center items-start w-full ">
+            <Link href="/digital-infrastructure" className="w-1/4 flex flex-col items-center  ">
+           
                 <img
                   src="/logo/blank-profile-picture.svg"
-                  className="w-2/4 pb-5  rounded-full"
+                  className="w-1/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  COO Payment Division/Head of Digital Experts Academy
+                  Director, Connectivity
                 </p>
-              </div>
-              <div className="w-2/4 flex flex-col items-center">
+              </Link>
+              <Link href="/platform"  className="w-1/4 flex flex-col items-center">
+              
                 <img
                   src="/logo/blank-profile-picture.svg"
-                  className="w-2/4 pb-5  rounded-full "
+                  className="w-1/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  Director, Security as a Service
+                  Director, Infrastructure
                 </p>
-              </div>
-              <div className="w-2/4 flex flex-col items-center">
+             
+              </Link>
+              <Link href="/communication"  className="w-1/4 flex flex-col items-center">
+              
                 <img
                   src="/logo/blank-profile-picture.svg"
-                  className="w-2/4 pb-5  rounded-full"
+                  className="w-1/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  Director, 21st Century Power
+                  Director, Data Center
                 </p>
-              </div>
-              <div className="w-2/4 flex flex-col items-center">
+             
+              </Link>
+              <Link href="/konet"  className="w-1/4">
+              <div className=" flex flex-col items-center">
                 <img
                   src="/logo/blank-profile-picture.svg"
-                  className="w-2/4 pb-5  rounded-full"
+                  className="w-1/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  Head of 21st Century Technologies Limited
+                  Director, Power
                 </p>
               </div>
-              <div className="w-2/4 flex flex-col items-center">
+              </Link>
+              <Link href="/power"  className="w-1/4">
+              <div className="flex flex-col items-center ">
                 <img
                   src="/logo/blank-profile-picture.svg"
-                  className="w-2/4 pb-5  rounded-full"
+                  className="w-1/4 pb-5  rounded-full"
                 />
                 <p className="break-words w-3/5 text-center">
-                  Director, Digital Platform
+                  Director, Digital Experts Academy
                 </p>
               </div>
+              </Link>
+              {/* <Link href="/people" className="w-1/4">
+              <div className=" flex flex-col items-center">
+                <img
+                  src="/logo/blank-profile-picture.svg"
+                  className="w-1/4 pb-5  rounded-full"
+                />
+                <p className="break-words w-3/5 text-center">
+                Head of Digital Experts Academy
+                </p>
+              </div>
+              </Link> */}
+              <Link href="/security"  className="w-1/4">
+              <div className=" flex flex-col items-center">
+                <img
+                  src="/logo/blank-profile-picture.svg"
+                  className="w-1/4 pb-5  rounded-full "
+                />
+                <p className="break-words w-3/5 text-center">
+                  Director, Security
+                </p>
+              </div>
+              </Link>
+              
+             
+              
+              
+              
             </div>
           </section>
 
