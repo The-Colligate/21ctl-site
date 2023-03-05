@@ -9,7 +9,8 @@ const Visitors = () => {
      <Head>
         <title>Visitors - 21 CTL</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicons/dea_favicon.ico" />
+        {/* <link rel="icon" href="/favicons/dea_favicon.ico" /> */}
+        <link rel="icon" href="/logo_update.ico" />
       </Head>
 
         <LightNavbar />
