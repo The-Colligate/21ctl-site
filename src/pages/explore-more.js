@@ -51,7 +51,7 @@ const ExploreMore = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex-1 sm:ml-10 ml-0 sm:mt-0 mt-8 text-base text-justify">
+              <div className="flex-1 sm:ml-10 ml-0 sm:mt-0 mt-8 text-base text-justify tablet:px-10">
                 <p className="max-w-3xl text-xl">
                   {/* 21st Century Technologies, an ecosystem Technology Group of
                   companies, building bold, ambitious and audacious digital
@@ -267,10 +267,10 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                     */}
 
           <section className="my-10">
-            <div className="sm:px-36 px-8 text-5xl font-bold pb-5">
+            <div className="sm:px-36 px-12 text-5xl font-bold pb-5">
               Our Journey
             </div>
-            <div className="sm:px-36 px-8 text-xl font-bold">
+            <div className="sm:px-36 px-12 text-xl text-justify font-bold">
               21st century is a Digital Infrastructure company with 25 years
               experience and still counting. We are creating an ecosystem
               companies that will address all technology challenges, empower
@@ -557,7 +557,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
             </h2>
             
             <div className="flex sm:flex-row flex-col pb-20 sm:px-20 px-5 justify-center items-start w-full ">
-            <Link href="/digital-infrastructure" className="w-1/4 flex flex-col items-center  ">
+            <Link href="/digital-infrastructure" className="w-1/4 flex flex-col items-center tablet:pb-10 tablet:w-full ">
            
                 <img
                   src="/logo/blank-profile-picture.svg"
@@ -567,7 +567,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                   Director, Connectivity
                 </p>
               </Link>
-              <Link href="/platform"  className="w-1/4 flex flex-col items-center">
+              <Link href="/platform"  className="w-1/4 flex flex-col items-center  tablet:pb-10 tablet:w-full">
               
                 <img
                   src="/logo/blank-profile-picture.svg"
@@ -578,7 +578,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                 </p>
              
               </Link>
-              <Link href="/communication"  className="w-1/4 flex flex-col items-center">
+              <Link href="/communication"  className="w-1/4 flex flex-col items-center  tablet:pb-10 tablet:w-full">
               
                 <img
                   src="/logo/blank-profile-picture.svg"
@@ -589,7 +589,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                 </p>
              
               </Link>
-              <Link href="/konet"  className="w-1/4">
+              <Link href="/konet"  className="w-1/4  tablet:pb-10 tablet:w-full">
               <div className=" flex flex-col items-center">
                 <img
                   src="/logo/blank-profile-picture.svg"
@@ -600,7 +600,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                 </p>
               </div>
               </Link>
-              <Link href="/power"  className="w-1/4">
+              <Link href="/power"  className="w-1/4  tablet:pb-10 tablet:w-full">
               <div className="flex flex-col items-center ">
                 <img
                   src="/logo/blank-profile-picture.svg"
@@ -622,7 +622,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                 </p>
               </div>
               </Link> */}
-              <Link href="/security"  className="w-1/4">
+              <Link href="/security"  className="w-1/4  tablet:w-full">
               <div className=" flex flex-col items-center">
                 <img
                   src="/logo/blank-profile-picture.svg"
