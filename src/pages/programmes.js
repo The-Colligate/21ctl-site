@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
 import { courses } from "../components/constants/courses";
-import { Button } from "evergreen-ui";
+import { Modal, Button } from "@nextui-org/react";
 // const Video = dynamic(() => import('../../components/Video'));
 
 const src1 =
@@ -10,6 +10,7 @@ const src1 =
 
 const Programmes = () => {
   const [searchValue, updateSearchValue] = useState("");
+  const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
   const sch = courses[0].courses;
 
@@ -62,35 +63,60 @@ const Programmes = () => {
               <div className="grid gap-10 grid-cols-3 largeTablet:grid-cols-2 tablet:grid-cols-2 mt-10 phone:grid-cols-1">
                 {searchCourses.map((course, index) => {
                   return (
-                    <div
-                      key={`${course.title} ${index}`}
-                      className="bg-white sm:w-[350px] w-full px-2 py-3 h-[150px] rounded-xl"
-                    >
+                    <>
                       <div
-                        key={course}
-                        className="flex items-center sm:justify-center justify-start"
+                        onClick={(e) => setDisplayPopup([true, index])}
+                        key={`${course.title} ${index}`}
+                        className="bg-white sm:w-[350px] cursor-pointer w-full px-2 py-3 h-[150px] rounded-xl"
                       >
-                        <div key={course} className="pr-5 w-[100px] h-[99px]">
-                          <img
-                            src="/logo/courses.svg"
-                            className=" w-[100px] h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"
-                            width={166}
-                            height={99}
-                          />
-                          {/* <div className='w-[120px] h-[99px] bg-primary-orange'></div> */}
-                        </div>
-                        <div className="flex flex-col  justify-center">
-                          <h2 className="text-base text-black font-bold w-full ">
-                            {course.title}
-                          </h2>
-                          <p className="text-sm text-black">{course.mode}</p>
+                        <div
+                          key={course}
+                          className="flex items-center sm:justify-center justify-start"
+                        >
+                          <div key={course} className="pr-5 w-[100px] h-[99px]">
+                            <img
+                              src="/logo/courses.svg"
+                              className=" w-[100px] h-[99px]  largeTablet:w-44 tablet:w-20 phone:w-24 z-50 smallPhone:w-16"
+                              width={166}
+                              height={99}
+                            />
+                          </div>
+                          <div className="flex flex-col  justify-center">
+                            <h2 className="text-base text-black font-bold w-full ">
+                              {course.title}
+                            </h2>
+                            <p className="text-sm text-black">{course.mode}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
+
+                      <Modal
+                        toggle={() => setDisplayPopup([false, index])}
+                        open={displayPopup[0] && displayPopup[1] === index}
+                      >
+                        <div className="modal-header p-3 flex justify-between">
+                          <h5 className="font-bold" id="exampleModalLabel">
+                            {course.title}
+                          </h5>
+                        </div>
+                        <Modal.Body>{course.description}</Modal.Body>
+                        <Modal.Footer justify="space-between">
+                          <p className="bg-primary-orange bg-opacity-20 text-primary-orange rounded px-5 py-2 ">
+                            {course.mode}
+                          </p>
+                          <button
+                            className="bg-primary-orange text-white py-3 px-7 rounded-xl"
+                            type="button"
+                            onClick={() => setDisplayPopup([false, index])}
+                          >
+                            Close
+                          </button>
+                        </Modal.Footer>
+                      </Modal>
+                    </>
                   );
                 })}
               </div>
-              {/* <p>{searchValue}</p> */}
             </div>
           </section>
           <Footer />
