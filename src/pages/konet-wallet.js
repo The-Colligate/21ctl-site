@@ -101,15 +101,15 @@ const KonetWallet = () => {
                             </div>
                         </div>
                     </section> */}
-          <section className="bg-[#60A297] rounded-[56px] h-[480px] mx-[200px] my-[209px] tablet:mx-10 tablet:px-5 flex justify-center">
-            <div className="konet_wallet_green_bg   flex   justify-center items-center   ">
-              <div className="">
+          <section className="relative bg-[#60A297] rounded-[56px] h-[480px] mx-[200px] my-[209px] tablet:mx-10 tablet:px-5 flex justify-center">
+            <div className="konet_wallet_green_bg flex   justify-center items-center   ">
+              <div className="absolute left-0 bottom-0 ">
                 <img
                   src="/logo/pay_mobile.png"
                   className="w-full px-5 rounded-[40px] top-10 tablet:hidden"
                 />
               </div>
-              <div className="w-[650px] ml-52 mb-10 flex flex-col justify-center items-start tablet:w-full tablet:ml-0">
+              <div className="w-[400px] ml-52 mb-10 flex flex-col justify-center items-start tablet:w-full tablet:ml-0">
                 <div className="text-white text-[18px] font-semibold flex items-center">
                   Payment{" "}
                   <p className="h-[5px] ml-2 w-[37px] rounded-lg bg-white"></p>
