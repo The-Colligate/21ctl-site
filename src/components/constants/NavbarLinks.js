@@ -98,7 +98,7 @@ export const mainLinks = [
 
           {
             name: "KonetPay Nigeria Limited",
-            link: "/konet",
+            link: "https://www.konet.com/",
             text: "Experience the power of Konet pay.",
             icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/home/KonetPay_logo_ddoifw.svg",
           },
@@ -926,7 +926,7 @@ export const konetWalletNavLinks = [
       navLinks: [
         {
           name: "Home",
-          link: "/konet",
+          link: "https://www.konet.com/",
           subLinks: [],
         },
         {
