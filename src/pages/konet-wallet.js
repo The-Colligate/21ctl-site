@@ -37,7 +37,7 @@ const KonetWallet = () => {
                             </div> */}
             </div>
             <div>
-              <img src="/logo/konet_wallet_phone.png" />
+              <img src="https://res.cloudinary.com/dqjowwy5k/image/upload/v1678440126/21ctl/Hero_phone_n8ckad.svg" />
             </div>
           </section>
           <section className="mt-10  tablet:mx-10">
@@ -149,7 +149,7 @@ const KonetWallet = () => {
               </p>
             </div>
             <div>
-              <img src="/logo/virtual_wallet.png" className="mr-20" />
+              <img src="https://res.cloudinary.com/dqjowwy5k/image/upload/v1678439494/21ctl/phone1_kljvbc.png" className="mr-20" />
             </div>
           </section>
           <section className="flex justify-between items-center  mx-20 tablet:flex-col-reverse tablet:mx-10">
