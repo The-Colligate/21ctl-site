@@ -58,10 +58,10 @@ const Konet = () => {
         <div className="w-full min-h-screen flex flex-col z-[0] ">
           <LightNavbar />
 
-          <section className="px-5 sm:px-28 pt-20 mt-[6vh] bg-[#A1D5EB]">
+          <section className="px-5 sm:px-28 pt-20 mt-[6vh] bg-[#A1D5EB] dark:bg-[#373737]">
             <div className="flex justify-center m-auto">
               <div className="flex flex-col justify-center pb-10 md:max-w-2xl">
-                <h1 className="sm:text-7xl text-3xl sm:leading-[98px] leading-normal font-bold text-gray-900">
+                <h1 className="sm:text-7xl text-3xl sm:leading-[98px] leading-normal font-bold text-gray-900 dark:text-[#A1D5EB]">
                   Manage your finances effortlessly
                 </h1>
                 <p className="sm:text-2xl text-lg sm:leading-9 font-light leading-normal mt-10">
@@ -81,12 +81,12 @@ const Konet = () => {
             </div>
           </section>
 
-          <section className="px-5 sm:px-28 sm:pt-56 pt-28">
+          <section className="px-5 sm:px-28 sm:pt-56 pt-28 dark:bg-[#272727] ">
             <div className="flex flex-col items-center justify-center">
               <h3 className="sm:text-5xl text-2xl font-bold">
                 Everything you need in one place
               </h3>
-              <p className="sm:text-2xl text-base text-[#333333] opacity-60 pt-6">
+              <p className="sm:text-2xl text-base text-[#333333] dark:text-white opacity-60 pt-6">
                 Streamline your financial operations with our comprehensive
                 suite of tools.
               </p>
@@ -101,7 +101,7 @@ const Konet = () => {
                   <div
                     key={pro.id}
                     className={`flex items-center justify-center px-6 rounded-[40px] h-11 cursor-pointer mb-4 text-sm ${
-                      id == pro.id ? " bg-white" : "border-2"
+                      id == pro.id ? " bg-white dark:bg-black " : "border-2"
                     } `}
                     onClick={() => setActive(pro.id)}
                   >
@@ -187,7 +187,7 @@ const ProductCard = ({ reverse, img, name, text }) => {
         </div>
         <div className="flex flex-1 flex-col justify-center sm:pl-10 pl-0">
           <h3 className="text-3xl font-bold">{name}</h3>
-          <p className="text-lg text-[#333333] opacity-60 pt-6">{text}</p>
+          <p className="text-lg text-[#333333] dark:text-white opacity-60 pt-6">{text}</p>
         </div>
       </div>
     </>

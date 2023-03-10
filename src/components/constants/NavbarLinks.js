@@ -923,20 +923,44 @@ export const konetWalletNavLinks = [
       "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
     logoDarkMode:
       "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
-    navLinks: [
-      {
-        name: "Product",
-        subLinks: [],
-      },
-      {
-        name: "About Us",
-        subLinks: [],
-      },
-      {
-        name: "FAQ",
-        subLinks: [],
-      },
-    ],
+      navLinks: [
+        {
+          name: "Home",
+          link: "/konet",
+          subLinks: [],
+        },
+        {
+          name: "Billing Automation",
+          // link: "#products",
+          subLinks: [],
+        },
+        {
+          name: "Konet Pay",
+          subLinks: [],
+        },
+        
+        {
+          name: "Konet Mail",
+          subLinks: [],
+        },
+        {
+          name: "Konet KYC",
+          subLinks: [],
+        },
+        {
+          name: "Konet Space",
+          subLinks: [],
+        },
+        {
+          name: "Konet App",
+          subLinks: [],
+        },
+        {
+          name: "Main Portal",
+          link: "/",
+          subLinks: [],
+        },
+      ],
   },
 ];
 export const konetNavLinks = [

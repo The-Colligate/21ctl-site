@@ -368,7 +368,7 @@ export function LightNavbar({ menuProp }) {
               >
                 <a
                   href={link?.link}
-                  target="_blank"
+                  target={router.pathname === "/" ? "_blank" : "_self"}
                   rel="noreferrer"
                   className={`flex items-center hover:${textColor}`}
                   onClick={() => {
