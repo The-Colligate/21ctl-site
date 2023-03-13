@@ -120,7 +120,7 @@ function LightDesign() {
                   heart of everything we do.
                 </motion.p>
                 <Link href="/explore-more">
-                  <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver  rounded-xl  text-white py-2 px-6 my-6">
+                  <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver  rounded-xl  text-white py-4 px-8 my-6">
                     Read More
                   </button>
                 </Link>
