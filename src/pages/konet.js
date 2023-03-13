@@ -40,6 +40,20 @@ const Konet = () => {
   // set default active class
   useEffect(() => {
     setActive(1);
+    (function(d,t) {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'DSFHCNrNuExCXvjxbMaUNLAk',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
   }, []);
 
   // set active class
@@ -48,11 +62,12 @@ const Konet = () => {
     console.log("id", id);
   };
   return (
-    <>
+    <>    
       <Head>
         <title>Konet</title>
         <meta name="description" content="" />
         {/* <link rel="icon" href="/favicons/dea_favicon.ico" /> */}
+ 
       </Head>
       <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative bg-[#F4F4F4] ">
         <div className="w-full min-h-screen flex flex-col z-[0] ">
