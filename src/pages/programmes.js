@@ -50,6 +50,7 @@ const Programmes = () => {
                 <input
                   type="text"
                   value={searchValue}
+                  placeholder="Enter keyword"
                   onChange={(e) => {
                     // console.log(`${typeof searchValue}`);
                     updateSearchValue(e.target.value);
