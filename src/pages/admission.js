@@ -90,7 +90,7 @@ const Academy = () => {
             </div>
           </section>
 
-          <section className="sm:px-28 px-8 sm:py-20 py-10">
+          <section className="sm:px-28 px-12 sm:py-20 py-10">
             <div className="flex sm:flex-row flex-col-reverse items-center  sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div className='sm:block hidden'>
                 <img
@@ -103,7 +103,7 @@ const Academy = () => {
                 <h2 className="font-bold  sm:text-5xl text-2xl">
                  <span className="text-primary-orange">Eligibility</span> Criteria
                 </h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
+                <div className="text-lg font-light mt-4 mb-6 max-w-2xl text-black tablet:mb-0 dark:text-white">
                 Applicants can be any of the following:
                   <ul className="list-disc mt-4 pl-4 space-y-1">
                     <li className="font-light">Recent graduates looking to start a career in the IT field </li>
@@ -114,19 +114,41 @@ const Academy = () => {
                     </li>
                     <li className="font-light">Trainees interested in pursuing a specific area of study within the IT field, such as data science or cybersecurity</li>
                   </ul>
-                </p>
+                </div>
               </div>
             </div>
           </section>
 
-          <section className="sm:px-28 px-8 sm:py-20 py-10">
+          {/* <section className="sm:px-28 px-8 sm:py-20 py-10">
             <div className="mt-20">
               <h3 className="font-bold sm:text-5xl text-2xl text-primary-orange text-center leading-8">
               Timeline
               </h3>
             </div>
             <div className="mt-4">
-                <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675077984/21ctl/Group_56027_bceb1n.svg" alt="admission processes" />
+                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678734952/21ctl/Group_56027_dswqzy.svg" alt="admission processes" />
+            </div>
+          </section> */}
+
+          <section className="sm:px-28 px-8 sm:py-20 py-10 tablet:py-0">
+            <div className="mt-20">
+              <h3 className="font-bold sm:text-5xl text-2xl text-primary-orange text-center leading-8">
+              Timeline
+              </h3>
+            </div>
+            <div className="mt-4">
+                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678734952/21ctl/Group_56027_dswqzy.svg" alt="admission processes" />
+            </div>
+          </section>
+
+          <section className="sm:px-28 px-8 sm:py-20 py-10">
+            <div className="mt-20">
+              <h3 className="font-bold sm:text-5xl text-2xl text-primary-orange text-center leading-8">
+              Applicant Filtering Stage
+              </h3>
+            </div>
+            <div className="mt-4">
+                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678752519/21ctl/Group_56138_p9ruly.png" alt="admission processes" />
             </div>
           </section>
 

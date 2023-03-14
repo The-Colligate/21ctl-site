@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .bg_gradient_l {
@@ -117,11 +117,10 @@ body {
     0 calc(100% - var(--vc)),
     0 var(--vc)
   );
-  
 }
 
 .hexagon-container::before {
-  content: '';
+  content: "";
   width: calc(var(--s) / 2 + var(--mh));
   float: left;
   height: 135%;
@@ -179,7 +178,6 @@ body {
   transform: perspective(600px) rotateY(180deg) !important;
 }
 
-
 @media only screen and (max-width: 1120px) {
   .hexagon-container {
     width: 400px;
@@ -223,7 +221,7 @@ body {
 }
 
 .top-section {
-  background-image: url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1672096824/Elipse_k6pfke.svg');
+  background-image: url("https://res.cloudinary.com/dqsggbqmf/image/upload/v1672096824/Elipse_k6pfke.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -232,7 +230,7 @@ body {
 }
 
 .cloud-services {
-  background-image: url('/logo/cloud_providers-dark.svg');
+  background-image: url("/logo/cloud_providers-dark.svg");
   /* url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1676832826/21ctl/Image/cloud_providers-dark_y7yett.svg'); */
   background-repeat: no-repeat;
   background-position: left;
@@ -242,7 +240,7 @@ body {
 }
 
 .cloud-services-dark {
-  background-image: url('/logo/cloud_providers-white.svg');
+  background-image: url("/logo/cloud_providers-white.svg");
   /* url('https://res.cloudinary.com/dqsggbqmf/image/upload/v1676832825/21ctl/Image/cloud_providers-white_hpo5rr.svg'); */
   background-repeat: no-repeat;
   background-position: left;
@@ -251,7 +249,7 @@ body {
   height: 70vh;
 }
 
-.services{
+.services {
   display: none;
 }
 
@@ -263,7 +261,6 @@ body {
   background-size: contain;
   height: 50vh;
 } */
-
 
 .dropdown {
   position: relative;
@@ -346,9 +343,8 @@ body {
   /* border-bottom: 1px solid #fecc29; */
 }
 
-
 .main-page {
-  background-image: url('/logo/Ellipse-bg.svg');
+  background-image: url("/logo/Ellipse-bg.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -364,22 +360,22 @@ body {
   border-radius: 10px;
 } */
 
-.energy{
-  background-image: url('/logo/wave-bg.svg');
+.energy {
+  background-image: url("/logo/wave-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 100vw;
 }
 
-.academy-curve{
-  border-bottom-left-radius:80% 50%;
-  border-bottom-right-radius:80% 50%;
+.academy-curve {
+  border-bottom-left-radius: 80% 50%;
+  border-bottom-right-radius: 80% 50%;
   height: 85vh;
 }
 
 .internet-section {
-  background-image: url('/logo/waves.svg'), url('/logo/Rectangle-transfrom.svg');
+  background-image: url("/logo/waves.svg"), url("/logo/Rectangle-transfrom.svg");
   background-repeat: repeat-x, no-repeat;
   background-position: 0 center, left;
   background-size: cover, contain;
@@ -387,25 +383,22 @@ body {
 }
 
 .vision-mission-section {
-  background-image: url('/logo/waves-slant.svg');
+  background-image: url("/logo/waves-slant.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
 }
 
 .about-us {
-  background-image: url('/logo/about-us-bg.png');
+  background-image: url("/logo/about-us-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 80vh;
 }
 
-
-
-
 .security {
-  background-image: url('/logo/security-bg.png');
+  background-image: url("/logo/security-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -414,66 +407,65 @@ body {
 }
 
 .values_grid {
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 40px 30px; 
-  grid-template-areas: 
-    ". . . .  ."; 
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 40px 30px;
+  grid-template-areas: ". . . .  .";
 }
 
-.data_center_grid{
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 15px 26px; 
-  grid-template-areas: 
+.data_center_grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px 26px;
+  grid-template-areas:
     ". . ."
-    ". . ."; 
+    ". . .";
 }
-.landing-page{
+.landing-page {
   height: 55vh;
 }
 
-.platform-top-section{
-  background-image: url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80');
+.platform-top-section {
+  background-image: url("https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.comm-top-section{
-  background-image: url('https://images.unsplash.com/photo-1494452672938-ad7f60625bb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+.comm-top-section {
+  background-image: url("https://images.unsplash.com/photo-1494452672938-ad7f60625bb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.auto-top-section{
-  background-image: url('https://images.unsplash.com/photo-1580584126903-c17d41830450?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1639&q=80');
+.auto-top-section {
+  background-image: url("https://images.unsplash.com/photo-1580584126903-c17d41830450?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1639&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.id-top-section{
-  background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+.id-top-section {
+  background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.support-centers{
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 55px 26px; 
-  grid-template-areas: 
+.support-centers {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 55px 26px;
+  grid-template-areas:
     ". . ."
-    ". . ."; 
+    ". . .";
 }
 
 /* .journey{
@@ -495,21 +487,26 @@ body {
   height: 100%;
 }
 
-.support-centers > div{
+.support-centers > div {
   background-color: white;
   padding: 20px;
 }
 
-.customize-bg{
-  background: linear-gradient(95.81deg, rgba(61, 246, 31, 0.1) 1.88%, rgba(246, 78, 31, 0.2) 43.42%, #EA8146 110.77%);
+.customize-bg {
+  background: linear-gradient(
+    95.81deg,
+    rgba(61, 246, 31, 0.1) 1.88%,
+    rgba(246, 78, 31, 0.2) 43.42%,
+    #ea8146 110.77%
+  );
 }
 
-.pillar-bg{
-background-color: #f1f0f3 
+.pillar-bg {
+  background-color: #f1f0f3;
 }
 
-.pillar-top-section{
-  background-image: url('/logo/pillars.png');
+.pillar-top-section {
+  background-image: url("/logo/pillars.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -519,44 +516,55 @@ background-color: #f1f0f3
   width: 940px !important;
   height: 660px !important;
   object-fit: cover !important;
-  z-index:99 !important;
+  z-index: 99 !important;
 }
 
-.ReactModal__Content div{
+.ReactModal__Content div {
   width: 940px !important;
   height: 660px !important;
   object-fit: cover !important;
-  z-index:99 !important;
+  z-index: 99 !important;
 }
 
-.resrc-pillar{
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 20px 0px; 
-  grid-template-areas: 
-    ". . . ."; 
+.resrc-pillar {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 0px;
+  grid-template-areas: ". . . .";
 }
 
-.resrc-shadow{
+.resrc-shadow {
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.25);
 }
 
-.post_list:first-child{
-  background-color: #D9D9D9;
+.post_list:first-child {
+  background-color: #d9d9d9;
 }
 
 @media only screen and (max-width: 400px) {
-  .about-us, .security {
+  .about-us,
+  .security {
     height: 50vh;
   }
-  
+
+   /* Konet app */
+   .konet__app__landing__page {
+    /* background: linear-gradient(
+      180deg,
+      #ffffff -1.05%,
+      rgba(209, 225, 240, 0.548319) 44.12%,
+      rgba(192, 210, 226, 0) 98.95%
+    ); */
+    clip-path: none;
+    /* polygon(100% 0, 100% 100%, 20% 95%, 0 100%, 0 0); */
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .main-page {
-    background-image: url('/logo/Ellipse-bg.svg');
+    background-image: url("/logo/Ellipse-bg.svg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
@@ -570,90 +578,112 @@ background-color: #f1f0f3
     grid-template-rows: 1fr 1fr 1fr;
     gap: 26px 55px;
     grid-template-areas:
-      '. .'
-      '. .'
-      '. .';
+      ". ."
+      ". ."
+      ". .";
   }
 
-  .support-centers{
-    display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-  gap: 15px 26px; 
-  grid-template-areas: 
-    "."
-    "."
-    "."
-    "."
-    "."; 
+  .support-centers {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px 26px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      ".";
   }
 
-  .landing-page{
+  .landing-page {
     height: 100%;
   }
 
-  .data_center_grid{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-    gap: 15px 26px; 
+  .data_center_grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px 26px;
     justify-items: center;
-    grid-template-areas: 
+    grid-template-areas:
       "."
       "."
       "."
       "."
-      "."; 
+      ".";
   }
   .cloud-services {
     background-image: none;
     height: 100%;
   }
 
-  .services{
+  .services {
     display: block;
   }
 
-  .resrc-pillar{
-    display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  gap: 20px 0px; 
-  grid-template-areas: 
-    "."
-    "."
-    "."
-    "."; 
+  .resrc-pillar {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      ".";
   }
 
-  .ReactModal__Content div{
+  .ReactModal__Content div {
     width: 350px !important;
     height: 300px !important;
     object-fit: cover !important;
-    z-index:99 !important;
+    z-index: 99 !important;
   }
+
+ 
 }
 
 /* .figures:nth-child(odd){
   padding-left: 20px;
 } */
 
-
-.mapouter{position:relative;text-align:right;height:500px;width:600px;}
-.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
-
-/* Konet Wallet */
-.konet__landing__page{
-  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-   */
-   clip-path: polygon( 100% 0, 100% 100%, 10% 92%, 0 100%, 0 0);
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
 }
 
-.konet_wallet_green_bg{
-  background-image: url('/logo/wavy-lines.svg');
+/* Konet Wallet */
+.konet__landing__page {
+  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+   */
+  clip-path: polygon(100% 0, 100% 100%, 10% 92%, 0 100%, 0 0);
+}
+
+/* Konet app */
+.konet__app__landing__page {
+  /* background: linear-gradient(
+    180deg,
+    #ffffff -1.05%,
+    rgba(209, 225, 240, 0.548319) 44.12%,
+    rgba(192, 210, 226, 0) 98.95%
+  ); */
+  clip-path: polygon(100% 0, 100% 100%, 50% 89%, 0 100%, 0 0);
+}
+
+.konet_wallet_green_bg {
+  background-image: url("/logo/wavy-lines.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
