@@ -137,7 +137,7 @@ const Academy = () => {
               </h3>
             </div>
             <div className="mt-4">
-                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678734952/21ctl/Group_56027_dswqzy.svg" alt="admission processes" />
+                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678785901/21ctl/WhatsApp_Image_2023-03-14_at_10.18.55_rzcplm.jpg" alt="admission processes" />
             </div>
           </section>
 
