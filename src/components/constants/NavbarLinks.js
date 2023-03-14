@@ -100,7 +100,7 @@ export const mainLinks = [
             name: "KonetPay Nigeria Limited",
             link: "https://www.konet.com/",
             text: "Experience the power of Konet pay.",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/homefluPay_logo_ddoifw.svg",
+            icon: "https://res.cloudinary.com/dypedkp7i/image/upload/v1678829433/21ctl/k_1_ohoeuu.png",
           },
           {
             name: "21st Century Power",
@@ -936,6 +936,7 @@ export const konetWalletNavLinks = [
         },
         {
           name: "Konet Pay",
+          link: "https://konetpay.com/",
           subLinks: [],
         },
         
@@ -974,7 +975,7 @@ export const konetAppNavLinks = [
       navLinks: [
         {
           name: "Home",
-          link: "https://www.konet.com/",
+          link: "/konet",
           subLinks: [],
         },
         {
@@ -984,6 +985,7 @@ export const konetAppNavLinks = [
         },
         {
           name: "Konet Pay",
+          link: "https://konetpay.com/",
           subLinks: [],
         },
         
@@ -1001,6 +1003,7 @@ export const konetAppNavLinks = [
         },
         {
           name: "Konet Wallet",
+          link: "/konet-wallet",
           subLinks: [],
         },
         {
@@ -1026,6 +1029,7 @@ export const konetNavLinks = [
       },
       {
         name: "Konet Pay",
+        link: "https://konetpay.com/",
         subLinks: [],
       },
       {

@@ -74,8 +74,8 @@ const Konet = () => {
               </div>
               <div className="">
                 <img
-                  className="w-[750px] sm:hidden md:hidden lg:block"
-                  src="../../konet-hero.png"
+                  className="w-4/5 sm:hidden md:hidden lg:block"
+                  src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678828902/21ctl/Rectangle_11870_wczmec.png"
                 />
               </div>
             </div>
@@ -160,11 +160,13 @@ const Konet = () => {
                   text="Our wallet platform puts you in control of your finances, allowing you to seamlessly manage your money, pay bills, and make transactions, all with just a few taps on your device."
                 />
               )}
+              
               {id == 7 && (
                 <ProductCard
                   name="Konet App"
-                  img="../../konet/kwallet.png"
+                  img="https://res.cloudinary.com/dypedkp7i/image/upload/v1678795752/21ctl/Frame_56134_s9pjgr.png"
                   text="Our wallet platform puts you in control of your finances, allowing you to seamlessly manage your money, pay bills, and make transactions, all with just a few taps on your device."
+                  id={id}
                 />
               )}
             </div>
@@ -176,14 +178,14 @@ const Konet = () => {
   );
 };
 
-const ProductCard = ({ reverse, img, name, text }) => {
+const ProductCard = ({ reverse, img, name, text, id}) => {
   return (
     <>
       <div
         className={`flex sm:flex-row flex-col justify-center w-full ${reverse}`}
       >
         <div className="flex-1">
-          <img src={img} className="w-[600px]" />
+          <img src={img} className={`${id === 7 ? "w-2/3" :"w-[600px]"}`} />
         </div>
         <div className="flex flex-1 flex-col justify-center sm:pl-10 pl-0">
           <h3 className="text-3xl font-bold">{name}</h3>

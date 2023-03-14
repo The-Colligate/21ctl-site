@@ -13,20 +13,20 @@ const KonetApp = () => {
       <div className="max-w-full min-h-screen flex flex-col overflow-x-hidden relative ">
         <div className="w-full min-h-screen flex flex-col z-[0] ">
           <LightNavbar />
-          <section className=" px-20 h-[90vh] pt-[10vh] flex justify-between items-center  tablet:h-full tablet:flex-col-reverse bg-konet-app-bg dark:bg-[#373737] tablet:pt-[15vh] tablet:w-full tablet:px-10">
+          <section className=" px-20 h-[90vh] pt-[10vh] flex justify-center items-center  tablet:h-full tablet:flex-col-reverse bg-konet-app-bg dark:bg-[#373737] tablet:pt-[15vh] tablet:w-full tablet:px-10">
             <div>
               <img
                 src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678795752/21ctl/Frame_56134_s9pjgr.png"
                 className="w-4/5 tablet:w-full"
               />
             </div>
-            <div className=" w-[650px]  tablet:mx-10  tablet:w-full tablet:mb-10">
-              <p className=" text-[70px] leading-[70px] dark:text-white font-bold text-[#606163] tablet:leading-[50px] tablet:text-[35px]">
+            <div className=" w-[750px]  tablet:mx-10  tablet:w-full tablet:mb-10">
+              <p className=" text-[80px] leading-[80px] dark:text-white font-bold text-[#606163] tablet:leading-[50px] tablet:text-[35px]">
                 Stay <span className="text-[#3572AD]">Connected</span> <br />{" "}
                 with <span className="text-[#3572AD]">Voice</span> and <br />
                 <span className="text-[#3572AD]">Video Calls</span>
               </p>
-              <p className=" text-[22px] font-normal text-[#606163]  py-10 tablet:text-[16px]">
+              <p className=" text-[24px] font-normal text-[#606163]  py-10 tablet:text-[16px]">
                 With our powerful tools and intuitive interface, you can work
                 together with colleagues, friends, and collaborators to bring
                 your ideas to life and make amazing things happen.
