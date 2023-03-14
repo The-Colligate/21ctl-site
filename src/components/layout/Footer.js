@@ -50,6 +50,9 @@ export function Footer() {
     ? "supporttechnology@21ctl.com"
     : mainKonet.includes(router.pathname)
     ? "info@konet.com"
+    : konetApp.includes(router.pathname)
+    ? "info@konet.com"
+    
     : null;
 
   // get year

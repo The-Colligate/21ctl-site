@@ -91,7 +91,7 @@ export const mainLinks = [
           },
           {
             name: "21st Century Digital Infrastructure Limited",
-            link: "#",
+            link: "/digital-infrastructure",
             text: "Streamlining operations with CAAS.",
             icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675261450/21ctl/21st_century_logo_retouch_-_icon_acvkgo.png",
           },
@@ -488,7 +488,7 @@ export const platformNavLinks = [
       },
       {
         name: "Cloud Platform",
-        link: "https://www.21ctl.com/cloud/",
+        link: "#",
         subLinks: [],
 
         extras: [],

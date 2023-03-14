@@ -25,16 +25,6 @@ export function LightNavbar({ menuProp }) {
   const [isOpen, setIsOpen] = useState(false);
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
-  // useEffect(() => {
-  // const addclass = theme === "light" ? "show-white" : "show-black";
-
-  // window.addEventListener('scroll', () => {
-  //   if (window.scrollY > 300) {
-  //     return document.querySelector('.navbar').classList.add('show');
-  //   }
-  //   return document.querySelector('.navbar').classList.remove('show');
-  // });
-  // });
 
   const academy = ["/people", "/programmes", "/training-pillars", "/admission"];
 
@@ -110,7 +100,7 @@ export function LightNavbar({ menuProp }) {
 
   return (
     <>
-      <div className="navbar flex show justify-between items-center space-x-5 py-1 px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
+      <div className="navbar flex show justify-between items-center space-x-5  px-20 font-lato z-40 tablet:px-10 smallTablet:px-5 fixed w-full bg-white dark:bg-black dark:bg-[linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 136.14%)] dark:opacity-90 z-40 ">
         {theme !== "dark" ? (
           <Link
             href={
@@ -122,35 +112,7 @@ export function LightNavbar({ menuProp }) {
             }
           >
             {logoLightMode(router.pathname)}
-            {/* {router.pathname === "/" ? <img src="/light-logo.svg" className="dark:hidden w-16 tablet:w-14" /> : router.pathname === "/people" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/programmes" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : router.pathname === "/training-pillars" ? <img src="/digital-academy-logo-black.svg" className="dark:hidden w-36 tablet:w-14" /> : <img src="/light-logo-limited.svg" className="dark:hidden w-16 tablet:w-14" />} */}
-            {/* {
-            
-            router.pathname === '/' ? (
-              <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg" />
-            ) : excluded.includes(router.pathname) ? (
-              <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
-                className="dark:hidden w-36 tablet:w-14"
-              />
-            ) : router.pathname === '/platform' ? <img
-            src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1672916362/favicon_w8xxc5.jpg"
-            className="dark:hidden w-16 tablet:w-14"
-          />: (
-              <img
-                src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
-                className="dark:hidden w-16 tablet:w-14"
-              />
-            )} */}
-            {/* <img
-              src={
-                router.pathname === '/'
-                  ? '/light-logo.svg'
-                  : router.pathname === '/people'
-                  ? '/digital-academy-logo-black.svg'
-                  : '/light-logo-limited.svg'
-              }
-              className="dark:hidden w-16 tablet:w-14"
-            /> */}
+           
           </Link>
         ) : (
           <Link href="/" className="dark:block hidden">
@@ -207,7 +169,7 @@ export function LightNavbar({ menuProp }) {
 
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-4 space-y-2 list-disc text-[20px] break-words  font-semibold dark:text-white"
+                              className="ml-4 space-y-2 list-disc text-[15px] break-words  font-semibold dark:text-white"
                             >
                               {" "}
                               {sublinks.name}
@@ -217,31 +179,31 @@ export function LightNavbar({ menuProp }) {
                           <div className="flex flex-col">
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor} max-w-sm`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} max-w-sm`}
                             >
                               <span className="">{sublinks?.text} </span>
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text1}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text2}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text3}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                             >
                               {sublinks?.text4}{" "}
                             </Link>
@@ -253,7 +215,7 @@ export function LightNavbar({ menuProp }) {
                               router.pathname === "/training-pillars") ? (
                               <Link
                                 href="/programmes"
-                                className={`ml-9 space-y-2 text-[15px] ${textColor} `}
+                                className={`ml-9 space-y-2 text-[12px] ${textColor} `}
                               >
                                 See more{" "}
                               </Link>
@@ -261,55 +223,55 @@ export function LightNavbar({ menuProp }) {
                               <>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text5}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text5}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text6}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text7}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text8}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text9}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text10}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text11}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[15px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
                                 >
                                   {sublinks?.text12}{" "}
                                 </Link>
@@ -321,41 +283,6 @@ export function LightNavbar({ menuProp }) {
                     </div>
                   </div>
 
-                  {/*   <div className=" min-w-[250px] flex flex-col bg-silver dark:bg-[#121212] px-8 py-8 "
-                  style={{display: link.extras.length !== 0 ? "block": "none" }}
-                  >
-                    <h2 className="text-sm font-bold text-darkShade">
-                      Recent
-                    </h2>
-                    <div className={`flex flex-col flex-nowrap w-full`}>
-                      {link.extras.map((sublinks) => (
-                        <div key={sublinks.name} className="mt-3">
-                          <div className="flex">
-                            {' '}
-                            <Image
-                              height={20}
-                              width={20}
-                              src={`${sublinks.icon}`}
-                            />{' '}
-                            <Link
-                              href={`${sublinks.link}`}
-                              className="ml-2 list-disc font-medium hover:text-primary-orange"
-                            >
-                              {' '}
-                              {sublinks.name}
-                            </Link>
-                          </div>
-                          <Link
-                            href={`${sublinks.link}`}
-                            className="ml-9 list-disc text-[10px]"
-                          >
-                            {sublinks.text}{' '}
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                      */}
                 </div>
               }
             >
@@ -374,7 +301,7 @@ export function LightNavbar({ menuProp }) {
                   href={link?.link}
                   target={router.pathname === "/" ? "_blank" : "_self"}
                   rel="noreferrer"
-                  className={`flex items-center hover:${textColor}`}
+                  className={`flex items-center text-[14px] hover:${textColor}`}
                   onClick={() => {
                     console.log(
                       `${displayPopup[1]} === ${index} ? ${
@@ -407,11 +334,11 @@ export function LightNavbar({ menuProp }) {
           {navItems[1]?.additionalLinks?.map((link, index) => (
             <li
               key={`${link} ${index}`}
-              className={`relative hover:${textColor}`}
+              className={`relative text-[14px] hover:${textColor}`}
             >
               <a
                 href={`${link.link}`}
-                target="_blank"
+                target={router.pathname === "/" ? "_blank" : "_self"}
                 rel="noreferrer"
                 className="flex items-center"
               >

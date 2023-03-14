@@ -25,7 +25,7 @@ const Digital = () => {
         <div className="w-full min-h-screen flex flex-col z-[1]">
           <LightNavbar />
 
-          <section className="flex sm:px-36 px-8 my-6 items-center max-w-fit m-auto space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
+          <section className="flex px-20 my-6 items-center justify-between space-x-16 tablet:flex-col tablet:space-x-0 pt-28">
             <motion.div
               variants={leftTransitionVarient}
               animate="visible"
@@ -371,7 +371,7 @@ const Digital = () => {
                   models, and services.
                 </p>
               </div>
-              <div className="flex sm:justify-start justify-center w-full h-full sm:px-0 px-5">
+              <div className="flex sm:justify-end justify-end w-full h-full sm:px-0 px-5">
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675161977/21ctl/logo/5G_tower_gt0ilf.svg"
                   className=" w-full sm:rounded-tr-3xl rounded-md sm:rounded-br-3xl "

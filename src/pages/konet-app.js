@@ -15,20 +15,17 @@ const KonetApp = () => {
           <LightNavbar />
           <section className=" px-20 h-[90vh] pt-[10vh] flex justify-between items-center  tablet:h-full tablet:flex-col-reverse bg-konet-app-bg dark:bg-[#373737] tablet:pt-[15vh] tablet:w-full tablet:px-10">
           <div>
-              <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678746125/21ctl/Konet_APP_Menus2_skhzvt.png" className="w-2/4 tablet:w-full" />
+              <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678795752/21ctl/Frame_56134_s9pjgr.png" className="w-4/5 tablet:w-full" />
             </div>
-            <div className=" w-[850px]  tablet:mx-10  tablet:w-full tablet:mb-10">
-              <div className="text-[#3572AD] text-[18px] font-semibold flex items-center ">
-              Seamless Mobile Money{" "}
-                <p className="h-[5px] ml-2 w-[37px] rounded-lg bg-[#3572AD]"></p>
-              </div>
-              <p className=" text-[70px]  dark:text-white font-bold text-[#606163] tablet:text-[35px]">
+            <div className=" w-[650px]  tablet:mx-10  tablet:w-full tablet:mb-10">
+              
+              <p className=" text-[70px] leading-[70px] dark:text-white font-bold text-[#606163] tablet:leading-[50px] tablet:text-[35px]">
                 Stay <span className="text-[#3572AD]">Connected</span>  <br /> with {" "}
                 <span className="text-[#3572AD]">Voice</span> and{" "}
                 <br />
                 <span className="text-[#3572AD]">Video Calls</span>
               </p>
-              <p className=" text-[24px] font-normal text-[#606163] py-10 tablet:text-[16px]">
+              <p className=" text-[22px] font-normal text-[#606163]  py-10 tablet:text-[16px]">
               With our powerful tools and intuitive interface, you can work together with colleagues, friends, and collaborators to bring your ideas to life and make amazing things happen.
               </p>
               {/* <div className='flex tablet:justify-center'>
@@ -39,7 +36,55 @@ const KonetApp = () => {
             </div>
            
           </section>
-          <section className="relative bg-[#3572AD] rounded-[56px] h-[480px] mx-10 my-20 tablet:mx-10 tablet:px-5 flex justify-center">
+          <section className="mt-20  tablet:mx-10">
+            <div className="flex flex-col justify-center items-center w-full ">
+              
+              <p className=" text-[50px] text-center font-semibold text-black  dark:text-white tablet:text-[30px]">
+                Experience <span className="text-[#3572AD]">Simpler</span> and
+                More <span className="text-[#3572AD]">Secure</span> Payment
+              </p>
+              <p className=" text-[24px] text-center font-normal text-[#606163]  w-2/4 py-10 tablet:w-full">
+                Our payment solutions simplify your financial transactions and
+                provide a secure way to pay, so you can enjoy peace of mind and
+                focus on what really matters.
+              </p>
+            </div>
+            <div className="flex justify-center items-center tablet:flex-col">
+              <div className="flex flex-col justify-center items-center border border-[#808080] border-opacity-[23%] rounded-3xl w-[300px] p-10 ">
+                <img src="/icons/recharge.svg" />
+                <p className=" font-semibold text-[24px] my-2">
+                Recharge with ease
+                </p>
+                <p className=" font-medium text-[18x] text-[#808080] text-center">
+                Make quick and easy recharges on the go!
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center mx-10 border border-[#808080] border-opacity-[23%] py-10 px-5 rounded-3xl w-[300px] tablet:my-10">
+                <img src="/icons/call.svg" />
+                <p className=" font-semibold text-[24px]  my-2">
+                Talk non-stop
+                </p>
+                <p className=" font-medium text-[18px] text-[#808080] text-center">
+                Get voice packages for uninterrupted conversations.
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center border border-[#808080] border-opacity-[23%] p-10 rounded-3xl w-[300px]">
+                <img src="/icons/private.svg" />
+                <p className=" font-semibold text-[24px]  my-2">Stay private</p>
+                <p className=" font-medium text-[18px] text-[#808080] text-center">
+                Generate virtual phone numbers for added privacy.
+                </p>
+              </div>
+              <div className="flex flex-col justify-center ml-20 items-center border border-[#808080] border-opacity-[23%] p-10 rounded-3xl w-[300px] tablet:ml-0 tablet:my-10">
+                <img src="/icons/refer.svg" />
+                <p className=" font-semibold text-[24px]  my-2">Share and earn</p>
+                <p className=" font-medium text-[18px] text-[#808080] text-center">
+                Spread the word and earn rewards
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="relative bg-[#3572AD] rounded-[56px] h-[480px] mx-10 my-36 tablet:mx-10 tablet:px-5 flex justify-center">
             <div className="konet_wallet_green_bg flex justify-end items-center">
               <div className="absolute left-0 bottom-0 ">
                 <img
@@ -70,50 +115,7 @@ const KonetApp = () => {
             </div>
           </section>
           
-          {/* <section className="mt-10  tablet:mx-10">
-            <div className="flex flex-col justify-center items-center w-full ">
-              <div className="text-[#3572AD] text-center text-[18px] flex items-center font-semibold">
-                Exceptional Security, Flexibility & Support{" "}
-                <p className="h-[5px] ml-2 w-[37px] rounded-lg bg-[#3572AD]"></p>
-              </div>
-              <p className=" text-[50px] text-center font-semibold text-black  dark:text-white tablet:text-[30px]">
-                Experience <span className="text-[#3572AD]">Simpler</span> and
-                More <span className="text-[#3572AD]">Secure</span> Payment
-              </p>
-              <p className=" text-[24px] text-center font-normal text-[#606163] w-2/4 py-10 tablet:w-full">
-                Our payment solutions simplify your financial transactions and
-                provide a secure way to pay, so you can enjoy peace of mind and
-                focus on what really matters.
-              </p>
-            </div>
-            <div className="flex justify-center items-center tablet:flex-col">
-              <div className="flex flex-col justify-center items-center border border-[#808080] border-opacity-[23%] rounded-3xl w-[270px] p-10 ">
-                <img src="/icons/instant-payment.svg" />
-                <p className=" font-semibold text-[24px] my-2">
-                  Instant Payments
-                </p>
-                <p className=" font-medium text-[18x] text-[#808080] text-center">
-                  Save time and complete transactions quickly and efficiently.
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-center mx-20 border border-[#808080] border-opacity-[23%] p-10 rounded-3xl w-[270px] tablet:my-10">
-                <img src="/icons/secure-payment.svg" />
-                <p className=" font-semibold text-[24px]  my-2">
-                  Secure Payments
-                </p>
-                <p className=" font-medium text-[18px] text-[#808080] text-center">
-                  Save time and complete transactions quickly and efficiently.
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-center border border-[#808080] border-opacity-[23%] p-10 rounded-3xl w-[270px]">
-                <img src="/icons/virtual-card.svg" />
-                <p className=" font-semibold text-[24px]  my-2">Virtual Card</p>
-                <p className=" font-medium text-[18px] text-[#808080] text-center">
-                  Save time and complete transactions quickly and efficiently.
-                </p>
-              </div>
-            </div>
-          </section> */}
+
           {/* <section className='relative mt-[209px]'>
 
 
@@ -134,10 +136,7 @@ const KonetApp = () => {
           
           <section className="flex justify-between items-center my-10 tablet:flex-col tablet:mx-10">
             <div className="w-[650px] ml-20 tablet:w-full tablet:ml-10 ">
-              <div className="text-[#3572AD] text-[18px] font-semibold flex items-center ]">
-              Seamless Mobile Money{" "}
-                <p className="h-[5px] ml-2 w-[37px] rounded-lg bg-[#3572AD]"></p>
-              </div>
+             
               <p className=" text-[50px] font-bold text-[#606163] dark:text-white leading-[60px] tablet:text-[38px]">
               A better way to<br/><span className="text-[#3572AD]">communicate</span>,{" "} no <br />
                 matter the{" "}<span className="text-[#3572AD]">distance.</span>
