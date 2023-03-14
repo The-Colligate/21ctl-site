@@ -100,7 +100,7 @@ export const mainLinks = [
             name: "KonetPay Nigeria Limited",
             link: "https://www.konet.com/",
             text: "Experience the power of Konet pay.",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/home/KonetPay_logo_ddoifw.svg",
+            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058138/21ctl/icons/homefluPay_logo_ddoifw.svg",
           },
           {
             name: "21st Century Power",
@@ -954,6 +954,7 @@ export const konetWalletNavLinks = [
         {
           name: "Konet App",
           subLinks: [],
+          link: "/konet-app",
         },
         {
           name: "Main Portal",
@@ -963,6 +964,54 @@ export const konetWalletNavLinks = [
       ],
   },
 ];
+
+export const konetAppNavLinks = [
+  {
+    logoLightMode:
+      "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
+    logoDarkMode:
+      "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
+      navLinks: [
+        {
+          name: "Home",
+          link: "https://www.konet.com/",
+          subLinks: [],
+        },
+        {
+          name: "Billing Automation",
+          // link: "#products",
+          subLinks: [],
+        },
+        {
+          name: "Konet Pay",
+          subLinks: [],
+        },
+        
+        {
+          name: "Konet Mail",
+          subLinks: [],
+        },
+        {
+          name: "Konet KYC",
+          subLinks: [],
+        },
+        {
+          name: "Konet Space",
+          subLinks: [],
+        },
+        {
+          name: "Konet Wallet",
+          subLinks: [],
+        },
+        {
+          name: "Main Portal",
+          link: "/",
+          subLinks: [],
+        },
+      ],
+  },
+];
+
 export const konetNavLinks = [
   {
     logoLightMode:
@@ -999,6 +1048,7 @@ export const konetNavLinks = [
       {
         name: "Konet App",
         subLinks: [],
+        link: "/konet-app",
       },
     ],
   },

@@ -14,6 +14,7 @@ import {
   securityNavLinks,
   konetWalletNavLinks,
   konetNavLinks,
+  konetAppNavLinks,
 } from "../constants/NavbarLinks";
 
 const excluded = ["/people", "/programmes", "/training-pillars", "/admission"];
@@ -76,6 +77,9 @@ export function LightNavbar({ menuProp }) {
       ? konetWalletNavLinks
       : router.pathname === "/konet"
       ? konetNavLinks
+      : router.pathname === "/konet-app"
+      ? konetAppNavLinks
+      
       : excluded.includes(router.pathname)
       ? peopleNavLinks
       : mainLinks;
@@ -428,7 +432,7 @@ export function LightNavbar({ menuProp }) {
                 className="block  "
               >
                 <button
-                  className={`bg-${color} rounded text-white py-3 px-6 my-6 tablet:px-2`}
+                  className={`bg-${color} rounded text-white py-3 px-6 my-6 tablet:hidden tablet:px-2`}
                 >
                   Apply now
                 </button>
@@ -491,14 +495,14 @@ const MobileNavbar = ({ isOpen, theme, setTheme, close, navItems, router }) => {
   // console.log('close: ', close);
   return (
     <div
-      className={`fixed z-[99]  transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 largeTablet:block dark:bg-[#1f1d1d]`}
+      className={`fixed z-[99]  transition-all duration-300 w-screen h-screen overflow-hidden bg-[#ffffff] top-0 left-0 largeTablet:block dark:bg-[#1f1d1d]`}
     >
       {/* <div
       className={`fixed z-[99]  transition-all duration-300 w-screen h-screen overflow-hidden bg-[#E7DDDA] top-0 left-0 translate-x-full ${
         isOpen ? "translate-x-0" : ""
       } largeTablet:block dark:bg-[#1f1d1d]`}
     > */}
-      <div className="relative w-full h-full overflow-auto p-5 pt-1">
+      <div className="relative w-full h-full overflow-auto p-5 pl-12  pt-1">
         <div className="flex justify-between mt-2 mb-3">
           {showExpanded[1] ? (
             <button
@@ -983,6 +987,8 @@ function logoLightMode(pathname) {
 
     case "/konet-wallet":
       return <img src="/logo/KonetWallet.svg" />;
+      case "/konet-app":
+      return <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678748788/21ctl/KonetApp_v7osav.svg" />;
 
     case "/konet":
       return <img src="/konet/konect-logo.png" className="w-[150px]" />;
@@ -1061,6 +1067,8 @@ function logoDarkMode(pathname) {
 
     case "/konet-wallet":
       return <img src="/logo/KonetWallet-dark-mode.svg" />;
+      case "/konet-app":
+        return <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678748788/21ctl/KonetApplight_nhrgvo.svg" />;
 
     case "/konet":
       return <img src="/konet/konect-logo.png" className="w-[150px]" />;

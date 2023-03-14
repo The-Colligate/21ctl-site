@@ -16,8 +16,13 @@ module.exports = {
         "dark-shade ":"rgba(0, 0, 0, 0.5);",
         "silver":"#606163",
         "magenta": "#EC268F",
-        "background-color":"#F1F1F4"
+        "background-color":"#F1F1F4",
+       
+        
       },
+      backgroundImage: (theme) => ({
+        'konet-app-bg': `linear-gradient(180deg, #ffffff -1.05%, rgba(209, 225, 240, 0.548319) 44.12%, rgba(192, 210, 226, 0) 98.95%)`,
+      }),
       fontFamily: {
         lato: ['Lato', 'sans-serif'],
       },
