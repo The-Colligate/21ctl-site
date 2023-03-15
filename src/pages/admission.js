@@ -38,7 +38,7 @@ const Academy = () => {
         <div className="w-full min-h-screen flex flex-col z-[0]">
           <LightNavbar />
 
-          <section className=" dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16">
+          <section className=" dark:bg-[#565048] sm:px-28 px-8 my-16 sm:py-0 pt-16 tablet:my-5">
             <div className="flex sm:flex-row flex-col sm:space-x-16 space-x-0 items-center">
               <motion.div
                 variants={leftTransitionVarient}
@@ -154,13 +154,13 @@ const Academy = () => {
             </div>
             <div className="mt-4">
               <img
-                src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678905209/21ctl/filtering_t3bpzg.png"
+                src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678909267/21ctl/Group_56144_fzoghu.png"
                 alt="admission processes"
               />
             </div>
           </section>
-          <section className="hidden tablet:block">
-            <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678908307/21ctl/_con_r5jbcq.svg" />
+          <section className="w-full hidden tablet:block ">
+            <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678908307/21ctl/_con_r5jbcq.svg"  className="w-full px-10"/>
           </section>
           {/* <section className=" flex flex-col justify-center items-center hidden tablet:block w-full mx-10">
             <Link href="https://application.21ctldea.com">
@@ -197,9 +197,40 @@ const Academy = () => {
             </div>
             <div className="mt-4">
               <img
-                src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678906391/21ctl/confirm_hsxcnc.svg"
+                src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678909379/21ctl/Group_56027_pcsrjp.svg"
                 alt="Trainee Confirmation image"
               />
+            </div>
+          </section>
+
+          <section className="relative flex flex-col items-center justify-center bg-[#145389] rounded-[56px] h-[480px] mx-10 w-[90%] my-[209px] tablet:mx-10 tablet:px-5 flex justify-center">
+            <div className="konet_wallet_green_bg flex   justify-end items-center   ">
+              <div className="absolute left-0 bottom-0 ">
+                <img
+                  src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678908686/21ctl/Rectangle_11910_f8d7zz.png"
+                  className="w-full px-5 rounded-[40px] top-10 tablet:hidden"
+                />
+              </div>
+              <div className="w-[600px] ml-52 mb-10 flex flex-col justify-center items-start tablet:w-full tablet:ml-0 tablet:pt-10 tablet:items-center">
+                
+                <p className=" text-[50px] font-bold text-white leading-10 tablet:text-[30px]">
+                Join the Team to <br/>achieve Greatness
+              
+                </p>
+                <p className=" text-[24px] font-normal text-white py-10">
+                Build your career with like-minded individuals at 21st Century Technologies. Unlock your potential at DEA to achieve greatness as part of our winning team.
+                </p>
+                <div className=" w-full ">
+                <Link 
+                href="http://application.21ctldea.com/"
+                target="_blank"
+                rel="noreferrer"
+                >  <button className='bg-white text-[#134E82] text-[24px] font-bold px-10 py-5 rounded-xl mr-5 tablet:text-[12px]  cursor-pointer tablet:px-5 '>
+                                        Apply Now</button>
+                                        </Link>
+                                    {/* <button className='flex bg-white text-[#60A297] text-[24px] font-bold px-10 py-5 rounded-xl mr-5 tablet:text-[12px] items-center tablet:px-5 tablet:pr-2'><img src='/icons/playstore-green.svg' className='pr-5  tablet:pr-2  tablet:w-2/5' />Play Store</button> */}
+                </div>
+              </div>
             </div>
           </section>
 

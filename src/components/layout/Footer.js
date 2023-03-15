@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import { useTheme } from "next-themes";
 export function Footer() {
   const router = useRouter();
+  const { theme, setTheme } = useTheme();
 
   const academy = ["/people", "/programmes", "/training-pillars", "/admission"];
 
@@ -13,12 +14,15 @@ export function Footer() {
   const konet = ["/konet-wallet"];
   const mainKonet = ["/konet", ];
   const konetApp = ["/konet-app"];
+
   const tech = [
     "/digital-infrastructure",
     "/platform",
     "/communication",
     "/automation",
   ];
+
+  const excluded = ["/people", "/programmes", "/training-pillars", "/admission"];
 // 
   const footerBg = academy.includes(router.pathname)
     ? `bg-primary-orange`
@@ -62,14 +66,32 @@ export function Footer() {
       <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:items-center sm:space-y-0 space-y-10">
         <div className="space-y-8 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center">
           <div>
-            <img
+            {/* <img
               src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675092408/21ctl/21st_Century_Technolies_Logo_xtstpd.svg"
               className="dark:hidden w-16 tablet:w-14 "
             />
             <img
               src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
               className="dark:block hidden w-16 tablet:w-14"
-            />
+            /> */}
+            {theme !== "dark" ? (
+          <Link
+            href={
+              router.pathname === "/"
+                ? "/"
+                : excluded.includes(router.pathname)
+                ? "/people"
+                : "/"
+            }
+          >
+            {logoLightMode(router.pathname)}
+           
+          </Link>
+        ) : (
+          <Link href="/" className="dark:block hidden">
+            {logoDarkMode(router.pathname)}
+          </Link>
+        )}
           </div>
 
           <div className="flex space-x-5">
@@ -264,3 +286,182 @@ const MailIcon = () => {
     </svg>
   );
 };
+
+
+function logoLightMode(pathname) {
+  switch (pathname) {
+    case "/":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+    case "/people":
+    case "/programmes":
+    case "/training-pillars":
+    case "/admission":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
+          className="w-full h-[70px]"
+        />
+      );
+
+    case "/digital-platform":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/digital-infrastructure":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/power":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/security":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/platform":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/communication":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/automation":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/identity":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/konet-wallet":
+      return <img src="/logo/KonetWallet.svg" />;
+      case "/konet-app":
+      return <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678748788/21ctl/KonetApp_v7osav.svg" />;
+
+    case "/konet":
+      return <img src="/konet/konect-logo.png" className="w-[150px]" />;
+    default:
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          className="w-22 h-20"
+        />
+      );
+  }
+}
+
+function logoDarkMode(pathname) {
+  switch (pathname) {
+    case "/":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+      );
+    case "/people":
+    case "/programmes":
+    case "/training-pillars":
+    case "/admission":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg"
+          className="w-full  h-[70px]"
+        />
+      );
+
+    case "/digital-platform":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+      );
+
+    case "/digital-infrastructure":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+      );
+
+    case "/power":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_power_pribmf.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/security":
+      return (
+        <img
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png"
+          className="w-22 h-20"
+        />
+      );
+
+    case "/platform":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+      );
+
+    case "/communication":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+      );
+
+    case "/automation":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+      );
+
+    case "/identity":
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+      );
+
+    case "/konet-wallet":
+      return <img src="/logo/KonetWallet-dark-mode.svg" />;
+      case "/konet-app":
+        return <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678748788/21ctl/KonetApplight_nhrgvo.svg" />;
+
+    case "/konet":
+      return <img src="/konet/konect-logo.png" className="w-[150px]" />;
+    default:
+      return (
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+      );
+  }
+}
