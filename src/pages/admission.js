@@ -129,28 +129,31 @@ const Academy = () => {
                 <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678734952/21ctl/Group_56027_dswqzy.svg" alt="admission processes" />
             </div>
           </section> */}
-
+          <section className="sm:px-28 px-8 sm:py-20 py-10">
+          <h3 className="font-bold sm:text-5xl text-xl text-primary-orange text-center leading-8">
+              How to Apply
+              </h3>
+            <div className="mt-20">
+              <h3 className="font-bold sm:text-4xl text-xl  text-center leading-8">
+              Stage 1: Applicant Filtering Stage
+              </h3>
+            </div>
+            <div className="mt-4">
+                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678904019/21ctl/Group_56144_driv37.png" alt="admission processes" />
+            </div>
+          </section>
           <section className="sm:px-28 px-8 sm:py-20 py-10 tablet:py-0">
             <div className="mt-20">
-              <h3 className="font-bold sm:text-5xl text-2xl text-primary-orange text-center leading-8">
-              Timeline
+              <h3 className="font-bold sm:text-4xl text-xl  text-center leading-8">
+              Stage 2: Training Confirmation
               </h3>
             </div>
             <div className="mt-4">
-                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678785901/21ctl/WhatsApp_Image_2023-03-14_at_10.18.55_rzcplm.jpg" alt="admission processes" />
+                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678903686/21ctl/Group_56027_zzdaev.svg" alt="admission processes" />
             </div>
           </section>
 
-          <section className="sm:px-28 px-8 sm:py-20 py-10">
-            <div className="mt-20">
-              <h3 className="font-bold sm:text-5xl text-2xl text-primary-orange text-center leading-8">
-              Applicant Filtering Stage
-              </h3>
-            </div>
-            <div className="mt-4">
-                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678752519/21ctl/Group_56138_p9ruly.png" alt="admission processes" />
-            </div>
-          </section>
+
 
           <Footer />
         </div>
