@@ -85,7 +85,7 @@ const NavbarDark = () => {
                 />
               </svg>
             </button>
-            <div class="dropdown-menu">
+            <div className="dropdown-menu">
               <div className="whitespace-nowrap text-white">
                 <h2>Digital</h2>
                 <p>Lorem, ipsum.</p>
@@ -112,7 +112,7 @@ const NavbarDark = () => {
                 />
               </svg>
             </button>
-            <div class="dropdown-menu">
+            <div className="dropdown-menu">
               <div className="whitespace-nowrap text-white">
                 <h2>Digital</h2>
                 <p>Lorem, ipsum.</p>
@@ -139,7 +139,7 @@ const NavbarDark = () => {
                 />
               </svg>
             </button>
-            <div class="dropdown-menu">
+            <div className="dropdown-menu">
               <div className="whitespace-nowrap text-white">
                 <h2>Digital</h2>
                 <p>Lorem, ipsum.</p>
@@ -166,7 +166,7 @@ const NavbarDark = () => {
                 />
               </svg>
             </button>
-            <div class="dropdown-menu">
+            <div className="dropdown-menu">
               <div className="whitespace-nowrap text-white">
                 <h2>Digital</h2>
                 <p>Lorem, ipsum.</p>
@@ -193,7 +193,7 @@ const NavbarDark = () => {
                 />
               </svg>
             </button>
-            <div class="dropdown-menu">
+            <div className="dropdown-menu">
               <div className="whitespace-nowrap text-white">
                 <h2>Digital</h2>
                 <p>Lorem, ipsum.</p>
@@ -220,7 +220,7 @@ const NavbarDark = () => {
                 />
               </svg>
             </button>
-            <div class="dropdown-menu">
+            <div className="dropdown-menu">
               <div className="whitespace-nowrap text-white">
                 <h2>Digital</h2>
                 <p>Lorem, ipsum.</p>

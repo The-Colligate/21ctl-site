@@ -13,8 +13,10 @@ const Programmes = () => {
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
   const sch = courses[0].courses;
+  const ora = courses[1].courses;
+  
 
-  const spreadCourse = [...sch];
+  const spreadCourse = [...sch, ...ora];
 
   const searchCourses = spreadCourse.filter((course) =>
     course.title

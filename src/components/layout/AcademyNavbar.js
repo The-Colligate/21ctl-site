@@ -53,7 +53,7 @@ export function AcademyNavbar() {
                   onMouseOver={(e) => setDisplayPopup([true, -2])}
                   onMouseOut={(e) => setDisplayPopup([true, -2])}
                 >
-                  <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
+                  <div className="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
                       {aboutUsLink.name.toUpperCase()}
                     </h2>
@@ -136,7 +136,7 @@ export function AcademyNavbar() {
                   onMouseOver={(e) => setDisplayPopup([true, -3])}
                   onMouseOut={(e) => setDisplayPopup([true, -3])}
                 >
-                  <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
+                  <div className="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade  opacity-70">
                       OUR TRAININGS
                     </h2>
@@ -216,7 +216,7 @@ export function AcademyNavbar() {
                     onMouseOver={(e) => setDisplayPopup([true, index])}
                     onMouseOut={(e) => setDisplayPopup([true, index])}
                   >
-                    <div class="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
+                    <div className="min-w-max pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                       <h2 className="text-darkShade">
                         {link.name.toUpperCase()}
                       </h2>

@@ -141,7 +141,7 @@ export function LightNavbar({ menuProp }) {
                   onMouseOver={(e) => setDisplayPopup([true, index])}
                   onMouseOut={(e) => setDisplayPopup([true, index])}
                 >
-                  <div class="w-full pl-5 py-5 whitespace-wrap rounded bg-white overflow-x-hidden  max-h-[82vh] dark:bg-black dark:bg-opacity-90">
+                  <div className="w-full pl-5 py-5 whitespace-wrap rounded bg-white overflow-x-hidden  max-h-[82vh] dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
                       {router.pathname === "/people"
                         ? link?.head

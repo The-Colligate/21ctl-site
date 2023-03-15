@@ -87,7 +87,7 @@ export function DigitalNavbar({ menuProp }) {
                   onMouseOver={(e) => setDisplayPopup([true, index])}
                   onMouseOut={(e) => setDisplayPopup([true, index])}
                 >
-                  <div class="max-w-4xl pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
+                  <div className="max-w-4xl pl-5 py-5 whitespace-nowrap rounded bg-white  dark:bg-black dark:bg-opacity-90">
                     <h2 className="text-darkShade">
                       
                       { link?.head ?? link.name.toUpperCase()}

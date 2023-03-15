@@ -138,12 +138,12 @@ const Academy = () => {
             </div>
            
           </section> */}
-          <div class="relative w-full flex flex-col justify-center items-center py-28">
+          <div className="relative w-full flex flex-col justify-center items-center py-28">
             <img
               src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg"
               className="flex justify-center items-center"
             />
-            <h1 class="absolute text-5xl font-bold text-center text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-base dark:text-white">
+            <h1 className="absolute text-5xl font-bold text-center text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-base dark:text-white">
               we provide world-class services to the top 1000 companies in
               Nigeria and key residential areas.
             </h1>

@@ -2343,6 +2343,147 @@ export const courses = [
      
     ],
   },
+  {
+    "school":"Oracle",
+    "courses": [
+    {
+      title: "Administer Oracle Cloud Databases",
+      role:"Cloud Database Administrator",
+      certification:"Oracle Autonomous Database Cloud Certified Specialist",
+      description:
+        "Program with Oracle SQL and PL/SQL, Create procedures, functions, packages, and triggers using PL/SQL Describe Oracle Database Architecture & Multitenant Architecture Explain database storage, backup, and recovery concepts. Manage, maintain, and monitor Autonomous Database. Describe various database services offered in OCI, which include Autonomous Database, DBCS, ExaCS, ExaCC, NoSQL, and Big Data",
+      mode: "Project based",
+    },
+    {
+      title: "Database Developer on Oracle Cloud",
+      role:"Cloud Database Developer",
+      certification:"Oracle APEX Cloud Developer Certified Specialist",
+      description:
+      "Create and run database applications using Oracle Application Express (APEX) Build and deploy world-class web applications using Oracle APEX Application Development service Enhance your APEX application by adding various components like reports, forms, items, dynamic actions, calendars, charts, plug-ins Add advanced functionality to your APEX application to make it production ready Implement dynamic actions, incorporate interactivity using JavaScript Work with RESTful services and web source modules. Optimize your APEX application, manage globalization and translation",
+     mode: "Project based",
+    },
+    {
+      title: "Application Development on Oracle Cloud",
+      role:"Cloud Application Developer",
+      certification:"Oracle Cloud Visual Builder Studio Certified Application Specialist",
+      description:
+        "Cloud App Development - Benefits and Challenges Oracle PaaS for Application Development Project Management in Visual Builder Studio (VBS) Continuous Integration and Continuous Delivery using VBS Develop and Manage Visual Applications (Web) Create and Build Mobile Applications Get started with Oracle Digital Assistant",
+      mode: "Project based",
+    },
+    {
+      title: "Business Intelligence on Oracle Cloud",
+      role:"Business Intelligence Analyst",
+      certification:"Oracle Cloud Business Intelligence Reporting Certified Specialist",
+      description:
+        "Explore data through visualizations Create and publish data models using Data Modeler Build analyses in Oracle Analytics Cloud Use views and graphs in analyses Administer objects in the catalog Configure Oracle Analytics Cloud on Mobile",
+      mode: "Project based",
+    },
+    {
+      title: "Machine Learning on Oracle Cloud",
+      role:"Data Scientist",
+      certification:"Oracle Machine Learning using Autonomous Database Certified Specialist",
+      description:
+        "Program with Oracle SQL and PL/SQL Create procedures, functions, packages, and triggers using PL/SQL Introduction to Autonomous Database  Describe the components and feature of Oracle Machine Learning (OML) Use OML features with Oracle Autonomous Database Identify Oracle Cloud Services that are compatible with OML Create projects, workspaces, SQL scripts, job schedules, templates, and notebooks in OML Introduction to Machine Learning for Python OML4Py Transparency Layer OML4Py Automated Machine Learning Describe OML use cases",
+      mode: "Project based",
+    },
+    {
+      title: "Blockchain Development on Oracle Cloud",
+      role:"Blockchain Developer",
+      certification:"No Certification at the moment",
+      description:
+        "Describe the building blocks that form a Blockchain Navigate the console for Oracle Blockchain Platform Write chaincodes and deploy them to Oracle Blockchain Platform Invoke the chaincode in REST API using Postman Design applications for Oracle Blockchain Platform",
+      mode: "Project based",
+    },
+    {
+      title: "Java Development on Oracle Cloud",
+      role:"Java Developer ",
+      certification:"Java SE 11 Developer Certified Professional",
+      description:
+        "Java Fundamentals, Implement Java datatypes, conditional constructs, OOP features, and Java on OCI, Implement a Capstone Case Study that brings together all you have learned in Java Explorer, Learn advanced Java Programming with the Develop Java Applications on Oracle Cloud Learning Path, Describe the object-oriented programming approach, Explain Java syntax and coding conventions, Use Java constructs and operators, Use core Java APIs, such as Collections, Streams, IO, and Concurrency, Deploy Java SE applications, Develop, Test, and Deploy your Java Application on OCI as part of your Final Project, Prepare for your Java SE 11 Certification Exam with the certification prep course, and associated Practice Exam",
+      mode: "Project based",
+    },
+    {
+      title: "SQL on Oracle Cloud",
+      role:"SQL Developer",
+      certification:"Oracle Database SQL Specialist",
+      description:
+        "Retrieve row and column data from tables with the SELECT statement, Create reports of sorted and restricted data, Employ SQL functions to generate and retrieve customized data, Run complex queries to retrieve data from multiple tables, Run data manipulation language (DML) statements to update data in a database, Run data definition language (DDL) statements to create and manage schema objects",
+      mode: "Project based",
+    },
+    {
+      title: "PL/SQL on Oracle Cloud",
+      role:"PL/SQL Developer",
+      certification:"Oracle Database Program with PL/SQL Specialist",
+      description:
+        "Declare Variables, Write Executable Statements, Write Control Structures, Create Procedures and Functions, Create Packages, Create Triggers",
+      mode: "Project based",
+    },
+    {
+      title: "Oracle Database 19c: Administration Workshop on Oracle Cloud",
+      role:"Oracle Database Administrator",
+      certification:"Oracle Database Administration Specialist",
+      description:
+        "Create and administer an Oracle Database, Configure and administer Oracle Net Services, Create and administer pluggable databases, Create and manage database storage, Load and transport data, Manage automated maintenance tasks, Monitor and tune database performance",
+      mode: "Project based",
+    },
+    {
+      title: "Build MySQL Databases for Applications on Oracle Cloud",
+      role:"MySQL Developer",
+      certification:"MySQL Developer Specialist",
+      description:
+        "Understand the relational database model, Understand the features and benefits of MySQL, Design efficient databases and use Structured Query Language (SQL) to build your database and query data, Employ appropriate MySQL tools, Use Connectors to access MySQL databases, Query the database effectively and present data in different formats, Create a MySQL Database Service on cloud, Create an OCI Compute Instance on cloud, Connect to a MySQL Database Service on cloud",
+      mode: "Project based",
+    },
+    {
+      title: "Administer MySQL on Oracle Cloud",
+      role:"MySQL Database Administrator",
+      certification:"MySQL Database Administrator Specialist",
+      description:
+        "Install, configure, and upgrade a MySQL server., Install a database from script., Secure the data by applying the MySQL privilege system., Create MySQL Cloud Service instance , Connect MySQL Cloud Service instance, Manage database in MySQL Cloud Service",
+      mode: "Project based",
+    },
+    {
+      title: "Administer Oracle Cloud Infrastructure",
+      role:"Oracle Cloud Architecture",
+      certification:"OCI Foundations Associate ",
+      description:
+        "Oracle Cloud Infrastructure Foundations	,   OCI Introduction,   Oracle Cloud Free Tier Account,   Identity and Access Management,   Networking,   Compute,   Storage,   Database,   Security,   App Dev,   Observability and Management,   Analytics and AI,   Hybrid,   Governance and Administration,   SLA and Support, Oracle Cloud Infrastructure Architect Associate	,   Block Storage,   Object Storage,   File Storage, Oracle Cloud Infrastructure Operations Associate	,   Automating Cloud Tasks,   Operational Activities on OCI,   Troubleshooting OCI Services,   Securing OCI,   Monitoring, Notification, Logging,   Pricing, Billing, Support",
+      mode: "Project based",
+    },
+    {
+      title: "Oracle Financials Cloud Business Process",
+      role:"Account Specialist, Business Managers, Financial Analyst",
+      certification:"Oracle Financials Business Process Foundations Associate ",
+      description:
+        "Customer Invoice to Receipt, Customer Statement to Collection, Capture Taxes, Bank Transaction to Cash Position, Expense Report to Reimbursement, Supplier Invoice to Payment, Capture Taxes, Bank Transaction to Cash Position, Asset Acquisition to Retirement, Sub ledger Accounting to Posting, Manage Budgets and Reports, Capture Transactions Journal Entry, Period Close to Financial Reporting",
+      mode: "Project based",
+    },
+    {
+      title: "Oracle HCM Cloud Business Process",
+      role:"HR Specialist, HR Manager, Recruiter",
+      certification:"Oracle HCM Business Process Foundations Associate ",
+      description:
+        "Recruit to Onboard, Hire to Retire, Absence Planning to Productivity , Employee Separation to Workforce Analysis, Goal Setting to Performance, Talent Review to Succession, Career Planning to Development, Employee Insight to Work life Balance, Benefits to Payroll, Rime Collection to payroll, Reward Planning to Targeted Compensation, Payroll to payment",
+      mode: "Project based",
+    },
+    {
+      title: "Oracle Sales Cloud Business Process",
+      role:"Sales Specialist, Sales Manager, Sales Analyst",
+      certification:"Oracle Sales Business Process Foundations Associate",
+      description:
+        "Social Prospect to Lead, Lead to Opportunity, Opportunity to Quote, Vendor Lead to Channel Opportunity, Channel Lead to Vendor Opportunity, Sales Play to Key Account Opportunity, Schedule Change to Sales Call, Opportunity Forecast, Quote to Order, Sales Order to Subscription, Order to Close Opportunity",
+      mode: "Project based",
+    },
+    {
+      title: "Oracle Procurement Cloud Business Process",
+      role:"Procurement Manager, Supplier Administrator, Account Payable Manager",
+      certification:"Oracle Procurement Business Process Foundations Associate",
+      description:
+        "Register Supplier, Manage Enablement, Active Supplier Portal, Manage Supplier Qualifications, Optimize Supplier Portfolio, Identify Opportunity, Initiate Sourcing Event, Manage Negotiation, Award Business, Author Contracts, Ensure Policy Compliance, Approve/Accept Contract, Raise Requisition, Create Purchase Order, Receive Goods and Service, Supplier Invoice to Payment",
+      mode: "Project based",
+    },
+  ],
+  }
   /* {
     "school":"Oracle",
     "courses":
