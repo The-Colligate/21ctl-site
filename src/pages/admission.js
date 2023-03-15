@@ -139,7 +139,7 @@ const Academy = () => {
               </h3>
             </div>
             <div className="mt-4">
-                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678904019/21ctl/Group_56144_driv37.png" alt="admission processes" />
+                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678905209/21ctl/filtering_t3bpzg.png" alt="admission processes" />
             </div>
           </section>
           <section className="sm:px-28 px-8 sm:py-20 py-10 tablet:py-0">
