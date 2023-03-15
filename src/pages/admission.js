@@ -63,7 +63,7 @@ const Academy = () => {
                   details into the choice of program and specialization.
                 </p>
                 <a
-                  href="https://21ctl-biodata.vercel.app/"
+                  href="http://application.21ctldea.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
