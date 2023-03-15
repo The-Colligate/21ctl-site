@@ -1,30 +1,31 @@
-import React, { useState } from 'react';
-import Head from 'next/head';
-import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import Head from "next/head";
+import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
+import { motion } from "framer-motion";
 import {
   leftTransitionVarient,
   rightTansitionVarient,
-} from '@components/constants/animations';
-import CountUp from 'react-countup';
+} from "@components/constants/animations";
+import CountUp from "react-countup";
+import { Link } from "evergreen-ui";
 
 const Academy = () => {
   const courses = [
-    'Electrical design and installation',
-    'Power management and distribution',
-    'Building management systems and energy efficiency',
-    'Automation and control systems',
-    'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
-    'Cybersecurity for industrial systems',
-    'Industry-specific applications, such as data centers (renewable energy, and critical power systems)',
-    'Safety and compliance',
+    "Electrical design and installation",
+    "Power management and distribution",
+    "Building management systems and energy efficiency",
+    "Automation and control systems",
+    "Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs",
+    "Cybersecurity for industrial systems",
+    "Industry-specific applications, such as data centers (renewable energy, and critical power systems)",
+    "Safety and compliance",
     // 'Database',
   ];
   const [video1, setVideo1] = useState(false);
 
   return (
     <>
-       <Head>
+      <Head>
         <title>Academy - 21 CTL</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicons/dea_favicon.ico" />
@@ -47,12 +48,12 @@ const Academy = () => {
               >
                 <h1 className="text-5xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                   <span className="text-primary-orange leading-8">
-                    Admission{' '}
+                    Admission{" "}
                   </span>
-                  and{' '}
+                  and{" "}
                   <span className="text-primary-orange leading-8">
                     Eligibility
-                  </span>{' '}
+                  </span>{" "}
                   Requirements
                 </h1>
                 <p className="text-2xl mt-6 largeTablet:text-xl smallTablet:text-lg">
@@ -92,7 +93,7 @@ const Academy = () => {
 
           <section className="sm:px-28 px-12 sm:py-20 py-10">
             <div className="flex sm:flex-row flex-col-reverse items-center  sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
-              <div className='sm:block hidden'>
+              <div className="sm:block hidden">
                 <img
                   src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675074995/21ctl/Group_56024_j0h0qz.svg"
                   className="w-3/4 h-3/4 dark:hidden "
@@ -101,18 +102,31 @@ const Academy = () => {
               </div>
               <div className="max-w-3xl">
                 <h2 className="font-bold  sm:text-5xl text-2xl">
-                 <span className="text-primary-orange">Eligibility</span> Criteria
+                  <span className="text-primary-orange">Eligibility</span>{" "}
+                  Criteria
                 </h2>
                 <div className="text-lg font-light mt-4 mb-6 max-w-2xl text-black tablet:mb-0 dark:text-white">
-                Applicants can be any of the following:
+                  Applicants can be any of the following:
                   <ul className="list-disc mt-4 pl-4 space-y-1">
-                    <li className="font-light">Recent graduates looking to start a career in the IT field </li>
-                    <li className="font-light">Companies or organizations looking to train their employees in specific IT skills or technologies</li>
-                    <li className="font-light">Experienced IT professionals seeking to expand their skills and knowledge</li>
                     <li className="font-light">
-                    Individuals looking to make a career change into the IT field 
+                      Recent graduates looking to start a career in the IT field{" "}
                     </li>
-                    <li className="font-light">Trainees interested in pursuing a specific area of study within the IT field, such as data science or cybersecurity</li>
+                    <li className="font-light">
+                      Companies or organizations looking to train their
+                      employees in specific IT skills or technologies
+                    </li>
+                    <li className="font-light">
+                      Experienced IT professionals seeking to expand their
+                      skills and knowledge
+                    </li>
+                    <li className="font-light">
+                      Individuals looking to make a career change into the IT
+                      field
+                    </li>
+                    <li className="font-light">
+                      Trainees interested in pursuing a specific area of study
+                      within the IT field, such as data science or cybersecurity
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -129,31 +143,65 @@ const Academy = () => {
                 <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678734952/21ctl/Group_56027_dswqzy.svg" alt="admission processes" />
             </div>
           </section> */}
-          <section className="sm:px-28 px-8 sm:py-20 py-10">
-          <h3 className="font-bold sm:text-5xl text-xl text-primary-orange text-center leading-8">
+          <section className="sm:px-28 px-8 sm:py-20 py-10 tablet:hidden">
+            <h3 className="font-bold sm:text-5xl text-xl text-primary-orange text-center leading-8">
               How to Apply
-              </h3>
+            </h3>
             <div className="mt-20">
               <h3 className="font-bold sm:text-4xl text-xl  text-center leading-8">
-              Stage 1: Applicant Filtering Stage
+                Stage 1: Applicant Filtering Stage
               </h3>
             </div>
             <div className="mt-4">
-                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678905209/21ctl/filtering_t3bpzg.png" alt="admission processes" />
+              <img
+                src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678905209/21ctl/filtering_t3bpzg.png"
+                alt="admission processes"
+              />
             </div>
           </section>
+          <section className="hidden tablet:block">
+            <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678908307/21ctl/_con_r5jbcq.svg" />
+          </section>
+          {/* <section className=" flex flex-col justify-center items-center hidden tablet:block w-full mx-10">
+            <Link href="https://application.21ctldea.com">
+              <p className="text-[#2B9647]">https://application.21ctldea.com</p>
+            </Link>
+            <div>
+              <div className="flex justify-between bg-[#2B9647] rounded-xl px">
+                <p className="text-white">01</p>
+                <p className="text-white">Apply</p>
+                <div></div>
+              </div>
+              <p className="text-[#2B9647] border border-[#F1F1F4] p-10">
+                Visit DEA website to apply. You can apply as a fresh graduate or
+                experienced applicant{" "}
+              </p>
+            </div>
+            <div>
+              <div>
+                <p className="text-white">01</p>
+                <p className="text-white">Apply</p>
+                <></>
+              </div>
+              <p className="text-[#2B9647]">
+                Visit DEA website to apply. You can apply as a fresh graduate or
+                experienced applicant{" "}
+              </p>
+            </div>
+          </section> */}
           <section className="sm:px-28 px-8 sm:py-20 py-10 tablet:py-0">
             <div className="mt-20">
               <h3 className="font-bold sm:text-4xl text-xl  text-center leading-8">
-              Stage 2: Training Confirmation
+                Stage 2: Trainee Confirmation
               </h3>
             </div>
             <div className="mt-4">
-                <img src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678903686/21ctl/Group_56027_zzdaev.svg" alt="admission processes" />
+              <img
+                src="https://res.cloudinary.com/dypedkp7i/image/upload/v1678906391/21ctl/confirm_hsxcnc.svg"
+                alt="Trainee Confirmation image"
+              />
             </div>
           </section>
-
-
 
           <Footer />
         </div>

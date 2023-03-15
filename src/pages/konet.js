@@ -165,7 +165,7 @@ const Konet = () => {
                 <ProductCard
                   name="Konet App"
                   img="https://res.cloudinary.com/dypedkp7i/image/upload/v1678795752/21ctl/Frame_56134_s9pjgr.png"
-                  text="Our wallet platform puts you in control of your finances, allowing you to seamlessly manage your money, pay bills, and make transactions, all with just a few taps on your device."
+                  text="Stay connected with voice and video calls. With our powerful tools and intuitive interface, you can work together with colleagues, friends, and collaborators to bring your ideas to life and make amazing things happen.."
                   id={id}
                 />
               )}
