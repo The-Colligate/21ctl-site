@@ -1,32 +1,32 @@
-import React, { useState } from 'react';
-import Head from 'next/head';
-import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import Head from "next/head";
+import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
+import { motion } from "framer-motion";
 import {
   leftTransitionVarient,
   rightTansitionVarient,
-} from '@components/constants/animations';
-import CountUp from 'react-countup';
-import dynamic from 'next/dynamic';
-import Video from '../../components/Video';
-import { Link } from 'evergreen-ui';
+} from "@components/constants/animations";
+import CountUp from "react-countup";
+import dynamic from "next/dynamic";
+import Video from "../../components/Video";
+import { Link } from "evergreen-ui";
 // const Video = dynamic(() => import('../../components/Video'));
 
 const src1 =
-  'https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4';
+  "https://res.cloudinary.com/dqsggbqmf/video/upload/v1675030374/Digital%20Expert%20Academy%20Video/Digital_Expert_Academy-1_wptior.mp4";
 
 const Academy = () => {
   const courses = [
-    'Electrical design and installation',
-    'Power management and distribution',
-    'Building management systems and energy efficiency',
-    'Automation and control systems',
-    'Programming and configuration of Schneider Electric products.',
+    "Electrical design and installation",
+    "Power management and distribution",
+    "Building management systems and energy efficiency",
+    "Automation and control systems",
+    "Programming and configuration of Schneider Electric products.",
     // 'Programming and configuration of Schneider Electric products, such as PLCs,  VFDs, and HMIs',
-    'Cybersecurity for industrial systems',
-    'Industry-specific applications, such as data centers',
-    'Safety and compliance',
-    'Data Center managment',
+    "Cybersecurity for industrial systems",
+    "Industry-specific applications, such as data centers",
+    "Safety and compliance",
+    "Data Center managment",
     // 'Database',
   ];
   const [video1, setVideo1] = useState(false);
@@ -56,7 +56,7 @@ const Academy = () => {
               >
                 <h1 className="text-6xl tracking-normal capitalize font-bold whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                   <span className="text-primary-orange leading-8">Unlock </span>
-                  Your potential with our{' '}
+                  Your potential with our{" "}
                   <span className="text-primary-orange leading-8">
                     Academy.
                   </span>
@@ -108,24 +108,25 @@ const Academy = () => {
             )}
           </div>
           <section className="z-10 py-20">
-            <div className=" flex justify-center items-center mx-20 w-full tablet:mx-0 sm:px-0 px-5 tablet:flex-col">
+            <div className=" flex justify-center items-center w-full  sm:px-0 px-5 tablet:flex-col max-w-7xl m-auto">
               <div className="w-2/3 tablet:w-full">
                 <p className="sm:text-4xl text-2xl font-bold max-w-lg sm:leading-[50px] leading-normal">
-                  Investment in{' '}
+                  Investment in{" "}
                   <span className="text-primary-orange">
                     Digital Infrastructure
-                  </span>{' '}
-                  in five key areas over the past 25 years
+                  </span>{" "}
+                  in seven key areas over the past 25 years
                 </p>
                 <p className="sm:text-2xl text-lg max-w-lg mt-5">
                   Investment focused on enhancing five vital components: power,
-                  security, payment, people, and technology.
+                  security, payment, people, connectivity, data center and
+                  technology.
                 </p>
               </div>
               <div className="sm:mt-0 mt-5 flex justify-center sm:justify-start">
                 <img
-                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058158/21ctl/logo/21ctl-infographics_jiaas4.png"
-                  className="w-2/3"
+                  src="https://res.cloudinary.com/dypedkp7i/image/upload/v1679345846/21ctl/Group_56163_zxpyxv.svg"
+                  className="w-full"
                 />
               </div>
             </div>
@@ -143,7 +144,7 @@ const Academy = () => {
               src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058180/21ctl/logo/people-info_k35pf5.svg"
               className="flex justify-center items-center"
             />
-            <h1 className="absolute text-5xl font-bold text-center text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-base dark:text-white">
+            <h1 className="absolute text-5xl font-bold text-center text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tablet:w-3/5 tablet:text-xs dark:text-white">
               we provide world-class services to the top 1000 companies in
               Nigeria and key residential areas.
             </h1>
@@ -209,7 +210,7 @@ const Academy = () => {
 
           <section className="text-3xl  w-full flex flex-col justify-between items-center dark:bg-[#565048]">
             <h4 className="font-bold">
-              {' '}
+              {" "}
               Skill <span className="text-primary-orange">Gap</span>
             </h4>
             <div className="flex justify-between items-center tablet:flex-col  ">
@@ -261,10 +262,10 @@ const Academy = () => {
               </h4> */}
               <div>
                 <p className="p-5 bg-primary-orange text-white text-[18px] w-[400px] flex justify-center items-center">
-                  Targeted Number of Trainees by 2033{' '}
+                  Targeted Number of Trainees by 2033{" "}
                 </p>
                 <p className="p-5 mt-2 bg-white text-black text-[18px] w-[400px] flex justify-center items-center">
-                  10,000,000{' '}
+                  10,000,000{" "}
                 </p>
               </div>
             </div>
@@ -293,7 +294,6 @@ const Academy = () => {
               <h4 className="text-primary-orange">Target of the Academy</h4>
             </div>
             <div className="w-full flex justify-center items-center sm:ml-20 ml-0 mt-8 tablet:flex-col ">
-        
               <img
                 src="https://res.cloudinary.com/deairfyff/image/upload/v1677765299/21ctl/target_academy-black-text_kahqnw.svg"
                 className=" w-2/4  tablet:w-4/5 dark:hidden"
@@ -302,7 +302,7 @@ const Academy = () => {
                 src="https://res.cloudinary.com/deairfyff/image/upload/v1677765296/21ctl/target_academy-white-text_vhetgg.svg"
                 className=" w-2/4  tablet:w-4/5 dark:block hidden"
               />
-        
+
               <img
                 src="https://res.cloudinary.com/deairfyff/image/upload/v1677765298/21ctl/target_academy-black-text2_yshttt.svg"
                 className="w-2/4 tablet:pt-10  tablet:w-4/5 dark:hidden"
@@ -311,7 +311,6 @@ const Academy = () => {
                 src="https://res.cloudinary.com/deairfyff/image/upload/v1677765296/21ctl/target_academy-white-text2_sbnjwh.svg"
                 className=" w-2/4  tablet:w-4/5  dark:block hidden"
               />
-           
             </div>
           </section>
 
@@ -330,23 +329,24 @@ const Academy = () => {
                   key={course}
                   className="bg-white sm:w-[350px] w-full px-2 py-3 rounded-xl"
                 >
-                  <Link  href="/programmes">
-                  <div key={course} className="flex items-center">
-                    <div key={course} className="mr-4">
-                      <img
-                        src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/logo/courses_z4srsc.svg"
-                        // src="/logo/courses.png"
-                        className="w-24 h-full max-w-lg"
-                      />
-                      {/* <div className='w-[120px] h-[99px] bg-primary-orange'></div> */}
+                  <Link href="/programmes">
+                    <div key={course} className="flex items-center">
+                      <div key={course} className="mr-4">
+                        <img
+                          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058139/21ctl/logo/courses_z4srsc.svg"
+                          // src="/logo/courses.png"
+                          className="w-24 h-full max-w-lg"
+                        />
+                        {/* <div className='w-[120px] h-[99px] bg-primary-orange'></div> */}
+                      </div>
+                      <div className="flex flex-1 flex-col  justify-center">
+                        <h2 className="text-base text-black font-bold w-full ">
+                          {course}
+                        </h2>
+                        {/* <p className="text-sm text-black">Duration: 12 weeks</p> */}
+                      </div>
                     </div>
-                    <div className="flex flex-1 flex-col  justify-center">
-                      <h2 className="text-base text-black font-bold w-full ">
-                        {course}
-                      </h2>
-                      {/* <p className="text-sm text-black">Duration: 12 weeks</p> */}
-                    </div>
-                  </div></Link>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -387,16 +387,16 @@ const Academy = () => {
                   lessons unique and keep all students interested and engaged.
                 </p>
                 <a
-                // href="https://digitalexpertsacademy.herokuapp.com/"
-                href="http://application.21ctldea.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="block dark:hidden "
-              >
-                <button className="bg-primary-orange rounded text-white py-3 px-6 my-6 tablet:px-2">
-                  Apply now
-                </button>
-              </a>
+                  // href="https://digitalexpertsacademy.herokuapp.com/"
+                  href="http://application.21ctldea.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block dark:hidden "
+                >
+                  <button className="bg-primary-orange rounded text-white py-3 px-6 my-6 tablet:px-2">
+                    Apply now
+                  </button>
+                </a>
               </div>
               <div className="w-full">
                 <img
