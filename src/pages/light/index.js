@@ -13,7 +13,7 @@ import {
 function LightDesign() {
   const [displayPopup, setDisplayPopup] = useState([false, -1]);
 
-  const products = [
+  const pillars = [
     // {
     //   icon: '/icons/home/baseline-call.svg',
     //   name: 'Communication',
@@ -92,15 +92,16 @@ function LightDesign() {
       </div> */}
         <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[0]">
           <LightNavbar />
-          <div className=" flex items-center justify-between w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-10 smallTablet:px-5 pt-28">
+          <div className="mx-auto max-w-[2000px]">
+          <div className=" flex items-center justify-between w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-0 tablet:justify-center smallTablet:px-5 pt-28">
             <motion.div
               variants={leftTransitionVarient}
               animate="visible"
               initial="hidden"
               className="h-full flex items-start"
             >
-              <div className="max-w-3xl mt-10 flex flex-col items-start justify-center">
-                <h1 className="text-5xl text-silver font-lato font-black whitespace-pre-wrap dark:text-white largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl ">
+              <div className="max-w-3xl mt-10 flex flex-col items-start justify-center tablet:mt-0 xlargeTablet:max-w-4xl">
+                <h1 className="text-5xl text-silver font-lato font-black whitespace-pre-wrap dark:text-white largeTablet:text-6xl tablet:text-5xl smallTablet:text-4xl xlargeTablet:text-7xl  ">
                   Building Africa&apos;s{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
                     Largest Digital Infrastructure
@@ -108,7 +109,7 @@ function LightDesign() {
                 </h1>
                 <motion.p
                   initial={delayVarient1}
-                  className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg"
+                  className="text-lg mt-6 largeTablet:text-xl smallTablet:text-lg xlargeTablet:text-2xl"
                 >
                   21st Century Technologies, an ecosystem Technology Group of
                   companies, building bold, ambitious and audacious digital
@@ -120,7 +121,7 @@ function LightDesign() {
                   heart of everything we do.
                 </motion.p>
                 <Link href="/explore-more">
-                  <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver  rounded-xl  text-white py-4 px-8 my-6">
+                  <button className="bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver  rounded-xl  text-white py-4 px-8 my-6 xlargeTablet:text-2xl xlargeTablet:py-6 xlargeTablet:px-10">
                     Read More
                   </button>
                 </Link>
@@ -298,16 +299,17 @@ function LightDesign() {
               </div>
             </motion.div>
           </div>
+          </div>
           <motion.div
             variants={buttonVarient}
             animate="visible"
             initial="hidden"
             className="flex items-center justify-between max-w-full gap-12 overflow-x-auto px-20 py-5 mt-16  tablet:px-10 tablet:grid-cols-4 tablet:bg-gradient-to-b tablet:from-transparent tablet:to-gray-400 tablet:dark:!bg-none smallTablet:px-10 phone:mt-auto phone:py-10"
           >
-            {products.map((product, index) => {
+            {pillars.map((pillar, index) => {
               return (
                 <Popover
-                  key={product.name}
+                  key={pillar.name}
                   triggerType="menu"
                   isShown={displayPopup[0] && displayPopup[1] === index}
                   content={
@@ -317,13 +319,13 @@ function LightDesign() {
                       onMouseOut={(e) => setDisplayPopup([false, index])}
                     >
                       <div className="rounded-lg p-5 text-sm bg-white dark:bg-black">
-                        <p>{product.name}</p>
+                        <p>{pillar.name}</p>
                         <p className="mt-3 text-xs opacity-60">
-                          {product.snippet}
+                          {pillar.snippet}
                         </p>
                         <a
                           className="mt-3 flex items-center text-xs group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81]"
-                          href={product.link}
+                          href={pillar.link}
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -342,17 +344,17 @@ function LightDesign() {
                   >
                     <div className="w-full flex justify-center pt-5">
                       <div
-                        className="h-24 min-w-[6rem] rounded-full  bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver shadow-bg-silver   cursor-pointer flex items-center justify-center border  bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem]"
+                        className="h-24 min-w-[6rem] rounded-full  bg-gradient-to-r from-[#0282BA] to-[#015A81] shadow-text-sliver shadow-bg-silver   cursor-pointer flex items-center justify-center border  bg-opacity-60 dark:bg-black dark:bg-opacity-10 tablet:h-16 tablet:min-w-[4rem] xlargeTablet:min-w-[10rem] xlargeTablet:min-h-[10rem]"
                         role="button"
                       >
                         <img
-                          src={product.icon}
-                          className="h-12 w-10 tablet:h-8"
+                          src={pillar.icon}
+                          className="h-12 w-10 tablet:h-8 xlargeTablet:h-20 xlargeTablet:w-20"
                         />
                       </div>
                     </div>
-                    <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold ">
-                      {product.name}
+                    <p className="mt-4 flex justify-center items-center text-center text-sm group font-semibold xlargeTablet:text-2xl ">
+                      {pillar.name}
                     </p>
                   </div>
                 </Popover>
@@ -360,6 +362,7 @@ function LightDesign() {
             })}
           </motion.div>
         </div>
+        
         <SocialIcons />
       </div>
     </>
