@@ -92,7 +92,7 @@ function LightDesign() {
       </div> */}
         <div className="w-full min-h-screen overflow-y-hidden flex flex-col z-[0]">
           <LightNavbar />
-          <div className="mx-auto max-w-[2000px]">
+          <div className="m-auto max-w-[2000px]">
           <div className=" flex items-center justify-between w-full h-full px-20 flex-grow largeTablet:mt-10 largeTablet:flex-wrap phone:flex-grow-0 tablet:px-10 tablet:mt-0 tablet:justify-center smallTablet:px-5 pt-28">
             <motion.div
               variants={leftTransitionVarient}
