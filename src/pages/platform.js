@@ -1,11 +1,11 @@
-import React from 'react';
-import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import Head from 'next/head';
+import React from "react";
+import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
+import Head from "next/head";
 
 const Platform = () => {
   return (
     <>
-      {' '}
+      {" "}
       <Head>
         <title>Digital Platform - 21 CTL</title>
         <meta name="description" content="" />
@@ -35,19 +35,17 @@ const Platform = () => {
               <div>
                 <img
                   // src="https://d2pi5ijasmgfet.cloudfront.net/500x328/filters:focal(249x163:251x165):quality(82)/combined%2Fpublic%2Fmisc%2FPD20-hp-img-500x328.jpg"
-                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058163/21ctl/logo/Social_Media_Globe_fbmzmt.png'
-                  className='w-3/4 h-3/4 '
-
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058163/21ctl/logo/Social_Media_Globe_fbmzmt.png"
+                  className="w-3/4 h-3/4 "
                   alt="communication"
                 />
-          
               </div>
               <div className="max-w-3xl">
-                <h2 className="font-bold text-2xl">Communcation Solutions</h2>
+                <h2 className="font-bold text-2xl">Communication Solutions</h2>
                 <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
                   As data becomes critical to the business agenda, IT is
                   undergoing a major shift toward data-centric architecture and
-                  Hybrid IT. ServiceFabric, a global interconnectivity solution
+                  Hybrid IT. ServiceFabric, a global inter-connectivity solution
                   and orchestration platform, provides an on-demand suite of
                   services supporting the digital transformation and
                   data-centric needs of the business. The ServiceFabric product
@@ -55,9 +53,9 @@ const Platform = () => {
                   interconnect and securely host their critical infrastructure
                   and data sets.
                 </p>
-                
+
                 <a
-                  href='mailto:commercial@21ctl.com'
+                  href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
@@ -81,8 +79,8 @@ const Platform = () => {
                   <ul className="list-disc mt-4 pl-4">
                     <li className="font-light">
                       Move beyond cross connects and traditional interconnection
-                      backhaul to an era of open, pervasively connected data
-                      communities colocated at centers of data.
+                      back haul to an era of open, pervasively connected data
+                      communities co-located at centers of data.
                     </li>
                     <li className="font-light">
                       Make your data integrated, traffic localized, services
@@ -97,7 +95,7 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href='mailto:commercial@21ctl.com'
+                  href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
@@ -148,7 +146,7 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href='mailto:commercial@21ctl.com'
+                  href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
@@ -182,12 +180,11 @@ const Platform = () => {
                       exchanged and policies enforced by connecting to curated
                       data communities that matter to you.
                     </li>
-                  
                   </ul>
                 </p>
 
                 <a
-                  href='mailto:commercial@21ctl.com'
+                  href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
@@ -198,8 +195,8 @@ const Platform = () => {
 
               <div className="w-full">
                 <img
-                src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/payment-provider_ctqupk.svg'
-                alt="connectivity"
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058151/21ctl/logo/payment-provider_ctqupk.svg"
+                  alt="connectivity"
                 />
               </div>
             </div>
@@ -210,7 +207,7 @@ const Platform = () => {
               <div>
                 <img
                   // src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
-                  src='https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/automation_e6jwab.svg'
+                  src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058149/21ctl/logo/automation_e6jwab.svg"
                   alt="connectivity"
                   className="w-[500px]"
                 />
@@ -244,7 +241,7 @@ const Platform = () => {
                 </p>
 
                 <a
-                  href='mailto:commercial@21ctl.com'
+                  href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
