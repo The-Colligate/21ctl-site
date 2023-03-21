@@ -30,7 +30,7 @@ const Platform = () => {
             </div>
           </section>
 
-          <section className="sm:px-28 px-8 py-20">
+          <section className="sm:pr-28 tablet:px-8 py-20">
             <div className="flex sm:flex-row flex-col items-center justify-between sm:space-y-0 space-y-10 sm:space-x-5 space-x-0">
               <div>
                 <img
@@ -42,7 +42,7 @@ const Platform = () => {
               </div>
               <div className="max-w-3xl">
                 <h2 className="font-bold text-2xl">Communication Solutions</h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
+                <p className="text-lg font-light mt-4 mb-6 max-w-3xl text-black dark:text-white">
                   As data becomes critical to the business agenda, IT is
                   undergoing a major shift toward data-centric architecture and
                   Hybrid IT. ServiceFabric, a global inter-connectivity solution
@@ -58,7 +58,7 @@ const Platform = () => {
                   href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
@@ -72,11 +72,11 @@ const Platform = () => {
                 <h2 className="font-bold text-2xl text-black dark:text-white">
                   World-Wide Connectivity
                 </h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
+                <p className="text-lg font-light mt-4  max-w-2xl text-black dark:text-white">
                   Get virtual and physical connectivity to your customers,
                   partners, providers and facilities while extending your
-                  network&apos;s capabilities.
-                  <ul className="list-disc mt-4 pl-4">
+                  network&apos;s capabilities.</p>
+                  <ul className="list-disc mt-4 pl-4 mb-6 max-w-2xl">
                     <li className="font-light">
                       Move beyond cross connects and traditional interconnection
                       back haul to an era of open, pervasively connected data
@@ -92,13 +92,13 @@ const Platform = () => {
                       and tackle data gravity head on.
                     </li>
                   </ul>
-                </p>
+                
 
                 <a
                   href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
@@ -125,10 +125,10 @@ const Platform = () => {
               </div>
               <div className="max-w-3xl">
                 <h2 className="font-bold text-2xl">Cloud Solutions</h2>
-                <p className="text-lg font-light mt-4 mb-6 max-w-2xl text-black dark:text-white">
+                <p className="text-lg font-light mt-4  max-w-2xl text-black dark:text-white">
                   Get an optimal mix of cloud-enabled and privately-supported
-                  applications to support all cloud connection needs.
-                  <ul className="list-disc mt-4 pl-4">
+                  applications to support all cloud connection needs. </p>
+                  <ul className="mb-6 list-disc mt-4 pl-4">
                     <li className="font-light">
                       Invert traffic flow, leveraging interconnection, bringing
                       both clouds and users to the data.
@@ -143,13 +143,13 @@ const Platform = () => {
                       connectivity providers to unlock trapped value and growth.
                     </li>
                   </ul>
-                </p>
+             
 
                 <a
                   href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
@@ -187,7 +187,7 @@ const Platform = () => {
                   href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
@@ -244,7 +244,7 @@ const Platform = () => {
                   href="mailto:commercial@21ctl.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] text-white text-lg font-light px-5 py-2"
+                  className="bg-gradient-to-r from-[#0282BA] to-[#015A81] rounded text-white text-lg font-light px-5 py-2"
                 >
                   Contact Us
                 </a>
