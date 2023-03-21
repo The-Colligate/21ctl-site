@@ -626,7 +626,7 @@ export const peopleNavLinks = [
           {
             name: "Schneider University",
             link: "https://university.se.com/",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg",
+            icon: "/logo/Schneider-Electric-logo.png",
           },
         ],
       },
@@ -653,7 +653,7 @@ export const peopleNavLinks = [
           {
             name: "Schneider University",
             link: "/programmes",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp",
+            icon: "/logo/Schneider-Electric-logo.png",
             text: "Fundamentals of Power",
             text1: "Efficiency of AC and DC Power Distribution in Data Centers",
             text2: "Energy Efficiency Fundamentals",
