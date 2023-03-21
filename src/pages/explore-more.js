@@ -46,7 +46,7 @@ const ExploreMore = () => {
                 <div className="text-center mt-5">
                   <h3 className="text-3xl font-bold">Wale Ajisebutu</h3>
                   <p className="text-md font-medium">
-                    CEO/Chairman 21st Century Technologies
+                    Chairman/CEO 21st Century Technologies
                   </p>
                 </div>
               </div>

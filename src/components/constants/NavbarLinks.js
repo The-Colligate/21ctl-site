@@ -16,7 +16,7 @@ export const mainLinks = [
           {
             name: "Schneider Electric University",
             link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp",
+            icon: "/logo/Schneider-Electric-logo.png",
           },
 
           {
@@ -706,7 +706,7 @@ export const peopleNavLinks = [
           {
             name: "Super Micro",
             link: "/programmes",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp",
+            icon: "/logo/super-micro.png",
             text: "OS Cerifications",
             text1: "Cloud services",
             text2: "Cloud Orchestrator",
@@ -846,7 +846,7 @@ export const peopleNavLinks = [
           {
             name: "Super Micro",
             link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp",
+            icon: "/logo/super-micro.png",
           },
           {
             name: "Microsoft Azure",
@@ -856,7 +856,7 @@ export const peopleNavLinks = [
           {
             name: "Schneider Electric University",
             link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp",
+            icon: "/logo/Schneider-Electric-logo.png",
             // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
           },
           //   {

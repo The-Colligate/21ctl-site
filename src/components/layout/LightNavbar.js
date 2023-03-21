@@ -158,12 +158,12 @@ export function LightNavbar({ menuProp }) {
                           key={sublinks.name}
                           className="mt-5 dark:text-white"
                         >
-                          <div className="flex hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81] ">
+                          <div className="flex items-center hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81] ">
                             <img
                               height={50}
                               width={50}
                               src={`${sublinks.icon}`}
-                              className="h-[40px] w-[30px] xlargeTablet:h-[50px] xlargeTablet:w-[40px]"
+                              className="max-h-[50px] max-w-[50px] xlargeTablet:h-[50px] xlargeTablet:w-[40px]"
                               layout="raw"
                             />
 
@@ -171,7 +171,7 @@ export function LightNavbar({ menuProp }) {
                               href={`${sublinks.link}`}
                               className="ml-4 space-y-2 list-disc text-[15px] break-words  font-semibold dark:text-white xlargeTablet:text-[20px] hover:text-primary-blue"
                             >
-                              {" "}
+                              {/* {" "} */}
                               {sublinks.name}
                             </Link>
                           </div>
