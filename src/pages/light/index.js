@@ -61,6 +61,13 @@ function LightDesign() {
         "21ctl enhouses premier renewable energy, turbine power infrastructure, power plant and electric energy storage system integrations and balancing services.",
       link: "/power",
     },
+     {
+      icon: '/icons/home/connectivity-icon.svg',
+      name: 'Connectivity',
+      snippet:
+        'We build, provide one to one, one to many, many to many, communication infrastructures and platforms, supporting millions of users transactions and variety of business processes',
+      link: '/communication',
+    },
 
     {
       icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675243573/21ctl/main%20page%20icons/Group_szvu4q.svg",
