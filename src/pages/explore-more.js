@@ -1,8 +1,7 @@
-import React from 'react';
-import Head from 'next/head';
-import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import Link from 'next/link';
-
+import React from "react";
+import Head from "next/head";
+import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
+import Link from "next/link";
 
 const ExploreMore = () => {
   return (
@@ -22,9 +21,9 @@ const ExploreMore = () => {
             <div className="flex items-center justify-center h-full">
               <div className="max-w-3xl">
                 <h1 className="text-7xl font-bold tracking-normal text-center font-lato text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-                  Welcome to 21st{' '}
+                  Welcome to 21st{" "}
                   <span className="text-primary-orange leading-8">
-                    Century Technologies{' '}
+                    Century Technologies{" "}
                   </span>
                 </h1>
                 {/* <p className="text-2xl text-white text-center mt-6 largeTablet:text-xl smallTablet:text-lg">
@@ -67,13 +66,15 @@ const ExploreMore = () => {
                   infrastructure and support enterprises of all sizes by
                   enabling the integration of all technology access business
                   functions. */}
-                  Our vision is to use state of the art infrastructure to offer world class services to our
-                  customers and solve critical problems for the industries through motivated talents and
-                  skilled workforce in partnership with pioneering global best in class subject matter
-                  experts with sustainability at the heart of everything we do.
+                  Our vision is to use state of the art infrastructure to offer
+                  world class services to our customers and solve critical
+                  problems for the industries through motivated talents and
+                  skilled workforce in partnership with pioneering global best
+                  in class subject matter experts with sustainability at the
+                  heart of everything we do.
                 </p>
                 <br />
-                <ul className='list-decimal text-xl'>
+                <ul className="list-decimal text-xl">
                   There are 5 critical elements in our vision
                   <li>Infrastructure</li>
                   <li>Customers</li>
@@ -82,66 +83,107 @@ const ExploreMore = () => {
                   <li>Sustainability</li>
                 </ul>
                 <br />
-                 <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
-    <svg aria-hidden="true" class="w-10 h-10 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
-    <p> <q className='text-xl'>The only challenges open to mankind are ourselves.</q></p>
-</blockquote>
+                <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
+                  <svg
+                    aria-hidden="true"
+                    class="w-10 h-10 text-gray-400 dark:text-gray-600"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p>
+                    {" "}
+                    <q className="text-xl">
+                      The only challenges open to mankind are ourselves.
+                    </q>
+                  </p>
+                </blockquote>
                 <p className="max-w-3xl text-xl pl-20">
-
-                  In our business we do not discuss challenges but always identify mandatory steps and
-                  actions we have to take to fulfill our visions. We are fully focused on a trillion dollar
-                  opportunities Nigeria presents as a country.</p>
+                  In our business we do not discuss challenges but always
+                  identify mandatory steps and actions we have to take to
+                  fulfill our visions. We are fully focused on a trillion dollar
+                  opportunities Nigeria presents as a country.
+                </p>
                 <br />
                 <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
-    <svg aria-hidden="true" class="w-10 h-10 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
-    <p> <q className='text-xl'>We are pioneering in everything we do</q></p>
-</blockquote>
+                  <svg
+                    aria-hidden="true"
+                    class="w-10 h-10 text-gray-400 dark:text-gray-600"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p>
+                    {" "}
+                    <q className="text-xl">
+                      We are pioneering in everything we do
+                    </q>
+                  </p>
+                </blockquote>
                 <p className="max-w-3xl pl-20 text-xl">
-
-                  The first company to build a fiber connectivity and Data Centre infrastructure in
-                  Nigeria and we immediately boarded the top 1000 companies   including the Mobile
-                  operators. They all remain our customers till date.</p>
-                  <br/>
-<p className='text-xl font-bold'>Current point </p>
-<p className='text-xl'>Today, we are rolling out compelling digital infrastructure</p>
-<ul className='list-decimal text-xl'>
-                 
-                  <li className='font-bold'>CONNECTIVITY</li>
-                  <li className='font-bold'>TECHNOLOGY PLATFORMS</li>
-                  <li  className='font-bold'>DATA CENTERS</li>
-                  <li  className='font-bold'>POWER</li>
-                  <li className='font-bold'>PEOPLE</li>
-                  <li className='font-bold'>PAYMENT</li>
-                  <li className='font-bold'>SECURITY</li>
+                  The first company to build a fiber connectivity and Data
+                  Centre infrastructure in Nigeria and we immediately boarded
+                  the top 1000 companies   including the Mobile operators. They
+                  all remain our customers till date.
+                </p>
+                <br />
+                <p className="text-xl font-bold">Current point </p>
+                <p className="text-xl">
+                  Today, we are rolling out compelling digital infrastructure
+                </p>
+                <ul className="list-decimal text-xl">
+                  <li className="font-bold">CONNECTIVITY</li>
+                  <li className="font-bold">TECHNOLOGY PLATFORMS</li>
+                  <li className="font-bold">DATA CENTERS</li>
+                  <li className="font-bold">POWER</li>
+                  <li className="font-bold">PEOPLE</li>
+                  <li className="font-bold">PAYMENT</li>
+                  <li className="font-bold">SECURITY</li>
                 </ul>
-                <br/>
-                <p className='font-bold text-2xl'>FUTURE</p>
-                <p className=''>EVERY COMPANY IN THE WORLD TODAY IS FACING DISRUPTION AS DIGITAL
-EMPOWERS COMPETITORS TO DO THINGS BETTER, FASTER AND CHEAPER.
-WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
-<ul className='list-decimal '>
-                 
+                <br />
+                <p className="font-bold text-2xl">FUTURE</p>
+                <p className="">
+                  EVERY COMPANY IN THE WORLD TODAY IS FACING DISRUPTION AS
+                  DIGITAL EMPOWERS COMPETITORS TO DO THINGS BETTER, FASTER AND
+                  CHEAPER. WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE
+                  FOLLOWING:
+                </p>
+                <ul className="list-decimal ">
                   <li>SOLVING COMPLEX PROBLEMS FOR THE INDUSTRIES</li>
                   <li>FAST TRACT DIGITAL ECONOMY</li>
-                  <li >ACCELERATE DIGITAL TRANSFORMATION </li>
-                  <li >DRIVE DIGITAL TECHNOLOGY ADOPTION </li>
-                  <li>ENABLE THE USE OF TECHNOLOGY AS A RESOURCE LIBERATING MECHANISM, AN ENABLER AND TOOL FOR DEVELOPMENT AND SKILL EMPOWERMENT.</li>
-                  
+                  <li>ACCELERATE DIGITAL TRANSFORMATION </li>
+                  <li>DRIVE DIGITAL TECHNOLOGY ADOPTION </li>
+                  <li>
+                    ENABLE THE USE OF TECHNOLOGY AS A RESOURCE LIBERATING
+                    MECHANISM, AN ENABLER AND TOOL FOR DEVELOPMENT AND SKILL
+                    EMPOWERMENT.
+                  </li>
                 </ul>
-                <br/>
-<p  className='font-bold text-2xl'>KEY VALUES</p>
-                <ul className='list-decimal'>
-                 
+                <br />
+                <p className="font-bold text-2xl">KEY VALUES</p>
+                <ul className="list-decimal">
                   <li>BOLD AND AUDACIOUS VISION AND MASTERY OF EXECUTION</li>
                   <li>TRACK RECORDS</li>
-                  <li >GOOD CORPORATE GOVERNANCE & STRUCTURE </li>
-                  <li >SOUND POLICIES AND PROCESSES </li>
+                  <li>GOOD CORPORATE GOVERNANCE & STRUCTURE </li>
+                  <li>SOUND POLICIES AND PROCESSES </li>
                   <li>SKILLED PEOPLE.</li>
-                  
                 </ul>
-                <br/>
+                <br />
 
-                <p  className='text-center font-bold'>WE ARE CURRENTLY WAY ABOVE THE CURVE. WINNING MORE AND MORE CRITICAL PROJECTS.   TECHNOLOGY IS OUR CORE BUSINESS.</p>
+                <p className="text-center font-bold">
+                  WE ARE CURRENTLY WAY ABOVE THE CURVE. WINNING MORE AND MORE
+                  CRITICAL PROJECTS. TECHNOLOGY IS OUR CORE BUSINESS.
+                </p>
               </div>
             </div>
             {/* <div className='w-1/5'>
@@ -212,7 +254,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                   <p className="text-[24px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
                     &quot;To use State of the Art Infrastructure to provide
                     world-class solutions to our valued customers through highly
-                    motivated talent and strategic alliances.&quot;{' '}
+                    motivated talent and strategic alliances.&quot;{" "}
                   </p>
                 </div>
                 <div>
@@ -286,7 +328,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
             <div className="grow mr-10 tablet:ml-10">
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey_xsy94x.png"
-              // '/logo/journey.png'
+                // '/logo/journey.png'
               />
 
               <div className="flex flex-wrap w-full">
@@ -347,7 +389,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                     </li>
                     <li>
                       We commenced laying of extensive copper network to homes
-                      in Lagos and control 85% of wireline in Nigeria by end of
+                      in Lagos and control 85% of Wireline in Nigeria by end of
                       2003.
                     </li>
                   </ul>
@@ -357,7 +399,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                   <ul className="list-disc">
                     <li>
                       Installation & Commissioning of 9.4m KU & 9.3m C band
-                      satallite antennas in Lekki .
+                      satellite antennas in Lekki .
                     </li>
                     <li>Continuation of Fiber Installation rollout.</li>
                     <li>
@@ -387,7 +429,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
             <div className="grow mr-10 tablet:ml-10">
               <img
                 src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675036189/Digital%20Expert%20Academy%20Video/Journey2_ougsfg.png"
-              // '/logo/journey2.png'
+                // '/logo/journey2.png'
               />
 
               <div className="flex flex-wrap w-full">
@@ -404,7 +446,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                     </li>
                     <li>
                       Installation of robust transmission network in Lagos for
-                      MNOs and corporates.
+                      MNOs and corporate.
                     </li>
                   </ul>
                 </div>
@@ -444,8 +486,8 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                   <h2 className="font-bold text-2xl">2007-2016</h2>
                   <ul className="list-disc">
                     <li>
-                      We signed colocation agreement with Etisalat UAE for
-                      Nigeria business occupying 60% of first Datacentre
+                      We signed co-location agreement with Etisalat UAE for
+                      Nigeria business occupying 60% of first Data centre
                       completed in 2004.
                     </li>
                     <li>Acquisition of sites for data centers services.</li>
@@ -485,9 +527,9 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                   <ul className="list-disc">
                     <li> Building of Data Centers. </li>
                     <li>
-                      {' '}
+                      {" "}
                       Expansion of our fiber network rollout and services to
-                      Ogun State.{' '}
+                      Ogun State.{" "}
                     </li>
                     <li>Built two computing Centers in Lagos.</li>
                     <li>
@@ -507,7 +549,7 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                       skill sets.
                     </li>
                     <li>
-                      {' '}
+                      {" "}
                       Launch of Ikeja computing centre & Tower with Africa
                       finance corporation (AFC) as anchor tenant.
                     </li>
@@ -524,15 +566,15 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                   <h2 className="font-bold text-2xl">2022 - Date</h2>
                   <ul className="list-disc">
                     <li>
-                      {' '}
+                      {" "}
                       The future is bright. Technology and Internet will be at
                       heart of our existence. Technology, Science, Engineering
                       and Social Media shall rapidly transform our world. The
                       information and communications revolution, now underway is
-                      spreading across the planet.{' '}
+                      spreading across the planet.{" "}
                     </li>
                     <li>
-                      {' '}
+                      {" "}
                       21st Century Technologies limited is fully mobilized and
                       well positioned to deploy Technology and skill to enable
                       citizens and businesses have access to digital solutions
@@ -555,10 +597,12 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
             <h2 className="flex justify-center my-10 font-bold text-2xl">
               Meet our Directors and Unit Heads
             </h2>
-            
+
             <div className="flex sm:flex-row flex-col pb-20 sm:px-20 px-5 justify-center items-start w-full ">
-            <Link href="/digital-infrastructure" className="w-1/4 flex flex-col items-center tablet:pb-10 tablet:w-full ">
-           
+              <Link
+                href="/digital-infrastructure"
+                className="w-1/4 flex flex-col items-center tablet:pb-10 tablet:w-full "
+              >
                 <img
                   src="/logo/blank-profile-picture.svg"
                   className="w-1/4 pb-5  rounded-full"
@@ -567,8 +611,10 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                   Director, Connectivity
                 </p>
               </Link>
-              <Link href="/platform"  className="w-1/4 flex flex-col items-center  tablet:pb-10 tablet:w-full">
-              
+              <Link
+                href="/platform"
+                className="w-1/4 flex flex-col items-center  tablet:pb-10 tablet:w-full"
+              >
                 <img
                   src="/logo/blank-profile-picture.svg"
                   className="w-1/4 pb-5  rounded-full"
@@ -576,10 +622,11 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                 <p className="break-words w-3/5 text-center">
                   Director, Infrastructure
                 </p>
-             
               </Link>
-              <Link href="/communication"  className="w-1/4 flex flex-col items-center  tablet:pb-10 tablet:w-full">
-              
+              <Link
+                href="/communication"
+                className="w-1/4 flex flex-col items-center  tablet:pb-10 tablet:w-full"
+              >
                 <img
                   src="/logo/blank-profile-picture.svg"
                   className="w-1/4 pb-5  rounded-full"
@@ -587,29 +634,28 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                 <p className="break-words w-3/5 text-center">
                   Director, Data Center
                 </p>
-             
               </Link>
-              <Link href="/konet"  className="w-1/4  tablet:pb-10 tablet:w-full">
-              <div className=" flex flex-col items-center">
-                <img
-                  src="/logo/blank-profile-picture.svg"
-                  className="w-1/4 pb-5  rounded-full"
-                />
-                <p className="break-words w-3/5 text-center">
-                  Director, Power
-                </p>
-              </div>
+              <Link href="/konet" className="w-1/4  tablet:pb-10 tablet:w-full">
+                <div className=" flex flex-col items-center">
+                  <img
+                    src="/logo/blank-profile-picture.svg"
+                    className="w-1/4 pb-5  rounded-full"
+                  />
+                  <p className="break-words w-3/5 text-center">
+                    Director, Power
+                  </p>
+                </div>
               </Link>
-              <Link href="/power"  className="w-1/4  tablet:pb-10 tablet:w-full">
-              <div className="flex flex-col items-center ">
-                <img
-                  src="/logo/blank-profile-picture.svg"
-                  className="w-1/4 pb-5  rounded-full"
-                />
-                <p className="break-words w-3/5 text-center">
-                  Director, Digital Experts Academy
-                </p>
-              </div>
+              <Link href="/power" className="w-1/4  tablet:pb-10 tablet:w-full">
+                <div className="flex flex-col items-center ">
+                  <img
+                    src="/logo/blank-profile-picture.svg"
+                    className="w-1/4 pb-5  rounded-full"
+                  />
+                  <p className="break-words w-3/5 text-center">
+                    Director, Digital Experts Academy
+                  </p>
+                </div>
               </Link>
               {/* <Link href="/people" className="w-1/4">
               <div className=" flex flex-col items-center">
@@ -622,22 +668,17 @@ WE ARE WELL POSITIONED AND FULLY MOBILIZED TO DO THE FOLLOWING:</p>
                 </p>
               </div>
               </Link> */}
-              <Link href="/security"  className="w-1/4  tablet:w-full">
-              <div className=" flex flex-col items-center">
-                <img
-                  src="/logo/blank-profile-picture.svg"
-                  className="w-1/4 pb-5  rounded-full "
-                />
-                <p className="break-words w-3/5 text-center">
-                  Director, Security
-                </p>
-              </div>
+              <Link href="/security" className="w-1/4  tablet:w-full">
+                <div className=" flex flex-col items-center">
+                  <img
+                    src="/logo/blank-profile-picture.svg"
+                    className="w-1/4 pb-5  rounded-full "
+                  />
+                  <p className="break-words w-3/5 text-center">
+                    Director, Security
+                  </p>
+                </div>
               </Link>
-              
-             
-              
-              
-              
             </div>
           </section>
 

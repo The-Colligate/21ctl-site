@@ -1,14 +1,14 @@
-import React from 'react';
-import Head from 'next/head';
-import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { motion } from 'framer-motion';
+import React from "react";
+import Head from "next/head";
+import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
+import { motion } from "framer-motion";
 import {
   buttonVarient,
   leftTransitionVarient,
   rightTansitionVarient,
-} from '@components/constants/animations';
+} from "@components/constants/animations";
 // import HeroImage from '/public/logo/hero-image.png';
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 
 const Digital = () => {
   return (
@@ -34,7 +34,7 @@ const Digital = () => {
             >
               <h1 className="text-7xl tracking-normal font-lato font-medium whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
                 <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">
-                  Digital{' '}
+                  Digital{" "}
                 </span>
                 Infrastructure
               </h1>
@@ -122,15 +122,15 @@ const Digital = () => {
             </div>
           </section>
 
-            {/* light mode */}
+          {/* light mode */}
           <section className="cloud-services dark:hidden mx-20 my-10 phone:mb-0 relative tablet:mx-10">
             <div className="w-2/5 mb-20 phone:w-full tablet:mb-5 tablet:w-full">
               <p className="text-[#319FD9] font-[14px]">
-                {'Regional Network Gateway Nigeria'.toUpperCase()}
+                {"Regional Network Gateway Nigeria".toUpperCase()}
               </p>
               <p className="font-bold text-[35px] tablet:text-[25px] ">
                 Connect to every
-                <br /> Hyperscale Cloud Provider
+                <br /> HyperScale Cloud Provider
               </p>
               <p className="text-[16px]">
                 We have recently installed the 1st regional network gateway in
@@ -152,9 +152,9 @@ const Digital = () => {
               <div className="number-1  bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5">
                 <h3 className="font-extrabold">Data Centers</h3>
                 <p>
-                  Expertise in datacenter built locally and supported globally,
+                  Expertise in data center built locally and supported globally,
                   instilling best practices on a platform of the industry
-                  leading technology.{' '}
+                  leading technology.{" "}
                 </p>
               </div>
               <div className="number-1  mx-auto bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5">
@@ -168,15 +168,15 @@ const Digital = () => {
             </div>
           </section>
 
-   {/* dark mode */}
-   <section className="cloud-services-dark hidden dark:block mx-20 my-10 phone:mb-0 relative tablet:mx-10">
+          {/* dark mode */}
+          <section className="cloud-services-dark hidden dark:block mx-20 my-10 phone:mb-0 relative tablet:mx-10">
             <div className="w-2/5 mb-20 phone:w-full tablet:mb-5 tablet:w-full">
               <p className="text-[#319FD9] font-[14px]">
-                {'Regional Network Gateway Nigeria'.toUpperCase()}
+                {"Regional Network Gateway Nigeria".toUpperCase()}
               </p>
               <p className="font-bold text-[35px] tablet:text-[25px] ">
                 Connect to every
-                <br /> Hyperscale Cloud Provider
+                <br /> HyperScale Cloud Provider
               </p>
               <p className="text-[16px]">
                 We have recently installed the 1st regional network gateway in
@@ -198,9 +198,9 @@ const Digital = () => {
               <div className="number-1  bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5">
                 <h3 className="font-extrabold">Data Centers</h3>
                 <p>
-                  Expertise in datacenter built locally and supported globally,
+                  Expertise in data center built locally and supported globally,
                   instilling best practices on a platform of the industry
-                  leading technology.{' '}
+                  leading technology.{" "}
                 </p>
               </div>
               <div className="number-1  mx-auto bg-white dark:bg-black p-10 my-5 rounded-lg  phone:p-5">
@@ -229,7 +229,7 @@ const Digital = () => {
               <div className="flex flex-col justify-center items-center text-center w-3/4 mx-auto tablet:mx-10 phone:w-3/3">
                 <h2 className="text-[42px] text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] my-4 tablet:text-[16px]">
                   21st century is a Digital professional service Infrastructure
-                  company with 25 years experience{' '}
+                  company with 25 years experience{" "}
                 </h2>
                 <p className="text-[16px] tablet:text-[12px]">
                   Combine our capabilities with data center operational
@@ -252,8 +252,8 @@ const Digital = () => {
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
                     <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
-                      Ikeja{' '}
-                    </span>{' '}
+                      Ikeja{" "}
+                    </span>{" "}
                     Data Center
                   </h3>
                   <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
@@ -272,8 +272,8 @@ const Digital = () => {
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
                     <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
-                      Ikoyi{' '}
-                    </span>{' '}
+                      Ikoyi{" "}
+                    </span>{" "}
                     Data Center
                   </h3>
                   <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
@@ -293,8 +293,8 @@ const Digital = () => {
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
                     <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
-                      Apapa{' '}
-                    </span>{' '}
+                      Apapa{" "}
+                    </span>{" "}
                     Data Center
                   </h3>
                   <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
@@ -314,8 +314,8 @@ const Digital = () => {
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
                     <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
-                      Saka-Tinubu{' '}
-                    </span>{' '}
+                      Saka-Tinubu{" "}
+                    </span>{" "}
                     Data Center
                   </h3>
                   <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
@@ -335,8 +335,8 @@ const Digital = () => {
                 <div className="p-5 text-black dark:text-black">
                   <h3 className="text-3xl font-medium tracking-wide ">
                     <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
-                      Alanamu{' '}
-                    </span>{' '}
+                      Alanamu{" "}
+                    </span>{" "}
                     Data Center
                   </h3>
                   <p className="py-2 pt-4 tracking-wide sm:text-xl text-lg leading">
@@ -359,10 +359,10 @@ const Digital = () => {
             <div className="flex justify-between items-center ml-20 tablet:ml-10 tablet:flex-col tablet:justify-center tablet:py-10">
               <div>
                 <h4 className="text-5xl font-semibold text-left tablet:text-3xl">
-                  {' '}
+                  {" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81]">
                     5G
-                  </span>{' '}
+                  </span>{" "}
                   Readiness
                 </h4>
                 <p className="text-2xl text-left pt-3 phone:text-lg w-2/3 tablet:w-full ">

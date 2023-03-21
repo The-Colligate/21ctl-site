@@ -1,9 +1,13 @@
-import React from 'react';
-import Head from 'next/head';
-import { LightNavbar, Footer, SocialIcons } from '@components/layout/';
-import { motion } from 'framer-motion';
-import { buttonVarient, leftTransitionVarient, rightTansitionVarient } from '@components/constants/animations';
-import CountUp from 'react-countup';
+import React from "react";
+import Head from "next/head";
+import { LightNavbar, Footer, SocialIcons } from "@components/layout/";
+import { motion } from "framer-motion";
+import {
+  buttonVarient,
+  leftTransitionVarient,
+  rightTansitionVarient,
+} from "@components/constants/animations";
+import CountUp from "react-countup";
 const AboutUs = () => {
   return (
     <>
@@ -23,8 +27,10 @@ const AboutUs = () => {
             <div className="flex items-center justify-center h-full">
               <div className="max-w-3xl">
                 <h1 className="text-7xl font-bold tracking-normal text-center font-lato text-white whitespace-pre-wrap largeTablet:text-5xl tablet:text-3xl smallTablet:text-2xl">
-                  About{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">Us </span>
+                  About{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] leading-8">
+                    Us{" "}
+                  </span>
                 </h1>
                 <p className="text-2xl text-white text-center mt-6 largeTablet:text-xl smallTablet:text-lg">
                   We provide reliability, security, and high traffic handling
@@ -34,13 +40,13 @@ const AboutUs = () => {
             </div>
           </section>
 
-          <section className='sm:px-36 px-8 my-10'>
+          <section className="sm:px-36 px-8 my-10">
             <div className="flex flex-col items-center">
               <div className="text-lg font-semibold pb-5">
                 Our statistics reveal more about us.
               </div>
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
-              <div className="text-center">
+                <div className="text-center">
                   <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     <CountUp
                       start={0}
@@ -51,7 +57,7 @@ const AboutUs = () => {
                     />
                     {/* 200+ */}
                   </p>
-                  <span className="font-light">Businessess Supported</span>
+                  <span className="font-light">Businesses Supported</span>
                 </div>
                 <div className="text-center">
                   <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
@@ -134,7 +140,7 @@ const AboutUs = () => {
                   <p className="text-[24px] text-[#2e2e2c] dark:text-white  text-justify tablet:text-[18px] mb-4">
                     &quot;To use State of the Art Infrastructure to provide
                     world-class solutions to our valued customers through highly
-                    motivated talent and strategic alliances.&quot;{' '}
+                    motivated talent and strategic alliances.&quot;{" "}
                   </p>
                 </div>
                 <div>
@@ -236,7 +242,7 @@ const AboutUs = () => {
               </div>
             </div>
           </section>
-                   <Footer />
+          <Footer />
         </div>
         <SocialIcons />
       </div>
