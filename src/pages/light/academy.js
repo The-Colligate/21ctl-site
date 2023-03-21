@@ -118,7 +118,7 @@ const Academy = () => {
                   in seven key areas over the past 25 years
                 </p>
                 <p className="sm:text-2xl text-lg max-w-lg mt-5">
-                  Investment focused on enhancing five vital components: power,
+                  Investment focused on enhancing seven vital components: power,
                   security, payment, people, connectivity, data center and
                   technology.
                 </p>
