@@ -8,11 +8,11 @@ export const mainLinks = [
       {
         name: "Partners",
         subLinks: [
-          {
-            name: "Amazon",
-            link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
-          },
+          // {
+          //   name: "Amazon",
+          //   link: "#",
+          //   icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
+          // },
           {
             name: "Schneider Electric University",
             link: "#",
@@ -703,16 +703,16 @@ export const peopleNavLinks = [
             text3: "Oracle Procurement Cloud Business Process",
           },
 
-          {
-            name: "Super Micro",
-            link: "/programmes",
-            icon: "/logo/super-micro.png",
-            text: "OS Cerifications",
-            text1: "Cloud services",
-            text2: "Cloud Orchestrator",
-            text3: "Virtualization",
-            text4: "Kubernetes Containers",
-          },
+          // {
+          //   name: "Super Micro",
+          //   link: "/programmes",
+          //   icon: "/logo/super-micro.png",
+          //   text: "OS Cerifications",
+          //   text1: "Cloud services",
+          //   text2: "Cloud Orchestrator",
+          //   text3: "Virtualization",
+          //   text4: "Kubernetes Containers",
+          // },
 
           {
             name: "SYSTEM",
@@ -826,11 +826,11 @@ export const peopleNavLinks = [
       {
         name: "Partners",
         subLinks: [
-          {
-            name: "Amazon",
-            link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
-          },
+          // {
+          //   name: "Amazon",
+          //   link: "#",
+          //   icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
+          // },
 
           {
             name: "VMware",
@@ -843,11 +843,11 @@ export const peopleNavLinks = [
             link: "#",
             icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png",
           },
-          {
-            name: "Super Micro",
-            link: "#",
-            icon: "/logo/super-micro.png",
-          },
+          // {
+          //   name: "Super Micro",
+          //   link: "#",
+          //   icon: "/logo/super-micro.png",
+          // },
           {
             name: "Microsoft Azure",
             link: "#",
