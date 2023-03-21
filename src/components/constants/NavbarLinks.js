@@ -8,11 +8,11 @@ export const mainLinks = [
       {
         name: "Partners",
         subLinks: [
-          // {
-          //   name: "Amazon",
-          //   link: "#",
-          //   icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
-          // },
+          {
+            name: "Amazon",
+            link: "#",
+            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
+          },
           {
             name: "Schneider Electric University",
             link: "#",
@@ -75,6 +75,11 @@ export const mainLinks = [
             name: "Multichoice Group",
             link: "#",
             icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/MultiChoice_Group_-_png_0_dp989k.png",
+          },
+           {
+            name: "Super Micro",
+            link: "#",
+            icon: "/logo/super-micro.png",
           },
         ],
         extras: [],
