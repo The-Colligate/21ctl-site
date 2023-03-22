@@ -128,7 +128,7 @@ export function Footer() {
               </svg>
             </a>
             <a
-              href="https://instagram.com/21ctlcom?igshid=YmMyMTA2M2Y="
+              href="https://instagram.com/21stctl?igshid=YmMyMTA2M2Y="
               target="_blank"
               rel="noopener noreferrer"
             >
