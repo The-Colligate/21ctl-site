@@ -14,8 +14,8 @@ const Communication = () => {
       </Head>
       <div className="max-w-screen min-h-screen flex flex-col overflow-x-hidden relative">
         <div className="absolute w-full h-full flex justify-between items-center">
-          <div className="w-full min-h-[50%] bg_gradient_l"></div>
-          <div className="w-full min-h-[50%] bg_gradient_r"></div>
+          {/* <div className="w-full min-h-[50%] bg_gradient_l"></div>
+          <div className="w-full min-h-[50%] bg_gradient_r"></div> */}
         </div>
         <div className="w-full min-h-screen flex flex-col z-[1]">
         <LightNavbar />
@@ -42,7 +42,7 @@ const Communication = () => {
           </section> */}
 
            {/* top-section */}
-           <section className="comm-top-section h-[80vh] px-8 ">
+           <section className="comm-top-section h-[100vh] px-8 ">
             <div className="flex flex-col items-center justify-center w-full h-full leading-10">
               <h1 className="font-extrabold sm:text-6xl text-4xl text-white text-center">
                Communication
@@ -55,7 +55,7 @@ const Communication = () => {
           </section>
 
          
-          <section className="internet-section sm:mb-0 mb-16">
+          <section className=" sm:mb-0 mb-16">
             <div className="flex sm:flex-row flex-col sm:px-36 px-8 my-16 sm:space-x-16 space-x-0 items-center justify-between">
               <div className="flex flex-1 items-start  justify-start">
                 <img src="/logo/communication-bg.png" className="w-[600px]" />

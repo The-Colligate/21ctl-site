@@ -128,7 +128,7 @@ export function Footer() {
               </svg>
             </a>
             <a
-              href="https://instagram.com/21ctlcom?igshid=YmMyMTA2M2Y="
+              href="https://instagram.com/21stctl?igshid=YmMyMTA2M2Y="
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -303,7 +303,7 @@ function logoLightMode(pathname) {
     case "/admission":
       return (
         <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675078434/21ctl/updated_DEA_logo_brgg9j.svg"
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675093306/21ctl/logo-dea-white_ohhnqh.svg"
           className="w-full h-[70px]"
         />
       );
@@ -311,7 +311,7 @@ function logoLightMode(pathname) {
     case "/digital-platform":
       return (
         <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
           className="w-22 h-20"
         />
       );
@@ -319,7 +319,7 @@ function logoLightMode(pathname) {
     case "/digital-infrastructure":
       return (
         <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
           className="w-22 h-20"
         />
       );
@@ -343,7 +343,7 @@ function logoLightMode(pathname) {
     case "/platform":
       return (
         <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
           className="w-22 h-20"
         />
       );
@@ -351,7 +351,7 @@ function logoLightMode(pathname) {
     case "/communication":
       return (
         <img
-          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
+          src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
           className="w-22 h-20"
         />
       );

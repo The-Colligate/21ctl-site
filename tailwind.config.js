@@ -36,6 +36,7 @@ module.exports = {
         diamondStar: "\2756",
       },
       screens: {
+        xlargeTablet: { min: '2000px' },
         largeTablet: { max: '1024px' },
         // => @media (max-width: 1024px) { ... }
 

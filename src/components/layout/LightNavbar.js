@@ -158,20 +158,20 @@ export function LightNavbar({ menuProp }) {
                           key={sublinks.name}
                           className="mt-5 dark:text-white"
                         >
-                          <div className="flex hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81] ">
+                          <div className="flex items-center hover:bg-clip-text hover:bg-gradient-to-br hover:from-[#0282BA] hover:to-[#015A81] ">
                             <img
                               height={50}
                               width={50}
                               src={`${sublinks.icon}`}
-                              className="h-[40px] w-[30px]"
+                              className="max-h-[50px] max-w-[50px] xlargeTablet:h-[50px] xlargeTablet:w-[40px]"
                               layout="raw"
                             />
 
                             <Link
                               href={`${sublinks.link}`}
-                              className="ml-4 space-y-2 list-disc text-[15px] break-words  font-semibold dark:text-white"
+                              className="ml-4 space-y-2 list-disc text-[15px] break-words  font-semibold dark:text-white xlargeTablet:text-[20px] hover:text-primary-blue"
                             >
-                              {" "}
+                              {/* {" "} */}
                               {sublinks.name}
                             </Link>
                           </div>
@@ -179,31 +179,31 @@ export function LightNavbar({ menuProp }) {
                           <div className="flex flex-col">
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} max-w-sm`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] xlargeTablet:text-[18px] dark:text-white hover:${textColor} max-w-sm`}
                             >
                               <span className="">{sublinks?.text} </span>
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                             >
                               {sublinks?.text1}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                             >
                               {sublinks?.text2}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                             >
                               {sublinks?.text3}{" "}
                             </Link>
                             <Link
                               href={`${sublinks.link}`}
-                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                              className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                             >
                               {sublinks?.text4}{" "}
                             </Link>
@@ -215,7 +215,7 @@ export function LightNavbar({ menuProp }) {
                               router.pathname === "/training-pillars") ? (
                               <Link
                                 href="/programmes"
-                                className={`ml-9 space-y-2 text-[12px] ${textColor} `}
+                                className={`ml-9 space-y-2 text-[12px] ${textColor} xlargeTablet:text-[18px]`}
                               >
                                 See more{" "}
                               </Link>
@@ -223,55 +223,55 @@ export function LightNavbar({ menuProp }) {
                               <>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text5}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text5}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text6}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text7}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text8}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text9}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text10}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text11}{" "}
                                 </Link>
                                 <Link
                                   href={`${sublinks.link}`}
-                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor}`}
+                                  className={`ml-9 space-y-2 list-disc text-[12px] dark:text-white hover:${textColor} xlargeTablet:text-[18px]`}
                                 >
                                   {sublinks?.text12}{" "}
                                 </Link>
@@ -301,7 +301,7 @@ export function LightNavbar({ menuProp }) {
                   href={link?.link}
                   target={router.pathname === "/" ? "_blank" : "_self"}
                   rel="noreferrer"
-                  className={`flex items-center text-[14px] hover:${textColor}`}
+                  className={`flex items-center text-[14px] hover:${textColor} xlargeTablet:text-[22px]`}
                   onClick={() => {
                     console.log(
                       `${displayPopup[1]} === ${index} ? ${
@@ -319,9 +319,9 @@ export function LightNavbar({ menuProp }) {
                     <>
                       {" "}
                       {displayPopup[0] && displayPopup[1] === index ? (
-                        <CaretDown className="ml-1 -rotate-180" />
+                        <CaretDown className="ml-1 -rotate-180 xlargeTablet:w-[22px] xlargeTablet:h-[22px]" />
                       ) : (
-                        <CaretDown className="ml-1" />
+                        <CaretDown className="ml-1 xlargeTablet:w-[22px] xlargeTablet:h-[22px]" />
                       )}
                     </>
                   ) : (
@@ -334,7 +334,7 @@ export function LightNavbar({ menuProp }) {
           {navItems[1]?.additionalLinks?.map((link, index) => (
             <li
               key={`${link} ${index}`}
-              className={`relative text-[14px] hover:${textColor}`}
+              className={`relative text-[14px] hover:${textColor} xlargeTablet:text-[22px]`}
             >
               <a
                 href={`${link.link}`}
@@ -834,7 +834,7 @@ function logoLightMode(pathname) {
       return (
         <img
           src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675251272/21ctl/21st_century_logo_FULL_2_babx2s.png"
-          className="w-22 h-20"
+          className="w-22 h-20 xlargeTablet:w-36 xlargeTablet:h-32 "
         />
       );
     case "/people":
@@ -933,7 +933,9 @@ function logoDarkMode(pathname) {
   switch (pathname) {
     case "/":
       return (
-        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg" />
+        <img src="https://res.cloudinary.com/dqsggbqmf/image/upload/v1675080972/21ctl/21st_Century_Technologies_Logo_Dark_aztket.svg"
+        className=" xlargeTablet:w-36 xlargeTablet:h-32 "
+        />
       );
     case "/people":
     case "/programmes":

@@ -16,7 +16,7 @@ export const mainLinks = [
           {
             name: "Schneider Electric University",
             link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp",
+            icon: "/logo/Schneider-Electric-logo.png",
           },
 
           {
@@ -75,6 +75,11 @@ export const mainLinks = [
             name: "Multichoice Group",
             link: "#",
             icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/MultiChoice_Group_-_png_0_dp989k.png",
+          },
+           {
+            name: "Super Micro",
+            link: "#",
+            icon: "/logo/super-micro.png",
           },
         ],
         extras: [],
@@ -626,7 +631,7 @@ export const peopleNavLinks = [
           {
             name: "Schneider University",
             link: "https://university.se.com/",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058132/21ctl/icons/home/career_ibsfd0.svg",
+            icon: "/logo/Schneider-Electric-logo.png",
           },
         ],
       },
@@ -653,7 +658,7 @@ export const peopleNavLinks = [
           {
             name: "Schneider University",
             link: "/programmes",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp",
+            icon: "/logo/Schneider-Electric-logo.png",
             text: "Fundamentals of Power",
             text1: "Efficiency of AC and DC Power Distribution in Data Centers",
             text2: "Energy Efficiency Fundamentals",
@@ -703,16 +708,16 @@ export const peopleNavLinks = [
             text3: "Oracle Procurement Cloud Business Process",
           },
 
-          {
-            name: "Super Micro",
-            link: "/programmes",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp",
-            text: "OS Cerifications",
-            text1: "Cloud services",
-            text2: "Cloud Orchestrator",
-            text3: "Virtualization",
-            text4: "Kubernetes Containers",
-          },
+          // {
+          //   name: "Super Micro",
+          //   link: "/programmes",
+          //   icon: "/logo/super-micro.png",
+          //   text: "OS Cerifications",
+          //   text1: "Cloud services",
+          //   text2: "Cloud Orchestrator",
+          //   text3: "Virtualization",
+          //   text4: "Kubernetes Containers",
+          // },
 
           {
             name: "SYSTEM",
@@ -826,11 +831,11 @@ export const peopleNavLinks = [
       {
         name: "Partners",
         subLinks: [
-          {
-            name: "Amazon",
-            link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
-          },
+          // {
+          //   name: "Amazon",
+          //   link: "#",
+          //   icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
+          // },
 
           {
             name: "VMware",
@@ -843,11 +848,11 @@ export const peopleNavLinks = [
             link: "#",
             icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058117/21ctl/logo/partners/oracle_hjzrzq.png",
           },
-          {
-            name: "Super Micro",
-            link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675163931/21ctl/logo/super-micro_vip3e2.webp",
-          },
+          // {
+          //   name: "Super Micro",
+          //   link: "#",
+          //   icon: "/logo/super-micro.png",
+          // },
           {
             name: "Microsoft Azure",
             link: "#",
@@ -856,7 +861,7 @@ export const peopleNavLinks = [
           {
             name: "Schneider Electric University",
             link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675166198/21ctl/logo/partners/schneider_pcmiuw.webp",
+            icon: "/logo/Schneider-Electric-logo.png",
             // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
           },
           //   {
