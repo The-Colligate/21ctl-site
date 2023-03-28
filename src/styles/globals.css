@@ -351,6 +351,17 @@ body {
   height: 672px;
 }
 
+
+.bg-404{
+  background-image: url('/images/404-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  width: 100vw;
+
+}
+
 /* .cableCard {
   background-image: url('/logo/communication-bg1.png');
   background-repeat: no-repeat;
