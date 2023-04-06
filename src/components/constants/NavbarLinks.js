@@ -76,7 +76,7 @@ export const mainLinks = [
             link: "#",
             icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/MultiChoice_Group_-_png_0_dp989k.png",
           },
-           {
+          {
             name: "Super Micro",
             link: "#",
             icon: "/logo/super-micro.png",
@@ -181,6 +181,7 @@ export const mainLinks = [
       { name: "Events", link: "https://21ctl.blog/" },
       { name: "Explore more", link: "/explore-more" },
       { name: "Booking", link: "/booking" },
+      { name: "Raise Ticket", link: "https://switchhelp.21ctl.com" },
     ],
   },
 ];
@@ -928,46 +929,46 @@ export const konetWalletNavLinks = [
       "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
     logoDarkMode:
       "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
-      navLinks: [
-        {
-          name: "Home",
-          link: "https://www.konet.com/",
-          subLinks: [],
-        },
-        {
-          name: "Billing Automation",
-          // link: "#products",
-          subLinks: [],
-        },
-        {
-          name: "Konet Pay",
-          link: "https://konetpay.com/",
-          subLinks: [],
-        },
-        
-        {
-          name: "Konet Mail",
-          subLinks: [],
-        },
-        {
-          name: "Konet KYC",
-          subLinks: [],
-        },
-        {
-          name: "Konet Space",
-          subLinks: [],
-        },
-        {
-          name: "Konet App",
-          subLinks: [],
-          link: "/konet-app",
-        },
-        {
-          name: "Main Portal",
-          link: "/",
-          subLinks: [],
-        },
-      ],
+    navLinks: [
+      {
+        name: "Home",
+        link: "https://www.konet.com/",
+        subLinks: [],
+      },
+      {
+        name: "Billing Automation",
+        // link: "#products",
+        subLinks: [],
+      },
+      {
+        name: "Konet Pay",
+        link: "https://konetpay.com/",
+        subLinks: [],
+      },
+
+      {
+        name: "Konet Mail",
+        subLinks: [],
+      },
+      {
+        name: "Konet KYC",
+        subLinks: [],
+      },
+      {
+        name: "Konet Space",
+        subLinks: [],
+      },
+      {
+        name: "Konet App",
+        subLinks: [],
+        link: "/konet-app",
+      },
+      {
+        name: "Main Portal",
+        link: "/",
+        subLinks: [],
+      },
+    ],
   },
 ];
 
@@ -977,46 +978,46 @@ export const konetAppNavLinks = [
       "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
     logoDarkMode:
       "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675239452/21ctl/21CTL_security_l88vci.png",
-      navLinks: [
-        {
-          name: "Home",
-          link: "/konet",
-          subLinks: [],
-        },
-        {
-          name: "Billing Automation",
-          // link: "#products",
-          subLinks: [],
-        },
-        {
-          name: "Konet Pay",
-          link: "https://konetpay.com/",
-          subLinks: [],
-        },
-        
-        {
-          name: "Konet Mail",
-          subLinks: [],
-        },
-        {
-          name: "Konet KYC",
-          subLinks: [],
-        },
-        {
-          name: "Konet Space",
-          subLinks: [],
-        },
-        {
-          name: "Konet Wallet",
-          link: "/konet-wallet",
-          subLinks: [],
-        },
-        {
-          name: "Main Portal",
-          link: "/",
-          subLinks: [],
-        },
-      ],
+    navLinks: [
+      {
+        name: "Home",
+        link: "/konet",
+        subLinks: [],
+      },
+      {
+        name: "Billing Automation",
+        // link: "#products",
+        subLinks: [],
+      },
+      {
+        name: "Konet Pay",
+        link: "https://konetpay.com/",
+        subLinks: [],
+      },
+
+      {
+        name: "Konet Mail",
+        subLinks: [],
+      },
+      {
+        name: "Konet KYC",
+        subLinks: [],
+      },
+      {
+        name: "Konet Space",
+        subLinks: [],
+      },
+      {
+        name: "Konet Wallet",
+        link: "/konet-wallet",
+        subLinks: [],
+      },
+      {
+        name: "Main Portal",
+        link: "/",
+        subLinks: [],
+      },
+    ],
   },
 ];
 
