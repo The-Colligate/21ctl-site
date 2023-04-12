@@ -11,7 +11,7 @@ export const mainLinks = [
           {
             name: "Amazon",
             link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675165197/21ctl/logo/aws_logo_u1fyfs.webp",
+            icon: "/icons/icons8-amazon-web-services.svg",
           },
           {
             name: "Schneider Electric University",
