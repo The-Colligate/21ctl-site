@@ -854,11 +854,18 @@ export const peopleNavLinks = [
           //   link: "#",
           //   icon: "/logo/super-micro.png",
           // },
+          
           {
-            name: "Microsoft Azure",
+            name: "UNDP",
             link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Microsoft-Azure-Emblem_ijjxxx.png",
+            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1676390680/21ctl/partners/undp_jvtcfj.png",
+            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
           },
+          // {
+          //   name: "Microsoft Azure",
+          //   link: "#",
+          //   icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058141/21ctl/logo/partners/Microsoft-Azure-Emblem_ijjxxx.png",
+          // },
           {
             name: "Schneider Electric University",
             link: "#",
@@ -879,12 +886,6 @@ export const peopleNavLinks = [
             // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
           },
 
-          {
-            name: "UNDP",
-            link: "#",
-            icon: "https://res.cloudinary.com/dqsggbqmf/image/upload/v1676390680/21ctl/partners/undp_jvtcfj.png",
-            // icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-          },
           {
             name: "Nigerian Jubilee fellowship program",
             link: "#",
