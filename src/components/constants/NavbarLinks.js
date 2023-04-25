@@ -1097,8 +1097,6 @@ export const securityNavLinks = [
             text4: "Security Education and Mentoring",
           },
 
-          // name: 'Biometric Lock',
-          // link: '#',
           {
             // name: 'Surveillance',
             name: "Security Expert Training",
@@ -1110,13 +1108,6 @@ export const securityNavLinks = [
             text3: "Cloud Security",
           },
 
-          // {
-          //   name: 'Threat analysis',
-          //   link: '#',
-          //   icon: 'https://res.cloudinary.com/dqsggbqmf/image/upload/v1675058124/21ctl/icons/home/handshake_x4twy9.svg',
-
-          //   text: 'See our partners',
-          // },
         ],
         extras: [],
       },
