@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutUs from '../pages/light/about-us';
-const Aboutus = () => {
+
+export default function Aboutus () {
   return (
     <div>
       <AboutUs />
@@ -8,4 +9,3 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
