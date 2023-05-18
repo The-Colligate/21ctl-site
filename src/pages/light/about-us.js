@@ -7,7 +7,7 @@ import {
   leftTransitionVarient,
   rightTansitionVarient,
 } from "@components/constants/animations";
-// import CountUp from "react-countup";
+import CountUp from "react-countup";
 
 export default function AboutUs () {
   return (
