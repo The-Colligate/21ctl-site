@@ -8,7 +8,8 @@ import {
   rightTansitionVarient,
 } from "@components/constants/animations";
 import CountUp from "react-countup";
-const AboutUs = () => {
+
+export default function AboutUs () {
   return (
     <>
       <Head>
@@ -249,5 +250,3 @@ const AboutUs = () => {
     </>
   );
 };
-
-export default AboutUs;
