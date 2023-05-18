@@ -7,7 +7,7 @@ import {
   leftTransitionVarient,
   rightTansitionVarient,
 } from "@components/constants/animations";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 
 export default function AboutUs () {
   return (
@@ -49,13 +49,13 @@ export default function AboutUs () {
               <div className="figures flex sm:flex-row flex-col sm:space-x-8 space-x-0">
                 <div className="text-center">
                   <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
-                    <CountUp
+                    {/* <CountUp
                       start={0}
                       end={200}
                       duration={2.75}
                       prefix=""
                       suffix="+"
-                    />
+                    /> */}
                     {/* 200+ */}
                   </p>
                   <span className="font-light">Businesses Supported</span>
@@ -63,39 +63,39 @@ export default function AboutUs () {
                 <div className="text-center">
                   <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 25+ */}
-                    <CountUp
+                    {/* <CountUp
                       start={0}
                       end={25}
                       duration={2.75}
                       prefix=""
                       suffix="+"
-                    />
+                    /> */}
                   </p>
                   <span className="font-light">Years Experience</span>
                 </div>
                 <div className="text-center">
                   <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 14M+ */}
-                    <CountUp
+                    {/* <CountUp
                       start={0}
                       end={45}
                       duration={2.75}
                       prefix=""
                       suffix="M+"
-                    />
+                    /> */}
                   </p>
                   <span className="font-light">Satisfied Customers</span>
                 </div>
                 <div className="text-center">
                   <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#0282BA] to-[#015A81] text-4xl font-semibold">
                     {/* 100+ */}
-                    <CountUp
+                    {/* <CountUp
                       start={0}
                       end={100}
                       duration={2.75}
                       prefix=""
                       suffix="+"
-                    />
+                    /> */}
                   </p>
                   <span className="font-light">Completed Projects</span>
                 </div>
